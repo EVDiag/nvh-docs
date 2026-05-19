@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Краткий справочник</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Документация</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Русский</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html" class="active">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Краткий справочник</span>
+    <a href="quick-reference.pdf" download>📥 Скачать в PDF</a>
+    <a href="user-guide.html" class="alt-link">Руководство пользователя →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Документация переведена для вашего удобства — наиболее точной технической терминологией является оригинальная английская версия.
+  </div>
+
+  <h1 id="nvh-source-locator">NVH Source Locator — Краткий справочник</h1>
+<p>Одностраничное напоминание. Полные подробности см. в <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="2-sensor">Основной процесс (2-Sensor, бесплатно)</h2>
+<ol>
+<li><strong>Выберите материал</strong> — вкладка Materials → коснитесь вашего материала</li>
+<li><strong>Введите калибровку</strong> во вкладке 2-Sensor:</li>
+<li>Расстояние между датчиками (<code>d</code>)</li>
+<li>Задержка времени калибровки (<code>tCal</code>) — автоматически заполняется из материала</li>
+<li><strong>Введите событие</strong> — <code>tEvent</code> и Первый датчик (A или B)</li>
+<li><strong>Прочитайте результат</strong> — расстояние от датчика A</li>
+</ol>
+<p><img alt="Вкладка 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="_1">Все вкладки</h2>
+<table>
+<thead>
+<tr>
+<th>Вкладка</th>
+<th>Результат</th>
+<th>Поля Pro?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Расстояние по линии</td>
+<td>Нет (полностью бесплатно)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y на поверхности</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y с МНК по 3 парам</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y из двух пар (A–B + C–D)</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y из 4 датчиков, произвольная позиция</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z из 4 датчиков</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z из до 6 датчиков</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Выбор скорости звука</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Учебные материалы</td>
+<td>Нет</td>
+</tr>
+</tbody>
+</table>
+<p>Настройки находятся в значке ⚙ (вверху справа), а не во вкладке.</p>
+<hr />
+<h2 id="_2">Температурная компенсация</h2>
+<p>Настройки → Опорная температура, диапазон <strong>от -40 до +200 °C</strong>.</p>
+<ul>
+<li><strong>14 металлов</strong> имеют встроенную компенсацию (алюминий, стали, медь, латунь, бронза, титан, магний, свинец, цинк, никель, вольфрам, железо, чугун)</li>
+<li>Материалы без компенсации показывают <strong>«ref only»</strong></li>
+<li><strong>Сбрасывается до 20 °C при каждом запуске приложения</strong> (безопасный запуск по умолчанию)</li>
+<li>Воспроизведение записи истории восстанавливает её исходную температуру</li>
+</ul>
+<hr />
+<h2 id="_3">Сочетания клавиш</h2>
+<ul>
+<li><strong>Коснитесь материала</strong> → автоматически заполняет все поля <code>tCal</code> во всех вкладках</li>
+<li><strong>Удерживайте +/-</strong> на числовых полях → быстрое инкрементирование</li>
+<li><strong>Перетащите горизонтально</strong> на числовом поле → прокрутка значений</li>
+<li><strong>Пустой/отрицательный/недопустимый ввод</strong> → переключается на 0 при потере фокуса (поле температуры ограничено -40/200)</li>
+<li><strong>Отметьте материал звёздочкой</strong> → перемещает его в верх выбора</li>
+</ul>
+<hr />
+<h2 id="pro">Модель Pro</h2>
+<p><strong>Freemium с блокировкой по функциям</strong> ($19,99):
+- Бесплатно: вкладка 2-Sensor полностью функциональна, без ограничений
+- Pro: Другие вкладки доступны, но с <strong>полями с золотым замком</strong>, которые показывают paywall при касании</p>
+<p>Pro разблокирует: от 3-Sensor до 3D+, пользовательские материалы, резервное копирование/восстановление, PDF-отчёты, аннотирование фотографий.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="_4">Отчёты и резервное копирование</h2>
+<p>Кнопка <strong>Распечатать результат</strong> на любом экране результатов → PDF с заголовком, входными данными, результатом, визуализацией, фотографией (если сделана) и нижним колонтитулом температуры (когда компенсация активна).</p>
+<p>Настройте заголовок в Настройки → Заголовок отчёта.</p>
+<p><strong>Резервное копирование</strong>: Настройки → Резервное копирование → поделиться в облако/электронную почту.<br />
+<strong>Восстановление</strong>: Настройки → Восстановление → выберите файл резервной копии.</p>
+<hr />
+<h2 id="pro_1">Восстановление Pro на новом устройстве</h2>
+<p>Тот же аккаунт Google (Android) или Apple ID (iOS), с которого вы купили → Настройки → <strong>Восстановить покупку</strong> → разблокировка в течение секунд.</p>
+<p>Автоматическое восстановление происходит незаметно, когда вы возвращаетесь в приложение после внешнего активирования промокода.</p>
+<hr />
+<h2 id="_5">Быстрое устранение неполадок</h2>
+<ul>
+<li><strong>Результат вне диапазона?</strong> Проверьте знак <code>tEvent</code> / Первый датчик / расстояние между датчиками</li>
+<li><strong>Неверный ближайший материал?</strong> Опорная температура, вероятно, случайно установлена — проверьте настройки</li>
+<li><strong>Не удаётся восстановить покупку?</strong> Проверьте тот же аккаунт магазина; переустановите, если проблема не устраняется</li>
+<li><strong>Поле сброшено на 0?</strong> Пустые/отрицательные значения автоматически устанавливаются при потере фокуса — введите значение заново</li>
+<li><strong>Кнопки степпера пропали?</strong> Они появляются рядом с полями с <code>data-step</code> — перезапустите приложение, если их нет</li>
+<li><strong>Предупреждение об устаревшей температуре?</strong> Сбрасывается на 20 при каждом запуске — установите заново для этой сессии</li>
+</ul>
+<hr />
+<p>Контакт <code>support@evdiag.net</code> — укажите модель устройства, версию приложения (Настройки → внизу) и описание того, что вы пытались сделать.</p>
+
+  <div class="docs-footer">
+    <p>
+      Разработано EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Вопросы? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

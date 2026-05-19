@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Документация</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="../index.html" class="home-link">🌐 ← Всички езици</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Български</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/index.html">English</a>
+      <a href="../es/index.html">Español</a>
+      <a href="../zh/index.html">简体中文</a>
+      <a href="../hi/index.html">हिन्दी</a>
+      <a href="../ar/index.html">العربية</a>
+      <a href="../pt/index.html">Português</a>
+      <a href="../ru/index.html">Русский</a>
+      <a href="../fr/index.html">Français</a>
+      <a href="../de/index.html">Deutsch</a>
+      <a href="../ja/index.html">日本語</a>
+      <a href="../it/index.html">Italiano</a>
+      <a href="../ko/index.html">한국어</a>
+      <a href="../tr/index.html">Türkçe</a>
+      <a href="../vi/index.html">Tiếng Việt</a>
+      <a href="../pl/index.html">Polski</a>
+      <a href="../th/index.html">ไทย</a>
+      <a href="../id/index.html">Bahasa Indonesia</a>
+      <a href="../cs/index.html">Čeština</a>
+      <a href="../sk/index.html">Slovenčina</a>
+      <a href="../hu/index.html">Magyar</a>
+      <a href="../sv/index.html">Svenska</a>
+      <a href="../no/index.html">Norsk</a>
+      <a href="../fi/index.html">Suomi</a>
+      <a href="../ro/index.html">Română</a>
+      <a href="../hr/index.html">Hrvatski</a>
+      <a href="../bg/index.html" class="active">Български</a>
+      <a href="../be/index.html">Беларуская</a>
+      <a href="../fa/index.html">فارسی</a>
+      <a href="../ms/index.html">Bahasa Melayu</a>
+      <a href="../tl/index.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <h1>NVH Source Locator</h1>
+  <p>NVH Source Locator е измервателен инструмент, базиран на TDOA, за локализиране на източници на шум и вибрации чрез сигнали от акселерометри. Изберете нужната документация:</p>
+
+  <div class="disclaimer-note">
+    Документацията е преведена за ваше удобство — за най-точната техническа терминология меродавна е оригиналната версия на английски.
+  </div>
+
+  <div class="doc-grid">
+    <a href="user-guide.html" class="doc-card">
+      <h2>📘 Ръководство за потребителя</h2>
+      <p>Пълно справочно ръководство, обхващащо всички функции, режими, раздели, настройки, температурна компенсация, анотация на снимки и отстраняване на проблеми.</p>
+      <span class="badge">Пълна документация</span>
+    </a>
+
+    <a href="quick-reference.html" class="doc-card">
+      <h2>📋 Кратко справочно ръководство</h2>
+      <p>Едностранично резюме на основния измервателен процес, често използваните клавишни комбинации и съвети за отстраняване на проблеми за опитни потребители.</p>
+      <span class="badge">Кратка справка</span>
+    </a>
+  </div>
+
+  <div class="docs-footer">
+    <p>
+      Разработено от EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Въпроси? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

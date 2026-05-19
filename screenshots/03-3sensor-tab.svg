@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" font-family="-apple-system,sans-serif">
+  <rect x="0" y="0" width="400" height="700" fill="#F5F7FA" stroke="#0F3460" stroke-width="2"/>
+  
+  <!-- Top bar -->
+  <rect x="0" y="0" width="400" height="50" fill="#0F3460"/>
+  <text x="20" y="32" fill="#FFFFFF" font-size="16" font-weight="600">NVH Source Locator</text>
+  <text x="368" y="33" fill="#FCD34D" font-size="11" font-weight="700">PRO</text>
+  
+  <!-- Tab bar -->
+  <rect x="0" y="50" width="400" height="40" fill="#FFFFFF"/>
+  <rect x="60" y="50" width="60" height="40" fill="#E1F5EE"/>
+  <text x="30" y="75" text-anchor="middle" fill="#556" font-size="10">2-Sensor</text>
+  <text x="90" y="75" text-anchor="middle" fill="#00B4D8" font-size="10" font-weight="600">3-Sensor</text>
+  <text x="140" y="75" text-anchor="middle" fill="#556" font-size="10">3-Sen+</text>
+  <text x="190" y="75" text-anchor="middle" fill="#556" font-size="10">4-Sensor</text>
+  <text x="240" y="75" text-anchor="middle" fill="#556" font-size="10">4-Sen+</text>
+  <text x="280" y="75" text-anchor="middle" fill="#556" font-size="10">3D</text>
+  <text x="310" y="75" text-anchor="middle" fill="#556" font-size="10">3D+</text>
+  <text x="350" y="75" text-anchor="middle" fill="#556" font-size="10">Materials</text>
+  <text x="390" y="75" text-anchor="middle" fill="#556" font-size="10">Help</text>
+  <line x1="60" y1="89" x2="120" y2="89" stroke="#00B4D8" stroke-width="2"/>
+  
+  <!-- Intro -->
+  <text x="20" y="115" fill="#556" font-size="11">Three sensors A, B, C forming a triangle.</text>
+  <text x="20" y="130" fill="#556" font-size="11">Solver finds source location on the plane.</text>
+  
+  <!-- Setup card -->
+  <rect x="10" y="150" width="380" height="150" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <text x="20" y="173" fill="#0F3460" font-size="13" font-weight="600">Triangle side lengths</text>
+  
+  <text x="20" y="200" fill="#556" font-size="11">A–B side length</text>
+  <rect x="20" y="207" width="100" height="28" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <text x="30" y="226" fill="#0F3460" font-size="13">50</text>
+  <text x="100" y="226" fill="#556" font-size="11">cm</text>
+  
+  <text x="140" y="200" fill="#556" font-size="11">A–C side length</text>
+  <rect x="140" y="207" width="100" height="28" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <text x="150" y="226" fill="#0F3460" font-size="13">40</text>
+  <text x="220" y="226" fill="#556" font-size="11">cm</text>
+  
+  <text x="260" y="200" fill="#556" font-size="11">B–C side length</text>
+  <rect x="260" y="207" width="100" height="28" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <text x="270" y="226" fill="#0F3460" font-size="13">45</text>
+  <text x="340" y="226" fill="#556" font-size="11">cm</text>
+  
+  <!-- Pair A-B -->
+  <rect x="10" y="310" width="380" height="120" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <text x="20" y="333" fill="#0F3460" font-size="13" font-weight="600">Pair A–B</text>
+  <text x="20" y="358" fill="#556" font-size="11">tCal (µs)</text>
+  <rect x="20" y="365" width="80" height="28" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <text x="30" y="384" fill="#0F3460" font-size="13">79.1</text>
+  
+  <text x="120" y="358" fill="#556" font-size="11">tEvent (µs)</text>
+  <rect x="120" y="365" width="80" height="28" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <text x="130" y="384" fill="#0F3460" font-size="13">8.2</text>
+  
+  <text x="220" y="358" fill="#556" font-size="11">First sensor</text>
+  <rect x="220" y="365" width="60" height="28" fill="#0F3460" rx="6"/>
+  <text x="250" y="384" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">A</text>
+  
+  <text x="20" y="415" fill="#889" font-size="10">6,320 m/s — Closest: Aluminium (6,320 m/s)</text>
+  
+  <!-- Pair A-C -->
+  <rect x="10" y="440" width="380" height="80" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <text x="20" y="463" fill="#0F3460" font-size="13" font-weight="600">Pair A–C</text>
+  <text x="20" y="488" fill="#556" font-size="11">tCal: 63.3 µs    tEvent: 4.1 µs    First: A</text>
+  
+  <!-- Result -->
+  <rect x="10" y="530" width="380" height="160" fill="#0F3460" rx="8"/>
+  <text x="20" y="555" fill="#FFFFFF" font-size="11" font-weight="500">RESULT — Source position</text>
+  <text x="20" y="595" fill="#00B4D8" font-size="24" font-weight="700">X = 25.4 cm</text>
+  <text x="20" y="625" fill="#00B4D8" font-size="24" font-weight="700">Y = 17.8 cm</text>
+  <text x="20" y="660" fill="rgba(255,255,255,0.7)" font-size="11">(relative to sensor A at origin)</text>
+  <text x="20" y="678" fill="rgba(255,255,255,0.7)" font-size="11">— see visualization below for triangle plot</text>
+</svg>

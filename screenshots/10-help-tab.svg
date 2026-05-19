@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" font-family="-apple-system,sans-serif">
+  <rect x="0" y="0" width="400" height="700" fill="#F5F7FA" stroke="#0F3460" stroke-width="2"/>
+  
+  <!-- Top bar -->
+  <rect x="0" y="0" width="400" height="50" fill="#0F3460"/>
+  <text x="20" y="32" fill="#FFFFFF" font-size="16" font-weight="600">NVH Source Locator</text>
+  
+  <!-- Tab bar -->
+  <rect x="0" y="50" width="400" height="40" fill="#FFFFFF"/>
+  <rect x="380" y="50" width="20" height="40" fill="#E1F5EE"/>
+  <text x="30" y="75" text-anchor="middle" fill="#556" font-size="10">2-Sensor</text>
+  <text x="90" y="75" text-anchor="middle" fill="#556" font-size="10">3-Sensor</text>
+  <text x="190" y="75" text-anchor="middle" fill="#556" font-size="10">4-Sensor</text>
+  <text x="350" y="75" text-anchor="middle" fill="#556" font-size="10">Materials</text>
+  <text x="390" y="75" text-anchor="middle" fill="#00B4D8" font-size="10" font-weight="600">Help</text>
+  <line x1="380" y1="89" x2="400" y2="89" stroke="#00B4D8" stroke-width="2"/>
+  
+  <!-- Help intro -->
+  <text x="20" y="120" fill="#0F3460" font-size="18" font-weight="600">Welcome to NVH Source Locator</text>
+  <text x="20" y="145" fill="#556" font-size="12">Find a noise or vibration source using</text>
+  <text x="20" y="161" fill="#556" font-size="12">accelerometer signals and oscilloscope timing.</text>
+  
+  <!-- Tutorial step cards -->
+  <rect x="10" y="180" width="380" height="100" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <circle cx="40" cy="210" r="16" fill="#0F3460"/>
+  <text x="40" y="216" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">1</text>
+  <text x="70" y="210" fill="#0F3460" font-size="14" font-weight="600">What you need</text>
+  <text x="70" y="232" fill="#556" font-size="11">• Oscilloscope with 2+ channels</text>
+  <text x="70" y="248" fill="#556" font-size="11">• 2+ accelerometers + cables</text>
+  <text x="70" y="264" fill="#556" font-size="11">• Tape measure</text>
+  
+  <rect x="10" y="290" width="380" height="100" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <circle cx="40" cy="320" r="16" fill="#0F3460"/>
+  <text x="40" y="326" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">2</text>
+  <text x="70" y="320" fill="#0F3460" font-size="14" font-weight="600">Place sensors</text>
+  <text x="70" y="342" fill="#556" font-size="11">Attach with coupling gel or wax. Measure</text>
+  <text x="70" y="358" fill="#556" font-size="11">spacing precisely. Run cables away from</text>
+  <text x="70" y="374" fill="#556" font-size="11">power lines.</text>
+  
+  <rect x="10" y="400" width="380" height="100" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <circle cx="40" cy="430" r="16" fill="#0F3460"/>
+  <text x="40" y="436" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">3</text>
+  <text x="70" y="430" fill="#0F3460" font-size="14" font-weight="600">Calibrate</text>
+  <text x="70" y="452" fill="#556" font-size="11">Tap a known point outside A–B. Read Δt</text>
+  <text x="70" y="468" fill="#556" font-size="11">from scope, enter into app. Or pick</text>
+  <text x="70" y="484" fill="#556" font-size="11">your material from the Materials tab.</text>
+  
+  <rect x="10" y="510" width="380" height="100" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="8"/>
+  <circle cx="40" cy="540" r="16" fill="#0F3460"/>
+  <text x="40" y="546" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">4</text>
+  <text x="70" y="540" fill="#0F3460" font-size="14" font-weight="600">Measure event</text>
+  <text x="70" y="562" fill="#556" font-size="11">Trigger the noise event. Read which</text>
+  <text x="70" y="578" fill="#556" font-size="11">sensor heard it first and the Δt. Enter</text>
+  <text x="70" y="594" fill="#556" font-size="11">into Step 2. Read source location.</text>
+  
+  <!-- Best practices note -->
+  <rect x="10" y="625" width="380" height="60" fill="#FFF8E1" stroke="#F59E0B" stroke-width="1" rx="8"/>
+  <text x="20" y="645" fill="#78350F" font-size="11" font-weight="600">💡 Best results</text>
+  <text x="20" y="662" fill="#78350F" font-size="10">Repeat 3× and average. Calibrate same</text>
+  <text x="20" y="676" fill="#78350F" font-size="10">session &amp; temperature. Max scope sample rate.</text>
+</svg>

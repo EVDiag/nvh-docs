@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Referência Rápida</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Documentação</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Português</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html" class="active">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Referência Rápida</span>
+    <a href="quick-reference.pdf" download>📥 Baixar como PDF</a>
+    <a href="user-guide.html" class="alt-link">Guia do Usuário →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Documentação traduzida para sua conveniência — para a terminologia técnica mais precisa, a versão original em inglês é a autoritativa.
+  </div>
+
+  <h1 id="nvh-source-locator-referencia-rapida">NVH Source Locator — Referência Rápida</h1>
+<p>Um resumo de uma página. Para detalhes completos, veja <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="fluxo-principal-2-sensor-gratuito">Fluxo principal (2-Sensor, gratuito)</h2>
+<ol>
+<li><strong>Escolha um material</strong> — aba Materials → toque no seu material</li>
+<li><strong>Insira a calibração</strong> na aba 2-Sensor:</li>
+<li>Espaçamento entre sensores (<code>d</code>)</li>
+<li>Atraso de tempo de calibração (<code>tCal</code>) — preenchido automaticamente pelo material</li>
+<li><strong>Insira o evento</strong> — <code>tEvent</code> e Primeiro sensor (A ou B)</li>
+<li><strong>Leia o resultado</strong> — distância do sensor A</li>
+</ol>
+<p><img alt="Aba 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="todas-as-abas">Todas as abas</h2>
+<table>
+<thead>
+<tr>
+<th>Aba</th>
+<th>Saída</th>
+<th>Campos Pro?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Distância ao longo da linha</td>
+<td>Não (totalmente gratuito)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y em uma superfície</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y com LSQ sobre 3 pares</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y a partir de dois pares (A–B + C–D)</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y a partir de 4 sensores, posição livre</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z a partir de 4 sensores</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z a partir de até 6 sensores</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Seletor de velocidade do som</td>
+<td>Não</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Tutoriais</td>
+<td>Não</td>
+</tr>
+</tbody>
+</table>
+<p>As configurações ficam no ícone ⚙ (canto superior direito), não em uma aba.</p>
+<hr />
+<h2 id="compensacao-de-temperatura">Compensação de temperatura</h2>
+<p>Configurações → Temperatura de referência, intervalo <strong>-40 a +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metais</strong> têm compensação integrada (alumínio, aços, cobre, latão, bronze, titânio, magnésio, chumbo, zinco, níquel, tungstênio, ferro, ferro fundido)</li>
+<li>Materiais sem compensação mostram <strong>"ref only"</strong></li>
+<li><strong>Redefine para 20 °C a cada inicialização do aplicativo</strong> (início seguro padrão)</li>
+<li>Reproduzir uma entrada do histórico restaura sua temperatura original</li>
+</ul>
+<hr />
+<h2 id="atalhos">Atalhos</h2>
+<ul>
+<li><strong>Tocar em um material</strong> → preenche automaticamente todos os campos <code>tCal</code> em todas as abas</li>
+<li><strong>Manter pressionado +/-</strong> em campos numéricos → incremento rápido</li>
+<li><strong>Arrastar horizontalmente</strong> em um campo numérico → ajustar valores</li>
+<li><strong>Entrada vazia/negativa/inválida</strong> → ajusta para 0 ao perder o foco (campo de temperatura limita a -40/200)</li>
+<li><strong>Marcar material com estrela</strong> → move para o topo do seletor</li>
+</ul>
+<hr />
+<h2 id="modelo-pro">Modelo Pro</h2>
+<p><strong>Freemium com bloqueio por recurso</strong> ($19,99):
+- Gratuito: aba 2-Sensor totalmente funcional, sem limites
+- Pro: Outras abas acessíveis, mas com <strong>campos com cadeado dourado</strong> que mostram a paywall ao toque</p>
+<p>Pro desbloqueia: 3-Sensor até 3D+, materiais personalizados, backup/restauração, relatórios PDF, anotação de fotos.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="relatorios-e-backup">Relatórios e backup</h2>
+<p>Botão <strong>Imprimir resultado</strong> em qualquer tela de resultado → PDF com cabeçalho, entradas, resultado, visualização, foto (se tirada) e rodapé de temperatura (quando a compensação está ativa).</p>
+<p>Personalize o cabeçalho em Configurações → Cabeçalho do relatório.</p>
+<p><strong>Backup</strong>: Configurações → Backup → compartilhar em nuvem/e-mail.<br />
+<strong>Restaurar</strong>: Configurações → Restaurar → selecionar arquivo de backup.</p>
+<hr />
+<h2 id="restaurar-pro-em-um-novo-dispositivo">Restaurar Pro em um novo dispositivo</h2>
+<p>Mesma conta Google (Android) ou Apple ID (iOS) com que comprou → Configurações → <strong>Restaurar compra</strong> → desbloqueia em segundos.</p>
+<p>A restauração automática ocorre silenciosamente quando você retorna ao aplicativo depois de resgatar um código promocional externamente.</p>
+<hr />
+<h2 id="solucao-rapida-de-problemas">Solução rápida de problemas</h2>
+<ul>
+<li><strong>Resultado fora do intervalo?</strong> Verifique o sinal de <code>tEvent</code> / Primeiro sensor / espaçamento entre sensores</li>
+<li><strong>Material mais próximo errado?</strong> A temperatura de referência provavelmente foi definida acidentalmente — verifique as configurações</li>
+<li><strong>Falha ao restaurar compra?</strong> Verifique a mesma conta da loja; reinstale se persistir</li>
+<li><strong>Campo redefinido para 0?</strong> Entradas vazias/negativas se ajustam automaticamente ao perder o foco — reinsira o valor</li>
+<li><strong>Botões do stepper sumiram?</strong> Aparecem ao lado de campos com <code>data-step</code> — reinicie o aplicativo se estiverem faltando</li>
+<li><strong>Aviso de temperatura desatualizada?</strong> Redefine para 20 a cada inicialização — defina novamente para esta sessão</li>
+</ul>
+<hr />
+<p>Contato <code>support@evdiag.net</code> — inclua modelo do dispositivo, versão do aplicativo (Configurações → parte inferior) e descrição do que você tentou.</p>
+
+  <div class="docs-footer">
+    <p>
+      Desenvolvido pela EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Dúvidas? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

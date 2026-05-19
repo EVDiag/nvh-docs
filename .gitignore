@@ -1,0 +1,15 @@
+# Claude Code session-local settings
+.claude/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*~

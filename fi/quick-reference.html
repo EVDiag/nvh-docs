@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Pikaviite</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentaatio</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Suomi</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html" class="active">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Pikaviite</span>
+    <a href="quick-reference.pdf" download>📥 Lataa PDF-muodossa</a>
+    <a href="user-guide.html" class="alt-link">Käyttöopas →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentaatio on käännetty mukavuutesi vuoksi — tarkimman teknisen terminologian osalta englanninkielinen alkuperäisversio on määräävä.
+  </div>
+
+  <h1 id="nvh-source-locator-pikaviite">NVH Source Locator — Pikaviite</h1>
+<p>Yhden sivun yhteenveto. Täydet tiedot löytyvät <code>user-guide.md</code> -tiedostosta.</p>
+<hr />
+<h2 id="paaprosessi-2-sensor-ilmainen">Pääprosessi (2-Sensor, ilmainen)</h2>
+<ol>
+<li><strong>Valitse materiaali</strong> — Materials-välilehti → napauta materiaalia</li>
+<li><strong>Anna kalibrointi</strong> 2-Sensor-välilehdellä:</li>
+<li>Antureiden välimatka (<code>d</code>)</li>
+<li>Kalibrointiajan viive (<code>tCal</code>) — täyttyy automaattisesti materiaalista</li>
+<li><strong>Anna tapahtuma</strong> — <code>tEvent</code> ja Ensimmäinen anturi (A tai B)</li>
+<li><strong>Lue tulos</strong> — etäisyys anturista A</li>
+</ol>
+<p><img alt="2-Sensor välilehti" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="kaikki-valilehdet">Kaikki välilehdet</h2>
+<table>
+<thead>
+<tr>
+<th>Välilehti</th>
+<th>Tuloste</th>
+<th>Pro-kentät?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Etäisyys viivaa pitkin</td>
+<td>Ei (täysin ilmainen)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y pinnalla</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y LSQ:lla 3 parista</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y kahdesta parista (A–B + C–D)</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y 4 anturista, mikä tahansa sijainti</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z 4 anturista</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z enintään 6 anturista</td>
+<td>Kyllä</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Äänennopeuden valitsin</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Oppaat</td>
+<td>Ei</td>
+</tr>
+</tbody>
+</table>
+<p>Asetukset löytyvät ⚙-kuvakkeen alta (oikealla ylhäällä), ei välilehdeltä.</p>
+<hr />
+<h2 id="lampotilakompensointi">Lämpötilakompensointi</h2>
+<p>Asetukset → Vertailulämpötila, alue <strong>-40 - +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metallia</strong> sisältää sisäänrakennetun kompensoinnin (alumiini, teräkset, kupari, messinki, pronssi, titaani, magnesium, lyijy, sinkki, nikkeli, volframi, rauta, valurauta)</li>
+<li>Materiaalit ilman kompensointia näyttävät <strong>"ref only"</strong></li>
+<li><strong>Palautuu 20 °C:een jokaisella sovelluksen käynnistyksellä</strong> (oletusturvallinen aloitus)</li>
+<li>Historiamerkinnän toistaminen palauttaa sen alkuperäisen lämpötilan</li>
+</ul>
+<hr />
+<h2 id="pikanappaimet">Pikanäppäimet</h2>
+<ul>
+<li><strong>Napauta materiaalia</strong> → täyttää kaikki <code>tCal</code>-kentät automaattisesti kaikilla välilehdillä</li>
+<li><strong>Pidä +/-</strong> numerokentissä → nopea lisäys</li>
+<li><strong>Vedä vaakasuoraan</strong> numerokentällä → arvojen vierittäminen</li>
+<li><strong>Tyhjä/negatiivinen/virheellinen syöte</strong> → asettuu nollaan kohdistuksen menetyksessä (lämpötilakenttä lukittuu -40/200)</li>
+<li><strong>Merkitse materiaali tähdellä</strong> → siirtää sen valitsimen yläosaan</li>
+</ul>
+<hr />
+<h2 id="pro-malli">Pro-malli</h2>
+<p><strong>Ominaisuuslukittu freemium</strong> ($19,99):
+- Ilmainen: 2-Sensor välilehti täysin toimiva, ei rajoituksia
+- Pro: Muut välilehdet käytettävissä, mutta sisältävät <strong>kultaisia lukko-kenttiä</strong>, jotka näyttävät paywallin napautettaessa</p>
+<p>Pro avaa: 3-Sensor - 3D+, mukautetut materiaalit, varmuuskopiointi/palautus, PDF-raportit, valokuvan annotointi.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="raportit-ja-varmuuskopiointi">Raportit ja varmuuskopiointi</h2>
+<p><strong>Tulosta tulos</strong> -painike millä tahansa tulosnäytöllä → PDF, jossa on otsikko, syötteet, tulos, visualisointi, valokuva (jos otettu) ja lämpötila-alatunniste (kun kompensointi on aktiivinen).</p>
+<p>Mukauta otsikkoa kohdassa Asetukset → Raportin otsikko.</p>
+<p><strong>Varmuuskopiointi</strong>: Asetukset → Varmuuskopiointi → jaa pilveen/sähköpostiin.<br />
+<strong>Palautus</strong>: Asetukset → Palautus → valitse varmuuskopiotiedosto.</p>
+<hr />
+<h2 id="pron-palauttaminen-uuteen-laitteeseen">Pron palauttaminen uuteen laitteeseen</h2>
+<p>Sama Google-tili (Android) tai Apple ID (iOS), jolla ostit → Asetukset → <strong>Palauta ostos</strong> → avautuu sekunneissa.</p>
+<p>Automaattinen palautus tapahtuu hiljaa, kun palaat sovellukseen lunastettuasi promokoodin ulkopuolella.</p>
+<hr />
+<h2 id="nopea-vianetsinta">Nopea vianetsintä</h2>
+<ul>
+<li><strong>Tulos alueen ulkopuolella?</strong> Tarkista <code>tEvent</code>-merkki / Ensimmäinen anturi / antureiden välimatka</li>
+<li><strong>Väärä lähin materiaali?</strong> Vertailulämpötila on todennäköisesti vahingossa asetettu — tarkista Asetukset</li>
+<li><strong>Ostoksen palauttaminen epäonnistuu?</strong> Vahvista sama kaupan tili; asenna uudelleen, jos ongelma jatkuu</li>
+<li><strong>Kenttä asetettu nollaan?</strong> Tyhjät/negatiiviset syötteet asettuvat automaattisesti kohdistuksen menetyksessä — syötä arvo uudelleen</li>
+<li><strong>Lisäyspainikkeet poissa?</strong> Ne näkyvät <code>data-step</code>-kenttien vieressä — käynnistä sovellus uudelleen, jos puuttuvat</li>
+<li><strong>Vanhentunut lämpötilavaroitus?</strong> Palautuu 20:een jokaisella käynnistyksellä — aseta uudelleen tälle istunnolle</li>
+</ul>
+<hr />
+<p>Yhteystiedot <code>support@evdiag.net</code> — sisällytä laitemalli, sovelluksen versio (Asetukset → alaosa) ja kuvaus siitä, mitä yritit.</p>
+
+  <div class="docs-footer">
+    <p>
+      Kehittäjä: EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Kysymyksiä? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

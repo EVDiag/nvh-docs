@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="tl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — User Guide</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Documentation</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Filipino</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/user-guide.html">English</a>
+      <a href="../es/user-guide.html">Español</a>
+      <a href="../zh/user-guide.html">简体中文</a>
+      <a href="../hi/user-guide.html">हिन्दी</a>
+      <a href="../ar/user-guide.html">العربية</a>
+      <a href="../pt/user-guide.html">Português</a>
+      <a href="../ru/user-guide.html">Русский</a>
+      <a href="../fr/user-guide.html">Français</a>
+      <a href="../de/user-guide.html">Deutsch</a>
+      <a href="../ja/user-guide.html">日本語</a>
+      <a href="../it/user-guide.html">Italiano</a>
+      <a href="../ko/user-guide.html">한국어</a>
+      <a href="../tr/user-guide.html">Türkçe</a>
+      <a href="../vi/user-guide.html">Tiếng Việt</a>
+      <a href="../pl/user-guide.html">Polski</a>
+      <a href="../th/user-guide.html">ไทย</a>
+      <a href="../id/user-guide.html">Bahasa Indonesia</a>
+      <a href="../cs/user-guide.html">Čeština</a>
+      <a href="../sk/user-guide.html">Slovenčina</a>
+      <a href="../hu/user-guide.html">Magyar</a>
+      <a href="../sv/user-guide.html">Svenska</a>
+      <a href="../no/user-guide.html">Norsk</a>
+      <a href="../fi/user-guide.html">Suomi</a>
+      <a href="../ro/user-guide.html">Română</a>
+      <a href="../hr/user-guide.html">Hrvatski</a>
+      <a href="../bg/user-guide.html">Български</a>
+      <a href="../be/user-guide.html">Беларуская</a>
+      <a href="../fa/user-guide.html">فارسی</a>
+      <a href="../ms/user-guide.html">Bahasa Melayu</a>
+      <a href="../tl/user-guide.html" class="active">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>User Guide</span>
+    <a href="user-guide.pdf" download>📥 Download as PDF</a>
+    <a href="quick-reference.html" class="alt-link">Quick Reference →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
+  </div>
+
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — User Guide</h1>
+<p>NVH Source Locator is a measurement tool for locating noise and vibration sources using TDOA (Time Difference of Arrival) from accelerometer signals captured on an oscilloscope or measurement system.</p>
+<p>This guide covers all features. For a quick refresher, see <code>quick-reference.md</code>.</p>
+<blockquote>
+<p><strong>Note on screenshots</strong>: This document uses placeholder screenshots from the app. Replace each <code>../screenshots/*.png</code> with real device screenshots as you capture them.</p>
+</blockquote>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#how-it-works">How it works</a></li>
+<li><a href="#before-you-start">Before you start</a></li>
+<li><a href="#the-main-tabs">The main tabs</a></li>
+<li><a href="#2-sensor-mode">2-Sensor mode</a></li>
+<li><a href="#3-sensor-mode">3-Sensor mode</a></li>
+<li><a href="#pro-modes">Pro+ modes (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
+<li><a href="#the-materials-tab">The Materials tab</a></li>
+<li><a href="#temperature-compensation">Temperature compensation</a></li>
+<li><a href="#photo-annotation">Photo annotation</a></li>
+<li><a href="#reports">Reports</a></li>
+<li><a href="#backup-and-restore">Backup and restore</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#pro-features">Pro features</a></li>
+<li><a href="#help-tab-and-tutorials">Help tab and tutorials</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+<hr />
+<h2 id="how-it-works">How it works</h2>
+<p>When a noise source emits a sound or vibration, the wave travels through a material at a known speed. If you place two or more accelerometers on the material and measure when the wave arrives at each one, the time difference tells you where the source is.</p>
+<p>NVH Source Locator takes:</p>
+<ul>
+<li><strong>Calibration</strong>: the distance between sensors, and the time it takes a wave to travel that distance (used to compute the material's sound speed)</li>
+<li><strong>Event</strong>: the time difference between sensors detecting the noise/vibration event</li>
+</ul>
+<p>Then it calculates where on the structure the source is located.</p>
+<p>The more sensors you use, the more accurately you can pin down the source:</p>
+<ul>
+<li><strong>2 sensors</strong> → distance along a line</li>
+<li><strong>3 sensors</strong> → position on a 2D surface (X, Y)</li>
+<li><strong>4 sensors</strong> → position in 3D space (X, Y, Z)</li>
+</ul>
+<hr />
+<h2 id="before-you-start">Before you start</h2>
+<p>You'll need:</p>
+<ul>
+<li><strong>An oscilloscope or measurement system</strong> that can show you the time difference between accelerometer channels in microseconds (µs)</li>
+<li><strong>At least 2 accelerometers</strong> physically attached to the structure (more sensors = higher accuracy)</li>
+<li><strong>A way to measure distance</strong> between sensors (tape measure, calipers)</li>
+<li><strong>A way to trigger a wave</strong> at a known location for calibration (calibrated hammer impact, screwdriver tap, or other known signal)</li>
+</ul>
+<p><img alt="Home screen with 2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="the-main-tabs">The main tabs</h2>
+<p>The app has tabs along the top:</p>
+<p><img alt="Tab bar" src="../screenshots/02-tab-bar.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What it does</th>
+<th>When to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2-Sensor</strong></td>
+<td>1D source location along a line between 2 sensors</td>
+<td>Quick checks, beam-like structures. <strong>Fully free.</strong></td>
+</tr>
+<tr>
+<td><strong>3-Sensor</strong></td>
+<td>2D source location using 3 sensors in a triangle</td>
+<td>Most general use, panels and surfaces</td>
+</tr>
+<tr>
+<td><strong>3-Sen+</strong></td>
+<td>3-Sensor with over-determined least-squares solver</td>
+<td>More demanding measurements, noise-robust</td>
+</tr>
+<tr>
+<td><strong>4-Sensor</strong></td>
+<td>2D location using two pairs (A-B + C-D)</td>
+<td>Rectangular sensor layouts, cross-checking</td>
+</tr>
+<tr>
+<td><strong>4-Sen+</strong></td>
+<td>Advanced 2D mode, 4 sensors at any positions</td>
+<td>Non-rectangular geometries, full LSQ</td>
+</tr>
+<tr>
+<td><strong>3D</strong></td>
+<td>3D source location using 4 sensors with XYZ coords</td>
+<td>Complex structures in 3D space</td>
+</tr>
+<tr>
+<td><strong>3D+</strong></td>
+<td>3D with up to 6 sensors, over-determined LSQ</td>
+<td>Very complex geometries, maximum precision</td>
+</tr>
+<tr>
+<td><strong>Materials</strong></td>
+<td>Speed-of-sound library + custom materials</td>
+<td>Pick once per measurement session</td>
+</tr>
+<tr>
+<td><strong>Help</strong></td>
+<td>In-app tutorials and reference</td>
+<td>When you need a quick refresher</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Free vs Pro</strong>: The 2-Sensor tab is fully free. Other tabs are accessible but have specific input fields locked to Pro users (marked with a gold padlock badge). Tapping a locked field shows the Pro paywall.</p>
+</blockquote>
+<p>Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).</p>
+<hr />
+<h2 id="2-sensor-mode">2-Sensor mode</h2>
+<p>The simplest measurement: source location along a line between two accelerometers.</p>
+<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<h3 id="step-1-apply-a-material">Step 1: Apply a material</h3>
+<p>Tap the Materials tab. Pick the material your structure is made from (e.g., "Aluminium", "Steel, Mild (1020)"). The app uses the material's known speed of sound to populate the calibration time field automatically.</p>
+<p>If your structure's material isn't in the list, you can pick "Air" temporarily and override the calibration time manually in step 2.</p>
+<h3 id="step-2-enter-calibration-data">Step 2: Enter calibration data</h3>
+<p>On the 2-Sensor tab, you'll see two pair sections: <strong>Pair A–B</strong> and <strong>Pair A–C</strong> (only A–B is required if you only have 2 sensors).</p>
+<p>For each pair you fill in:</p>
+<ul>
+<li><strong>Sensor spacing</strong> (<code>d</code>): physical distance between sensors, in cm or inches (set in Settings)</li>
+<li><strong>Calibration time delay</strong> (<code>tCal</code>): time for a wave to travel between the sensors at the material's speed of sound — auto-filled when you pick a material, but you can override</li>
+</ul>
+<h3 id="step-3-enter-the-event-time">Step 3: Enter the event time</h3>
+<ul>
+<li><strong>Event time delay</strong> (<code>tEvent</code>): time difference between sensors detecting the noise event, in microseconds</li>
+<li><strong>First sensor</strong>: which sensor heard the event first (A or B)</li>
+</ul>
+<h3 id="step-4-read-the-result">Step 4: Read the result</h3>
+<p>The app shows the source position as a distance from sensor A:
+- Result = 0: source is at sensor A
+- Result = distance: source is at sensor B<br />
+- Result between: source is between them
+- Result outside: source is beyond one of the sensors (toast will warn)</p>
+<p>The result card shows both distances (from A, from B) and indicates which sensor is closer.</p>
+<h3 id="step-5-optional-annotate-a-photo">Step 5 (optional): Annotate a photo</h3>
+<p>Tap <strong>📷 Annotate photo</strong> to take a photo of your setup. The app overlays markers for sensors A, B and the source. Useful for reports.</p>
+<hr />
+<h2 id="3-sensor-mode">3-Sensor mode</h2>
+<p>Locates a source on a 2D plane using three sensors arranged in a triangle.</p>
+<p><img alt="3-Sensor tab" src="../screenshots/03-3sensor-tab.png" /></p>
+<h3 id="setup">Setup</h3>
+<p>Place three sensors on your structure forming a triangle. Equilateral, right-angle, or scalene — the app handles all geometries.</p>
+<h3 id="enter-the-data">Enter the data</h3>
+<p>In the <strong>Triangle side lengths</strong> section, enter the physical distance for all three sides (A–B, A–C, B–C).</p>
+<p>For each pair (A–B and A–C), enter:
+- <strong>tCal</strong>: calibration time (auto-fills from material)
+- <strong>tEvent</strong>: measured time difference for the noise event
+- <strong>First sensor</strong>: which heard it first</p>
+<h3 id="read-the-result">Read the result</h3>
+<p>The app shows the source position as X, Y coordinates relative to sensor A (sensor A at origin, sensor B on the X-axis). The visualization shows all three sensors and the source location.</p>
+<p><img alt="Triangle result" src="../screenshots/04-triangle-result.png" /></p>
+<hr />
+<h2 id="pro-modes">Pro+ modes</h2>
+<p>Several advanced tabs offer over-determined solvers and higher dimensionality:</p>
+<h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
+<p>Same triangle setup as 3-Sensor, but calibrate AND measure all three pairs (A–B, A–C, B–C). The solver uses all 3 TDOAs in a least-squares fit — more robust to measurement noise and anisotropic materials. Per-pair residuals are reported so you can spot inconsistent measurements.</p>
+<h3 id="4-sensor">4-Sensor</h3>
+<p>Place four sensors around the area:
+- <strong>A–B</strong> = horizontal pair (left/right sides)
+- <strong>C–D</strong> = vertical pair (top/bottom sides)</p>
+<p>Run the A–B pair first (horizontal), then C–D pair (vertical). The 2D map shows the intersection. Each pair is calibrated separately — useful when material varies across the structure.</p>
+<h3 id="4-sen-advanced-2d">4-Sen+ (Advanced 2D)</h3>
+<p>Four sensors at any positions (not forced rectangular). Pair A with each of B, C, D and calibrate separately. Over-determined least-squares solver averages out per-pair measurement noise and reports per-pair residuals.</p>
+<h3 id="3d">3D</h3>
+<p>Full 3D measurement with 4 sensors placed in 3D space. Enter each sensor's (X, Y, Z) coordinates, plus calibration and event times for each pair (A–B, A–C, A–D).</p>
+<h3 id="3d-pro">3D+ (Pro)</h3>
+<p>Like 3D but supports up to <strong>6 sensors</strong> (A through F) with over-determined LSQ. Maximum precision for complex 3D geometries.</p>
+<hr />
+<h2 id="the-materials-tab">The Materials tab</h2>
+<p>Library of common engineering materials with known speed of sound at 20 °C.</p>
+<p><img alt="Materials tab" src="../screenshots/05-materials-tab.png" /></p>
+<h3 id="material-list">Material list</h3>
+<p>The list includes air, fluids, rubbers, polymers, woods, glasses, and metals. Speeds range from ~340 m/s (air) to ~13,000 m/s (some metals at room temperature).</p>
+<h3 id="built-in-materials-with-temperature-compensation">Built-in materials with temperature compensation</h3>
+<p>14 commonly-used metals include temperature coefficient data. When the Reference temperature in Settings differs from 20 °C, the app automatically adjusts these materials' speeds:</p>
+<ul>
+<li>Aluminium</li>
+<li>Steel, Mild (1020)</li>
+<li>Stainless Steel (304)</li>
+<li>Iron (cast)</li>
+<li>Iron</li>
+<li>Copper</li>
+<li>Brass</li>
+<li>Bronze</li>
+<li>Titanium</li>
+<li>Magnesium</li>
+<li>Lead</li>
+<li>Zinc</li>
+<li>Nickel</li>
+<li>Tungsten</li>
+</ul>
+<p>Materials with compensation show two values in the picker: the <strong>compensated speed</strong> (large, prominent) and the <strong>reference speed at 20 °C</strong> (small, gray underneath).</p>
+<p>Materials without compensation show <strong>"ref only"</strong> in italic — their listed speed is used as-is regardless of temperature.</p>
+<h3 id="custom-materials">Custom materials</h3>
+<p>If you measure a calibration on the 2-Sensor tab, you can save the result as a custom material. After a successful 2-sensor measurement, look for the option to save the derived speed under a name of your choice.</p>
+<p>Custom materials store the in-situ measured speed; they never apply temperature compensation (the speed was already measured at the test temperature).</p>
+<h3 id="favorites">Favorites</h3>
+<p>Tap the star next to any material to mark it as a favorite. Favorites appear at the top of the list for quick access.</p>
+<h3 id="search">Search</h3>
+<p>Use the search bar at the top to filter materials by name. Search matches both English canonical names and translated display names.</p>
+<hr />
+<h2 id="temperature-compensation">Temperature compensation</h2>
+<p>The speed of sound in materials changes with temperature. In automotive NVH testing this matters: an engine bay at 80 °C, a cold-soaked cabin at -10 °C, or an exhaust manifold area at 200 °C all behave differently from room-temperature laboratory conditions.</p>
+<h3 id="setting-the-temperature">Setting the temperature</h3>
+<p>Open Settings (⚙ icon) → Reference temperature. Enter your test environment's temperature in °C (range -40 to +200).</p>
+<p><img alt="Settings panel" src="../screenshots/06-settings.png" /></p>
+<h3 id="what-happens-when-temperature-20-c">What happens when temperature ≠ 20 °C</h3>
+<ul>
+<li>Calibration time fields auto-fill with the temperature-adjusted speed</li>
+<li>The Materials picker shows the adjusted speed prominently</li>
+<li>A toast confirms: <em>"Aluminium applied (6,284 m/s @ 60 °C) — N pair(s) updated"</em></li>
+<li>The "Closest material" hint compares against temperature-adjusted speeds</li>
+<li>Saved history entries record the active temperature</li>
+<li>Reports include a footer line: <em>"Reference temperature: 60 °C, compensation applied"</em></li>
+</ul>
+<h3 id="reset-on-app-launch">Reset on app launch</h3>
+<p>The Reference temperature <strong>always resets to 20 °C</strong> when you launch the app. This prevents stale settings from a past measurement session silently affecting today's work. A small italic note in Settings reminds you of this behavior.</p>
+<p>If you want to replay a historical measurement at its original temperature, just tap the entry — the temperature is restored automatically.</p>
+<h3 id="materials-without-compensation">Materials without compensation</h3>
+<p>Most non-metal materials don't have reliable published temperature coefficients. The app shows a <strong>"ref only"</strong> badge for these — their listed speed is used regardless of the temperature setting. If you need accurate measurements at non-room temperatures for these materials, perform an in-situ calibration and save the result as a custom material.</p>
+<hr />
+<h2 id="photo-annotation">Photo annotation</h2>
+<p>After a successful calculation, tap the <strong>📷 Annotate photo</strong> button to overlay sensor and source markers on a photo of your setup.</p>
+<p><img alt="Photo annotation" src="../screenshots/08-photo-annotation.png" /></p>
+<h3 id="flow">Flow</h3>
+<ol>
+<li>Tap <strong>Annotate photo</strong> — the system camera opens</li>
+<li>Take a photo of your sensor placement</li>
+<li>The app loads the photo into the annotation overlay</li>
+<li>Sensor markers (A, B, C, D, E, F as applicable — up to 6 sensors) and the source marker auto-place based on your calculation</li>
+<li>Drag any marker to fine-tune positioning. As you adjust, the source position recomputes from the corrected sensor positions</li>
+<li>Tap <strong>Save</strong> to keep, or <strong>Retake</strong> to try again</li>
+</ol>
+<p>The annotated photo is included automatically in PDF reports.</p>
+<hr />
+<h2 id="reports">Reports</h2>
+<p>Tap the <strong>Print result</strong> button on any result screen to generate a formatted report.</p>
+<p><img alt="PDF report" src="../screenshots/09-pdf-report.png" /></p>
+<h3 id="report-contents">Report contents</h3>
+<ul>
+<li>Header (customizable in Settings → Report header)</li>
+<li>Measurement title and timestamp</li>
+<li>All input values in a clean table</li>
+<li>Calculation result</li>
+<li>Conclusion text</li>
+<li>Visualization (geometry plot)</li>
+<li>Annotated photo (if you took one)</li>
+<li>Temperature footer line (if compensation was active)</li>
+<li>Page number and credit line</li>
+</ul>
+<h3 id="output-format">Output format</h3>
+<ul>
+<li><strong>Android</strong>: native PDF generation, save to your phone or share</li>
+<li><strong>iOS</strong>: system print dialog → save as PDF, AirPrint, or share</li>
+</ul>
+<h3 id="customizing-the-header">Customizing the header</h3>
+<p>Settings → Report header. Enter your company name, lab name, project info, or whatever you want at the top of every report.</p>
+<hr />
+<h2 id="backup-and-restore">Backup and restore</h2>
+<p>Save all your custom materials, favorites, settings, and history to a single file. Transfer between devices.</p>
+<h3 id="backup">Backup</h3>
+<p>Settings → <strong>Backup</strong> → tap "Save backup file." The app generates a JSON file and opens your phone's share sheet. Save it to your cloud drive (Google Drive, iCloud, OneDrive), email it to yourself, or transfer it any way you like.</p>
+<h3 id="restore">Restore</h3>
+<p>Settings → <strong>Restore</strong> → pick the backup file from your phone's storage. The app imports custom materials, favorites, history, and settings.</p>
+<p>⚠️ <strong>Restore replaces your current data.</strong> If you have important measurements on the current device, back them up first before restoring from a different backup.</p>
+<hr />
+<h2 id="settings">Settings</h2>
+<p>Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a tab.</p>
+<p><img alt="Settings" src="../screenshots/06-settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Upgrade to Pro</strong></td>
+<td>Buy or learn about Pro features ($19.99)</td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>App display language (30 supported)</td>
+</tr>
+<tr>
+<td><strong>Theme</strong></td>
+<td>Light, Dark, or Auto (follow system)</td>
+</tr>
+<tr>
+<td><strong>Distance unit</strong></td>
+<td>cm or inches</td>
+</tr>
+<tr>
+<td><strong>Reference temperature</strong></td>
+<td>Active temperature for compensation, -40 to +200 °C</td>
+</tr>
+<tr>
+<td><strong>Report header</strong></td>
+<td>Custom text at the top of generated reports</td>
+</tr>
+<tr>
+<td><strong>Backup</strong></td>
+<td>Export all data to a file</td>
+</tr>
+<tr>
+<td><strong>Restore</strong></td>
+<td>Import data from a backup file</td>
+</tr>
+<tr>
+<td><strong>Restore purchase</strong></td>
+<td>Re-acquire Pro on a new device</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pro-features">Pro features</h2>
+<p>NVH Source Locator uses a <strong>feature-locked freemium model</strong>:</p>
+<ul>
+<li><strong>Free</strong>: 2-Sensor tab is fully functional with no limits</li>
+<li><strong>Pro</strong>: All other tabs have specific input fields locked. The paywall appears when a free user taps a locked field</li>
+</ul>
+<h3 id="whats-locked">What's locked</h3>
+<p>Pro-required fields are scattered across:
+- 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
+- 3D and 3D+ modes
+- Backup and Restore
+- PDF reports
+- Custom materials
+- Photo annotation</p>
+<p>A free user can OPEN any tab and SEE the interface. They just can't enter values into the Pro-locked input fields.</p>
+<p><img alt="Pro-locked field" src="../screenshots/11-pro-locked-field.png" /></p>
+<h3 id="the-paywall">The paywall</h3>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<p>When a free user taps a locked field, the paywall slides in showing:
+- App icon with PRO badge
+- Feature list
+- Unlock button with price ($19.99 default; may vary by region)
+- Promo code redemption (Android only — iOS uses Apple's separate Offer Code flow)
+- Optional promo link to community channels</p>
+<h3 id="purchasing-pro">Purchasing Pro</h3>
+<p>Tap any locked field, or tap <strong>Upgrade to Pro</strong> in Settings. Uses your platform's official payment system (Google Play on Android, Apple App Store on iOS).</p>
+<h3 id="restoring-pro-on-a-new-device">Restoring Pro on a new device</h3>
+<p>If you purchased on one device and want Pro on another (same account):</p>
+<ol>
+<li>Sign into the <strong>same</strong> Google account (Android) or Apple ID (iOS) you used to buy</li>
+<li>Open NVH Source Locator on the new device</li>
+<li>Go to Settings → <strong>Restore purchase</strong></li>
+<li>The app verifies with the platform's purchase records and unlocks Pro</li>
+</ol>
+<h3 id="auto-restore-on-launch">Auto-restore on launch</h3>
+<p>If you redeem a promo code in the Google Play Store or App Store while NVH Source Locator is running in the background, returning to the app automatically detects the new purchase and unlocks Pro — no manual Restore needed.</p>
+<h3 id="promo-code-redemption">Promo code redemption</h3>
+<p><strong>Android</strong>: a "Have a Google Play promo code?" button in the paywall opens the Google Play redemption flow with your code pre-filled.</p>
+<p><strong>iOS</strong>: App Store policy 3.1.1 requires redemption through Apple's official "Redeem code" flow. The Google Play button is hidden on iOS. Look for "Redeem App Store code" in Settings instead.</p>
+<hr />
+<h2 id="help-tab-and-tutorials">Help tab and tutorials</h2>
+<p>The <strong>Help</strong> tab includes in-app tutorials, best-practice guides, and reference information.</p>
+<p><img alt="Help tab" src="../screenshots/10-help-tab.png" /></p>
+<p>Topics covered:
+- What equipment you need
+- How to place sensors for best accuracy
+- Calibration tips
+- Common measurement scenarios
+- Tips for triangulation and 3D placements
+- Cable routing and signal quality</p>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">Calculation result is wrong or makes no sense</h3>
+<ol>
+<li>Check your calibration. Auto-filled <code>tCal</code> assumes published material speed — real-world materials vary. The most accurate calibration is in-situ: tap a known location and let the app derive the actual speed.</li>
+<li>Check the <strong>First sensor</strong> setting — which sensor heard the event first matters for the math.</li>
+<li>Verify your distance measurements. Errors of a few mm propagate.</li>
+</ol>
+<h3 id="toast-says-result-outside-range">Toast says "Result outside range"</h3>
+<p>The math says the source is not between your sensors. Possible causes:
+- The source actually is outside the sensor line/plane
+- One of your inputs is wrong
+- The calibration speed is too far off from reality</p>
+<h3 id="calc-speed-hint-shows-a-warning-color">Calc-speed hint shows a warning color</h3>
+<p>The implied speed of sound from your inputs is far from any common material (less than 50 m/s or more than 20,000 m/s). Check your inputs — likely a typo in tCal or distance.</p>
+<h3 id="material-picker-shows-different-speeds-than-expected">Material picker shows different speeds than expected</h3>
+<p>Check the Reference temperature in Settings. If non-20 °C, displayed speeds reflect temperature compensation. The app shows "ref X @ 20°C" underneath compensated speeds so you can verify.</p>
+<h3 id="history-entry-replays-with-different-result">History entry replays with different result</h3>
+<p>Old history entries created before app version 1.75 might not have stored the temperature. If you took the measurement at a non-20 °C temperature, replay will use the current setting. Manually set the temperature in Settings before replaying, OR re-measure.</p>
+<h3 id="photo-annotation-markers-not-where-i-expect">Photo annotation markers not where I expect</h3>
+<p>Markers auto-place based on input geometry. Drag them to adjust. Adjusting markers updates the source position in the photo overlay — but does NOT change the underlying calculation result.</p>
+<h3 id="backuprestore-fails">Backup/Restore fails</h3>
+<p>Make sure you're using a backup file generated by the same or newer version of the app. Older backup files might lack current data fields.</p>
+<h3 id="restore-purchase-says-no-purchase-found">Restore Purchase says "no purchase found"</h3>
+<ol>
+<li>Verify you're signed into the same store account that you used to purchase</li>
+<li>Verify the purchase wasn't refunded or expired</li>
+<li>Try uninstalling and reinstalling the app (purchase is tied to your store account, not the app installation)</li>
+<li>Contact support@evdiag.net if it persists</li>
+</ol>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">Numeric input snaps to 0 unexpectedly</h3>
+<p>By design: when you blur a numeric field (tap elsewhere), if it's empty, negative, or contains non-numeric text, it snaps to 0. Prevents silently broken calculations from accidentally cleared inputs. The temperature input is exempt (it clamps to -40/+200 instead).</p>
+<h3 id="need-more-help">Need more help</h3>
+<p>Contact <code>support@evdiag.net</code> with:
+- Your device model and OS version
+- The app version (Settings → bottom of page)
+- Description of what you tried
+- Screenshots if possible</p>
+<hr />
+<p><em>NVH Source Locator is developed by EVDiag. Visit https://evdiag.net for updates and resources.</em></p>
+
+  <div class="docs-footer">
+    <p>
+      Developed by EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Questions? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

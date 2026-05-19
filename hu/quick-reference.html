@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Gyors útmutató</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentáció</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Magyar</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html" class="active">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Gyors útmutató</span>
+    <a href="quick-reference.pdf" download>📥 Letöltés PDF-ként</a>
+    <a href="user-guide.html" class="alt-link">Felhasználói kézikönyv →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    A dokumentációt kényelmi célból fordítottuk — a legpontosabb műszaki terminológiához az eredeti angol verzió a mérvadó.
+  </div>
+
+  <h1 id="nvh-source-locator-gyors-utmutato">NVH Source Locator — Gyors útmutató</h1>
+<p>Egyoldalas összefoglaló. A teljes részletekért lásd <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="alapfolyamat-2-sensor-ingyenes">Alapfolyamat (2-Sensor, ingyenes)</h2>
+<ol>
+<li><strong>Válasszon anyagot</strong> — Materials fül → koppintson az anyagra</li>
+<li><strong>Adja meg a kalibrációt</strong> a 2-Sensor fülön:</li>
+<li>Érzékelők távolsága (<code>d</code>)</li>
+<li>Kalibrációs idő késleltetése (<code>tCal</code>) — automatikusan kitöltve az anyagból</li>
+<li><strong>Adja meg az eseményt</strong> — <code>tEvent</code> és Első érzékelő (A vagy B)</li>
+<li><strong>Olvassa le az eredményt</strong> — távolság az A érzékelőtől</li>
+</ol>
+<p><img alt="2-Sensor fül" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="osszes-ful">Összes fül</h2>
+<table>
+<thead>
+<tr>
+<th>Fül</th>
+<th>Kimenet</th>
+<th>Pro mezők?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Távolság a vonal mentén</td>
+<td>Nem (teljesen ingyenes)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y egy felületen</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y LSQ-val 3 páron</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y két párból (A–B + C–D)</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y 4 érzékelőből, tetszőleges pozíció</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z 4 érzékelőből</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z legfeljebb 6 érzékelőből</td>
+<td>Igen</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Hangsebesség választó</td>
+<td>Nem</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Oktatóanyagok</td>
+<td>Nem</td>
+</tr>
+</tbody>
+</table>
+<p>A beállítások a ⚙ ikon alatt találhatók (jobbra fent), nem fülként.</p>
+<hr />
+<h2 id="homerseklet-kompenzacio">Hőmérséklet-kompenzáció</h2>
+<p>Beállítások → Referencia hőmérséklet, tartomány <strong>-40 - +200 °C</strong>.</p>
+<ul>
+<li><strong>14 fém</strong> rendelkezik beépített kompenzációval (alumínium, acélok, réz, sárgaréz, bronz, titán, magnézium, ólom, cink, nikkel, volfrám, vas, öntöttvas)</li>
+<li>A kompenzáció nélküli anyagok a <strong>„ref only"</strong> feliratot mutatják</li>
+<li><strong>Minden app-indításkor 20 °C-ra áll vissza</strong> (alapértelmezett biztonságos indítás)</li>
+<li>Az előzményeb bejegyzés visszajátszása helyreállítja eredeti hőmérsékletét</li>
+</ul>
+<hr />
+<h2 id="gyorsbillentyuk">Gyorsbillentyűk</h2>
+<ul>
+<li><strong>Koppintson egy anyagra</strong> → automatikusan kitölti az összes <code>tCal</code> mezőt az összes fülön</li>
+<li><strong>Tartsa lenyomva +/-</strong> a számmezőkön → gyors növelés</li>
+<li><strong>Húzza vízszintesen</strong> egy számmezőn → értékek görgetése</li>
+<li><strong>Üres/negatív/érvénytelen bemenet</strong> → fókusz elvesztésekor 0-ra áll (a hőmérsékleti mező -40/200-ra korlátozódik)</li>
+<li><strong>Csillagozzon egy anyagot</strong> → a választó tetejére helyezi</li>
+</ul>
+<hr />
+<h2 id="pro-modell">Pro modell</h2>
+<p><strong>Funkció-zárolt freemium</strong> ($19,99):
+- Ingyenes: 2-Sensor fül teljesen funkcionális, korlátozások nélkül
+- Pro: Más fülek elérhetők, de <strong>arany lakat mezőket</strong> tartalmaznak, amelyek koppintáskor megjelenítik a paywallt</p>
+<p>A Pro feloldja: 3-Sensor-tól 3D+-ig, egyéni anyagok, biztonsági mentés/visszaállítás, PDF jelentések, fénykép-annotáció.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="jelentesek-es-biztonsagi-mentes">Jelentések és biztonsági mentés</h2>
+<p>Az <strong>Eredmény nyomtatása</strong> gomb bármely eredményképernyőn → PDF fejléccel, bemenetekkel, eredménnyel, vizualizációval, fényképpel (ha készült) és hőmérsékleti lábléccel (amikor a kompenzáció aktív).</p>
+<p>A fejlécet a Beállítások → Jelentés fejléce alatt szabhatja testre.</p>
+<p><strong>Biztonsági mentés</strong>: Beállítások → Biztonsági mentés → megosztás felhőre/e-mailre.<br />
+<strong>Visszaállítás</strong>: Beállítások → Visszaállítás → mentési fájl kiválasztása.</p>
+<hr />
+<h2 id="pro-visszaallitasa-uj-eszkozon">Pro visszaállítása új eszközön</h2>
+<p>Ugyanaz a Google fiók (Android) vagy Apple ID (iOS), amellyel megvásárolta → Beállítások → <strong>Vásárlás visszaállítása</strong> → másodperceken belül feloldja.</p>
+<p>Az automatikus visszaállítás csendben történik, amikor visszatér az alkalmazásba egy promóciós kód külső beváltása után.</p>
+<hr />
+<h2 id="gyors-hibaelharitas">Gyors hibaelhárítás</h2>
+<ul>
+<li><strong>Eredmény tartományon kívül?</strong> Ellenőrizze a <code>tEvent</code> előjelét / Első érzékelőt / érzékelők távolságát</li>
+<li><strong>Rossz legközelebbi anyag?</strong> A referencia hőmérséklet valószínűleg véletlenül van beállítva — ellenőrizze a Beállításokat</li>
+<li><strong>Vásárlás visszaállítása sikertelen?</strong> Ellenőrizze az azonos áruházi fiókot; ha továbbra is fennáll, telepítse újra</li>
+<li><strong>Mező 0-ra állítva?</strong> Az üres/negatív bemenetek automatikusan beállnak a fókusz elvesztésekor — adja meg újra az értéket</li>
+<li><strong>Eltűntek a léptetőgombok?</strong> A <code>data-step</code> mezők mellett jelennek meg — indítsa újra az alkalmazást, ha hiányoznak</li>
+<li><strong>Elavult hőmérséklet figyelmeztetés?</strong> Minden induláskor 20-ra áll vissza — állítsa be újra ehhez a munkamenethez</li>
+</ul>
+<hr />
+<p>Kapcsolat <code>support@evdiag.net</code> — adja meg az eszköz modelljét, az alkalmazás verzióját (Beállítások → alul) és a leírást arról, mit próbált.</p>
+
+  <div class="docs-footer">
+    <p>
+      Fejlesztette az EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Kérdések? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

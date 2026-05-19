@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — 사용자 가이드</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 문서</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 한국어</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/user-guide.html">English</a>
+      <a href="../es/user-guide.html">Español</a>
+      <a href="../zh/user-guide.html">简体中文</a>
+      <a href="../hi/user-guide.html">हिन्दी</a>
+      <a href="../ar/user-guide.html">العربية</a>
+      <a href="../pt/user-guide.html">Português</a>
+      <a href="../ru/user-guide.html">Русский</a>
+      <a href="../fr/user-guide.html">Français</a>
+      <a href="../de/user-guide.html">Deutsch</a>
+      <a href="../ja/user-guide.html">日本語</a>
+      <a href="../it/user-guide.html">Italiano</a>
+      <a href="../ko/user-guide.html" class="active">한국어</a>
+      <a href="../tr/user-guide.html">Türkçe</a>
+      <a href="../vi/user-guide.html">Tiếng Việt</a>
+      <a href="../pl/user-guide.html">Polski</a>
+      <a href="../th/user-guide.html">ไทย</a>
+      <a href="../id/user-guide.html">Bahasa Indonesia</a>
+      <a href="../cs/user-guide.html">Čeština</a>
+      <a href="../sk/user-guide.html">Slovenčina</a>
+      <a href="../hu/user-guide.html">Magyar</a>
+      <a href="../sv/user-guide.html">Svenska</a>
+      <a href="../no/user-guide.html">Norsk</a>
+      <a href="../fi/user-guide.html">Suomi</a>
+      <a href="../ro/user-guide.html">Română</a>
+      <a href="../hr/user-guide.html">Hrvatski</a>
+      <a href="../bg/user-guide.html">Български</a>
+      <a href="../be/user-guide.html">Беларуская</a>
+      <a href="../fa/user-guide.html">فارسی</a>
+      <a href="../ms/user-guide.html">Bahasa Melayu</a>
+      <a href="../tl/user-guide.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>사용자 가이드</span>
+    <a href="user-guide.pdf" download>📥 PDF로 다운로드</a>
+    <a href="quick-reference.html" class="alt-link">빠른 참조 →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    편의를 위해 번역된 문서입니다 — 가장 정확한 기술 용어를 위해서는 영어 원본이 권위 있는 자료입니다.
+  </div>
+
+  <h1 id="nvh-source-locator">NVH Source Locator — 사용자 가이드</h1>
+<p>NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된 가속도계 신호의 TDOA(Time Difference of Arrival)를 사용하여 소음 및 진동 소스를 찾는 측정 도구입니다.</p>
+<p>이 가이드는 모든 기능을 다룹니다. 빠른 복습은 <code>quick-reference.md</code>를 참조하세요.</p>
+<blockquote>
+<p><strong>스크린샷에 대한 참고 사항</strong>: 이 문서는 앱의 플레이스홀더 스크린샷을 사용합니다. 캡처한 후 각 <code>../screenshots/*.png</code>를 실제 장치 스크린샷으로 교체하세요.</p>
+</blockquote>
+<hr />
+<h2 id="_1">목차</h2>
+<ol>
+<li><a href="#how-it-works">작동 방식</a></li>
+<li><a href="#before-you-start">시작하기 전에</a></li>
+<li><a href="#the-main-tabs">주요 탭</a></li>
+<li><a href="#2-sensor-mode">2-Sensor 모드</a></li>
+<li><a href="#3-sensor-mode">3-Sensor 모드</a></li>
+<li><a href="#pro-modes">Pro+ 모드 (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
+<li><a href="#the-materials-tab">Materials 탭</a></li>
+<li><a href="#temperature-compensation">온도 보정</a></li>
+<li><a href="#photo-annotation">사진 주석</a></li>
+<li><a href="#reports">보고서</a></li>
+<li><a href="#backup-and-restore">백업 및 복원</a></li>
+<li><a href="#settings">설정</a></li>
+<li><a href="#pro-features">Pro 기능</a></li>
+<li><a href="#help-tab-and-tutorials">Help 탭 및 튜토리얼</a></li>
+<li><a href="#troubleshooting">문제 해결</a></li>
+</ol>
+<hr />
+<h2 id="_2">작동 방식</h2>
+<p>소음 소스가 소리나 진동을 방출하면 파동은 알려진 속도로 재료를 통과합니다. 재료에 가속도계 두 개 이상을 배치하고 파동이 각각에 도달하는 시점을 측정하면 시간 차이가 소스의 위치를 알려줍니다.</p>
+<p>NVH Source Locator는 다음을 수집합니다:</p>
+<ul>
+<li><strong>보정</strong>: 센서 간 거리와 파동이 해당 거리를 이동하는 데 걸리는 시간(재료의 음속을 계산하는 데 사용)</li>
+<li><strong>이벤트</strong>: 소음/진동 이벤트를 감지하는 센서 간의 시간 차이</li>
+</ul>
+<p>그런 다음 구조에서 소스가 있는 위치를 계산합니다.</p>
+<p>더 많은 센서를 사용할수록 소스를 더 정확하게 찾을 수 있습니다:</p>
+<ul>
+<li><strong>2개 센서</strong> → 선을 따른 거리</li>
+<li><strong>3개 센서</strong> → 2D 표면의 위치 (X, Y)</li>
+<li><strong>4개 센서</strong> → 3D 공간의 위치 (X, Y, Z)</li>
+</ul>
+<hr />
+<h2 id="_3">시작하기 전에</h2>
+<p>필요한 것:</p>
+<ul>
+<li><strong>마이크로초 (µs) 단위로 가속도계 채널 간의 시간 차이를 표시할 수 있는 오실로스코프 또는 측정 시스템</strong></li>
+<li><strong>구조에 물리적으로 부착된 최소 2개의 가속도계</strong> (센서가 많을수록 = 정확도가 높아짐)</li>
+<li><strong>센서 간 거리를 측정하는 방법</strong> (줄자, 캘리퍼스)</li>
+<li><strong>보정을 위해 알려진 위치에서 파동을 트리거하는 방법</strong> (보정된 망치 충격, 드라이버 탭, 또는 기타 알려진 신호)</li>
+</ul>
+<p><img alt="2-Sensor 탭이 있는 홈 화면" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="_4">주요 탭</h2>
+<p>앱 상단에 탭이 있습니다:</p>
+<p><img alt="탭 표시줄" src="../screenshots/02-tab-bar.png" /></p>
+<table>
+<thead>
+<tr>
+<th>탭</th>
+<th>기능</th>
+<th>사용 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2-Sensor</strong></td>
+<td>2개 센서 사이의 선을 따라 1D 소스 위치 측정</td>
+<td>빠른 확인, 빔 같은 구조. <strong>완전 무료.</strong></td>
+</tr>
+<tr>
+<td><strong>3-Sensor</strong></td>
+<td>삼각형의 3개 센서를 사용한 2D 소스 위치 측정</td>
+<td>가장 일반적인 사용, 패널 및 표면</td>
+</tr>
+<tr>
+<td><strong>3-Sen+</strong></td>
+<td>과결정 최소 제곱 솔버가 있는 3-Sensor</td>
+<td>더 까다로운 측정, 노이즈에 강함</td>
+</tr>
+<tr>
+<td><strong>4-Sensor</strong></td>
+<td>두 쌍 (A-B + C-D)을 사용한 2D 위치 측정</td>
+<td>직사각형 센서 레이아웃, 교차 확인</td>
+</tr>
+<tr>
+<td><strong>4-Sen+</strong></td>
+<td>고급 2D 모드, 임의의 위치에 4개 센서</td>
+<td>비직사각형 기하학, 전체 LSQ</td>
+</tr>
+<tr>
+<td><strong>3D</strong></td>
+<td>XYZ 좌표가 있는 4개 센서를 사용한 3D 소스 위치 측정</td>
+<td>3D 공간의 복잡한 구조</td>
+</tr>
+<tr>
+<td><strong>3D+</strong></td>
+<td>최대 6개 센서가 있는 3D, 과결정 LSQ</td>
+<td>매우 복잡한 기하학, 최대 정밀도</td>
+</tr>
+<tr>
+<td><strong>Materials</strong></td>
+<td>음속 라이브러리 + 사용자 정의 재료</td>
+<td>측정 세션당 한 번 선택</td>
+</tr>
+<tr>
+<td><strong>Help</strong></td>
+<td>앱 내 튜토리얼 및 참조</td>
+<td>빠른 복습이 필요할 때</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>무료 vs Pro</strong>: 2-Sensor 탭은 완전 무료입니다. 다른 탭은 접근 가능하지만 Pro 사용자에게 잠긴 특정 입력 필드(금색 자물쇠 배지로 표시됨)가 있습니다. 잠긴 필드를 탭하면 Pro paywall이 표시됩니다.</p>
+</blockquote>
+<p>설정은 오른쪽 상단의 ⚙ 톱니바퀴 아이콘을 통해 액세스합니다 (탭이 아님).</p>
+<hr />
+<h2 id="2-sensor">2-Sensor 모드</h2>
+<p>가장 간단한 측정: 두 개의 가속도계 사이의 선을 따라 소스 위치 측정.</p>
+<p><img alt="2-Sensor 탭" src="../screenshots/01-home-2sensor.png" /></p>
+<h3 id="1">1단계: 재료 적용</h3>
+<p>Materials 탭을 탭합니다. 구조가 만들어진 재료를 선택하세요(예: "알루미늄", "강철, Mild (1020)"). 앱은 재료의 알려진 음속을 사용하여 보정 시간 필드를 자동으로 채웁니다.</p>
+<p>구조의 재료가 목록에 없는 경우 일시적으로 "공기"를 선택하고 2단계에서 보정 시간을 수동으로 재정의할 수 있습니다.</p>
+<h3 id="2">2단계: 보정 데이터 입력</h3>
+<p>2-Sensor 탭에서 두 개의 쌍 섹션을 볼 수 있습니다: <strong>쌍 A–B</strong> 및 <strong>쌍 A–C</strong> (센서가 2개만 있는 경우 A–B만 필요).</p>
+<p>각 쌍에 대해 다음을 입력합니다:</p>
+<ul>
+<li><strong>센서 간격</strong> (<code>d</code>): 센서 간의 물리적 거리, cm 또는 인치 (설정에서 설정됨)</li>
+<li><strong>보정 시간 지연</strong> (<code>tCal</code>): 재료의 음속으로 파동이 센서 간을 이동하는 데 걸리는 시간 — 재료를 선택하면 자동으로 채워지지만 재정의할 수 있습니다</li>
+</ul>
+<h3 id="3">3단계: 이벤트 시간 입력</h3>
+<ul>
+<li><strong>이벤트 시간 지연</strong> (<code>tEvent</code>): 마이크로초 단위로 소음 이벤트를 감지하는 센서 간의 시간 차이</li>
+<li><strong>첫 번째 센서</strong>: 이벤트를 먼저 들은 센서 (A 또는 B)</li>
+</ul>
+<h3 id="4">4단계: 결과 읽기</h3>
+<p>앱은 센서 A로부터의 거리로 소스 위치를 표시합니다:
+- 결과 = 0: 소스가 센서 A에 있음
+- 결과 = 거리: 소스가 센서 B에 있음
+- 결과가 그 사이: 소스가 그 사이에 있음
+- 결과가 외부: 소스가 센서 중 하나를 넘어섭니다 (토스트가 경고함)</p>
+<p>결과 카드에는 두 거리(A에서, B에서)가 모두 표시되고 어느 센서가 더 가까운지 표시됩니다.</p>
+<h3 id="5">5단계 (선택 사항): 사진 주석</h3>
+<p>설정 사진을 찍으려면 <strong>📷 사진 주석</strong>을 탭합니다. 앱은 센서 A, B 및 소스에 대한 마커를 오버레이합니다. 보고서에 유용합니다.</p>
+<hr />
+<h2 id="3-sensor">3-Sensor 모드</h2>
+<p>삼각형에 배치된 세 개의 센서를 사용하여 2D 평면에서 소스를 찾습니다.</p>
+<p><img alt="3-Sensor 탭" src="../screenshots/03-3sensor-tab.png" /></p>
+<h3 id="_5">설정</h3>
+<p>삼각형을 형성하는 세 개의 센서를 구조에 배치합니다. 정삼각형, 직각, 또는 부등변 — 앱은 모든 기하학을 처리합니다.</p>
+<h3 id="_6">데이터 입력</h3>
+<p><strong>삼각형 변 길이</strong> 섹션에서 세 변 (A–B, A–C, B–C)에 대한 물리적 거리를 모두 입력합니다.</p>
+<p>각 쌍 (A–B 및 A–C)에 대해 다음을 입력합니다:
+- <strong>tCal</strong>: 보정 시간 (재료에서 자동 채워짐)
+- <strong>tEvent</strong>: 소음 이벤트에 대한 측정된 시간 차이
+- <strong>첫 번째 센서</strong>: 먼저 들은 것</p>
+<h3 id="_7">결과 읽기</h3>
+<p>앱은 센서 A에 대한 X, Y 좌표로 소스 위치를 표시합니다 (센서 A는 원점에, 센서 B는 X 축에). 시각화는 세 센서 모두와 소스 위치를 보여줍니다.</p>
+<p><img alt="삼각형 결과" src="../screenshots/04-triangle-result.png" /></p>
+<hr />
+<h2 id="pro">Pro+ 모드</h2>
+<p>여러 고급 탭은 과결정 솔버와 더 높은 차원을 제공합니다:</p>
+<h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
+<p>3-Sensor와 같은 삼각형 설정이지만 세 쌍 모두 (A–B, A–C, B–C)를 보정하고 측정합니다. 솔버는 최소 제곱 적합에서 세 개의 TDOA를 모두 사용합니다 — 측정 노이즈와 비등방성 재료에 더 강건합니다. 일관성 없는 측정을 발견할 수 있도록 쌍별 잔차가 보고됩니다.</p>
+<h3 id="4-sensor">4-Sensor</h3>
+<p>영역 주위에 네 개의 센서를 배치합니다:
+- <strong>A–B</strong> = 수평 쌍 (좌/우 측)
+- <strong>C–D</strong> = 수직 쌍 (상/하 측)</p>
+<p>A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니다. 2D 지도는 교차점을 보여줍니다. 각 쌍은 별도로 보정됩니다 — 재료가 구조 전체에 걸쳐 다양한 경우에 유용합니다.</p>
+<h3 id="4-sen-2d">4-Sen+ (고급 2D)</h3>
+<p>임의의 위치에 네 개의 센서 (직사각형으로 강제되지 않음). A를 B, C, D 각각과 쌍으로 만들고 별도로 보정합니다. 과결정 최소 제곱 솔버는 쌍별 측정 노이즈를 평균화하고 쌍별 잔차를 보고합니다.</p>
+<h3 id="3d">3D</h3>
+<p>3D 공간에 배치된 4개 센서로 완전한 3D 측정. 각 센서의 (X, Y, Z) 좌표와 각 쌍 (A–B, A–C, A–D)에 대한 보정 및 이벤트 시간을 입력합니다.</p>
+<h3 id="3d-pro">3D+ (Pro)</h3>
+<p>3D와 같지만 과결정 LSQ로 최대 <strong>6개 센서</strong> (A에서 F까지)를 지원합니다. 복잡한 3D 기하학을 위한 최대 정밀도.</p>
+<hr />
+<h2 id="materials">Materials 탭</h2>
+<p>20 °C에서 알려진 음속을 가진 일반 엔지니어링 재료 라이브러리.</p>
+<p><img alt="Materials 탭" src="../screenshots/05-materials-tab.png" /></p>
+<h3 id="_8">재료 목록</h3>
+<p>목록에는 공기, 유체, 고무, 폴리머, 나무, 유리, 금속이 포함됩니다. 속도는 ~340 m/s (공기)에서 ~13,000 m/s (실온의 일부 금속)까지 다양합니다.</p>
+<h3 id="_9">온도 보정이 있는 내장 재료</h3>
+<p>일반적으로 사용되는 14개 금속에는 온도 계수 데이터가 포함되어 있습니다. 설정의 참조 온도가 20 °C와 다를 경우 앱은 이러한 재료의 속도를 자동으로 조정합니다:</p>
+<ul>
+<li>알루미늄</li>
+<li>강철, Mild (1020)</li>
+<li>스테인리스 스틸 (304)</li>
+<li>철 (주물)</li>
+<li>철</li>
+<li>구리</li>
+<li>황동</li>
+<li>청동</li>
+<li>티타늄</li>
+<li>마그네슘</li>
+<li>납</li>
+<li>아연</li>
+<li>니켈</li>
+<li>텅스텐</li>
+</ul>
+<p>보정이 있는 재료는 선택기에 두 개의 값을 표시합니다: <strong>보정된 속도</strong> (큰, 두드러진)와 <strong>20 °C의 참조 속도</strong> (작은, 회색 아래에).</p>
+<p>보정이 없는 재료는 이탤릭체로 <strong>"ref only"</strong>를 표시합니다 — 표시된 속도는 온도와 관계없이 그대로 사용됩니다.</p>
+<h3 id="_10">사용자 정의 재료</h3>
+<p>2-Sensor 탭에서 보정을 측정하면 결과를 사용자 정의 재료로 저장할 수 있습니다. 성공적인 2-sensor 측정 후 선택한 이름으로 파생 속도를 저장하는 옵션을 찾으세요.</p>
+<p>사용자 정의 재료는 in-situ 측정된 속도를 저장합니다. 온도 보정을 적용하지 않습니다 (속도는 이미 시험 온도에서 측정되었습니다).</p>
+<h3 id="_11">즐겨찾기</h3>
+<p>재료 옆의 별표를 탭하여 즐겨찾기로 표시합니다. 즐겨찾기는 빠른 액세스를 위해 목록 상단에 표시됩니다.</p>
+<h3 id="_12">검색</h3>
+<p>상단의 검색 표시줄을 사용하여 재료를 이름으로 필터링합니다. 검색은 영어 표준 이름과 번역된 표시 이름 모두와 일치합니다.</p>
+<hr />
+<h2 id="_13">온도 보정</h2>
+<p>재료의 음속은 온도에 따라 변합니다. 자동차 NVH 테스트에서 이것은 중요합니다: 80 °C의 엔진실, -10 °C의 차가운 캐빈, 또는 200 °C의 배기 매니폴드 영역은 모두 실온의 실험실 조건과 다르게 동작합니다.</p>
+<h3 id="_14">온도 설정</h3>
+<p>설정 (⚙ 아이콘) → 참조 온도를 엽니다. 시험 환경의 온도를 °C로 입력합니다 (범위 -40에서 +200).</p>
+<p><img alt="설정 패널" src="../screenshots/06-settings.png" /></p>
+<h3 id="20-c">온도 ≠ 20 °C일 때 일어나는 일</h3>
+<ul>
+<li>보정 시간 필드는 온도 조정 속도로 자동 채워집니다</li>
+<li>Materials 선택기는 조정된 속도를 두드러지게 표시합니다</li>
+<li>토스트가 확인합니다: <em>"알루미늄 적용 (6,284 m/s @ 60 °C) — N 쌍 업데이트됨"</em></li>
+<li>"가장 가까운 재료" 힌트는 온도 조정된 속도와 비교합니다</li>
+<li>저장된 기록 항목은 활성 온도를 기록합니다</li>
+<li>보고서에는 푸터 줄이 포함됩니다: <em>"참조 온도: 60 °C, 보정 적용됨"</em></li>
+</ul>
+<h3 id="_15">앱 시작 시 재설정</h3>
+<p>앱을 시작할 때 참조 온도는 <strong>항상 20 °C로 재설정</strong>됩니다. 이는 과거 측정 세션의 오래된 설정이 오늘의 작업에 조용히 영향을 미치는 것을 방지합니다. 설정의 작은 이탤릭체 메모는 이 동작을 상기시켜 줍니다.</p>
+<p>원래 온도에서 기록 측정을 재생하려면 항목을 탭하기만 하면 됩니다 — 온도가 자동으로 복원됩니다.</p>
+<h3 id="_16">보정이 없는 재료</h3>
+<p>대부분의 비금속 재료에는 신뢰할 수 있는 게시된 온도 계수가 없습니다. 앱은 이러한 재료에 대해 <strong>"ref only"</strong> 배지를 표시합니다 — 표시된 속도는 온도 설정과 관계없이 사용됩니다. 이러한 재료에 대해 실온이 아닌 온도에서 정확한 측정이 필요한 경우 in-situ 보정을 수행하고 결과를 사용자 정의 재료로 저장하세요.</p>
+<hr />
+<h2 id="_17">사진 주석</h2>
+<p>성공적인 계산 후 <strong>📷 사진 주석</strong> 버튼을 탭하여 설정 사진에 센서와 소스 마커를 오버레이합니다.</p>
+<p><img alt="사진 주석" src="../screenshots/08-photo-annotation.png" /></p>
+<h3 id="_18">흐름</h3>
+<ol>
+<li><strong>사진 주석</strong> 탭 — 시스템 카메라가 열립니다</li>
+<li>센서 배치 사진 촬영</li>
+<li>앱이 사진을 주석 오버레이에 로드합니다</li>
+<li>센서 마커(해당되는 경우 A, B, C, D, E, F — 최대 6개 센서)와 소스 마커가 계산을 기반으로 자동 배치됩니다</li>
+<li>위치를 미세 조정하려면 임의의 마커를 드래그합니다. 조정하면 소스 위치는 수정된 센서 위치에서 다시 계산됩니다</li>
+<li><strong>저장</strong>을 탭하여 유지하거나 <strong>다시 촬영</strong>을 탭하여 다시 시도합니다</li>
+</ol>
+<p>주석이 달린 사진은 자동으로 PDF 보고서에 포함됩니다.</p>
+<hr />
+<h2 id="_19">보고서</h2>
+<p>형식이 지정된 보고서를 생성하려면 결과 화면의 <strong>결과 인쇄</strong> 버튼을 탭합니다.</p>
+<p><img alt="PDF 보고서" src="../screenshots/09-pdf-report.png" /></p>
+<h3 id="_20">보고서 내용</h3>
+<ul>
+<li>헤더 (설정 → 보고서 헤더에서 사용자 지정 가능)</li>
+<li>측정 제목 및 타임스탬프</li>
+<li>깔끔한 테이블의 모든 입력 값</li>
+<li>계산 결과</li>
+<li>결론 텍스트</li>
+<li>시각화 (기하 플롯)</li>
+<li>주석이 달린 사진 (촬영한 경우)</li>
+<li>온도 푸터 줄 (보정이 활성화된 경우)</li>
+<li>페이지 번호 및 크레딧 줄</li>
+</ul>
+<h3 id="_21">출력 형식</h3>
+<ul>
+<li><strong>Android</strong>: 기본 PDF 생성, 휴대폰에 저장 또는 공유</li>
+<li><strong>iOS</strong>: 시스템 인쇄 대화 상자 → PDF로 저장, AirPrint, 또는 공유</li>
+</ul>
+<h3 id="_22">헤더 사용자 지정</h3>
+<p>설정 → 보고서 헤더. 회사 이름, 연구실 이름, 프로젝트 정보, 또는 각 보고서 상단에 원하는 것을 입력합니다.</p>
+<hr />
+<h2 id="_23">백업 및 복원</h2>
+<p>모든 사용자 정의 재료, 즐겨찾기, 설정, 기록을 단일 파일에 저장합니다. 장치 간 전송.</p>
+<h3 id="_24">백업</h3>
+<p>설정 → <strong>백업</strong> → "백업 파일 저장"을 탭합니다. 앱이 JSON 파일을 생성하고 휴대폰의 공유 시트를 엽니다. 클라우드 드라이브(Google Drive, iCloud, OneDrive)에 저장하거나 자신에게 이메일로 보내거나 원하는 방법으로 전송합니다.</p>
+<h3 id="_25">복원</h3>
+<p>설정 → <strong>복원</strong> → 휴대폰 저장소에서 백업 파일을 선택합니다. 앱은 사용자 정의 재료, 즐겨찾기, 기록, 설정을 가져옵니다.</p>
+<p>⚠️ <strong>복원은 현재 데이터를 대체합니다.</strong> 현재 장치에 중요한 측정이 있는 경우 다른 백업에서 복원하기 전에 먼저 백업하세요.</p>
+<hr />
+<h2 id="_26">설정</h2>
+<p>오른쪽 상단의 ⚙ 톱니바퀴 아이콘을 통해 액세스합니다. 설정은 모달이며 탭이 아닙니다.</p>
+<p><img alt="설정" src="../screenshots/06-settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>설정</th>
+<th>제어하는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pro로 업그레이드</strong></td>
+<td>Pro 기능 구매 또는 학습 ($19.99)</td>
+</tr>
+<tr>
+<td><strong>언어</strong></td>
+<td>앱 표시 언어 (30개 지원)</td>
+</tr>
+<tr>
+<td><strong>테마</strong></td>
+<td>밝게, 어둡게, 또는 자동 (시스템 따르기)</td>
+</tr>
+<tr>
+<td><strong>거리 단위</strong></td>
+<td>cm 또는 인치</td>
+</tr>
+<tr>
+<td><strong>참조 온도</strong></td>
+<td>보정을 위한 활성 온도, -40에서 +200 °C</td>
+</tr>
+<tr>
+<td><strong>보고서 헤더</strong></td>
+<td>생성된 보고서 상단의 사용자 지정 텍스트</td>
+</tr>
+<tr>
+<td><strong>백업</strong></td>
+<td>모든 데이터를 파일로 내보내기</td>
+</tr>
+<tr>
+<td><strong>복원</strong></td>
+<td>백업 파일에서 데이터 가져오기</td>
+</tr>
+<tr>
+<td><strong>구매 복원</strong></td>
+<td>새 장치에서 Pro 재취득</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pro_1">Pro 기능</h2>
+<p>NVH Source Locator는 <strong>기능 잠금 freemium 모델</strong>을 사용합니다:</p>
+<ul>
+<li><strong>무료</strong>: 2-Sensor 탭은 제한 없이 완전히 작동합니다</li>
+<li><strong>Pro</strong>: 다른 모든 탭에는 특정 입력 필드가 잠겨 있습니다. 무료 사용자가 잠긴 필드를 탭하면 paywall이 나타납니다</li>
+</ul>
+<h3 id="_27">잠긴 항목</h3>
+<p>Pro 필수 필드는 다음에 흩어져 있습니다:
+- 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
+- 3D 및 3D+ 모드
+- 백업 및 복원
+- PDF 보고서
+- 사용자 정의 재료
+- 사진 주석</p>
+<p>무료 사용자는 모든 탭을 열고 인터페이스를 볼 수 있습니다. Pro 잠금 입력 필드에 값을 입력할 수 없을 뿐입니다.</p>
+<p><img alt="Pro 잠긴 필드" src="../screenshots/11-pro-locked-field.png" /></p>
+<h3 id="paywall">Paywall</h3>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<p>무료 사용자가 잠긴 필드를 탭하면 paywall이 슬라이드되어 다음을 표시합니다:
+- PRO 배지가 있는 앱 아이콘
+- 기능 목록
+- 가격이 있는 잠금 해제 버튼 ($19.99 기본; 지역에 따라 다를 수 있음)
+- 프로모 코드 사용 (Android만 해당 — iOS는 Apple의 별도 Offer Code 흐름을 사용)
+- 커뮤니티 채널에 대한 선택적 프로모 링크</p>
+<h3 id="pro_2">Pro 구매</h3>
+<p>잠긴 필드를 탭하거나 설정에서 <strong>Pro로 업그레이드</strong>를 탭합니다. 플랫폼의 공식 결제 시스템을 사용합니다 (Android의 Google Play, iOS의 Apple App Store).</p>
+<h3 id="pro_3">새 장치에서 Pro 복원</h3>
+<p>한 장치에서 구매하고 다른 장치(같은 계정)에서 Pro를 원하는 경우:</p>
+<ol>
+<li>구매에 사용한 <strong>동일한</strong> Google 계정 (Android) 또는 Apple ID (iOS)에 로그인합니다</li>
+<li>새 장치에서 NVH Source Locator를 엽니다</li>
+<li>설정 → <strong>구매 복원</strong>으로 이동합니다</li>
+<li>앱은 플랫폼의 구매 기록을 확인하고 Pro를 잠금 해제합니다</li>
+</ol>
+<h3 id="_28">시작 시 자동 복원</h3>
+<p>NVH Source Locator가 백그라운드에서 실행되는 동안 Google Play 스토어 또는 App Store에서 프로모 코드를 사용하면 앱으로 돌아갈 때 새 구매가 자동으로 감지되고 Pro가 잠금 해제됩니다 — 수동 복원이 필요하지 않습니다.</p>
+<h3 id="_29">프로모 코드 사용</h3>
+<p><strong>Android</strong>: paywall의 "Google Play 프로모 코드가 있으신가요?" 버튼은 코드가 미리 입력된 Google Play 사용 흐름을 엽니다.</p>
+<p><strong>iOS</strong>: App Store 정책 3.1.1은 Apple의 공식 "코드 사용" 흐름을 통한 사용을 요구합니다. Google Play 버튼은 iOS에 숨겨져 있습니다. 대신 설정에서 "App Store 코드 사용"을 찾으세요.</p>
+<hr />
+<h2 id="help">Help 탭 및 튜토리얼</h2>
+<p><strong>Help</strong> 탭에는 앱 내 튜토리얼, 모범 사례 가이드, 참조 정보가 포함되어 있습니다.</p>
+<p><img alt="Help 탭" src="../screenshots/10-help-tab.png" /></p>
+<p>다루는 주제:
+- 필요한 장비
+- 최고의 정확도를 위해 센서를 배치하는 방법
+- 보정 팁
+- 일반적인 측정 시나리오
+- 삼각측량 및 3D 배치를 위한 팁
+- 케이블 라우팅 및 신호 품질</p>
+<hr />
+<h2 id="_30">문제 해결</h2>
+<h3 id="_31">계산 결과가 잘못되었거나 의미가 없습니다</h3>
+<ol>
+<li>보정을 확인하세요. 자동 입력된 <code>tCal</code>은 게시된 재료 속도를 가정합니다 — 실제 재료는 다양합니다. 가장 정확한 보정은 in-situ입니다: 알려진 위치를 탭하고 앱이 실제 속도를 도출하도록 하세요.</li>
+<li><strong>첫 번째 센서</strong> 설정을 확인하세요 — 어떤 센서가 이벤트를 먼저 들었는지가 계산에 중요합니다.</li>
+<li>거리 측정을 확인하세요. 몇 mm의 오차가 전파됩니다.</li>
+</ol>
+<h3 id="toast">Toast가 "결과가 범위를 벗어남"이라고 말합니다</h3>
+<p>수학에 따르면 소스가 센서 사이에 있지 않습니다. 가능한 원인:
+- 소스가 실제로 센서 라인/평면 외부에 있습니다
+- 입력 중 하나가 잘못되었습니다
+- 보정 속도가 현실과 너무 멀리 떨어져 있습니다</p>
+<h3 id="_32">계산 속도 힌트가 경고 색상을 표시합니다</h3>
+<p>입력에서 함축된 음속은 일반적인 재료에서 멀리 떨어져 있습니다 (50 m/s 미만 또는 20,000 m/s 초과). 입력을 확인하세요 — tCal 또는 거리의 오타일 가능성이 높습니다.</p>
+<h3 id="materials_1">Materials 선택기가 예상과 다른 속도를 표시합니다</h3>
+<p>설정에서 참조 온도를 확인하세요. 20 °C가 아닌 경우 표시된 속도는 온도 보정을 반영합니다. 앱은 보정된 속도 아래에 "ref X @ 20°C"를 표시하므로 확인할 수 있습니다.</p>
+<h3 id="_33">기록 항목이 다른 결과로 재생됩니다</h3>
+<p>앱 버전 1.75 이전에 생성된 오래된 기록 항목은 온도를 저장하지 않았을 수 있습니다. 20 °C가 아닌 온도에서 측정한 경우 재생은 현재 설정을 사용합니다. 재생하기 전에 설정에서 수동으로 온도를 설정하거나 다시 측정하세요.</p>
+<h3 id="_34">사진 주석 마커가 예상한 위치에 없습니다</h3>
+<p>마커는 입력 기하학을 기반으로 자동 배치됩니다. 조정하려면 드래그하세요. 마커를 조정하면 사진 오버레이의 소스 위치가 업데이트됩니다 — 그러나 기본 계산 결과는 변경되지 않습니다.</p>
+<h3 id="_35">백업/복원 실패</h3>
+<p>앱의 동일하거나 최신 버전에서 생성된 백업 파일을 사용하는지 확인하세요. 오래된 백업 파일에는 현재 데이터 필드가 없을 수 있습니다.</p>
+<h3 id="_36">구매 복원이 "구매를 찾을 수 없음"이라고 말합니다</h3>
+<ol>
+<li>구매에 사용한 것과 동일한 스토어 계정에 로그인했는지 확인하세요</li>
+<li>구매가 환불되지 않았거나 만료되지 않았는지 확인하세요</li>
+<li>앱을 제거하고 다시 설치해 보세요 (구매는 앱 설치가 아닌 스토어 계정에 연결됨)</li>
+<li>문제가 지속되면 support@evdiag.net에 문의하세요</li>
+</ol>
+<h3 id="0">숫자 입력이 예기치 않게 0으로 스냅됩니다</h3>
+<p>설계에 따라: 숫자 필드에서 포커스를 잃을 때 (다른 곳을 탭) 비어 있거나 음수이거나 숫자가 아닌 텍스트를 포함하면 0으로 스냅됩니다. 실수로 지워진 입력으로 인한 조용히 깨진 계산을 방지합니다. 온도 입력은 예외입니다 (대신 -40/+200으로 클램프됨).</p>
+<h3 id="_37">더 많은 도움이 필요합니다</h3>
+<p>다음과 함께 <code>support@evdiag.net</code>에 문의하세요:
+- 기기 모델 및 OS 버전
+- 앱 버전 (설정 → 페이지 하단)
+- 시도한 내용의 설명
+- 가능하면 스크린샷</p>
+<hr />
+<p><em>NVH Source Locator는 EVDiag가 개발했습니다. 업데이트 및 리소스를 보려면 https://evdiag.net을 방문하세요.</em></p>
+
+  <div class="docs-footer">
+    <p>
+      개발자: EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      문의 사항? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

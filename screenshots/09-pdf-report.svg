@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" font-family="-apple-system,sans-serif">
+  <!-- A4-ratio paper -->
+  <rect x="0" y="0" width="400" height="560" fill="#FFFFFF" stroke="#999" stroke-width="1"/>
+  
+  <!-- Header -->
+  <text x="200" y="30" text-anchor="middle" fill="#0F3460" font-size="13" font-weight="600">EVDiag NVH Lab — Project X-7</text>
+  <line x1="40" y1="40" x2="360" y2="40" stroke="#0F3460" stroke-width="0.5"/>
+  
+  <!-- Title -->
+  <text x="200" y="65" text-anchor="middle" fill="#0F3460" font-size="16" font-weight="700">NVH Source Locator — Report</text>
+  <text x="200" y="82" text-anchor="middle" fill="#666" font-size="10">3-Sensor Triangulation · 2026-05-16 14:32</text>
+  
+  <!-- Inputs table -->
+  <text x="40" y="115" fill="#0F3460" font-size="11" font-weight="600">MEASUREMENT INPUTS</text>
+  <line x1="40" y1="120" x2="360" y2="120" stroke="#E5E7EB" stroke-width="0.5"/>
+  
+  <g font-size="10" fill="#333">
+    <text x="40" y="140">Sensor spacing A–B</text>
+    <text x="350" y="140" text-anchor="end" font-family="monospace">50.0 cm</text>
+    <text x="40" y="155">Sensor spacing A–C</text>
+    <text x="350" y="155" text-anchor="end" font-family="monospace">40.0 cm</text>
+    <text x="40" y="170">Sensor spacing B–C</text>
+    <text x="350" y="170" text-anchor="end" font-family="monospace">45.0 cm</text>
+    <text x="40" y="185">tCal A–B</text>
+    <text x="350" y="185" text-anchor="end" font-family="monospace">79.1 µs</text>
+    <text x="40" y="200">tCal A–C</text>
+    <text x="350" y="200" text-anchor="end" font-family="monospace">63.3 µs</text>
+    <text x="40" y="215">tEvent A–B</text>
+    <text x="350" y="215" text-anchor="end" font-family="monospace">8.2 µs (A first)</text>
+    <text x="40" y="230">tEvent A–C</text>
+    <text x="350" y="230" text-anchor="end" font-family="monospace">4.1 µs (A first)</text>
+    <text x="40" y="245">Material</text>
+    <text x="350" y="245" text-anchor="end" font-family="monospace">Aluminium (6,320 m/s)</text>
+  </g>
+  
+  <!-- Result -->
+  <rect x="40" y="265" width="320" height="60" fill="#F8FAFC" stroke="#0F3460" stroke-width="0.5"/>
+  <text x="50" y="285" fill="#0F3460" font-size="11" font-weight="600">RESULT</text>
+  <text x="50" y="308" fill="#0F3460" font-size="14" font-weight="700" font-family="monospace">X = 25.4 cm,  Y = 17.8 cm</text>
+  <text x="50" y="322" fill="#666" font-size="10">(relative to sensor A at origin)</text>
+  
+  <!-- Visualization -->
+  <text x="40" y="350" fill="#0F3460" font-size="11" font-weight="600">SENSOR LAYOUT</text>
+  <rect x="40" y="358" width="320" height="120" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="0.5"/>
+  
+  <polygon points="80,460 320,460 200,380" fill="rgba(0,180,216,0.06)" stroke="#00B4D8" stroke-width="1"/>
+  <circle cx="80" cy="460" r="6" fill="#0F3460"/>
+  <text x="80" y="474" text-anchor="middle" fill="#0F3460" font-size="9" font-weight="700">A</text>
+  <circle cx="320" cy="460" r="6" fill="#0F3460"/>
+  <text x="320" y="474" text-anchor="middle" fill="#0F3460" font-size="9" font-weight="700">B</text>
+  <circle cx="200" cy="380" r="6" fill="#0F3460"/>
+  <text x="200" y="376" text-anchor="middle" fill="#0F3460" font-size="9" font-weight="700">C</text>
+  <circle cx="170" cy="425" r="7" fill="rgba(0,180,216,0.3)"/>
+  <circle cx="170" cy="425" r="4" fill="#00B4D8"/>
+  <text x="170" y="415" text-anchor="middle" fill="#00B4D8" font-size="8" font-weight="600">SOURCE</text>
+  
+  <!-- Temperature footer (if compensation active) -->
+  <text x="200" y="500" text-anchor="middle" fill="#888" font-size="9" font-style="italic">Reference temperature: 60 °C, compensation applied</text>
+  
+  <!-- Document footer -->
+  <line x1="40" y1="525" x2="360" y2="525" stroke="#E5E7EB" stroke-width="0.5"/>
+  <text x="40" y="545" fill="#888" font-size="9">EVDiag NVH Source Locator — TDOA Calculator</text>
+  <text x="360" y="545" text-anchor="end" fill="#888" font-size="9">Page 1 / 1</text>
+</svg>

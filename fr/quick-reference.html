@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Référence Rapide</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Documentation</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Français</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html" class="active">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Référence Rapide</span>
+    <a href="quick-reference.pdf" download>📥 Télécharger en PDF</a>
+    <a href="user-guide.html" class="alt-link">Guide de l'utilisateur →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Documentation traduite pour votre commodité — pour la terminologie technique la plus précise, la version originale en anglais fait autorité.
+  </div>
+
+  <h1 id="nvh-source-locator-reference-rapide">NVH Source Locator — Référence Rapide</h1>
+<p>Un rappel sur une page. Pour les détails complets, voir <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="flux-principal-2-sensor-gratuit">Flux principal (2-Sensor, gratuit)</h2>
+<ol>
+<li><strong>Choisissez un matériau</strong> — onglet Materials → touchez votre matériau</li>
+<li><strong>Entrez la calibration</strong> dans l'onglet 2-Sensor :</li>
+<li>Espacement des capteurs (<code>d</code>)</li>
+<li>Délai de temps de calibration (<code>tCal</code>) — automatiquement rempli depuis le matériau</li>
+<li><strong>Entrez l'événement</strong> — <code>tEvent</code> et Premier capteur (A ou B)</li>
+<li><strong>Lisez le résultat</strong> — distance depuis le capteur A</li>
+</ol>
+<p><img alt="Onglet 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="tous-les-onglets">Tous les onglets</h2>
+<table>
+<thead>
+<tr>
+<th>Onglet</th>
+<th>Sortie</th>
+<th>Champs Pro ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Distance le long d'une ligne</td>
+<td>Non (entièrement gratuit)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y sur une surface</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y avec LSQ sur 3 paires</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y à partir de deux paires (A–B + C–D)</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y à partir de 4 capteurs, position libre</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z à partir de 4 capteurs</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z à partir de jusqu'à 6 capteurs</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Sélecteur de vitesse du son</td>
+<td>Non</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Tutoriels</td>
+<td>Non</td>
+</tr>
+</tbody>
+</table>
+<p>Les paramètres sont accessibles via l'icône ⚙ (en haut à droite), pas un onglet.</p>
+<hr />
+<h2 id="compensation-de-temperature">Compensation de température</h2>
+<p>Paramètres → Température de référence, plage <strong>-40 à +200 °C</strong>.</p>
+<ul>
+<li><strong>14 métaux</strong> ont une compensation intégrée (aluminium, aciers, cuivre, laiton, bronze, titane, magnésium, plomb, zinc, nickel, tungstène, fer, fonte)</li>
+<li>Les matériaux sans compensation affichent <strong>« ref only »</strong></li>
+<li><strong>Réinitialisé à 20 °C à chaque lancement</strong> (démarrage par défaut sécurisé)</li>
+<li>Rejouer une entrée d'historique restaure sa température d'origine</li>
+</ul>
+<hr />
+<h2 id="raccourcis">Raccourcis</h2>
+<ul>
+<li><strong>Toucher un matériau</strong> → remplit automatiquement tous les champs <code>tCal</code> dans tous les onglets</li>
+<li><strong>Maintenir +/-</strong> sur les champs numériques → incrémentation rapide</li>
+<li><strong>Glisser horizontalement</strong> sur un champ numérique → faire défiler les valeurs</li>
+<li><strong>Entrée vide/négative/invalide</strong> → se met à 0 à la perte de focus (le champ de température se limite à -40/200)</li>
+<li><strong>Marquer un matériau avec une étoile</strong> → le déplace en haut du sélecteur</li>
+</ul>
+<hr />
+<h2 id="modele-pro">Modèle Pro</h2>
+<p><strong>Freemium avec verrouillage par fonctionnalité</strong> (19,99 $) :
+- Gratuit : onglet 2-Sensor entièrement fonctionnel, sans limites
+- Pro : Autres onglets accessibles mais avec des <strong>champs verrouillés (cadenas doré)</strong> qui affichent la paywall au toucher</p>
+<p>Pro débloque : 3-Sensor jusqu'à 3D+, matériaux personnalisés, sauvegarde/restauration, rapports PDF, annotation de photos.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="rapports-et-sauvegarde">Rapports et sauvegarde</h2>
+<p>Bouton <strong>Imprimer le résultat</strong> sur n'importe quel écran de résultats → PDF avec en-tête, entrées, résultat, visualisation, photo (si prise) et pied de page de température (lorsque la compensation est active).</p>
+<p>Personnalisez l'en-tête dans Paramètres → En-tête de rapport.</p>
+<p><strong>Sauvegarde</strong> : Paramètres → Sauvegarde → partager vers le cloud/courriel.<br />
+<strong>Restaurer</strong> : Paramètres → Restaurer → sélectionnez le fichier de sauvegarde.</p>
+<hr />
+<h2 id="restaurer-pro-sur-un-nouvel-appareil">Restaurer Pro sur un nouvel appareil</h2>
+<p>Même compte Google (Android) ou Apple ID (iOS) que celui utilisé pour l'achat → Paramètres → <strong>Restaurer l'achat</strong> → débloqué en quelques secondes.</p>
+<p>La restauration automatique se produit silencieusement lorsque vous revenez à l'application après avoir échangé un code promo de manière externe.</p>
+<hr />
+<h2 id="depannage-rapide">Dépannage rapide</h2>
+<ul>
+<li><strong>Résultat hors plage ?</strong> Vérifiez le signe de <code>tEvent</code> / Premier capteur / espacement des capteurs</li>
+<li><strong>Matériau le plus proche incorrect ?</strong> La température de référence a probablement été définie accidentellement — vérifiez les paramètres</li>
+<li><strong>Échec de la restauration de l'achat ?</strong> Vérifiez le même compte de magasin ; réinstallez si cela persiste</li>
+<li><strong>Champ mis à 0 ?</strong> Les entrées vides/négatives se mettent automatiquement à 0 à la perte de focus — saisissez à nouveau la valeur</li>
+<li><strong>Boutons d'incrémentation manquants ?</strong> Ils apparaissent à côté des champs avec <code>data-step</code> — redémarrez l'application s'ils manquent</li>
+<li><strong>Avertissement de température obsolète ?</strong> Se réinitialise à 20 à chaque lancement — définissez à nouveau pour cette session</li>
+</ul>
+<hr />
+<p>Contact <code>support@evdiag.net</code> — incluez le modèle de l'appareil, la version de l'application (Paramètres → bas) et une description de ce que vous avez essayé.</p>
+
+  <div class="docs-footer">
+    <p>
+      Développé par EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Des questions ? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

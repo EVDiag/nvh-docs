@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Kurzanleitung</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentation</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Deutsch</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html" class="active">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Kurzanleitung</span>
+    <a href="quick-reference.pdf" download>📥 Als PDF herunterladen</a>
+    <a href="user-guide.html" class="alt-link">Benutzerhandbuch →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentation zu Ihrer Bequemlichkeit übersetzt — für die präziseste technische Terminologie ist die englische Originalversion maßgeblich.
+  </div>
+
+  <h1 id="nvh-source-locator-kurzanleitung">NVH Source Locator — Kurzanleitung</h1>
+<p>Eine einseitige Zusammenfassung. Vollständige Details siehe <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="grundablauf-2-sensor-kostenlos">Grundablauf (2-Sensor, kostenlos)</h2>
+<ol>
+<li><strong>Material auswählen</strong> — Materials-Registerkarte → tippen Sie auf Ihr Material</li>
+<li><strong>Kalibrierung eingeben</strong> in der 2-Sensor-Registerkarte:</li>
+<li>Sensorabstand (<code>d</code>)</li>
+<li>Kalibrierungszeit (<code>tCal</code>) — automatisch vom Material ausgefüllt</li>
+<li><strong>Ereignis eingeben</strong> — <code>tEvent</code> und Erster Sensor (A oder B)</li>
+<li><strong>Ergebnis ablesen</strong> — Abstand vom Sensor A</li>
+</ol>
+<p><img alt="2-Sensor Registerkarte" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="alle-registerkarten">Alle Registerkarten</h2>
+<table>
+<thead>
+<tr>
+<th>Registerkarte</th>
+<th>Ergebnis</th>
+<th>Pro-Felder?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Abstand entlang einer Linie</td>
+<td>Nein (vollständig kostenlos)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y auf einer Fläche</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y mit LSQ über 3 Paare</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y aus zwei Paaren (A–B + C–D)</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y aus 4 Sensoren, beliebige Position</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z aus 4 Sensoren</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z aus bis zu 6 Sensoren</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Schallgeschwindigkeitsauswahl</td>
+<td>Nein</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Tutorials</td>
+<td>Nein</td>
+</tr>
+</tbody>
+</table>
+<p>Die Einstellungen befinden sich hinter dem ⚙-Symbol (oben rechts), nicht als Registerkarte.</p>
+<hr />
+<h2 id="temperaturkompensation">Temperaturkompensation</h2>
+<p>Einstellungen → Referenztemperatur, Bereich <strong>-40 bis +200 °C</strong>.</p>
+<ul>
+<li><strong>14 Metalle</strong> verfügen über integrierte Kompensation (Aluminium, Stähle, Kupfer, Messing, Bronze, Titan, Magnesium, Blei, Zink, Nickel, Wolfram, Eisen, Gusseisen)</li>
+<li>Materialien ohne Kompensation zeigen <strong>„ref only"</strong> an</li>
+<li><strong>Wird bei jedem App-Start auf 20 °C zurückgesetzt</strong> (sicherer Standardstart)</li>
+<li>Beim Abspielen eines Verlaufseintrags wird die ursprüngliche Temperatur wiederhergestellt</li>
+</ul>
+<hr />
+<h2 id="tastenkurzel">Tastenkürzel</h2>
+<ul>
+<li><strong>Material antippen</strong> → füllt alle <code>tCal</code>-Felder in allen Registerkarten automatisch aus</li>
+<li><strong>+/− halten</strong> auf Zahlenfeldern → schnelles Inkrementieren</li>
+<li><strong>Horizontales Ziehen</strong> auf einem Zahlenfeld → Werte scrubben</li>
+<li><strong>Leere/negative/ungültige Eingabe</strong> → springt beim Verlassen auf 0 (Temperaturfeld klemmt auf -40/200)</li>
+<li><strong>Material mit Stern markieren</strong> → wird in der Auswahl nach oben verschoben</li>
+</ul>
+<hr />
+<h2 id="pro-modell">Pro-Modell</h2>
+<p><strong>Feature-gesperrtes Freemium-Modell</strong> ($19,99):
+- Kostenlos: 2-Sensor-Registerkarte voll funktionsfähig, ohne Einschränkungen
+- Pro: Andere Registerkarten zugänglich, aber mit <strong>Feldern mit goldenem Schloss</strong>, die beim Tippen die Paywall anzeigen</p>
+<p>Pro schaltet frei: 3-Sensor bis 3D+, benutzerdefinierte Materialien, Backup/Wiederherstellung, PDF-Berichte, Fotoannotation.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="berichte-backup">Berichte &amp; Backup</h2>
+<p>Die <strong>Ergebnis drucken</strong>-Schaltfläche auf einem beliebigen Ergebnisbildschirm → PDF mit Kopfzeile, Eingaben, Ergebnis, Visualisierung, Foto (falls aufgenommen) und Temperatur-Fußzeile (wenn Kompensation aktiv).</p>
+<p>Kopfzeile anpassen unter Einstellungen → Berichtskopfzeile.</p>
+<p><strong>Backup</strong>: Einstellungen → Backup → in Cloud/E-Mail teilen.<br />
+<strong>Wiederherstellen</strong>: Einstellungen → Wiederherstellen → Backup-Datei auswählen.</p>
+<hr />
+<h2 id="pro-auf-einem-neuen-gerat-wiederherstellen">Pro auf einem neuen Gerät wiederherstellen</h2>
+<p>Selbes Google-Konto (Android) oder Apple-ID (iOS), mit dem Sie gekauft haben → Einstellungen → <strong>Kauf wiederherstellen</strong> → wird innerhalb von Sekunden freigeschaltet.</p>
+<p>Auto-Wiederherstellung erfolgt im Hintergrund, wenn Sie nach dem externen Einlösen eines Promo-Codes zur App zurückkehren.</p>
+<hr />
+<h2 id="schnelle-fehlerbehebung">Schnelle Fehlerbehebung</h2>
+<ul>
+<li><strong>Ergebnis außerhalb des Bereichs?</strong> Vorzeichen von <code>tEvent</code> / Ersten Sensor / Sensorabstand überprüfen</li>
+<li><strong>Falsches nächstgelegenes Material?</strong> Referenztemperatur wahrscheinlich versehentlich gesetzt — Einstellungen überprüfen</li>
+<li><strong>Kauf wiederherstellen schlägt fehl?</strong> Selbes Store-Konto bestätigen; bei anhaltenden Problemen neu installieren</li>
+<li><strong>Feld auf 0 zurückgesetzt?</strong> Leere/negative Eingaben werden beim Verlassen automatisch auf 0 gesetzt — Wert erneut eingeben</li>
+<li><strong>Stepper-Schaltflächen weg?</strong> Sie erscheinen neben Feldern mit <code>data-step</code> — bei Fehlen App neu starten</li>
+<li><strong>Veraltete Temperaturwarnung?</strong> Wird bei jedem Start auf 20 zurückgesetzt — für diese Sitzung erneut einstellen</li>
+</ul>
+<hr />
+<p>Kontakt <code>support@evdiag.net</code> — geben Sie Gerätemodell, App-Version (Einstellungen → unten) und eine Beschreibung Ihres Vorgehens an.</p>
+
+  <div class="docs-footer">
+    <p>
+      Entwickelt von EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Fragen? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

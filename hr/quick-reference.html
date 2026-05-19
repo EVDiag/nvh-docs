@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Kratki priručnik</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentacija</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Hrvatski</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html" class="active">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Kratki priručnik</span>
+    <a href="quick-reference.pdf" download>📥 Preuzmi kao PDF</a>
+    <a href="user-guide.html" class="alt-link">Korisnički priručnik →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentacija prevedena radi vaše udobnosti — za najtočniju tehničku terminologiju mjerodavna je izvorna engleska verzija.
+  </div>
+
+  <h1 id="nvh-source-locator-kratki-prirucnik">NVH Source Locator — Kratki priručnik</h1>
+<p>Jednostranični pregled. Za pune detalje pogledajte <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="glavni-tijek-2-sensor-besplatno">Glavni tijek (2-Sensor, besplatno)</h2>
+<ol>
+<li><strong>Odaberite materijal</strong> — kartica Materials → dodirnite materijal</li>
+<li><strong>Unesite kalibraciju</strong> na kartici 2-Sensor:</li>
+<li>Razmak između senzora (<code>d</code>)</li>
+<li>Kašnjenje vremena kalibracije (<code>tCal</code>) — automatski popunjeno iz materijala</li>
+<li><strong>Unesite događaj</strong> — <code>tEvent</code> i Prvi senzor (A ili B)</li>
+<li><strong>Pročitajte rezultat</strong> — udaljenost od senzora A</li>
+</ol>
+<p><img alt="Kartica 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="sve-kartice">Sve kartice</h2>
+<table>
+<thead>
+<tr>
+<th>Kartica</th>
+<th>Izlaz</th>
+<th>Pro polja?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Udaljenost duž linije</td>
+<td>Ne (potpuno besplatno)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y na površini</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y s LSQ-om iz 3 para</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y iz dva para (A–B + C–D)</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y iz 4 senzora, bilo koja pozicija</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z iz 4 senzora</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z iz najviše 6 senzora</td>
+<td>Da</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Birač brzine zvuka</td>
+<td>Ne</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Vodiči</td>
+<td>Ne</td>
+</tr>
+</tbody>
+</table>
+<p>Postavke se nalaze pod ikonom ⚙ (gore desno), a ne kao kartica.</p>
+<hr />
+<h2 id="temperaturna-kompenzacija">Temperaturna kompenzacija</h2>
+<p>Postavke → Referentna temperatura, raspon <strong>-40 do +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metala</strong> ima ugrađenu kompenzaciju (aluminij, čelici, bakar, mjed, bronca, titan, magnezij, olovo, cink, nikal, volfram, željezo, lijevano željezo)</li>
+<li>Materijali bez kompenzacije prikazuju <strong>„ref only"</strong></li>
+<li><strong>Resetira se na 20 °C pri svakom pokretanju aplikacije</strong> (zadani siguran početak)</li>
+<li>Reprodukcija unosa povijesti vraća izvornu temperaturu</li>
+</ul>
+<hr />
+<h2 id="precaci">Prečaci</h2>
+<ul>
+<li><strong>Dodir na materijal</strong> → automatski popunjava sva <code>tCal</code> polja na svim karticama</li>
+<li><strong>Držite +/-</strong> na brojčanim poljima → brzo povećanje</li>
+<li><strong>Vodoravno povlačenje</strong> po brojčanom polju → mijenjanje vrijednosti</li>
+<li><strong>Prazan/negativan/neispravan unos</strong> → resetira se na 0 pri gubitku fokusa (polje temperature ograničeno na -40/200)</li>
+<li><strong>Označi materijal zvjezdicom</strong> → premješta ga na vrh izbornika</li>
+</ul>
+<hr />
+<h2 id="pro-model">Pro model</h2>
+<p><strong>Freemium s zaključanim značajkama</strong> ($19,99):
+- Besplatno: kartica 2-Sensor potpuno funkcionalna, bez ograničenja
+- Pro: Druge kartice dostupne, ali sa <strong>zlatnim katancima na poljima</strong> koji pri dodiru prikazuju paywall</p>
+<p>Pro otključava: 3-Sensor do 3D+, prilagođene materijale, sigurnosno kopiranje/vraćanje, PDF izvješća, označavanje fotografija.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="izvjesca-i-sigurnosno-kopiranje">Izvješća i sigurnosno kopiranje</h2>
+<p>Gumb <strong>Ispiši rezultat</strong> na bilo kojem zaslonu rezultata → PDF sa zaglavljem, ulazima, rezultatom, vizualizacijom, fotografijom (ako je snimljena) i podnožjem s temperaturom (kada je kompenzacija aktivna).</p>
+<p>Prilagodite zaglavlje u Postavke → Zaglavlje izvješća.</p>
+<p><strong>Sigurnosno kopiranje</strong>: Postavke → Sigurnosno kopiranje → dijeljenje u oblak/e-poštom.<br />
+<strong>Vraćanje</strong>: Postavke → Vraćanje → odaberite datoteku kopije.</p>
+<hr />
+<h2 id="vracanje-pro-a-na-novom-ureaju">Vraćanje Pro-a na novom uređaju</h2>
+<p>Isti Google račun (Android) ili Apple ID (iOS) s kojim ste kupili → Postavke → <strong>Vrati kupnju</strong> → otključava se za nekoliko sekundi.</p>
+<p>Automatsko vraćanje događa se tiho kada se vratite u aplikaciju nakon vanjske primjene promotivnog koda.</p>
+<hr />
+<h2 id="brzo-rjesavanje-problema">Brzo rješavanje problema</h2>
+<ul>
+<li><strong>Rezultat izvan raspona?</strong> Provjerite predznak <code>tEvent</code> / Prvi senzor / razmak senzora</li>
+<li><strong>Pogrešan najbliži materijal?</strong> Referentna temperatura vjerojatno je slučajno postavljena — provjerite postavke</li>
+<li><strong>Vraćanje kupnje ne uspijeva?</strong> Provjerite isti račun trgovine; ponovno instalirajte ako problem traje</li>
+<li><strong>Polje postavljeno na 0?</strong> Prazni/negativni unosi automatski se postavljaju pri gubitku fokusa — ponovno unesite vrijednost</li>
+<li><strong>Nestale tipke step-pera?</strong> Pojavljuju se uz polja s <code>data-step</code> — ponovno pokrenite aplikaciju ako nedostaju</li>
+<li><strong>Upozorenje o zastarjeloj temperaturi?</strong> Resetira se na 20 pri svakom pokretanju — ponovno postavite za ovu sesiju</li>
+</ul>
+<hr />
+<p>Kontakt <code>support@evdiag.net</code> — navedite model uređaja, verziju aplikacije (Postavke → dno) i opis onoga što ste pokušali.</p>
+
+  <div class="docs-footer">
+    <p>
+      Razvio EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Pitanja? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

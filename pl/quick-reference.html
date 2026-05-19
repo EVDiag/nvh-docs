@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Skrócona instrukcja</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentacja</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Polski</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html" class="active">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Skrócona instrukcja</span>
+    <a href="quick-reference.pdf" download>📥 Pobierz jako PDF</a>
+    <a href="user-guide.html" class="alt-link">Podręcznik użytkownika →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentacja przetłumaczona dla wygody — w przypadku najbardziej precyzyjnej terminologii technicznej rozstrzygająca jest wersja oryginalna w języku angielskim.
+  </div>
+
+  <h1 id="nvh-source-locator-skrocona-instrukcja">NVH Source Locator — Skrócona instrukcja</h1>
+<p>Jednostronicowe podsumowanie. Pełne szczegóły znajdziesz w <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="gowny-przepyw-2-sensor-bezpatny">Główny przepływ (2-Sensor, bezpłatny)</h2>
+<ol>
+<li><strong>Wybierz materiał</strong> — karta Materials → dotknij swojego materiału</li>
+<li><strong>Wprowadź kalibrację</strong> w karcie 2-Sensor:</li>
+<li>Odstęp między czujnikami (<code>d</code>)</li>
+<li>Opóźnienie czasu kalibracji (<code>tCal</code>) — wypełnione automatycznie z materiału</li>
+<li><strong>Wprowadź zdarzenie</strong> — <code>tEvent</code> i Pierwszy czujnik (A lub B)</li>
+<li><strong>Odczytaj wynik</strong> — odległość od czujnika A</li>
+</ol>
+<p><img alt="Karta 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="wszystkie-karty">Wszystkie karty</h2>
+<table>
+<thead>
+<tr>
+<th>Karta</th>
+<th>Wynik</th>
+<th>Pola Pro?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Odległość wzdłuż linii</td>
+<td>Nie (w pełni darmowe)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y na powierzchni</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y z LSQ na 3 parach</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y z dwóch par (A–B + C–D)</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y z 4 czujników, dowolna pozycja</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z z 4 czujników</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z z maksymalnie 6 czujników</td>
+<td>Tak</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Wybór prędkości dźwięku</td>
+<td>Nie</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Samouczki</td>
+<td>Nie</td>
+</tr>
+</tbody>
+</table>
+<p>Ustawienia znajdują się w ikonie ⚙ (prawy górny róg), a nie jako karta.</p>
+<hr />
+<h2 id="kompensacja-temperatury">Kompensacja temperatury</h2>
+<p>Ustawienia → Temperatura odniesienia, zakres <strong>od -40 do +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metali</strong> ma wbudowaną kompensację (aluminium, stale, miedź, mosiądz, brąz, tytan, magnez, ołów, cynk, nikiel, wolfram, żelazo, żeliwo)</li>
+<li>Materiały bez kompensacji wyświetlają <strong>„ref only"</strong></li>
+<li><strong>Resetuje się do 20 °C przy każdym uruchomieniu aplikacji</strong> (bezpieczny domyślny start)</li>
+<li>Odtworzenie wpisu z historii przywraca jego oryginalną temperaturę</li>
+</ul>
+<hr />
+<h2 id="skroty">Skróty</h2>
+<ul>
+<li><strong>Dotknij materiału</strong> → automatycznie wypełnia wszystkie pola <code>tCal</code> we wszystkich kartach</li>
+<li><strong>Przytrzymaj +/-</strong> na polach liczbowych → szybkie inkrementowanie</li>
+<li><strong>Przeciągnij poziomo</strong> na polu liczbowym → przewijanie wartości</li>
+<li><strong>Puste/ujemne/nieprawidłowe dane</strong> → przeskakuje do 0 po utracie focusu (pole temperatury jest ograniczone do -40/200)</li>
+<li><strong>Oznacz materiał gwiazdką</strong> → przenosi go na górę wyboru</li>
+</ul>
+<hr />
+<h2 id="model-pro">Model Pro</h2>
+<p><strong>Freemium z blokadą funkcji</strong> ($19,99):
+- Darmowy: karta 2-Sensor w pełni funkcjonalna, bez limitów
+- Pro: Pozostałe karty dostępne, ale z <strong>polami ze złotą kłódką</strong>, które wyświetlają paywall po dotknięciu</p>
+<p>Pro odblokowuje: od 3-Sensor do 3D+, własne materiały, kopię zapasową/przywracanie, raporty PDF, adnotacje zdjęć.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="raporty-i-kopia-zapasowa">Raporty i kopia zapasowa</h2>
+<p>Przycisk <strong>Drukuj wynik</strong> na dowolnym ekranie wyników → PDF z nagłówkiem, danymi wejściowymi, wynikiem, wizualizacją, zdjęciem (jeśli wykonano) i stopką temperatury (gdy kompensacja jest aktywna).</p>
+<p>Dostosuj nagłówek w Ustawienia → Nagłówek raportu.</p>
+<p><strong>Kopia zapasowa</strong>: Ustawienia → Kopia zapasowa → udostępnij do chmury/e-maila.<br />
+<strong>Przywróć</strong>: Ustawienia → Przywróć → wybierz plik kopii zapasowej.</p>
+<hr />
+<h2 id="przywroc-pro-na-nowym-urzadzeniu">Przywróć Pro na nowym urządzeniu</h2>
+<p>To samo konto Google (Android) lub Apple ID (iOS), z którego dokonano zakupu → Ustawienia → <strong>Przywróć zakup</strong> → odblokowuje w ciągu sekund.</p>
+<p>Automatyczne przywracanie odbywa się dyskretnie po powrocie do aplikacji po zewnętrznym wykorzystaniu kodu promocyjnego.</p>
+<hr />
+<h2 id="szybkie-rozwiazywanie-problemow">Szybkie rozwiązywanie problemów</h2>
+<ul>
+<li><strong>Wynik poza zakresem?</strong> Sprawdź znak <code>tEvent</code> / Pierwszy czujnik / odstęp między czujnikami</li>
+<li><strong>Nieprawidłowy najbliższy materiał?</strong> Temperatura odniesienia prawdopodobnie została przypadkowo ustawiona — sprawdź ustawienia</li>
+<li><strong>Niepowodzenie przywracania zakupu?</strong> Sprawdź to samo konto sklepu; zainstaluj ponownie, jeśli problem nie ustąpi</li>
+<li><strong>Pole zresetowane do 0?</strong> Puste/ujemne dane są automatycznie ustawiane przy utracie focusu — wprowadź wartość ponownie</li>
+<li><strong>Brak przycisków steppera?</strong> Pojawiają się obok pól z <code>data-step</code> — uruchom ponownie aplikację, jeśli ich brakuje</li>
+<li><strong>Ostrzeżenie o nieaktualnej temperaturze?</strong> Resetuje się do 20 przy każdym uruchomieniu — ustaw ponownie dla tej sesji</li>
+</ul>
+<hr />
+<p>Kontakt <code>support@evdiag.net</code> — podaj model urządzenia, wersję aplikacji (Ustawienia → dół) i opis tego, co próbowałeś.</p>
+
+  <div class="docs-footer">
+    <p>
+      Stworzone przez EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Pytania? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

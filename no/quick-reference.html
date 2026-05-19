@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Hurtigreferanse</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentasjon</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Norsk</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html" class="active">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Hurtigreferanse</span>
+    <a href="quick-reference.pdf" download>📥 Last ned som PDF</a>
+    <a href="user-guide.html" class="alt-link">Brukerhåndbok →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentasjonen er oversatt for din bekvemmelighet — for den mest presise tekniske terminologien er den engelske originalversjonen avgjørende.
+  </div>
+
+  <h1 id="nvh-source-locator-hurtigreferanse">NVH Source Locator — Hurtigreferanse</h1>
+<p>En sammendrag på én side. For fullstendige detaljer, se <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="hovedflyt-2-sensor-gratis">Hovedflyt (2-Sensor, gratis)</h2>
+<ol>
+<li><strong>Velg et materiale</strong> — Materials-fanen → trykk på materialet ditt</li>
+<li><strong>Skriv inn kalibrering</strong> i 2-Sensor-fanen:</li>
+<li>Sensoravstand (<code>d</code>)</li>
+<li>Kalibreringstidsforsinkelse (<code>tCal</code>) — fylles automatisk ut fra materialet</li>
+<li><strong>Skriv inn hendelse</strong> — <code>tEvent</code> og Første sensor (A eller B)</li>
+<li><strong>Les resultatet</strong> — avstand fra sensor A</li>
+</ol>
+<p><img alt="2-Sensor fane" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="alle-faner">Alle faner</h2>
+<table>
+<thead>
+<tr>
+<th>Fane</th>
+<th>Utgang</th>
+<th>Pro-felter?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Avstand langs linje</td>
+<td>Nei (helt gratis)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y på en flate</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y med LSQ over 3 par</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y fra to par (A–B + C–D)</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y fra 4 sensorer, vilkårlig posisjon</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z fra 4 sensorer</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z fra opptil 6 sensorer</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Lydhastighetsvelger</td>
+<td>Nei</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Veiledninger</td>
+<td>Nei</td>
+</tr>
+</tbody>
+</table>
+<p>Innstillinger finnes under ⚙-ikonet (øverst til høyre), ikke som en fane.</p>
+<hr />
+<h2 id="temperaturkompensasjon">Temperaturkompensasjon</h2>
+<p>Innstillinger → Referansetemperatur, område <strong>-40 til +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metaller</strong> har innebygd kompensasjon (aluminium, stål, kobber, messing, bronse, titan, magnesium, bly, sink, nikkel, wolfram, jern, støpejern)</li>
+<li>Materialer uten kompensasjon viser <strong>"ref only"</strong></li>
+<li><strong>Tilbakestilles til 20 °C ved hver appstart</strong> (standard sikker start)</li>
+<li>Avspilling av en historikkpost gjenoppretter dens opprinnelige temperatur</li>
+</ul>
+<hr />
+<h2 id="snarveier">Snarveier</h2>
+<ul>
+<li><strong>Trykk på et materiale</strong> → fyller automatisk ut alle <code>tCal</code>-felter i alle faner</li>
+<li><strong>Hold +/-</strong> på tallfelt → rask inkrementering</li>
+<li><strong>Dra horisontalt</strong> på et tallfelt → bla gjennom verdier</li>
+<li><strong>Tom/negativ/ugyldig inndata</strong> → settes til 0 ved fokustap (temperaturfeltet klemmes til -40/200)</li>
+<li><strong>Stjernemerk et materiale</strong> → flytter det til toppen av velgeren</li>
+</ul>
+<hr />
+<h2 id="pro-modell">Pro-modell</h2>
+<p><strong>Funksjonslåst freemium</strong> ($19,99):
+- Gratis: 2-Sensor-fanen er fullt funksjonell, uten begrensninger
+- Pro: Andre faner er tilgjengelige, men har <strong>felter med gylden hengelås</strong> som viser paywall ved trykk</p>
+<p>Pro låser opp: 3-Sensor til 3D+, egendefinerte materialer, sikkerhetskopiering/gjenoppretting, PDF-rapporter, fotoanmerkning.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="rapporter-og-sikkerhetskopiering">Rapporter og sikkerhetskopiering</h2>
+<p><strong>Skriv ut resultat</strong>-knappen på enhver resultatskjerm → PDF med overskrift, inndata, resultat, visualisering, bilde (hvis tatt) og temperaturbunntekst (når kompensasjon er aktiv).</p>
+<p>Tilpass overskriften i Innstillinger → Rapportoverskrift.</p>
+<p><strong>Sikkerhetskopiering</strong>: Innstillinger → Sikkerhetskopiering → del til skyen/e-post.<br />
+<strong>Gjenopprett</strong>: Innstillinger → Gjenopprett → velg sikkerhetskopifil.</p>
+<hr />
+<h2 id="gjenopprett-pro-pa-en-ny-enhet">Gjenopprett Pro på en ny enhet</h2>
+<p>Samme Google-konto (Android) eller Apple-ID (iOS) du kjøpte med → Innstillinger → <strong>Gjenopprett kjøp</strong> → låses opp innen sekunder.</p>
+<p>Automatisk gjenoppretting skjer stille når du returnerer til appen etter å ha innløst en kampanjekode eksternt.</p>
+<hr />
+<h2 id="rask-feilsking">Rask feilsøking</h2>
+<ul>
+<li><strong>Resultat utenfor område?</strong> Sjekk tegnet på <code>tEvent</code> / Første sensor / sensoravstand</li>
+<li><strong>Nærmeste materiale feil?</strong> Referansetemperaturen er sannsynligvis utilsiktet satt — sjekk Innstillinger</li>
+<li><strong>Gjenopprett kjøp mislykkes?</strong> Verifiser samme butikkonto; installer på nytt hvis det vedvarer</li>
+<li><strong>Felt satt til 0?</strong> Tomme/negative inndata settes automatisk ved fokustap — skriv inn verdien på nytt</li>
+<li><strong>Stegknapper borte?</strong> De vises ved siden av felter med <code>data-step</code> — start appen på nytt hvis de mangler</li>
+<li><strong>Foreldet temperaturadvarsel?</strong> Tilbakestilles til 20 ved hver start — sett på nytt for denne økten</li>
+</ul>
+<hr />
+<p>Kontakt <code>support@evdiag.net</code> — inkluder enhetsmodell, appversjon (Innstillinger → nederst) og en beskrivelse av hva du prøvde.</p>
+
+  <div class="docs-footer">
+    <p>
+      Utviklet av EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Spørsmål? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

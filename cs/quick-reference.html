@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Stručná příručka</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentace</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Čeština</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html" class="active">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Stručná příručka</span>
+    <a href="quick-reference.pdf" download>📥 Stáhnout jako PDF</a>
+    <a href="user-guide.html" class="alt-link">Uživatelská příručka →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentace přeložena pro vaše pohodlí — pro nejpřesnější technickou terminologii je rozhodující původní anglická verze.
+  </div>
+
+  <h1 id="nvh-source-locator-strucna-prirucka">NVH Source Locator — Stručná příručka</h1>
+<p>Jednostránkový přehled. Úplné podrobnosti naleznete v <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="hlavni-postup-2-sensor-zdarma">Hlavní postup (2-Sensor, zdarma)</h2>
+<ol>
+<li><strong>Vyberte materiál</strong> — záložka Materials → klepněte na materiál</li>
+<li><strong>Zadejte kalibraci</strong> v záložce 2-Sensor:</li>
+<li>Vzdálenost senzorů (<code>d</code>)</li>
+<li>Zpoždění kalibračního času (<code>tCal</code>) — automaticky vyplněno z materiálu</li>
+<li><strong>Zadejte událost</strong> — <code>tEvent</code> a První senzor (A nebo B)</li>
+<li><strong>Přečtěte si výsledek</strong> — vzdálenost od senzoru A</li>
+</ol>
+<p><img alt="Záložka 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="vsechny-zalozky">Všechny záložky</h2>
+<table>
+<thead>
+<tr>
+<th>Záložka</th>
+<th>Výstup</th>
+<th>Pole Pro?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Vzdálenost podél čáry</td>
+<td>Ne (zcela zdarma)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y na ploše</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y s LSQ ze 3 párů</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y ze dvou párů (A–B + C–D)</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y ze 4 senzorů, libovolná poloha</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z ze 4 senzorů</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z až ze 6 senzorů</td>
+<td>Ano</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Výběr rychlosti zvuku</td>
+<td>Ne</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Návody</td>
+<td>Ne</td>
+</tr>
+</tbody>
+</table>
+<p>Nastavení se nachází pod ikonou ⚙ (vpravo nahoře), nikoli jako záložka.</p>
+<hr />
+<h2 id="teplotni-kompenzace">Teplotní kompenzace</h2>
+<p>Nastavení → Referenční teplota, rozsah <strong>-40 až +200 °C</strong>.</p>
+<ul>
+<li><strong>14 kovů</strong> má vestavěnou kompenzaci (hliník, oceli, měď, mosaz, bronz, titan, hořčík, olovo, zinek, nikl, wolfram, železo, litina)</li>
+<li>Materiály bez kompenzace zobrazují <strong>„ref only"</strong></li>
+<li><strong>Při každém spuštění aplikace se vrátí na 20 °C</strong> (výchozí bezpečný start)</li>
+<li>Přehrání záznamu historie obnoví jeho původní teplotu</li>
+</ul>
+<hr />
+<h2 id="zkratky">Zkratky</h2>
+<ul>
+<li><strong>Klepnutí na materiál</strong> → automaticky vyplní všechna pole <code>tCal</code> ve všech záložkách</li>
+<li><strong>Podržení +/-</strong> na číselných polích → rychlé zvyšování</li>
+<li><strong>Vodorovné přetažení</strong> na číselném poli → posouvání hodnot</li>
+<li><strong>Prázdný/záporný/neplatný vstup</strong> → při ztrátě fokusu se nastaví na 0 (teplotní pole se omezí na -40/200)</li>
+<li><strong>Označení materiálu hvězdou</strong> → přesune ho na začátek výběru</li>
+</ul>
+<hr />
+<h2 id="model-pro">Model Pro</h2>
+<p><strong>Freemium s blokací funkcí</strong> ($19,99):
+- Zdarma: záložka 2-Sensor plně funkční, bez omezení
+- Pro: Ostatní záložky jsou přístupné, ale obsahují <strong>pole se zlatým zámkem</strong>, která po klepnutí zobrazí paywall</p>
+<p>Pro odemyká: 3-Sensor až 3D+, vlastní materiály, zálohu/obnovu, PDF zprávy, popisky fotografií.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="zpravy-a-zaloha">Zprávy a záloha</h2>
+<p>Tlačítko <strong>Tisk výsledku</strong> na libovolné obrazovce s výsledky → PDF s hlavičkou, vstupy, výsledkem, vizualizací, fotografií (pokud byla pořízena) a zápatím s teplotou (když je kompenzace aktivní).</p>
+<p>Hlavičku přizpůsobte v Nastavení → Hlavička zprávy.</p>
+<p><strong>Záloha</strong>: Nastavení → Záloha → sdílet do cloudu/e-mailu.<br />
+<strong>Obnova</strong>: Nastavení → Obnova → vybrat záložní soubor.</p>
+<hr />
+<h2 id="obnoveni-pro-na-novem-zarizeni">Obnovení Pro na novém zařízení</h2>
+<p>Stejný účet Google (Android) nebo Apple ID (iOS), se kterým jste si Pro koupili → Nastavení → <strong>Obnovit nákup</strong> → odemkne se během několika sekund.</p>
+<p>Automatické obnovení proběhne tiše, když se po externím uplatnění promo kódu vrátíte do aplikace.</p>
+<hr />
+<h2 id="rychle-reseni-problemu">Rychlé řešení problémů</h2>
+<ul>
+<li><strong>Výsledek mimo rozsah?</strong> Zkontrolujte znaménko <code>tEvent</code> / První senzor / vzdálenost senzorů</li>
+<li><strong>Špatný nejbližší materiál?</strong> Referenční teplota je pravděpodobně nastavená omylem — zkontrolujte Nastavení</li>
+<li><strong>Obnovení nákupu selhává?</strong> Ověřte stejný účet obchodu; pokud problém přetrvává, přeinstalujte</li>
+<li><strong>Pole nastaveno na 0?</strong> Prázdné/záporné vstupy se automaticky nastaví při ztrátě fokusu — zadejte hodnotu znovu</li>
+<li><strong>Tlačítka stepperu zmizela?</strong> Zobrazují se vedle polí s <code>data-step</code> — restartujte aplikaci, pokud chybí</li>
+<li><strong>Varování o zastaralé teplotě?</strong> Při každém spuštění se resetuje na 20 — pro tuto relaci znovu nastavte</li>
+</ul>
+<hr />
+<p>Kontakt <code>support@evdiag.net</code> — uveďte model zařízení, verzi aplikace (Nastavení → dole) a popis toho, co jste zkusili.</p>
+
+  <div class="docs-footer">
+    <p>
+      Vyvinuto společností EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Dotazy? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Podręcznik użytkownika</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Dokumentacja</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Polski</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/user-guide.html">English</a>
+      <a href="../es/user-guide.html">Español</a>
+      <a href="../zh/user-guide.html">简体中文</a>
+      <a href="../hi/user-guide.html">हिन्दी</a>
+      <a href="../ar/user-guide.html">العربية</a>
+      <a href="../pt/user-guide.html">Português</a>
+      <a href="../ru/user-guide.html">Русский</a>
+      <a href="../fr/user-guide.html">Français</a>
+      <a href="../de/user-guide.html">Deutsch</a>
+      <a href="../ja/user-guide.html">日本語</a>
+      <a href="../it/user-guide.html">Italiano</a>
+      <a href="../ko/user-guide.html">한국어</a>
+      <a href="../tr/user-guide.html">Türkçe</a>
+      <a href="../vi/user-guide.html">Tiếng Việt</a>
+      <a href="../pl/user-guide.html" class="active">Polski</a>
+      <a href="../th/user-guide.html">ไทย</a>
+      <a href="../id/user-guide.html">Bahasa Indonesia</a>
+      <a href="../cs/user-guide.html">Čeština</a>
+      <a href="../sk/user-guide.html">Slovenčina</a>
+      <a href="../hu/user-guide.html">Magyar</a>
+      <a href="../sv/user-guide.html">Svenska</a>
+      <a href="../no/user-guide.html">Norsk</a>
+      <a href="../fi/user-guide.html">Suomi</a>
+      <a href="../ro/user-guide.html">Română</a>
+      <a href="../hr/user-guide.html">Hrvatski</a>
+      <a href="../bg/user-guide.html">Български</a>
+      <a href="../be/user-guide.html">Беларуская</a>
+      <a href="../fa/user-guide.html">فارسی</a>
+      <a href="../ms/user-guide.html">Bahasa Melayu</a>
+      <a href="../tl/user-guide.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Podręcznik użytkownika</span>
+    <a href="user-guide.pdf" download>📥 Pobierz jako PDF</a>
+    <a href="quick-reference.html" class="alt-link">Skrócona instrukcja →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Dokumentacja przetłumaczona dla wygody — w przypadku najbardziej precyzyjnej terminologii technicznej rozstrzygająca jest wersja oryginalna w języku angielskim.
+  </div>
+
+  <h1 id="nvh-source-locator-podrecznik-uzytkownika">NVH Source Locator — Podręcznik użytkownika</h1>
+<p>NVH Source Locator to narzędzie pomiarowe do lokalizowania źródeł hałasu i drgań przy użyciu TDOA (Time Difference of Arrival) z sygnałów akcelerometrów rejestrowanych na oscyloskopie lub systemie pomiarowym.</p>
+<p>Ten przewodnik obejmuje wszystkie funkcje. Aby uzyskać szybkie przypomnienie, zobacz <code>quick-reference.md</code>.</p>
+<blockquote>
+<p><strong>Uwaga dotycząca zrzutów ekranu</strong>: Ten dokument używa zastępczych zrzutów ekranu z aplikacji. Zastąp każdy plik <code>../screenshots/*.png</code> rzeczywistymi zrzutami ekranu urządzenia, gdy je wykonasz.</p>
+</blockquote>
+<hr />
+<h2 id="spis-tresci">Spis treści</h2>
+<ol>
+<li><a href="#how-it-works">Jak to działa</a></li>
+<li><a href="#before-you-start">Przed rozpoczęciem</a></li>
+<li><a href="#the-main-tabs">Główne karty</a></li>
+<li><a href="#2-sensor-mode">Tryb 2-Sensor</a></li>
+<li><a href="#3-sensor-mode">Tryb 3-Sensor</a></li>
+<li><a href="#pro-modes">Tryby Pro+ (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
+<li><a href="#the-materials-tab">Karta Materials</a></li>
+<li><a href="#temperature-compensation">Kompensacja temperatury</a></li>
+<li><a href="#photo-annotation">Adnotacja zdjęć</a></li>
+<li><a href="#reports">Raporty</a></li>
+<li><a href="#backup-and-restore">Kopia zapasowa i przywracanie</a></li>
+<li><a href="#settings">Ustawienia</a></li>
+<li><a href="#pro-features">Funkcje Pro</a></li>
+<li><a href="#help-tab-and-tutorials">Karta Help i samouczki</a></li>
+<li><a href="#troubleshooting">Rozwiązywanie problemów</a></li>
+</ol>
+<hr />
+<h2 id="jak-to-dziaa">Jak to działa</h2>
+<p>Gdy źródło hałasu emituje dźwięk lub drgania, fala przemieszcza się przez materiał z określoną prędkością. Jeśli umieścisz dwa lub więcej akcelerometrów na materiale i zmierzysz, kiedy fala dociera do każdego z nich, różnica czasu wskaże, gdzie znajduje się źródło.</p>
+<p>NVH Source Locator pobiera:</p>
+<ul>
+<li><strong>Kalibrację</strong>: odległość między czujnikami i czas, jaki fala potrzebuje, aby przebyć tę odległość (używane do obliczenia prędkości dźwięku materiału)</li>
+<li><strong>Zdarzenie</strong>: różnicę czasu między czujnikami wykrywającymi zdarzenie hałasu/drgań</li>
+</ul>
+<p>Następnie oblicza, gdzie znajduje się źródło w strukturze.</p>
+<p>Im więcej czujników użyjesz, tym dokładniej zlokalizujesz źródło:</p>
+<ul>
+<li><strong>2 czujniki</strong> → odległość wzdłuż linii</li>
+<li><strong>3 czujniki</strong> → położenie na powierzchni 2D (X, Y)</li>
+<li><strong>4 czujniki</strong> → położenie w przestrzeni 3D (X, Y, Z)</li>
+</ul>
+<hr />
+<h2 id="przed-rozpoczeciem">Przed rozpoczęciem</h2>
+<p>Będziesz potrzebować:</p>
+<ul>
+<li><strong>Oscyloskopu lub systemu pomiarowego</strong>, który może pokazać różnicę czasu między kanałami akcelerometru w mikrosekundach (µs)</li>
+<li><strong>Co najmniej 2 akcelerometrów</strong> fizycznie zamocowanych do struktury (więcej czujników = większa dokładność)</li>
+<li><strong>Sposób na pomiar odległości</strong> między czujnikami (miarka, suwmiarki)</li>
+<li><strong>Sposób na wywołanie fali</strong> w znanym miejscu do kalibracji (kalibrowane uderzenie młotka, stuknięcie śrubokrętem lub inny znany sygnał)</li>
+</ul>
+<p><img alt="Ekran główny z kartą 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="gowne-karty">Główne karty</h2>
+<p>Aplikacja ma karty u góry:</p>
+<p><img alt="Pasek kart" src="../screenshots/02-tab-bar.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Karta</th>
+<th>Co robi</th>
+<th>Kiedy używać</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2-Sensor</strong></td>
+<td>Lokalizacja źródła 1D wzdłuż linii między 2 czujnikami</td>
+<td>Szybkie sprawdzenia, struktury typu belka. <strong>W pełni darmowe.</strong></td>
+</tr>
+<tr>
+<td><strong>3-Sensor</strong></td>
+<td>Lokalizacja źródła 2D z użyciem 3 czujników w trójkącie</td>
+<td>Najczęstsze zastosowanie, panele i powierzchnie</td>
+</tr>
+<tr>
+<td><strong>3-Sen+</strong></td>
+<td>3-Sensor z nadokreślonym solverem najmniejszych kwadratów</td>
+<td>Bardziej wymagające pomiary, odporne na szum</td>
+</tr>
+<tr>
+<td><strong>4-Sensor</strong></td>
+<td>Lokalizacja 2D z użyciem dwóch par (A-B + C-D)</td>
+<td>Prostokątne układy czujników, weryfikacja krzyżowa</td>
+</tr>
+<tr>
+<td><strong>4-Sen+</strong></td>
+<td>Zaawansowany tryb 2D, 4 czujniki w dowolnych pozycjach</td>
+<td>Geometrie nieprostokątne, pełne LSQ</td>
+</tr>
+<tr>
+<td><strong>3D</strong></td>
+<td>Lokalizacja źródła 3D z użyciem 4 czujników ze współrzędnymi XYZ</td>
+<td>Złożone struktury w przestrzeni 3D</td>
+</tr>
+<tr>
+<td><strong>3D+</strong></td>
+<td>3D z maksymalnie 6 czujnikami, nadokreślone LSQ</td>
+<td>Bardzo złożone geometrie, maksymalna precyzja</td>
+</tr>
+<tr>
+<td><strong>Materials</strong></td>
+<td>Biblioteka prędkości dźwięku + materiały niestandardowe</td>
+<td>Wybierz raz na sesję pomiarową</td>
+</tr>
+<tr>
+<td><strong>Help</strong></td>
+<td>Samouczki w aplikacji i odniesienia</td>
+<td>Gdy potrzebujesz szybkiego przypomnienia</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Darmowe vs Pro</strong>: Karta 2-Sensor jest w pełni darmowa. Inne karty są dostępne, ale mają określone pola wejściowe zablokowane dla użytkowników Pro (oznaczone złotą plakietką kłódki). Dotknięcie zablokowanego pola pokazuje paywall Pro.</p>
+</blockquote>
+<p>Ustawienia są dostępne przez ikonę koła zębatego ⚙ w prawym górnym rogu (nie jest to karta).</p>
+<hr />
+<h2 id="tryb-2-sensor">Tryb 2-Sensor</h2>
+<p>Najprostszy pomiar: lokalizacja źródła wzdłuż linii między dwoma akcelerometrami.</p>
+<p><img alt="Karta 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<h3 id="krok-1-zastosuj-materia">Krok 1: Zastosuj materiał</h3>
+<p>Dotknij karty Materials. Wybierz materiał, z którego wykonana jest twoja struktura (np. „Aluminium", „Stal, Mild (1020)"). Aplikacja używa znanej prędkości dźwięku materiału, aby automatycznie wypełnić pole czasu kalibracji.</p>
+<p>Jeśli materiał twojej struktury nie znajduje się na liście, możesz tymczasowo wybrać „Powietrze" i ręcznie zastąpić czas kalibracji w kroku 2.</p>
+<h3 id="krok-2-wprowadz-dane-kalibracyjne">Krok 2: Wprowadź dane kalibracyjne</h3>
+<p>Na karcie 2-Sensor zobaczysz dwie sekcje par: <strong>Para A–B</strong> i <strong>Para A–C</strong> (tylko A–B jest wymagana, jeśli masz tylko 2 czujniki).</p>
+<p>Dla każdej pary wypełniasz:</p>
+<ul>
+<li><strong>Odstęp czujników</strong> (<code>d</code>): fizyczna odległość między czujnikami, w cm lub calach (ustawione w Ustawieniach)</li>
+<li><strong>Opóźnienie czasu kalibracji</strong> (<code>tCal</code>): czas potrzebny fali do przebycia odległości między czujnikami z prędkością dźwięku materiału — wypełniane automatycznie po wybraniu materiału, ale możesz nadpisać</li>
+</ul>
+<h3 id="krok-3-wprowadz-czas-zdarzenia">Krok 3: Wprowadź czas zdarzenia</h3>
+<ul>
+<li><strong>Opóźnienie czasu zdarzenia</strong> (<code>tEvent</code>): różnica czasu między czujnikami wykrywającymi zdarzenie hałasu, w mikrosekundach</li>
+<li><strong>Pierwszy czujnik</strong>: który czujnik usłyszał zdarzenie jako pierwszy (A lub B)</li>
+</ul>
+<h3 id="krok-4-odczytaj-wynik">Krok 4: Odczytaj wynik</h3>
+<p>Aplikacja pokazuje położenie źródła jako odległość od czujnika A:
+- Wynik = 0: źródło jest przy czujniku A
+- Wynik = odległość: źródło jest przy czujniku B
+- Wynik pomiędzy: źródło jest między nimi
+- Wynik na zewnątrz: źródło jest poza jednym z czujników (toast ostrzeże)</p>
+<p>Karta wyniku pokazuje obie odległości (od A, od B) i wskazuje, który czujnik jest bliżej.</p>
+<h3 id="krok-5-opcjonalny-adnotacja-zdjecia">Krok 5 (opcjonalny): Adnotacja zdjęcia</h3>
+<p>Dotknij <strong>📷 Adnotuj zdjęcie</strong>, aby zrobić zdjęcie swojej konfiguracji. Aplikacja nakłada znaczniki dla czujników A, B i źródła. Przydatne dla raportów.</p>
+<hr />
+<h2 id="tryb-3-sensor">Tryb 3-Sensor</h2>
+<p>Lokalizuje źródło na płaszczyźnie 2D przy użyciu trzech czujników ułożonych w trójkąt.</p>
+<p><img alt="Karta 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
+<h3 id="konfiguracja">Konfiguracja</h3>
+<p>Umieść trzy czujniki na strukturze, tworząc trójkąt. Równoboczny, prostokątny lub różnoboczny — aplikacja obsługuje wszystkie geometrie.</p>
+<h3 id="wprowadz-dane">Wprowadź dane</h3>
+<p>W sekcji <strong>Długości boków trójkąta</strong> wprowadź fizyczne odległości dla wszystkich trzech boków (A–B, A–C, B–C).</p>
+<p>Dla każdej pary (A–B i A–C) wprowadź:
+- <strong>tCal</strong>: czas kalibracji (automatycznie wypełniany z materiału)
+- <strong>tEvent</strong>: zmierzona różnica czasu dla zdarzenia hałasu
+- <strong>Pierwszy czujnik</strong>: który usłyszał jako pierwszy</p>
+<h3 id="odczytaj-wynik">Odczytaj wynik</h3>
+<p>Aplikacja pokazuje położenie źródła jako współrzędne X, Y względem czujnika A (czujnik A w początku, czujnik B na osi X). Wizualizacja pokazuje wszystkie trzy czujniki i położenie źródła.</p>
+<p><img alt="Wynik trójkąta" src="../screenshots/04-triangle-result.png" /></p>
+<hr />
+<h2 id="tryby-pro">Tryby Pro+</h2>
+<p>Kilka zaawansowanych kart oferuje nadokreślone solvery i wyższą wymiarowość:</p>
+<h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
+<p>Ta sama konfiguracja trójkąta co 3-Sensor, ale skalibruj ORAZ zmierz wszystkie trzy pary (A–B, A–C, B–C). Solver używa wszystkich 3 TDOA w dopasowaniu najmniejszych kwadratów — bardziej odporny na szum pomiarowy i materiały anizotropowe. Reszty dla każdej pary są raportowane, dzięki czemu możesz zauważyć niespójne pomiary.</p>
+<h3 id="4-sensor">4-Sensor</h3>
+<p>Umieść cztery czujniki wokół obszaru:
+- <strong>A–B</strong> = para pozioma (strony lewa/prawa)
+- <strong>C–D</strong> = para pionowa (strony górna/dolna)</p>
+<p>Uruchom najpierw parę A–B (poziomą), a następnie parę C–D (pionową). Mapa 2D pokazuje przecięcie. Każda para jest kalibrowana osobno — przydatne, gdy materiał różni się w obrębie struktury.</p>
+<h3 id="4-sen-zaawansowany-2d">4-Sen+ (Zaawansowany 2D)</h3>
+<p>Cztery czujniki w dowolnych pozycjach (nie wymuszone prostokątne). Sparuj A z każdym z B, C, D i skalibruj osobno. Nadokreślony solver najmniejszych kwadratów uśrednia szum pomiarowy dla każdej pary i raportuje reszty dla każdej pary.</p>
+<h3 id="3d">3D</h3>
+<p>Pełny pomiar 3D z 4 czujnikami umieszczonymi w przestrzeni 3D. Wprowadź współrzędne (X, Y, Z) każdego czujnika oraz czasy kalibracji i zdarzenia dla każdej pary (A–B, A–C, A–D).</p>
+<h3 id="3d-pro">3D+ (Pro)</h3>
+<p>Jak 3D, ale obsługuje do <strong>6 czujników</strong> (A do F) z nadokreślonym LSQ. Maksymalna precyzja dla złożonych geometrii 3D.</p>
+<hr />
+<h2 id="karta-materials">Karta Materials</h2>
+<p>Biblioteka popularnych materiałów inżynieryjnych ze znaną prędkością dźwięku w 20 °C.</p>
+<p><img alt="Karta Materials" src="../screenshots/05-materials-tab.png" /></p>
+<h3 id="lista-materiaow">Lista materiałów</h3>
+<p>Lista obejmuje powietrze, płyny, gumy, polimery, drewno, szkła i metale. Prędkości wahają się od ~340 m/s (powietrze) do ~13 000 m/s (niektóre metale w temperaturze pokojowej).</p>
+<h3 id="wbudowane-materiay-z-kompensacja-temperatury">Wbudowane materiały z kompensacją temperatury</h3>
+<p>14 powszechnie używanych metali zawiera dane współczynnika temperatury. Gdy Temperatura odniesienia w Ustawieniach różni się od 20 °C, aplikacja automatycznie dostosowuje prędkości tych materiałów:</p>
+<ul>
+<li>Aluminium</li>
+<li>Stal, Mild (1020)</li>
+<li>Stal nierdzewna (304)</li>
+<li>Żelazo (lite)</li>
+<li>Żelazo</li>
+<li>Miedź</li>
+<li>Mosiądz</li>
+<li>Brąz</li>
+<li>Tytan</li>
+<li>Magnez</li>
+<li>Ołów</li>
+<li>Cynk</li>
+<li>Nikiel</li>
+<li>Wolfram</li>
+</ul>
+<p>Materiały z kompensacją pokazują dwie wartości w selektorze: <strong>prędkość skompensowaną</strong> (duża, wyróżniona) i <strong>prędkość odniesienia w 20 °C</strong> (mała, szara poniżej).</p>
+<p>Materiały bez kompensacji pokazują <strong>„ref only"</strong> kursywą — ich listowana prędkość jest używana bez zmian niezależnie od temperatury.</p>
+<h3 id="materiay-niestandardowe">Materiały niestandardowe</h3>
+<p>Jeśli zmierzysz kalibrację na karcie 2-Sensor, możesz zapisać wynik jako materiał niestandardowy. Po udanym pomiarze 2-sensor poszukaj opcji zapisania wyprowadzonej prędkości pod wybraną nazwą.</p>
+<p>Materiały niestandardowe przechowują prędkość zmierzoną in-situ; nigdy nie stosują kompensacji temperatury (prędkość była już zmierzona w temperaturze testowej).</p>
+<h3 id="ulubione">Ulubione</h3>
+<p>Dotknij gwiazdki obok dowolnego materiału, aby oznaczyć go jako ulubiony. Ulubione pojawiają się na górze listy dla szybkiego dostępu.</p>
+<h3 id="wyszukiwanie">Wyszukiwanie</h3>
+<p>Użyj paska wyszukiwania u góry, aby filtrować materiały według nazwy. Wyszukiwanie pasuje zarówno do angielskich nazw kanonicznych, jak i przetłumaczonych nazw wyświetlanych.</p>
+<hr />
+<h2 id="kompensacja-temperatury">Kompensacja temperatury</h2>
+<p>Prędkość dźwięku w materiałach zmienia się wraz z temperaturą. W testach NVH motoryzacyjnych to ma znaczenie: komora silnika w 80 °C, zimna kabina w -10 °C lub obszar kolektora wydechowego w 200 °C zachowują się inaczej niż w laboratoryjnych warunkach pokojowych.</p>
+<h3 id="ustawianie-temperatury">Ustawianie temperatury</h3>
+<p>Otwórz Ustawienia (ikona ⚙) → Temperatura odniesienia. Wprowadź temperaturę środowiska testowego w °C (zakres -40 do +200).</p>
+<p><img alt="Panel Ustawienia" src="../screenshots/06-settings.png" /></p>
+<h3 id="co-sie-dzieje-gdy-temperatura-20-c">Co się dzieje, gdy temperatura ≠ 20 °C</h3>
+<ul>
+<li>Pola czasu kalibracji są automatycznie wypełniane prędkością dostosowaną do temperatury</li>
+<li>Selektor Materials pokazuje dostosowaną prędkość w widoczny sposób</li>
+<li>Toast potwierdza: <em>„Aluminium zastosowane (6 284 m/s @ 60 °C) — zaktualizowano N par"</em></li>
+<li>Wskazówka „Najbliższy materiał" porównuje z prędkościami dostosowanymi do temperatury</li>
+<li>Zapisane wpisy historii rejestrują aktywną temperaturę</li>
+<li>Raporty zawierają linię stopki: <em>„Temperatura odniesienia: 60 °C, zastosowano kompensację"</em></li>
+</ul>
+<h3 id="reset-przy-uruchomieniu-aplikacji">Reset przy uruchomieniu aplikacji</h3>
+<p>Temperatura odniesienia <strong>zawsze resetuje się do 20 °C</strong> przy uruchomieniu aplikacji. Zapobiega to cichemu wpływaniu na dzisiejszą pracę nieaktualnych ustawień z poprzedniej sesji pomiarowej. Mała kursywna notatka w Ustawieniach przypomina o tym zachowaniu.</p>
+<p>Jeśli chcesz odtworzyć historyczny pomiar w jego pierwotnej temperaturze, po prostu dotknij wpisu — temperatura zostanie automatycznie przywrócona.</p>
+<h3 id="materiay-bez-kompensacji">Materiały bez kompensacji</h3>
+<p>Większość materiałów niemetalicznych nie ma wiarygodnych opublikowanych współczynników temperatury. Aplikacja pokazuje plakietkę <strong>„ref only"</strong> dla nich — ich listowana prędkość jest używana niezależnie od ustawienia temperatury. Jeśli potrzebujesz dokładnych pomiarów w temperaturach innych niż pokojowe dla tych materiałów, przeprowadź kalibrację in-situ i zapisz wynik jako materiał niestandardowy.</p>
+<hr />
+<h2 id="adnotacja-zdjec">Adnotacja zdjęć</h2>
+<p>Po udanym obliczeniu dotknij przycisku <strong>📷 Adnotuj zdjęcie</strong>, aby nałożyć znaczniki czujników i źródła na zdjęcie swojej konfiguracji.</p>
+<p><img alt="Adnotacja zdjęcia" src="../screenshots/08-photo-annotation.png" /></p>
+<h3 id="przebieg">Przebieg</h3>
+<ol>
+<li>Dotknij <strong>Adnotuj zdjęcie</strong> — otwiera się systemowa kamera</li>
+<li>Zrób zdjęcie umiejscowienia czujników</li>
+<li>Aplikacja ładuje zdjęcie do nakładki adnotacji</li>
+<li>Znaczniki czujników (A, B, C, D, E, F w zależności od potrzeb — do 6 czujników) i znacznik źródła są automatycznie umieszczane na podstawie twojego obliczenia</li>
+<li>Przeciągnij dowolny znacznik, aby dostroić położenie. Podczas dostrajania pozycja źródła jest ponownie obliczana z poprawionych pozycji czujników</li>
+<li>Dotknij <strong>Zapisz</strong>, aby zachować, lub <strong>Powtórz</strong>, aby spróbować ponownie</li>
+</ol>
+<p>Adnotowane zdjęcie jest automatycznie dołączane do raportów PDF.</p>
+<hr />
+<h2 id="raporty">Raporty</h2>
+<p>Dotknij przycisku <strong>Drukuj wynik</strong> na dowolnym ekranie wyników, aby wygenerować sformatowany raport.</p>
+<p><img alt="Raport PDF" src="../screenshots/09-pdf-report.png" /></p>
+<h3 id="zawartosc-raportu">Zawartość raportu</h3>
+<ul>
+<li>Nagłówek (konfigurowalny w Ustawienia → Nagłówek raportu)</li>
+<li>Tytuł pomiaru i znacznik czasu</li>
+<li>Wszystkie wartości wejściowe w przejrzystej tabeli</li>
+<li>Wynik obliczeń</li>
+<li>Tekst wniosku</li>
+<li>Wizualizacja (wykres geometrii)</li>
+<li>Adnotowane zdjęcie (jeśli zrobiłeś jedno)</li>
+<li>Linia stopki temperatury (jeśli kompensacja była aktywna)</li>
+<li>Numer strony i linia kredytowa</li>
+</ul>
+<h3 id="format-wyjsciowy">Format wyjściowy</h3>
+<ul>
+<li><strong>Android</strong>: natywne generowanie PDF, zapisz na telefonie lub udostępnij</li>
+<li><strong>iOS</strong>: systemowe okno drukowania → zapisz jako PDF, AirPrint lub udostępnij</li>
+</ul>
+<h3 id="dostosowywanie-nagowka">Dostosowywanie nagłówka</h3>
+<p>Ustawienia → Nagłówek raportu. Wprowadź nazwę firmy, nazwę laboratorium, informacje o projekcie lub cokolwiek, co chcesz mieć na górze każdego raportu.</p>
+<hr />
+<h2 id="kopia-zapasowa-i-przywracanie">Kopia zapasowa i przywracanie</h2>
+<p>Zapisz wszystkie swoje materiały niestandardowe, ulubione, ustawienia i historię do jednego pliku. Przenoszenie między urządzeniami.</p>
+<h3 id="kopia-zapasowa">Kopia zapasowa</h3>
+<p>Ustawienia → <strong>Kopia zapasowa</strong> → dotknij „Zapisz plik kopii zapasowej". Aplikacja generuje plik JSON i otwiera arkusz udostępniania telefonu. Zapisz go na dysku w chmurze (Google Drive, iCloud, OneDrive), wyślij sobie e-mailem lub przenieś w dowolny sposób.</p>
+<h3 id="przywracanie">Przywracanie</h3>
+<p>Ustawienia → <strong>Przywróć</strong> → wybierz plik kopii zapasowej z pamięci telefonu. Aplikacja importuje materiały niestandardowe, ulubione, historię i ustawienia.</p>
+<p>⚠️ <strong>Przywracanie zastępuje twoje obecne dane.</strong> Jeśli masz ważne pomiary na obecnym urządzeniu, najpierw zrób ich kopię zapasową przed przywracaniem z innej kopii zapasowej.</p>
+<hr />
+<h2 id="ustawienia">Ustawienia</h2>
+<p>Dostęp przez ikonę koła zębatego ⚙ w prawym górnym rogu. Ustawienia są modalne, nie są kartą.</p>
+<p><img alt="Ustawienia" src="../screenshots/06-settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Ustawienie</th>
+<th>Co kontroluje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aktualizuj do Pro</strong></td>
+<td>Kup lub dowiedz się o funkcjach Pro ($19,99)</td>
+</tr>
+<tr>
+<td><strong>Język</strong></td>
+<td>Język wyświetlania aplikacji (30 obsługiwanych)</td>
+</tr>
+<tr>
+<td><strong>Motyw</strong></td>
+<td>Jasny, Ciemny lub Auto (zgodnie z systemem)</td>
+</tr>
+<tr>
+<td><strong>Jednostka odległości</strong></td>
+<td>cm lub cale</td>
+</tr>
+<tr>
+<td><strong>Temperatura odniesienia</strong></td>
+<td>Aktywna temperatura dla kompensacji, -40 do +200 °C</td>
+</tr>
+<tr>
+<td><strong>Nagłówek raportu</strong></td>
+<td>Niestandardowy tekst na górze generowanych raportów</td>
+</tr>
+<tr>
+<td><strong>Kopia zapasowa</strong></td>
+<td>Eksportuj wszystkie dane do pliku</td>
+</tr>
+<tr>
+<td><strong>Przywróć</strong></td>
+<td>Importuj dane z pliku kopii zapasowej</td>
+</tr>
+<tr>
+<td><strong>Przywróć zakup</strong></td>
+<td>Ponownie zdobądź Pro na nowym urządzeniu</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="funkcje-pro">Funkcje Pro</h2>
+<p>NVH Source Locator używa <strong>modelu freemium z blokadą funkcji</strong>:</p>
+<ul>
+<li><strong>Darmowe</strong>: Karta 2-Sensor jest w pełni funkcjonalna bez ograniczeń</li>
+<li><strong>Pro</strong>: Wszystkie inne karty mają określone pola wejściowe zablokowane. Paywall pojawia się, gdy darmowy użytkownik dotyka zablokowanego pola</li>
+</ul>
+<h3 id="co-jest-zablokowane">Co jest zablokowane</h3>
+<p>Pola wymagające Pro są rozproszone w:
+- 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
+- Trybach 3D i 3D+
+- Kopii zapasowej i Przywracaniu
+- Raportach PDF
+- Materiałach niestandardowych
+- Adnotacji zdjęć</p>
+<p>Darmowy użytkownik może OTWORZYĆ dowolną kartę i ZOBACZYĆ interfejs. Po prostu nie może wprowadzać wartości w pola wejściowe zablokowane dla Pro.</p>
+<p><img alt="Pole zablokowane dla Pro" src="../screenshots/11-pro-locked-field.png" /></p>
+<h3 id="paywall">Paywall</h3>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<p>Gdy darmowy użytkownik dotyka zablokowanego pola, paywall pojawia się pokazując:
+- Ikonę aplikacji z plakietką PRO
+- Listę funkcji
+- Przycisk odblokowania z ceną ($19,99 domyślnie; może się różnić w zależności od regionu)
+- Realizację kodu promocyjnego (tylko Android — iOS używa osobnego procesu Offer Code firmy Apple)
+- Opcjonalny link promocyjny do kanałów społeczności</p>
+<h3 id="zakup-pro">Zakup Pro</h3>
+<p>Dotknij dowolnego zablokowanego pola lub dotknij <strong>Aktualizuj do Pro</strong> w Ustawieniach. Używa oficjalnego systemu płatności platformy (Google Play na Androidzie, Apple App Store na iOS).</p>
+<h3 id="przywracanie-pro-na-nowym-urzadzeniu">Przywracanie Pro na nowym urządzeniu</h3>
+<p>Jeśli zakupiłeś na jednym urządzeniu i chcesz Pro na innym (to samo konto):</p>
+<ol>
+<li>Zaloguj się na <strong>to samo</strong> konto Google (Android) lub Apple ID (iOS), z którego dokonano zakupu</li>
+<li>Otwórz NVH Source Locator na nowym urządzeniu</li>
+<li>Przejdź do Ustawienia → <strong>Przywróć zakup</strong></li>
+<li>Aplikacja weryfikuje z rekordami zakupów platformy i odblokowuje Pro</li>
+</ol>
+<h3 id="auto-przywracanie-przy-uruchomieniu">Auto-przywracanie przy uruchomieniu</h3>
+<p>Jeśli zrealizujesz kod promocyjny w Google Play Store lub App Store, gdy NVH Source Locator działa w tle, powrót do aplikacji automatycznie wykryje nowy zakup i odblokuje Pro — nie jest potrzebne ręczne Przywracanie.</p>
+<h3 id="realizacja-kodu-promocyjnego">Realizacja kodu promocyjnego</h3>
+<p><strong>Android</strong>: przycisk „Czy masz kod promocyjny Google Play?" w paywall otwiera proces realizacji Google Play z twoim wstępnie wypełnionym kodem.</p>
+<p><strong>iOS</strong>: Polityka App Store 3.1.1 wymaga realizacji przez oficjalny proces „Zrealizuj kod" Apple. Przycisk Google Play jest ukryty na iOS. Zamiast tego poszukaj „Zrealizuj kod App Store" w Ustawieniach.</p>
+<hr />
+<h2 id="karta-help-i-samouczki">Karta Help i samouczki</h2>
+<p>Karta <strong>Help</strong> zawiera samouczki w aplikacji, przewodniki najlepszych praktyk i informacje referencyjne.</p>
+<p><img alt="Karta Help" src="../screenshots/10-help-tab.png" /></p>
+<p>Omawiane tematy:
+- Jaki sprzęt jest potrzebny
+- Jak umieszczać czujniki dla najlepszej dokładności
+- Wskazówki dotyczące kalibracji
+- Powszechne scenariusze pomiarowe
+- Wskazówki dotyczące triangulacji i umiejscowienia 3D
+- Prowadzenie kabli i jakość sygnału</p>
+<hr />
+<h2 id="rozwiazywanie-problemow">Rozwiązywanie problemów</h2>
+<h3 id="wynik-obliczen-jest-nieprawidowy-lub-nie-ma-sensu">Wynik obliczeń jest nieprawidłowy lub nie ma sensu</h3>
+<ol>
+<li>Sprawdź kalibrację. Automatycznie wypełnione <code>tCal</code> zakłada opublikowaną prędkość materiału — rzeczywiste materiały się różnią. Najbardziej dokładna kalibracja to in-situ: dotknij znanego miejsca i pozwól aplikacji wyprowadzić rzeczywistą prędkość.</li>
+<li>Sprawdź ustawienie <strong>Pierwszego czujnika</strong> — który czujnik usłyszał zdarzenie jako pierwszy, ma znaczenie dla matematyki.</li>
+<li>Zweryfikuj swoje pomiary odległości. Błędy kilku mm się propagują.</li>
+</ol>
+<h3 id="toast-mowi-wynik-poza-zakresem">Toast mówi „Wynik poza zakresem"</h3>
+<p>Matematyka mówi, że źródło nie znajduje się między czujnikami. Możliwe przyczyny:
+- Źródło rzeczywiście jest poza linią/płaszczyzną czujnika
+- Jedno z twoich wejść jest błędne
+- Prędkość kalibracji jest zbyt daleka od rzeczywistości</p>
+<h3 id="wskazowka-predkosci-obliczeniowej-pokazuje-kolor-ostrzegawczy">Wskazówka prędkości obliczeniowej pokazuje kolor ostrzegawczy</h3>
+<p>Implikowana prędkość dźwięku z twoich wejść jest daleka od jakiegokolwiek powszechnego materiału (mniej niż 50 m/s lub więcej niż 20 000 m/s). Sprawdź swoje wejścia — prawdopodobnie literówka w tCal lub odległości.</p>
+<h3 id="selektor-materials-pokazuje-inne-predkosci-niz-oczekiwano">Selektor Materials pokazuje inne prędkości niż oczekiwano</h3>
+<p>Sprawdź Temperaturę odniesienia w Ustawieniach. Jeśli nie wynosi 20 °C, wyświetlane prędkości odzwierciedlają kompensację temperatury. Aplikacja pokazuje „ref X @ 20°C" pod skompensowanymi prędkościami, abyś mógł zweryfikować.</p>
+<h3 id="wpis-historii-odtwarza-sie-z-innym-wynikiem">Wpis historii odtwarza się z innym wynikiem</h3>
+<p>Stare wpisy historii utworzone przed wersją 1.75 aplikacji mogły nie zapisać temperatury. Jeśli wykonałeś pomiar w temperaturze innej niż 20 °C, odtwarzanie użyje obecnego ustawienia. Ręcznie ustaw temperaturę w Ustawieniach przed odtworzeniem LUB zmierz ponownie.</p>
+<h3 id="znaczniki-adnotacji-zdjec-nie-sa-tam-gdzie-sie-spodziewam">Znaczniki adnotacji zdjęć nie są tam, gdzie się spodziewam</h3>
+<p>Znaczniki są automatycznie umieszczane na podstawie geometrii wejścia. Przeciągnij je, aby dostosować. Dostosowanie znaczników aktualizuje pozycję źródła w nakładce zdjęcia — ale NIE zmienia podstawowego wyniku obliczeń.</p>
+<h3 id="niepowodzenie-kopii-zapasowejprzywracania">Niepowodzenie kopii zapasowej/przywracania</h3>
+<p>Upewnij się, że używasz pliku kopii zapasowej wygenerowanego przez tę samą lub nowszą wersję aplikacji. Starsze pliki kopii zapasowych mogą nie mieć obecnych pól danych.</p>
+<h3 id="przywroc-zakup-mowi-nie-znaleziono-zakupu">Przywróć zakup mówi „nie znaleziono zakupu"</h3>
+<ol>
+<li>Zweryfikuj, że jesteś zalogowany na to samo konto sklepu, z którego dokonano zakupu</li>
+<li>Zweryfikuj, że zakup nie został zwrócony lub nie wygasł</li>
+<li>Spróbuj odinstalować i ponownie zainstalować aplikację (zakup jest powiązany z kontem sklepu, a nie z instalacją aplikacji)</li>
+<li>Skontaktuj się z support@evdiag.net, jeśli problem nie ustąpi</li>
+</ol>
+<h3 id="wejscie-numeryczne-nieoczekiwanie-przeskakuje-do-0">Wejście numeryczne nieoczekiwanie przeskakuje do 0</h3>
+<p>Z założenia: gdy opuszczasz pole numeryczne (dotykasz gdzie indziej), jeśli jest puste, ujemne lub zawiera tekst nienumeryczny, przeskakuje do 0. Zapobiega cichym, uszkodzonym obliczeniom z przypadkowo wyczyszczonych wejść. Wejście temperatury jest zwolnione (zamiast tego ogranicza się do -40/+200).</p>
+<h3 id="potrzebuje-wiecej-pomocy">Potrzebuję więcej pomocy</h3>
+<p>Skontaktuj się z <code>support@evdiag.net</code> z:
+- Modelem urządzenia i wersją systemu
+- Wersją aplikacji (Ustawienia → dół strony)
+- Opisem tego, co próbowałeś
+- Zrzutami ekranu, jeśli to możliwe</p>
+<hr />
+<p><em>NVH Source Locator jest opracowany przez EVDiag. Odwiedź https://evdiag.net, aby uzyskać aktualizacje i zasoby.</em></p>
+
+  <div class="docs-footer">
+    <p>
+      Stworzone przez EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Pytania? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

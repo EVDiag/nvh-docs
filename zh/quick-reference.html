@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — 快速参考</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 文档</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 简体中文</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html" class="active">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>快速参考</span>
+    <a href="quick-reference.pdf" download>📥 下载为 PDF</a>
+    <a href="user-guide.html" class="alt-link">用户指南 →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    为便于您使用而翻译的文档 — 如需最准确的技术术语，请以英文原版为准。
+  </div>
+
+  <h1 id="nvh-source-locator">NVH Source Locator — 快速参考</h1>
+<p>单页提要。完整详情请参阅 <code>user-guide.md</code>。</p>
+<hr />
+<h2 id="2-sensor">核心流程 (2-Sensor，免费)</h2>
+<ol>
+<li><strong>选择材料</strong> — Materials 标签页 → 点击您的材料</li>
+<li><strong>输入校准</strong> 在 2-Sensor 标签页：</li>
+<li>传感器间距 (<code>d</code>)</li>
+<li>校准时间延迟 (<code>tCal</code>) — 从材料自动填充</li>
+<li><strong>输入事件</strong> — <code>tEvent</code> 和首先检测的传感器 (A 或 B)</li>
+<li><strong>读取结果</strong> — 距传感器 A 的距离</li>
+</ol>
+<p><img alt="2-Sensor 标签页" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="_1">所有标签页</h2>
+<table>
+<thead>
+<tr>
+<th>标签页</th>
+<th>输出</th>
+<th>是否含 Pro 字段？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>沿直线的距离</td>
+<td>否（完全免费）</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>表面上的 X、Y</td>
+<td>是</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>通过 3 对最小二乘法计算的 X、Y</td>
+<td>是</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>来自两对的 X、Y (A–B + C–D)</td>
+<td>是</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>来自任意位置的 4 个传感器的 X、Y</td>
+<td>是</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>来自 4 个传感器的 X、Y、Z</td>
+<td>是</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>来自最多 6 个传感器的 X、Y、Z</td>
+<td>是</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>声速选择器</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>教程</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<p>设置位于 ⚙ 图标（右上角），不是一个标签页。</p>
+<hr />
+<h2 id="_2">温度补偿</h2>
+<p>设置 → 参考温度，范围 <strong>-40 至 +200 °C</strong>。</p>
+<ul>
+<li><strong>14 种金属</strong> 具有内置补偿（铝、各种钢材、铜、黄铜、青铜、钛、镁、铅、锌、镍、钨、铁、铸铁）</li>
+<li>没有补偿的材料显示 <strong>"ref only"</strong></li>
+<li><strong>每次启动应用程序时重置为 20 °C</strong>（默认安全启动）</li>
+<li>回放历史记录条目时会恢复其原始温度</li>
+</ul>
+<hr />
+<h2 id="_3">快捷方式</h2>
+<ul>
+<li><strong>点击材料</strong> → 自动填充所有标签页中的所有 <code>tCal</code> 字段</li>
+<li><strong>按住 +/-</strong> 在数字字段上 → 快速递增</li>
+<li><strong>水平拖动</strong> 在数字字段上 → 调整值</li>
+<li><strong>空/负数/无效输入</strong> → 失去焦点时调整为 0（温度字段限制在 -40/200）</li>
+<li><strong>将材料标记为星标</strong> → 移到选择器顶部</li>
+</ul>
+<hr />
+<h2 id="pro">Pro 模式</h2>
+<p><strong>按功能锁定的免费增值模式</strong>（$19.99）：
+- 免费：2-Sensor 标签页完全可用，无限制
+- Pro：其他标签页可访问，但带有<strong>金色锁定字段</strong>，点击时显示付费墙</p>
+<p>Pro 解锁：3-Sensor 至 3D+、自定义材料、备份/恢复、PDF 报告、照片注释。</p>
+<p><img alt="付费墙" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="_4">报告和备份</h2>
+<p>任何结果屏幕上的 <strong>打印结果</strong> 按钮 → 带有页眉、输入、结果、可视化、照片（如果拍摄）和温度页脚（当补偿激活时）的 PDF。</p>
+<p>在设置 → 报告页眉中自定义页眉。</p>
+<p><strong>备份</strong>：设置 → 备份 → 分享到云/电子邮件。<br />
+<strong>恢复</strong>：设置 → 恢复 → 选择备份文件。</p>
+<hr />
+<h2 id="pro_1">在新设备上恢复 Pro</h2>
+<p>使用相同的 Google 帐户 (Android) 或 Apple ID (iOS) 购买 → 设置 → <strong>恢复购买</strong> → 几秒钟内解锁。</p>
+<p>当您在外部兑换促销代码后返回应用程序时，自动恢复会在后台静默进行。</p>
+<hr />
+<h2 id="_5">快速故障排除</h2>
+<ul>
+<li><strong>结果超出范围？</strong> 检查 <code>tEvent</code> 符号 / 首先检测的传感器 / 传感器间距</li>
+<li><strong>最接近的材料不对？</strong> 参考温度可能被意外设置 — 检查设置</li>
+<li><strong>恢复购买失败？</strong> 验证相同的商店帐户；如果问题持续存在，请重新安装</li>
+<li><strong>字段被设为 0？</strong> 空/负值在失去焦点时自动调整 — 重新输入值</li>
+<li><strong>步进器按钮消失？</strong> 它们出现在带有 <code>data-step</code> 的字段旁 — 如果缺失，请重启应用程序</li>
+<li><strong>温度过时警告？</strong> 每次启动时重置为 20 — 为此会话重新设置</li>
+</ul>
+<hr />
+<p>联系 <code>support@evdiag.net</code> — 请包括设备型号、应用版本（设置 → 底部）以及您尝试过的内容的描述。</p>
+
+  <div class="docs-footer">
+    <p>
+      由 EVDiag 开发 — <a href="https://evdiag.net">evdiag.net</a><br>
+      有问题吗? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

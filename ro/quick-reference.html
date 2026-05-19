@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVH Source Locator — Referință rapidă</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="index.html" class="home-link">📘 Documentație</a>
+    <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-switcher-button" onclick="document.getElementById('langSwitcher').classList.toggle('open')">🌐 Română</button>
+    <div class="lang-switcher-menu">
+      <a href="../en/quick-reference.html">English</a>
+      <a href="../es/quick-reference.html">Español</a>
+      <a href="../zh/quick-reference.html">简体中文</a>
+      <a href="../hi/quick-reference.html">हिन्दी</a>
+      <a href="../ar/quick-reference.html">العربية</a>
+      <a href="../pt/quick-reference.html">Português</a>
+      <a href="../ru/quick-reference.html">Русский</a>
+      <a href="../fr/quick-reference.html">Français</a>
+      <a href="../de/quick-reference.html">Deutsch</a>
+      <a href="../ja/quick-reference.html">日本語</a>
+      <a href="../it/quick-reference.html">Italiano</a>
+      <a href="../ko/quick-reference.html">한국어</a>
+      <a href="../tr/quick-reference.html">Türkçe</a>
+      <a href="../vi/quick-reference.html">Tiếng Việt</a>
+      <a href="../pl/quick-reference.html">Polski</a>
+      <a href="../th/quick-reference.html">ไทย</a>
+      <a href="../id/quick-reference.html">Bahasa Indonesia</a>
+      <a href="../cs/quick-reference.html">Čeština</a>
+      <a href="../sk/quick-reference.html">Slovenčina</a>
+      <a href="../hu/quick-reference.html">Magyar</a>
+      <a href="../sv/quick-reference.html">Svenska</a>
+      <a href="../no/quick-reference.html">Norsk</a>
+      <a href="../fi/quick-reference.html">Suomi</a>
+      <a href="../ro/quick-reference.html" class="active">Română</a>
+      <a href="../hr/quick-reference.html">Hrvatski</a>
+      <a href="../bg/quick-reference.html">Български</a>
+      <a href="../be/quick-reference.html">Беларуская</a>
+      <a href="../fa/quick-reference.html">فارسی</a>
+      <a href="../ms/quick-reference.html">Bahasa Melayu</a>
+      <a href="../tl/quick-reference.html">Filipino</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="download-banner">
+    <span>Referință rapidă</span>
+    <a href="quick-reference.pdf" download>📥 Descărcați ca PDF</a>
+    <a href="user-guide.html" class="alt-link">Ghidul utilizatorului →</a>
+  </div>
+
+  <div class="disclaimer-note">
+    Documentația a fost tradusă pentru comoditatea dumneavoastră — pentru cea mai precisă terminologie tehnică, versiunea originală în limba engleză este cea oficială.
+  </div>
+
+  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
+<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+<hr />
+<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<ol>
+<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
+<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
+<li>Sensor spacing (<code>d</code>)</li>
+<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
+<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
+<li><strong>Read result</strong> — distance from sensor A</li>
+</ol>
+<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<hr />
+<h2 id="all-tabs">All tabs</h2>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Output</th>
+<th>Pro fields?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-Sensor</td>
+<td>Distance along line</td>
+<td>No (fully free)</td>
+</tr>
+<tr>
+<td>3-Sensor</td>
+<td>X, Y on a surface</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>3-Sen+</td>
+<td>X, Y with LSQ over 3 pairs</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>4-Sensor</td>
+<td>X, Y from two pairs (A–B + C–D)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>4-Sen+</td>
+<td>X, Y from 4 sensors, any position</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>X, Y, Z from 4 sensors</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>3D+</td>
+<td>X, Y, Z from up to 6 sensors</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Materials</td>
+<td>Speed-of-sound picker</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Tutorials</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<hr />
+<h2 id="temperature-compensation">Temperature compensation</h2>
+<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<ul>
+<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
+<li>Materials without compensation show <strong>"ref only"</strong></li>
+<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
+<li>Replaying a history entry restores its original temperature</li>
+</ul>
+<hr />
+<h2 id="shortcuts">Shortcuts</h2>
+<ul>
+<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
+<li><strong>Hold +/-</strong> on number fields → fast increment</li>
+<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
+<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
+<li><strong>Star a material</strong> → moves to top of picker</li>
+</ul>
+<hr />
+<h2 id="pro-model">Pro model</h2>
+<p><strong>Feature-locked freemium</strong> ($19.99):
+- Free: 2-Sensor tab fully functional, no limits
+- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
+<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
+<hr />
+<h2 id="reports-backup">Reports &amp; Backup</h2>
+<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
+<p>Customize header in Settings → Report header.</p>
+<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
+<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<hr />
+<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
+<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
+<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<hr />
+<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<ul>
+<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
+<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
+<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
+<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
+<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
+<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+</ul>
+<hr />
+<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+
+  <div class="docs-footer">
+    <p>
+      Dezvoltat de EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Întrebări? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var sw = document.getElementById('langSwitcher');
+      if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>
