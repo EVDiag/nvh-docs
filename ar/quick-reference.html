@@ -57,125 +57,125 @@
     تمت ترجمة الوثائق لراحتك — للحصول على المصطلحات التقنية الأكثر دقة، فإن النسخة الإنجليزية الأصلية هي المرجع.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — مرجع سريع</h1>
+<p>ملخص من صفحة واحدة. للحصول على التفاصيل الكاملة، انظر <code>user-guide.md</code>.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">التدفق الأساسي (2-Sensor، مجاني)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>اختر مادة</strong> — علامة تبويب Materials → اضغط على المادة</li>
+<li><strong>أدخل المعايرة</strong> في علامة تبويب 2-Sensor:</li>
+<li>تباعد المستشعرات (<code>d</code>)</li>
+<li>تأخير وقت المعايرة (<code>tCal</code>) — يتم تعبئته تلقائيًا من المادة</li>
+<li><strong>أدخل الحدث</strong> — <code>tEvent</code> والمستشعر الأول (A أو B)</li>
+<li><strong>اقرأ النتيجة</strong> — المسافة من المستشعر A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="علامة تبويب 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">جميع علامات التبويب</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>علامة التبويب</th>
+<th>الإخراج</th>
+<th>حقول Pro؟</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>المسافة على طول الخط</td>
+<td>لا (مجاني بالكامل)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X، Y على سطح</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X، Y باستخدام LSQ على 3 أزواج</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X، Y من زوجين (A–B + C–D)</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X، Y من 4 مستشعرات، أي موضع</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X، Y، Z من 4 مستشعرات</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X، Y، Z من ما يصل إلى 6 مستشعرات</td>
+<td>نعم</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>محدد سرعة الصوت</td>
+<td>لا</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>دروس تعليمية</td>
+<td>لا</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>الإعدادات موجودة تحت أيقونة ⚙ (أعلى اليمين)، وليست علامة تبويب.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">تعويض درجة الحرارة</h2>
+<p>الإعدادات → درجة الحرارة المرجعية، النطاق <strong>-40 إلى +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 معدنًا</strong> تحتوي على تعويض مدمج (الألومنيوم، الفولاذ، النحاس، النحاس الأصفر، البرونز، التيتانيوم، المغنيسيوم، الرصاص، الزنك، النيكل، التنغستن، الحديد، حديد الزهر)</li>
+<li>المواد بدون تعويض تعرض <strong>"ref only"</strong></li>
+<li><strong>تُعاد إلى 20 °C عند كل تشغيل للتطبيق</strong> (بداية آمنة افتراضية)</li>
+<li>إعادة تشغيل إدخال في السجل يستعيد درجة حرارته الأصلية</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">الاختصارات</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>اضغط على مادة</strong> → يملأ تلقائيًا جميع حقول <code>tCal</code> في جميع علامات التبويب</li>
+<li><strong>اضغط مع الاستمرار على +/-</strong> على الحقول الرقمية → زيادة سريعة</li>
+<li><strong>اسحب أفقيًا</strong> على حقل رقمي → تحريك القيم</li>
+<li><strong>إدخال فارغ/سالب/غير صالح</strong> → ينتقل إلى 0 عند فقدان التركيز (يقتصر حقل درجة الحرارة على -40/200)</li>
+<li><strong>ضع علامة نجمة على مادة</strong> → ينقلها إلى أعلى المحدد</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">نموذج Pro</h2>
+<p><strong>Freemium بقفل الميزات</strong> ($19.99):
+- مجاني: علامة تبويب 2-Sensor تعمل بالكامل، بدون حدود
+- Pro: علامات التبويب الأخرى متاحة ولكن تحتوي على <strong>حقول بقفل ذهبي</strong> تعرض paywall عند الضغط</p>
+<p>Pro يفتح: من 3-Sensor إلى 3D+، مواد مخصصة، نسخ احتياطي/استعادة، تقارير PDF، شرح الصور.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">التقارير والنسخ الاحتياطي</h2>
+<p>زر <strong>طباعة النتيجة</strong> في أي شاشة نتائج → PDF مع رأس، مدخلات، نتيجة، تصور، صورة (إذا تم التقاطها) وتذييل درجة الحرارة (عندما يكون التعويض نشطًا).</p>
+<p>قم بتخصيص الرأس في الإعدادات → رأس التقرير.</p>
+<p><strong>النسخ الاحتياطي</strong>: الإعدادات → النسخ الاحتياطي → مشاركة إلى السحابة/البريد الإلكتروني.<br />
+<strong>استعادة</strong>: الإعدادات → استعادة → اختر ملف النسخ الاحتياطي.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">استعادة Pro على جهاز جديد</h2>
+<p>نفس حساب Google (Android) أو Apple ID (iOS) الذي اشتريت به → الإعدادات → <strong>استعادة الشراء</strong> → يتم فتحه في ثوانٍ.</p>
+<p>تحدث الاستعادة التلقائية بصمت عند العودة إلى التطبيق بعد استرداد رمز ترويجي خارجيًا.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">استكشاف الأخطاء وإصلاحها بسرعة</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>النتيجة خارج النطاق؟</strong> تحقق من إشارة <code>tEvent</code> / المستشعر الأول / تباعد المستشعرات</li>
+<li><strong>أقرب مادة خاطئة؟</strong> ربما تم تعيين درجة الحرارة المرجعية عن طريق الخطأ — تحقق من الإعدادات</li>
+<li><strong>فشل استعادة الشراء؟</strong> تحقق من نفس حساب المتجر؛ أعد التثبيت إذا استمر</li>
+<li><strong>تم تعيين الحقل على 0؟</strong> المدخلات الفارغة/السالبة تُعيَّن تلقائيًا عند فقدان التركيز — أدخل القيمة مرة أخرى</li>
+<li><strong>اختفت أزرار الخطوة؟</strong> تظهر بجانب الحقول التي تحتوي على <code>data-step</code> — أعد تشغيل التطبيق إذا كانت مفقودة</li>
+<li><strong>تحذير درجة حرارة قديمة؟</strong> يُعاد إلى 20 عند كل بدء تشغيل — قم بتعيينه مرة أخرى لهذه الجلسة</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>اتصل بـ <code>support@evdiag.net</code> — قم بتضمين طراز الجهاز، إصدار التطبيق (الإعدادات → الأسفل) ووصف ما حاولته.</p>
 
   <div class="docs-footer">
     <p>

@@ -57,125 +57,125 @@
     お客様の便宜のために翻訳されたドキュメントです — 最も正確な技術用語については、英語の原文が正式版となります。
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — クイックリファレンス</h1>
+<p>1ページの概要。完全な詳細は <code>user-guide.md</code> を参照してください。</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">基本フロー (2-Sensor、無料)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>材料を選択</strong> — Materials タブ → 材料をタップ</li>
+<li><strong>キャリブレーションを入力</strong> 2-Sensor タブで:</li>
+<li>センサー間隔 (<code>d</code>)</li>
+<li>キャリブレーション時間遅延 (<code>tCal</code>) — 材料から自動入力</li>
+<li><strong>イベントを入力</strong> — <code>tEvent</code> と最初のセンサー (A または B)</li>
+<li><strong>結果を読む</strong> — センサー A からの距離</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="2-Sensor タブ" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">すべてのタブ</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>タブ</th>
+<th>出力</th>
+<th>Pro フィールド?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>直線に沿った距離</td>
+<td>いいえ (完全無料)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>表面上の X、Y</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>3 ペアでの LSQ を使用した X、Y</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>2 ペアからの X、Y (A–B + C–D)</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>4 センサーからの X、Y、任意の位置</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>4 センサーからの X、Y、Z</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>最大 6 センサーからの X、Y、Z</td>
+<td>はい</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>音速セレクター</td>
+<td>いいえ</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>チュートリアル</td>
+<td>いいえ</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>設定は ⚙ アイコン (右上) にあり、タブではありません。</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">温度補正</h2>
+<p>設定 → 基準温度、範囲 <strong>-40 から +200 °C</strong>。</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 種類の金属</strong> に組み込み補正があります (アルミニウム、各種鋼、銅、真鍮、青銅、チタン、マグネシウム、鉛、亜鉛、ニッケル、タングステン、鉄、鋳鉄)</li>
+<li>補正のない材料は <strong>"ref only"</strong> と表示されます</li>
+<li><strong>アプリ起動ごとに 20 °C にリセット</strong> (デフォルトの安全な開始)</li>
+<li>履歴エントリの再生は元の温度を復元します</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">ショートカット</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>材料をタップ</strong> → すべてのタブのすべての <code>tCal</code> フィールドを自動入力</li>
+<li><strong>数値フィールドで +/- を長押し</strong> → 高速インクリメント</li>
+<li><strong>数値フィールドで水平にドラッグ</strong> → 値をスクラブ</li>
+<li><strong>空/負/無効な入力</strong> → フォーカスを失うと 0 にスナップ (温度フィールドは -40/200 にクランプ)</li>
+<li><strong>材料に星を付ける</strong> → セレクターの先頭に移動</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">Pro モデル</h2>
+<p><strong>機能ロック型フリーミアム</strong> ($19.99):
+- 無料: 2-Sensor タブが完全に機能、制限なし
+- Pro: 他のタブはアクセス可能ですが、タップすると paywall を表示する <strong>金色のロック付きフィールド</strong> があります</p>
+<p>Pro でロック解除: 3-Sensor から 3D+ まで、カスタム材料、バックアップ/復元、PDF レポート、写真の注釈。</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">レポートとバックアップ</h2>
+<p>任意の結果画面の <strong>結果を印刷</strong> ボタン → ヘッダー、入力、結果、視覚化、写真 (撮影した場合)、温度フッター (補正がアクティブな場合) を含む PDF。</p>
+<p>ヘッダーを 設定 → レポートヘッダー でカスタマイズします。</p>
+<p><strong>バックアップ</strong>: 設定 → バックアップ → クラウド/メールに共有。<br />
+<strong>復元</strong>: 設定 → 復元 → バックアップファイルを選択。</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">新しいデバイスで Pro を復元</h2>
+<p>購入時に使用したのと同じ Google アカウント (Android) または Apple ID (iOS) → 設定 → <strong>購入を復元</strong> → 数秒以内にロック解除。</p>
+<p>外部でプロモーションコードを引き換えた後、アプリに戻ったときに自動復元が静かに実行されます。</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">クイックトラブルシューティング</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>結果が範囲外?</strong> <code>tEvent</code> の符号 / 最初のセンサー / センサー間隔を確認</li>
+<li><strong>最も近い材料が間違っている?</strong> 基準温度が誤って設定されている可能性があります — 設定を確認</li>
+<li><strong>購入の復元に失敗?</strong> 同じストアアカウントを確認し、問題が続く場合は再インストール</li>
+<li><strong>フィールドが 0 にスナップ?</strong> 空/負の入力はフォーカスを失うと自動的にスナップします — 値を再入力</li>
+<li><strong>ステッパーボタンがない?</strong> <code>data-step</code> を持つフィールドの横に表示されます — 不足している場合はアプリを再起動</li>
+<li><strong>古い温度の警告?</strong> 起動ごとに 20 にリセットされます — このセッション用に再設定</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p><code>support@evdiag.net</code> までお問い合わせ — デバイスモデル、アプリのバージョン (設定 → 下部)、試した内容の説明を含めてください。</p>
 
   <div class="docs-footer">
     <p>

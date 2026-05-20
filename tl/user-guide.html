@@ -57,189 +57,189 @@
     Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
   </div>
 
-  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — User Guide</h1>
-<p>NVH Source Locator is a measurement tool for locating noise and vibration sources using TDOA (Time Difference of Arrival) from accelerometer signals captured on an oscilloscope or measurement system.</p>
-<p>This guide covers all features. For a quick refresher, see <code>quick-reference.md</code>.</p>
+  <h1 id="nvh-source-locator-gabay-sa-gumagamit">NVH Source Locator — Gabay sa Gumagamit</h1>
+<p>Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmumulan ng ingay at vibrasyon gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa oscilloscope o sistemang pansukat.</p>
+<p>Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang <code>quick-reference.md</code>.</p>
 <blockquote>
-<p><strong>Note on screenshots</strong>: This document uses placeholder screenshots from the app. Replace each <code>../screenshots/*.png</code> with real device screenshots as you capture them.</p>
+<p><strong>Tala tungkol sa mga screenshot</strong>: Ginagamit ng dokumentong ito ang mga placeholder na screenshot mula sa app. Palitan ang bawat <code>../screenshots/*.png</code> ng tunay na mga screenshot ng device habang kinukuha mo ang mga ito.</p>
 </blockquote>
 <hr />
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="talaan-ng-nilalaman">Talaan ng Nilalaman</h2>
 <ol>
-<li><a href="#how-it-works">How it works</a></li>
-<li><a href="#before-you-start">Before you start</a></li>
-<li><a href="#the-main-tabs">The main tabs</a></li>
-<li><a href="#2-sensor-mode">2-Sensor mode</a></li>
-<li><a href="#3-sensor-mode">3-Sensor mode</a></li>
-<li><a href="#pro-modes">Pro+ modes (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
-<li><a href="#the-materials-tab">The Materials tab</a></li>
-<li><a href="#temperature-compensation">Temperature compensation</a></li>
-<li><a href="#photo-annotation">Photo annotation</a></li>
-<li><a href="#reports">Reports</a></li>
-<li><a href="#backup-and-restore">Backup and restore</a></li>
-<li><a href="#settings">Settings</a></li>
-<li><a href="#pro-features">Pro features</a></li>
-<li><a href="#help-tab-and-tutorials">Help tab and tutorials</a></li>
-<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#how-it-works">Paano ito gumagana</a></li>
+<li><a href="#before-you-start">Bago ka magsimula</a></li>
+<li><a href="#the-main-tabs">Ang pangunahing mga tab</a></li>
+<li><a href="#2-sensor-mode">Mode na 2-Sensor</a></li>
+<li><a href="#3-sensor-mode">Mode na 3-Sensor</a></li>
+<li><a href="#pro-modes">Mga Pro+ mode (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
+<li><a href="#the-materials-tab">Ang tab na Materials</a></li>
+<li><a href="#temperature-compensation">Pagsasaayos ng temperatura</a></li>
+<li><a href="#photo-annotation">Anotasyon ng larawan</a></li>
+<li><a href="#reports">Mga ulat</a></li>
+<li><a href="#backup-and-restore">Backup at pagpapanumbalik</a></li>
+<li><a href="#settings">Mga Setting</a></li>
+<li><a href="#pro-features">Mga tampok ng Pro</a></li>
+<li><a href="#help-tab-and-tutorials">Tab na Help at mga tutorial</a></li>
+<li><a href="#troubleshooting">Pag-troubleshoot</a></li>
 </ol>
 <hr />
-<h2 id="how-it-works">How it works</h2>
-<p>When a noise source emits a sound or vibration, the wave travels through a material at a known speed. If you place two or more accelerometers on the material and measure when the wave arrives at each one, the time difference tells you where the source is.</p>
-<p>NVH Source Locator takes:</p>
+<h2 id="paano-ito-gumagana">Paano ito gumagana</h2>
+<p>Kapag ang isang pinagmulan ng ingay ay naglalabas ng tunog o vibrasyon, ang alon ay naglalakbay sa pamamagitan ng materyal sa kilalang bilis. Kung maglagay ka ng dalawa o higit pang accelerometer sa materyal at sukatin kung kailan dumating ang alon sa bawat isa, sinasabi sa iyo ng pagkakaiba ng oras kung nasaan ang pinagmulan.</p>
+<p>Kinukuha ng NVH Source Locator ang:</p>
 <ul>
-<li><strong>Calibration</strong>: the distance between sensors, and the time it takes a wave to travel that distance (used to compute the material's sound speed)</li>
-<li><strong>Event</strong>: the time difference between sensors detecting the noise/vibration event</li>
+<li><strong>Pag-calibrate</strong>: ang distansya sa pagitan ng mga sensor at ang oras para sa isang alon upang maglakbay sa distansyang iyon (ginagamit upang kalkulahin ang bilis ng tunog ng materyal)</li>
+<li><strong>Kaganapan</strong>: ang pagkakaiba ng oras sa pagitan ng mga sensor na nakaka-detect ng kaganapan ng ingay/vibrasyon</li>
 </ul>
-<p>Then it calculates where on the structure the source is located.</p>
-<p>The more sensors you use, the more accurately you can pin down the source:</p>
+<p>Pagkatapos ay kakalkulahin nito kung nasaan ang pinagmulan sa istraktura.</p>
+<p>Mas maraming sensor na ginagamit mo, mas tumpak na maitatakda mo ang pinagmulan:</p>
 <ul>
-<li><strong>2 sensors</strong> → distance along a line</li>
-<li><strong>3 sensors</strong> → position on a 2D surface (X, Y)</li>
-<li><strong>4 sensors</strong> → position in 3D space (X, Y, Z)</li>
+<li><strong>2 sensor</strong> → distansya sa isang linya</li>
+<li><strong>3 sensor</strong> → posisyon sa isang 2D surface (X, Y)</li>
+<li><strong>4 sensor</strong> → posisyon sa 3D space (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="before-you-start">Before you start</h2>
-<p>You'll need:</p>
+<h2 id="bago-ka-magsimula">Bago ka magsimula</h2>
+<p>Kakailanganin mo ng:</p>
 <ul>
-<li><strong>An oscilloscope or measurement system</strong> that can show you the time difference between accelerometer channels in microseconds (µs)</li>
-<li><strong>At least 2 accelerometers</strong> physically attached to the structure (more sensors = higher accuracy)</li>
-<li><strong>A way to measure distance</strong> between sensors (tape measure, calipers)</li>
-<li><strong>A way to trigger a wave</strong> at a known location for calibration (calibrated hammer impact, screwdriver tap, or other known signal)</li>
+<li><strong>Isang oscilloscope o sistemang pansukat</strong> na maaaring magpakita sa iyo ng pagkakaiba ng oras sa pagitan ng mga channel ng accelerometer sa microseconds (µs)</li>
+<li><strong>Hindi bababa sa 2 accelerometer</strong> na pisikal na nakakabit sa istraktura (mas maraming sensor = mas mataas na katumpakan)</li>
+<li><strong>Isang paraan upang sukatin ang distansya</strong> sa pagitan ng mga sensor (tape measure, caliper)</li>
+<li><strong>Isang paraan upang mag-trigger ng alon</strong> sa isang kilalang lokasyon para sa pag-calibrate (calibrated hammer impact, screwdriver tap, o iba pang kilalang signal)</li>
 </ul>
-<p><img alt="Home screen with 2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="Home screen na may 2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="the-main-tabs">The main tabs</h2>
-<p>The app has tabs along the top:</p>
+<h2 id="ang-pangunahing-mga-tab">Ang pangunahing mga tab</h2>
+<p>Mayroong mga tab ang app sa tuktok:</p>
 <p><img alt="Tab bar" src="../screenshots/02-tab-bar.png" /></p>
 <table>
 <thead>
 <tr>
 <th>Tab</th>
-<th>What it does</th>
-<th>When to use</th>
+<th>Ano ang ginagawa nito</th>
+<th>Kailan gagamitin</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>2-Sensor</strong></td>
-<td>1D source location along a line between 2 sensors</td>
-<td>Quick checks, beam-like structures. <strong>Fully free.</strong></td>
+<td>1D source localization sa isang linya sa pagitan ng 2 sensor</td>
+<td>Mga mabilis na pagsusuri, mga istrakturang katulad ng beam. <strong>Ganap na libre.</strong></td>
 </tr>
 <tr>
 <td><strong>3-Sensor</strong></td>
-<td>2D source location using 3 sensors in a triangle</td>
-<td>Most general use, panels and surfaces</td>
+<td>2D source localization gamit ang 3 sensor sa isang tatsulok</td>
+<td>Pinakapangkalahatang paggamit, mga panel at ibabaw</td>
 </tr>
 <tr>
 <td><strong>3-Sen+</strong></td>
-<td>3-Sensor with over-determined least-squares solver</td>
-<td>More demanding measurements, noise-robust</td>
+<td>3-Sensor na may over-determined least-squares solver</td>
+<td>Mas hinihinging pagsukat, matatag sa ingay</td>
 </tr>
 <tr>
 <td><strong>4-Sensor</strong></td>
-<td>2D location using two pairs (A-B + C-D)</td>
-<td>Rectangular sensor layouts, cross-checking</td>
+<td>2D localization gamit ang dalawang pares (A-B + C-D)</td>
+<td>Mga rectangular sensor layout, cross-check</td>
 </tr>
 <tr>
 <td><strong>4-Sen+</strong></td>
-<td>Advanced 2D mode, 4 sensors at any positions</td>
-<td>Non-rectangular geometries, full LSQ</td>
+<td>Advanced 2D mode, 4 sensor sa kahit anong posisyon</td>
+<td>Mga di-rectangular na geometry, ganap na LSQ</td>
 </tr>
 <tr>
 <td><strong>3D</strong></td>
-<td>3D source location using 4 sensors with XYZ coords</td>
-<td>Complex structures in 3D space</td>
+<td>3D source localization gamit ang 4 sensor na may XYZ coordinate</td>
+<td>Mga kumplikadong istraktura sa 3D space</td>
 </tr>
 <tr>
 <td><strong>3D+</strong></td>
-<td>3D with up to 6 sensors, over-determined LSQ</td>
-<td>Very complex geometries, maximum precision</td>
+<td>3D na may hanggang 6 sensor, over-determined LSQ</td>
+<td>Napaka-kumplikadong mga geometry, maximum na katumpakan</td>
 </tr>
 <tr>
 <td><strong>Materials</strong></td>
-<td>Speed-of-sound library + custom materials</td>
-<td>Pick once per measurement session</td>
+<td>Sound speed library + mga custom na materyal</td>
+<td>Pumili ng isang beses bawat sesyon ng pagsukat</td>
 </tr>
 <tr>
 <td><strong>Help</strong></td>
-<td>In-app tutorials and reference</td>
-<td>When you need a quick refresher</td>
+<td>Mga in-app tutorial at sanggunian</td>
+<td>Kapag kailangan mo ng mabilis na refresher</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Free vs Pro</strong>: The 2-Sensor tab is fully free. Other tabs are accessible but have specific input fields locked to Pro users (marked with a gold padlock badge). Tapping a locked field shows the Pro paywall.</p>
+<p><strong>Libre vs Pro</strong>: Ang 2-Sensor tab ay ganap na libre. Maa-access ang ibang mga tab ngunit may mga partikular na input field na naka-lock para sa mga gumagamit ng Pro (markado ng gintong padlock badge). Ang pag-tap sa naka-lock na field ay nagpapakita ng Pro paywall.</p>
 </blockquote>
-<p>Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).</p>
+<p>Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (hindi isang tab).</p>
 <hr />
-<h2 id="2-sensor-mode">2-Sensor mode</h2>
-<p>The simplest measurement: source location along a line between two accelerometers.</p>
+<h2 id="mode-na-2-sensor">Mode na 2-Sensor</h2>
+<p>Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.</p>
 <p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="step-1-apply-a-material">Step 1: Apply a material</h3>
-<p>Tap the Materials tab. Pick the material your structure is made from (e.g., "Aluminium", "Steel, Mild (1020)"). The app uses the material's known speed of sound to populate the calibration time field automatically.</p>
-<p>If your structure's material isn't in the list, you can pick "Air" temporarily and override the calibration time manually in step 2.</p>
-<h3 id="step-2-enter-calibration-data">Step 2: Enter calibration data</h3>
-<p>On the 2-Sensor tab, you'll see two pair sections: <strong>Pair A–B</strong> and <strong>Pair A–C</strong> (only A–B is required if you only have 2 sensors).</p>
-<p>For each pair you fill in:</p>
+<h3 id="hakbang-1-maglapat-ng-materyal">Hakbang 1: Maglapat ng materyal</h3>
+<p>I-tap ang tab na Materials. Pumili ng materyal kung saan gawa ang iyong istraktura (hal., "Aluminum", "Steel, Mild (1020)"). Ginagamit ng app ang kilalang bilis ng tunog ng materyal upang awtomatikong punan ang field ng oras ng pag-calibrate.</p>
+<p>Kung ang materyal ng iyong istraktura ay wala sa listahan, maaari mong pansamantalang piliin ang "Hangin" at manu-manong i-override ang oras ng pag-calibrate sa hakbang 2.</p>
+<h3 id="hakbang-2-ipasok-ang-data-ng-pag-calibrate">Hakbang 2: Ipasok ang data ng pag-calibrate</h3>
+<p>Sa 2-Sensor tab, makikita mo ang dalawang seksyon ng pares: <strong>Pares A–B</strong> at <strong>Pares A–C</strong> (A–B lang ang kinakailangan kung mayroon ka lamang 2 sensor).</p>
+<p>Para sa bawat pares, pinupunan mo:</p>
 <ul>
-<li><strong>Sensor spacing</strong> (<code>d</code>): physical distance between sensors, in cm or inches (set in Settings)</li>
-<li><strong>Calibration time delay</strong> (<code>tCal</code>): time for a wave to travel between the sensors at the material's speed of sound — auto-filled when you pick a material, but you can override</li>
+<li><strong>Pagitan ng sensor</strong> (<code>d</code>): pisikal na distansya sa pagitan ng mga sensor, sa cm o pulgada (itinatakda sa Mga Setting)</li>
+<li><strong>Pagkaantala ng oras ng pag-calibrate</strong> (<code>tCal</code>): oras para sa isang alon upang maglakbay sa pagitan ng mga sensor sa bilis ng tunog ng materyal — awtomatikong napupunan kapag pumili ka ng materyal, ngunit maaari mong i-override</li>
 </ul>
-<h3 id="step-3-enter-the-event-time">Step 3: Enter the event time</h3>
+<h3 id="hakbang-3-ipasok-ang-oras-ng-kaganapan">Hakbang 3: Ipasok ang oras ng kaganapan</h3>
 <ul>
-<li><strong>Event time delay</strong> (<code>tEvent</code>): time difference between sensors detecting the noise event, in microseconds</li>
-<li><strong>First sensor</strong>: which sensor heard the event first (A or B)</li>
+<li><strong>Pagkaantala ng oras ng kaganapan</strong> (<code>tEvent</code>): pagkakaiba ng oras sa pagitan ng mga sensor na nakaka-detect ng kaganapan ng ingay, sa microseconds</li>
+<li><strong>Unang sensor</strong>: aling sensor ang unang nakarinig sa kaganapan (A o B)</li>
 </ul>
-<h3 id="step-4-read-the-result">Step 4: Read the result</h3>
-<p>The app shows the source position as a distance from sensor A:
-- Result = 0: source is at sensor A
-- Result = distance: source is at sensor B<br />
-- Result between: source is between them
-- Result outside: source is beyond one of the sensors (toast will warn)</p>
-<p>The result card shows both distances (from A, from B) and indicates which sensor is closer.</p>
-<h3 id="step-5-optional-annotate-a-photo">Step 5 (optional): Annotate a photo</h3>
-<p>Tap <strong>📷 Annotate photo</strong> to take a photo of your setup. The app overlays markers for sensors A, B and the source. Useful for reports.</p>
+<h3 id="hakbang-4-basahin-ang-resulta">Hakbang 4: Basahin ang resulta</h3>
+<p>Ipinapakita ng app ang posisyon ng pinagmulan bilang distansya mula sa sensor A:
+- Resulta = 0: ang pinagmulan ay nasa sensor A
+- Resulta = distansya: ang pinagmulan ay nasa sensor B
+- Resulta sa pagitan: ang pinagmulan ay nasa pagitan nila
+- Resulta sa labas: ang pinagmulan ay nasa kabila ng isa sa mga sensor (magbababala ang toast)</p>
+<p>Ipinapakita ng result card ang parehong distansya (mula sa A, mula sa B) at ipinapahiwatig kung aling sensor ang mas malapit.</p>
+<h3 id="hakbang-5-opsyonal-mag-annotate-ng-larawan">Hakbang 5 (opsyonal): Mag-annotate ng larawan</h3>
+<p>I-tap ang <strong>📷 I-annotate ang larawan</strong> upang kumuha ng larawan ng iyong setup. Inilalagay ng app ang mga marker para sa sensor A, B at sa pinagmulan. Kapaki-pakinabang para sa mga ulat.</p>
 <hr />
-<h2 id="3-sensor-mode">3-Sensor mode</h2>
-<p>Locates a source on a 2D plane using three sensors arranged in a triangle.</p>
+<h2 id="mode-na-3-sensor">Mode na 3-Sensor</h2>
+<p>Hinahanap ang isang pinagmulan sa 2D plane gamit ang tatlong sensor na nakaayos sa isang tatsulok.</p>
 <p><img alt="3-Sensor tab" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="setup">Setup</h3>
-<p>Place three sensors on your structure forming a triangle. Equilateral, right-angle, or scalene — the app handles all geometries.</p>
-<h3 id="enter-the-data">Enter the data</h3>
-<p>In the <strong>Triangle side lengths</strong> section, enter the physical distance for all three sides (A–B, A–C, B–C).</p>
-<p>For each pair (A–B and A–C), enter:
-- <strong>tCal</strong>: calibration time (auto-fills from material)
-- <strong>tEvent</strong>: measured time difference for the noise event
-- <strong>First sensor</strong>: which heard it first</p>
-<h3 id="read-the-result">Read the result</h3>
-<p>The app shows the source position as X, Y coordinates relative to sensor A (sensor A at origin, sensor B on the X-axis). The visualization shows all three sensors and the source location.</p>
-<p><img alt="Triangle result" src="../screenshots/04-triangle-result.png" /></p>
+<h3 id="pag-setup">Pag-setup</h3>
+<p>Maglagay ng tatlong sensor sa iyong istraktura na bumubuo ng isang tatsulok. Equilateral, right-angle, o scalene — hinahawakan ng app ang lahat ng geometry.</p>
+<h3 id="ipasok-ang-data">Ipasok ang data</h3>
+<p>Sa seksyong <strong>Mga haba ng gilid ng tatsulok</strong>, ipasok ang pisikal na distansya para sa lahat ng tatlong gilid (A–B, A–C, B–C).</p>
+<p>Para sa bawat pares (A–B at A–C), ipasok ang:
+- <strong>tCal</strong>: oras ng pag-calibrate (awtomatikong napupunan mula sa materyal)
+- <strong>tEvent</strong>: nasukat na pagkakaiba ng oras para sa kaganapan ng ingay
+- <strong>Unang sensor</strong>: alin ang unang nakarinig</p>
+<h3 id="basahin-ang-resulta">Basahin ang resulta</h3>
+<p>Ipinapakita ng app ang posisyon ng pinagmulan bilang mga X, Y coordinate na nauugnay sa sensor A (sensor A sa origin, sensor B sa X axis). Ipinapakita ng visualization ang lahat ng tatlong sensor at ang lokasyon ng pinagmulan.</p>
+<p><img alt="Resulta ng tatsulok" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modes">Pro+ modes</h2>
-<p>Several advanced tabs offer over-determined solvers and higher dimensionality:</p>
+<h2 id="mga-pro-mode">Mga Pro+ mode</h2>
+<p>Ang ilang advanced na tab ay nag-aalok ng over-determined solvers at mas mataas na dimensionality:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
-<p>Same triangle setup as 3-Sensor, but calibrate AND measure all three pairs (A–B, A–C, B–C). The solver uses all 3 TDOAs in a least-squares fit — more robust to measurement noise and anisotropic materials. Per-pair residuals are reported so you can spot inconsistent measurements.</p>
+<p>Parehong tatsulok setup sa 3-Sensor, ngunit i-calibrate AT sukatin ang lahat ng tatlong pares (A–B, A–C, B–C). Ginagamit ng solver ang lahat ng 3 TDOA sa isang least-squares fit — mas matatag laban sa ingay ng pagsukat at anisotropic na mga materyal. Iniuulat ang mga residual bawat pares upang makita mo ang mga di-pare-parehong pagsukat.</p>
 <h3 id="4-sensor">4-Sensor</h3>
-<p>Place four sensors around the area:
-- <strong>A–B</strong> = horizontal pair (left/right sides)
-- <strong>C–D</strong> = vertical pair (top/bottom sides)</p>
-<p>Run the A–B pair first (horizontal), then C–D pair (vertical). The 2D map shows the intersection. Each pair is calibrated separately — useful when material varies across the structure.</p>
+<p>Maglagay ng apat na sensor sa paligid ng lugar:
+- <strong>A–B</strong> = horizontal na pares (kaliwa/kanang gilid)
+- <strong>C–D</strong> = vertical na pares (itaas/ibabang gilid)</p>
+<p>Patakbuhin ang A–B na pares muna (horizontal), pagkatapos ang C–D na pares (vertical). Ipinapakita ng 2D map ang intersection. Ang bawat pares ay na-calibrate nang hiwalay — kapaki-pakinabang kapag nag-iiba-iba ang materyal sa buong istraktura.</p>
 <h3 id="4-sen-advanced-2d">4-Sen+ (Advanced 2D)</h3>
-<p>Four sensors at any positions (not forced rectangular). Pair A with each of B, C, D and calibrate separately. Over-determined least-squares solver averages out per-pair measurement noise and reports per-pair residuals.</p>
+<p>Apat na sensor sa kahit anong posisyon (hindi pinipilit na rectangular). Ipares ang A sa bawat isa sa B, C, D at i-calibrate nang hiwalay. Pinapantay ng over-determined least-squares solver ang ingay ng pagsukat bawat pares at iniuulat ang mga residual bawat pares.</p>
 <h3 id="3d">3D</h3>
-<p>Full 3D measurement with 4 sensors placed in 3D space. Enter each sensor's (X, Y, Z) coordinates, plus calibration and event times for each pair (A–B, A–C, A–D).</p>
+<p>Ganap na 3D na pagsukat na may 4 sensor na inilagay sa 3D space. Ipasok ang (X, Y, Z) coordinate ng bawat sensor, plus ang mga oras ng pag-calibrate at kaganapan para sa bawat pares (A–B, A–C, A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
-<p>Like 3D but supports up to <strong>6 sensors</strong> (A through F) with over-determined LSQ. Maximum precision for complex 3D geometries.</p>
+<p>Katulad ng 3D ngunit sumusuporta sa hanggang <strong>6 sensor</strong> (A hanggang F) na may over-determined LSQ. Maximum na katumpakan para sa mga kumplikadong 3D geometry.</p>
 <hr />
-<h2 id="the-materials-tab">The Materials tab</h2>
-<p>Library of common engineering materials with known speed of sound at 20 °C.</p>
-<p><img alt="Materials tab" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="material-list">Material list</h3>
-<p>The list includes air, fluids, rubbers, polymers, woods, glasses, and metals. Speeds range from ~340 m/s (air) to ~13,000 m/s (some metals at room temperature).</p>
-<h3 id="built-in-materials-with-temperature-compensation">Built-in materials with temperature compensation</h3>
-<p>14 commonly-used metals include temperature coefficient data. When the Reference temperature in Settings differs from 20 °C, the app automatically adjusts these materials' speeds:</p>
+<h2 id="ang-tab-na-materials">Ang tab na Materials</h2>
+<p>Library ng mga karaniwang engineering material na may kilalang bilis ng tunog sa 20 °C.</p>
+<p><img alt="Tab na Materials" src="../screenshots/05-materials-tab.png" /></p>
+<h3 id="listahan-ng-mga-materyal">Listahan ng mga materyal</h3>
+<p>Kasama sa listahan ang hangin, mga fluid, mga goma, mga polymer, mga kahoy, mga salamin, at mga metal. Ang mga bilis ay mula sa ~340 m/s (hangin) hanggang sa ~13,000 m/s (ilang mga metal sa room temperature).</p>
+<h3 id="mga-built-in-na-materyal-na-may-temperature-compensation">Mga built-in na materyal na may temperature compensation</h3>
+<p>14 na karaniwang ginagamit na mga metal ang may kasamang data ng temperature coefficient. Kapag ang Reference temperature sa Mga Setting ay naiiba sa 20 °C, awtomatikong inaayos ng app ang mga bilis ng mga materyal na ito:</p>
 <ul>
-<li>Aluminium</li>
+<li>Aluminum</li>
 <li>Steel, Mild (1020)</li>
 <li>Stainless Steel (304)</li>
 <li>Iron (cast)</li>
@@ -254,221 +254,221 @@
 <li>Nickel</li>
 <li>Tungsten</li>
 </ul>
-<p>Materials with compensation show two values in the picker: the <strong>compensated speed</strong> (large, prominent) and the <strong>reference speed at 20 °C</strong> (small, gray underneath).</p>
-<p>Materials without compensation show <strong>"ref only"</strong> in italic — their listed speed is used as-is regardless of temperature.</p>
-<h3 id="custom-materials">Custom materials</h3>
-<p>If you measure a calibration on the 2-Sensor tab, you can save the result as a custom material. After a successful 2-sensor measurement, look for the option to save the derived speed under a name of your choice.</p>
-<p>Custom materials store the in-situ measured speed; they never apply temperature compensation (the speed was already measured at the test temperature).</p>
-<h3 id="favorites">Favorites</h3>
-<p>Tap the star next to any material to mark it as a favorite. Favorites appear at the top of the list for quick access.</p>
-<h3 id="search">Search</h3>
-<p>Use the search bar at the top to filter materials by name. Search matches both English canonical names and translated display names.</p>
+<p>Ang mga materyal na may compensation ay nagpapakita ng dalawang halaga sa picker: ang <strong>na-compensate na bilis</strong> (malaki, kilalang-kilala) at ang <strong>reference na bilis sa 20 °C</strong> (maliit, kulay-abo sa ibaba).</p>
+<p>Ang mga materyal na walang compensation ay nagpapakita ng <strong>"ref only"</strong> sa italic — ang nakalistang bilis ay ginagamit nang ganoon nang hindi alintana ang temperatura.</p>
+<h3 id="mga-custom-na-materyal">Mga custom na materyal</h3>
+<p>Kung sumusukat ka ng calibration sa 2-Sensor tab, maaari mong i-save ang resulta bilang isang custom na materyal. Pagkatapos ng matagumpay na 2-sensor measurement, hanapin ang opsyon upang i-save ang nagmula na bilis sa ilalim ng isang pangalang pinili mo.</p>
+<p>Ang mga custom na materyal ay nag-iimbak ng in-situ na sinukat na bilis; hindi kailanman naglalapat ng temperature compensation (ang bilis ay nasukat na sa test temperature).</p>
+<h3 id="mga-paborito">Mga paborito</h3>
+<p>I-tap ang star sa tabi ng anumang materyal upang markahan ito bilang paborito. Ang mga paborito ay lumalabas sa tuktok ng listahan para sa mabilis na pag-access.</p>
+<h3 id="paghahanap">Paghahanap</h3>
+<p>Gamitin ang search bar sa tuktok upang i-filter ang mga materyal ayon sa pangalan. Ang paghahanap ay tumutugma sa parehong English canonical name at sa mga isinaling display name.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>The speed of sound in materials changes with temperature. In automotive NVH testing this matters: an engine bay at 80 °C, a cold-soaked cabin at -10 °C, or an exhaust manifold area at 200 °C all behave differently from room-temperature laboratory conditions.</p>
-<h3 id="setting-the-temperature">Setting the temperature</h3>
-<p>Open Settings (⚙ icon) → Reference temperature. Enter your test environment's temperature in °C (range -40 to +200).</p>
+<h2 id="pagsasaayos-ng-temperatura">Pagsasaayos ng temperatura</h2>
+<p>Ang bilis ng tunog sa mga materyal ay nagbabago sa temperatura. Sa automotive NVH testing, mahalaga ito: ang engine bay sa 80 °C, ang cold-soaked cabin sa -10 °C, o ang exhaust manifold area sa 200 °C ay lahat kumikilos nang iba mula sa room-temperature laboratory conditions.</p>
+<h3 id="pagtatakda-ng-temperatura">Pagtatakda ng temperatura</h3>
+<p>Buksan ang Mga Setting (icon na ⚙) → Reference temperature. Ipasok ang temperatura ng iyong test environment sa °C (saklaw -40 hanggang +200).</p>
 <p><img alt="Settings panel" src="../screenshots/06-settings.png" /></p>
-<h3 id="what-happens-when-temperature-20-c">What happens when temperature ≠ 20 °C</h3>
+<h3 id="ano-ang-nangyayari-kapag-temperature-20-c">Ano ang nangyayari kapag temperature ≠ 20 °C</h3>
 <ul>
-<li>Calibration time fields auto-fill with the temperature-adjusted speed</li>
-<li>The Materials picker shows the adjusted speed prominently</li>
-<li>A toast confirms: <em>"Aluminium applied (6,284 m/s @ 60 °C) — N pair(s) updated"</em></li>
-<li>The "Closest material" hint compares against temperature-adjusted speeds</li>
-<li>Saved history entries record the active temperature</li>
-<li>Reports include a footer line: <em>"Reference temperature: 60 °C, compensation applied"</em></li>
+<li>Ang mga field ng oras ng pag-calibrate ay awtomatikong napupunan ng temperature-adjusted speed</li>
+<li>Ang Materials picker ay pansin-pansin na nagpapakita ng adjusted speed</li>
+<li>Ang isang toast ay nagkukumpirma: <em>"Aluminum applied (6,284 m/s @ 60 °C) — N pares na-update"</em></li>
+<li>Ang "Closest material" hint ay naghahambing sa temperature-adjusted speeds</li>
+<li>Ang mga naka-save na history entry ay nagre-record ng active temperature</li>
+<li>Ang mga ulat ay may kasamang footer line: <em>"Reference temperature: 60 °C, compensation applied"</em></li>
 </ul>
-<h3 id="reset-on-app-launch">Reset on app launch</h3>
-<p>The Reference temperature <strong>always resets to 20 °C</strong> when you launch the app. This prevents stale settings from a past measurement session silently affecting today's work. A small italic note in Settings reminds you of this behavior.</p>
-<p>If you want to replay a historical measurement at its original temperature, just tap the entry — the temperature is restored automatically.</p>
-<h3 id="materials-without-compensation">Materials without compensation</h3>
-<p>Most non-metal materials don't have reliable published temperature coefficients. The app shows a <strong>"ref only"</strong> badge for these — their listed speed is used regardless of the temperature setting. If you need accurate measurements at non-room temperatures for these materials, perform an in-situ calibration and save the result as a custom material.</p>
+<h3 id="reset-sa-app-launch">Reset sa app launch</h3>
+<p>Ang reference temperature ay <strong>palaging nire-reset sa 20 °C</strong> kapag inilulunsad mo ang app. Pinipigilan nito ang mga lumang setting mula sa nakaraang sesyon ng pagsukat na tahimik na maapektuhan ang gawain ngayon. Pinapaalala sa iyo ng isang maliit na italic note sa Mga Setting ang ugali na ito.</p>
+<p>Kung gusto mong i-replay ang isang historikal na pagsukat sa orihinal na temperatura nito, i-tap lang ang entry — awtomatikong ibinabalik ang temperatura.</p>
+<h3 id="mga-materyal-na-walang-compensation">Mga materyal na walang compensation</h3>
+<p>Karamihan sa mga di-metal na materyal ay walang maaasahang inilathalang temperature coefficient. Nagpapakita ang app ng badge na <strong>"ref only"</strong> para sa mga ito — ang kanilang nakalistang bilis ay ginagamit nang hindi alintana ang setting ng temperatura. Kung kailangan mo ng tumpak na pagsukat sa hindi-room temperature para sa mga materyal na ito, magsagawa ng in-situ calibration at i-save ang resulta bilang isang custom na materyal.</p>
 <hr />
-<h2 id="photo-annotation">Photo annotation</h2>
-<p>After a successful calculation, tap the <strong>📷 Annotate photo</strong> button to overlay sensor and source markers on a photo of your setup.</p>
-<p><img alt="Photo annotation" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flow">Flow</h3>
+<h2 id="anotasyon-ng-larawan">Anotasyon ng larawan</h2>
+<p>Pagkatapos ng matagumpay na pagkalkula, i-tap ang button na <strong>📷 I-annotate ang larawan</strong> upang ilagay ang mga sensor at source marker sa isang larawan ng iyong setup.</p>
+<p><img alt="Anotasyon ng larawan" src="../screenshots/08-photo-annotation.png" /></p>
+<h3 id="daloy">Daloy</h3>
 <ol>
-<li>Tap <strong>Annotate photo</strong> — the system camera opens</li>
-<li>Take a photo of your sensor placement</li>
-<li>The app loads the photo into the annotation overlay</li>
-<li>Sensor markers (A, B, C, D, E, F as applicable — up to 6 sensors) and the source marker auto-place based on your calculation</li>
-<li>Drag any marker to fine-tune positioning. As you adjust, the source position recomputes from the corrected sensor positions</li>
-<li>Tap <strong>Save</strong> to keep, or <strong>Retake</strong> to try again</li>
+<li>I-tap ang <strong>I-annotate ang larawan</strong> — bubukas ang system camera</li>
+<li>Kumuha ng larawan ng iyong sensor placement</li>
+<li>Niloload ng app ang larawan sa annotation overlay</li>
+<li>Awtomatikong inilalagay ang mga sensor marker (A, B, C, D, E, F kung naaangkop — hanggang 6 sensor) at ang source marker batay sa iyong pagkalkula</li>
+<li>I-drag ang anumang marker upang ayusin nang maayos ang posisyon. Habang ina-adjust mo, ang posisyon ng pinagmulan ay kinakalkula muli mula sa mga itinatamang posisyon ng sensor</li>
+<li>I-tap ang <strong>I-save</strong> upang panatilihin, o <strong>Kunin muli</strong> upang subukan muli</li>
 </ol>
-<p>The annotated photo is included automatically in PDF reports.</p>
+<p>Ang naka-annotate na larawan ay awtomatikong kasama sa mga PDF na ulat.</p>
 <hr />
-<h2 id="reports">Reports</h2>
-<p>Tap the <strong>Print result</strong> button on any result screen to generate a formatted report.</p>
+<h2 id="mga-ulat">Mga ulat</h2>
+<p>I-tap ang button na <strong>I-print ang resulta</strong> sa anumang result screen upang makabuo ng isang formatted na ulat.</p>
 <p><img alt="PDF report" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="report-contents">Report contents</h3>
+<h3 id="mga-nilalaman-ng-ulat">Mga nilalaman ng ulat</h3>
 <ul>
-<li>Header (customizable in Settings → Report header)</li>
-<li>Measurement title and timestamp</li>
-<li>All input values in a clean table</li>
-<li>Calculation result</li>
-<li>Conclusion text</li>
+<li>Header (maaaring i-customize sa Mga Setting → Header ng ulat)</li>
+<li>Pamagat ng pagsukat at timestamp</li>
+<li>Lahat ng input value sa isang maayos na talahanayan</li>
+<li>Resulta ng pagkalkula</li>
+<li>Konklusyon na teksto</li>
 <li>Visualization (geometry plot)</li>
-<li>Annotated photo (if you took one)</li>
-<li>Temperature footer line (if compensation was active)</li>
-<li>Page number and credit line</li>
+<li>Naka-annotate na larawan (kung kumuha ka ng isa)</li>
+<li>Footer line ng temperatura (kung aktibo ang compensation)</li>
+<li>Numero ng pahina at linya ng kredito</li>
 </ul>
-<h3 id="output-format">Output format</h3>
+<h3 id="format-ng-output">Format ng output</h3>
 <ul>
-<li><strong>Android</strong>: native PDF generation, save to your phone or share</li>
-<li><strong>iOS</strong>: system print dialog → save as PDF, AirPrint, or share</li>
+<li><strong>Android</strong>: native PDF generation, i-save sa iyong telepono o ibahagi</li>
+<li><strong>iOS</strong>: system print dialog → i-save bilang PDF, AirPrint, o ibahagi</li>
 </ul>
-<h3 id="customizing-the-header">Customizing the header</h3>
-<p>Settings → Report header. Enter your company name, lab name, project info, or whatever you want at the top of every report.</p>
+<h3 id="pag-customize-ng-header">Pag-customize ng header</h3>
+<p>Mga Setting → Header ng ulat. Ipasok ang pangalan ng iyong kumpanya, pangalan ng lab, impormasyon ng proyekto, o anumang nais mo sa tuktok ng bawat ulat.</p>
 <hr />
-<h2 id="backup-and-restore">Backup and restore</h2>
-<p>Save all your custom materials, favorites, settings, and history to a single file. Transfer between devices.</p>
+<h2 id="backup-at-pagpapanumbalik">Backup at pagpapanumbalik</h2>
+<p>I-save ang lahat ng iyong custom na materyal, mga paborito, mga setting, at history sa isang file. Ilipat sa pagitan ng mga device.</p>
 <h3 id="backup">Backup</h3>
-<p>Settings → <strong>Backup</strong> → tap "Save backup file." The app generates a JSON file and opens your phone's share sheet. Save it to your cloud drive (Google Drive, iCloud, OneDrive), email it to yourself, or transfer it any way you like.</p>
-<h3 id="restore">Restore</h3>
-<p>Settings → <strong>Restore</strong> → pick the backup file from your phone's storage. The app imports custom materials, favorites, history, and settings.</p>
-<p>⚠️ <strong>Restore replaces your current data.</strong> If you have important measurements on the current device, back them up first before restoring from a different backup.</p>
+<p>Mga Setting → <strong>Backup</strong> → i-tap ang "I-save ang backup file". Bumubuo ang app ng JSON file at binubuksan ang share sheet ng iyong telepono. I-save ito sa iyong cloud drive (Google Drive, iCloud, OneDrive), i-email sa iyong sarili, o ilipat sa anumang paraan na gusto mo.</p>
+<h3 id="pagpapanumbalik">Pagpapanumbalik</h3>
+<p>Mga Setting → <strong>Pagpapanumbalik</strong> → piliin ang backup file mula sa storage ng iyong telepono. Ini-import ng app ang mga custom na materyal, mga paborito, history, at mga setting.</p>
+<p>⚠️ <strong>Pinapalitan ng pagpapanumbalik ang iyong kasalukuyang data.</strong> Kung may mahalaga kang pagsukat sa kasalukuyang device, i-backup muna ang mga ito bago i-restore mula sa ibang backup.</p>
 <hr />
-<h2 id="settings">Settings</h2>
-<p>Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a tab.</p>
-<p><img alt="Settings" src="../screenshots/06-settings.png" /></p>
+<h2 id="mga-setting">Mga Setting</h2>
+<p>Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay isang modal, hindi isang tab.</p>
+<p><img alt="Mga Setting" src="../screenshots/06-settings.png" /></p>
 <table>
 <thead>
 <tr>
 <th>Setting</th>
-<th>What it controls</th>
+<th>Ano ang kinokontrol nito</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Upgrade to Pro</strong></td>
-<td>Buy or learn about Pro features ($19.99)</td>
+<td><strong>Mag-upgrade sa Pro</strong></td>
+<td>Bumili o matuto tungkol sa mga tampok ng Pro ($19.99)</td>
 </tr>
 <tr>
-<td><strong>Language</strong></td>
-<td>App display language (30 supported)</td>
+<td><strong>Wika</strong></td>
+<td>Wika ng display ng app (30 suportado)</td>
 </tr>
 <tr>
-<td><strong>Theme</strong></td>
-<td>Light, Dark, or Auto (follow system)</td>
+<td><strong>Tema</strong></td>
+<td>Light, Dark, o Auto (sundan ang sistema)</td>
 </tr>
 <tr>
-<td><strong>Distance unit</strong></td>
-<td>cm or inches</td>
+<td><strong>Yunit ng distansya</strong></td>
+<td>cm o pulgada</td>
 </tr>
 <tr>
 <td><strong>Reference temperature</strong></td>
-<td>Active temperature for compensation, -40 to +200 °C</td>
+<td>Aktibong temperatura para sa compensation, -40 hanggang +200 °C</td>
 </tr>
 <tr>
-<td><strong>Report header</strong></td>
-<td>Custom text at the top of generated reports</td>
+<td><strong>Header ng ulat</strong></td>
+<td>Custom na teksto sa tuktok ng mga nabuong ulat</td>
 </tr>
 <tr>
 <td><strong>Backup</strong></td>
-<td>Export all data to a file</td>
+<td>I-export ang lahat ng data sa isang file</td>
 </tr>
 <tr>
-<td><strong>Restore</strong></td>
-<td>Import data from a backup file</td>
+<td><strong>Pagpapanumbalik</strong></td>
+<td>I-import ang data mula sa isang backup file</td>
 </tr>
 <tr>
-<td><strong>Restore purchase</strong></td>
-<td>Re-acquire Pro on a new device</td>
+<td><strong>Ibalik ang pagbili</strong></td>
+<td>Muling makuha ang Pro sa isang bagong device</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="pro-features">Pro features</h2>
-<p>NVH Source Locator uses a <strong>feature-locked freemium model</strong>:</p>
+<h2 id="mga-tampok-ng-pro">Mga tampok ng Pro</h2>
+<p>Ginagamit ng NVH Source Locator ang isang <strong>feature-locked freemium model</strong>:</p>
 <ul>
-<li><strong>Free</strong>: 2-Sensor tab is fully functional with no limits</li>
-<li><strong>Pro</strong>: All other tabs have specific input fields locked. The paywall appears when a free user taps a locked field</li>
+<li><strong>Libre</strong>: Ang 2-Sensor tab ay ganap na gumagana nang walang limitasyon</li>
+<li><strong>Pro</strong>: Ang lahat ng iba pang mga tab ay may mga partikular na input field na naka-lock. Ang paywall ay lumalabas kapag ang isang libreng user ay nag-tap sa isang naka-lock na field</li>
 </ul>
-<h3 id="whats-locked">What's locked</h3>
-<p>Pro-required fields are scattered across:
+<h3 id="ano-ang-naka-lock">Ano ang naka-lock</h3>
+<p>Ang mga field na kailangan ng Pro ay nakakalat sa:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
-- 3D and 3D+ modes
-- Backup and Restore
-- PDF reports
-- Custom materials
-- Photo annotation</p>
-<p>A free user can OPEN any tab and SEE the interface. They just can't enter values into the Pro-locked input fields.</p>
-<p><img alt="Pro-locked field" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="the-paywall">The paywall</h3>
+- Mga 3D at 3D+ na mode
+- Backup at Pagpapanumbalik
+- Mga PDF na ulat
+- Mga custom na materyal
+- Anotasyon ng larawan</p>
+<p>Maaaring BUKSAN ng isang libreng user ang anumang tab at MAKITA ang interface. Hindi lang sila maaaring maglagay ng mga halaga sa mga Pro-locked na input field.</p>
+<p><img alt="Pro-locked na field" src="../screenshots/11-pro-locked-field.png" /></p>
+<h3 id="ang-paywall">Ang paywall</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
-<p>When a free user taps a locked field, the paywall slides in showing:
-- App icon with PRO badge
-- Feature list
-- Unlock button with price ($19.99 default; may vary by region)
-- Promo code redemption (Android only — iOS uses Apple's separate Offer Code flow)
-- Optional promo link to community channels</p>
-<h3 id="purchasing-pro">Purchasing Pro</h3>
-<p>Tap any locked field, or tap <strong>Upgrade to Pro</strong> in Settings. Uses your platform's official payment system (Google Play on Android, Apple App Store on iOS).</p>
-<h3 id="restoring-pro-on-a-new-device">Restoring Pro on a new device</h3>
-<p>If you purchased on one device and want Pro on another (same account):</p>
+<p>Kapag ang isang libreng user ay nag-tap sa isang naka-lock na field, ang paywall ay nag-slide upang ipakita ang:
+- Icon ng app na may PRO badge
+- Listahan ng tampok
+- Unlock button na may presyo ($19.99 default; maaaring mag-iba sa rehiyon)
+- Pag-redeem ng promo code (Android lamang — gumagamit ang iOS ng hiwalay na Offer Code flow ng Apple)
+- Opsyonal na promo link sa mga community channel</p>
+<h3 id="pagbili-ng-pro">Pagbili ng Pro</h3>
+<p>I-tap ang anumang naka-lock na field, o i-tap ang <strong>Mag-upgrade sa Pro</strong> sa Mga Setting. Gumagamit ng opisyal na sistema ng pagbabayad ng iyong platform (Google Play sa Android, Apple App Store sa iOS).</p>
+<h3 id="pagpapanumbalik-ng-pro-sa-isang-bagong-device">Pagpapanumbalik ng Pro sa isang bagong device</h3>
+<p>Kung bumili ka sa isang device at gusto mo ng Pro sa iba (parehong account):</p>
 <ol>
-<li>Sign into the <strong>same</strong> Google account (Android) or Apple ID (iOS) you used to buy</li>
-<li>Open NVH Source Locator on the new device</li>
-<li>Go to Settings → <strong>Restore purchase</strong></li>
-<li>The app verifies with the platform's purchase records and unlocks Pro</li>
+<li>Mag-sign in sa <strong>parehong</strong> Google account (Android) o Apple ID (iOS) na ginamit mo upang bumili</li>
+<li>Buksan ang NVH Source Locator sa bagong device</li>
+<li>Pumunta sa Mga Setting → <strong>Ibalik ang pagbili</strong></li>
+<li>Bini-verify ng app ang mga record ng pagbili ng platform at ina-unlock ang Pro</li>
 </ol>
-<h3 id="auto-restore-on-launch">Auto-restore on launch</h3>
-<p>If you redeem a promo code in the Google Play Store or App Store while NVH Source Locator is running in the background, returning to the app automatically detects the new purchase and unlocks Pro — no manual Restore needed.</p>
-<h3 id="promo-code-redemption">Promo code redemption</h3>
-<p><strong>Android</strong>: a "Have a Google Play promo code?" button in the paywall opens the Google Play redemption flow with your code pre-filled.</p>
-<p><strong>iOS</strong>: App Store policy 3.1.1 requires redemption through Apple's official "Redeem code" flow. The Google Play button is hidden on iOS. Look for "Redeem App Store code" in Settings instead.</p>
+<h3 id="auto-restore-sa-launch">Auto-restore sa launch</h3>
+<p>Kung mag-redeem ka ng promo code sa Google Play Store o App Store habang tumatakbo ang NVH Source Locator sa background, awtomatikong nade-detect ng pagbabalik sa app ang bagong pagbili at ina-unlock ang Pro — walang kailangang manu-manong Pagpapanumbalik.</p>
+<h3 id="pag-redeem-ng-promo-code">Pag-redeem ng promo code</h3>
+<p><strong>Android</strong>: ang button na "Mayroon ka bang Google Play promo code?" sa paywall ay nagbubukas ng Google Play redemption flow na may iyong code na pre-filled.</p>
+<p><strong>iOS</strong>: Hinihingi ng patakaran ng App Store 3.1.1 ang redemption sa pamamagitan ng opisyal na "Redeem Code" flow ng Apple. Nakatago ang button na Google Play sa iOS. Hanapin ang "I-redeem ang App Store code" sa Mga Setting sa halip.</p>
 <hr />
-<h2 id="help-tab-and-tutorials">Help tab and tutorials</h2>
-<p>The <strong>Help</strong> tab includes in-app tutorials, best-practice guides, and reference information.</p>
-<p><img alt="Help tab" src="../screenshots/10-help-tab.png" /></p>
-<p>Topics covered:
-- What equipment you need
-- How to place sensors for best accuracy
-- Calibration tips
-- Common measurement scenarios
-- Tips for triangulation and 3D placements
-- Cable routing and signal quality</p>
+<h2 id="tab-na-help-at-mga-tutorial">Tab na Help at mga tutorial</h2>
+<p>Kasama sa <strong>Help</strong> tab ang mga in-app na tutorial, mga gabay sa best practice, at sangguniang impormasyon.</p>
+<p><img alt="Tab na Help" src="../screenshots/10-help-tab.png" /></p>
+<p>Mga paksang sakop:
+- Anong kagamitan ang kailangan mo
+- Paano i-position ang mga sensor para sa pinakamahusay na katumpakan
+- Mga tip sa pag-calibrate
+- Mga karaniwang sitwasyon ng pagsukat
+- Mga tip para sa triangulation at 3D placements
+- Cable routing at kalidad ng signal</p>
 <hr />
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="calculation-result-is-wrong-or-makes-no-sense">Calculation result is wrong or makes no sense</h3>
+<h2 id="pag-troubleshoot">Pag-troubleshoot</h2>
+<h3 id="mali-ang-resulta-ng-pagkalkula-o-walang-katuturan">Mali ang resulta ng pagkalkula o walang katuturan</h3>
 <ol>
-<li>Check your calibration. Auto-filled <code>tCal</code> assumes published material speed — real-world materials vary. The most accurate calibration is in-situ: tap a known location and let the app derive the actual speed.</li>
-<li>Check the <strong>First sensor</strong> setting — which sensor heard the event first matters for the math.</li>
-<li>Verify your distance measurements. Errors of a few mm propagate.</li>
+<li>Suriin ang iyong pag-calibrate. Ipinapalagay ng auto-filled na <code>tCal</code> ang inilathalang bilis ng materyal — nag-iiba-iba ang totoong mga materyal. Ang pinaka-tumpak na pag-calibrate ay in-situ: i-tap ang isang kilalang lokasyon at hayaan ang app na makuha ang aktwal na bilis.</li>
+<li>Suriin ang setting ng <strong>Unang sensor</strong> — mahalaga sa matematika kung aling sensor ang unang nakarinig sa kaganapan.</li>
+<li>I-verify ang iyong mga pagsukat ng distansya. Ang mga error sa ilang mm ay kumakalat.</li>
 </ol>
-<h3 id="toast-says-result-outside-range">Toast says "Result outside range"</h3>
-<p>The math says the source is not between your sensors. Possible causes:
-- The source actually is outside the sensor line/plane
-- One of your inputs is wrong
-- The calibration speed is too far off from reality</p>
-<h3 id="calc-speed-hint-shows-a-warning-color">Calc-speed hint shows a warning color</h3>
-<p>The implied speed of sound from your inputs is far from any common material (less than 50 m/s or more than 20,000 m/s). Check your inputs — likely a typo in tCal or distance.</p>
-<h3 id="material-picker-shows-different-speeds-than-expected">Material picker shows different speeds than expected</h3>
-<p>Check the Reference temperature in Settings. If non-20 °C, displayed speeds reflect temperature compensation. The app shows "ref X @ 20°C" underneath compensated speeds so you can verify.</p>
-<h3 id="history-entry-replays-with-different-result">History entry replays with different result</h3>
-<p>Old history entries created before app version 1.75 might not have stored the temperature. If you took the measurement at a non-20 °C temperature, replay will use the current setting. Manually set the temperature in Settings before replaying, OR re-measure.</p>
-<h3 id="photo-annotation-markers-not-where-i-expect">Photo annotation markers not where I expect</h3>
-<p>Markers auto-place based on input geometry. Drag them to adjust. Adjusting markers updates the source position in the photo overlay — but does NOT change the underlying calculation result.</p>
-<h3 id="backuprestore-fails">Backup/Restore fails</h3>
-<p>Make sure you're using a backup file generated by the same or newer version of the app. Older backup files might lack current data fields.</p>
-<h3 id="restore-purchase-says-no-purchase-found">Restore Purchase says "no purchase found"</h3>
+<h3 id="sabi-ng-toast-resulta-sa-labas-ng-saklaw">Sabi ng Toast "Resulta sa labas ng saklaw"</h3>
+<p>Sinasabi ng matematika na ang pinagmulan ay hindi nasa pagitan ng iyong mga sensor. Mga posibleng dahilan:
+- Ang pinagmulan ay talagang nasa labas ng linya/plane ng sensor
+- Ang isa sa iyong mga input ay mali
+- Ang bilis ng pag-calibrate ay masyadong malayo sa realidad</p>
+<h3 id="ang-calc-speed-hint-ay-nagpapakita-ng-warning-color">Ang calc-speed hint ay nagpapakita ng warning color</h3>
+<p>Ang implicit na bilis ng tunog mula sa iyong mga input ay malayo sa anumang karaniwang materyal (mas mababa sa 50 m/s o higit sa 20,000 m/s). Suriin ang iyong mga input — malamang na typo sa tCal o distance.</p>
+<h3 id="ang-materials-picker-ay-nagpapakita-ng-ibat-ibang-bilis-kaysa-sa-inaasahan">Ang Materials picker ay nagpapakita ng iba't ibang bilis kaysa sa inaasahan</h3>
+<p>Suriin ang Reference temperature sa Mga Setting. Kung hindi 20 °C, ipinapakita ng mga ipinapakitang bilis ang temperature compensation. Ipinapakita ng app ang "ref X @ 20°C" sa ilalim ng mga na-compensate na bilis upang maaari mong i-verify.</p>
+<h3 id="ang-history-entry-ay-nag-replay-na-may-ibang-resulta">Ang history entry ay nag-replay na may ibang resulta</h3>
+<p>Ang mga lumang history entry na ginawa bago ang app version 1.75 ay maaaring hindi nag-imbak ng temperatura. Kung ginawa mo ang pagsukat sa hindi-20 °C na temperatura, ang playback ay gagamit ng kasalukuyang setting. Manu-manong itakda ang temperatura sa Mga Setting bago mag-playback, O sukatin muli.</p>
+<h3 id="ang-mga-marker-ng-photo-annotation-ay-hindi-nasaan-inaasahan-ko">Ang mga marker ng photo annotation ay hindi nasaan inaasahan ko</h3>
+<p>Ang mga marker ay awtomatikong inilalagay batay sa input geometry. I-drag ang mga ito upang i-adjust. Ang pag-adjust ng mga marker ay nagba-update sa posisyon ng pinagmulan sa photo overlay — ngunit HINDI nagbabago ang underlying na resulta ng pagkalkula.</p>
+<h3 id="hindi-gumagana-ang-backuppagpapanumbalik">Hindi gumagana ang Backup/Pagpapanumbalik</h3>
+<p>Tiyakin na gumagamit ka ng isang backup file na nabuo ng pareho o mas bagong bersyon ng app. Maaaring kulang ang mas lumang mga backup file sa kasalukuyang mga field ng data.</p>
+<h3 id="sabi-ng-ibalik-ang-pagbili-walang-nahanap-na-pagbili">Sabi ng Ibalik ang pagbili "walang nahanap na pagbili"</h3>
 <ol>
-<li>Verify you're signed into the same store account that you used to purchase</li>
-<li>Verify the purchase wasn't refunded or expired</li>
-<li>Try uninstalling and reinstalling the app (purchase is tied to your store account, not the app installation)</li>
-<li>Contact support@evdiag.net if it persists</li>
+<li>I-verify na naka-sign in ka sa parehong store account na ginamit mo para bumili</li>
+<li>I-verify na hindi nare-refund o expired ang pagbili</li>
+<li>Subukang i-uninstall at i-reinstall ang app (ang pagbili ay nakatali sa iyong store account, hindi sa pag-install ng app)</li>
+<li>Makipag-ugnayan sa support@evdiag.net kung magpapatuloy</li>
 </ol>
-<h3 id="numeric-input-snaps-to-0-unexpectedly">Numeric input snaps to 0 unexpectedly</h3>
-<p>By design: when you blur a numeric field (tap elsewhere), if it's empty, negative, or contains non-numeric text, it snaps to 0. Prevents silently broken calculations from accidentally cleared inputs. The temperature input is exempt (it clamps to -40/+200 instead).</p>
-<h3 id="need-more-help">Need more help</h3>
-<p>Contact <code>support@evdiag.net</code> with:
-- Your device model and OS version
-- The app version (Settings → bottom of page)
-- Description of what you tried
-- Screenshots if possible</p>
+<h3 id="ang-numeric-input-ay-tumatalon-sa-0-nang-hindi-inaasahan">Ang numeric input ay tumatalon sa 0 nang hindi inaasahan</h3>
+<p>Ayon sa disenyo: kapag inalis mo ang focus mula sa isang numeric field (mag-tap sa ibang lugar), kung walang laman ito, negatibo, o naglalaman ng non-numeric na teksto, tumatalon ito sa 0. Pinipigilan ang tahimik na sira na mga kalkulasyon mula sa hindi sinasadyang nalinis na mga input. Hindi kasama ang input ng temperatura (sa halip ay clamp ito sa -40/+200).</p>
+<h3 id="kailangan-ng-higit-pang-tulong">Kailangan ng higit pang tulong</h3>
+<p>Makipag-ugnayan sa <code>support@evdiag.net</code> na may:
+- Modelo ng iyong device at bersyon ng OS
+- Bersyon ng app (Mga Setting → ilalim ng pahina)
+- Paglalarawan kung ano ang sinubukan mo
+- Mga screenshot kung maaari</p>
 <hr />
-<p><em>NVH Source Locator is developed by EVDiag. Visit https://evdiag.net for updates and resources.</em></p>
+<p><em>Ang NVH Source Locator ay binuo ng EVDiag. Bisitahin ang https://evdiag.net para sa mga update at resources.</em></p>
 
   <div class="docs-footer">
     <p>

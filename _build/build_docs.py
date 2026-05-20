@@ -47,11 +47,11 @@ def load_batch(filename, var_name, target_dict):
     print(f"  loaded {len(batch)} translations from {filename}")
 
 print("Loading translation batches...")
-load_batch('quick_ref_batch1.py', 'QUICK_REF_TRANSLATIONS', quick_ref_translations)
-load_batch('quick_ref_batch2.py', 'QUICK_REF_TRANSLATIONS', quick_ref_translations)
+for batch_num in range(1, 10):
+    load_batch(f'quick_ref_batch{batch_num}.py', 'QUICK_REF_TRANSLATIONS', quick_ref_translations)
 
 user_guide_translations = {}
-for batch_num in range(1, 8):
+for batch_num in range(1, 10):
     load_batch(f'user_guide_batch{batch_num}.py', 'USER_GUIDE_TRANSLATIONS', user_guide_translations)
 
 # --- Load English source ---

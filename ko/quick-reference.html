@@ -57,125 +57,125 @@
     편의를 위해 번역된 문서입니다 — 가장 정확한 기술 용어를 위해서는 영어 원본이 권위 있는 자료입니다.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — 빠른 참조</h1>
+<p>한 페이지 요약. 전체 내용은 <code>user-guide.md</code>를 참조하세요.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">핵심 흐름 (2-Sensor, 무료)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>재료 선택</strong> — Materials 탭 → 재료를 탭</li>
+<li><strong>보정 입력</strong> 2-Sensor 탭에서:</li>
+<li>센서 간격 (<code>d</code>)</li>
+<li>보정 시간 지연 (<code>tCal</code>) — 재료에서 자동 입력됨</li>
+<li><strong>이벤트 입력</strong> — <code>tEvent</code> 및 첫 번째 센서 (A 또는 B)</li>
+<li><strong>결과 읽기</strong> — 센서 A로부터의 거리</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="2-Sensor 탭" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">모든 탭</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>탭</th>
+<th>출력</th>
+<th>Pro 필드?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>선을 따른 거리</td>
+<td>아니요 (완전 무료)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>표면 위의 X, Y</td>
+<td>예</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>3쌍에 대한 LSQ가 있는 X, Y</td>
+<td>예</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>두 쌍에서의 X, Y (A–B + C–D)</td>
+<td>예</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>4개 센서에서의 X, Y, 임의 위치</td>
+<td>예</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>4개 센서에서의 X, Y, Z</td>
+<td>예</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>최대 6개 센서에서의 X, Y, Z</td>
+<td>예</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>음속 선택기</td>
+<td>아니요</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>튜토리얼</td>
+<td>아니요</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>설정은 ⚙ 아이콘 (오른쪽 위)에 있으며 탭이 아닙니다.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">온도 보정</h2>
+<p>설정 → 기준 온도, 범위 <strong>-40 ~ +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14가지 금속</strong>에 내장 보정이 있습니다 (알루미늄, 강철, 구리, 황동, 청동, 티타늄, 마그네슘, 납, 아연, 니켈, 텅스텐, 철, 주철)</li>
+<li>보정 없는 재료는 <strong>"ref only"</strong>를 표시합니다</li>
+<li><strong>앱 시작 시마다 20 °C로 재설정</strong> (기본 안전 시작)</li>
+<li>기록 항목을 재생하면 원래 온도가 복원됩니다</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">단축키</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>재료 탭</strong> → 모든 탭의 모든 <code>tCal</code> 필드 자동 입력</li>
+<li><strong>숫자 필드에서 +/- 길게 누르기</strong> → 빠른 증가</li>
+<li><strong>숫자 필드에서 가로 드래그</strong> → 값 스크럽</li>
+<li><strong>빈/음수/유효하지 않은 입력</strong> → 포커스를 잃으면 0으로 스냅 (온도 필드는 -40/200으로 클램프됨)</li>
+<li><strong>재료에 별표 표시</strong> → 선택기 상단으로 이동</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">Pro 모델</h2>
+<p><strong>기능 잠금 프리미엄</strong> ($19.99):
+- 무료: 2-Sensor 탭은 제한 없이 완전히 작동
+- Pro: 다른 탭은 액세스 가능하지만 탭하면 paywall을 표시하는 <strong>금색 자물쇠 필드</strong>가 있습니다</p>
+<p>Pro 잠금 해제: 3-Sensor부터 3D+까지, 사용자 정의 재료, 백업/복원, PDF 보고서, 사진 주석.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">보고서 및 백업</h2>
+<p>모든 결과 화면의 <strong>결과 인쇄</strong> 버튼 → 헤더, 입력, 결과, 시각화, 사진 (촬영한 경우), 온도 바닥글 (보정이 활성화된 경우)이 포함된 PDF.</p>
+<p>설정 → 보고서 헤더에서 헤더를 사용자 정의합니다.</p>
+<p><strong>백업</strong>: 설정 → 백업 → 클라우드/이메일로 공유.<br />
+<strong>복원</strong>: 설정 → 복원 → 백업 파일 선택.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">새 장치에서 Pro 복원</h2>
+<p>구매한 동일한 Google 계정 (Android) 또는 Apple ID (iOS) → 설정 → <strong>구매 복원</strong> → 몇 초 안에 잠금 해제.</p>
+<p>프로모션 코드를 외부에서 사용한 후 앱으로 돌아갈 때 자동 복원이 자동으로 발생합니다.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">빠른 문제 해결</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>결과가 범위를 벗어남?</strong> <code>tEvent</code> 부호 / 첫 번째 센서 / 센서 간격을 확인하세요</li>
+<li><strong>가장 가까운 재료가 잘못됨?</strong> 기준 온도가 실수로 설정되었을 수 있습니다 — 설정을 확인하세요</li>
+<li><strong>구매 복원 실패?</strong> 동일한 스토어 계정 확인; 계속되면 재설치</li>
+<li><strong>필드가 0으로 스냅됨?</strong> 빈/음수 입력은 포커스를 잃을 때 자동으로 스냅됩니다 — 값을 다시 입력</li>
+<li><strong>스테퍼 버튼이 사라짐?</strong> <code>data-step</code>이 있는 필드 옆에 나타납니다 — 누락된 경우 앱 재시작</li>
+<li><strong>오래된 온도 경고?</strong> 시작할 때마다 20으로 재설정됩니다 — 이 세션을 위해 다시 설정</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p><code>support@evdiag.net</code> 문의 — 기기 모델, 앱 버전 (설정 → 하단), 시도한 내용 설명을 포함하세요.</p>
 
   <div class="docs-footer">
     <p>

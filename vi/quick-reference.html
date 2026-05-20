@@ -57,125 +57,125 @@
     Tài liệu được dịch để thuận tiện cho bạn — để có thuật ngữ kỹ thuật chính xác nhất, bản gốc tiếng Anh có giá trị quyết định.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator-tham-khao-nhanh">NVH Source Locator — Tham khảo nhanh</h1>
+<p>Bản tóm tắt một trang. Để biết chi tiết đầy đủ, xem <code>user-guide.md</code>.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="quy-trinh-chinh-2-sensor-mien-phi">Quy trình chính (2-Sensor, miễn phí)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>Chọn vật liệu</strong> — tab Materials → chạm vào vật liệu của bạn</li>
+<li><strong>Nhập hiệu chuẩn</strong> ở tab 2-Sensor:</li>
+<li>Khoảng cách giữa các cảm biến (<code>d</code>)</li>
+<li>Độ trễ thời gian hiệu chuẩn (<code>tCal</code>) — tự động điền từ vật liệu</li>
+<li><strong>Nhập sự kiện</strong> — <code>tEvent</code> và Cảm biến đầu tiên (A hoặc B)</li>
+<li><strong>Đọc kết quả</strong> — khoảng cách từ cảm biến A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="Tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="tat-ca-cac-tab">Tất cả các tab</h2>
 <table>
 <thead>
 <tr>
 <th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>Đầu ra</th>
+<th>Trường Pro?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>Khoảng cách dọc theo đường</td>
+<td>Không (hoàn toàn miễn phí)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X, Y trên bề mặt</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X, Y với LSQ qua 3 cặp</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X, Y từ hai cặp (A–B + C–D)</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X, Y từ 4 cảm biến, vị trí bất kỳ</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z từ 4 cảm biến</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z từ tối đa 6 cảm biến</td>
+<td>Có</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>Bộ chọn tốc độ âm thanh</td>
+<td>Không</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>Hướng dẫn</td>
+<td>Không</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>Cài đặt nằm dưới biểu tượng ⚙ (trên cùng bên phải), không phải là tab.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="bu-nhiet-o">Bù nhiệt độ</h2>
+<p>Cài đặt → Nhiệt độ tham chiếu, phạm vi <strong>-40 đến +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 kim loại</strong> có bù tích hợp sẵn (nhôm, các loại thép, đồng, đồng thau, đồng đỏ, titan, magie, chì, kẽm, niken, vonfram, sắt, gang)</li>
+<li>Vật liệu không có bù hiển thị <strong>"ref only"</strong></li>
+<li><strong>Đặt lại về 20 °C mỗi khi khởi động ứng dụng</strong> (khởi động an toàn mặc định)</li>
+<li>Phát lại mục lịch sử sẽ khôi phục nhiệt độ ban đầu của nó</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="phim-tat">Phím tắt</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>Chạm vào vật liệu</strong> → tự động điền vào tất cả các trường <code>tCal</code> ở tất cả các tab</li>
+<li><strong>Giữ +/-</strong> trên các trường số → tăng nhanh</li>
+<li><strong>Kéo ngang</strong> trên trường số → cuộn qua các giá trị</li>
+<li><strong>Đầu vào trống/âm/không hợp lệ</strong> → quay về 0 khi mất tiêu điểm (trường nhiệt độ giới hạn ở -40/200)</li>
+<li><strong>Đánh dấu sao vật liệu</strong> → di chuyển lên đầu bộ chọn</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="mo-hinh-pro">Mô hình Pro</h2>
+<p><strong>Freemium khóa tính năng</strong> ($19,99):
+- Miễn phí: tab 2-Sensor hoạt động đầy đủ, không giới hạn
+- Pro: Các tab khác có thể truy cập nhưng có <strong>các trường có ổ khóa vàng</strong> hiển thị paywall khi chạm</p>
+<p>Pro mở khóa: từ 3-Sensor đến 3D+, vật liệu tùy chỉnh, sao lưu/khôi phục, báo cáo PDF, chú thích ảnh.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="bao-cao-va-sao-luu">Báo cáo và sao lưu</h2>
+<p>Nút <strong>In kết quả</strong> trên bất kỳ màn hình kết quả nào → PDF với tiêu đề, đầu vào, kết quả, hình ảnh, ảnh (nếu đã chụp) và chân trang nhiệt độ (khi bù được kích hoạt).</p>
+<p>Tùy chỉnh tiêu đề trong Cài đặt → Tiêu đề báo cáo.</p>
+<p><strong>Sao lưu</strong>: Cài đặt → Sao lưu → chia sẻ vào đám mây/email.<br />
+<strong>Khôi phục</strong>: Cài đặt → Khôi phục → chọn tệp sao lưu.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="khoi-phuc-pro-tren-thiet-bi-moi">Khôi phục Pro trên thiết bị mới</h2>
+<p>Cùng tài khoản Google (Android) hoặc Apple ID (iOS) mà bạn đã mua → Cài đặt → <strong>Khôi phục mua hàng</strong> → mở khóa trong vài giây.</p>
+<p>Khôi phục tự động diễn ra âm thầm khi bạn quay lại ứng dụng sau khi đổi mã khuyến mãi bên ngoài.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="khac-phuc-su-co-nhanh">Khắc phục sự cố nhanh</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>Kết quả ngoài phạm vi?</strong> Kiểm tra dấu <code>tEvent</code> / Cảm biến đầu tiên / khoảng cách cảm biến</li>
+<li><strong>Vật liệu gần nhất sai?</strong> Có thể nhiệt độ tham chiếu đã được đặt vô tình — kiểm tra Cài đặt</li>
+<li><strong>Khôi phục mua hàng thất bại?</strong> Xác minh cùng tài khoản cửa hàng; cài đặt lại nếu vẫn tiếp tục</li>
+<li><strong>Trường được đặt thành 0?</strong> Đầu vào trống/âm tự động được đặt khi mất tiêu điểm — nhập lại giá trị</li>
+<li><strong>Nút stepper biến mất?</strong> Chúng xuất hiện bên cạnh các trường có <code>data-step</code> — khởi động lại ứng dụng nếu thiếu</li>
+<li><strong>Cảnh báo nhiệt độ lỗi thời?</strong> Đặt lại về 20 mỗi khi khởi động — đặt lại cho phiên này</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>Liên hệ <code>support@evdiag.net</code> — kèm theo kiểu máy thiết bị, phiên bản ứng dụng (Cài đặt → dưới cùng) và mô tả về những gì bạn đã thử.</p>
 
   <div class="docs-footer">
     <p>

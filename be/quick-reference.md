@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — Кароткі даведнік
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+Аднастаронкавае напамінанне. Поўныя падрабязнасці — у `user-guide.md`.
 
 ---
 
-## All tabs
+## Асноўны працэс (2-Sensor, бясплатна)
 
-| Tab | Output | Pro fields? |
+1. **Выберыце матэрыял** — укладка Materials → націсніце ваш матэрыял
+2. **Увядзіце каліброўку** на ўкладцы 2-Sensor:
+   - Адлегласць паміж датчыкамі (`d`)
+   - Затрымка часу каліброўкі (`tCal`) — аўтапапаўняецца з матэрыялу
+3. **Увядзіце падзею** — `tEvent` і Першы датчык (A або B)
+4. **Прачытайце вынік** — адлегласць ад датчыка A
+
+![Укладка 2-Sensor](../screenshots/01-home-2sensor.png)
+
+---
+
+## Усе ўкладкі
+
+| Укладка | Вынік | Поля Pro? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | Адлегласць уздоўж лініі | Не (цалкам бясплатна) |
+| 3-Sensor | X, Y на паверхні | Так |
+| 3-Sen+ | X, Y з LSQ па 3 парах | Так |
+| 4-Sensor | X, Y з дзвюх пар (A–B + C–D) | Так |
+| 4-Sen+ | X, Y з 4 датчыкаў, любая пазіцыя | Так |
+| 3D | X, Y, Z з 4 датчыкаў | Так |
+| 3D+ | X, Y, Z да 6 датчыкаў | Так |
+| Materials | Выбар хуткасці гуку | Не |
+| Help | Навучальныя матэрыялы | Не |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+Налады — гэта значок ⚙ (правы верхні кут), а не ўкладка.
 
 ---
 
-## Shortcuts
+## Тэмпературная кампенсацыя
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+Налады → Эталонная тэмпература, дыяпазон **-40 да +200 °C**.
+
+- **14 металаў** маюць убудаваную кампенсацыю (алюміній, сталі, медзь, латунь, бронза, тытан, магній, свінец, цынк, нікель, вальфрам, жалеза, чыгун)
+- Матэрыялы без кампенсацыі паказваюць **"ref only"**
+- **Скідае на 20 °C пры кожным запуску праграмы** (бяспечны стандарт)
+- Прайграванне запісу гісторыі аднаўляе яго першапачатковую тэмпературу
 
 ---
 
-## Pro model
+## Спалучэнні
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **Націсніце на матэрыял** → аўтаматычна запаўняе ўсе палі `tCal` на ўсіх укладках
+- **Утрымлівайце +/-** на лікавых палях → хуткае павелічэнне
+- **Перацягвайце гарызантальна** на лікавым полі → змяненне значэння
+- **Пустое/адмоўнае/смецце** → пераходзіць у 0 пры страце фокусу (тэмпература абмежавана -40/200)
+- **Адзначце матэрыял зорачкай** → перамяшчае ў верх спісу
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Мадэль Pro
+
+**Freemium з блакіроўкай функцый** ($19.99):
+- Бясплатна: укладка 2-Sensor цалкам функцыянальная, без абмежаванняў
+- Pro: іншыя ўкладкі даступныя, але маюць **палі з залатым замком**, якія паказваюць paywall пры націсканні
+
+Pro адкрывае: 3-Sensor да 3D+, карыстальніцкія матэрыялы, рэзервовае капіраванне/аднаўленне, PDF справаздачы, анатацыю фота.
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## Справаздачы і рэзервовае капіраванне
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+Кнопка **Друкаваць вынік** на любым экране выніку → PDF з загалоўкам, уваходамі, вынікам, візуалізацыяй, фота (калі зроблена) і ніжнім калонтытулам тэмпературы (калі кампенсацыя актыўная).
 
-Customize header in Settings → Report header.
+Наладзьце загаловак у Налады → Загаловак справаздачы.
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**Рэзервовае капіраванне**: Налады → Рэзервовае капіраванне → падзяліцеся ў воблаку/email.  
+**Аднаўленне**: Налады → Аднаўленне → выберыце файл рэзервовай копіі.
 
 ---
 
-## Quick troubleshooting
+## Аднаўленне Pro на новай прыладзе
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+Той жа ўліковы запіс Google (Android) або Apple ID (iOS), з якім вы куплялі → Налады → **Аднавіць пакупку** → разблакуе на працягу некалькіх секунд.
+
+Аўтаматычнае аднаўленне адбываецца ціха пры вяртанні ў праграму пасля выкарыстання прома-кода звонку.
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## Хуткае выпраўленне непаладак
+
+- **Вынік па-за дыяпазонам?** Праверце знак `tEvent` / Першы датчык / адлегласць паміж датчыкамі
+- **Найбліжэйшы матэрыял няправільны?** Эталонная тэмпература, верагодна, выпадкова ўстаноўлена — праверце Налады
+- **Аднавіць пакупку не атрымоўваецца?** Праверце той жа ўліковы запіс магазіна; пераўсталюйце калі захоўваецца
+- **Поле перайшло ў 0?** Пустыя/адмоўныя ўводы аўта-пераходзяць пры страце фокусу — увядзіце значэнне зноў
+- **Кнопкі крокаў зніклі?** Яны з'яўляюцца побач з палямі з `data-step` — перазапусціце праграму, калі іх няма
+- **Папярэджанне аб састарэлай тэмпературы?** Скідае да 20 пры кожным запуску — устанавіце зноў для гэтай сесіі
+
+---
+
+Звяртайцеся `support@evdiag.net` — пакажыце мадэль прылады, версію праграмы (Налады → нізе) і апісанне таго, што вы спрабавалі.

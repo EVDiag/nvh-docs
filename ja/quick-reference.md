@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — クイックリファレンス
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+1ページの概要。完全な詳細は `user-guide.md` を参照してください。
 
 ---
 
-## All tabs
+## 基本フロー (2-Sensor、無料)
 
-| Tab | Output | Pro fields? |
+1. **材料を選択** — Materials タブ → 材料をタップ
+2. **キャリブレーションを入力** 2-Sensor タブで:
+   - センサー間隔 (`d`)
+   - キャリブレーション時間遅延 (`tCal`) — 材料から自動入力
+3. **イベントを入力** — `tEvent` と最初のセンサー (A または B)
+4. **結果を読む** — センサー A からの距離
+
+![2-Sensor タブ](../screenshots/01-home-2sensor.png)
+
+---
+
+## すべてのタブ
+
+| タブ | 出力 | Pro フィールド? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | 直線に沿った距離 | いいえ (完全無料) |
+| 3-Sensor | 表面上の X、Y | はい |
+| 3-Sen+ | 3 ペアでの LSQ を使用した X、Y | はい |
+| 4-Sensor | 2 ペアからの X、Y (A–B + C–D) | はい |
+| 4-Sen+ | 4 センサーからの X、Y、任意の位置 | はい |
+| 3D | 4 センサーからの X、Y、Z | はい |
+| 3D+ | 最大 6 センサーからの X、Y、Z | はい |
+| Materials | 音速セレクター | いいえ |
+| Help | チュートリアル | いいえ |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+設定は ⚙ アイコン (右上) にあり、タブではありません。
 
 ---
 
-## Shortcuts
+## 温度補正
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+設定 → 基準温度、範囲 **-40 から +200 °C**。
+
+- **14 種類の金属** に組み込み補正があります (アルミニウム、各種鋼、銅、真鍮、青銅、チタン、マグネシウム、鉛、亜鉛、ニッケル、タングステン、鉄、鋳鉄)
+- 補正のない材料は **"ref only"** と表示されます
+- **アプリ起動ごとに 20 °C にリセット** (デフォルトの安全な開始)
+- 履歴エントリの再生は元の温度を復元します
 
 ---
 
-## Pro model
+## ショートカット
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **材料をタップ** → すべてのタブのすべての `tCal` フィールドを自動入力
+- **数値フィールドで +/- を長押し** → 高速インクリメント
+- **数値フィールドで水平にドラッグ** → 値をスクラブ
+- **空/負/無効な入力** → フォーカスを失うと 0 にスナップ (温度フィールドは -40/200 にクランプ)
+- **材料に星を付ける** → セレクターの先頭に移動
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Pro モデル
+
+**機能ロック型フリーミアム** ($19.99):
+- 無料: 2-Sensor タブが完全に機能、制限なし
+- Pro: 他のタブはアクセス可能ですが、タップすると paywall を表示する **金色のロック付きフィールド** があります
+
+Pro でロック解除: 3-Sensor から 3D+ まで、カスタム材料、バックアップ/復元、PDF レポート、写真の注釈。
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## レポートとバックアップ
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+任意の結果画面の **結果を印刷** ボタン → ヘッダー、入力、結果、視覚化、写真 (撮影した場合)、温度フッター (補正がアクティブな場合) を含む PDF。
 
-Customize header in Settings → Report header.
+ヘッダーを 設定 → レポートヘッダー でカスタマイズします。
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**バックアップ**: 設定 → バックアップ → クラウド/メールに共有。  
+**復元**: 設定 → 復元 → バックアップファイルを選択。
 
 ---
 
-## Quick troubleshooting
+## 新しいデバイスで Pro を復元
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+購入時に使用したのと同じ Google アカウント (Android) または Apple ID (iOS) → 設定 → **購入を復元** → 数秒以内にロック解除。
+
+外部でプロモーションコードを引き換えた後、アプリに戻ったときに自動復元が静かに実行されます。
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## クイックトラブルシューティング
+
+- **結果が範囲外?** `tEvent` の符号 / 最初のセンサー / センサー間隔を確認
+- **最も近い材料が間違っている?** 基準温度が誤って設定されている可能性があります — 設定を確認
+- **購入の復元に失敗?** 同じストアアカウントを確認し、問題が続く場合は再インストール
+- **フィールドが 0 にスナップ?** 空/負の入力はフォーカスを失うと自動的にスナップします — 値を再入力
+- **ステッパーボタンがない?** `data-step` を持つフィールドの横に表示されます — 不足している場合はアプリを再起動
+- **古い温度の警告?** 起動ごとに 20 にリセットされます — このセッション用に再設定
+
+---
+
+`support@evdiag.net` までお問い合わせ — デバイスモデル、アプリのバージョン (設定 → 下部)、試した内容の説明を含めてください。

@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — Rujukan Pantas
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+Peringatan satu halaman. Untuk butiran penuh, lihat `user-guide.md`.
 
 ---
 
-## All tabs
+## Aliran utama (2-Sensor, percuma)
 
-| Tab | Output | Pro fields? |
+1. **Pilih bahan** — tab Materials → ketik bahan anda
+2. **Masukkan tentukuran** pada tab 2-Sensor:
+   - Jarak sensor (`d`)
+   - Kelewatan masa tentukuran (`tCal`) — diisi automatik daripada bahan
+3. **Masukkan peristiwa** — `tEvent` dan Sensor pertama (A atau B)
+4. **Baca keputusan** — jarak dari sensor A
+
+![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+
+---
+
+## Semua tab
+
+| Tab | Output | Medan Pro? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | Jarak sepanjang garis | Tidak (sepenuhnya percuma) |
+| 3-Sensor | X, Y pada permukaan | Ya |
+| 3-Sen+ | X, Y dengan LSQ pada 3 pasang | Ya |
+| 4-Sensor | X, Y dari dua pasang (A–B + C–D) | Ya |
+| 4-Sen+ | X, Y dari 4 sensor, kedudukan bebas | Ya |
+| 3D | X, Y, Z dari 4 sensor | Ya |
+| 3D+ | X, Y, Z dari sehingga 6 sensor | Ya |
+| Materials | Pemilih kelajuan bunyi | Tidak |
+| Help | Tutorial | Tidak |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+Tetapan adalah ikon ⚙ (kanan atas), bukan tab.
 
 ---
 
-## Shortcuts
+## Pampasan suhu
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+Tetapan → Suhu rujukan, julat **-40 hingga +200 °C**.
+
+- **14 logam** mempunyai pampasan terbina dalam (aluminium, keluli, kuprum, tembaga, gangsa, titanium, magnesium, plumbum, zink, nikel, tungsten, besi, besi tuang)
+- Bahan tanpa pampasan menunjukkan **"ref only"**
+- **Set semula kepada 20 °C setiap kali aplikasi dilancarkan** (mula-selamat-lalai)
+- Memainkan semula entri sejarah memulihkan suhu asalnya
 
 ---
 
-## Pro model
+## Pintasan
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **Ketik bahan** → mengisi automatik semua medan `tCal` di semua tab
+- **Tahan +/-** pada medan nombor → kenaikan cepat
+- **Seret mendatar** pada medan nombor → ubah nilai
+- **Input kosong/negatif/sampah** → menjadi 0 apabila kabur (input suhu dihadkan -40/200)
+- **Bintangkan bahan** → memindahkan ke atas pemilih
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Model Pro
+
+**Freemium dikunci-ciri** ($19.99):
+- Percuma: tab 2-Sensor berfungsi sepenuhnya, tiada had
+- Pro: tab lain boleh diakses tetapi mempunyai **medan kunci-emas** yang memaparkan paywall apabila diketik
+
+Pro membuka: 3-Sensor hingga 3D+, bahan tersuai, sandaran/pemulihan, laporan PDF, anotasi foto.
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## Laporan & Sandaran
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+Butang **Cetak keputusan** pada mana-mana skrin keputusan → PDF dengan pengepala, input, keputusan, visualisasi, foto (jika diambil), dan pengaki suhu (apabila pampasan aktif).
 
-Customize header in Settings → Report header.
+Sesuaikan pengepala dalam Tetapan → Pengepala laporan.
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**Sandaran**: Tetapan → Sandaran → kongsi ke awan/e-mel.  
+**Pemulihan**: Tetapan → Pemulihan → pilih fail sandaran.
 
 ---
 
-## Quick troubleshooting
+## Memulihkan Pro pada peranti baru
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+Akaun Google yang sama (Android) atau Apple ID (iOS) yang anda gunakan untuk membeli → Tetapan → **Pulihkan pembelian** → membuka kunci dalam saat.
+
+Pemulihan automatik berlaku secara senyap apabila anda kembali ke aplikasi selepas menebus kod promosi secara luaran.
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## Penyelesaian masalah pantas
+
+- **Keputusan di luar julat?** Semak tanda `tEvent` / Sensor pertama / jarak sensor
+- **Bahan terdekat salah?** Suhu rujukan mungkin tidak sengaja ditetapkan — semak Tetapan
+- **Pulihkan pembelian gagal?** Sahkan akaun kedai yang sama; pasang semula jika berterusan
+- **Medan menjadi 0?** Input kosong/negatif auto-snap apabila kabur — masukkan semula nilai
+- **Butang stepper hilang?** Muncul di sebelah medan dengan `data-step` — mulakan semula aplikasi jika hilang
+- **Amaran suhu lapuk?** Set semula kepada 20 setiap pelancaran — tetapkan semula untuk sesi ini
+
+---
+
+Hubungi `support@evdiag.net` — sertakan model peranti, versi aplikasi (Tetapan → bawah), dan penerangan tentang apa yang anda cuba.

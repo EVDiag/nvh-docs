@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — คู่มืออ้างอิงด่วน
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+สรุปหนึ่งหน้า สำหรับรายละเอียดทั้งหมด ดู `user-guide.md`
 
 ---
 
-## All tabs
+## ขั้นตอนหลัก (2-Sensor, ฟรี)
 
-| Tab | Output | Pro fields? |
+1. **เลือกวัสดุ** — แท็บ Materials → แตะวัสดุของคุณ
+2. **ป้อนการสอบเทียบ** ในแท็บ 2-Sensor:
+   - ระยะห่างระหว่างเซ็นเซอร์ (`d`)
+   - การหน่วงเวลาสอบเทียบ (`tCal`) — กรอกอัตโนมัติจากวัสดุ
+3. **ป้อนเหตุการณ์** — `tEvent` และเซ็นเซอร์แรก (A หรือ B)
+4. **อ่านผลลัพธ์** — ระยะห่างจากเซ็นเซอร์ A
+
+![แท็บ 2-Sensor](../screenshots/01-home-2sensor.png)
+
+---
+
+## แท็บทั้งหมด
+
+| แท็บ | ผลลัพธ์ | ฟิลด์ Pro? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | ระยะทางตามเส้น | ไม่ (ฟรีทั้งหมด) |
+| 3-Sensor | X, Y บนพื้นผิว | ใช่ |
+| 3-Sen+ | X, Y พร้อม LSQ จาก 3 คู่ | ใช่ |
+| 4-Sensor | X, Y จากสองคู่ (A–B + C–D) | ใช่ |
+| 4-Sen+ | X, Y จาก 4 เซ็นเซอร์ ตำแหน่งใดก็ได้ | ใช่ |
+| 3D | X, Y, Z จาก 4 เซ็นเซอร์ | ใช่ |
+| 3D+ | X, Y, Z จากสูงสุด 6 เซ็นเซอร์ | ใช่ |
+| Materials | ตัวเลือกความเร็วเสียง | ไม่ |
+| Help | บทช่วยสอน | ไม่ |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+การตั้งค่าอยู่ใต้ไอคอน ⚙ (ขวาบน) ไม่ใช่แท็บ
 
 ---
 
-## Shortcuts
+## การชดเชยอุณหภูมิ
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+การตั้งค่า → อุณหภูมิอ้างอิง ช่วง **-40 ถึง +200 °C**
+
+- **โลหะ 14 ชนิด** มีการชดเชยในตัว (อะลูมิเนียม, เหล็ก, ทองแดง, ทองเหลือง, บรอนซ์, ไทเทเนียม, แมกนีเซียม, ตะกั่ว, สังกะสี, นิกเกิล, ทังสเตน, เหล็ก, เหล็กหล่อ)
+- วัสดุที่ไม่มีการชดเชยจะแสดง **"ref only"**
+- **รีเซ็ตเป็น 20 °C ทุกครั้งที่เปิดแอป** (เริ่มต้นที่ปลอดภัยตามค่าเริ่มต้น)
+- การเล่นรายการประวัติจะคืนค่าอุณหภูมิเดิม
 
 ---
 
-## Pro model
+## ทางลัด
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **แตะวัสดุ** → กรอกฟิลด์ `tCal` ทั้งหมดในทุกแท็บโดยอัตโนมัติ
+- **กด +/- ค้างไว้** บนฟิลด์ตัวเลข → การเพิ่มที่รวดเร็ว
+- **ลากในแนวนอน** บนฟิลด์ตัวเลข → ปรับค่า
+- **อินพุตว่าง/ติดลบ/ไม่ถูกต้อง** → กลับเป็น 0 เมื่อสูญเสียโฟกัส (ฟิลด์อุณหภูมิจำกัดที่ -40/200)
+- **ทำเครื่องหมายดาวบนวัสดุ** → ย้ายไปด้านบนของตัวเลือก
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## โมเดล Pro
+
+**Freemium แบบล็อกฟีเจอร์** ($19.99):
+- ฟรี: แท็บ 2-Sensor ทำงานเต็มรูปแบบ ไม่มีข้อจำกัด
+- Pro: แท็บอื่นๆ เข้าถึงได้แต่มี **ฟิลด์ที่ล็อกด้วยกุญแจสีทอง** ซึ่งจะแสดง paywall เมื่อแตะ
+
+Pro ปลดล็อก: ตั้งแต่ 3-Sensor ถึง 3D+, วัสดุที่กำหนดเอง, สำรองข้อมูล/กู้คืน, รายงาน PDF, การใส่คำอธิบายภาพ
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## รายงานและสำรองข้อมูล
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+ปุ่ม **พิมพ์ผลลัพธ์** บนหน้าจอผลลัพธ์ใดๆ → PDF พร้อมส่วนหัว ข้อมูลที่ป้อน ผลลัพธ์ การแสดงภาพ รูปภาพ (หากถ่าย) และส่วนท้ายอุณหภูมิ (เมื่อการชดเชยทำงานอยู่)
 
-Customize header in Settings → Report header.
+ปรับแต่งส่วนหัวใน การตั้งค่า → ส่วนหัวรายงาน
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**สำรองข้อมูล**: การตั้งค่า → สำรองข้อมูล → แชร์ไปยังคลาวด์/อีเมล  
+**กู้คืน**: การตั้งค่า → กู้คืน → เลือกไฟล์สำรองข้อมูล
 
 ---
 
-## Quick troubleshooting
+## กู้คืน Pro บนอุปกรณ์ใหม่
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+บัญชี Google (Android) หรือ Apple ID (iOS) เดียวกับที่คุณซื้อ → การตั้งค่า → **กู้คืนการซื้อ** → ปลดล็อกในไม่กี่วินาที
+
+การกู้คืนอัตโนมัติจะเกิดขึ้นเงียบๆ เมื่อคุณกลับไปที่แอปหลังจากแลกรหัสโปรโมชั่นภายนอก
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## การแก้ไขปัญหาด่วน
+
+- **ผลลัพธ์อยู่นอกช่วง?** ตรวจสอบเครื่องหมาย `tEvent` / เซ็นเซอร์แรก / ระยะห่างระหว่างเซ็นเซอร์
+- **วัสดุที่ใกล้ที่สุดผิด?** อาจตั้งค่าอุณหภูมิอ้างอิงโดยไม่ตั้งใจ — ตรวจสอบการตั้งค่า
+- **การกู้คืนการซื้อล้มเหลว?** ตรวจสอบบัญชีร้านค้าเดียวกัน; ติดตั้งใหม่หากยังคงมีปัญหา
+- **ฟิลด์ถูกตั้งเป็น 0?** อินพุตว่าง/ติดลบจะถูกตั้งโดยอัตโนมัติเมื่อสูญเสียโฟกัส — ป้อนค่าใหม่
+- **ปุ่มสเต็ปเปอร์หายไป?** จะปรากฏข้างฟิลด์ที่มี `data-step` — รีสตาร์ทแอปหากขาดหายไป
+- **คำเตือนอุณหภูมิล้าสมัย?** รีเซ็ตเป็น 20 ทุกครั้งที่เริ่ม — ตั้งค่าอีกครั้งสำหรับเซสชันนี้
+
+---
+
+ติดต่อ `support@evdiag.net` — รวมรุ่นอุปกรณ์ เวอร์ชันแอป (การตั้งค่า → ด้านล่าง) และคำอธิบายสิ่งที่คุณลอง

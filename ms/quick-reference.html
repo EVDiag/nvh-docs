@@ -57,125 +57,125 @@
     Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator-rujukan-pantas">NVH Source Locator — Rujukan Pantas</h1>
+<p>Peringatan satu halaman. Untuk butiran penuh, lihat <code>user-guide.md</code>.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="aliran-utama-2-sensor-percuma">Aliran utama (2-Sensor, percuma)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>Pilih bahan</strong> — tab Materials → ketik bahan anda</li>
+<li><strong>Masukkan tentukuran</strong> pada tab 2-Sensor:</li>
+<li>Jarak sensor (<code>d</code>)</li>
+<li>Kelewatan masa tentukuran (<code>tCal</code>) — diisi automatik daripada bahan</li>
+<li><strong>Masukkan peristiwa</strong> — <code>tEvent</code> dan Sensor pertama (A atau B)</li>
+<li><strong>Baca keputusan</strong> — jarak dari sensor A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="Tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="semua-tab">Semua tab</h2>
 <table>
 <thead>
 <tr>
 <th>Tab</th>
 <th>Output</th>
-<th>Pro fields?</th>
+<th>Medan Pro?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>Jarak sepanjang garis</td>
+<td>Tidak (sepenuhnya percuma)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X, Y pada permukaan</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X, Y dengan LSQ pada 3 pasang</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X, Y dari dua pasang (A–B + C–D)</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X, Y dari 4 sensor, kedudukan bebas</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z dari 4 sensor</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z dari sehingga 6 sensor</td>
+<td>Ya</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>Pemilih kelajuan bunyi</td>
+<td>Tidak</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>Tutorial</td>
+<td>Tidak</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>Tetapan adalah ikon ⚙ (kanan atas), bukan tab.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="pampasan-suhu">Pampasan suhu</h2>
+<p>Tetapan → Suhu rujukan, julat <strong>-40 hingga +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 logam</strong> mempunyai pampasan terbina dalam (aluminium, keluli, kuprum, tembaga, gangsa, titanium, magnesium, plumbum, zink, nikel, tungsten, besi, besi tuang)</li>
+<li>Bahan tanpa pampasan menunjukkan <strong>"ref only"</strong></li>
+<li><strong>Set semula kepada 20 °C setiap kali aplikasi dilancarkan</strong> (mula-selamat-lalai)</li>
+<li>Memainkan semula entri sejarah memulihkan suhu asalnya</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="pintasan">Pintasan</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>Ketik bahan</strong> → mengisi automatik semua medan <code>tCal</code> di semua tab</li>
+<li><strong>Tahan +/-</strong> pada medan nombor → kenaikan cepat</li>
+<li><strong>Seret mendatar</strong> pada medan nombor → ubah nilai</li>
+<li><strong>Input kosong/negatif/sampah</strong> → menjadi 0 apabila kabur (input suhu dihadkan -40/200)</li>
+<li><strong>Bintangkan bahan</strong> → memindahkan ke atas pemilih</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="model-pro">Model Pro</h2>
+<p><strong>Freemium dikunci-ciri</strong> ($19.99):
+- Percuma: tab 2-Sensor berfungsi sepenuhnya, tiada had
+- Pro: tab lain boleh diakses tetapi mempunyai <strong>medan kunci-emas</strong> yang memaparkan paywall apabila diketik</p>
+<p>Pro membuka: 3-Sensor hingga 3D+, bahan tersuai, sandaran/pemulihan, laporan PDF, anotasi foto.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="laporan-sandaran">Laporan &amp; Sandaran</h2>
+<p>Butang <strong>Cetak keputusan</strong> pada mana-mana skrin keputusan → PDF dengan pengepala, input, keputusan, visualisasi, foto (jika diambil), dan pengaki suhu (apabila pampasan aktif).</p>
+<p>Sesuaikan pengepala dalam Tetapan → Pengepala laporan.</p>
+<p><strong>Sandaran</strong>: Tetapan → Sandaran → kongsi ke awan/e-mel.<br />
+<strong>Pemulihan</strong>: Tetapan → Pemulihan → pilih fail sandaran.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="memulihkan-pro-pada-peranti-baru">Memulihkan Pro pada peranti baru</h2>
+<p>Akaun Google yang sama (Android) atau Apple ID (iOS) yang anda gunakan untuk membeli → Tetapan → <strong>Pulihkan pembelian</strong> → membuka kunci dalam saat.</p>
+<p>Pemulihan automatik berlaku secara senyap apabila anda kembali ke aplikasi selepas menebus kod promosi secara luaran.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="penyelesaian-masalah-pantas">Penyelesaian masalah pantas</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>Keputusan di luar julat?</strong> Semak tanda <code>tEvent</code> / Sensor pertama / jarak sensor</li>
+<li><strong>Bahan terdekat salah?</strong> Suhu rujukan mungkin tidak sengaja ditetapkan — semak Tetapan</li>
+<li><strong>Pulihkan pembelian gagal?</strong> Sahkan akaun kedai yang sama; pasang semula jika berterusan</li>
+<li><strong>Medan menjadi 0?</strong> Input kosong/negatif auto-snap apabila kabur — masukkan semula nilai</li>
+<li><strong>Butang stepper hilang?</strong> Muncul di sebelah medan dengan <code>data-step</code> — mulakan semula aplikasi jika hilang</li>
+<li><strong>Amaran suhu lapuk?</strong> Set semula kepada 20 setiap pelancaran — tetapkan semula untuk sesi ini</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>Hubungi <code>support@evdiag.net</code> — sertakan model peranti, versi aplikasi (Tetapan → bawah), dan penerangan tentang apa yang anda cuba.</p>
 
   <div class="docs-footer">
     <p>

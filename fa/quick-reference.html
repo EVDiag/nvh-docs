@@ -57,125 +57,125 @@
     Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — مرجع سریع</h1>
+<p>یک یادآوری یک‌صفحه‌ای. برای جزئیات کامل، به <code>user-guide.md</code> مراجعه کنید.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">جریان اصلی (2-Sensor، رایگان)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>یک ماده انتخاب کنید</strong> — برگه Materials → ماده خود را لمس کنید</li>
+<li><strong>کالیبراسیون را وارد کنید</strong> در برگه 2-Sensor:</li>
+<li>فاصله سنسور (<code>d</code>)</li>
+<li>تأخیر زمان کالیبراسیون (<code>tCal</code>) — به طور خودکار از ماده پر می‌شود</li>
+<li><strong>رویداد را وارد کنید</strong> — <code>tEvent</code> و سنسور اول (A یا B)</li>
+<li><strong>نتیجه را بخوانید</strong> — فاصله از سنسور A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="برگه 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">همه برگه‌ها</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>برگه</th>
+<th>خروجی</th>
+<th>فیلدهای Pro؟</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>فاصله در امتداد خط</td>
+<td>خیر (کاملاً رایگان)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X, Y روی یک سطح</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X, Y با LSQ روی 3 جفت</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X, Y از دو جفت (A–B + C–D)</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X, Y از 4 سنسور، هر موقعیتی</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z از 4 سنسور</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z از حداکثر 6 سنسور</td>
+<td>بله</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>انتخاب‌گر سرعت صوت</td>
+<td>خیر</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>آموزش‌ها</td>
+<td>خیر</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>تنظیمات نماد ⚙ (بالا-راست) است، نه برگه.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">جبران دما</h2>
+<p>تنظیمات → دمای مرجع، محدوده <strong>-40 تا +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 فلز</strong> دارای جبران داخلی هستند (آلومینیوم، فولادها، مس، برنج، برنز، تیتانیوم، منیزیم، سرب، روی، نیکل، تنگستن، آهن، آهن ریخته)</li>
+<li>مواد بدون جبران <strong>"ref only"</strong> نشان می‌دهند</li>
+<li><strong>در هر راه‌اندازی برنامه به 20 °C بازنشانی می‌شود</strong> (شروع ایمن پیش‌فرض)</li>
+<li>بازپخش یک ورودی تاریخچه دمای اصلی آن را بازیابی می‌کند</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">میانبرها</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>روی یک ماده لمس کنید</strong> → همه فیلدهای <code>tCal</code> را در همه برگه‌ها به طور خودکار پر می‌کند</li>
+<li><strong>+/- را نگه دارید</strong> روی فیلدهای عددی → افزایش سریع</li>
+<li><strong>به طور افقی بکشید</strong> روی یک فیلد عددی → تغییر مقادیر</li>
+<li><strong>ورودی خالی/منفی/نامعتبر</strong> → هنگام از دست دادن تمرکز به 0 می‌رود (ورودی دما به -40/200 محدود می‌شود)</li>
+<li><strong>یک ماده را ستاره‌دار کنید</strong> → به بالای انتخاب‌گر منتقل می‌شود</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">مدل Pro</h2>
+<p><strong>Freemium قفل-شده بر اساس ویژگی</strong> ($19.99):
+- رایگان: برگه 2-Sensor کاملاً کاربردی، بدون محدودیت
+- Pro: سایر برگه‌ها قابل دسترسی هستند اما دارای <strong>فیلدهای قفل طلایی</strong> هستند که هنگام لمس paywall را نشان می‌دهند</p>
+<p>Pro باز می‌کند: 3-Sensor تا 3D+، مواد سفارشی، پشتیبان‌گیری/بازیابی، گزارش‌های PDF، حاشیه‌نویسی عکس.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">گزارش‌ها و پشتیبان‌گیری</h2>
+<p>دکمه <strong>چاپ نتیجه</strong> در هر صفحه نتیجه → PDF با سرصفحه، ورودی‌ها، نتیجه، تجسم، عکس (در صورت وجود) و پاورقی دما (وقتی جبران فعال است).</p>
+<p>سرصفحه را در تنظیمات → سرصفحه گزارش سفارشی کنید.</p>
+<p><strong>پشتیبان‌گیری</strong>: تنظیمات → پشتیبان‌گیری → اشتراک‌گذاری به ابر/ایمیل.<br />
+<strong>بازیابی</strong>: تنظیمات → بازیابی → انتخاب فایل پشتیبان.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">بازیابی Pro در دستگاه جدید</h2>
+<p>همان حساب گوگل (اندروید) یا اپل آی‌دی (iOS) که با آن خریداری کرده‌اید → تنظیمات → <strong>بازیابی خرید</strong> → ظرف چند ثانیه باز می‌شود.</p>
+<p>بازیابی خودکار بی‌صدا اتفاق می‌افتد هنگامی که پس از استفاده از کد تبلیغاتی خارجی به برنامه برمی‌گردید.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">عیب‌یابی سریع</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>نتیجه خارج از محدوده؟</strong> علامت <code>tEvent</code> / سنسور اول / فاصله سنسور را بررسی کنید</li>
+<li><strong>نزدیک‌ترین ماده اشتباه است؟</strong> احتمالاً دمای مرجع به طور تصادفی تنظیم شده — تنظیمات را بررسی کنید</li>
+<li><strong>بازیابی خرید ناموفق است؟</strong> همان حساب فروشگاه را تأیید کنید؛ در صورت تداوم نصب مجدد کنید</li>
+<li><strong>فیلد به 0 می‌رود؟</strong> ورودی‌های خالی/منفی به طور خودکار با از دست دادن تمرکز می‌روند — مقدار را دوباره وارد کنید</li>
+<li><strong>دکمه‌های مرحله ناپدید شده؟</strong> آن‌ها در کنار فیلدهای دارای <code>data-step</code> ظاهر می‌شوند — اگر گم هستند برنامه را راه‌اندازی مجدد کنید</li>
+<li><strong>اخطار دمای قدیمی؟</strong> در هر راه‌اندازی به 20 بازنشانی می‌شود — دوباره برای این جلسه تنظیم کنید</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>با <code>support@evdiag.net</code> تماس بگیرید — مدل دستگاه، نسخه برنامه (تنظیمات → پایین) و توضیح آنچه را امتحان کرده‌اید را شامل کنید.</p>
 
   <div class="docs-footer">
     <p>

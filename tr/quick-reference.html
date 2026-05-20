@@ -57,125 +57,125 @@
     Belgeler sizin kolaylığınız için çevrildi — en doğru teknik terminoloji için İngilizce orijinal versiyon esastır.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator-hzl-basvuru">NVH Source Locator — Hızlı Başvuru</h1>
+<p>Tek sayfalık özet. Tam ayrıntılar için bkz <code>user-guide.md</code>.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="temel-aks-2-sensor-ucretsiz">Temel akış (2-Sensor, ücretsiz)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>Bir malzeme seçin</strong> — Materials sekmesi → malzemenize dokunun</li>
+<li><strong>Kalibrasyonu girin</strong> 2-Sensor sekmesinde:</li>
+<li>Sensör aralığı (<code>d</code>)</li>
+<li>Kalibrasyon zaman gecikmesi (<code>tCal</code>) — malzemeden otomatik doldurulur</li>
+<li><strong>Olayı girin</strong> — <code>tEvent</code> ve İlk sensör (A veya B)</li>
+<li><strong>Sonucu okuyun</strong> — sensör A'dan uzaklık</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="2-Sensor sekmesi" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="tum-sekmeler">Tüm sekmeler</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>Sekme</th>
+<th>Çıktı</th>
+<th>Pro alanlar?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>Çizgi boyunca mesafe</td>
+<td>Hayır (tamamen ücretsiz)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>Yüzey üzerinde X, Y</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>3 çift üzerinden LSQ ile X, Y</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>İki çiftten X, Y (A–B + C–D)</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>4 sensörden X, Y, herhangi bir konum</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>4 sensörden X, Y, Z</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>En fazla 6 sensörden X, Y, Z</td>
+<td>Evet</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>Ses hızı seçici</td>
+<td>Hayır</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>Eğitimler</td>
+<td>Hayır</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>Ayarlar ⚙ simgesinin altındadır (sağ üst), sekme olarak değil.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="scaklk-dengelemesi">Sıcaklık dengelemesi</h2>
+<p>Ayarlar → Referans sıcaklığı, aralık <strong>-40 ile +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 metal</strong> yerleşik dengeleme içerir (alüminyum, çelikler, bakır, pirinç, bronz, titanyum, magnezyum, kurşun, çinko, nikel, tungsten, demir, dökme demir)</li>
+<li>Dengeleme olmayan malzemeler <strong>"ref only"</strong> gösterir</li>
+<li><strong>Her uygulama başlangıcında 20 °C'ye sıfırlanır</strong> (varsayılan güvenli başlangıç)</li>
+<li>Bir geçmiş kaydını yeniden oynatma orijinal sıcaklığını geri yükler</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="ksayollar">Kısayollar</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>Bir malzemeye dokun</strong> → tüm sekmelerdeki tüm <code>tCal</code> alanlarını otomatik doldurur</li>
+<li><strong>+/-'yi basılı tut</strong> sayısal alanlarda → hızlı artırma</li>
+<li><strong>Yatay sürükle</strong> bir sayısal alanda → değerler arasında geçiş</li>
+<li><strong>Boş/negatif/geçersiz giriş</strong> → odak kaybında 0'a geçer (sıcaklık alanı -40/200'e sınırlanır)</li>
+<li><strong>Bir malzemeyi yıldızla</strong> → seçicinin üstüne taşır</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro-modeli">Pro modeli</h2>
+<p><strong>Özellik kilitli freemium</strong> ($19,99):
+- Ücretsiz: 2-Sensor sekmesi tamamen işlevsel, sınırsız
+- Pro: Diğer sekmeler erişilebilir ama dokunulduğunda paywall gösteren <strong>altın kilitli alanlara</strong> sahiptir</p>
+<p>Pro şunların kilidini açar: 3-Sensor'dan 3D+'a kadar, özel malzemeler, yedekleme/geri yükleme, PDF raporları, fotoğraf açıklaması.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="raporlar-ve-yedekleme">Raporlar ve yedekleme</h2>
+<p>Herhangi bir sonuç ekranındaki <strong>Sonucu yazdır</strong> düğmesi → başlık, girişler, sonuç, görselleştirme, fotoğraf (çekildiyse) ve sıcaklık altbilgisi (dengeleme aktif olduğunda) ile PDF.</p>
+<p>Başlığı Ayarlar → Rapor başlığı altında özelleştirin.</p>
+<p><strong>Yedekleme</strong>: Ayarlar → Yedekleme → buluta/e-postaya paylaş.<br />
+<strong>Geri yükle</strong>: Ayarlar → Geri yükle → yedek dosyasını seç.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="yeni-bir-cihazda-proyu-geri-yukleme">Yeni bir cihazda Pro'yu geri yükleme</h2>
+<p>Satın aldığınız aynı Google hesabı (Android) veya Apple ID (iOS) → Ayarlar → <strong>Satın almayı geri yükle</strong> → saniyeler içinde kilidi açılır.</p>
+<p>Bir promosyon kodunu harici olarak kullandıktan sonra uygulamaya geri döndüğünüzde otomatik geri yükleme sessizce gerçekleşir.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="hzl-sorun-giderme">Hızlı sorun giderme</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>Sonuç aralık dışında mı?</strong> <code>tEvent</code> işaretini / İlk sensörü / sensör aralığını kontrol edin</li>
+<li><strong>En yakın malzeme yanlış mı?</strong> Referans sıcaklığı muhtemelen yanlışlıkla ayarlanmış — Ayarları kontrol edin</li>
+<li><strong>Satın alma geri yüklemesi başarısız mı?</strong> Aynı mağaza hesabını doğrulayın; devam ederse yeniden yükleyin</li>
+<li><strong>Alan 0'a mı geçti?</strong> Boş/negatif girişler odak kaybında otomatik olarak ayarlanır — değeri tekrar girin</li>
+<li><strong>Adım düğmeleri kayıp mı?</strong> <code>data-step</code> olan alanların yanında görünürler — eksiklerse uygulamayı yeniden başlatın</li>
+<li><strong>Eski sıcaklık uyarısı mı?</strong> Her başlangıçta 20'ye sıfırlanır — bu oturum için tekrar ayarlayın</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>İletişim <code>support@evdiag.net</code> — cihaz modelini, uygulama sürümünü (Ayarlar → alt) ve denediğinizin açıklamasını ekleyin.</p>
 
   <div class="docs-footer">
     <p>

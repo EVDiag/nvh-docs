@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — مرجع سريع
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+ملخص من صفحة واحدة. للحصول على التفاصيل الكاملة، انظر `user-guide.md`.
 
 ---
 
-## All tabs
+## التدفق الأساسي (2-Sensor، مجاني)
 
-| Tab | Output | Pro fields? |
+1. **اختر مادة** — علامة تبويب Materials → اضغط على المادة
+2. **أدخل المعايرة** في علامة تبويب 2-Sensor:
+   - تباعد المستشعرات (`d`)
+   - تأخير وقت المعايرة (`tCal`) — يتم تعبئته تلقائيًا من المادة
+3. **أدخل الحدث** — `tEvent` والمستشعر الأول (A أو B)
+4. **اقرأ النتيجة** — المسافة من المستشعر A
+
+![علامة تبويب 2-Sensor](../screenshots/01-home-2sensor.png)
+
+---
+
+## جميع علامات التبويب
+
+| علامة التبويب | الإخراج | حقول Pro؟ |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | المسافة على طول الخط | لا (مجاني بالكامل) |
+| 3-Sensor | X، Y على سطح | نعم |
+| 3-Sen+ | X، Y باستخدام LSQ على 3 أزواج | نعم |
+| 4-Sensor | X، Y من زوجين (A–B + C–D) | نعم |
+| 4-Sen+ | X، Y من 4 مستشعرات، أي موضع | نعم |
+| 3D | X، Y، Z من 4 مستشعرات | نعم |
+| 3D+ | X، Y، Z من ما يصل إلى 6 مستشعرات | نعم |
+| Materials | محدد سرعة الصوت | لا |
+| Help | دروس تعليمية | لا |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+الإعدادات موجودة تحت أيقونة ⚙ (أعلى اليمين)، وليست علامة تبويب.
 
 ---
 
-## Shortcuts
+## تعويض درجة الحرارة
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+الإعدادات → درجة الحرارة المرجعية، النطاق **-40 إلى +200 °C**.
+
+- **14 معدنًا** تحتوي على تعويض مدمج (الألومنيوم، الفولاذ، النحاس، النحاس الأصفر، البرونز، التيتانيوم، المغنيسيوم، الرصاص، الزنك، النيكل، التنغستن، الحديد، حديد الزهر)
+- المواد بدون تعويض تعرض **"ref only"**
+- **تُعاد إلى 20 °C عند كل تشغيل للتطبيق** (بداية آمنة افتراضية)
+- إعادة تشغيل إدخال في السجل يستعيد درجة حرارته الأصلية
 
 ---
 
-## Pro model
+## الاختصارات
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **اضغط على مادة** → يملأ تلقائيًا جميع حقول `tCal` في جميع علامات التبويب
+- **اضغط مع الاستمرار على +/-** على الحقول الرقمية → زيادة سريعة
+- **اسحب أفقيًا** على حقل رقمي → تحريك القيم
+- **إدخال فارغ/سالب/غير صالح** → ينتقل إلى 0 عند فقدان التركيز (يقتصر حقل درجة الحرارة على -40/200)
+- **ضع علامة نجمة على مادة** → ينقلها إلى أعلى المحدد
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## نموذج Pro
+
+**Freemium بقفل الميزات** ($19.99):
+- مجاني: علامة تبويب 2-Sensor تعمل بالكامل، بدون حدود
+- Pro: علامات التبويب الأخرى متاحة ولكن تحتوي على **حقول بقفل ذهبي** تعرض paywall عند الضغط
+
+Pro يفتح: من 3-Sensor إلى 3D+، مواد مخصصة، نسخ احتياطي/استعادة، تقارير PDF، شرح الصور.
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## التقارير والنسخ الاحتياطي
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+زر **طباعة النتيجة** في أي شاشة نتائج → PDF مع رأس، مدخلات، نتيجة، تصور، صورة (إذا تم التقاطها) وتذييل درجة الحرارة (عندما يكون التعويض نشطًا).
 
-Customize header in Settings → Report header.
+قم بتخصيص الرأس في الإعدادات → رأس التقرير.
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**النسخ الاحتياطي**: الإعدادات → النسخ الاحتياطي → مشاركة إلى السحابة/البريد الإلكتروني.  
+**استعادة**: الإعدادات → استعادة → اختر ملف النسخ الاحتياطي.
 
 ---
 
-## Quick troubleshooting
+## استعادة Pro على جهاز جديد
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+نفس حساب Google (Android) أو Apple ID (iOS) الذي اشتريت به → الإعدادات → **استعادة الشراء** → يتم فتحه في ثوانٍ.
+
+تحدث الاستعادة التلقائية بصمت عند العودة إلى التطبيق بعد استرداد رمز ترويجي خارجيًا.
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## استكشاف الأخطاء وإصلاحها بسرعة
+
+- **النتيجة خارج النطاق؟** تحقق من إشارة `tEvent` / المستشعر الأول / تباعد المستشعرات
+- **أقرب مادة خاطئة؟** ربما تم تعيين درجة الحرارة المرجعية عن طريق الخطأ — تحقق من الإعدادات
+- **فشل استعادة الشراء؟** تحقق من نفس حساب المتجر؛ أعد التثبيت إذا استمر
+- **تم تعيين الحقل على 0؟** المدخلات الفارغة/السالبة تُعيَّن تلقائيًا عند فقدان التركيز — أدخل القيمة مرة أخرى
+- **اختفت أزرار الخطوة؟** تظهر بجانب الحقول التي تحتوي على `data-step` — أعد تشغيل التطبيق إذا كانت مفقودة
+- **تحذير درجة حرارة قديمة؟** يُعاد إلى 20 عند كل بدء تشغيل — قم بتعيينه مرة أخرى لهذه الجلسة
+
+---
+
+اتصل بـ `support@evdiag.net` — قم بتضمين طراز الجهاز، إصدار التطبيق (الإعدادات → الأسفل) ووصف ما حاولته.

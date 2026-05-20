@@ -1,479 +1,479 @@
-# NVH Source Locator — User Guide
+# NVH Source Locator — उपयोगकर्ता गाइड
 
-NVH Source Locator is a measurement tool for locating noise and vibration sources using TDOA (Time Difference of Arrival) from accelerometer signals captured on an oscilloscope or measurement system.
+NVH Source Locator एक मापन उपकरण है जो ऑसिलोस्कोप या मापन सिस्टम पर कैप्चर किए गए एक्सेलेरोमीटर सिग्नल से TDOA (Time Difference of Arrival) का उपयोग करके शोर और कंपन स्रोतों का पता लगाता है।
 
-This guide covers all features. For a quick refresher, see `quick-reference.md`.
+यह गाइड सभी सुविधाओं को कवर करती है। त्वरित रिफ्रेशर के लिए, `quick-reference.md` देखें।
 
-> **Note on screenshots**: This document uses placeholder screenshots from the app. Replace each `../screenshots/*.png` with real device screenshots as you capture them.
-
----
-
-## Table of Contents
-
-1. [How it works](#how-it-works)
-2. [Before you start](#before-you-start)
-3. [The main tabs](#the-main-tabs)
-4. [2-Sensor mode](#2-sensor-mode)
-5. [3-Sensor mode](#3-sensor-mode)
-6. [Pro+ modes (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)](#pro-modes)
-7. [The Materials tab](#the-materials-tab)
-8. [Temperature compensation](#temperature-compensation)
-9. [Photo annotation](#photo-annotation)
-10. [Reports](#reports)
-11. [Backup and restore](#backup-and-restore)
-12. [Settings](#settings)
-13. [Pro features](#pro-features)
-14. [Help tab and tutorials](#help-tab-and-tutorials)
-15. [Troubleshooting](#troubleshooting)
+> **स्क्रीनशॉट के बारे में नोट**: यह दस्तावेज़ ऐप से प्लेसहोल्डर स्क्रीनशॉट का उपयोग करता है। जैसे ही आप कैप्चर करें, प्रत्येक `../screenshots/*.png` को वास्तविक डिवाइस स्क्रीनशॉट से बदलें।
 
 ---
 
-## How it works
+## विषय-सूची
 
-When a noise source emits a sound or vibration, the wave travels through a material at a known speed. If you place two or more accelerometers on the material and measure when the wave arrives at each one, the time difference tells you where the source is.
-
-NVH Source Locator takes:
-
-- **Calibration**: the distance between sensors, and the time it takes a wave to travel that distance (used to compute the material's sound speed)
-- **Event**: the time difference between sensors detecting the noise/vibration event
-
-Then it calculates where on the structure the source is located.
-
-The more sensors you use, the more accurately you can pin down the source:
-
-- **2 sensors** → distance along a line
-- **3 sensors** → position on a 2D surface (X, Y)
-- **4 sensors** → position in 3D space (X, Y, Z)
-
----
-
-## Before you start
-
-You'll need:
-
-- **An oscilloscope or measurement system** that can show you the time difference between accelerometer channels in microseconds (µs)
-- **At least 2 accelerometers** physically attached to the structure (more sensors = higher accuracy)
-- **A way to measure distance** between sensors (tape measure, calipers)
-- **A way to trigger a wave** at a known location for calibration (calibrated hammer impact, screwdriver tap, or other known signal)
-
-![Home screen with 2-Sensor tab](../screenshots/01-home-2sensor.png)
+1. [यह कैसे काम करता है](#how-it-works)
+2. [शुरू करने से पहले](#before-you-start)
+3. [मुख्य टैब](#the-main-tabs)
+4. [2-Sensor मोड](#2-sensor-mode)
+5. [3-Sensor मोड](#3-sensor-mode)
+6. [Pro+ मोड (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)](#pro-modes)
+7. [Materials टैब](#the-materials-tab)
+8. [तापमान क्षतिपूर्ति](#temperature-compensation)
+9. [फोटो एनोटेशन](#photo-annotation)
+10. [रिपोर्ट](#reports)
+11. [बैकअप और पुनर्स्थापना](#backup-and-restore)
+12. [सेटिंग्स](#settings)
+13. [Pro सुविधाएं](#pro-features)
+14. [Help टैब और ट्यूटोरियल](#help-tab-and-tutorials)
+15. [समस्या निवारण](#troubleshooting)
 
 ---
 
-## The main tabs
+## यह कैसे काम करता है
 
-The app has tabs along the top:
+जब कोई शोर स्रोत ध्वनि या कंपन उत्सर्जित करता है, तो तरंग एक ज्ञात गति से सामग्री के माध्यम से यात्रा करती है। यदि आप सामग्री पर दो या अधिक एक्सेलेरोमीटर लगाते हैं और प्रत्येक पर तरंग कब पहुंचती है इसका माप लेते हैं, तो समय का अंतर आपको बताता है कि स्रोत कहां है।
 
-![Tab bar](../screenshots/02-tab-bar.png)
+NVH Source Locator लेता है:
 
-| Tab | What it does | When to use |
+- **कैलिब्रेशन**: सेंसर के बीच की दूरी और तरंग को उस दूरी को तय करने में लगने वाला समय (सामग्री की ध्वनि गति की गणना के लिए उपयोग किया जाता है)
+- **घटना**: शोर/कंपन घटना का पता लगाने वाले सेंसर के बीच समय का अंतर
+
+फिर यह गणना करता है कि स्रोत संरचना पर कहां है।
+
+आप जितने अधिक सेंसर का उपयोग करेंगे, उतनी ही अधिक सटीकता से आप स्रोत का पता लगा सकते हैं:
+
+- **2 सेंसर** → एक रेखा के साथ दूरी
+- **3 सेंसर** → 2D सतह पर स्थिति (X, Y)
+- **4 सेंसर** → 3D स्थान में स्थिति (X, Y, Z)
+
+---
+
+## शुरू करने से पहले
+
+आपको चाहिए:
+
+- **एक ऑसिलोस्कोप या मापन सिस्टम** जो माइक्रोसेकंड (µs) में एक्सेलेरोमीटर चैनलों के बीच समय का अंतर दिखा सके
+- **कम से कम 2 एक्सेलेरोमीटर** भौतिक रूप से संरचना से जुड़े हुए (अधिक सेंसर = उच्च सटीकता)
+- **दूरी मापने का तरीका** सेंसर के बीच (टेप माप, कैलीपर)
+- **तरंग ट्रिगर करने का तरीका** कैलिब्रेशन के लिए ज्ञात स्थान पर (कैलिब्रेटेड हथौड़ा प्रभाव, स्क्रूड्राइवर टैप, या अन्य ज्ञात सिग्नल)
+
+![2-Sensor टैब के साथ होम स्क्रीन](../screenshots/01-home-2sensor.png)
+
+---
+
+## मुख्य टैब
+
+ऐप में शीर्ष पर टैब हैं:
+
+![टैब बार](../screenshots/02-tab-bar.png)
+
+| टैब | यह क्या करता है | कब उपयोग करें |
 |---|---|---|
-| **2-Sensor** | 1D source location along a line between 2 sensors | Quick checks, beam-like structures. **Fully free.** |
-| **3-Sensor** | 2D source location using 3 sensors in a triangle | Most general use, panels and surfaces |
-| **3-Sen+** | 3-Sensor with over-determined least-squares solver | More demanding measurements, noise-robust |
-| **4-Sensor** | 2D location using two pairs (A-B + C-D) | Rectangular sensor layouts, cross-checking |
-| **4-Sen+** | Advanced 2D mode, 4 sensors at any positions | Non-rectangular geometries, full LSQ |
-| **3D** | 3D source location using 4 sensors with XYZ coords | Complex structures in 3D space |
-| **3D+** | 3D with up to 6 sensors, over-determined LSQ | Very complex geometries, maximum precision |
-| **Materials** | Speed-of-sound library + custom materials | Pick once per measurement session |
-| **Help** | In-app tutorials and reference | When you need a quick refresher |
+| **2-Sensor** | 2 सेंसर के बीच एक रेखा के साथ 1D स्रोत स्थानीयकरण | त्वरित जांच, बीम जैसी संरचनाएं। **पूरी तरह से मुफ्त।** |
+| **3-Sensor** | त्रिकोण में 3 सेंसर का उपयोग करके 2D स्रोत स्थानीयकरण | सबसे सामान्य उपयोग, पैनल और सतह |
+| **3-Sen+** | अति-निर्धारित न्यूनतम वर्ग सॉल्वर के साथ 3-Sensor | अधिक मांग वाले माप, शोर-प्रतिरोधी |
+| **4-Sensor** | दो जोड़ों (A-B + C-D) का उपयोग करके 2D स्थानीयकरण | आयताकार सेंसर लेआउट, क्रॉस-चेक |
+| **4-Sen+** | उन्नत 2D मोड, किसी भी स्थिति में 4 सेंसर | गैर-आयताकार ज्यामिति, पूर्ण LSQ |
+| **3D** | XYZ निर्देशांक के साथ 4 सेंसर का उपयोग करके 3D स्रोत स्थानीयकरण | 3D स्थान में जटिल संरचनाएं |
+| **3D+** | 6 सेंसर तक 3D, अति-निर्धारित LSQ | बहुत जटिल ज्यामिति, अधिकतम सटीकता |
+| **Materials** | ध्वनि गति पुस्तकालय + कस्टम सामग्री | प्रति मापन सत्र एक बार चुनें |
+| **Help** | इन-ऐप ट्यूटोरियल और संदर्भ | जब आपको त्वरित रिफ्रेशर की आवश्यकता हो |
 
-> **Free vs Pro**: The 2-Sensor tab is fully free. Other tabs are accessible but have specific input fields locked to Pro users (marked with a gold padlock badge). Tapping a locked field shows the Pro paywall.
+> **मुफ्त बनाम Pro**: 2-Sensor टैब पूरी तरह से मुफ्त है। अन्य टैब सुलभ हैं लेकिन Pro उपयोगकर्ताओं के लिए विशिष्ट इनपुट फ़ील्ड लॉक हैं (सुनहरे पैडलॉक बैज से चिह्नित)। लॉक फ़ील्ड पर टैप करने से Pro पेवॉल प्रदर्शित होता है।
 
-Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).
-
----
-
-## 2-Sensor mode
-
-The simplest measurement: source location along a line between two accelerometers.
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
-
-### Step 1: Apply a material
-
-Tap the Materials tab. Pick the material your structure is made from (e.g., "Aluminium", "Steel, Mild (1020)"). The app uses the material's known speed of sound to populate the calibration time field automatically.
-
-If your structure's material isn't in the list, you can pick "Air" temporarily and override the calibration time manually in step 2.
-
-### Step 2: Enter calibration data
-
-On the 2-Sensor tab, you'll see two pair sections: **Pair A–B** and **Pair A–C** (only A–B is required if you only have 2 sensors).
-
-For each pair you fill in:
-
-- **Sensor spacing** (`d`): physical distance between sensors, in cm or inches (set in Settings)
-- **Calibration time delay** (`tCal`): time for a wave to travel between the sensors at the material's speed of sound — auto-filled when you pick a material, but you can override
-
-### Step 3: Enter the event time
-
-- **Event time delay** (`tEvent`): time difference between sensors detecting the noise event, in microseconds
-- **First sensor**: which sensor heard the event first (A or B)
-
-### Step 4: Read the result
-
-The app shows the source position as a distance from sensor A:
-- Result = 0: source is at sensor A
-- Result = distance: source is at sensor B  
-- Result between: source is between them
-- Result outside: source is beyond one of the sensors (toast will warn)
-
-The result card shows both distances (from A, from B) and indicates which sensor is closer.
-
-### Step 5 (optional): Annotate a photo
-
-Tap **📷 Annotate photo** to take a photo of your setup. The app overlays markers for sensors A, B and the source. Useful for reports.
+सेटिंग्स ऊपरी दाएं कोने में ⚙ गियर आइकन के माध्यम से एक्सेस की जाती हैं (एक टैब नहीं)।
 
 ---
 
-## 3-Sensor mode
+## 2-Sensor मोड
 
-Locates a source on a 2D plane using three sensors arranged in a triangle.
+सबसे सरल मापन: दो एक्सेलेरोमीटर के बीच एक रेखा के साथ स्रोत स्थानीयकरण।
 
-![3-Sensor tab](../screenshots/03-3sensor-tab.png)
+![2-Sensor टैब](../screenshots/01-home-2sensor.png)
 
-### Setup
+### चरण 1: एक सामग्री लागू करें
 
-Place three sensors on your structure forming a triangle. Equilateral, right-angle, or scalene — the app handles all geometries.
+Materials टैब पर टैप करें। वह सामग्री चुनें जिससे आपकी संरचना बनी है (जैसे "एल्युमिनियम", "स्टील, माइल्ड (1020)")। ऐप कैलिब्रेशन समय फ़ील्ड को स्वतः भरने के लिए सामग्री की ज्ञात ध्वनि गति का उपयोग करता है।
 
-### Enter the data
+यदि आपकी संरचना की सामग्री सूची में नहीं है, तो आप अस्थायी रूप से "वायु" चुन सकते हैं और चरण 2 में मैन्युअल रूप से कैलिब्रेशन समय ओवरराइड कर सकते हैं।
 
-In the **Triangle side lengths** section, enter the physical distance for all three sides (A–B, A–C, B–C).
+### चरण 2: कैलिब्रेशन डेटा दर्ज करें
 
-For each pair (A–B and A–C), enter:
-- **tCal**: calibration time (auto-fills from material)
-- **tEvent**: measured time difference for the noise event
-- **First sensor**: which heard it first
+2-Sensor टैब पर, आप दो जोड़ी अनुभाग देखेंगे: **जोड़ी A–B** और **जोड़ी A–C** (यदि आपके पास केवल 2 सेंसर हैं तो केवल A–B आवश्यक है)।
 
-### Read the result
+प्रत्येक जोड़ी के लिए, आप भरते हैं:
 
-The app shows the source position as X, Y coordinates relative to sensor A (sensor A at origin, sensor B on the X-axis). The visualization shows all three sensors and the source location.
+- **सेंसर रिक्ति** (`d`): सेंसर के बीच भौतिक दूरी, सेमी या इंच में (सेटिंग्स में सेट)
+- **कैलिब्रेशन समय विलंब** (`tCal`): सामग्री की ध्वनि गति पर सेंसर के बीच यात्रा करने में तरंग का समय — जब आप सामग्री चुनते हैं तो स्वतः भरा जाता है, लेकिन आप ओवरराइड कर सकते हैं
 
-![Triangle result](../screenshots/04-triangle-result.png)
+### चरण 3: घटना का समय दर्ज करें
+
+- **घटना समय विलंब** (`tEvent`): माइक्रोसेकंड में शोर घटना का पता लगाने वाले सेंसर के बीच समय का अंतर
+- **पहला सेंसर**: किस सेंसर ने पहले घटना सुनी (A या B)
+
+### चरण 4: परिणाम पढ़ें
+
+ऐप सेंसर A से दूरी के रूप में स्रोत स्थिति प्रदर्शित करता है:
+- परिणाम = 0: स्रोत सेंसर A पर है
+- परिणाम = दूरी: स्रोत सेंसर B पर है
+- बीच में परिणाम: स्रोत उनके बीच है
+- बाहर परिणाम: स्रोत किसी एक सेंसर से परे है (toast चेतावनी देगा)
+
+परिणाम कार्ड दोनों दूरियां दिखाता है (A से, B से) और इंगित करता है कि कौन सा सेंसर निकट है।
+
+### चरण 5 (वैकल्पिक): एक तस्वीर एनोटेट करें
+
+अपने सेटअप की तस्वीर लेने के लिए **📷 तस्वीर एनोटेट करें** पर टैप करें। ऐप सेंसर A, B और स्रोत के लिए मार्कर ओवरले करता है। रिपोर्ट के लिए उपयोगी।
 
 ---
 
-## Pro+ modes
+## 3-Sensor मोड
 
-Several advanced tabs offer over-determined solvers and higher dimensionality:
+एक त्रिकोण में व्यवस्थित तीन सेंसर का उपयोग करके 2D तल पर स्रोत का पता लगाता है।
+
+![3-Sensor टैब](../screenshots/03-3sensor-tab.png)
+
+### सेटअप
+
+त्रिकोण बनाते हुए अपनी संरचना पर तीन सेंसर रखें। समबाहु, समकोण, या विषमबाहु — ऐप सभी ज्यामितियों को संभालता है।
+
+### डेटा दर्ज करें
+
+**त्रिकोण भुजाओं की लंबाई** अनुभाग में, सभी तीन भुजाओं (A–B, A–C, B–C) के लिए भौतिक दूरी दर्ज करें।
+
+प्रत्येक जोड़ी (A–B और A–C) के लिए, दर्ज करें:
+- **tCal**: कैलिब्रेशन समय (सामग्री से स्वतः भरा)
+- **tEvent**: शोर घटना के लिए मापा गया समय अंतर
+- **पहला सेंसर**: किसने पहले सुना
+
+### परिणाम पढ़ें
+
+ऐप सेंसर A के सापेक्ष X, Y निर्देशांक के रूप में स्रोत स्थिति प्रदर्शित करता है (सेंसर A मूल पर, सेंसर B X अक्ष पर)। विज़ुअलाइज़ेशन तीनों सेंसर और स्रोत स्थान दिखाता है।
+
+![त्रिकोण परिणाम](../screenshots/04-triangle-result.png)
+
+---
+
+## Pro+ मोड
+
+कई उन्नत टैब अति-निर्धारित सॉल्वर और उच्च आयामिकता प्रदान करते हैं:
 
 ### 3-Sen+ (Pro)
 
-Same triangle setup as 3-Sensor, but calibrate AND measure all three pairs (A–B, A–C, B–C). The solver uses all 3 TDOAs in a least-squares fit — more robust to measurement noise and anisotropic materials. Per-pair residuals are reported so you can spot inconsistent measurements.
+3-Sensor के समान त्रिकोण सेटअप, लेकिन सभी तीन जोड़ी (A–B, A–C, B–C) कैलिब्रेट और मापें। सॉल्वर न्यूनतम वर्ग फिट में सभी 3 TDOA का उपयोग करता है — मापन शोर और अनिसोट्रोपिक सामग्री के प्रति अधिक मजबूत। प्रति-जोड़ी अवशेषों की रिपोर्ट की जाती है ताकि आप असंगत मापन का पता लगा सकें।
 
 ### 4-Sensor
 
-Place four sensors around the area:
-- **A–B** = horizontal pair (left/right sides)
-- **C–D** = vertical pair (top/bottom sides)
+क्षेत्र के चारों ओर चार सेंसर रखें:
+- **A–B** = क्षैतिज जोड़ी (बाएं/दाएं पक्ष)
+- **C–D** = ऊर्ध्वाधर जोड़ी (ऊपर/नीचे पक्ष)
 
-Run the A–B pair first (horizontal), then C–D pair (vertical). The 2D map shows the intersection. Each pair is calibrated separately — useful when material varies across the structure.
+पहले A–B जोड़ी (क्षैतिज) चलाएं, फिर C–D जोड़ी (ऊर्ध्वाधर)। 2D मानचित्र चौराहा दिखाता है। प्रत्येक जोड़ी अलग से कैलिब्रेट की जाती है — संरचना के पार सामग्री बदलने पर उपयोगी।
 
-### 4-Sen+ (Advanced 2D)
+### 4-Sen+ (उन्नत 2D)
 
-Four sensors at any positions (not forced rectangular). Pair A with each of B, C, D and calibrate separately. Over-determined least-squares solver averages out per-pair measurement noise and reports per-pair residuals.
+किसी भी स्थिति में चार सेंसर (आयताकार के लिए मजबूर नहीं)। A को B, C, D में से प्रत्येक के साथ जोड़ें और अलग से कैलिब्रेट करें। अति-निर्धारित न्यूनतम वर्ग सॉल्वर प्रति-जोड़ी मापन शोर का औसत निकालता है और प्रति-जोड़ी अवशेषों की रिपोर्ट करता है।
 
 ### 3D
 
-Full 3D measurement with 4 sensors placed in 3D space. Enter each sensor's (X, Y, Z) coordinates, plus calibration and event times for each pair (A–B, A–C, A–D).
+3D स्थान में रखे 4 सेंसर के साथ पूर्ण 3D मापन। प्रत्येक सेंसर के (X, Y, Z) निर्देशांक, साथ ही प्रत्येक जोड़ी (A–B, A–C, A–D) के लिए कैलिब्रेशन और घटना समय दर्ज करें।
 
 ### 3D+ (Pro)
 
-Like 3D but supports up to **6 sensors** (A through F) with over-determined LSQ. Maximum precision for complex 3D geometries.
+3D के समान लेकिन अति-निर्धारित LSQ के साथ **6 सेंसर तक** (A से F) समर्थन करता है। जटिल 3D ज्यामिति के लिए अधिकतम सटीकता।
 
 ---
 
-## The Materials tab
+## Materials टैब
 
-Library of common engineering materials with known speed of sound at 20 °C.
+20 °C पर ज्ञात ध्वनि गति वाली सामान्य इंजीनियरिंग सामग्री की लाइब्रेरी।
 
-![Materials tab](../screenshots/05-materials-tab.png)
+![Materials टैब](../screenshots/05-materials-tab.png)
 
-### Material list
+### सामग्री सूची
 
-The list includes air, fluids, rubbers, polymers, woods, glasses, and metals. Speeds range from ~340 m/s (air) to ~13,000 m/s (some metals at room temperature).
+सूची में हवा, तरल पदार्थ, रबर, पॉलिमर, लकड़ी, ग्लास और धातु शामिल हैं। गति ~340 m/s (हवा) से ~13,000 m/s (कमरे के तापमान पर कुछ धातु) तक होती है।
 
-### Built-in materials with temperature compensation
+### तापमान क्षतिपूर्ति के साथ अंतर्निहित सामग्री
 
-14 commonly-used metals include temperature coefficient data. When the Reference temperature in Settings differs from 20 °C, the app automatically adjusts these materials' speeds:
+14 आमतौर पर उपयोग की जाने वाली धातुओं में तापमान गुणांक डेटा शामिल है। जब सेटिंग्स में संदर्भ तापमान 20 °C से भिन्न होता है, तो ऐप स्वचालित रूप से इन सामग्रियों की गति को समायोजित करता है:
 
-- Aluminium
-- Steel, Mild (1020)
-- Stainless Steel (304)
-- Iron (cast)
-- Iron
-- Copper
-- Brass
-- Bronze
-- Titanium
-- Magnesium
-- Lead
-- Zinc
-- Nickel
-- Tungsten
+- एल्युमिनियम
+- स्टील, माइल्ड (1020)
+- स्टेनलेस स्टील (304)
+- आयरन (कास्ट)
+- आयरन
+- कॉपर
+- ब्रास
+- ब्रॉन्ज़
+- टाइटेनियम
+- मैग्नीशियम
+- लेड
+- ज़िंक
+- निकेल
+- टंगस्टन
 
-Materials with compensation show two values in the picker: the **compensated speed** (large, prominent) and the **reference speed at 20 °C** (small, gray underneath).
+क्षतिपूर्ति के साथ सामग्री पिकर में दो मान दिखाती है: **क्षतिपूर्ति गति** (बड़ी, प्रमुख) और **20 °C पर संदर्भ गति** (छोटी, नीचे ग्रे)।
 
-Materials without compensation show **"ref only"** in italic — their listed speed is used as-is regardless of temperature.
+बिना क्षतिपूर्ति वाली सामग्री इटैलिक में **"ref only"** दिखाती है — उनकी सूचीबद्ध गति तापमान की परवाह किए बिना उपयोग की जाती है।
 
-### Custom materials
+### कस्टम सामग्री
 
-If you measure a calibration on the 2-Sensor tab, you can save the result as a custom material. After a successful 2-sensor measurement, look for the option to save the derived speed under a name of your choice.
+यदि आप 2-Sensor टैब पर कैलिब्रेशन मापते हैं, तो आप परिणाम को कस्टम सामग्री के रूप में सहेज सकते हैं। एक सफल 2-सेंसर मापन के बाद, आपके द्वारा चुने गए नाम के तहत व्युत्पन्न गति को सहेजने के विकल्प की तलाश करें।
 
-Custom materials store the in-situ measured speed; they never apply temperature compensation (the speed was already measured at the test temperature).
+कस्टम सामग्री स्थान पर मापी गई गति को संग्रहीत करती है; वे कभी भी तापमान क्षतिपूर्ति लागू नहीं करते (परीक्षण तापमान पर गति पहले ही मापी जा चुकी है)।
 
-### Favorites
+### पसंदीदा
 
-Tap the star next to any material to mark it as a favorite. Favorites appear at the top of the list for quick access.
+किसी भी सामग्री के बगल में स्टार पर टैप करें ताकि उसे पसंदीदा के रूप में चिह्नित किया जा सके। त्वरित पहुंच के लिए पसंदीदा सूची के शीर्ष पर दिखाई देते हैं।
 
-### Search
+### खोज
 
-Use the search bar at the top to filter materials by name. Search matches both English canonical names and translated display names.
-
----
-
-## Temperature compensation
-
-The speed of sound in materials changes with temperature. In automotive NVH testing this matters: an engine bay at 80 °C, a cold-soaked cabin at -10 °C, or an exhaust manifold area at 200 °C all behave differently from room-temperature laboratory conditions.
-
-### Setting the temperature
-
-Open Settings (⚙ icon) → Reference temperature. Enter your test environment's temperature in °C (range -40 to +200).
-
-![Settings panel](../screenshots/06-settings.png)
-
-### What happens when temperature ≠ 20 °C
-
-- Calibration time fields auto-fill with the temperature-adjusted speed
-- The Materials picker shows the adjusted speed prominently
-- A toast confirms: *"Aluminium applied (6,284 m/s @ 60 °C) — N pair(s) updated"*
-- The "Closest material" hint compares against temperature-adjusted speeds
-- Saved history entries record the active temperature
-- Reports include a footer line: *"Reference temperature: 60 °C, compensation applied"*
-
-### Reset on app launch
-
-The Reference temperature **always resets to 20 °C** when you launch the app. This prevents stale settings from a past measurement session silently affecting today's work. A small italic note in Settings reminds you of this behavior.
-
-If you want to replay a historical measurement at its original temperature, just tap the entry — the temperature is restored automatically.
-
-### Materials without compensation
-
-Most non-metal materials don't have reliable published temperature coefficients. The app shows a **"ref only"** badge for these — their listed speed is used regardless of the temperature setting. If you need accurate measurements at non-room temperatures for these materials, perform an in-situ calibration and save the result as a custom material.
+नाम से सामग्री को फ़िल्टर करने के लिए शीर्ष पर खोज बार का उपयोग करें। खोज अंग्रेजी कैनोनिकल नामों और अनुवादित प्रदर्शन नामों दोनों से मेल खाती है।
 
 ---
 
-## Photo annotation
+## तापमान क्षतिपूर्ति
 
-After a successful calculation, tap the **📷 Annotate photo** button to overlay sensor and source markers on a photo of your setup.
+सामग्री में ध्वनि की गति तापमान के साथ बदलती है। ऑटोमोटिव NVH परीक्षण में, यह मायने रखता है: 80 °C पर इंजन बे, -10 °C पर ठंडे-भीगे केबिन, या 200 °C पर निकास मैनिफोल्ड क्षेत्र सभी कमरे के तापमान प्रयोगशाला स्थितियों से अलग व्यवहार करते हैं।
 
-![Photo annotation](../screenshots/08-photo-annotation.png)
+### तापमान सेट करना
 
-### Flow
+सेटिंग्स खोलें (⚙ आइकन) → संदर्भ तापमान। अपने परीक्षण वातावरण के तापमान को °C में दर्ज करें (-40 से +200 तक की सीमा)।
 
-1. Tap **Annotate photo** — the system camera opens
-2. Take a photo of your sensor placement
-3. The app loads the photo into the annotation overlay
-4. Sensor markers (A, B, C, D, E, F as applicable — up to 6 sensors) and the source marker auto-place based on your calculation
-5. Drag any marker to fine-tune positioning. As you adjust, the source position recomputes from the corrected sensor positions
-6. Tap **Save** to keep, or **Retake** to try again
+![सेटिंग्स पैनल](../screenshots/06-settings.png)
 
-The annotated photo is included automatically in PDF reports.
+### क्या होता है जब तापमान ≠ 20 °C
 
----
+- कैलिब्रेशन समय फ़ील्ड तापमान-समायोजित गति के साथ स्वचालित रूप से भरे जाते हैं
+- Materials पिकर समायोजित गति को प्रमुखता से प्रदर्शित करता है
+- एक toast पुष्टि करता है: *"एल्युमिनियम लागू (6,284 m/s @ 60 °C) — N जोड़ी अद्यतन"*
+- "निकटतम सामग्री" संकेत तापमान-समायोजित गति के साथ तुलना करता है
+- सहेजी गई इतिहास प्रविष्टियां सक्रिय तापमान रिकॉर्ड करती हैं
+- रिपोर्ट में एक फुटर पंक्ति शामिल है: *"संदर्भ तापमान: 60 °C, क्षतिपूर्ति लागू"*
 
-## Reports
+### ऐप लॉन्च पर रीसेट
 
-Tap the **Print result** button on any result screen to generate a formatted report.
+जब आप ऐप लॉन्च करते हैं तो संदर्भ तापमान **हमेशा 20 °C पर रीसेट होता है**। यह पिछले मापन सत्र से पुरानी सेटिंग्स को आज के काम को चुपचाप प्रभावित करने से रोकता है। सेटिंग्स में एक छोटा इटैलिक नोट आपको इस व्यवहार की याद दिलाता है।
 
-![PDF report](../screenshots/09-pdf-report.png)
+यदि आप अपने मूल तापमान पर एक ऐतिहासिक मापन को फिर से चलाना चाहते हैं, तो बस प्रविष्टि पर टैप करें — तापमान स्वचालित रूप से बहाल हो जाता है।
 
-### Report contents
+### बिना क्षतिपूर्ति वाली सामग्री
 
-- Header (customizable in Settings → Report header)
-- Measurement title and timestamp
-- All input values in a clean table
-- Calculation result
-- Conclusion text
-- Visualization (geometry plot)
-- Annotated photo (if you took one)
-- Temperature footer line (if compensation was active)
-- Page number and credit line
-
-### Output format
-
-- **Android**: native PDF generation, save to your phone or share
-- **iOS**: system print dialog → save as PDF, AirPrint, or share
-
-### Customizing the header
-
-Settings → Report header. Enter your company name, lab name, project info, or whatever you want at the top of every report.
+अधिकांश गैर-धातु सामग्री में विश्वसनीय प्रकाशित तापमान गुणांक नहीं होते हैं। ऐप इनके लिए **"ref only"** बैज दिखाता है — उनकी सूचीबद्ध गति का उपयोग तापमान सेटिंग की परवाह किए बिना किया जाता है। यदि आपको इन सामग्रियों के लिए गैर-कमरे के तापमान पर सटीक माप की आवश्यकता है, तो स्थान पर कैलिब्रेशन करें और परिणाम को कस्टम सामग्री के रूप में सहेजें।
 
 ---
 
-## Backup and restore
+## फोटो एनोटेशन
 
-Save all your custom materials, favorites, settings, and history to a single file. Transfer between devices.
+एक सफल गणना के बाद, अपने सेटअप की एक तस्वीर पर सेंसर और स्रोत मार्कर ओवरले करने के लिए **📷 तस्वीर एनोटेट करें** बटन पर टैप करें।
 
-### Backup
+![फोटो एनोटेशन](../screenshots/08-photo-annotation.png)
 
-Settings → **Backup** → tap "Save backup file." The app generates a JSON file and opens your phone's share sheet. Save it to your cloud drive (Google Drive, iCloud, OneDrive), email it to yourself, or transfer it any way you like.
+### प्रवाह
 
-### Restore
+1. **तस्वीर एनोटेट करें** पर टैप करें — सिस्टम कैमरा खुलता है
+2. अपने सेंसर प्लेसमेंट की एक तस्वीर लें
+3. ऐप तस्वीर को एनोटेशन ओवरले में लोड करता है
+4. सेंसर मार्कर (A, B, C, D, E, F लागू के रूप में — 6 सेंसर तक) और स्रोत मार्कर आपकी गणना के आधार पर स्वचालित रूप से रखे जाते हैं
+5. स्थिति को ठीक करने के लिए किसी भी मार्कर को खींचें। जैसे ही आप समायोजित करते हैं, स्रोत स्थिति को सही सेंसर स्थानों से पुनर्गणना की जाती है
+6. रखने के लिए **सहेजें**, या फिर से कोशिश करने के लिए **पुनः लें** पर टैप करें
 
-Settings → **Restore** → pick the backup file from your phone's storage. The app imports custom materials, favorites, history, and settings.
-
-⚠️ **Restore replaces your current data.** If you have important measurements on the current device, back them up first before restoring from a different backup.
+एनोटेट की गई तस्वीर स्वचालित रूप से PDF रिपोर्ट में शामिल की जाती है।
 
 ---
 
-## Settings
+## रिपोर्ट
 
-Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a tab.
+एक स्वरूपित रिपोर्ट उत्पन्न करने के लिए किसी भी परिणाम स्क्रीन पर **परिणाम प्रिंट करें** बटन पर टैप करें।
 
-![Settings](../screenshots/06-settings.png)
+![PDF रिपोर्ट](../screenshots/09-pdf-report.png)
 
-| Setting | What it controls |
+### रिपोर्ट सामग्री
+
+- हेडर (सेटिंग्स → रिपोर्ट हेडर में अनुकूलन योग्य)
+- मापन शीर्षक और टाइमस्टैम्प
+- एक साफ तालिका में सभी इनपुट मान
+- गणना परिणाम
+- निष्कर्ष पाठ
+- विज़ुअलाइज़ेशन (ज्यामिति प्लॉट)
+- एनोटेट तस्वीर (यदि आपने ली है)
+- तापमान फुटर पंक्ति (यदि क्षतिपूर्ति सक्रिय थी)
+- पृष्ठ संख्या और क्रेडिट पंक्ति
+
+### आउटपुट प्रारूप
+
+- **Android**: नेटिव PDF जनरेशन, अपने फोन पर सहेजें या साझा करें
+- **iOS**: सिस्टम प्रिंट डायलॉग → PDF के रूप में सहेजें, AirPrint, या साझा करें
+
+### हेडर को अनुकूलित करना
+
+सेटिंग्स → रिपोर्ट हेडर। अपनी कंपनी का नाम, लैब का नाम, परियोजना की जानकारी, या जो भी आप प्रत्येक रिपोर्ट के शीर्ष पर चाहते हैं, उसे दर्ज करें।
+
+---
+
+## बैकअप और पुनर्स्थापना
+
+अपनी सभी कस्टम सामग्री, पसंदीदा, सेटिंग्स और इतिहास को एक ही फ़ाइल में सहेजें। डिवाइस के बीच स्थानांतरण।
+
+### बैकअप
+
+सेटिंग्स → **बैकअप** → "बैकअप फ़ाइल सहेजें" पर टैप करें। ऐप एक JSON फ़ाइल उत्पन्न करता है और आपके फोन का शेयर शीट खोलता है। इसे अपने क्लाउड ड्राइव (Google Drive, iCloud, OneDrive) में सहेजें, खुद को ईमेल करें, या जिस तरह से आप चाहें स्थानांतरित करें।
+
+### पुनर्स्थापना
+
+सेटिंग्स → **पुनर्स्थापना** → अपने फोन की संग्रहण से बैकअप फ़ाइल चुनें। ऐप कस्टम सामग्री, पसंदीदा, इतिहास और सेटिंग्स आयात करता है।
+
+⚠️ **पुनर्स्थापना आपके वर्तमान डेटा को प्रतिस्थापित करती है।** यदि आपके पास वर्तमान डिवाइस पर महत्वपूर्ण माप हैं, तो किसी अन्य बैकअप से पुनर्स्थापित करने से पहले उन्हें पहले बैकअप करें।
+
+---
+
+## सेटिंग्स
+
+ऊपरी दाएं कोने में ⚙ गियर आइकन के माध्यम से एक्सेस। सेटिंग्स एक मोडल है, टैब नहीं।
+
+![सेटिंग्स](../screenshots/06-settings.png)
+
+| सेटिंग | यह क्या नियंत्रित करता है |
 |---|---|
-| **Upgrade to Pro** | Buy or learn about Pro features ($19.99) |
-| **Language** | App display language (30 supported) |
-| **Theme** | Light, Dark, or Auto (follow system) |
-| **Distance unit** | cm or inches |
-| **Reference temperature** | Active temperature for compensation, -40 to +200 °C |
-| **Report header** | Custom text at the top of generated reports |
-| **Backup** | Export all data to a file |
-| **Restore** | Import data from a backup file |
-| **Restore purchase** | Re-acquire Pro on a new device |
+| **Pro में अपग्रेड करें** | Pro सुविधाओं को खरीदें या उनके बारे में जानें ($19.99) |
+| **भाषा** | ऐप का प्रदर्शन भाषा (30 समर्थित) |
+| **थीम** | प्रकाश, अंधेरा, या ऑटो (सिस्टम का अनुसरण करें) |
+| **दूरी इकाई** | सेमी या इंच |
+| **संदर्भ तापमान** | क्षतिपूर्ति के लिए सक्रिय तापमान, -40 से +200 °C |
+| **रिपोर्ट हेडर** | उत्पन्न रिपोर्ट के शीर्ष पर कस्टम पाठ |
+| **बैकअप** | सभी डेटा को एक फ़ाइल में निर्यात करें |
+| **पुनर्स्थापना** | बैकअप फ़ाइल से डेटा आयात करें |
+| **खरीदारी पुनर्स्थापित करें** | नए डिवाइस पर Pro को फिर से प्राप्त करें |
 
 ---
 
-## Pro features
+## Pro सुविधाएं
 
-NVH Source Locator uses a **feature-locked freemium model**:
+NVH Source Locator एक **सुविधा-लॉक्ड फ्रीमियम मॉडल** का उपयोग करता है:
 
-- **Free**: 2-Sensor tab is fully functional with no limits
-- **Pro**: All other tabs have specific input fields locked. The paywall appears when a free user taps a locked field
+- **मुफ्त**: 2-Sensor टैब बिना किसी सीमा के पूरी तरह से कार्यात्मक है
+- **Pro**: अन्य सभी टैब में विशिष्ट इनपुट फ़ील्ड लॉक हैं। पेवॉल तब प्रकट होता है जब एक मुफ्त उपयोगकर्ता लॉक फ़ील्ड पर टैप करता है
 
-### What's locked
+### क्या लॉक है
 
-Pro-required fields are scattered across:
+Pro-आवश्यक फ़ील्ड फैले हुए हैं:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
-- 3D and 3D+ modes
-- Backup and Restore
-- PDF reports
-- Custom materials
-- Photo annotation
+- 3D और 3D+ मोड
+- बैकअप और पुनर्स्थापना
+- PDF रिपोर्ट
+- कस्टम सामग्री
+- फोटो एनोटेशन
 
-A free user can OPEN any tab and SEE the interface. They just can't enter values into the Pro-locked input fields.
+एक मुफ्त उपयोगकर्ता किसी भी टैब को खोल सकता है और इंटरफ़ेस देख सकता है। वे केवल Pro-लॉक्ड इनपुट फ़ील्ड में मान दर्ज नहीं कर सकते।
 
-![Pro-locked field](../screenshots/11-pro-locked-field.png)
+![Pro-लॉक्ड फ़ील्ड](../screenshots/11-pro-locked-field.png)
 
-### The paywall
+### पेवॉल
 
-![Paywall](../screenshots/07-paywall.png)
+![पेवॉल](../screenshots/07-paywall.png)
 
-When a free user taps a locked field, the paywall slides in showing:
-- App icon with PRO badge
-- Feature list
-- Unlock button with price ($19.99 default; may vary by region)
-- Promo code redemption (Android only — iOS uses Apple's separate Offer Code flow)
-- Optional promo link to community channels
+जब एक मुफ्त उपयोगकर्ता लॉक फ़ील्ड पर टैप करता है, पेवॉल स्लाइड इन होकर दिखाता है:
+- PRO बैज के साथ ऐप आइकन
+- सुविधा सूची
+- मूल्य के साथ अनलॉक बटन ($19.99 डिफ़ॉल्ट; क्षेत्र के अनुसार भिन्न हो सकता है)
+- प्रोमो कोड रिडेम्पशन (केवल Android — iOS Apple के अलग ऑफर कोड फ्लो का उपयोग करता है)
+- सामुदायिक चैनलों के लिए वैकल्पिक प्रोमो लिंक
 
-### Purchasing Pro
+### Pro खरीदना
 
-Tap any locked field, or tap **Upgrade to Pro** in Settings. Uses your platform's official payment system (Google Play on Android, Apple App Store on iOS).
+किसी भी लॉक फ़ील्ड पर टैप करें, या सेटिंग्स में **Pro में अपग्रेड करें** पर टैप करें। आपके प्लेटफ़ॉर्म की आधिकारिक भुगतान प्रणाली (Android पर Google Play, iOS पर Apple App Store) का उपयोग करता है।
 
-### Restoring Pro on a new device
+### नए डिवाइस पर Pro को पुनर्स्थापित करना
 
-If you purchased on one device and want Pro on another (same account):
+यदि आपने एक डिवाइस पर खरीदा और दूसरे पर (समान खाता) Pro चाहते हैं:
 
-1. Sign into the **same** Google account (Android) or Apple ID (iOS) you used to buy
-2. Open NVH Source Locator on the new device
-3. Go to Settings → **Restore purchase**
-4. The app verifies with the platform's purchase records and unlocks Pro
+1. खरीदने के लिए उपयोग किए गए **उसी** Google खाते (Android) या Apple ID (iOS) में साइन इन करें
+2. नए डिवाइस पर NVH Source Locator खोलें
+3. सेटिंग्स → **खरीदारी पुनर्स्थापित करें** पर जाएं
+4. ऐप प्लेटफ़ॉर्म के खरीद रिकॉर्ड के साथ सत्यापित करता है और Pro को अनलॉक करता है
 
-### Auto-restore on launch
+### लॉन्च पर ऑटो-पुनर्स्थापना
 
-If you redeem a promo code in the Google Play Store or App Store while NVH Source Locator is running in the background, returning to the app automatically detects the new purchase and unlocks Pro — no manual Restore needed.
+यदि आप Google Play Store या App Store में प्रोमो कोड रिडीम करते हैं जबकि NVH Source Locator पृष्ठभूमि में चल रहा है, तो ऐप पर लौटने पर स्वचालित रूप से नई खरीद का पता चलता है और Pro अनलॉक होता है — मैन्युअल पुनर्स्थापना की आवश्यकता नहीं है।
 
-### Promo code redemption
+### प्रोमो कोड रिडेम्पशन
 
-**Android**: a "Have a Google Play promo code?" button in the paywall opens the Google Play redemption flow with your code pre-filled.
+**Android**: पेवॉल में "क्या आपके पास Google Play प्रोमो कोड है?" बटन आपके कोड के साथ पूर्व-भरे Google Play रिडेम्पशन फ्लो को खोलता है।
 
-**iOS**: App Store policy 3.1.1 requires redemption through Apple's official "Redeem code" flow. The Google Play button is hidden on iOS. Look for "Redeem App Store code" in Settings instead.
-
----
-
-## Help tab and tutorials
-
-The **Help** tab includes in-app tutorials, best-practice guides, and reference information.
-
-![Help tab](../screenshots/10-help-tab.png)
-
-Topics covered:
-- What equipment you need
-- How to place sensors for best accuracy
-- Calibration tips
-- Common measurement scenarios
-- Tips for triangulation and 3D placements
-- Cable routing and signal quality
+**iOS**: ऐप स्टोर नीति 3.1.1 के लिए Apple के आधिकारिक "रिडीम कोड" फ्लो के माध्यम से रिडेम्पशन की आवश्यकता है। iOS पर Google Play बटन छिपा हुआ है। इसके बजाय सेटिंग्स में "ऐप स्टोर कोड रिडीम करें" खोजें।
 
 ---
 
-## Troubleshooting
+## Help टैब और ट्यूटोरियल
 
-### Calculation result is wrong or makes no sense
+**Help** टैब में इन-ऐप ट्यूटोरियल, सर्वोत्तम-अभ्यास गाइड और संदर्भ जानकारी शामिल है।
 
-1. Check your calibration. Auto-filled `tCal` assumes published material speed — real-world materials vary. The most accurate calibration is in-situ: tap a known location and let the app derive the actual speed.
-2. Check the **First sensor** setting — which sensor heard the event first matters for the math.
-3. Verify your distance measurements. Errors of a few mm propagate.
+![Help टैब](../screenshots/10-help-tab.png)
 
-### Toast says "Result outside range"
-
-The math says the source is not between your sensors. Possible causes:
-- The source actually is outside the sensor line/plane
-- One of your inputs is wrong
-- The calibration speed is too far off from reality
-
-### Calc-speed hint shows a warning color
-
-The implied speed of sound from your inputs is far from any common material (less than 50 m/s or more than 20,000 m/s). Check your inputs — likely a typo in tCal or distance.
-
-### Material picker shows different speeds than expected
-
-Check the Reference temperature in Settings. If non-20 °C, displayed speeds reflect temperature compensation. The app shows "ref X @ 20°C" underneath compensated speeds so you can verify.
-
-### History entry replays with different result
-
-Old history entries created before app version 1.75 might not have stored the temperature. If you took the measurement at a non-20 °C temperature, replay will use the current setting. Manually set the temperature in Settings before replaying, OR re-measure.
-
-### Photo annotation markers not where I expect
-
-Markers auto-place based on input geometry. Drag them to adjust. Adjusting markers updates the source position in the photo overlay — but does NOT change the underlying calculation result.
-
-### Backup/Restore fails
-
-Make sure you're using a backup file generated by the same or newer version of the app. Older backup files might lack current data fields.
-
-### Restore Purchase says "no purchase found"
-
-1. Verify you're signed into the same store account that you used to purchase
-2. Verify the purchase wasn't refunded or expired
-3. Try uninstalling and reinstalling the app (purchase is tied to your store account, not the app installation)
-4. Contact support@evdiag.net if it persists
-
-### Numeric input snaps to 0 unexpectedly
-
-By design: when you blur a numeric field (tap elsewhere), if it's empty, negative, or contains non-numeric text, it snaps to 0. Prevents silently broken calculations from accidentally cleared inputs. The temperature input is exempt (it clamps to -40/+200 instead).
-
-### Need more help
-
-Contact `support@evdiag.net` with:
-- Your device model and OS version
-- The app version (Settings → bottom of page)
-- Description of what you tried
-- Screenshots if possible
+विषयों को कवर किया गया:
+- आपको किस उपकरण की आवश्यकता है
+- सर्वोत्तम सटीकता के लिए सेंसर कैसे रखें
+- कैलिब्रेशन युक्तियाँ
+- सामान्य मापन परिदृश्य
+- त्रिकोणासन और 3D प्लेसमेंट के लिए युक्तियाँ
+- केबल रूटिंग और सिग्नल गुणवत्ता
 
 ---
 
-*NVH Source Locator is developed by EVDiag. Visit https://evdiag.net for updates and resources.*
+## समस्या निवारण
+
+### गणना परिणाम गलत है या समझ में नहीं आता
+
+1. अपना कैलिब्रेशन जांचें। स्वतः भरा गया `tCal` प्रकाशित सामग्री गति मानता है — वास्तविक सामग्री भिन्न होती है। सबसे सटीक कैलिब्रेशन स्थान पर है: एक ज्ञात स्थान पर टैप करें और ऐप को वास्तविक गति प्राप्त करने दें।
+2. **पहला सेंसर** सेटिंग की जांच करें — किस सेंसर ने पहले घटना सुनी, यह गणित के लिए मायने रखता है।
+3. अपने दूरी माप सत्यापित करें। कुछ मिमी की त्रुटियां प्रसारित होती हैं।
+
+### Toast कहता है "परिणाम रेंज के बाहर"
+
+गणित कहता है कि स्रोत आपके सेंसर के बीच नहीं है। संभावित कारण:
+- स्रोत वास्तव में सेंसर लाइन/प्लेन के बाहर है
+- आपके इनपुट में से एक गलत है
+- कैलिब्रेशन गति वास्तविकता से बहुत दूर है
+
+### गणना गति संकेत चेतावनी रंग दिखाता है
+
+आपके इनपुट से ध्वनि की निहित गति किसी भी सामान्य सामग्री से बहुत दूर है (50 m/s से कम या 20,000 m/s से अधिक)। अपने इनपुट की जांच करें — संभवतः tCal या दूरी में टाइपो।
+
+### Materials पिकर अपेक्षा से अलग गति दिखाता है
+
+सेटिंग्स में संदर्भ तापमान की जांच करें। यदि 20 °C नहीं है, तो प्रदर्शित गति तापमान क्षतिपूर्ति को दर्शाती है। ऐप क्षतिपूर्ति गति के नीचे "ref X @ 20°C" दिखाता है ताकि आप सत्यापित कर सकें।
+
+### इतिहास प्रविष्टि अलग परिणाम के साथ फिर से चलती है
+
+ऐप संस्करण 1.75 से पहले बनाई गई पुरानी इतिहास प्रविष्टियों ने तापमान संग्रहीत नहीं किया हो सकता है। यदि आपने गैर-20 °C तापमान पर मापन लिया, तो प्लेबैक वर्तमान सेटिंग का उपयोग करेगा। प्लेबैक से पहले सेटिंग्स में मैन्युअल रूप से तापमान सेट करें, या फिर से मापन करें।
+
+### फोटो एनोटेशन मार्कर वहां नहीं हैं जहां मैं अपेक्षा करता हूं
+
+मार्कर इनपुट ज्यामिति के आधार पर स्वचालित रूप से रखे जाते हैं। समायोजित करने के लिए उन्हें खींचें। मार्कर समायोजित करना फोटो ओवरले में स्रोत स्थिति को अपडेट करता है — लेकिन अंतर्निहित गणना परिणाम को नहीं बदलता।
+
+### बैकअप/पुनर्स्थापना विफल
+
+सुनिश्चित करें कि आप ऐप के समान या नए संस्करण द्वारा उत्पन्न बैकअप फ़ाइल का उपयोग कर रहे हैं। पुरानी बैकअप फ़ाइलों में वर्तमान डेटा फ़ील्ड नहीं हो सकते।
+
+### खरीदारी पुनर्स्थापित करें कहता है "कोई खरीदारी नहीं मिली"
+
+1. सत्यापित करें कि आप उसी स्टोर खाते में साइन इन हैं जिसका उपयोग आपने खरीदने के लिए किया था
+2. सत्यापित करें कि खरीदारी वापस नहीं की गई है या समाप्त नहीं हुई है
+3. ऐप को अनइंस्टॉल और फिर से इंस्टॉल करने का प्रयास करें (खरीदारी आपके स्टोर खाते से बंधी है, ऐप इंस्टॉलेशन से नहीं)
+4. यदि यह जारी रहता है तो support@evdiag.net से संपर्क करें
+
+### संख्यात्मक इनपुट अप्रत्याशित रूप से 0 पर स्नैप होता है
+
+डिज़ाइन द्वारा: जब आप एक संख्यात्मक फ़ील्ड से फोकस खो देते हैं (कहीं और टैप करते हैं), यदि यह खाली है, नकारात्मक है, या गैर-संख्यात्मक पाठ है, तो यह 0 पर स्नैप हो जाता है। दुर्घटनावश साफ़ किए गए इनपुट से चुपचाप टूटी गणनाओं को रोकता है। तापमान इनपुट छूट प्राप्त है (इसके बजाय -40/+200 पर क्लैम्प करता है)।
+
+### अधिक सहायता चाहिए
+
+`support@evdiag.net` से संपर्क करें:
+- आपका डिवाइस मॉडल और OS संस्करण
+- ऐप संस्करण (सेटिंग्स → पृष्ठ का निचला भाग)
+- आपने जो प्रयास किया उसका विवरण
+- यदि संभव हो तो स्क्रीनशॉट
+
+---
+
+*NVH Source Locator EVDiag द्वारा विकसित किया गया है। अपडेट और संसाधनों के लिए https://evdiag.net पर जाएं।*

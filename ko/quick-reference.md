@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — 빠른 참조
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+한 페이지 요약. 전체 내용은 `user-guide.md`를 참조하세요.
 
 ---
 
-## All tabs
+## 핵심 흐름 (2-Sensor, 무료)
 
-| Tab | Output | Pro fields? |
+1. **재료 선택** — Materials 탭 → 재료를 탭
+2. **보정 입력** 2-Sensor 탭에서:
+   - 센서 간격 (`d`)
+   - 보정 시간 지연 (`tCal`) — 재료에서 자동 입력됨
+3. **이벤트 입력** — `tEvent` 및 첫 번째 센서 (A 또는 B)
+4. **결과 읽기** — 센서 A로부터의 거리
+
+![2-Sensor 탭](../screenshots/01-home-2sensor.png)
+
+---
+
+## 모든 탭
+
+| 탭 | 출력 | Pro 필드? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | 선을 따른 거리 | 아니요 (완전 무료) |
+| 3-Sensor | 표면 위의 X, Y | 예 |
+| 3-Sen+ | 3쌍에 대한 LSQ가 있는 X, Y | 예 |
+| 4-Sensor | 두 쌍에서의 X, Y (A–B + C–D) | 예 |
+| 4-Sen+ | 4개 센서에서의 X, Y, 임의 위치 | 예 |
+| 3D | 4개 센서에서의 X, Y, Z | 예 |
+| 3D+ | 최대 6개 센서에서의 X, Y, Z | 예 |
+| Materials | 음속 선택기 | 아니요 |
+| Help | 튜토리얼 | 아니요 |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+설정은 ⚙ 아이콘 (오른쪽 위)에 있으며 탭이 아닙니다.
 
 ---
 
-## Shortcuts
+## 온도 보정
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+설정 → 기준 온도, 범위 **-40 ~ +200 °C**.
+
+- **14가지 금속**에 내장 보정이 있습니다 (알루미늄, 강철, 구리, 황동, 청동, 티타늄, 마그네슘, 납, 아연, 니켈, 텅스텐, 철, 주철)
+- 보정 없는 재료는 **"ref only"**를 표시합니다
+- **앱 시작 시마다 20 °C로 재설정** (기본 안전 시작)
+- 기록 항목을 재생하면 원래 온도가 복원됩니다
 
 ---
 
-## Pro model
+## 단축키
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **재료 탭** → 모든 탭의 모든 `tCal` 필드 자동 입력
+- **숫자 필드에서 +/- 길게 누르기** → 빠른 증가
+- **숫자 필드에서 가로 드래그** → 값 스크럽
+- **빈/음수/유효하지 않은 입력** → 포커스를 잃으면 0으로 스냅 (온도 필드는 -40/200으로 클램프됨)
+- **재료에 별표 표시** → 선택기 상단으로 이동
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Pro 모델
+
+**기능 잠금 프리미엄** ($19.99):
+- 무료: 2-Sensor 탭은 제한 없이 완전히 작동
+- Pro: 다른 탭은 액세스 가능하지만 탭하면 paywall을 표시하는 **금색 자물쇠 필드**가 있습니다
+
+Pro 잠금 해제: 3-Sensor부터 3D+까지, 사용자 정의 재료, 백업/복원, PDF 보고서, 사진 주석.
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## 보고서 및 백업
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+모든 결과 화면의 **결과 인쇄** 버튼 → 헤더, 입력, 결과, 시각화, 사진 (촬영한 경우), 온도 바닥글 (보정이 활성화된 경우)이 포함된 PDF.
 
-Customize header in Settings → Report header.
+설정 → 보고서 헤더에서 헤더를 사용자 정의합니다.
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**백업**: 설정 → 백업 → 클라우드/이메일로 공유.  
+**복원**: 설정 → 복원 → 백업 파일 선택.
 
 ---
 
-## Quick troubleshooting
+## 새 장치에서 Pro 복원
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+구매한 동일한 Google 계정 (Android) 또는 Apple ID (iOS) → 설정 → **구매 복원** → 몇 초 안에 잠금 해제.
+
+프로모션 코드를 외부에서 사용한 후 앱으로 돌아갈 때 자동 복원이 자동으로 발생합니다.
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## 빠른 문제 해결
+
+- **결과가 범위를 벗어남?** `tEvent` 부호 / 첫 번째 센서 / 센서 간격을 확인하세요
+- **가장 가까운 재료가 잘못됨?** 기준 온도가 실수로 설정되었을 수 있습니다 — 설정을 확인하세요
+- **구매 복원 실패?** 동일한 스토어 계정 확인; 계속되면 재설치
+- **필드가 0으로 스냅됨?** 빈/음수 입력은 포커스를 잃을 때 자동으로 스냅됩니다 — 값을 다시 입력
+- **스테퍼 버튼이 사라짐?** `data-step`이 있는 필드 옆에 나타납니다 — 누락된 경우 앱 재시작
+- **오래된 온도 경고?** 시작할 때마다 20으로 재설정됩니다 — 이 세션을 위해 다시 설정
+
+---
+
+`support@evdiag.net` 문의 — 기기 모델, 앱 버전 (설정 → 하단), 시도한 내용 설명을 포함하세요.

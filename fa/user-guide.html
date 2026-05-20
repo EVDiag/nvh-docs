@@ -57,418 +57,418 @@
     Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
   </div>
 
-  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — User Guide</h1>
-<p>NVH Source Locator is a measurement tool for locating noise and vibration sources using TDOA (Time Difference of Arrival) from accelerometer signals captured on an oscilloscope or measurement system.</p>
-<p>This guide covers all features. For a quick refresher, see <code>quick-reference.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — راهنمای کاربر</h1>
+<p>NVH Source Locator یک ابزار اندازه‌گیری برای مکان‌یابی منابع نویز و ارتعاش با استفاده از TDOA (Time Difference of Arrival) از سیگنال‌های شتاب‌سنج که در یک اسیلوسکوپ یا سیستم اندازه‌گیری ضبط شده‌اند.</p>
+<p>این راهنما تمام ویژگی‌ها را پوشش می‌دهد. برای یادآوری سریع، به <code>quick-reference.md</code> مراجعه کنید.</p>
 <blockquote>
-<p><strong>Note on screenshots</strong>: This document uses placeholder screenshots from the app. Replace each <code>../screenshots/*.png</code> with real device screenshots as you capture them.</p>
+<p><strong>توجه درباره تصاویر صفحه</strong>: این سند از تصاویر صفحه نگه‌دارنده برنامه استفاده می‌کند. هر <code>../screenshots/*.png</code> را با تصاویر صفحه واقعی دستگاه جایگزین کنید همان طور که آن‌ها را می‌گیرید.</p>
 </blockquote>
 <hr />
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="_1">فهرست مطالب</h2>
 <ol>
-<li><a href="#how-it-works">How it works</a></li>
-<li><a href="#before-you-start">Before you start</a></li>
-<li><a href="#the-main-tabs">The main tabs</a></li>
-<li><a href="#2-sensor-mode">2-Sensor mode</a></li>
-<li><a href="#3-sensor-mode">3-Sensor mode</a></li>
-<li><a href="#pro-modes">Pro+ modes (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
-<li><a href="#the-materials-tab">The Materials tab</a></li>
-<li><a href="#temperature-compensation">Temperature compensation</a></li>
-<li><a href="#photo-annotation">Photo annotation</a></li>
-<li><a href="#reports">Reports</a></li>
-<li><a href="#backup-and-restore">Backup and restore</a></li>
-<li><a href="#settings">Settings</a></li>
-<li><a href="#pro-features">Pro features</a></li>
-<li><a href="#help-tab-and-tutorials">Help tab and tutorials</a></li>
-<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#how-it-works">نحوه کار</a></li>
+<li><a href="#before-you-start">قبل از شروع</a></li>
+<li><a href="#the-main-tabs">برگه‌های اصلی</a></li>
+<li><a href="#2-sensor-mode">حالت 2-Sensor</a></li>
+<li><a href="#3-sensor-mode">حالت 3-Sensor</a></li>
+<li><a href="#pro-modes">حالت‌های Pro+ (3-Sen+, 4-Sensor, 4-Sen+, 3D, 3D+)</a></li>
+<li><a href="#the-materials-tab">برگه Materials</a></li>
+<li><a href="#temperature-compensation">جبران دما</a></li>
+<li><a href="#photo-annotation">حاشیه‌نویسی عکس</a></li>
+<li><a href="#reports">گزارش‌ها</a></li>
+<li><a href="#backup-and-restore">پشتیبان‌گیری و بازیابی</a></li>
+<li><a href="#settings">تنظیمات</a></li>
+<li><a href="#pro-features">ویژگی‌های Pro</a></li>
+<li><a href="#help-tab-and-tutorials">برگه Help و آموزش‌ها</a></li>
+<li><a href="#troubleshooting">عیب‌یابی</a></li>
 </ol>
 <hr />
-<h2 id="how-it-works">How it works</h2>
-<p>When a noise source emits a sound or vibration, the wave travels through a material at a known speed. If you place two or more accelerometers on the material and measure when the wave arrives at each one, the time difference tells you where the source is.</p>
-<p>NVH Source Locator takes:</p>
+<h2 id="_2">نحوه کار</h2>
+<p>وقتی منبع نویز یک صدا یا ارتعاش منتشر می‌کند، موج با سرعت مشخص از طریق ماده حرکت می‌کند. اگر دو یا چند شتاب‌سنج روی ماده قرار دهید و زمان رسیدن موج به هر کدام را اندازه‌گیری کنید، اختلاف زمانی به شما می‌گوید منبع کجاست.</p>
+<p>NVH Source Locator دریافت می‌کند:</p>
 <ul>
-<li><strong>Calibration</strong>: the distance between sensors, and the time it takes a wave to travel that distance (used to compute the material's sound speed)</li>
-<li><strong>Event</strong>: the time difference between sensors detecting the noise/vibration event</li>
+<li><strong>کالیبراسیون</strong>: فاصله بین سنسورها و زمانی که طول می‌کشد یک موج این فاصله را طی کند (برای محاسبه سرعت صوت ماده استفاده می‌شود)</li>
+<li><strong>رویداد</strong>: اختلاف زمانی بین سنسورهایی که رویداد نویز/ارتعاش را تشخیص می‌دهند</li>
 </ul>
-<p>Then it calculates where on the structure the source is located.</p>
-<p>The more sensors you use, the more accurately you can pin down the source:</p>
+<p>سپس محاسبه می‌کند که منبع در کجای ساختار قرار دارد.</p>
+<p>هرچه سنسورهای بیشتری استفاده کنید، می‌توانید منبع را با دقت بیشتری شناسایی کنید:</p>
 <ul>
-<li><strong>2 sensors</strong> → distance along a line</li>
-<li><strong>3 sensors</strong> → position on a 2D surface (X, Y)</li>
-<li><strong>4 sensors</strong> → position in 3D space (X, Y, Z)</li>
+<li><strong>2 سنسور</strong> → فاصله در امتداد یک خط</li>
+<li><strong>3 سنسور</strong> → موقعیت روی یک سطح 2D (X، Y)</li>
+<li><strong>4 سنسور</strong> → موقعیت در فضای 3D (X، Y، Z)</li>
 </ul>
 <hr />
-<h2 id="before-you-start">Before you start</h2>
-<p>You'll need:</p>
+<h2 id="_3">قبل از شروع</h2>
+<p>شما نیاز دارید:</p>
 <ul>
-<li><strong>An oscilloscope or measurement system</strong> that can show you the time difference between accelerometer channels in microseconds (µs)</li>
-<li><strong>At least 2 accelerometers</strong> physically attached to the structure (more sensors = higher accuracy)</li>
-<li><strong>A way to measure distance</strong> between sensors (tape measure, calipers)</li>
-<li><strong>A way to trigger a wave</strong> at a known location for calibration (calibrated hammer impact, screwdriver tap, or other known signal)</li>
+<li><strong>یک اسیلوسکوپ یا سیستم اندازه‌گیری</strong> که می‌تواند اختلاف زمانی بین کانال‌های شتاب‌سنج را به میکروثانیه (µs) نشان دهد</li>
+<li><strong>حداقل 2 شتاب‌سنج</strong> که از نظر فیزیکی به ساختار متصل شده‌اند (سنسورهای بیشتر = دقت بالاتر)</li>
+<li><strong>روشی برای اندازه‌گیری فاصله</strong> بین سنسورها (متر نواری، کولیس)</li>
+<li><strong>روشی برای ایجاد یک موج</strong> در مکانی شناخته شده برای کالیبراسیون (ضربه چکش کالیبره شده، ضربه پیچ‌گوشتی، یا سیگنال شناخته شده دیگر)</li>
 </ul>
-<p><img alt="Home screen with 2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="صفحه اصلی با برگه 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="the-main-tabs">The main tabs</h2>
-<p>The app has tabs along the top:</p>
-<p><img alt="Tab bar" src="../screenshots/02-tab-bar.png" /></p>
+<h2 id="_4">برگه‌های اصلی</h2>
+<p>برنامه دارای برگه‌هایی در بالا است:</p>
+<p><img alt="نوار برگه‌ها" src="../screenshots/02-tab-bar.png" /></p>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>What it does</th>
-<th>When to use</th>
+<th>برگه</th>
+<th>چه کاری انجام می‌دهد</th>
+<th>چه زمانی استفاده کنید</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>2-Sensor</strong></td>
-<td>1D source location along a line between 2 sensors</td>
-<td>Quick checks, beam-like structures. <strong>Fully free.</strong></td>
+<td>مکان‌یابی منبع 1D در امتداد خطی بین 2 سنسور</td>
+<td>بررسی‌های سریع، سازه‌های شبیه تیر. <strong>کاملاً رایگان.</strong></td>
 </tr>
 <tr>
 <td><strong>3-Sensor</strong></td>
-<td>2D source location using 3 sensors in a triangle</td>
-<td>Most general use, panels and surfaces</td>
+<td>مکان‌یابی منبع 2D با استفاده از 3 سنسور در مثلث</td>
+<td>عمومی‌ترین استفاده، پنل‌ها و سطوح</td>
 </tr>
 <tr>
 <td><strong>3-Sen+</strong></td>
-<td>3-Sensor with over-determined least-squares solver</td>
-<td>More demanding measurements, noise-robust</td>
+<td>3-Sensor با حل‌کننده کمترین مربعات بیش از حد تعیین شده</td>
+<td>اندازه‌گیری‌های سخت‌گیرانه‌تر، مقاوم در برابر نویز</td>
 </tr>
 <tr>
 <td><strong>4-Sensor</strong></td>
-<td>2D location using two pairs (A-B + C-D)</td>
-<td>Rectangular sensor layouts, cross-checking</td>
+<td>مکان‌یابی 2D با استفاده از دو جفت (A-B + C-D)</td>
+<td>چیدمان‌های مستطیلی سنسور، بررسی متقابل</td>
 </tr>
 <tr>
 <td><strong>4-Sen+</strong></td>
-<td>Advanced 2D mode, 4 sensors at any positions</td>
-<td>Non-rectangular geometries, full LSQ</td>
+<td>حالت 2D پیشرفته، 4 سنسور در هر موقعیتی</td>
+<td>هندسه‌های غیر مستطیلی، LSQ کامل</td>
 </tr>
 <tr>
 <td><strong>3D</strong></td>
-<td>3D source location using 4 sensors with XYZ coords</td>
-<td>Complex structures in 3D space</td>
+<td>مکان‌یابی منبع 3D با استفاده از 4 سنسور با مختصات XYZ</td>
+<td>سازه‌های پیچیده در فضای 3D</td>
 </tr>
 <tr>
 <td><strong>3D+</strong></td>
-<td>3D with up to 6 sensors, over-determined LSQ</td>
-<td>Very complex geometries, maximum precision</td>
+<td>3D با حداکثر 6 سنسور، LSQ بیش از حد تعیین شده</td>
+<td>هندسه‌های بسیار پیچیده، حداکثر دقت</td>
 </tr>
 <tr>
 <td><strong>Materials</strong></td>
-<td>Speed-of-sound library + custom materials</td>
-<td>Pick once per measurement session</td>
+<td>کتابخانه سرعت صوت + مواد سفارشی</td>
+<td>یک بار در هر جلسه اندازه‌گیری انتخاب کنید</td>
 </tr>
 <tr>
 <td><strong>Help</strong></td>
-<td>In-app tutorials and reference</td>
-<td>When you need a quick refresher</td>
+<td>آموزش‌های درون‌برنامه و مرجع</td>
+<td>وقتی نیاز به یادآوری سریع دارید</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Free vs Pro</strong>: The 2-Sensor tab is fully free. Other tabs are accessible but have specific input fields locked to Pro users (marked with a gold padlock badge). Tapping a locked field shows the Pro paywall.</p>
+<p><strong>رایگان در مقابل Pro</strong>: برگه 2-Sensor کاملاً رایگان است. برگه‌های دیگر قابل دسترسی هستند اما فیلدهای ورودی خاصی دارند که برای کاربران Pro قفل شده است (با نشان قفل طلایی مشخص شده‌اند). لمس یک فیلد قفل شده، paywall Pro را نشان می‌دهد.</p>
 </blockquote>
-<p>Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).</p>
+<p>تنظیمات از طریق نماد چرخ‌دنده ⚙ در گوشه بالا سمت راست قابل دسترسی است (نه یک برگه).</p>
 <hr />
-<h2 id="2-sensor-mode">2-Sensor mode</h2>
-<p>The simplest measurement: source location along a line between two accelerometers.</p>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="step-1-apply-a-material">Step 1: Apply a material</h3>
-<p>Tap the Materials tab. Pick the material your structure is made from (e.g., "Aluminium", "Steel, Mild (1020)"). The app uses the material's known speed of sound to populate the calibration time field automatically.</p>
-<p>If your structure's material isn't in the list, you can pick "Air" temporarily and override the calibration time manually in step 2.</p>
-<h3 id="step-2-enter-calibration-data">Step 2: Enter calibration data</h3>
-<p>On the 2-Sensor tab, you'll see two pair sections: <strong>Pair A–B</strong> and <strong>Pair A–C</strong> (only A–B is required if you only have 2 sensors).</p>
-<p>For each pair you fill in:</p>
+<h2 id="2-sensor">حالت 2-Sensor</h2>
+<p>ساده‌ترین اندازه‌گیری: مکان‌یابی منبع در امتداد خطی بین دو شتاب‌سنج.</p>
+<p><img alt="برگه 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
+<h3 id="1">مرحله 1: اعمال یک ماده</h3>
+<p>برگه Materials را لمس کنید. مواد ساختار خود را انتخاب کنید (مثلاً "آلومینیوم"، "فولاد، Mild (1020)"). برنامه از سرعت صوت شناخته شده ماده برای پر کردن خودکار فیلد زمان کالیبراسیون استفاده می‌کند.</p>
+<p>اگر مواد ساختار شما در لیست نیست، می‌توانید موقتاً "هوا" را انتخاب کنید و زمان کالیبراسیون را به صورت دستی در مرحله 2 لغو کنید.</p>
+<h3 id="2">مرحله 2: داده‌های کالیبراسیون را وارد کنید</h3>
+<p>در برگه 2-Sensor، دو بخش جفت را خواهید دید: <strong>جفت A–B</strong> و <strong>جفت A–C</strong> (فقط A–B لازم است اگر شما فقط 2 سنسور دارید).</p>
+<p>برای هر جفت، شما پر می‌کنید:</p>
 <ul>
-<li><strong>Sensor spacing</strong> (<code>d</code>): physical distance between sensors, in cm or inches (set in Settings)</li>
-<li><strong>Calibration time delay</strong> (<code>tCal</code>): time for a wave to travel between the sensors at the material's speed of sound — auto-filled when you pick a material, but you can override</li>
+<li><strong>فاصله سنسورها</strong> (<code>d</code>): فاصله فیزیکی بین سنسورها، در سانتی‌متر یا اینچ (در تنظیمات تنظیم شده است)</li>
+<li><strong>تأخیر زمان کالیبراسیون</strong> (<code>tCal</code>): زمانی که طول می‌کشد یک موج بین سنسورها با سرعت صوت ماده طی کند — به طور خودکار پر می‌شود وقتی شما یک ماده انتخاب می‌کنید، اما می‌توانید لغو کنید</li>
 </ul>
-<h3 id="step-3-enter-the-event-time">Step 3: Enter the event time</h3>
+<h3 id="3">مرحله 3: زمان رویداد را وارد کنید</h3>
 <ul>
-<li><strong>Event time delay</strong> (<code>tEvent</code>): time difference between sensors detecting the noise event, in microseconds</li>
-<li><strong>First sensor</strong>: which sensor heard the event first (A or B)</li>
+<li><strong>تأخیر زمان رویداد</strong> (<code>tEvent</code>): اختلاف زمانی بین سنسورهایی که رویداد نویز را تشخیص می‌دهند، به میکروثانیه</li>
+<li><strong>سنسور اول</strong>: کدام سنسور رویداد را اول شنید (A یا B)</li>
 </ul>
-<h3 id="step-4-read-the-result">Step 4: Read the result</h3>
-<p>The app shows the source position as a distance from sensor A:
-- Result = 0: source is at sensor A
-- Result = distance: source is at sensor B<br />
-- Result between: source is between them
-- Result outside: source is beyond one of the sensors (toast will warn)</p>
-<p>The result card shows both distances (from A, from B) and indicates which sensor is closer.</p>
-<h3 id="step-5-optional-annotate-a-photo">Step 5 (optional): Annotate a photo</h3>
-<p>Tap <strong>📷 Annotate photo</strong> to take a photo of your setup. The app overlays markers for sensors A, B and the source. Useful for reports.</p>
+<h3 id="4">مرحله 4: نتیجه را بخوانید</h3>
+<p>برنامه موقعیت منبع را به عنوان فاصله از سنسور A نشان می‌دهد:
+- نتیجه = 0: منبع در سنسور A است
+- نتیجه = فاصله: منبع در سنسور B است
+- نتیجه بین: منبع بین آنها است
+- نتیجه خارج: منبع فراتر از یکی از سنسورها است (یک toast هشدار می‌دهد)</p>
+<p>کارت نتیجه هر دو فاصله را نشان می‌دهد (از A، از B) و نشان می‌دهد کدام سنسور نزدیک‌تر است.</p>
+<h3 id="5">مرحله 5 (اختیاری): یک عکس را حاشیه‌نویسی کنید</h3>
+<p><strong>📷 حاشیه‌نویسی عکس</strong> را لمس کنید تا عکسی از تنظیمات خود بگیرید. برنامه نشانگرها را برای سنسورهای A، B و منبع روی هم قرار می‌دهد. برای گزارش‌ها مفید است.</p>
 <hr />
-<h2 id="3-sensor-mode">3-Sensor mode</h2>
-<p>Locates a source on a 2D plane using three sensors arranged in a triangle.</p>
-<p><img alt="3-Sensor tab" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="setup">Setup</h3>
-<p>Place three sensors on your structure forming a triangle. Equilateral, right-angle, or scalene — the app handles all geometries.</p>
-<h3 id="enter-the-data">Enter the data</h3>
-<p>In the <strong>Triangle side lengths</strong> section, enter the physical distance for all three sides (A–B, A–C, B–C).</p>
-<p>For each pair (A–B and A–C), enter:
-- <strong>tCal</strong>: calibration time (auto-fills from material)
-- <strong>tEvent</strong>: measured time difference for the noise event
-- <strong>First sensor</strong>: which heard it first</p>
-<h3 id="read-the-result">Read the result</h3>
-<p>The app shows the source position as X, Y coordinates relative to sensor A (sensor A at origin, sensor B on the X-axis). The visualization shows all three sensors and the source location.</p>
-<p><img alt="Triangle result" src="../screenshots/04-triangle-result.png" /></p>
+<h2 id="3-sensor">حالت 3-Sensor</h2>
+<p>یک منبع را روی یک صفحه 2D با استفاده از سه سنسور که در مثلث چیده شده‌اند، مکان‌یابی می‌کند.</p>
+<p><img alt="برگه 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
+<h3 id="_5">راه‌اندازی</h3>
+<p>سه سنسور را روی ساختار خود قرار دهید که یک مثلث تشکیل دهند. متساوی‌الاضلاع، قائم‌الزاویه، یا غیرمنتظم — برنامه همه هندسه‌ها را اداره می‌کند.</p>
+<h3 id="_6">داده‌ها را وارد کنید</h3>
+<p>در بخش <strong>طول اضلاع مثلث</strong>، فاصله فیزیکی را برای هر سه ضلع (A–B، A–C، B–C) وارد کنید.</p>
+<p>برای هر جفت (A–B و A–C)، وارد کنید:
+- <strong>tCal</strong>: زمان کالیبراسیون (از ماده به طور خودکار پر می‌شود)
+- <strong>tEvent</strong>: اختلاف زمانی اندازه‌گیری شده برای رویداد نویز
+- <strong>سنسور اول</strong>: کدام آن را اول شنید</p>
+<h3 id="_7">نتیجه را بخوانید</h3>
+<p>برنامه موقعیت منبع را به عنوان مختصات X، Y نسبت به سنسور A نشان می‌دهد (سنسور A در مبدأ، سنسور B در محور X). تجسم همه سه سنسور و موقعیت منبع را نشان می‌دهد.</p>
+<p><img alt="نتیجه مثلث" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modes">Pro+ modes</h2>
-<p>Several advanced tabs offer over-determined solvers and higher dimensionality:</p>
+<h2 id="pro">حالت‌های Pro+</h2>
+<p>چندین برگه پیشرفته حل‌کننده‌های بیش از حد تعیین شده و ابعاد بالاتر ارائه می‌دهند:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
-<p>Same triangle setup as 3-Sensor, but calibrate AND measure all three pairs (A–B, A–C, B–C). The solver uses all 3 TDOAs in a least-squares fit — more robust to measurement noise and anisotropic materials. Per-pair residuals are reported so you can spot inconsistent measurements.</p>
+<p>همان راه‌اندازی مثلث مانند 3-Sensor، اما هر سه جفت را کالیبره کنید و اندازه‌گیری کنید (A–B، A–C، B–C). حل‌کننده از هر 3 TDOA در یک تطبیق کمترین مربعات استفاده می‌کند — قوی‌تر در برابر نویز اندازه‌گیری و مواد آنیزوتروپیک. باقی‌مانده‌های هر جفت گزارش می‌شود تا بتوانید اندازه‌گیری‌های ناسازگار را مشاهده کنید.</p>
 <h3 id="4-sensor">4-Sensor</h3>
-<p>Place four sensors around the area:
-- <strong>A–B</strong> = horizontal pair (left/right sides)
-- <strong>C–D</strong> = vertical pair (top/bottom sides)</p>
-<p>Run the A–B pair first (horizontal), then C–D pair (vertical). The 2D map shows the intersection. Each pair is calibrated separately — useful when material varies across the structure.</p>
-<h3 id="4-sen-advanced-2d">4-Sen+ (Advanced 2D)</h3>
-<p>Four sensors at any positions (not forced rectangular). Pair A with each of B, C, D and calibrate separately. Over-determined least-squares solver averages out per-pair measurement noise and reports per-pair residuals.</p>
+<p>چهار سنسور را دور منطقه قرار دهید:
+- <strong>A–B</strong> = جفت افقی (طرف‌های چپ/راست)
+- <strong>C–D</strong> = جفت عمودی (طرف‌های بالا/پایین)</p>
+<p>ابتدا جفت A–B (افقی) را اجرا کنید، سپس جفت C–D (عمودی). نقشه 2D محل تقاطع را نشان می‌دهد. هر جفت به طور جداگانه کالیبره می‌شود — مفید است وقتی مواد در سراسر ساختار تغییر می‌کند.</p>
+<h3 id="4-sen-2d">4-Sen+ (2D پیشرفته)</h3>
+<p>چهار سنسور در هر موقعیتی (مستطیلی اجباری نیست). A را با هر یک از B، C، D جفت کنید و به طور جداگانه کالیبره کنید. حل‌کننده کمترین مربعات بیش از حد تعیین شده، نویز اندازه‌گیری هر جفت را میانگین می‌گیرد و باقی‌مانده هر جفت را گزارش می‌دهد.</p>
 <h3 id="3d">3D</h3>
-<p>Full 3D measurement with 4 sensors placed in 3D space. Enter each sensor's (X, Y, Z) coordinates, plus calibration and event times for each pair (A–B, A–C, A–D).</p>
+<p>اندازه‌گیری کامل 3D با 4 سنسور در فضای 3D. مختصات (X، Y، Z) هر سنسور را وارد کنید، به علاوه زمان‌های کالیبراسیون و رویداد برای هر جفت (A–B، A–C، A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
-<p>Like 3D but supports up to <strong>6 sensors</strong> (A through F) with over-determined LSQ. Maximum precision for complex 3D geometries.</p>
+<p>مانند 3D اما تا <strong>6 سنسور</strong> (A تا F) با LSQ بیش از حد تعیین شده پشتیبانی می‌کند. حداکثر دقت برای هندسه‌های پیچیده 3D.</p>
 <hr />
-<h2 id="the-materials-tab">The Materials tab</h2>
-<p>Library of common engineering materials with known speed of sound at 20 °C.</p>
-<p><img alt="Materials tab" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="material-list">Material list</h3>
-<p>The list includes air, fluids, rubbers, polymers, woods, glasses, and metals. Speeds range from ~340 m/s (air) to ~13,000 m/s (some metals at room temperature).</p>
-<h3 id="built-in-materials-with-temperature-compensation">Built-in materials with temperature compensation</h3>
-<p>14 commonly-used metals include temperature coefficient data. When the Reference temperature in Settings differs from 20 °C, the app automatically adjusts these materials' speeds:</p>
+<h2 id="materials">برگه Materials</h2>
+<p>کتابخانه‌ای از مواد مهندسی رایج با سرعت صوت شناخته شده در 20 °C.</p>
+<p><img alt="برگه Materials" src="../screenshots/05-materials-tab.png" /></p>
+<h3 id="_8">لیست مواد</h3>
+<p>لیست شامل هوا، مایعات، لاستیک، پلیمرها، چوب‌ها، شیشه‌ها و فلزات است. سرعت‌ها از ~340 m/s (هوا) تا ~13,000 m/s (برخی فلزات در دمای اتاق) متغیر است.</p>
+<h3 id="_9">مواد داخلی با جبران دما</h3>
+<p>14 فلز پرکاربرد شامل داده‌های ضریب دما هستند. وقتی دمای مرجع در تنظیمات با 20 °C متفاوت باشد، برنامه به طور خودکار سرعت این مواد را تنظیم می‌کند:</p>
 <ul>
-<li>Aluminium</li>
-<li>Steel, Mild (1020)</li>
-<li>Stainless Steel (304)</li>
-<li>Iron (cast)</li>
-<li>Iron</li>
-<li>Copper</li>
-<li>Brass</li>
-<li>Bronze</li>
-<li>Titanium</li>
-<li>Magnesium</li>
-<li>Lead</li>
-<li>Zinc</li>
-<li>Nickel</li>
-<li>Tungsten</li>
+<li>آلومینیوم</li>
+<li>فولاد، Mild (1020)</li>
+<li>فولاد ضد زنگ (304)</li>
+<li>آهن (ریخته‌گری)</li>
+<li>آهن</li>
+<li>مس</li>
+<li>برنج</li>
+<li>برنز</li>
+<li>تیتانیوم</li>
+<li>منیزیم</li>
+<li>سرب</li>
+<li>روی</li>
+<li>نیکل</li>
+<li>تنگستن</li>
 </ul>
-<p>Materials with compensation show two values in the picker: the <strong>compensated speed</strong> (large, prominent) and the <strong>reference speed at 20 °C</strong> (small, gray underneath).</p>
-<p>Materials without compensation show <strong>"ref only"</strong> in italic — their listed speed is used as-is regardless of temperature.</p>
-<h3 id="custom-materials">Custom materials</h3>
-<p>If you measure a calibration on the 2-Sensor tab, you can save the result as a custom material. After a successful 2-sensor measurement, look for the option to save the derived speed under a name of your choice.</p>
-<p>Custom materials store the in-situ measured speed; they never apply temperature compensation (the speed was already measured at the test temperature).</p>
-<h3 id="favorites">Favorites</h3>
-<p>Tap the star next to any material to mark it as a favorite. Favorites appear at the top of the list for quick access.</p>
-<h3 id="search">Search</h3>
-<p>Use the search bar at the top to filter materials by name. Search matches both English canonical names and translated display names.</p>
+<p>مواد با جبران دما دو مقدار را در انتخابگر نشان می‌دهند: <strong>سرعت جبران شده</strong> (بزرگ، برجسته) و <strong>سرعت مرجع در 20 °C</strong> (کوچک، خاکستری زیر آن).</p>
+<p>مواد بدون جبران دما <strong>"ref only"</strong> را به صورت ایتالیک نشان می‌دهند — سرعت ذکر شده آنها بدون توجه به دما به همان شکل استفاده می‌شود.</p>
+<h3 id="_10">مواد سفارشی</h3>
+<p>اگر یک کالیبراسیون را در برگه 2-Sensor اندازه‌گیری کنید، می‌توانید نتیجه را به عنوان یک ماده سفارشی ذخیره کنید. پس از یک اندازه‌گیری 2-sensor موفق، گزینه ذخیره سرعت مشتق شده تحت نامی به انتخاب خود را جستجو کنید.</p>
+<p>مواد سفارشی سرعت اندازه‌گیری شده in-situ را ذخیره می‌کنند؛ آنها هرگز جبران دما را اعمال نمی‌کنند (سرعت قبلاً در دمای آزمایش اندازه‌گیری شده است).</p>
+<h3 id="_11">موارد دلخواه</h3>
+<p>ستاره را در کنار هر ماده‌ای لمس کنید تا آن را به عنوان دلخواه علامت‌گذاری کنید. موارد دلخواه در بالای لیست برای دسترسی سریع ظاهر می‌شوند.</p>
+<h3 id="_12">جستجو</h3>
+<p>از نوار جستجو در بالا برای فیلتر کردن مواد بر اساس نام استفاده کنید. جستجو هم با نام‌های متعارف انگلیسی و هم با نام‌های نمایشی ترجمه شده مطابقت دارد.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>The speed of sound in materials changes with temperature. In automotive NVH testing this matters: an engine bay at 80 °C, a cold-soaked cabin at -10 °C, or an exhaust manifold area at 200 °C all behave differently from room-temperature laboratory conditions.</p>
-<h3 id="setting-the-temperature">Setting the temperature</h3>
-<p>Open Settings (⚙ icon) → Reference temperature. Enter your test environment's temperature in °C (range -40 to +200).</p>
-<p><img alt="Settings panel" src="../screenshots/06-settings.png" /></p>
-<h3 id="what-happens-when-temperature-20-c">What happens when temperature ≠ 20 °C</h3>
+<h2 id="_13">جبران دما</h2>
+<p>سرعت صوت در مواد با دما تغییر می‌کند. در آزمایش NVH خودرو، این مهم است: یک محفظه موتور در 80 °C، یک کابین سرد در -10 °C، یا یک منطقه منیفولد اگزوز در 200 °C همگی متفاوت از شرایط آزمایشگاهی در دمای اتاق رفتار می‌کنند.</p>
+<h3 id="_14">تنظیم دما</h3>
+<p>تنظیمات (نماد ⚙) → دمای مرجع را باز کنید. دمای محیط آزمایش خود را به °C وارد کنید (محدوده -40 تا +200).</p>
+<p><img alt="پنل تنظیمات" src="../screenshots/06-settings.png" /></p>
+<h3 id="20-c">چه اتفاقی می‌افتد وقتی دما ≠ 20 °C</h3>
 <ul>
-<li>Calibration time fields auto-fill with the temperature-adjusted speed</li>
-<li>The Materials picker shows the adjusted speed prominently</li>
-<li>A toast confirms: <em>"Aluminium applied (6,284 m/s @ 60 °C) — N pair(s) updated"</em></li>
-<li>The "Closest material" hint compares against temperature-adjusted speeds</li>
-<li>Saved history entries record the active temperature</li>
-<li>Reports include a footer line: <em>"Reference temperature: 60 °C, compensation applied"</em></li>
+<li>فیلدهای زمان کالیبراسیون به طور خودکار با سرعت تنظیم شده دما پر می‌شوند</li>
+<li>انتخابگر Materials سرعت تنظیم شده را برجسته نشان می‌دهد</li>
+<li>یک toast تأیید می‌کند: <em>"آلومینیوم اعمال شد (6,284 m/s @ 60 °C) — N جفت بروزرسانی شد"</em></li>
+<li>راهنمای "نزدیک‌ترین ماده" با سرعت‌های تنظیم شده دما مقایسه می‌کند</li>
+<li>ورودی‌های تاریخچه ذخیره شده دمای فعال را ثبت می‌کنند</li>
+<li>گزارش‌ها شامل یک خط پاورقی هستند: <em>"دمای مرجع: 60 °C، جبران اعمال شد"</em></li>
 </ul>
-<h3 id="reset-on-app-launch">Reset on app launch</h3>
-<p>The Reference temperature <strong>always resets to 20 °C</strong> when you launch the app. This prevents stale settings from a past measurement session silently affecting today's work. A small italic note in Settings reminds you of this behavior.</p>
-<p>If you want to replay a historical measurement at its original temperature, just tap the entry — the temperature is restored automatically.</p>
-<h3 id="materials-without-compensation">Materials without compensation</h3>
-<p>Most non-metal materials don't have reliable published temperature coefficients. The app shows a <strong>"ref only"</strong> badge for these — their listed speed is used regardless of the temperature setting. If you need accurate measurements at non-room temperatures for these materials, perform an in-situ calibration and save the result as a custom material.</p>
+<h3 id="_15">بازنشانی در راه‌اندازی برنامه</h3>
+<p>دمای مرجع <strong>هر بار که شما برنامه را راه‌اندازی می‌کنید همیشه به 20 °C بازنشانی می‌شود</strong>. این از تأثیر بی‌صدا تنظیمات قدیمی از یک جلسه اندازه‌گیری گذشته بر کار امروزی جلوگیری می‌کند. یک یادداشت ایتالیک کوچک در تنظیمات این رفتار را به شما یادآوری می‌کند.</p>
+<p>اگر می‌خواهید یک اندازه‌گیری تاریخی را در دمای اصلی آن پخش مجدد کنید، فقط ورودی را لمس کنید — دما به طور خودکار بازیابی می‌شود.</p>
+<h3 id="_16">مواد بدون جبران دما</h3>
+<p>اکثر مواد غیرفلزی ضرایب دمای منتشر شده قابل اعتماد ندارند. برنامه برای آنها نشان <strong>"ref only"</strong> را نمایش می‌دهد — سرعت ذکر شده آنها بدون توجه به تنظیم دما استفاده می‌شود. اگر برای این مواد به اندازه‌گیری‌های دقیق در دماهای غیر اتاقی نیاز دارید، یک کالیبراسیون in-situ انجام دهید و نتیجه را به عنوان یک ماده سفارشی ذخیره کنید.</p>
 <hr />
-<h2 id="photo-annotation">Photo annotation</h2>
-<p>After a successful calculation, tap the <strong>📷 Annotate photo</strong> button to overlay sensor and source markers on a photo of your setup.</p>
-<p><img alt="Photo annotation" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flow">Flow</h3>
+<h2 id="_17">حاشیه‌نویسی عکس</h2>
+<p>پس از محاسبه موفق، دکمه <strong>📷 حاشیه‌نویسی عکس</strong> را لمس کنید تا نشانگرهای سنسور و منبع را روی عکسی از تنظیمات خود قرار دهید.</p>
+<p><img alt="حاشیه‌نویسی عکس" src="../screenshots/08-photo-annotation.png" /></p>
+<h3 id="_18">جریان</h3>
 <ol>
-<li>Tap <strong>Annotate photo</strong> — the system camera opens</li>
-<li>Take a photo of your sensor placement</li>
-<li>The app loads the photo into the annotation overlay</li>
-<li>Sensor markers (A, B, C, D, E, F as applicable — up to 6 sensors) and the source marker auto-place based on your calculation</li>
-<li>Drag any marker to fine-tune positioning. As you adjust, the source position recomputes from the corrected sensor positions</li>
-<li>Tap <strong>Save</strong> to keep, or <strong>Retake</strong> to try again</li>
+<li><strong>حاشیه‌نویسی عکس</strong> را لمس کنید — دوربین سیستم باز می‌شود</li>
+<li>عکسی از قرارگیری سنسور خود بگیرید</li>
+<li>برنامه عکس را در لایه حاشیه‌نویسی بارگذاری می‌کند</li>
+<li>نشانگرهای سنسور (A، B، C، D، E، F در صورت لزوم — تا 6 سنسور) و نشانگر منبع به طور خودکار بر اساس محاسبه شما قرار می‌گیرند</li>
+<li>هر نشانگری را برای تنظیم دقیق موقعیت بکشید. همان طور که تنظیم می‌کنید، موقعیت منبع از موقعیت‌های اصلاح شده سنسور دوباره محاسبه می‌شود</li>
+<li><strong>ذخیره</strong> را لمس کنید تا نگه دارید، یا <strong>عکس مجدد</strong> برای امتحان مجدد</li>
 </ol>
-<p>The annotated photo is included automatically in PDF reports.</p>
+<p>عکس حاشیه‌نویسی شده به طور خودکار در گزارش‌های PDF گنجانده می‌شود.</p>
 <hr />
-<h2 id="reports">Reports</h2>
-<p>Tap the <strong>Print result</strong> button on any result screen to generate a formatted report.</p>
-<p><img alt="PDF report" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="report-contents">Report contents</h3>
+<h2 id="_19">گزارش‌ها</h2>
+<p>دکمه <strong>چاپ نتیجه</strong> را در هر صفحه نتیجه‌ای لمس کنید تا یک گزارش قالب‌بندی شده ایجاد کنید.</p>
+<p><img alt="گزارش PDF" src="../screenshots/09-pdf-report.png" /></p>
+<h3 id="_20">محتوای گزارش</h3>
 <ul>
-<li>Header (customizable in Settings → Report header)</li>
-<li>Measurement title and timestamp</li>
-<li>All input values in a clean table</li>
-<li>Calculation result</li>
-<li>Conclusion text</li>
-<li>Visualization (geometry plot)</li>
-<li>Annotated photo (if you took one)</li>
-<li>Temperature footer line (if compensation was active)</li>
-<li>Page number and credit line</li>
+<li>سرصفحه (در تنظیمات → سرصفحه گزارش قابل سفارشی‌سازی)</li>
+<li>عنوان اندازه‌گیری و مهر زمانی</li>
+<li>همه مقادیر ورودی در یک جدول مرتب</li>
+<li>نتیجه محاسبه</li>
+<li>متن نتیجه‌گیری</li>
+<li>تجسم (نمودار هندسه)</li>
+<li>عکس حاشیه‌نویسی شده (اگر یکی گرفته‌اید)</li>
+<li>خط پاورقی دما (اگر جبران فعال بود)</li>
+<li>شماره صفحه و خط اعتبار</li>
 </ul>
-<h3 id="output-format">Output format</h3>
+<h3 id="_21">فرمت خروجی</h3>
 <ul>
-<li><strong>Android</strong>: native PDF generation, save to your phone or share</li>
-<li><strong>iOS</strong>: system print dialog → save as PDF, AirPrint, or share</li>
+<li><strong>Android</strong>: تولید PDF بومی، روی گوشی خود ذخیره کنید یا به اشتراک بگذارید</li>
+<li><strong>iOS</strong>: دیالوگ چاپ سیستم → ذخیره به عنوان PDF، AirPrint، یا اشتراک‌گذاری</li>
 </ul>
-<h3 id="customizing-the-header">Customizing the header</h3>
-<p>Settings → Report header. Enter your company name, lab name, project info, or whatever you want at the top of every report.</p>
+<h3 id="_22">سفارشی‌سازی سرصفحه</h3>
+<p>تنظیمات → سرصفحه گزارش. نام شرکت خود، نام آزمایشگاه، اطلاعات پروژه، یا هر چیزی که می‌خواهید در بالای هر گزارش را وارد کنید.</p>
 <hr />
-<h2 id="backup-and-restore">Backup and restore</h2>
-<p>Save all your custom materials, favorites, settings, and history to a single file. Transfer between devices.</p>
-<h3 id="backup">Backup</h3>
-<p>Settings → <strong>Backup</strong> → tap "Save backup file." The app generates a JSON file and opens your phone's share sheet. Save it to your cloud drive (Google Drive, iCloud, OneDrive), email it to yourself, or transfer it any way you like.</p>
-<h3 id="restore">Restore</h3>
-<p>Settings → <strong>Restore</strong> → pick the backup file from your phone's storage. The app imports custom materials, favorites, history, and settings.</p>
-<p>⚠️ <strong>Restore replaces your current data.</strong> If you have important measurements on the current device, back them up first before restoring from a different backup.</p>
+<h2 id="_23">پشتیبان‌گیری و بازیابی</h2>
+<p>همه مواد سفارشی، موارد دلخواه، تنظیمات و تاریخچه خود را در یک فایل ذخیره کنید. انتقال بین دستگاه‌ها.</p>
+<h3 id="_24">پشتیبان‌گیری</h3>
+<p>تنظیمات → <strong>پشتیبان‌گیری</strong> → "ذخیره فایل پشتیبان" را لمس کنید. برنامه یک فایل JSON تولید می‌کند و برگه اشتراک‌گذاری گوشی شما را باز می‌کند. آن را در درایو ابری خود (Google Drive، iCloud، OneDrive) ذخیره کنید، به خودتان ایمیل کنید، یا به هر شکلی که می‌خواهید انتقال دهید.</p>
+<h3 id="_25">بازیابی</h3>
+<p>تنظیمات → <strong>بازیابی</strong> → فایل پشتیبان را از حافظه گوشی انتخاب کنید. برنامه مواد سفارشی، موارد دلخواه، تاریخچه و تنظیمات را وارد می‌کند.</p>
+<p>⚠️ <strong>بازیابی داده‌های فعلی شما را جایگزین می‌کند.</strong> اگر اندازه‌گیری‌های مهمی روی دستگاه فعلی دارید، ابتدا از آنها پشتیبان تهیه کنید قبل از بازیابی از یک پشتیبان متفاوت.</p>
 <hr />
-<h2 id="settings">Settings</h2>
-<p>Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a tab.</p>
-<p><img alt="Settings" src="../screenshots/06-settings.png" /></p>
+<h2 id="_26">تنظیمات</h2>
+<p>از طریق نماد چرخ‌دنده ⚙ در گوشه بالا سمت راست دسترسی پیدا کنید. تنظیمات یک مودال است، نه یک برگه.</p>
+<p><img alt="تنظیمات" src="../screenshots/06-settings.png" /></p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>What it controls</th>
+<th>تنظیم</th>
+<th>چه چیزی را کنترل می‌کند</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Upgrade to Pro</strong></td>
-<td>Buy or learn about Pro features ($19.99)</td>
+<td><strong>ارتقا به Pro</strong></td>
+<td>خرید یا اطلاعات بیشتر در مورد ویژگی‌های Pro ($19.99)</td>
 </tr>
 <tr>
-<td><strong>Language</strong></td>
-<td>App display language (30 supported)</td>
+<td><strong>زبان</strong></td>
+<td>زبان نمایش برنامه (30 پشتیبانی می‌شود)</td>
 </tr>
 <tr>
-<td><strong>Theme</strong></td>
-<td>Light, Dark, or Auto (follow system)</td>
+<td><strong>تم</strong></td>
+<td>روشن، تاریک، یا خودکار (پیروی از سیستم)</td>
 </tr>
 <tr>
-<td><strong>Distance unit</strong></td>
-<td>cm or inches</td>
+<td><strong>واحد فاصله</strong></td>
+<td>سانتی‌متر یا اینچ</td>
 </tr>
 <tr>
-<td><strong>Reference temperature</strong></td>
-<td>Active temperature for compensation, -40 to +200 °C</td>
+<td><strong>دمای مرجع</strong></td>
+<td>دمای فعال برای جبران، -40 تا +200 °C</td>
 </tr>
 <tr>
-<td><strong>Report header</strong></td>
-<td>Custom text at the top of generated reports</td>
+<td><strong>سرصفحه گزارش</strong></td>
+<td>متن سفارشی در بالای گزارش‌های تولید شده</td>
 </tr>
 <tr>
-<td><strong>Backup</strong></td>
-<td>Export all data to a file</td>
+<td><strong>پشتیبان‌گیری</strong></td>
+<td>صادر کردن همه داده‌ها به یک فایل</td>
 </tr>
 <tr>
-<td><strong>Restore</strong></td>
-<td>Import data from a backup file</td>
+<td><strong>بازیابی</strong></td>
+<td>وارد کردن داده‌ها از یک فایل پشتیبان</td>
 </tr>
 <tr>
-<td><strong>Restore purchase</strong></td>
-<td>Re-acquire Pro on a new device</td>
+<td><strong>بازیابی خرید</strong></td>
+<td>بازخرید Pro در یک دستگاه جدید</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="pro-features">Pro features</h2>
-<p>NVH Source Locator uses a <strong>feature-locked freemium model</strong>:</p>
+<h2 id="pro_1">ویژگی‌های Pro</h2>
+<p>NVH Source Locator از یک <strong>مدل freemium قفل شده بر اساس ویژگی</strong> استفاده می‌کند:</p>
 <ul>
-<li><strong>Free</strong>: 2-Sensor tab is fully functional with no limits</li>
-<li><strong>Pro</strong>: All other tabs have specific input fields locked. The paywall appears when a free user taps a locked field</li>
+<li><strong>رایگان</strong>: برگه 2-Sensor بدون محدودیت کاملاً کاربردی است</li>
+<li><strong>Pro</strong>: همه برگه‌های دیگر فیلدهای ورودی خاصی دارند که قفل شده‌اند. paywall ظاهر می‌شود وقتی یک کاربر رایگان یک فیلد قفل شده را لمس می‌کند</li>
 </ul>
-<h3 id="whats-locked">What's locked</h3>
-<p>Pro-required fields are scattered across:
-- 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
-- 3D and 3D+ modes
-- Backup and Restore
-- PDF reports
-- Custom materials
-- Photo annotation</p>
-<p>A free user can OPEN any tab and SEE the interface. They just can't enter values into the Pro-locked input fields.</p>
-<p><img alt="Pro-locked field" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="the-paywall">The paywall</h3>
-<p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
-<p>When a free user taps a locked field, the paywall slides in showing:
-- App icon with PRO badge
-- Feature list
-- Unlock button with price ($19.99 default; may vary by region)
-- Promo code redemption (Android only — iOS uses Apple's separate Offer Code flow)
-- Optional promo link to community channels</p>
-<h3 id="purchasing-pro">Purchasing Pro</h3>
-<p>Tap any locked field, or tap <strong>Upgrade to Pro</strong> in Settings. Uses your platform's official payment system (Google Play on Android, Apple App Store on iOS).</p>
-<h3 id="restoring-pro-on-a-new-device">Restoring Pro on a new device</h3>
-<p>If you purchased on one device and want Pro on another (same account):</p>
+<h3 id="_27">چه چیزی قفل شده است</h3>
+<p>فیلدهای مورد نیاز Pro در سراسر پراکنده هستند:
+- 3-Sensor، 3-Sen+، 4-Sensor، 4-Sen+
+- حالت‌های 3D و 3D+
+- پشتیبان‌گیری و بازیابی
+- گزارش‌های PDF
+- مواد سفارشی
+- حاشیه‌نویسی عکس</p>
+<p>یک کاربر رایگان می‌تواند هر برگه‌ای را باز کند و رابط را ببیند. آنها فقط نمی‌توانند مقادیر را در فیلدهای ورودی قفل شده Pro وارد کنند.</p>
+<p><img alt="فیلد قفل شده Pro" src="../screenshots/11-pro-locked-field.png" /></p>
+<h3 id="paywall">paywall</h3>
+<p><img alt="paywall" src="../screenshots/07-paywall.png" /></p>
+<p>وقتی یک کاربر رایگان یک فیلد قفل شده را لمس می‌کند، paywall می‌لغزد و نشان می‌دهد:
+- نماد برنامه با نشان PRO
+- لیست ویژگی‌ها
+- دکمه باز کردن قفل با قیمت ($19.99 پیش‌فرض؛ ممکن است بر اساس منطقه متفاوت باشد)
+- بازخرید کد تبلیغاتی (فقط Android — iOS از جریان جداگانه Apple Offer Code استفاده می‌کند)
+- لینک تبلیغاتی اختیاری به کانال‌های جامعه</p>
+<h3 id="pro_2">خرید Pro</h3>
+<p>هر فیلد قفل شده را لمس کنید، یا <strong>ارتقا به Pro</strong> را در تنظیمات لمس کنید. از سیستم پرداخت رسمی پلتفرم شما استفاده می‌کند (Google Play در Android، Apple App Store در iOS).</p>
+<h3 id="pro_3">بازیابی Pro در دستگاه جدید</h3>
+<p>اگر در یک دستگاه خریداری کرده‌اید و Pro را در دیگری می‌خواهید (همان حساب):</p>
 <ol>
-<li>Sign into the <strong>same</strong> Google account (Android) or Apple ID (iOS) you used to buy</li>
-<li>Open NVH Source Locator on the new device</li>
-<li>Go to Settings → <strong>Restore purchase</strong></li>
-<li>The app verifies with the platform's purchase records and unlocks Pro</li>
+<li>به <strong>همان</strong> حساب Google (Android) یا Apple ID (iOS) که برای خرید استفاده کرده‌اید وارد شوید</li>
+<li>NVH Source Locator را در دستگاه جدید باز کنید</li>
+<li>به تنظیمات → <strong>بازیابی خرید</strong> بروید</li>
+<li>برنامه با سوابق خرید پلتفرم تأیید می‌کند و Pro را باز می‌کند</li>
 </ol>
-<h3 id="auto-restore-on-launch">Auto-restore on launch</h3>
-<p>If you redeem a promo code in the Google Play Store or App Store while NVH Source Locator is running in the background, returning to the app automatically detects the new purchase and unlocks Pro — no manual Restore needed.</p>
-<h3 id="promo-code-redemption">Promo code redemption</h3>
-<p><strong>Android</strong>: a "Have a Google Play promo code?" button in the paywall opens the Google Play redemption flow with your code pre-filled.</p>
-<p><strong>iOS</strong>: App Store policy 3.1.1 requires redemption through Apple's official "Redeem code" flow. The Google Play button is hidden on iOS. Look for "Redeem App Store code" in Settings instead.</p>
+<h3 id="_28">بازیابی خودکار در راه‌اندازی</h3>
+<p>اگر یک کد تبلیغاتی را در Google Play Store یا App Store بازخرید کنید در حالی که NVH Source Locator در پس‌زمینه در حال اجرا است، بازگشت به برنامه به طور خودکار خرید جدید را تشخیص می‌دهد و Pro را باز می‌کند — نیازی به بازیابی دستی نیست.</p>
+<h3 id="_29">بازخرید کد تبلیغاتی</h3>
+<p><strong>Android</strong>: یک دکمه "آیا کد تبلیغاتی Google Play دارید؟" در paywall، جریان بازخرید Google Play را با کد شما از قبل پر شده باز می‌کند.</p>
+<p><strong>iOS</strong>: سیاست App Store 3.1.1 نیاز به بازخرید از طریق جریان رسمی "بازخرید کد" Apple دارد. دکمه Google Play در iOS پنهان است. در عوض به دنبال "بازخرید کد App Store" در تنظیمات باشید.</p>
 <hr />
-<h2 id="help-tab-and-tutorials">Help tab and tutorials</h2>
-<p>The <strong>Help</strong> tab includes in-app tutorials, best-practice guides, and reference information.</p>
-<p><img alt="Help tab" src="../screenshots/10-help-tab.png" /></p>
-<p>Topics covered:
-- What equipment you need
-- How to place sensors for best accuracy
-- Calibration tips
-- Common measurement scenarios
-- Tips for triangulation and 3D placements
-- Cable routing and signal quality</p>
+<h2 id="help">برگه Help و آموزش‌ها</h2>
+<p>برگه <strong>Help</strong> شامل آموزش‌های درون‌برنامه، راهنماهای بهترین شیوه‌ها و اطلاعات مرجع است.</p>
+<p><img alt="برگه Help" src="../screenshots/10-help-tab.png" /></p>
+<p>موضوعات پوشش داده شده:
+- چه تجهیزاتی نیاز دارید
+- نحوه قرارگیری سنسورها برای بهترین دقت
+- نکات کالیبراسیون
+- سناریوهای متداول اندازه‌گیری
+- نکاتی برای مثلث‌بندی و قرارگیری 3D
+- مسیریابی کابل و کیفیت سیگنال</p>
 <hr />
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="calculation-result-is-wrong-or-makes-no-sense">Calculation result is wrong or makes no sense</h3>
+<h2 id="_30">عیب‌یابی</h2>
+<h3 id="_31">نتیجه محاسبه اشتباه است یا منطقی نیست</h3>
 <ol>
-<li>Check your calibration. Auto-filled <code>tCal</code> assumes published material speed — real-world materials vary. The most accurate calibration is in-situ: tap a known location and let the app derive the actual speed.</li>
-<li>Check the <strong>First sensor</strong> setting — which sensor heard the event first matters for the math.</li>
-<li>Verify your distance measurements. Errors of a few mm propagate.</li>
+<li>کالیبراسیون خود را بررسی کنید. <code>tCal</code> که به طور خودکار پر شده، سرعت ماده منتشر شده را فرض می‌کند — مواد واقعی متفاوت هستند. دقیق‌ترین کالیبراسیون in-situ است: یک مکان شناخته شده را لمس کنید و اجازه دهید برنامه سرعت واقعی را استخراج کند.</li>
+<li>تنظیم <strong>سنسور اول</strong> را بررسی کنید — اینکه کدام سنسور رویداد را اول شنید برای ریاضیات مهم است.</li>
+<li>اندازه‌گیری‌های فاصله خود را تأیید کنید. خطاهای چند میلی‌متری منتشر می‌شوند.</li>
 </ol>
-<h3 id="toast-says-result-outside-range">Toast says "Result outside range"</h3>
-<p>The math says the source is not between your sensors. Possible causes:
-- The source actually is outside the sensor line/plane
-- One of your inputs is wrong
-- The calibration speed is too far off from reality</p>
-<h3 id="calc-speed-hint-shows-a-warning-color">Calc-speed hint shows a warning color</h3>
-<p>The implied speed of sound from your inputs is far from any common material (less than 50 m/s or more than 20,000 m/s). Check your inputs — likely a typo in tCal or distance.</p>
-<h3 id="material-picker-shows-different-speeds-than-expected">Material picker shows different speeds than expected</h3>
-<p>Check the Reference temperature in Settings. If non-20 °C, displayed speeds reflect temperature compensation. The app shows "ref X @ 20°C" underneath compensated speeds so you can verify.</p>
-<h3 id="history-entry-replays-with-different-result">History entry replays with different result</h3>
-<p>Old history entries created before app version 1.75 might not have stored the temperature. If you took the measurement at a non-20 °C temperature, replay will use the current setting. Manually set the temperature in Settings before replaying, OR re-measure.</p>
-<h3 id="photo-annotation-markers-not-where-i-expect">Photo annotation markers not where I expect</h3>
-<p>Markers auto-place based on input geometry. Drag them to adjust. Adjusting markers updates the source position in the photo overlay — but does NOT change the underlying calculation result.</p>
-<h3 id="backuprestore-fails">Backup/Restore fails</h3>
-<p>Make sure you're using a backup file generated by the same or newer version of the app. Older backup files might lack current data fields.</p>
-<h3 id="restore-purchase-says-no-purchase-found">Restore Purchase says "no purchase found"</h3>
+<h3 id="toast">toast می‌گوید "نتیجه خارج از محدوده"</h3>
+<p>ریاضیات می‌گوید منبع بین سنسورهای شما نیست. دلایل احتمالی:
+- منبع در واقع خارج از خط/صفحه سنسور است
+- یکی از ورودی‌های شما اشتباه است
+- سرعت کالیبراسیون خیلی دور از واقعیت است</p>
+<h3 id="_32">راهنمای سرعت محاسبه یک رنگ هشدار نشان می‌دهد</h3>
+<p>سرعت صوت ضمنی از ورودی‌های شما از هر ماده رایجی دور است (کمتر از 50 m/s یا بیشتر از 20,000 m/s). ورودی‌های خود را بررسی کنید — احتمالاً یک اشتباه تایپی در tCal یا فاصله.</p>
+<h3 id="materials_1">انتخابگر Materials سرعت‌های متفاوت از انتظار را نشان می‌دهد</h3>
+<p>دمای مرجع را در تنظیمات بررسی کنید. اگر 20 °C نباشد، سرعت‌های نمایش داده شده جبران دما را منعکس می‌کنند. برنامه "ref X @ 20°C" را زیر سرعت‌های جبران شده نشان می‌دهد تا بتوانید تأیید کنید.</p>
+<h3 id="_33">ورودی تاریخچه با نتیجه متفاوت پخش می‌شود</h3>
+<p>ورودی‌های تاریخچه قدیمی که قبل از نسخه برنامه 1.75 ایجاد شده‌اند، ممکن است دما را ذخیره نکرده باشند. اگر اندازه‌گیری را در دمای غیر 20 °C گرفته‌اید، پخش از تنظیم فعلی استفاده می‌کند. دما را به صورت دستی در تنظیمات قبل از پخش تنظیم کنید، یا دوباره اندازه‌گیری کنید.</p>
+<h3 id="_34">نشانگرهای حاشیه‌نویسی عکس آنجا که انتظار دارم نیستند</h3>
+<p>نشانگرها به طور خودکار بر اساس هندسه ورودی قرار می‌گیرند. آنها را برای تنظیم بکشید. تنظیم نشانگرها موقعیت منبع را در روکش عکس به‌روز می‌کند — اما نتیجه محاسبه زیربنایی را تغییر نمی‌دهد.</p>
+<h3 id="_35">پشتیبان‌گیری/بازیابی شکست می‌خورد</h3>
+<p>مطمئن شوید که از یک فایل پشتیبان تولید شده توسط همان یا نسخه جدیدتر برنامه استفاده می‌کنید. فایل‌های پشتیبان قدیمی‌تر ممکن است فیلدهای داده فعلی را نداشته باشند.</p>
+<h3 id="_36">بازیابی خرید می‌گوید "خریدی یافت نشد"</h3>
 <ol>
-<li>Verify you're signed into the same store account that you used to purchase</li>
-<li>Verify the purchase wasn't refunded or expired</li>
-<li>Try uninstalling and reinstalling the app (purchase is tied to your store account, not the app installation)</li>
-<li>Contact support@evdiag.net if it persists</li>
+<li>تأیید کنید که در همان حساب فروشگاهی که برای خرید استفاده کرده‌اید وارد شده‌اید</li>
+<li>تأیید کنید که خرید بازپرداخت نشده یا منقضی نشده است</li>
+<li>سعی کنید برنامه را حذف و دوباره نصب کنید (خرید به حساب فروشگاه شما متصل است، نه نصب برنامه)</li>
+<li>اگر ادامه دارد، با support@evdiag.net تماس بگیرید</li>
 </ol>
-<h3 id="numeric-input-snaps-to-0-unexpectedly">Numeric input snaps to 0 unexpectedly</h3>
-<p>By design: when you blur a numeric field (tap elsewhere), if it's empty, negative, or contains non-numeric text, it snaps to 0. Prevents silently broken calculations from accidentally cleared inputs. The temperature input is exempt (it clamps to -40/+200 instead).</p>
-<h3 id="need-more-help">Need more help</h3>
-<p>Contact <code>support@evdiag.net</code> with:
-- Your device model and OS version
-- The app version (Settings → bottom of page)
-- Description of what you tried
-- Screenshots if possible</p>
+<h3 id="0">ورودی عددی به طور غیرمنتظره به 0 می‌رود</h3>
+<p>به طور طراحی شده: وقتی شما فوکوس را از یک فیلد عددی برمی‌دارید (جای دیگری را لمس می‌کنید)، اگر خالی، منفی، یا حاوی متن غیرعددی باشد، به 0 می‌رود. از محاسبات بی‌صدا خراب از ورودی‌های پاک شده تصادفی جلوگیری می‌کند. ورودی دما مستثنی است (در عوض به -40/+200 محدود می‌شود).</p>
+<h3 id="_37">به کمک بیشتری نیاز دارم</h3>
+<p>با <code>support@evdiag.net</code> تماس بگیرید با:
+- مدل دستگاه و نسخه OS شما
+- نسخه برنامه (تنظیمات → پایین صفحه)
+- شرح کاری که سعی کردید
+- تصاویر صفحه در صورت امکان</p>
 <hr />
-<p><em>NVH Source Locator is developed by EVDiag. Visit https://evdiag.net for updates and resources.</em></p>
+<p><em>NVH Source Locator توسط EVDiag توسعه یافته است. برای به‌روزرسانی‌ها و منابع از https://evdiag.net بازدید کنید.</em></p>
 
   <div class="docs-footer">
     <p>

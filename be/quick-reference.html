@@ -57,125 +57,125 @@
     Documentation translated for your convenience — for the most precise technical terminology, the English original is authoritative.
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — Кароткі даведнік</h1>
+<p>Аднастаронкавае напамінанне. Поўныя падрабязнасці — у <code>user-guide.md</code>.</p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">Асноўны працэс (2-Sensor, бясплатна)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>Выберыце матэрыял</strong> — укладка Materials → націсніце ваш матэрыял</li>
+<li><strong>Увядзіце каліброўку</strong> на ўкладцы 2-Sensor:</li>
+<li>Адлегласць паміж датчыкамі (<code>d</code>)</li>
+<li>Затрымка часу каліброўкі (<code>tCal</code>) — аўтапапаўняецца з матэрыялу</li>
+<li><strong>Увядзіце падзею</strong> — <code>tEvent</code> і Першы датчык (A або B)</li>
+<li><strong>Прачытайце вынік</strong> — адлегласць ад датчыка A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="Укладка 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">Усе ўкладкі</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>Укладка</th>
+<th>Вынік</th>
+<th>Поля Pro?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>Адлегласць уздоўж лініі</td>
+<td>Не (цалкам бясплатна)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X, Y на паверхні</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X, Y з LSQ па 3 парах</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X, Y з дзвюх пар (A–B + C–D)</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X, Y з 4 датчыкаў, любая пазіцыя</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z з 4 датчыкаў</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z да 6 датчыкаў</td>
+<td>Так</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>Выбар хуткасці гуку</td>
+<td>Не</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>Навучальныя матэрыялы</td>
+<td>Не</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>Налады — гэта значок ⚙ (правы верхні кут), а не ўкладка.</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">Тэмпературная кампенсацыя</h2>
+<p>Налады → Эталонная тэмпература, дыяпазон <strong>-40 да +200 °C</strong>.</p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>14 металаў</strong> маюць убудаваную кампенсацыю (алюміній, сталі, медзь, латунь, бронза, тытан, магній, свінец, цынк, нікель, вальфрам, жалеза, чыгун)</li>
+<li>Матэрыялы без кампенсацыі паказваюць <strong>"ref only"</strong></li>
+<li><strong>Скідае на 20 °C пры кожным запуску праграмы</strong> (бяспечны стандарт)</li>
+<li>Прайграванне запісу гісторыі аднаўляе яго першапачатковую тэмпературу</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">Спалучэнні</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>Націсніце на матэрыял</strong> → аўтаматычна запаўняе ўсе палі <code>tCal</code> на ўсіх укладках</li>
+<li><strong>Утрымлівайце +/-</strong> на лікавых палях → хуткае павелічэнне</li>
+<li><strong>Перацягвайце гарызантальна</strong> на лікавым полі → змяненне значэння</li>
+<li><strong>Пустое/адмоўнае/смецце</strong> → пераходзіць у 0 пры страце фокусу (тэмпература абмежавана -40/200)</li>
+<li><strong>Адзначце матэрыял зорачкай</strong> → перамяшчае ў верх спісу</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">Мадэль Pro</h2>
+<p><strong>Freemium з блакіроўкай функцый</strong> ($19.99):
+- Бясплатна: укладка 2-Sensor цалкам функцыянальная, без абмежаванняў
+- Pro: іншыя ўкладкі даступныя, але маюць <strong>палі з залатым замком</strong>, якія паказваюць paywall пры націсканні</p>
+<p>Pro адкрывае: 3-Sensor да 3D+, карыстальніцкія матэрыялы, рэзервовае капіраванне/аднаўленне, PDF справаздачы, анатацыю фота.</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">Справаздачы і рэзервовае капіраванне</h2>
+<p>Кнопка <strong>Друкаваць вынік</strong> на любым экране выніку → PDF з загалоўкам, уваходамі, вынікам, візуалізацыяй, фота (калі зроблена) і ніжнім калонтытулам тэмпературы (калі кампенсацыя актыўная).</p>
+<p>Наладзьце загаловак у Налады → Загаловак справаздачы.</p>
+<p><strong>Рэзервовае капіраванне</strong>: Налады → Рэзервовае капіраванне → падзяліцеся ў воблаку/email.<br />
+<strong>Аднаўленне</strong>: Налады → Аднаўленне → выберыце файл рэзервовай копіі.</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">Аднаўленне Pro на новай прыладзе</h2>
+<p>Той жа ўліковы запіс Google (Android) або Apple ID (iOS), з якім вы куплялі → Налады → <strong>Аднавіць пакупку</strong> → разблакуе на працягу некалькіх секунд.</p>
+<p>Аўтаматычнае аднаўленне адбываецца ціха пры вяртанні ў праграму пасля выкарыстання прома-кода звонку.</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">Хуткае выпраўленне непаладак</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>Вынік па-за дыяпазонам?</strong> Праверце знак <code>tEvent</code> / Першы датчык / адлегласць паміж датчыкамі</li>
+<li><strong>Найбліжэйшы матэрыял няправільны?</strong> Эталонная тэмпература, верагодна, выпадкова ўстаноўлена — праверце Налады</li>
+<li><strong>Аднавіць пакупку не атрымоўваецца?</strong> Праверце той жа ўліковы запіс магазіна; пераўсталюйце калі захоўваецца</li>
+<li><strong>Поле перайшло ў 0?</strong> Пустыя/адмоўныя ўводы аўта-пераходзяць пры страце фокусу — увядзіце значэнне зноў</li>
+<li><strong>Кнопкі крокаў зніклі?</strong> Яны з'яўляюцца побач з палямі з <code>data-step</code> — перазапусціце праграму, калі іх няма</li>
+<li><strong>Папярэджанне аб састарэлай тэмпературы?</strong> Скідае да 20 пры кожным запуску — устанавіце зноў для гэтай сесіі</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>Звяртайцеся <code>support@evdiag.net</code> — пакажыце мадэль прылады, версію праграмы (Налады → нізе) і апісанне таго, што вы спрабавалі.</p>
 
   <div class="docs-footer">
     <p>

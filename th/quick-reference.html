@@ -57,125 +57,125 @@
     เอกสารแปลเพื่อความสะดวกของคุณ — สำหรับคำศัพท์ทางเทคนิคที่แม่นยำที่สุด ฉบับภาษาอังกฤษต้นฉบับเป็นเอกสารที่มีอำนาจ
   </div>
 
-  <h1 id="nvh-source-locator-quick-reference">NVH Source Locator — Quick Reference</h1>
-<p>A one-page refresher. For full details, see <code>user-guide.md</code>.</p>
+  <h1 id="nvh-source-locator">NVH Source Locator — คู่มืออ้างอิงด่วน</h1>
+<p>สรุปหนึ่งหน้า สำหรับรายละเอียดทั้งหมด ดู <code>user-guide.md</code></p>
 <hr />
-<h2 id="core-flow-2-sensor-free">Core flow (2-Sensor, free)</h2>
+<h2 id="2-sensor">ขั้นตอนหลัก (2-Sensor, ฟรี)</h2>
 <ol>
-<li><strong>Pick a material</strong> — Materials tab → tap your material</li>
-<li><strong>Enter calibration</strong> on the 2-Sensor tab:</li>
-<li>Sensor spacing (<code>d</code>)</li>
-<li>Calibration time delay (<code>tCal</code>) — auto-filled from material</li>
-<li><strong>Enter event</strong> — <code>tEvent</code> and First sensor (A or B)</li>
-<li><strong>Read result</strong> — distance from sensor A</li>
+<li><strong>เลือกวัสดุ</strong> — แท็บ Materials → แตะวัสดุของคุณ</li>
+<li><strong>ป้อนการสอบเทียบ</strong> ในแท็บ 2-Sensor:</li>
+<li>ระยะห่างระหว่างเซ็นเซอร์ (<code>d</code>)</li>
+<li>การหน่วงเวลาสอบเทียบ (<code>tCal</code>) — กรอกอัตโนมัติจากวัสดุ</li>
+<li><strong>ป้อนเหตุการณ์</strong> — <code>tEvent</code> และเซ็นเซอร์แรก (A หรือ B)</li>
+<li><strong>อ่านผลลัพธ์</strong> — ระยะห่างจากเซ็นเซอร์ A</li>
 </ol>
-<p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
+<p><img alt="แท็บ 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="all-tabs">All tabs</h2>
+<h2 id="_1">แท็บทั้งหมด</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Output</th>
-<th>Pro fields?</th>
+<th>แท็บ</th>
+<th>ผลลัพธ์</th>
+<th>ฟิลด์ Pro?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2-Sensor</td>
-<td>Distance along line</td>
-<td>No (fully free)</td>
+<td>ระยะทางตามเส้น</td>
+<td>ไม่ (ฟรีทั้งหมด)</td>
 </tr>
 <tr>
 <td>3-Sensor</td>
-<td>X, Y on a surface</td>
-<td>Yes</td>
+<td>X, Y บนพื้นผิว</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>3-Sen+</td>
-<td>X, Y with LSQ over 3 pairs</td>
-<td>Yes</td>
+<td>X, Y พร้อม LSQ จาก 3 คู่</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>4-Sensor</td>
-<td>X, Y from two pairs (A–B + C–D)</td>
-<td>Yes</td>
+<td>X, Y จากสองคู่ (A–B + C–D)</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>4-Sen+</td>
-<td>X, Y from 4 sensors, any position</td>
-<td>Yes</td>
+<td>X, Y จาก 4 เซ็นเซอร์ ตำแหน่งใดก็ได้</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>3D</td>
-<td>X, Y, Z from 4 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z จาก 4 เซ็นเซอร์</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>3D+</td>
-<td>X, Y, Z from up to 6 sensors</td>
-<td>Yes</td>
+<td>X, Y, Z จากสูงสุด 6 เซ็นเซอร์</td>
+<td>ใช่</td>
 </tr>
 <tr>
 <td>Materials</td>
-<td>Speed-of-sound picker</td>
-<td>No</td>
+<td>ตัวเลือกความเร็วเสียง</td>
+<td>ไม่</td>
 </tr>
 <tr>
 <td>Help</td>
-<td>Tutorials</td>
-<td>No</td>
+<td>บทช่วยสอน</td>
+<td>ไม่</td>
 </tr>
 </tbody>
 </table>
-<p>Settings is the ⚙ icon (top-right), not a tab.</p>
+<p>การตั้งค่าอยู่ใต้ไอคอน ⚙ (ขวาบน) ไม่ใช่แท็บ</p>
 <hr />
-<h2 id="temperature-compensation">Temperature compensation</h2>
-<p>Settings → Reference temperature, range <strong>-40 to +200 °C</strong>.</p>
+<h2 id="_2">การชดเชยอุณหภูมิ</h2>
+<p>การตั้งค่า → อุณหภูมิอ้างอิง ช่วง <strong>-40 ถึง +200 °C</strong></p>
 <ul>
-<li><strong>14 metals</strong> have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)</li>
-<li>Materials without compensation show <strong>"ref only"</strong></li>
-<li><strong>Resets to 20 °C on every app launch</strong> (default-safe-start)</li>
-<li>Replaying a history entry restores its original temperature</li>
+<li><strong>โลหะ 14 ชนิด</strong> มีการชดเชยในตัว (อะลูมิเนียม, เหล็ก, ทองแดง, ทองเหลือง, บรอนซ์, ไทเทเนียม, แมกนีเซียม, ตะกั่ว, สังกะสี, นิกเกิล, ทังสเตน, เหล็ก, เหล็กหล่อ)</li>
+<li>วัสดุที่ไม่มีการชดเชยจะแสดง <strong>"ref only"</strong></li>
+<li><strong>รีเซ็ตเป็น 20 °C ทุกครั้งที่เปิดแอป</strong> (เริ่มต้นที่ปลอดภัยตามค่าเริ่มต้น)</li>
+<li>การเล่นรายการประวัติจะคืนค่าอุณหภูมิเดิม</li>
 </ul>
 <hr />
-<h2 id="shortcuts">Shortcuts</h2>
+<h2 id="_3">ทางลัด</h2>
 <ul>
-<li><strong>Tap a material</strong> → auto-fills all <code>tCal</code> fields across all tabs</li>
-<li><strong>Hold +/-</strong> on number fields → fast increment</li>
-<li><strong>Drag horizontally</strong> on a number field → scrub values</li>
-<li><strong>Empty/negative/garbage input</strong> → snaps to 0 on blur (temp input clamps to -40/200)</li>
-<li><strong>Star a material</strong> → moves to top of picker</li>
+<li><strong>แตะวัสดุ</strong> → กรอกฟิลด์ <code>tCal</code> ทั้งหมดในทุกแท็บโดยอัตโนมัติ</li>
+<li><strong>กด +/- ค้างไว้</strong> บนฟิลด์ตัวเลข → การเพิ่มที่รวดเร็ว</li>
+<li><strong>ลากในแนวนอน</strong> บนฟิลด์ตัวเลข → ปรับค่า</li>
+<li><strong>อินพุตว่าง/ติดลบ/ไม่ถูกต้อง</strong> → กลับเป็น 0 เมื่อสูญเสียโฟกัส (ฟิลด์อุณหภูมิจำกัดที่ -40/200)</li>
+<li><strong>ทำเครื่องหมายดาวบนวัสดุ</strong> → ย้ายไปด้านบนของตัวเลือก</li>
 </ul>
 <hr />
-<h2 id="pro-model">Pro model</h2>
-<p><strong>Feature-locked freemium</strong> ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have <strong>gold-padlock fields</strong> that show paywall on tap</p>
-<p>Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.</p>
+<h2 id="pro">โมเดล Pro</h2>
+<p><strong>Freemium แบบล็อกฟีเจอร์</strong> ($19.99):
+- ฟรี: แท็บ 2-Sensor ทำงานเต็มรูปแบบ ไม่มีข้อจำกัด
+- Pro: แท็บอื่นๆ เข้าถึงได้แต่มี <strong>ฟิลด์ที่ล็อกด้วยกุญแจสีทอง</strong> ซึ่งจะแสดง paywall เมื่อแตะ</p>
+<p>Pro ปลดล็อก: ตั้งแต่ 3-Sensor ถึง 3D+, วัสดุที่กำหนดเอง, สำรองข้อมูล/กู้คืน, รายงาน PDF, การใส่คำอธิบายภาพ</p>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <hr />
-<h2 id="reports-backup">Reports &amp; Backup</h2>
-<p><strong>Print result</strong> button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).</p>
-<p>Customize header in Settings → Report header.</p>
-<p><strong>Backup</strong>: Settings → Backup → share to cloud/email.<br />
-<strong>Restore</strong>: Settings → Restore → pick backup file.</p>
+<h2 id="_4">รายงานและสำรองข้อมูล</h2>
+<p>ปุ่ม <strong>พิมพ์ผลลัพธ์</strong> บนหน้าจอผลลัพธ์ใดๆ → PDF พร้อมส่วนหัว ข้อมูลที่ป้อน ผลลัพธ์ การแสดงภาพ รูปภาพ (หากถ่าย) และส่วนท้ายอุณหภูมิ (เมื่อการชดเชยทำงานอยู่)</p>
+<p>ปรับแต่งส่วนหัวใน การตั้งค่า → ส่วนหัวรายงาน</p>
+<p><strong>สำรองข้อมูล</strong>: การตั้งค่า → สำรองข้อมูล → แชร์ไปยังคลาวด์/อีเมล<br />
+<strong>กู้คืน</strong>: การตั้งค่า → กู้คืน → เลือกไฟล์สำรองข้อมูล</p>
 <hr />
-<h2 id="restore-pro-on-a-new-device">Restore Pro on a new device</h2>
-<p>Same Google account (Android) or Apple ID (iOS) you bought with → Settings → <strong>Restore purchase</strong> → unlocks within seconds.</p>
-<p>Auto-restore happens silently when you return to the app after redeeming a promo code externally.</p>
+<h2 id="pro_1">กู้คืน Pro บนอุปกรณ์ใหม่</h2>
+<p>บัญชี Google (Android) หรือ Apple ID (iOS) เดียวกับที่คุณซื้อ → การตั้งค่า → <strong>กู้คืนการซื้อ</strong> → ปลดล็อกในไม่กี่วินาที</p>
+<p>การกู้คืนอัตโนมัติจะเกิดขึ้นเงียบๆ เมื่อคุณกลับไปที่แอปหลังจากแลกรหัสโปรโมชั่นภายนอก</p>
 <hr />
-<h2 id="quick-troubleshooting">Quick troubleshooting</h2>
+<h2 id="_5">การแก้ไขปัญหาด่วน</h2>
 <ul>
-<li><strong>Result outside range?</strong> Check <code>tEvent</code> sign / First sensor / sensor spacing</li>
-<li><strong>Closest material wrong?</strong> Reference temperature probably accidentally set — check Settings</li>
-<li><strong>Restore purchase fails?</strong> Verify same store account; reinstall if it persists</li>
-<li><strong>Field snapped to 0?</strong> Empty/negative inputs auto-snap on blur — re-enter the value</li>
-<li><strong>Stepper buttons gone?</strong> They appear next to fields with <code>data-step</code> — restart app if missing</li>
-<li><strong>Stale temperature warning?</strong> It resets to 20 every launch — set again for this session</li>
+<li><strong>ผลลัพธ์อยู่นอกช่วง?</strong> ตรวจสอบเครื่องหมาย <code>tEvent</code> / เซ็นเซอร์แรก / ระยะห่างระหว่างเซ็นเซอร์</li>
+<li><strong>วัสดุที่ใกล้ที่สุดผิด?</strong> อาจตั้งค่าอุณหภูมิอ้างอิงโดยไม่ตั้งใจ — ตรวจสอบการตั้งค่า</li>
+<li><strong>การกู้คืนการซื้อล้มเหลว?</strong> ตรวจสอบบัญชีร้านค้าเดียวกัน; ติดตั้งใหม่หากยังคงมีปัญหา</li>
+<li><strong>ฟิลด์ถูกตั้งเป็น 0?</strong> อินพุตว่าง/ติดลบจะถูกตั้งโดยอัตโนมัติเมื่อสูญเสียโฟกัส — ป้อนค่าใหม่</li>
+<li><strong>ปุ่มสเต็ปเปอร์หายไป?</strong> จะปรากฏข้างฟิลด์ที่มี <code>data-step</code> — รีสตาร์ทแอปหากขาดหายไป</li>
+<li><strong>คำเตือนอุณหภูมิล้าสมัย?</strong> รีเซ็ตเป็น 20 ทุกครั้งที่เริ่ม — ตั้งค่าอีกครั้งสำหรับเซสชันนี้</li>
 </ul>
 <hr />
-<p>Contact <code>support@evdiag.net</code> — include device model, app version (Settings → bottom), and a description of what you tried.</p>
+<p>ติดต่อ <code>support@evdiag.net</code> — รวมรุ่นอุปกรณ์ เวอร์ชันแอป (การตั้งค่า → ด้านล่าง) และคำอธิบายสิ่งที่คุณลอง</p>
 
   <div class="docs-footer">
     <p>

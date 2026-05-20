@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — त्वरित संदर्भ
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+एक-पृष्ठ का स्मरण। पूर्ण विवरण के लिए, `user-guide.md` देखें।
 
 ---
 
-## All tabs
+## मुख्य प्रवाह (2-Sensor, मुफ्त)
 
-| Tab | Output | Pro fields? |
+1. **एक सामग्री चुनें** — Materials टैब → अपनी सामग्री को टैप करें
+2. **कैलिब्रेशन दर्ज करें** 2-Sensor टैब पर:
+   - सेंसर दूरी (`d`)
+   - कैलिब्रेशन समय विलंब (`tCal`) — सामग्री से स्वतः भरा हुआ
+3. **घटना दर्ज करें** — `tEvent` और पहला सेंसर (A या B)
+4. **परिणाम पढ़ें** — सेंसर A से दूरी
+
+![2-Sensor टैब](../screenshots/01-home-2sensor.png)
+
+---
+
+## सभी टैब
+
+| टैब | आउटपुट | Pro फ़ील्ड? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | रेखा के साथ दूरी | नहीं (पूरी तरह से मुफ्त) |
+| 3-Sensor | सतह पर X, Y | हाँ |
+| 3-Sen+ | 3 जोड़ों पर LSQ के साथ X, Y | हाँ |
+| 4-Sensor | दो जोड़ों से X, Y (A–B + C–D) | हाँ |
+| 4-Sen+ | 4 सेंसरों से X, Y, कोई भी स्थिति | हाँ |
+| 3D | 4 सेंसरों से X, Y, Z | हाँ |
+| 3D+ | 6 सेंसरों तक X, Y, Z | हाँ |
+| Materials | ध्वनि-की-गति चयनकर्ता | नहीं |
+| Help | ट्यूटोरियल | नहीं |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+सेटिंग्स ⚙ आइकन (शीर्ष-दाएं) है, टैब नहीं।
 
 ---
 
-## Shortcuts
+## तापमान क्षतिपूर्ति
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+सेटिंग्स → संदर्भ तापमान, सीमा **-40 से +200 °C**।
+
+- **14 धातुओं** में अंतर्निहित क्षतिपूर्ति है (एल्यूमीनियम, स्टील्स, तांबा, पीतल, कांस्य, टाइटेनियम, मैग्नीशियम, सीसा, जस्ता, निकल, टंगस्टन, लोहा, ढलवां लोहा)
+- क्षतिपूर्ति के बिना सामग्री **"ref only"** दिखाती है
+- **हर ऐप लॉन्च पर 20 °C पर रीसेट होता है** (डिफ़ॉल्ट-सुरक्षित-शुरुआत)
+- इतिहास प्रविष्टि को फिर से चलाने से इसका मूल तापमान पुनर्स्थापित हो जाता है
 
 ---
 
-## Pro model
+## शॉर्टकट
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **एक सामग्री पर टैप करें** → सभी टैब पर सभी `tCal` फ़ील्ड स्वतः भरता है
+- **संख्या फ़ील्ड पर +/- दबाए रखें** → तेज़ वृद्धि
+- **संख्या फ़ील्ड पर क्षैतिज रूप से खींचें** → मानों को स्क्रब करें
+- **खाली/नकारात्मक/अमान्य इनपुट** → फोकस खोने पर 0 हो जाता है (तापमान इनपुट -40/200 तक सीमित)
+- **एक सामग्री को स्टार करें** → चयनकर्ता के शीर्ष पर ले जाता है
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Pro मॉडल
+
+**फ़ीचर-लॉक्ड freemium** ($19.99):
+- मुफ्त: 2-Sensor टैब पूरी तरह से कार्यात्मक, कोई सीमा नहीं
+- Pro: अन्य टैब पहुंच योग्य हैं लेकिन **सुनहरे ताला वाले फ़ील्ड** हैं जो टैप करने पर paywall दिखाते हैं
+
+Pro अनलॉक करता है: 3-Sensor से 3D+ तक, कस्टम सामग्री, बैकअप/पुनर्स्थापन, PDF रिपोर्ट, फ़ोटो एनोटेशन।
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## रिपोर्ट और बैकअप
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+किसी भी परिणाम स्क्रीन पर **परिणाम प्रिंट करें** बटन → हेडर, इनपुट, परिणाम, विज़ुअलाइज़ेशन, फ़ोटो (यदि ली गई) और तापमान फ़ुटर (जब क्षतिपूर्ति सक्रिय हो) के साथ PDF।
 
-Customize header in Settings → Report header.
+सेटिंग्स → रिपोर्ट हेडर में हेडर को अनुकूलित करें।
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**बैकअप**: सेटिंग्स → बैकअप → क्लाउड/ईमेल पर साझा करें।  
+**पुनर्स्थापन**: सेटिंग्स → पुनर्स्थापन → बैकअप फ़ाइल चुनें।
 
 ---
 
-## Quick troubleshooting
+## नए डिवाइस पर Pro पुनर्स्थापित करें
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+वही Google खाता (Android) या Apple ID (iOS) जिससे आपने खरीदा था → सेटिंग्स → **खरीदारी पुनर्स्थापित करें** → सेकंडों में अनलॉक हो जाता है।
+
+बाह्य रूप से प्रोमो कोड भुनाने के बाद ऐप पर लौटने पर ऑटो-पुनर्स्थापन चुपचाप होता है।
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## त्वरित समस्या निवारण
+
+- **परिणाम सीमा से बाहर?** `tEvent` चिह्न / पहला सेंसर / सेंसर दूरी की जाँच करें
+- **निकटतम सामग्री गलत?** संदर्भ तापमान शायद गलती से सेट हो गया — सेटिंग्स की जाँच करें
+- **खरीदारी पुनर्स्थापित विफल?** उसी स्टोर खाते की पुष्टि करें; यदि बना रहता है तो पुनः इंस्टॉल करें
+- **फ़ील्ड 0 पर चला गया?** खाली/नकारात्मक इनपुट फोकस खोने पर ऑटो-स्नैप हो जाते हैं — मान पुनः दर्ज करें
+- **स्टेपर बटन गायब?** वे `data-step` वाले फ़ील्ड के बगल में दिखाई देते हैं — गायब होने पर ऐप पुनः आरंभ करें
+- **पुराना तापमान चेतावनी?** हर लॉन्च पर 20 पर रीसेट होता है — इस सत्र के लिए फिर से सेट करें
+
+---
+
+`support@evdiag.net` से संपर्क करें — डिवाइस मॉडल, ऐप संस्करण (सेटिंग्स → नीचे) और आपने जो प्रयास किया उसका विवरण शामिल करें।

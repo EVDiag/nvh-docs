@@ -478,4 +478,4 @@ LANGUAGE_ORDER = [
 RTL_LANGS = {'ar', 'fa'}
 
 # Languages that fall back to English
-ENGLISH_FALLBACK = ['be', 'fa', 'hi', 'id', 'ms', 'tl']
+ENGLISH_FALLBACK = []

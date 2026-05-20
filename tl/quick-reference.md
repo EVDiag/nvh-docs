@@ -1,101 +1,101 @@
-# NVH Source Locator — Quick Reference
+# NVH Source Locator — Mabilis na Sanggunian
 
-A one-page refresher. For full details, see `user-guide.md`.
-
----
-
-## Core flow (2-Sensor, free)
-
-1. **Pick a material** — Materials tab → tap your material
-2. **Enter calibration** on the 2-Sensor tab:
-   - Sensor spacing (`d`)
-   - Calibration time delay (`tCal`) — auto-filled from material
-3. **Enter event** — `tEvent` and First sensor (A or B)
-4. **Read result** — distance from sensor A
-
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+Isang-pahinang paalala. Para sa kumpletong detalye, tingnan ang `user-guide.md`.
 
 ---
 
-## All tabs
+## Pangunahing daloy (2-Sensor, libre)
 
-| Tab | Output | Pro fields? |
+1. **Pumili ng materyal** — tab na Materials → i-tap ang inyong materyal
+2. **Ilagay ang calibration** sa tab na 2-Sensor:
+   - Pagitan ng sensor (`d`)
+   - Pagkaantala ng calibration time (`tCal`) — auto-fill mula sa materyal
+3. **Ilagay ang event** — `tEvent` at Unang sensor (A o B)
+4. **Basahin ang resulta** — distansya mula sa sensor A
+
+![Tab na 2-Sensor](../screenshots/01-home-2sensor.png)
+
+---
+
+## Lahat ng tab
+
+| Tab | Output | Mga Pro field? |
 |---|---|---|
-| 2-Sensor | Distance along line | No (fully free) |
-| 3-Sensor | X, Y on a surface | Yes |
-| 3-Sen+ | X, Y with LSQ over 3 pairs | Yes |
-| 4-Sensor | X, Y from two pairs (A–B + C–D) | Yes |
-| 4-Sen+ | X, Y from 4 sensors, any position | Yes |
-| 3D | X, Y, Z from 4 sensors | Yes |
-| 3D+ | X, Y, Z from up to 6 sensors | Yes |
-| Materials | Speed-of-sound picker | No |
-| Help | Tutorials | No |
+| 2-Sensor | Distansya sa kahabaan ng linya | Hindi (ganap na libre) |
+| 3-Sensor | X, Y sa isang ibabaw | Oo |
+| 3-Sen+ | X, Y na may LSQ sa 3 pares | Oo |
+| 4-Sensor | X, Y mula sa dalawang pares (A–B + C–D) | Oo |
+| 4-Sen+ | X, Y mula sa 4 na sensor, anumang posisyon | Oo |
+| 3D | X, Y, Z mula sa 4 na sensor | Oo |
+| 3D+ | X, Y, Z mula sa hanggang 6 na sensor | Oo |
+| Materials | Pumipili ng bilis ng tunog | Hindi |
+| Help | Mga tutorial | Hindi |
 
-Settings is the ⚙ icon (top-right), not a tab.
-
----
-
-## Temperature compensation
-
-Settings → Reference temperature, range **-40 to +200 °C**.
-
-- **14 metals** have built-in compensation (aluminium, steels, copper, brass, bronze, titanium, magnesium, lead, zinc, nickel, tungsten, iron, iron cast)
-- Materials without compensation show **"ref only"**
-- **Resets to 20 °C on every app launch** (default-safe-start)
-- Replaying a history entry restores its original temperature
+Ang Settings ay icon na ⚙ (kanang itaas), hindi tab.
 
 ---
 
-## Shortcuts
+## Pagbabayad sa temperatura
 
-- **Tap a material** → auto-fills all `tCal` fields across all tabs
-- **Hold +/-** on number fields → fast increment
-- **Drag horizontally** on a number field → scrub values
-- **Empty/negative/garbage input** → snaps to 0 on blur (temp input clamps to -40/200)
-- **Star a material** → moves to top of picker
+Settings → Reference temperature, saklaw na **-40 hanggang +200 °C**.
+
+- **14 na metal** ay may built-in na compensation (aluminyo, mga acero, tanso, brass, bronze, titanium, magnesium, tingga, sink, nikel, tungsten, bakal, bakal na hinulma)
+- Ang mga materyal na walang compensation ay nagpapakita ng **"ref only"**
+- **Nare-reset sa 20 °C sa bawat paglulunsad ng app** (default-ligtas-simula)
+- Ang pag-replay sa entry sa history ay nagbabalik sa orihinal na temperatura nito
 
 ---
 
-## Pro model
+## Mga shortcut
 
-**Feature-locked freemium** ($19.99):
-- Free: 2-Sensor tab fully functional, no limits
-- Pro: Other tabs accessible but have **gold-padlock fields** that show paywall on tap
+- **I-tap ang isang materyal** → auto-fill ang lahat ng `tCal` field sa lahat ng tab
+- **Pindutin nang matagal ang +/-** sa mga number field → mabilis na pagdaragdag
+- **I-drag nang pahalang** sa isang number field → i-scrub ang mga value
+- **Walang laman/negatibo/basurang input** → magiging 0 kapag nawala ang focus (ang temperature input ay limitado sa -40/200)
+- **Star-han ang materyal** → mapupunta sa itaas ng picker
 
-Pro unlocks: 3-Sensor through 3D+, custom materials, backup/restore, PDF reports, photo annotation.
+---
+
+## Modelong Pro
+
+**Naka-lock-ng-feature na freemium** ($19.99):
+- Libre: ang tab na 2-Sensor ay ganap na gumagana, walang limitasyon
+- Pro: ang iba pang mga tab ay naa-access ngunit may mga **gintong padlock na field** na nagpapakita ng paywall kapag na-tap
+
+Binubuksan ng Pro: 3-Sensor hanggang 3D+, mga custom na materyal, backup/restore, mga ulat ng PDF, anotasyon ng larawan.
 
 ![Paywall](../screenshots/07-paywall.png)
 
 ---
 
-## Reports & Backup
+## Mga ulat at Backup
 
-**Print result** button on any result screen → PDF with header, inputs, result, visualization, photo (if taken), and temperature footer (when compensation active).
+Ang **Print result** button sa anumang screen ng resulta → PDF na may header, mga input, resulta, visualization, larawan (kung kinunan), at footer ng temperatura (kapag aktibo ang compensation).
 
-Customize header in Settings → Report header.
+I-customize ang header sa Settings → Report header.
 
-**Backup**: Settings → Backup → share to cloud/email.  
-**Restore**: Settings → Restore → pick backup file.
-
----
-
-## Restore Pro on a new device
-
-Same Google account (Android) or Apple ID (iOS) you bought with → Settings → **Restore purchase** → unlocks within seconds.
-
-Auto-restore happens silently when you return to the app after redeeming a promo code externally.
+**Backup**: Settings → Backup → ibahagi sa cloud/email.  
+**Restore**: Settings → Restore → piliin ang backup file.
 
 ---
 
-## Quick troubleshooting
+## Ibalik ang Pro sa bagong device
 
-- **Result outside range?** Check `tEvent` sign / First sensor / sensor spacing
-- **Closest material wrong?** Reference temperature probably accidentally set — check Settings
-- **Restore purchase fails?** Verify same store account; reinstall if it persists
-- **Field snapped to 0?** Empty/negative inputs auto-snap on blur — re-enter the value
-- **Stepper buttons gone?** They appear next to fields with `data-step` — restart app if missing
-- **Stale temperature warning?** It resets to 20 every launch — set again for this session
+Parehong Google account (Android) o Apple ID (iOS) na binili mo → Settings → **Restore purchase** → magbubukas sa loob ng ilang segundo.
+
+Ang auto-restore ay nangyayari nang tahimik kapag bumalik ka sa app pagkatapos mag-redeem ng promo code sa labas.
 
 ---
 
-Contact `support@evdiag.net` — include device model, app version (Settings → bottom), and a description of what you tried.
+## Mabilis na pag-troubleshoot
+
+- **Resulta sa labas ng saklaw?** Suriin ang sign ng `tEvent` / Unang sensor / pagitan ng sensor
+- **Mali ang pinakamalapit na materyal?** Marahil ay aksidenteng naitakda ang reference temperature — suriin ang Settings
+- **Nabigo ang Restore purchase?** I-verify ang parehong store account; i-reinstall kung nagpapatuloy
+- **Naging 0 ang field?** Walang laman/negatibong input ay auto-snap kapag nawala ang focus — ilagay muli ang value
+- **Nawawala ang mga stepper button?** Lalabas sila sa tabi ng mga field na may `data-step` — i-restart ang app kung nawawala
+- **Babala sa lumang temperatura?** Nare-reset sa 20 sa bawat paglulunsad — itakda muli para sa session na ito
+
+---
+
+Makipag-ugnayan sa `support@evdiag.net` — isama ang modelo ng device, bersyon ng app (Settings → ibaba), at paglalarawan ng kung ano ang sinubukan mo.
