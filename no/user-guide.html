@@ -57,14 +57,14 @@
     Dokumentasjonen er oversatt for din bekvemmelighet — for den mest presise tekniske terminologien er den engelske originalversjonen avgjørende.
   </div>
 
-  <h1 id="nvh-source-locator-brukerhandbok">NVH Source Locator — Brukerhåndbok</h1>
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Brukerhåndbok</h1>
 <p>NVH Source Locator er et måleverktøy for å lokalisere støy- og vibrasjonskilder ved hjelp av TDOA (Time Difference of Arrival) fra akselerometersignaler fanget på et oscilloskop eller målesystem.</p>
 <p>Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se <code>quick-reference.md</code>.</p>
 <blockquote>
 <p><strong>Merknad om skjermbilder</strong>: Dette dokumentet bruker plassholder-skjermbilder fra appen. Erstatt hvert <code>../screenshots/*.png</code> med ekte enhets-skjermbilder etter hvert som du tar dem.</p>
 </blockquote>
 <hr />
-<h2 id="innholdsfortegnelse">Innholdsfortegnelse</h2>
+<h2 id="table-of-contents">Innholdsfortegnelse</h2>
 <ol>
 <li><a href="#how-it-works">Hvordan det fungerer</a></li>
 <li><a href="#before-you-start">Før du starter</a></li>
@@ -83,7 +83,7 @@
 <li><a href="#troubleshooting">Feilsøking</a></li>
 </ol>
 <hr />
-<h2 id="hvordan-det-fungerer">Hvordan det fungerer</h2>
+<h2 id="how-it-works">Hvordan det fungerer</h2>
 <p>Når en støykilde sender ut lyd eller vibrasjon, beveger bølgen seg gjennom et materiale med kjent hastighet. Hvis du plasserer to eller flere akselerometre på materialet og måler når bølgen kommer til hver av dem, forteller tidsforskjellen deg hvor kilden er.</p>
 <p>NVH Source Locator tar:</p>
 <ul>
@@ -98,7 +98,7 @@
 <li><strong>4 sensorer</strong> → posisjon i 3D-rom (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="fr-du-starter">Før du starter</h2>
+<h2 id="before-you-start">Før du starter</h2>
 <p>Du trenger:</p>
 <ul>
 <li><strong>Et oscilloskop eller målesystem</strong> som kan vise tidsforskjellen mellom akselerometerkanaler i mikrosekunder (µs)</li>
@@ -108,7 +108,7 @@
 </ul>
 <p><img alt="Hjemmeskjerm med 2-Sensor-fane" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="hovedfanene">Hovedfanene</h2>
+<h2 id="the-main-tabs">Hovedfanene</h2>
 <p>Appen har faner øverst:</p>
 <p><img alt="Fanelinje" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +172,50 @@
 </blockquote>
 <p>Innstillinger nås via ⚙ tannhjul-ikonet i øvre høyre hjørne (ikke en fane).</p>
 <hr />
-<h2 id="2-sensor-modus">2-Sensor-modus</h2>
+<h2 id="2-sensor-mode">2-Sensor-modus</h2>
 <p>Den enkleste målingen: kildelokalisering langs en linje mellom to akselerometre.</p>
 <p><img alt="2-Sensor-fane" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="trinn-1-bruk-et-materiale">Trinn 1: Bruk et materiale</h3>
+<h3 id="step-1-apply-a-material">Trinn 1: Bruk et materiale</h3>
 <p>Trykk på Materials-fanen. Velg materialet din struktur er laget av (f.eks. "Aluminium", "Stål, Mild (1020)"). Appen bruker materialets kjente lydhastighet for å automatisk fylle kalibreringstidsfeltet.</p>
 <p>Hvis strukturens materiale ikke er på listen, kan du midlertidig velge "Luft" og overstyre kalibreringstiden manuelt i trinn 2.</p>
-<h3 id="trinn-2-skriv-inn-kalibreringsdata">Trinn 2: Skriv inn kalibreringsdata</h3>
+<h3 id="step-2-enter-calibration-data">Trinn 2: Skriv inn kalibreringsdata</h3>
 <p>På 2-Sensor-fanen ser du to par-seksjoner: <strong>Par A–B</strong> og <strong>Par A–C</strong> (bare A–B er nødvendig hvis du bare har 2 sensorer).</p>
 <p>For hvert par fyller du inn:</p>
 <ul>
 <li><strong>Sensoravstand</strong> (<code>d</code>): fysisk avstand mellom sensorer, i cm eller tommer (innstilt i Innstillinger)</li>
 <li><strong>Kalibreringstidforsinkelse</strong> (<code>tCal</code>): tid for en bølge å reise mellom sensorene ved materialets lydhastighet — fylles automatisk når du velger et materiale, men du kan overstyre</li>
 </ul>
-<h3 id="trinn-3-skriv-inn-hendelsestiden">Trinn 3: Skriv inn hendelsestiden</h3>
+<h3 id="step-3-enter-the-event-time">Trinn 3: Skriv inn hendelsestiden</h3>
 <ul>
 <li><strong>Hendelsestidsforsinkelse</strong> (<code>tEvent</code>): tidsforskjell mellom sensorer som oppdager støyhendelsen, i mikrosekunder</li>
 <li><strong>Første sensor</strong>: hvilken sensor som hørte hendelsen først (A eller B)</li>
 </ul>
-<h3 id="trinn-4-les-resultatet">Trinn 4: Les resultatet</h3>
+<h3 id="step-4-read-the-result">Trinn 4: Les resultatet</h3>
 <p>Appen viser kildeposisjonen som en avstand fra sensor A:
 - Resultat = 0: kilden er ved sensor A
 - Resultat = avstand: kilden er ved sensor B
 - Resultat mellom: kilden er mellom dem
 - Resultat utenfor: kilden er utenfor en av sensorene (toast vil advare)</p>
 <p>Resultatkortet viser begge avstandene (fra A, fra B) og angir hvilken sensor som er nærmere.</p>
-<h3 id="trinn-5-valgfritt-annoter-et-bilde">Trinn 5 (valgfritt): Annoter et bilde</h3>
+<h3 id="step-5-optional-annotate-a-photo">Trinn 5 (valgfritt): Annoter et bilde</h3>
 <p>Trykk på <strong>📷 Annoter bilde</strong> for å ta et bilde av oppsettet ditt. Appen legger til markører for sensorer A, B og kilden. Nyttig for rapporter.</p>
 <hr />
-<h2 id="3-sensor-modus">3-Sensor-modus</h2>
+<h2 id="3-sensor-mode">3-Sensor-modus</h2>
 <p>Lokaliserer en kilde på et 2D-plan ved å bruke tre sensorer arrangert i en trekant.</p>
 <p><img alt="3-Sensor-fane" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="oppsett">Oppsett</h3>
+<h3 id="setup">Oppsett</h3>
 <p>Plasser tre sensorer på strukturen din som danner en trekant. Likebenet, rettvinklet eller skjevvinklet — appen håndterer alle geometrier.</p>
-<h3 id="skriv-inn-dataene">Skriv inn dataene</h3>
+<h3 id="enter-the-data">Skriv inn dataene</h3>
 <p>I delen <strong>Trekantsidelengder</strong>, skriv inn fysisk avstand for alle tre sidene (A–B, A–C, B–C).</p>
 <p>For hvert par (A–B og A–C), skriv inn:
 - <strong>tCal</strong>: kalibreringstid (autofylles fra materialet)
 - <strong>tEvent</strong>: målt tidsforskjell for støyhendelsen
 - <strong>Første sensor</strong>: hvilken hørte den først</p>
-<h3 id="les-resultatet">Les resultatet</h3>
+<h3 id="read-the-result">Les resultatet</h3>
 <p>Appen viser kildeposisjonen som X-, Y-koordinater relativt til sensor A (sensor A ved origo, sensor B på X-aksen). Visualiseringen viser alle tre sensorene og kildens plassering.</p>
 <p><img alt="Trekantresultat" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-moduser">Pro+-moduser</h2>
+<h2 id="pro-modes">Pro+-moduser</h2>
 <p>Flere avanserte faner tilbyr overbestemte løsere og høyere dimensjonalitet:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Samme trekantoppsett som 3-Sensor, men kalibrer OG mål alle tre par (A–B, A–C, B–C). Løseren bruker alle 3 TDOA i en minste kvadraters tilpasning — mer robust mot målingsstøy og anisotropiske materialer. Restverdier per par rapporteres slik at du kan oppdage inkonsistente målinger.</p>
@@ -224,19 +224,19 @@
 - <strong>A–B</strong> = horisontalt par (venstre/høyre sider)
 - <strong>C–D</strong> = vertikalt par (øvre/nedre sider)</p>
 <p>Kjør A–B-paret først (horisontalt), deretter C–D-paret (vertikalt). 2D-kartet viser skjæringspunktet. Hvert par kalibreres separat — nyttig når materialet varierer over strukturen.</p>
-<h3 id="4-sen-avansert-2d">4-Sen+ (Avansert 2D)</h3>
+<h3 id="4-sen-advanced-2d">4-Sen+ (Avansert 2D)</h3>
 <p>Fire sensorer i hvilken som helst posisjon (ikke tvunget rektangulær). Par A med hver av B, C, D og kalibrer separat. Den overbestemte minste kvadraters løseren gjennomsnittlig målingsstøyen per par og rapporterer restverdier per par.</p>
 <h3 id="3d">3D</h3>
 <p>Full 3D-måling med 4 sensorer plassert i 3D-rom. Skriv inn hver sensors (X, Y, Z) koordinater, pluss kalibrerings- og hendelsestider for hvert par (A–B, A–C, A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Som 3D men støtter opptil <strong>6 sensorer</strong> (A til F) med overbestemt LSQ. Maksimal presisjon for komplekse 3D-geometrier.</p>
 <hr />
-<h2 id="materials-fanen">Materials-fanen</h2>
+<h2 id="the-materials-tab">Materials-fanen</h2>
 <p>Bibliotek med vanlige ingeniørmaterialer med kjent lydhastighet ved 20 °C.</p>
 <p><img alt="Materials-fane" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="materialliste">Materialliste</h3>
+<h3 id="material-list">Materialliste</h3>
 <p>Listen inkluderer luft, væsker, gummi, polymerer, tre, glass og metaller. Hastighetene varierer fra ~340 m/s (luft) til ~13 000 m/s (noen metaller ved romtemperatur).</p>
-<h3 id="innebygde-materialer-med-temperaturkompensasjon">Innebygde materialer med temperaturkompensasjon</h3>
+<h3 id="built-in-materials-with-temperature-compensation">Innebygde materialer med temperaturkompensasjon</h3>
 <p>14 vanlig brukte metaller inkluderer temperaturkoeffisientdata. Når referansetemperaturen i Innstillinger skiller seg fra 20 °C, justerer appen automatisk hastighetene for disse materialene:</p>
 <ul>
 <li>Aluminium</li>
@@ -256,20 +256,20 @@
 </ul>
 <p>Materialer med kompensasjon viser to verdier i velgeren: den <strong>kompenserte hastigheten</strong> (stor, fremtredende) og <strong>referansehastigheten ved 20 °C</strong> (liten, grå under).</p>
 <p>Materialer uten kompensasjon viser <strong>"ref only"</strong> i kursiv — deres oppførte hastighet brukes som den er uavhengig av temperatur.</p>
-<h3 id="tilpassede-materialer">Tilpassede materialer</h3>
+<h3 id="custom-materials">Tilpassede materialer</h3>
 <p>Hvis du måler en kalibrering på 2-Sensor-fanen, kan du lagre resultatet som et tilpasset materiale. Etter en vellykket 2-sensor-måling, se etter alternativet for å lagre den utledede hastigheten under et navn du velger.</p>
 <p>Tilpassede materialer lagrer den in-situ målte hastigheten; de bruker aldri temperaturkompensasjon (hastigheten ble allerede målt ved testtemperaturen).</p>
-<h3 id="favoritter">Favoritter</h3>
+<h3 id="favorites">Favoritter</h3>
 <p>Trykk på stjernen ved siden av et materiale for å merke det som favoritt. Favoritter vises øverst i listen for rask tilgang.</p>
-<h3 id="sk">Søk</h3>
+<h3 id="search">Søk</h3>
 <p>Bruk søkefeltet øverst for å filtrere materialer etter navn. Søk samsvarer både med engelske kanoniske navn og oversatte visningsnavn.</p>
 <hr />
-<h2 id="temperaturkompensasjon">Temperaturkompensasjon</h2>
+<h2 id="temperature-compensation">Temperaturkompensasjon</h2>
 <p>Lydhastigheten i materialer endrer seg med temperaturen. I bil-NVH-testing er dette viktig: et motorrom ved 80 °C, en kaldsenket kabin ved -10 °C eller et område for eksosmanifold ved 200 °C oppfører seg alle annerledes enn laboratorieforhold ved romtemperatur.</p>
-<h3 id="stille-inn-temperaturen">Stille inn temperaturen</h3>
+<h3 id="setting-the-temperature">Stille inn temperaturen</h3>
 <p>Åpne Innstillinger (⚙ ikon) → Referansetemperatur. Skriv inn temperaturen til testmiljøet ditt i °C (område -40 til +200).</p>
 <p><img alt="Innstillingspanel" src="../screenshots/06-settings.png" /></p>
-<h3 id="hva-skjer-nar-temperaturen-20-c">Hva skjer når temperaturen ≠ 20 °C</h3>
+<h3 id="what-happens-when-temperature-20-c">Hva skjer når temperaturen ≠ 20 °C</h3>
 <ul>
 <li>Kalibreringstidsfeltene fylles automatisk med temperaturjustert hastighet</li>
 <li>Materials-velgeren viser fremtredende den justerte hastigheten</li>
@@ -278,16 +278,16 @@
 <li>Lagrede historikkoppføringer registrerer den aktive temperaturen</li>
 <li>Rapporter inkluderer en bunntekstlinje: <em>"Referansetemperatur: 60 °C, kompensasjon brukt"</em></li>
 </ul>
-<h3 id="tilbakestilling-ved-appstart">Tilbakestilling ved appstart</h3>
+<h3 id="reset-on-app-launch">Tilbakestilling ved appstart</h3>
 <p>Referansetemperaturen <strong>tilbakestilles alltid til 20 °C</strong> når du starter appen. Dette forhindrer at gamle innstillinger fra en tidligere måleøkt stille påvirker dagens arbeid. En liten kursiv merknad i Innstillinger minner deg på denne oppførselen.</p>
 <p>Hvis du vil spille av en historisk måling ved den opprinnelige temperaturen, trykker du bare på oppføringen — temperaturen gjenopprettes automatisk.</p>
-<h3 id="materialer-uten-kompensasjon">Materialer uten kompensasjon</h3>
+<h3 id="materials-without-compensation">Materialer uten kompensasjon</h3>
 <p>De fleste ikke-metalliske materialer har ikke pålitelige publiserte temperaturkoeffisienter. Appen viser et <strong>"ref only"</strong>-merke for disse — deres oppførte hastighet brukes uavhengig av temperaturinnstillingen. Hvis du trenger nøyaktige målinger ved ikke-romtemperaturer for disse materialene, utfør en in-situ-kalibrering og lagre resultatet som et tilpasset materiale.</p>
 <hr />
-<h2 id="fotomerknad">Fotomerknad</h2>
+<h2 id="photo-annotation">Fotomerknad</h2>
 <p>Etter en vellykket beregning, trykk på knappen <strong>📷 Annoter bilde</strong> for å legge sensor- og kildemarkører på et bilde av oppsettet ditt.</p>
 <p><img alt="Fotomerknad" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flyt">Flyt</h3>
+<h3 id="flow">Flyt</h3>
 <ol>
 <li>Trykk på <strong>Annoter bilde</strong> — systemkameraet åpnes</li>
 <li>Ta et bilde av sensorplasseringen din</li>
@@ -298,10 +298,10 @@
 </ol>
 <p>Det annoterte bildet inkluderes automatisk i PDF-rapporter.</p>
 <hr />
-<h2 id="rapporter">Rapporter</h2>
+<h2 id="reports">Rapporter</h2>
 <p>Trykk på knappen <strong>Skriv ut resultat</strong> på en hvilken som helst resultatskjerm for å generere en formatert rapport.</p>
 <p><img alt="PDF-rapport" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="rapportinnhold">Rapportinnhold</h3>
+<h3 id="report-contents">Rapportinnhold</h3>
 <ul>
 <li>Topptekst (kan tilpasses i Innstillinger → Rapporttopptekst)</li>
 <li>Måletittel og tidsstempel</li>
@@ -313,23 +313,23 @@
 <li>Bunntekstlinje for temperatur (hvis kompensasjon var aktiv)</li>
 <li>Sidetall og kreditlinje</li>
 </ul>
-<h3 id="utdataformat">Utdataformat</h3>
+<h3 id="output-format">Utdataformat</h3>
 <ul>
 <li><strong>Android</strong>: nativ PDF-generering, lagre på telefonen eller del</li>
 <li><strong>iOS</strong>: systemets utskriftsdialog → lagre som PDF, AirPrint eller del</li>
 </ul>
-<h3 id="tilpasse-toppteksten">Tilpasse toppteksten</h3>
+<h3 id="customizing-the-header">Tilpasse toppteksten</h3>
 <p>Innstillinger → Rapporttopptekst. Skriv inn firmanavnet, labnavnet, prosjektinfo eller hva du vil ha øverst i hver rapport.</p>
 <hr />
-<h2 id="sikkerhetskopiering-og-gjenoppretting">Sikkerhetskopiering og gjenoppretting</h2>
+<h2 id="backup-and-restore">Sikkerhetskopiering og gjenoppretting</h2>
 <p>Lagre alle de tilpassede materialene, favorittene, innstillingene og historikken til en enkelt fil. Overfør mellom enheter.</p>
-<h3 id="sikkerhetskopiering">Sikkerhetskopiering</h3>
+<h3 id="backup">Sikkerhetskopiering</h3>
 <p>Innstillinger → <strong>Sikkerhetskopiering</strong> → trykk på "Lagre sikkerhetskopifil". Appen genererer en JSON-fil og åpner telefonens delingsark. Lagre den til skystasjonen din (Google Drive, iCloud, OneDrive), e-post den til deg selv eller overfør på hvilken som helst måte.</p>
-<h3 id="gjenopprett">Gjenopprett</h3>
+<h3 id="restore">Gjenopprett</h3>
 <p>Innstillinger → <strong>Gjenopprett</strong> → velg sikkerhetskopifilen fra telefonens lagring. Appen importerer tilpassede materialer, favoritter, historikk og innstillinger.</p>
 <p>⚠️ <strong>Gjenoppretting erstatter dine nåværende data.</strong> Hvis du har viktige målinger på den nåværende enheten, sikkerhetskopier dem først før du gjenoppretter fra en annen sikkerhetskopi.</p>
 <hr />
-<h2 id="innstillinger">Innstillinger</h2>
+<h2 id="settings">Innstillinger</h2>
 <p>Tilgang via ⚙ tannhjul-ikonet i øvre høyre hjørne. Innstillinger er en modal, ikke en fane.</p>
 <p><img alt="Innstillinger" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +379,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-funksjoner">Pro-funksjoner</h2>
+<h2 id="pro-features">Pro-funksjoner</h2>
 <p>NVH Source Locator bruker en <strong>funksjonslåst freemium-modell</strong>:</p>
 <ul>
 <li><strong>Gratis</strong>: 2-Sensor-fanen er fullt funksjonell uten begrensninger</li>
 <li><strong>Pro</strong>: Alle andre faner har spesifikke inntastingsfelt låst. Paywallen vises når en gratisbruker trykker på et låst felt</li>
 </ul>
-<h3 id="hva-som-er-last">Hva som er låst</h3>
+<h3 id="whats-locked">Hva som er låst</h3>
 <p>Pro-krevende felt er spredt over:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - 3D- og 3D+-moduser
@@ -395,7 +395,7 @@
 - Fotomerknad</p>
 <p>En gratisbruker kan ÅPNE en hvilken som helst fane og SE grensesnittet. De kan bare ikke skrive inn verdier i Pro-låste inntastingsfelt.</p>
 <p><img alt="Pro-låst felt" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="paywallen">Paywallen</h3>
+<h3 id="the-paywall">Paywallen</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Når en gratisbruker trykker på et låst felt, glir paywallen inn og viser:
 - App-ikon med PRO-merke
@@ -403,9 +403,9 @@
 - Opplåsingsknapp med pris ($19,99 standard; kan variere etter region)
 - Innløsing av kampanjekode (kun Android — iOS bruker Apples separate Offer Code-flyt)
 - Valgfri kampanjelenke til samfunnskanaler</p>
-<h3 id="kjpe-pro">Kjøpe Pro</h3>
+<h3 id="purchasing-pro">Kjøpe Pro</h3>
 <p>Trykk på et hvilket som helst låst felt, eller trykk på <strong>Oppgrader til Pro</strong> i Innstillinger. Bruker plattformens offisielle betalingssystem (Google Play på Android, Apple App Store på iOS).</p>
-<h3 id="gjenopprette-pro-pa-en-ny-enhet">Gjenopprette Pro på en ny enhet</h3>
+<h3 id="restoring-pro-on-a-new-device">Gjenopprette Pro på en ny enhet</h3>
 <p>Hvis du kjøpte på én enhet og vil ha Pro på en annen (samme konto):</p>
 <ol>
 <li>Logg på den <strong>samme</strong> Google-kontoen (Android) eller Apple ID (iOS) som du brukte for å kjøpe</li>
@@ -413,13 +413,13 @@
 <li>Gå til Innstillinger → <strong>Gjenopprett kjøp</strong></li>
 <li>Appen verifiserer med plattformens kjøpsregistre og låser opp Pro</li>
 </ol>
-<h3 id="auto-gjenoppretting-ved-oppstart">Auto-gjenoppretting ved oppstart</h3>
+<h3 id="auto-restore-on-launch">Auto-gjenoppretting ved oppstart</h3>
 <p>Hvis du løser inn en kampanjekode i Google Play Store eller App Store mens NVH Source Locator kjører i bakgrunnen, oppdager retur til appen automatisk det nye kjøpet og låser opp Pro — ingen manuell Gjenoppretting nødvendig.</p>
-<h3 id="innlsing-av-kampanjekode">Innløsing av kampanjekode</h3>
+<h3 id="promo-code-redemption">Innløsing av kampanjekode</h3>
 <p><strong>Android</strong>: en knapp "Har du en Google Play-kampanjekode?" i paywallen åpner Google Play-innløsingsflyten med koden din forhåndsutfylt.</p>
 <p><strong>iOS</strong>: App Store-policy 3.1.1 krever innløsing gjennom Apples offisielle "Løs inn kode"-flyt. Google Play-knappen er skjult på iOS. Se etter "Løs inn App Store-kode" i Innstillinger i stedet.</p>
 <hr />
-<h2 id="help-fanen-og-veiledninger">Help-fanen og veiledninger</h2>
+<h2 id="help-tab-and-tutorials">Help-fanen og veiledninger</h2>
 <p><strong>Help</strong>-fanen inkluderer veiledninger i appen, beste praksis-guider og referanseinformasjon.</p>
 <p><img alt="Help-fane" src="../screenshots/10-help-tab.png" /></p>
 <p>Emner dekket:
@@ -430,38 +430,38 @@
 - Tips for triangulering og 3D-plasseringer
 - Kabelføring og signalkvalitet</p>
 <hr />
-<h2 id="feilsking">Feilsøking</h2>
-<h3 id="beregningsresultatet-er-feil-eller-gir-ingen-mening">Beregningsresultatet er feil eller gir ingen mening</h3>
+<h2 id="troubleshooting">Feilsøking</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">Beregningsresultatet er feil eller gir ingen mening</h3>
 <ol>
 <li>Sjekk kalibreringen. Auto-fylt <code>tCal</code> antar publisert materialhastighet — virkelige materialer varierer. Den mest nøyaktige kalibreringen er in-situ: trykk på en kjent plassering og la appen utlede den faktiske hastigheten.</li>
 <li>Sjekk <strong>Første sensor</strong>-innstillingen — hvilken sensor som hørte hendelsen først betyr noe for matematikken.</li>
 <li>Verifiser avstandsmålingene dine. Feil på noen mm forplanter seg.</li>
 </ol>
-<h3 id="toast-sier-resultat-utenfor-omradet">Toast sier "Resultat utenfor området"</h3>
+<h3 id="toast-says-result-outside-range">Toast sier "Resultat utenfor området"</h3>
 <p>Matematikken sier at kilden ikke er mellom sensorene dine. Mulige årsaker:
 - Kilden er faktisk utenfor sensorlinjen/planet
 - En av inndataene dine er feil
 - Kalibreringshastigheten er for langt fra virkeligheten</p>
-<h3 id="beregningshastighetstips-viser-en-advarselsfarge">Beregningshastighetstips viser en advarselsfarge</h3>
+<h3 id="calc-speed-hint-shows-a-warning-color">Beregningshastighetstips viser en advarselsfarge</h3>
 <p>Den implisitte lydhastigheten fra inndataene dine er langt fra noe vanlig materiale (mindre enn 50 m/s eller mer enn 20 000 m/s). Sjekk inndataene dine — sannsynligvis en skrivefeil i tCal eller avstand.</p>
-<h3 id="materialvelgeren-viser-forskjellige-hastigheter-enn-forventet">Materialvelgeren viser forskjellige hastigheter enn forventet</h3>
+<h3 id="material-picker-shows-different-speeds-than-expected">Materialvelgeren viser forskjellige hastigheter enn forventet</h3>
 <p>Sjekk referansetemperaturen i Innstillinger. Hvis ikke 20 °C, reflekterer viste hastigheter temperaturkompensasjon. Appen viser "ref X @ 20°C" under kompenserte hastigheter slik at du kan verifisere.</p>
-<h3 id="historikkoppfring-spiller-av-med-annet-resultat">Historikkoppføring spiller av med annet resultat</h3>
+<h3 id="history-entry-replays-with-different-result">Historikkoppføring spiller av med annet resultat</h3>
 <p>Gamle historikkoppføringer opprettet før appversjon 1.75 har kanskje ikke lagret temperaturen. Hvis du tok målingen ved en ikke-20 °C-temperatur, vil avspilling bruke den nåværende innstillingen. Sett temperaturen manuelt i Innstillinger før avspilling, ELLER mål på nytt.</p>
-<h3 id="fotomerknadsmarkrer-er-ikke-der-jeg-forventer">Fotomerknadsmarkører er ikke der jeg forventer</h3>
+<h3 id="photo-annotation-markers-not-where-i-expect">Fotomerknadsmarkører er ikke der jeg forventer</h3>
 <p>Markører plasseres automatisk basert på inndatageometri. Dra dem for å justere. Justering av markører oppdaterer kildeposisjonen i fotooverlegget — men ENDRER IKKE det underliggende beregningsresultatet.</p>
-<h3 id="sikkerhetskopieringgjenoppretting-mislykkes">Sikkerhetskopiering/Gjenoppretting mislykkes</h3>
+<h3 id="backuprestore-fails">Sikkerhetskopiering/Gjenoppretting mislykkes</h3>
 <p>Sørg for at du bruker en sikkerhetskopi generert av samme eller nyere versjon av appen. Eldre sikkerhetskopier kan mangle gjeldende datafelt.</p>
-<h3 id="gjenopprett-kjp-sier-ingen-kjp-funnet">Gjenopprett kjøp sier "ingen kjøp funnet"</h3>
+<h3 id="restore-purchase-says-no-purchase-found">Gjenopprett kjøp sier "ingen kjøp funnet"</h3>
 <ol>
 <li>Verifiser at du er logget på samme butikkonto som du brukte for å kjøpe</li>
 <li>Verifiser at kjøpet ikke ble refundert eller har utløpt</li>
 <li>Prøv å avinstallere og installere appen på nytt (kjøpet er knyttet til butikkontoen din, ikke app-installasjonen)</li>
 <li>Kontakt support@evdiag.net hvis det vedvarer</li>
 </ol>
-<h3 id="numerisk-inndata-snapper-uventet-til-0">Numerisk inndata snapper uventet til 0</h3>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">Numerisk inndata snapper uventet til 0</h3>
 <p>Med hensikt: når du mister fokus på et numerisk felt (trykker andre steder), hvis det er tomt, negativt eller inneholder ikke-numerisk tekst, snapper det til 0. Forhindrer stille ødelagte beregninger fra utilsiktet slettede inndata. Temperaturinndataen er unntatt (den klemmes i stedet til -40/+200).</p>
-<h3 id="trenger-mer-hjelp">Trenger mer hjelp</h3>
+<h3 id="need-more-help">Trenger mer hjelp</h3>
 <p>Kontakt <code>support@evdiag.net</code> med:
 - Enhetsmodell og OS-versjon
 - App-versjonen (Innstillinger → bunnen av siden)

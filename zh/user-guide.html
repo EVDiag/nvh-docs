@@ -57,14 +57,14 @@
     为便于您使用而翻译的文档 — 如需最准确的技术术语，请以英文原版为准。
   </div>
 
-  <h1 id="nvh-source-locator">NVH Source Locator — 用户指南</h1>
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — 用户指南</h1>
 <p>NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arrival，到达时间差）从示波器或测量系统捕获的加速度计信号定位噪声和振动源。</p>
 <p>本指南涵盖所有功能。如需快速复习，请参阅 <code>quick-reference.md</code>。</p>
 <blockquote>
 <p><strong>截图说明</strong>：本文档使用应用程序的占位符截图。请在您捕获实际设备截图时，将每个 <code>../screenshots/*.png</code> 替换为真实截图。</p>
 </blockquote>
 <hr />
-<h2 id="_1">目录</h2>
+<h2 id="table-of-contents">目录</h2>
 <ol>
 <li><a href="#how-it-works">工作原理</a></li>
 <li><a href="#before-you-start">开始之前</a></li>
@@ -83,7 +83,7 @@
 <li><a href="#troubleshooting">疑难解答</a></li>
 </ol>
 <hr />
-<h2 id="_2">工作原理</h2>
+<h2 id="how-it-works">工作原理</h2>
 <p>当噪声源发出声音或振动时，波以已知速度在材料中传播。如果您在材料上放置两个或更多加速度计并测量波到达每个加速度计的时间，时间差就会告诉您源在哪里。</p>
 <p>NVH Source Locator 采集：</p>
 <ul>
@@ -98,7 +98,7 @@
 <li><strong>4 个传感器</strong> → 在 3D 空间中的位置 (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="_3">开始之前</h2>
+<h2 id="before-you-start">开始之前</h2>
 <p>您需要：</p>
 <ul>
 <li><strong>一台示波器或测量系统</strong>，能够以微秒 (µs) 为单位显示加速度计通道之间的时间差</li>
@@ -108,7 +108,7 @@
 </ul>
 <p><img alt="带 2-Sensor 选项卡的主屏幕" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="_4">主要选项卡</h2>
+<h2 id="the-main-tabs">主要选项卡</h2>
 <p>应用程序顶部有选项卡：</p>
 <p><img alt="选项卡栏" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +172,50 @@
 </blockquote>
 <p>设置可通过右上角的 ⚙ 齿轮图标访问（不是选项卡）。</p>
 <hr />
-<h2 id="2-sensor">2-Sensor 模式</h2>
+<h2 id="2-sensor-mode">2-Sensor 模式</h2>
 <p>最简单的测量：沿两个加速度计之间一条线的源定位。</p>
 <p><img alt="2-Sensor 选项卡" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="1">步骤 1：应用材料</h3>
+<h3 id="step-1-apply-a-material">步骤 1：应用材料</h3>
 <p>点击 Materials 选项卡。选择您的结构所用材料（例如，"铝"，"钢，Mild (1020)"）。应用程序使用材料的已知声速自动填充校准时间字段。</p>
 <p>如果您的结构材料不在列表中，可以暂时选择"空气"，然后在步骤 2 手动覆盖校准时间。</p>
-<h3 id="2">步骤 2：输入校准数据</h3>
+<h3 id="step-2-enter-calibration-data">步骤 2：输入校准数据</h3>
 <p>在 2-Sensor 选项卡上，您将看到两个对部分：<strong>对 A–B</strong> 和 <strong>对 A–C</strong>（如果您只有 2 个传感器，仅需 A–B）。</p>
 <p>对于每一对，您填写：</p>
 <ul>
 <li><strong>传感器间距</strong> (<code>d</code>)：传感器之间的物理距离，以厘米或英寸为单位（在设置中设定）</li>
 <li><strong>校准时间延迟</strong> (<code>tCal</code>)：波以材料声速在传感器之间传播的时间 — 当您选择材料时自动填充，但您可以覆盖</li>
 </ul>
-<h3 id="3">步骤 3：输入事件时间</h3>
+<h3 id="step-3-enter-the-event-time">步骤 3：输入事件时间</h3>
 <ul>
 <li><strong>事件时间延迟</strong> (<code>tEvent</code>)：检测到噪声事件的传感器之间的时间差，以微秒为单位</li>
 <li><strong>首先检测的传感器</strong>：哪个传感器首先听到事件（A 或 B）</li>
 </ul>
-<h3 id="4">步骤 4：读取结果</h3>
+<h3 id="step-4-read-the-result">步骤 4：读取结果</h3>
 <p>应用程序将源位置显示为与传感器 A 的距离：
 - 结果 = 0：源位于传感器 A
 - 结果 = 距离：源位于传感器 B
 - 结果在中间：源位于两者之间
 - 结果在外部：源超出传感器之一（toast 将警告）</p>
 <p>结果卡显示两个距离（来自 A，来自 B）并指示哪个传感器更近。</p>
-<h3 id="5">步骤 5（可选）：注释照片</h3>
+<h3 id="step-5-optional-annotate-a-photo">步骤 5（可选）：注释照片</h3>
 <p>点击 <strong>📷 注释照片</strong> 拍摄您的设置照片。应用程序为传感器 A、B 和源叠加标记。对报告有用。</p>
 <hr />
-<h2 id="3-sensor">3-Sensor 模式</h2>
+<h2 id="3-sensor-mode">3-Sensor 模式</h2>
 <p>使用排列成三角形的三个传感器在 2D 平面上定位源。</p>
 <p><img alt="3-Sensor 选项卡" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="_5">设置</h3>
+<h3 id="setup">设置</h3>
 <p>在您的结构上放置三个传感器形成三角形。等边、直角或不等边 — 应用程序处理所有几何。</p>
-<h3 id="_6">输入数据</h3>
+<h3 id="enter-the-data">输入数据</h3>
 <p>在 <strong>三角形边长</strong> 部分，输入所有三条边的物理距离 (A–B, A–C, B–C)。</p>
 <p>对于每一对（A–B 和 A–C），输入：
 - <strong>tCal</strong>：校准时间（从材料自动填充）
 - <strong>tEvent</strong>：测量的噪声事件时间差
 - <strong>首先检测的传感器</strong>：哪个先听到</p>
-<h3 id="_7">读取结果</h3>
+<h3 id="read-the-result">读取结果</h3>
 <p>应用程序将源位置显示为相对于传感器 A 的 X, Y 坐标（传感器 A 在原点，传感器 B 在 X 轴上）。可视化显示所有三个传感器和源位置。</p>
 <p><img alt="三角形结果" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro">Pro+ 模式</h2>
+<h2 id="pro-modes">Pro+ 模式</h2>
 <p>几个高级选项卡提供超定求解器和更高维度：</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>与 3-Sensor 相同的三角形设置，但校准和测量所有三对 (A–B, A–C, B–C)。求解器在最小二乘拟合中使用所有 3 个 TDOA — 对测量噪声和各向异性材料更稳健。报告每对的残差，以便您可以发现不一致的测量。</p>
@@ -224,19 +224,19 @@
 - <strong>A–B</strong> = 水平对（左/右边）
 - <strong>C–D</strong> = 垂直对（上/下边）</p>
 <p>首先运行 A–B 对（水平），然后运行 C–D 对（垂直）。2D 地图显示交点。每对单独校准 — 当材料在结构上变化时有用。</p>
-<h3 id="4-sen-2d">4-Sen+ (高级 2D)</h3>
+<h3 id="4-sen-advanced-2d">4-Sen+ (高级 2D)</h3>
 <p>四个传感器在任何位置（不强制矩形）。将 A 与 B、C、D 中的每一个配对并单独校准。超定最小二乘求解器平均每对的测量噪声并报告每对的残差。</p>
 <h3 id="3d">3D</h3>
 <p>使用放置在 3D 空间中的 4 个传感器进行完整 3D 测量。输入每个传感器的 (X, Y, Z) 坐标，以及每对 (A–B, A–C, A–D) 的校准和事件时间。</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>类似 3D，但支持最多 <strong>6 个传感器</strong>（A 到 F）和超定 LSQ。复杂 3D 几何的最大精度。</p>
 <hr />
-<h2 id="materials">Materials 选项卡</h2>
+<h2 id="the-materials-tab">Materials 选项卡</h2>
 <p>20 °C 下已知声速的常见工程材料库。</p>
 <p><img alt="Materials 选项卡" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="_8">材料列表</h3>
+<h3 id="material-list">材料列表</h3>
 <p>列表包括空气、流体、橡胶、聚合物、木材、玻璃和金属。速度范围从约 340 m/s（空气）到约 13,000 m/s（一些金属在室温下）。</p>
-<h3 id="_9">内置材料带温度补偿</h3>
+<h3 id="built-in-materials-with-temperature-compensation">内置材料带温度补偿</h3>
 <p>14 种常用金属包含温度系数数据。当设置中的参考温度与 20 °C 不同时，应用程序会自动调整这些材料的速度：</p>
 <ul>
 <li>铝</li>
@@ -256,20 +256,20 @@
 </ul>
 <p>带补偿的材料在选择器中显示两个值：<strong>补偿后速度</strong>（大，突出）和<strong>20 °C 下的参考速度</strong>（小，下方灰色）。</p>
 <p>不带补偿的材料显示斜体的 <strong>"ref only"</strong> — 它们列出的速度按原样使用，不受温度影响。</p>
-<h3 id="_10">自定义材料</h3>
+<h3 id="custom-materials">自定义材料</h3>
 <p>如果您在 2-Sensor 选项卡上测量校准，您可以将结果保存为自定义材料。在 2-sensor 测量成功后，寻找以您选择的名称保存导出速度的选项。</p>
 <p>自定义材料存储就地测量速度；它们从不应用温度补偿（速度已在测试温度下测量）。</p>
-<h3 id="_11">收藏夹</h3>
+<h3 id="favorites">收藏夹</h3>
 <p>点击任何材料旁边的星标将其标记为收藏。收藏夹出现在列表顶部以便快速访问。</p>
-<h3 id="_12">搜索</h3>
+<h3 id="search">搜索</h3>
 <p>使用顶部的搜索栏按名称过滤材料。搜索匹配英语规范名称和翻译显示名称。</p>
 <hr />
-<h2 id="_13">温度补偿</h2>
+<h2 id="temperature-compensation">温度补偿</h2>
 <p>材料中的声速随温度变化。在汽车 NVH 测试中这很重要：80 °C 的发动机舱、-10 °C 的冷浸舱或 200 °C 的排气歧管区域都与室温实验室条件不同。</p>
-<h3 id="_14">设置温度</h3>
+<h3 id="setting-the-temperature">设置温度</h3>
 <p>打开设置（⚙ 图标）→ 参考温度。以 °C 输入您的测试环境温度（范围 -40 至 +200）。</p>
 <p><img alt="设置面板" src="../screenshots/06-settings.png" /></p>
-<h3 id="20-c">当温度 ≠ 20 °C 时会发生什么</h3>
+<h3 id="what-happens-when-temperature-20-c">当温度 ≠ 20 °C 时会发生什么</h3>
 <ul>
 <li>校准时间字段自动填充温度调整后的速度</li>
 <li>Materials 选择器突出显示调整后的速度</li>
@@ -278,16 +278,16 @@
 <li>保存的历史条目记录活动温度</li>
 <li>报告包括页脚行：<em>"参考温度：60 °C，已应用补偿"</em></li>
 </ul>
-<h3 id="_15">应用启动时重置</h3>
+<h3 id="reset-on-app-launch">应用启动时重置</h3>
 <p>当您启动应用程序时，参考温度<strong>始终重置为 20 °C</strong>。这可以防止过去测量会话的过时设置无声地影响今天的工作。设置中的小斜体注释提醒您此行为。</p>
 <p>如果您想以其原始温度重放历史测量，只需点击该条目 — 温度会自动恢复。</p>
-<h3 id="_16">无补偿的材料</h3>
+<h3 id="materials-without-compensation">无补偿的材料</h3>
 <p>大多数非金属材料没有可靠的已发布温度系数。应用程序对这些显示 <strong>"ref only"</strong> 徽章 — 它们列出的速度无论温度设置如何都使用。如果您需要在非室温下对这些材料进行精确测量，请进行就地校准并将结果保存为自定义材料。</p>
 <hr />
-<h2 id="_17">照片注释</h2>
+<h2 id="photo-annotation">照片注释</h2>
 <p>成功计算后，点击 <strong>📷 注释照片</strong> 按钮以在您设置的照片上叠加传感器和源标记。</p>
 <p><img alt="照片注释" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="_18">流程</h3>
+<h3 id="flow">流程</h3>
 <ol>
 <li>点击 <strong>注释照片</strong> — 系统相机打开</li>
 <li>拍摄传感器位置的照片</li>
@@ -298,10 +298,10 @@
 </ol>
 <p>注释的照片会自动包含在 PDF 报告中。</p>
 <hr />
-<h2 id="_19">报告</h2>
+<h2 id="reports">报告</h2>
 <p>点击任何结果屏幕上的 <strong>打印结果</strong> 按钮以生成格式化报告。</p>
 <p><img alt="PDF 报告" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="_20">报告内容</h3>
+<h3 id="report-contents">报告内容</h3>
 <ul>
 <li>标题（在设置 → 报告标题中可自定义）</li>
 <li>测量标题和时间戳</li>
@@ -313,23 +313,23 @@
 <li>温度页脚行（如果补偿处于活动状态）</li>
 <li>页码和版权行</li>
 </ul>
-<h3 id="_21">输出格式</h3>
+<h3 id="output-format">输出格式</h3>
 <ul>
 <li><strong>Android</strong>：原生 PDF 生成，保存到您的手机或分享</li>
 <li><strong>iOS</strong>：系统打印对话框 → 保存为 PDF、AirPrint 或分享</li>
 </ul>
-<h3 id="_22">自定义标题</h3>
+<h3 id="customizing-the-header">自定义标题</h3>
 <p>设置 → 报告标题。输入您的公司名称、实验室名称、项目信息或您希望在每个报告顶部的任何内容。</p>
 <hr />
-<h2 id="_23">备份和恢复</h2>
+<h2 id="backup-and-restore">备份和恢复</h2>
 <p>将您所有的自定义材料、收藏夹、设置和历史保存到单个文件中。在设备之间传输。</p>
-<h3 id="_24">备份</h3>
+<h3 id="backup">备份</h3>
 <p>设置 → <strong>备份</strong> → 点击"保存备份文件"。应用程序生成 JSON 文件并打开您手机的共享表。将其保存到您的云驱动器（Google Drive、iCloud、OneDrive）、通过电子邮件发送给自己或以任何您喜欢的方式传输。</p>
-<h3 id="_25">恢复</h3>
+<h3 id="restore">恢复</h3>
 <p>设置 → <strong>恢复</strong> → 从您手机的存储中选择备份文件。应用程序导入自定义材料、收藏夹、历史和设置。</p>
 <p>⚠️ <strong>恢复替换您当前的数据。</strong> 如果您在当前设备上有重要测量，请在从不同备份恢复之前先备份它们。</p>
 <hr />
-<h2 id="_26">设置</h2>
+<h2 id="settings">设置</h2>
 <p>通过右上角的 ⚙ 齿轮图标访问。设置是一个模态，不是选项卡。</p>
 <p><img alt="设置" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +379,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro_1">Pro 功能</h2>
+<h2 id="pro-features">Pro 功能</h2>
 <p>NVH Source Locator 使用<strong>按功能锁定的免费增值模式</strong>：</p>
 <ul>
 <li><strong>免费</strong>：2-Sensor 选项卡完全功能正常，没有限制</li>
 <li><strong>Pro</strong>：所有其他选项卡都有特定输入字段被锁定。当免费用户点击锁定字段时，付费墙会出现</li>
 </ul>
-<h3 id="_27">锁定的内容</h3>
+<h3 id="whats-locked">锁定的内容</h3>
 <p>需要 Pro 的字段分散在：
 - 3-Sensor、3-Sen+、4-Sensor、4-Sen+
 - 3D 和 3D+ 模式
@@ -395,7 +395,7 @@
 - 照片注释</p>
 <p>免费用户可以打开任何选项卡并查看界面。他们只是不能在 Pro 锁定的输入字段中输入值。</p>
 <p><img alt="Pro 锁定字段" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="_28">付费墙</h3>
+<h3 id="the-paywall">付费墙</h3>
 <p><img alt="付费墙" src="../screenshots/07-paywall.png" /></p>
 <p>当免费用户点击锁定字段时，付费墙滑入显示：
 - 带 PRO 徽章的应用图标
@@ -403,9 +403,9 @@
 - 带价格的解锁按钮（默认 $19.99；可能因地区而异）
 - 促销码兑换（仅限 Android — iOS 使用 Apple 的单独 Offer Code 流程）
 - 可选的社区频道促销链接</p>
-<h3 id="pro_2">购买 Pro</h3>
+<h3 id="purchasing-pro">购买 Pro</h3>
 <p>点击任何锁定字段，或在设置中点击 <strong>升级到 Pro</strong>。使用您平台的官方支付系统（Android 上为 Google Play，iOS 上为 Apple App Store）。</p>
-<h3 id="pro_3">在新设备上恢复 Pro</h3>
+<h3 id="restoring-pro-on-a-new-device">在新设备上恢复 Pro</h3>
 <p>如果您在一台设备上购买并想要在另一台设备上获得 Pro（相同帐户）：</p>
 <ol>
 <li>使用您用于购买的<strong>相同</strong> Google 帐户 (Android) 或 Apple ID (iOS) 登录</li>
@@ -413,13 +413,13 @@
 <li>转到设置 → <strong>恢复购买</strong></li>
 <li>应用程序与平台的购买记录进行验证并解锁 Pro</li>
 </ol>
-<h3 id="_29">启动时自动恢复</h3>
+<h3 id="auto-restore-on-launch">启动时自动恢复</h3>
 <p>如果您在 NVH Source Locator 在后台运行时在 Google Play Store 或 App Store 中兑换促销码，返回应用程序会自动检测到新购买并解锁 Pro — 无需手动恢复。</p>
-<h3 id="_30">促销码兑换</h3>
+<h3 id="promo-code-redemption">促销码兑换</h3>
 <p><strong>Android</strong>：付费墙中"有 Google Play 促销码？"按钮打开 Google Play 兑换流程，您的代码已预填充。</p>
 <p><strong>iOS</strong>：App Store 政策 3.1.1 要求通过 Apple 的官方"兑换代码"流程进行兑换。Google Play 按钮在 iOS 上隐藏。请改为在设置中查找"兑换 App Store 代码"。</p>
 <hr />
-<h2 id="help">Help 选项卡和教程</h2>
+<h2 id="help-tab-and-tutorials">Help 选项卡和教程</h2>
 <p><strong>Help</strong> 选项卡包括应用内教程、最佳实践指南和参考信息。</p>
 <p><img alt="Help 选项卡" src="../screenshots/10-help-tab.png" /></p>
 <p>涵盖的主题：
@@ -430,38 +430,38 @@
 - 三角测量和 3D 放置提示
 - 电缆布线和信号质量</p>
 <hr />
-<h2 id="_31">疑难解答</h2>
-<h3 id="_32">计算结果不正确或没有意义</h3>
+<h2 id="troubleshooting">疑难解答</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">计算结果不正确或没有意义</h3>
 <ol>
 <li>检查您的校准。自动填充的 <code>tCal</code> 假定已发布的材料速度 — 实际材料各异。最准确的校准是就地的：点击已知位置，让应用程序导出实际速度。</li>
 <li>检查 <strong>首先检测的传感器</strong> 设置 — 哪个传感器首先听到事件对数学很重要。</li>
 <li>验证您的距离测量。几毫米的误差会传播。</li>
 </ol>
-<h3 id="toast">Toast 说"结果超出范围"</h3>
+<h3 id="toast-says-result-outside-range">Toast 说"结果超出范围"</h3>
 <p>数学表明源不在您的传感器之间。可能的原因：
 - 源实际上在传感器线/平面之外
 - 您的一个输入是错误的
 - 校准速度与现实相差太远</p>
-<h3 id="_33">计算速度提示显示警告颜色</h3>
+<h3 id="calc-speed-hint-shows-a-warning-color">计算速度提示显示警告颜色</h3>
 <p>从您的输入隐含的声速与任何常见材料相差很远（小于 50 m/s 或大于 20,000 m/s）。检查您的输入 — 很可能是 tCal 或距离中的拼写错误。</p>
-<h3 id="materials_1">Materials 选择器显示与预期不同的速度</h3>
+<h3 id="material-picker-shows-different-speeds-than-expected">Materials 选择器显示与预期不同的速度</h3>
 <p>检查设置中的参考温度。如果不是 20 °C，显示的速度反映温度补偿。应用程序在补偿速度下方显示"ref X @ 20°C"，以便您可以验证。</p>
-<h3 id="_34">历史条目重放时结果不同</h3>
+<h3 id="history-entry-replays-with-different-result">历史条目重放时结果不同</h3>
 <p>应用版本 1.75 之前创建的旧历史条目可能未存储温度。如果您在非 20 °C 温度下进行测量，重放将使用当前设置。在重放前手动在设置中设定温度，或重新测量。</p>
-<h3 id="_35">照片注释标记不在我预期的位置</h3>
+<h3 id="photo-annotation-markers-not-where-i-expect">照片注释标记不在我预期的位置</h3>
 <p>标记根据输入几何自动放置。拖动它们以调整。调整标记会更新照片叠加中的源位置 — 但不会更改基础计算结果。</p>
-<h3 id="_36">备份/恢复失败</h3>
+<h3 id="backuprestore-fails">备份/恢复失败</h3>
 <p>确保您使用相同或更新版本的应用程序生成的备份文件。较旧的备份文件可能缺少当前数据字段。</p>
-<h3 id="_37">恢复购买说"未找到购买"</h3>
+<h3 id="restore-purchase-says-no-purchase-found">恢复购买说"未找到购买"</h3>
 <ol>
 <li>验证您已登录到用于购买的相同商店帐户</li>
 <li>验证购买未被退款或过期</li>
 <li>尝试卸载并重新安装应用程序（购买与您的商店帐户绑定，而不是与应用程序安装绑定）</li>
 <li>如果问题仍然存在，请联系 support@evdiag.net</li>
 </ol>
-<h3 id="0">数字输入意外跳到 0</h3>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">数字输入意外跳到 0</h3>
 <p>按设计：当您退出数字字段（在其他地方点击）时，如果它为空、负数或包含非数字文本，它会跳到 0。防止从意外清除的输入产生静默损坏的计算。温度输入是例外（它改为限制在 -40/+200）。</p>
-<h3 id="_38">需要更多帮助</h3>
+<h3 id="need-more-help">需要更多帮助</h3>
 <p>通过以下方式联系 <code>support@evdiag.net</code>：
 - 您的设备型号和操作系统版本
 - 应用版本（设置 → 页面底部）

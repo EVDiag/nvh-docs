@@ -57,14 +57,14 @@
     Documentația a fost tradusă pentru comoditatea dumneavoastră — pentru cea mai precisă terminologie tehnică, versiunea originală în limba engleză este cea oficială.
   </div>
 
-  <h1 id="nvh-source-locator-ghidul-utilizatorului">NVH Source Locator — Ghidul utilizatorului</h1>
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Ghidul utilizatorului</h1>
 <p>NVH Source Locator este un instrument de măsurare pentru localizarea surselor de zgomot și vibrații folosind TDOA (Time Difference of Arrival) din semnalele accelerometrelor capturate pe un osciloscop sau sistem de măsurare.</p>
 <p>Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi <code>quick-reference.md</code>.</p>
 <blockquote>
 <p><strong>Notă despre capturile de ecran</strong>: Acest document folosește capturi de ecran substitutive din aplicație. Înlocuiește fiecare <code>../screenshots/*.png</code> cu capturi de ecran reale ale dispozitivului pe măsură ce le capturezi.</p>
 </blockquote>
 <hr />
-<h2 id="cuprins">Cuprins</h2>
+<h2 id="table-of-contents">Cuprins</h2>
 <ol>
 <li><a href="#how-it-works">Cum funcționează</a></li>
 <li><a href="#before-you-start">Înainte de a începe</a></li>
@@ -83,7 +83,7 @@
 <li><a href="#troubleshooting">Depanare</a></li>
 </ol>
 <hr />
-<h2 id="cum-functioneaza">Cum funcționează</h2>
+<h2 id="how-it-works">Cum funcționează</h2>
 <p>Când o sursă de zgomot emite sunet sau vibrație, unda se deplasează prin material la o viteză cunoscută. Dacă plasezi două sau mai multe accelerometre pe material și măsori când unda ajunge la fiecare, diferența de timp îți spune unde este sursa.</p>
 <p>NVH Source Locator preia:</p>
 <ul>
@@ -98,7 +98,7 @@
 <li><strong>4 senzori</strong> → poziție în spațiul 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="inainte-de-a-incepe">Înainte de a începe</h2>
+<h2 id="before-you-start">Înainte de a începe</h2>
 <p>Vei avea nevoie de:</p>
 <ul>
 <li><strong>Un osciloscop sau sistem de măsurare</strong> care poate afișa diferența de timp dintre canalele accelerometrului în microsecunde (µs)</li>
@@ -108,7 +108,7 @@
 </ul>
 <p><img alt="Ecran principal cu fila 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="filele-principale">Filele principale</h2>
+<h2 id="the-main-tabs">Filele principale</h2>
 <p>Aplicația are file în partea de sus:</p>
 <p><img alt="Bara de file" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +172,50 @@
 </blockquote>
 <p>Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dreapta sus (nu este o filă).</p>
 <hr />
-<h2 id="modul-2-sensor">Modul 2-Sensor</h2>
+<h2 id="2-sensor-mode">Modul 2-Sensor</h2>
 <p>Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.</p>
 <p><img alt="Fila 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="pasul-1-aplica-un-material">Pasul 1: Aplică un material</h3>
+<h3 id="step-1-apply-a-material">Pasul 1: Aplică un material</h3>
 <p>Atinge fila Materials. Alege materialul din care este făcută structura ta (de exemplu, „Aluminiu", „Oțel, Mild (1020)"). Aplicația folosește viteza sunetului cunoscută a materialului pentru a completa automat câmpul de timp de calibrare.</p>
 <p>Dacă materialul structurii tale nu este în listă, poți selecta temporar „Aer" și să suprascrii manual timpul de calibrare în pasul 2.</p>
-<h3 id="pasul-2-introdu-datele-de-calibrare">Pasul 2: Introdu datele de calibrare</h3>
+<h3 id="step-2-enter-calibration-data">Pasul 2: Introdu datele de calibrare</h3>
 <p>În fila 2-Sensor, vei vedea două secțiuni de perechi: <strong>Perechea A–B</strong> și <strong>Perechea A–C</strong> (doar A–B este necesar dacă ai doar 2 senzori).</p>
 <p>Pentru fiecare pereche, completezi:</p>
 <ul>
 <li><strong>Distanța dintre senzori</strong> (<code>d</code>): distanță fizică între senzori, în cm sau inci (setat în Setări)</li>
 <li><strong>Întârziere timp de calibrare</strong> (<code>tCal</code>): timpul necesar unei unde să parcurgă distanța între senzori la viteza sunetului materialului — completat automat când selectezi un material, dar poți suprascrie</li>
 </ul>
-<h3 id="pasul-3-introdu-timpul-evenimentului">Pasul 3: Introdu timpul evenimentului</h3>
+<h3 id="step-3-enter-the-event-time">Pasul 3: Introdu timpul evenimentului</h3>
 <ul>
 <li><strong>Întârziere timp eveniment</strong> (<code>tEvent</code>): diferența de timp între senzorii care detectează evenimentul de zgomot, în microsecunde</li>
 <li><strong>Primul senzor</strong>: care senzor a auzit primul evenimentul (A sau B)</li>
 </ul>
-<h3 id="pasul-4-citeste-rezultatul">Pasul 4: Citește rezultatul</h3>
+<h3 id="step-4-read-the-result">Pasul 4: Citește rezultatul</h3>
 <p>Aplicația afișează poziția sursei ca o distanță de la senzorul A:
 - Rezultat = 0: sursa este la senzorul A
 - Rezultat = distanță: sursa este la senzorul B
 - Rezultat între: sursa este între ei
 - Rezultat în afară: sursa este dincolo de unul dintre senzori (toastul va avertiza)</p>
 <p>Cardul de rezultat arată ambele distanțe (de la A, de la B) și indică care senzor este mai aproape.</p>
-<h3 id="pasul-5-optional-adnoteaza-o-fotografie">Pasul 5 (opțional): Adnotează o fotografie</h3>
+<h3 id="step-5-optional-annotate-a-photo">Pasul 5 (opțional): Adnotează o fotografie</h3>
 <p>Atinge <strong>📷 Adnotează fotografie</strong> pentru a face o fotografie a configurației tale. Aplicația suprapune markeri pentru senzorii A, B și sursă. Util pentru rapoarte.</p>
 <hr />
-<h2 id="modul-3-sensor">Modul 3-Sensor</h2>
+<h2 id="3-sensor-mode">Modul 3-Sensor</h2>
 <p>Localizează o sursă pe un plan 2D folosind trei senzori aranjați într-un triunghi.</p>
 <p><img alt="Fila 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="configurare">Configurare</h3>
+<h3 id="setup">Configurare</h3>
 <p>Plasează trei senzori pe structura ta formând un triunghi. Echilateral, dreptunghic sau scalen — aplicația gestionează toate geometriile.</p>
-<h3 id="introdu-datele">Introdu datele</h3>
+<h3 id="enter-the-data">Introdu datele</h3>
 <p>În secțiunea <strong>Lungimile laturilor triunghiului</strong>, introdu distanța fizică pentru toate cele trei laturi (A–B, A–C, B–C).</p>
 <p>Pentru fiecare pereche (A–B și A–C), introdu:
 - <strong>tCal</strong>: timp de calibrare (auto-completat din material)
 - <strong>tEvent</strong>: diferența de timp măsurată pentru evenimentul de zgomot
 - <strong>Primul senzor</strong>: care a auzit primul</p>
-<h3 id="citeste-rezultatul">Citește rezultatul</h3>
+<h3 id="read-the-result">Citește rezultatul</h3>
 <p>Aplicația afișează poziția sursei ca coordonate X, Y relative la senzorul A (senzorul A în origine, senzorul B pe axa X). Vizualizarea arată toți cei trei senzori și locația sursei.</p>
 <p><img alt="Rezultat triunghi" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="moduri-pro">Moduri Pro+</h2>
+<h2 id="pro-modes">Moduri Pro+</h2>
 <p>Mai multe file avansate oferă rezolvatori supradeterminați și dimensionalitate mai mare:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Aceeași configurare triunghiulară ca 3-Sensor, dar calibrează ȘI măsoară toate cele trei perechi (A–B, A–C, B–C). Rezolvatorul folosește toate cele 3 TDOA-uri într-o ajustare a celor mai mici pătrate — mai robust la zgomotul de măsurare și materialele anizotrope. Reziduurile pe pereche sunt raportate astfel încât să poți detecta măsurători inconsistente.</p>
@@ -224,19 +224,19 @@
 - <strong>A–B</strong> = pereche orizontală (părți stânga/dreapta)
 - <strong>C–D</strong> = pereche verticală (părți sus/jos)</p>
 <p>Rulează perechea A–B mai întâi (orizontal), apoi perechea C–D (vertical). Harta 2D arată intersecția. Fiecare pereche este calibrată separat — util când materialul variază prin structură.</p>
-<h3 id="4-sen-2d-avansat">4-Sen+ (2D Avansat)</h3>
+<h3 id="4-sen-advanced-2d">4-Sen+ (2D Avansat)</h3>
 <p>Patru senzori în orice poziție (nu forțat rectangulară). Asociază A cu fiecare dintre B, C, D și calibrează separat. Rezolvatorul supradeterminat al celor mai mici pătrate face media zgomotului de măsurare pe pereche și raportează reziduurile pe pereche.</p>
 <h3 id="3d">3D</h3>
 <p>Măsurătoare 3D completă cu 4 senzori plasați în spațiul 3D. Introdu coordonatele (X, Y, Z) ale fiecărui senzor, plus timpurile de calibrare și eveniment pentru fiecare pereche (A–B, A–C, A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Ca 3D, dar suportă până la <strong>6 senzori</strong> (A până la F) cu LSQ supradeterminat. Precizie maximă pentru geometrii 3D complexe.</p>
 <hr />
-<h2 id="fila-materials">Fila Materials</h2>
+<h2 id="the-materials-tab">Fila Materials</h2>
 <p>Bibliotecă de materiale inginerești comune cu viteza sunetului cunoscută la 20 °C.</p>
 <p><img alt="Fila Materials" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="lista-materialelor">Lista materialelor</h3>
+<h3 id="material-list">Lista materialelor</h3>
 <p>Lista include aer, fluide, cauciucuri, polimeri, lemne, sticle și metale. Vitezele variază de la ~340 m/s (aer) până la ~13.000 m/s (unele metale la temperatura camerei).</p>
-<h3 id="materiale-incorporate-cu-compensare-de-temperatura">Materiale încorporate cu compensare de temperatură</h3>
+<h3 id="built-in-materials-with-temperature-compensation">Materiale încorporate cu compensare de temperatură</h3>
 <p>14 metale frecvent utilizate includ date despre coeficientul de temperatură. Când Temperatura de referință din Setări diferă de 20 °C, aplicația ajustează automat vitezele acestor materiale:</p>
 <ul>
 <li>Aluminiu</li>
@@ -256,20 +256,20 @@
 </ul>
 <p>Materialele cu compensare arată două valori în selector: <strong>viteza compensată</strong> (mare, proeminentă) și <strong>viteza de referință la 20 °C</strong> (mică, gri dedesubt).</p>
 <p>Materialele fără compensare arată <strong>„ref only"</strong> cu italic — viteza lor listată este folosită așa cum este, indiferent de temperatură.</p>
-<h3 id="materiale-personalizate">Materiale personalizate</h3>
+<h3 id="custom-materials">Materiale personalizate</h3>
 <p>Dacă măsori o calibrare în fila 2-Sensor, poți salva rezultatul ca material personalizat. După o măsurătoare 2-sensor reușită, caută opțiunea de a salva viteza derivată sub un nume la alegerea ta.</p>
 <p>Materialele personalizate stochează viteza măsurată in-situ; ele nu aplică niciodată compensarea temperaturii (viteza a fost deja măsurată la temperatura testului).</p>
-<h3 id="favorite">Favorite</h3>
+<h3 id="favorites">Favorite</h3>
 <p>Atinge steaua de lângă orice material pentru a-l marca ca favorit. Favoritele apar în partea de sus a listei pentru acces rapid.</p>
-<h3 id="cautare">Căutare</h3>
+<h3 id="search">Căutare</h3>
 <p>Folosește bara de căutare din partea de sus pentru a filtra materialele după nume. Căutarea potrivește atât numele canonice englezești, cât și numele de afișare traduse.</p>
 <hr />
-<h2 id="compensarea-temperaturii">Compensarea temperaturii</h2>
+<h2 id="temperature-compensation">Compensarea temperaturii</h2>
 <p>Viteza sunetului în materiale se schimbă cu temperatura. În testarea NVH auto, asta contează: un compartiment motor la 80 °C, o cabină rece la -10 °C sau o zonă a galeriei de eșapament la 200 °C se comportă diferit de condițiile de laborator la temperatura camerei.</p>
-<h3 id="setarea-temperaturii">Setarea temperaturii</h3>
+<h3 id="setting-the-temperature">Setarea temperaturii</h3>
 <p>Deschide Setări (pictogramă ⚙) → Temperatură de referință. Introdu temperatura mediului tău de testare în °C (interval -40 la +200).</p>
 <p><img alt="Panou Setări" src="../screenshots/06-settings.png" /></p>
-<h3 id="ce-se-intampla-cand-temperatura-20-c">Ce se întâmplă când temperatura ≠ 20 °C</h3>
+<h3 id="what-happens-when-temperature-20-c">Ce se întâmplă când temperatura ≠ 20 °C</h3>
 <ul>
 <li>Câmpurile de timp de calibrare se autocompletează cu viteza ajustată la temperatură</li>
 <li>Selectorul Materials afișează proeminent viteza ajustată</li>
@@ -278,16 +278,16 @@
 <li>Intrările salvate ale istoricului înregistrează temperatura activă</li>
 <li>Rapoartele includ o linie de subsol: <em>„Temperatura de referință: 60 °C, compensare aplicată"</em></li>
 </ul>
-<h3 id="resetare-la-lansarea-aplicatiei">Resetare la lansarea aplicației</h3>
+<h3 id="reset-on-app-launch">Resetare la lansarea aplicației</h3>
 <p>Temperatura de referință <strong>se resetează întotdeauna la 20 °C</strong> când lansezi aplicația. Aceasta împiedică setările învechite de la o sesiune anterioară de măsurare să afecteze tăcut munca de astăzi. O mică notă cu italic în Setări îți reamintește acest comportament.</p>
 <p>Dacă vrei să redai o măsurătoare istorică la temperatura sa originală, doar atinge intrarea — temperatura este restaurată automat.</p>
-<h3 id="materiale-fara-compensare">Materiale fără compensare</h3>
+<h3 id="materials-without-compensation">Materiale fără compensare</h3>
 <p>Majoritatea materialelor non-metalice nu au coeficienți de temperatură publicați fiabili. Aplicația afișează o insignă <strong>„ref only"</strong> pentru acestea — viteza lor listată este folosită indiferent de setarea temperaturii. Dacă ai nevoie de măsurători precise la temperaturi non-camerale pentru aceste materiale, efectuează o calibrare in-situ și salvează rezultatul ca material personalizat.</p>
 <hr />
-<h2 id="adnotarea-fotografiei">Adnotarea fotografiei</h2>
+<h2 id="photo-annotation">Adnotarea fotografiei</h2>
 <p>După un calcul reușit, atinge butonul <strong>📷 Adnotează fotografie</strong> pentru a suprapune markeri de senzor și sursă pe o fotografie a configurației tale.</p>
 <p><img alt="Adnotarea fotografiei" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flux">Flux</h3>
+<h3 id="flow">Flux</h3>
 <ol>
 <li>Atinge <strong>Adnotează fotografie</strong> — camera sistemului se deschide</li>
 <li>Fă o fotografie a plasării senzorilor</li>
@@ -298,10 +298,10 @@
 </ol>
 <p>Fotografia adnotată este inclusă automat în rapoartele PDF.</p>
 <hr />
-<h2 id="rapoarte">Rapoarte</h2>
+<h2 id="reports">Rapoarte</h2>
 <p>Atinge butonul <strong>Tipărește rezultat</strong> pe orice ecran de rezultat pentru a genera un raport formatat.</p>
 <p><img alt="Raport PDF" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="continutul-raportului">Conținutul raportului</h3>
+<h3 id="report-contents">Conținutul raportului</h3>
 <ul>
 <li>Antet (personalizabil în Setări → Antet raport)</li>
 <li>Titlul măsurătorii și marca temporală</li>
@@ -313,23 +313,23 @@
 <li>Linia subsolului pentru temperatură (dacă compensarea era activă)</li>
 <li>Numărul paginii și linia de credit</li>
 </ul>
-<h3 id="format-de-iesire">Format de ieșire</h3>
+<h3 id="output-format">Format de ieșire</h3>
 <ul>
 <li><strong>Android</strong>: generare nativă PDF, salvează pe telefon sau partajează</li>
 <li><strong>iOS</strong>: dialog de tipărire al sistemului → salvează ca PDF, AirPrint sau partajează</li>
 </ul>
-<h3 id="personalizarea-antetului">Personalizarea antetului</h3>
+<h3 id="customizing-the-header">Personalizarea antetului</h3>
 <p>Setări → Antet raport. Introdu numele companiei tale, numele laboratorului, informații despre proiect sau orice vrei în partea de sus a fiecărui raport.</p>
 <hr />
-<h2 id="backup-si-restaurare">Backup și restaurare</h2>
+<h2 id="backup-and-restore">Backup și restaurare</h2>
 <p>Salvează toate materialele tale personalizate, favoritele, setările și istoricul într-un singur fișier. Transfer între dispozitive.</p>
 <h3 id="backup">Backup</h3>
 <p>Setări → <strong>Backup</strong> → atinge „Salvează fișier backup". Aplicația generează un fișier JSON și deschide fișa de partajare a telefonului tău. Salvează-l pe unitatea ta cloud (Google Drive, iCloud, OneDrive), trimite-l prin e-mail ție însuți sau transferă-l în orice mod dorești.</p>
-<h3 id="restaurare">Restaurare</h3>
+<h3 id="restore">Restaurare</h3>
 <p>Setări → <strong>Restaurare</strong> → alege fișierul de backup din stocarea telefonului tău. Aplicația importă materiale personalizate, favorite, istoric și setări.</p>
 <p>⚠️ <strong>Restaurarea înlocuiește datele tale actuale.</strong> Dacă ai măsurători importante pe dispozitivul actual, fă mai întâi backup pentru ele înainte de a restaura dintr-un backup diferit.</p>
 <hr />
-<h2 id="setari">Setări</h2>
+<h2 id="settings">Setări</h2>
 <p>Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări este un modal, nu o filă.</p>
 <p><img alt="Setări" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +379,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="functii-pro">Funcții Pro</h2>
+<h2 id="pro-features">Funcții Pro</h2>
 <p>NVH Source Locator folosește un <strong>model freemium cu blocare per funcție</strong>:</p>
 <ul>
 <li><strong>Gratuit</strong>: Fila 2-Sensor este complet funcțională fără limite</li>
 <li><strong>Pro</strong>: Toate celelalte file au câmpuri specifice de intrare blocate. Paywall-ul apare când un utilizator gratuit atinge un câmp blocat</li>
 </ul>
-<h3 id="ce-este-blocat">Ce este blocat</h3>
+<h3 id="whats-locked">Ce este blocat</h3>
 <p>Câmpurile necesare Pro sunt împrăștiate prin:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - Moduri 3D și 3D+
@@ -395,7 +395,7 @@
 - Adnotarea fotografiei</p>
 <p>Un utilizator gratuit poate DESCHIDE orice filă și VEDEA interfața. Pur și simplu nu poate introduce valori în câmpurile de intrare blocate de Pro.</p>
 <p><img alt="Câmp blocat de Pro" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="paywall-ul">Paywall-ul</h3>
+<h3 id="the-paywall">Paywall-ul</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Când un utilizator gratuit atinge un câmp blocat, paywall-ul glisează arătând:
 - Pictograma aplicației cu insignă PRO
@@ -403,9 +403,9 @@
 - Buton de deblocare cu preț ($19,99 implicit; poate varia în funcție de regiune)
 - Răscumpărare cod promoțional (doar Android — iOS folosește fluxul separat Offer Code al Apple)
 - Link promoțional opțional către canalele comunității</p>
-<h3 id="cumpararea-pro">Cumpărarea Pro</h3>
+<h3 id="purchasing-pro">Cumpărarea Pro</h3>
 <p>Atinge orice câmp blocat, sau atinge <strong>Upgrade la Pro</strong> în Setări. Folosește sistemul oficial de plată al platformei tale (Google Play pe Android, Apple App Store pe iOS).</p>
-<h3 id="restaurarea-pro-pe-un-dispozitiv-nou">Restaurarea Pro pe un dispozitiv nou</h3>
+<h3 id="restoring-pro-on-a-new-device">Restaurarea Pro pe un dispozitiv nou</h3>
 <p>Dacă ai cumpărat pe un dispozitiv și vrei Pro pe altul (același cont):</p>
 <ol>
 <li>Conectează-te la <strong>același</strong> cont Google (Android) sau Apple ID (iOS) pe care l-ai folosit pentru cumpărare</li>
@@ -413,13 +413,13 @@
 <li>Mergi la Setări → <strong>Restaurează cumpărarea</strong></li>
 <li>Aplicația verifică cu înregistrările de cumpărare ale platformei și deblochează Pro</li>
 </ol>
-<h3 id="auto-restaurare-la-lansare">Auto-restaurare la lansare</h3>
+<h3 id="auto-restore-on-launch">Auto-restaurare la lansare</h3>
 <p>Dacă răscumperi un cod promoțional în Google Play Store sau App Store în timp ce NVH Source Locator rulează în fundal, revenirea la aplicație detectează automat noua cumpărare și deblochează Pro — nu este necesară Restaurare manuală.</p>
-<h3 id="rascumparare-cod-promotional">Răscumpărare cod promoțional</h3>
+<h3 id="promo-code-redemption">Răscumpărare cod promoțional</h3>
 <p><strong>Android</strong>: un buton „Ai un cod promoțional Google Play?" în paywall deschide fluxul de răscumpărare Google Play cu codul tău precompletat.</p>
 <p><strong>iOS</strong>: Politica App Store 3.1.1 cere răscumpărare prin fluxul oficial „Răscumpără cod" al Apple. Butonul Google Play este ascuns pe iOS. Caută „Răscumpără cod App Store" în Setări în schimb.</p>
 <hr />
-<h2 id="fila-help-si-tutoriale">Fila Help și tutoriale</h2>
+<h2 id="help-tab-and-tutorials">Fila Help și tutoriale</h2>
 <p>Fila <strong>Help</strong> include tutoriale în aplicație, ghiduri de cele mai bune practici și informații de referință.</p>
 <p><img alt="Fila Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Subiecte acoperite:
@@ -430,38 +430,38 @@
 - Sfaturi pentru triangulare și plasări 3D
 - Direcționarea cablurilor și calitatea semnalului</p>
 <hr />
-<h2 id="depanare">Depanare</h2>
-<h3 id="rezultatul-calculului-este-gresit-sau-nu-are-sens">Rezultatul calculului este greșit sau nu are sens</h3>
+<h2 id="troubleshooting">Depanare</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">Rezultatul calculului este greșit sau nu are sens</h3>
 <ol>
 <li>Verifică-ți calibrarea. <code>tCal</code> autocompletat presupune viteza publicată a materialului — materialele reale variază. Cea mai precisă calibrare este in-situ: atinge o locație cunoscută și lasă aplicația să deducă viteza reală.</li>
 <li>Verifică setarea <strong>Primul senzor</strong> — care senzor a auzit primul evenimentul contează pentru matematică.</li>
 <li>Verifică-ți măsurătorile de distanță. Erorile de câțiva mm se propagă.</li>
 </ol>
-<h3 id="toast-spune-rezultat-in-afara-intervalului">Toast spune „Rezultat în afara intervalului"</h3>
+<h3 id="toast-says-result-outside-range">Toast spune „Rezultat în afara intervalului"</h3>
 <p>Matematica spune că sursa nu este între senzorii tăi. Cauze posibile:
 - Sursa este de fapt în afara liniei/planului senzorilor
 - Una dintre intrările tale este greșită
 - Viteza de calibrare este prea departe de realitate</p>
-<h3 id="indiciul-vitezei-de-calcul-afiseaza-o-culoare-de-avertisment">Indiciul vitezei de calcul afișează o culoare de avertisment</h3>
+<h3 id="calc-speed-hint-shows-a-warning-color">Indiciul vitezei de calcul afișează o culoare de avertisment</h3>
 <p>Viteza sunetului implicită din intrările tale este departe de orice material comun (sub 50 m/s sau peste 20.000 m/s). Verifică-ți intrările — probabil o eroare de tipar în tCal sau distanță.</p>
-<h3 id="selectorul-materials-arata-viteze-diferite-decat-asteptat">Selectorul Materials arată viteze diferite decât așteptat</h3>
+<h3 id="material-picker-shows-different-speeds-than-expected">Selectorul Materials arată viteze diferite decât așteptat</h3>
 <p>Verifică Temperatura de referință în Setări. Dacă nu este 20 °C, vitezele afișate reflectă compensarea temperaturii. Aplicația afișează „ref X @ 20°C" sub vitezele compensate astfel încât să poți verifica.</p>
-<h3 id="intrarea-din-istoric-se-reda-cu-un-rezultat-diferit">Intrarea din istoric se redă cu un rezultat diferit</h3>
+<h3 id="history-entry-replays-with-different-result">Intrarea din istoric se redă cu un rezultat diferit</h3>
 <p>Intrările vechi din istoric create înainte de versiunea 1.75 a aplicației ar putea să nu fi stocat temperatura. Dacă ai făcut măsurătoarea la o temperatură non-20 °C, redarea va folosi setarea actuală. Setează manual temperatura în Setări înainte de redare, SAU remăsoară.</p>
-<h3 id="markerii-de-adnotare-a-fotografiei-nu-sunt-acolo-unde-ma-astept">Markerii de adnotare a fotografiei nu sunt acolo unde mă aștept</h3>
+<h3 id="photo-annotation-markers-not-where-i-expect">Markerii de adnotare a fotografiei nu sunt acolo unde mă aștept</h3>
 <p>Markerii se plasează automat pe baza geometriei de intrare. Trage-i pentru a ajusta. Ajustarea markerilor actualizează poziția sursei în suprapunerea fotografiei — dar NU modifică rezultatul de calcul subiacent.</p>
-<h3 id="backuprestaurare-esueaza">Backup/Restaurare eșuează</h3>
+<h3 id="backuprestore-fails">Backup/Restaurare eșuează</h3>
 <p>Asigură-te că folosești un fișier de backup generat de aceeași sau o versiune mai nouă a aplicației. Fișierele backup mai vechi ar putea lipsi de câmpuri actuale de date.</p>
-<h3 id="restaureaza-cumpararea-spune-nicio-cumparare-gasita">Restaurează cumpărarea spune „nicio cumpărare găsită"</h3>
+<h3 id="restore-purchase-says-no-purchase-found">Restaurează cumpărarea spune „nicio cumpărare găsită"</h3>
 <ol>
 <li>Verifică că ești conectat la același cont de magazin pe care l-ai folosit pentru cumpărare</li>
 <li>Verifică că cumpărarea nu a fost rambursată sau expirată</li>
 <li>Încearcă să dezinstalezi și să reinstalezi aplicația (cumpărarea este legată de contul de magazin, nu de instalarea aplicației)</li>
 <li>Contactează support@evdiag.net dacă persistă</li>
 </ol>
-<h3 id="intrarea-numerica-se-schimba-neasteptat-la-0">Intrarea numerică se schimbă neașteptat la 0</h3>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">Intrarea numerică se schimbă neașteptat la 0</h3>
 <p>Prin design: când părăsești un câmp numeric (atingi în altă parte), dacă este gol, negativ sau conține text non-numeric, se schimbă la 0. Previne calcule tăcut stricate din intrări șterse accidental. Intrarea de temperatură este exceptată (în schimb se limitează la -40/+200).</p>
-<h3 id="am-nevoie-de-mai-mult-ajutor">Am nevoie de mai mult ajutor</h3>
+<h3 id="need-more-help">Am nevoie de mai mult ajutor</h3>
 <p>Contactează <code>support@evdiag.net</code> cu:
 - Modelul dispozitivului tău și versiunea OS
 - Versiunea aplicației (Setări → partea de jos a paginii)

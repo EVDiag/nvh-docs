@@ -57,14 +57,14 @@
     Dokumentacija prevedena radi vaše udobnosti — za najtočniju tehničku terminologiju mjerodavna je izvorna engleska verzija.
   </div>
 
-  <h1 id="nvh-source-locator-korisnicki-prirucnik">NVH Source Locator — Korisnički priručnik</h1>
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Korisnički priručnik</h1>
 <p>NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću TDOA (Time Difference of Arrival) iz signala akcelerometra zabilježenih na osciloskopu ili mjernom sustavu.</p>
 <p>Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte <code>quick-reference.md</code>.</p>
 <blockquote>
 <p><strong>Napomena o snimkama zaslona</strong>: Ovaj dokument koristi rezervirane snimke zaslona iz aplikacije. Zamijenite svaki <code>../screenshots/*.png</code> stvarnim snimkama zaslona uređaja kako ih budete snimali.</p>
 </blockquote>
 <hr />
-<h2 id="sadrzaj">Sadržaj</h2>
+<h2 id="table-of-contents">Sadržaj</h2>
 <ol>
 <li><a href="#how-it-works">Kako radi</a></li>
 <li><a href="#before-you-start">Prije nego što počnete</a></li>
@@ -83,7 +83,7 @@
 <li><a href="#troubleshooting">Rješavanje problema</a></li>
 </ol>
 <hr />
-<h2 id="kako-radi">Kako radi</h2>
+<h2 id="how-it-works">Kako radi</h2>
 <p>Kad izvor buke emitira zvuk ili vibraciju, val putuje kroz materijal poznatom brzinom. Ako postavite dva ili više akcelerometara na materijal i izmjerite kada val stigne do svakog od njih, vremenska razlika vam govori gdje je izvor.</p>
 <p>NVH Source Locator uzima:</p>
 <ul>
@@ -98,7 +98,7 @@
 <li><strong>4 senzora</strong> → položaj u 3D prostoru (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="prije-nego-sto-pocnete">Prije nego što počnete</h2>
+<h2 id="before-you-start">Prije nego što počnete</h2>
 <p>Trebat će vam:</p>
 <ul>
 <li><strong>Osciloskop ili mjerni sustav</strong> koji vam može pokazati vremensku razliku između kanala akcelerometra u mikrosekundama (µs)</li>
@@ -108,7 +108,7 @@
 </ul>
 <p><img alt="Početni zaslon s karticom 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="glavne-kartice">Glavne kartice</h2>
+<h2 id="the-main-tabs">Glavne kartice</h2>
 <p>Aplikacija ima kartice na vrhu:</p>
 <p><img alt="Traka kartica" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +172,50 @@
 </blockquote>
 <p>Postavke su dostupne putem ikone zupčanika ⚙ u gornjem desnom kutu (nije kartica).</p>
 <hr />
-<h2 id="nacin-2-sensor">Način 2-Sensor</h2>
+<h2 id="2-sensor-mode">Način 2-Sensor</h2>
 <p>Najjednostavnije mjerenje: lociranje izvora duž linije između dva akcelerometra.</p>
 <p><img alt="Kartica 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="korak-1-primijenite-materijal">Korak 1: Primijenite materijal</h3>
+<h3 id="step-1-apply-a-material">Korak 1: Primijenite materijal</h3>
 <p>Dodirnite karticu Materials. Odaberite materijal od kojeg je vaša struktura napravljena (npr. „Aluminij", „Čelik, Mild (1020)"). Aplikacija koristi poznatu brzinu zvuka materijala za automatsko popunjavanje polja vremena kalibracije.</p>
 <p>Ako materijal vaše strukture nije na popisu, možete privremeno odabrati „Zrak" i ručno prepisati vrijeme kalibracije u koraku 2.</p>
-<h3 id="korak-2-unesite-podatke-kalibracije">Korak 2: Unesite podatke kalibracije</h3>
+<h3 id="step-2-enter-calibration-data">Korak 2: Unesite podatke kalibracije</h3>
 <p>Na kartici 2-Sensor vidjet ćete dvije sekcije parova: <strong>Par A–B</strong> i <strong>Par A–C</strong> (potreban je samo A–B ako imate samo 2 senzora).</p>
 <p>Za svaki par popunjavate:</p>
 <ul>
 <li><strong>Razmak senzora</strong> (<code>d</code>): fizička udaljenost između senzora, u cm ili inčima (postavljeno u Postavkama)</li>
 <li><strong>Kašnjenje vremena kalibracije</strong> (<code>tCal</code>): vrijeme potrebno valu da putuje između senzora pri brzini zvuka materijala — automatski popunjeno kada odaberete materijal, ali možete prepisati</li>
 </ul>
-<h3 id="korak-3-unesite-vrijeme-dogaaja">Korak 3: Unesite vrijeme događaja</h3>
+<h3 id="step-3-enter-the-event-time">Korak 3: Unesite vrijeme događaja</h3>
 <ul>
 <li><strong>Kašnjenje vremena događaja</strong> (<code>tEvent</code>): vremenska razlika između senzora koji detektiraju događaj buke, u mikrosekundama</li>
 <li><strong>Prvi senzor</strong>: koji senzor je prvi čuo događaj (A ili B)</li>
 </ul>
-<h3 id="korak-4-procitajte-rezultat">Korak 4: Pročitajte rezultat</h3>
+<h3 id="step-4-read-the-result">Korak 4: Pročitajte rezultat</h3>
 <p>Aplikacija prikazuje položaj izvora kao udaljenost od senzora A:
 - Rezultat = 0: izvor je kod senzora A
 - Rezultat = udaljenost: izvor je kod senzora B
 - Rezultat između: izvor je između njih
 - Rezultat izvana: izvor je iza jednog od senzora (toast će upozoriti)</p>
 <p>Kartica rezultata prikazuje obje udaljenosti (od A, od B) i pokazuje koji senzor je bliži.</p>
-<h3 id="korak-5-neobavezno-oznacite-fotografiju">Korak 5 (neobavezno): Označite fotografiju</h3>
+<h3 id="step-5-optional-annotate-a-photo">Korak 5 (neobavezno): Označite fotografiju</h3>
 <p>Dodirnite <strong>📷 Označi fotografiju</strong> kako biste fotografirali svoju postavku. Aplikacija postavlja oznake za senzore A, B i izvor. Korisno za izvješća.</p>
 <hr />
-<h2 id="nacin-3-sensor">Način 3-Sensor</h2>
+<h2 id="3-sensor-mode">Način 3-Sensor</h2>
 <p>Locira izvor na 2D ravnini koristeći tri senzora raspoređena u trokut.</p>
 <p><img alt="Kartica 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="postavljanje">Postavljanje</h3>
+<h3 id="setup">Postavljanje</h3>
 <p>Postavite tri senzora na svoju strukturu tvoreći trokut. Jednakostranični, pravokutni ili raznostranični — aplikacija obrađuje sve geometrije.</p>
-<h3 id="unesite-podatke">Unesite podatke</h3>
+<h3 id="enter-the-data">Unesite podatke</h3>
 <p>U sekciji <strong>Duljine stranica trokuta</strong> unesite fizičku udaljenost za sve tri stranice (A–B, A–C, B–C).</p>
 <p>Za svaki par (A–B i A–C) unesite:
 - <strong>tCal</strong>: vrijeme kalibracije (automatski se popunjava iz materijala)
 - <strong>tEvent</strong>: izmjerena vremenska razlika za događaj buke
 - <strong>Prvi senzor</strong>: koji je prvi čuo</p>
-<h3 id="procitajte-rezultat">Pročitajte rezultat</h3>
+<h3 id="read-the-result">Pročitajte rezultat</h3>
 <p>Aplikacija prikazuje položaj izvora kao koordinate X, Y u odnosu na senzor A (senzor A u ishodištu, senzor B na X osi). Vizualizacija prikazuje sva tri senzora i lokaciju izvora.</p>
 <p><img alt="Rezultat trokuta" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-nacini">Pro+ načini</h2>
+<h2 id="pro-modes">Pro+ načini</h2>
 <p>Nekoliko naprednih kartica nudi preodređene rješavače i veću dimenzionalnost:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Ista postavka trokuta kao 3-Sensor, ali kalibrirajte I mjerite sva tri para (A–B, A–C, B–C). Rješavač koristi sva 3 TDOA u prilagodbi najmanjih kvadrata — robustnije na mjernu buku i anizotropne materijale. Reziduali po paru se prijavljuju kako biste mogli uočiti nedosljedna mjerenja.</p>
@@ -224,19 +224,19 @@
 - <strong>A–B</strong> = horizontalni par (lijeve/desne strane)
 - <strong>C–D</strong> = vertikalni par (gornja/donja strane)</p>
 <p>Najprije pokrenite par A–B (horizontalni), zatim par C–D (vertikalni). 2D karta prikazuje sjecište. Svaki par se kalibrira odvojeno — korisno kada materijal varira preko strukture.</p>
-<h3 id="4-sen-napredni-2d">4-Sen+ (Napredni 2D)</h3>
+<h3 id="4-sen-advanced-2d">4-Sen+ (Napredni 2D)</h3>
 <p>Četiri senzora u bilo kojem položaju (nije forsirana pravokutnost). Uparite A sa svakim od B, C, D i kalibrirajte odvojeno. Preodređeni rješavač najmanjih kvadrata uprosječuje mjernu buku po paru i prijavljuje rezidualne vrijednosti po paru.</p>
 <h3 id="3d">3D</h3>
 <p>Potpuno 3D mjerenje s 4 senzora smještena u 3D prostoru. Unesite koordinate (X, Y, Z) svakog senzora, plus vremena kalibracije i događaja za svaki par (A–B, A–C, A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Kao 3D, ali podržava do <strong>6 senzora</strong> (A do F) s preodređenim LSQ. Maksimalna preciznost za složene 3D geometrije.</p>
 <hr />
-<h2 id="kartica-materials">Kartica Materials</h2>
+<h2 id="the-materials-tab">Kartica Materials</h2>
 <p>Knjižnica uobičajenih inženjerskih materijala s poznatom brzinom zvuka na 20 °C.</p>
 <p><img alt="Kartica Materials" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="popis-materijala">Popis materijala</h3>
+<h3 id="material-list">Popis materijala</h3>
 <p>Popis uključuje zrak, tekućine, gume, polimere, drvo, stakla i metale. Brzine se kreću od ~340 m/s (zrak) do ~13 000 m/s (neki metali na sobnoj temperaturi).</p>
-<h3 id="ugraeni-materijali-s-temperaturnom-kompenzacijom">Ugrađeni materijali s temperaturnom kompenzacijom</h3>
+<h3 id="built-in-materials-with-temperature-compensation">Ugrađeni materijali s temperaturnom kompenzacijom</h3>
 <p>14 često korištenih metala uključuje podatke o temperaturnom koeficijentu. Kada se Referentna temperatura u Postavkama razlikuje od 20 °C, aplikacija automatski prilagođava brzine ovih materijala:</p>
 <ul>
 <li>Aluminij</li>
@@ -256,20 +256,20 @@
 </ul>
 <p>Materijali s kompenzacijom prikazuju dvije vrijednosti u izborniku: <strong>kompenziranu brzinu</strong> (velika, istaknuta) i <strong>referentnu brzinu na 20 °C</strong> (mala, siva ispod).</p>
 <p>Materijali bez kompenzacije prikazuju <strong>„ref only"</strong> kurzivom — njihova navedena brzina koristi se onakva kakva je, bez obzira na temperaturu.</p>
-<h3 id="prilagoeni-materijali">Prilagođeni materijali</h3>
+<h3 id="custom-materials">Prilagođeni materijali</h3>
 <p>Ako izmjerite kalibraciju na kartici 2-Sensor, možete spremiti rezultat kao prilagođeni materijal. Nakon uspješnog 2-sensor mjerenja, potražite opciju spremanja izvedene brzine pod imenom po vašem izboru.</p>
 <p>Prilagođeni materijali pohranjuju in-situ izmjerenu brzinu; nikada ne primjenjuju temperaturnu kompenzaciju (brzina je već izmjerena pri temperaturi testa).</p>
-<h3 id="favoriti">Favoriti</h3>
+<h3 id="favorites">Favoriti</h3>
 <p>Dodirnite zvjezdicu uz bilo koji materijal kako biste ga označili kao favorit. Favoriti se pojavljuju na vrhu popisa za brzi pristup.</p>
-<h3 id="pretraga">Pretraga</h3>
+<h3 id="search">Pretraga</h3>
 <p>Koristite traku za pretraživanje na vrhu za filtriranje materijala prema imenu. Pretraga odgovara i engleskim kanonskim imenima i prevedenim prikaznim imenima.</p>
 <hr />
-<h2 id="temperaturna-kompenzacija">Temperaturna kompenzacija</h2>
+<h2 id="temperature-compensation">Temperaturna kompenzacija</h2>
 <p>Brzina zvuka u materijalima mijenja se s temperaturom. U automobilskom NVH testiranju to je važno: prostor motora na 80 °C, hlađena kabina na -10 °C ili područje ispušne grane na 200 °C svi se ponašaju drugačije od laboratorijskih uvjeta na sobnoj temperaturi.</p>
-<h3 id="postavljanje-temperature">Postavljanje temperature</h3>
+<h3 id="setting-the-temperature">Postavljanje temperature</h3>
 <p>Otvorite Postavke (ikona ⚙) → Referentna temperatura. Unesite temperaturu svog testnog okruženja u °C (raspon -40 do +200).</p>
 <p><img alt="Panel Postavke" src="../screenshots/06-settings.png" /></p>
-<h3 id="sto-se-dogaa-kada-je-temperatura-20-c">Što se događa kada je temperatura ≠ 20 °C</h3>
+<h3 id="what-happens-when-temperature-20-c">Što se događa kada je temperatura ≠ 20 °C</h3>
 <ul>
 <li>Polja vremena kalibracije automatski se popunjavaju brzinom prilagođenom temperaturi</li>
 <li>Izbornik Materials istaknuto prikazuje prilagođenu brzinu</li>
@@ -278,16 +278,16 @@
 <li>Spremljeni unosi povijesti bilježe aktivnu temperaturu</li>
 <li>Izvješća uključuju liniju podnožja: <em>„Referentna temperatura: 60 °C, primijenjena kompenzacija"</em></li>
 </ul>
-<h3 id="resetiranje-pri-pokretanju-aplikacije">Resetiranje pri pokretanju aplikacije</h3>
+<h3 id="reset-on-app-launch">Resetiranje pri pokretanju aplikacije</h3>
 <p>Referentna temperatura <strong>uvijek se resetira na 20 °C</strong> kada pokrenete aplikaciju. To sprječava da zastarjele postavke iz prošle sesije mjerenja tiho utječu na današnji rad. Mala kurzivna napomena u Postavkama vas podsjeća na ovo ponašanje.</p>
 <p>Ako želite reproducirati povijesno mjerenje na njegovoj originalnoj temperaturi, samo dodirnite unos — temperatura se automatski vraća.</p>
-<h3 id="materijali-bez-kompenzacije">Materijali bez kompenzacije</h3>
+<h3 id="materials-without-compensation">Materijali bez kompenzacije</h3>
 <p>Većina nemetalnih materijala nema pouzdane objavljene temperaturne koeficijente. Aplikacija za njih prikazuje značku <strong>„ref only"</strong> — njihova navedena brzina koristi se bez obzira na postavku temperature. Ako trebate točna mjerenja na ne-sobnim temperaturama za ove materijale, izvršite in-situ kalibraciju i spremite rezultat kao prilagođeni materijal.</p>
 <hr />
-<h2 id="oznacavanje-fotografije">Označavanje fotografije</h2>
+<h2 id="photo-annotation">Označavanje fotografije</h2>
 <p>Nakon uspješnog izračuna, dodirnite gumb <strong>📷 Označi fotografiju</strong> kako biste postavili oznake senzora i izvora na fotografiju svoje postavke.</p>
 <p><img alt="Označavanje fotografije" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="tijek">Tijek</h3>
+<h3 id="flow">Tijek</h3>
 <ol>
 <li>Dodirnite <strong>Označi fotografiju</strong> — otvara se sistemska kamera</li>
 <li>Snimite fotografiju postavljanja senzora</li>
@@ -298,10 +298,10 @@
 </ol>
 <p>Označena fotografija automatski se uključuje u PDF izvješća.</p>
 <hr />
-<h2 id="izvjesca">Izvješća</h2>
+<h2 id="reports">Izvješća</h2>
 <p>Dodirnite gumb <strong>Ispiši rezultat</strong> na bilo kojem zaslonu rezultata za generiranje formatiranog izvješća.</p>
 <p><img alt="PDF izvješće" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="sadrzaj-izvjesca">Sadržaj izvješća</h3>
+<h3 id="report-contents">Sadržaj izvješća</h3>
 <ul>
 <li>Zaglavlje (prilagodljivo u Postavke → Zaglavlje izvješća)</li>
 <li>Naslov mjerenja i vremenska oznaka</li>
@@ -313,23 +313,23 @@
 <li>Linija podnožja s temperaturom (ako je kompenzacija bila aktivna)</li>
 <li>Broj stranice i linija zahvale</li>
 </ul>
-<h3 id="format-izlaza">Format izlaza</h3>
+<h3 id="output-format">Format izlaza</h3>
 <ul>
 <li><strong>Android</strong>: nativna generacija PDF-a, spremite na svoj telefon ili podijelite</li>
 <li><strong>iOS</strong>: sistemski dijalog ispisa → spremite kao PDF, AirPrint ili podijelite</li>
 </ul>
-<h3 id="prilagodba-zaglavlja">Prilagodba zaglavlja</h3>
+<h3 id="customizing-the-header">Prilagodba zaglavlja</h3>
 <p>Postavke → Zaglavlje izvješća. Unesite ime svoje tvrtke, ime laboratorija, podatke projekta ili bilo što što želite na vrhu svakog izvješća.</p>
 <hr />
-<h2 id="sigurnosna-kopija-i-vracanje">Sigurnosna kopija i vraćanje</h2>
+<h2 id="backup-and-restore">Sigurnosna kopija i vraćanje</h2>
 <p>Spremite sve svoje prilagođene materijale, favorite, postavke i povijest u jednu datoteku. Prijenos između uređaja.</p>
-<h3 id="sigurnosna-kopija">Sigurnosna kopija</h3>
+<h3 id="backup">Sigurnosna kopija</h3>
 <p>Postavke → <strong>Sigurnosna kopija</strong> → dodirnite „Spremi datoteku sigurnosne kopije". Aplikacija generira JSON datoteku i otvara list za dijeljenje na vašem telefonu. Spremite je u svoj oblačni pogon (Google Drive, iCloud, OneDrive), pošaljite e-poštom sebi ili prenesite na bilo koji način.</p>
-<h3 id="vracanje">Vraćanje</h3>
+<h3 id="restore">Vraćanje</h3>
 <p>Postavke → <strong>Vraćanje</strong> → odaberite datoteku sigurnosne kopije iz pohrane vašeg telefona. Aplikacija uvozi prilagođene materijale, favorite, povijest i postavke.</p>
 <p>⚠️ <strong>Vraćanje zamjenjuje vaše trenutne podatke.</strong> Ako imate važna mjerenja na trenutnom uređaju, prvo ih sigurnosno kopirajte prije vraćanja iz druge sigurnosne kopije.</p>
 <hr />
-<h2 id="postavke">Postavke</h2>
+<h2 id="settings">Postavke</h2>
 <p>Pristup putem ikone zupčanika ⚙ u gornjem desnom kutu. Postavke su modalni prozor, nisu kartica.</p>
 <p><img alt="Postavke" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +379,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-znacajke">Pro značajke</h2>
+<h2 id="pro-features">Pro značajke</h2>
 <p>NVH Source Locator koristi <strong>freemium model s zaključanim značajkama</strong>:</p>
 <ul>
 <li><strong>Besplatno</strong>: Kartica 2-Sensor potpuno je funkcionalna bez ograničenja</li>
 <li><strong>Pro</strong>: Sve druge kartice imaju određena polja za unos zaključana. Paywall se pojavljuje kada besplatni korisnik dodirne zaključano polje</li>
 </ul>
-<h3 id="sto-je-zakljucano">Što je zaključano</h3>
+<h3 id="whats-locked">Što je zaključano</h3>
 <p>Polja koja zahtijevaju Pro raspoređena su u:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - 3D i 3D+ načine
@@ -395,7 +395,7 @@
 - Označavanje fotografije</p>
 <p>Besplatni korisnik može OTVORITI bilo koju karticu i VIDJETI sučelje. Jednostavno ne može unijeti vrijednosti u Pro-zaključana polja za unos.</p>
 <p><img alt="Pro-zaključano polje" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="paywall">Paywall</h3>
+<h3 id="the-paywall">Paywall</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Kada besplatni korisnik dodirne zaključano polje, paywall klizi prikazujući:
 - Ikonu aplikacije s PRO značkom
@@ -403,9 +403,9 @@
 - Gumb za otključavanje s cijenom ($19,99 zadano; može varirati po regiji)
 - Iskorištavanje promo koda (samo Android — iOS koristi Appleov zasebni proces Offer Code)
 - Neobavezni promotivni link za kanale zajednice</p>
-<h3 id="kupnja-pro">Kupnja Pro</h3>
+<h3 id="purchasing-pro">Kupnja Pro</h3>
 <p>Dodirnite bilo koje zaključano polje ili dodirnite <strong>Nadogradnja na Pro</strong> u Postavkama. Koristi službeni sustav plaćanja vaše platforme (Google Play na Androidu, Apple App Store na iOS).</p>
-<h3 id="vracanje-pro-na-novom-ureaju">Vraćanje Pro na novom uređaju</h3>
+<h3 id="restoring-pro-on-a-new-device">Vraćanje Pro na novom uređaju</h3>
 <p>Ako ste kupili na jednom uređaju i želite Pro na drugom (isti račun):</p>
 <ol>
 <li>Prijavite se na <strong>isti</strong> Google račun (Android) ili Apple ID (iOS) koji ste koristili za kupnju</li>
@@ -413,13 +413,13 @@
 <li>Idite na Postavke → <strong>Vrati kupnju</strong></li>
 <li>Aplikacija provjerava zapise kupnji platforme i otključava Pro</li>
 </ol>
-<h3 id="automatsko-vracanje-pri-pokretanju">Automatsko vraćanje pri pokretanju</h3>
+<h3 id="auto-restore-on-launch">Automatsko vraćanje pri pokretanju</h3>
 <p>Ako iskoristite promo kod u Google Play Storeu ili App Storeu dok NVH Source Locator radi u pozadini, povratak u aplikaciju automatski detektira novu kupnju i otključava Pro — nije potrebno ručno Vraćanje.</p>
-<h3 id="iskoristavanje-promo-koda">Iskorištavanje promo koda</h3>
+<h3 id="promo-code-redemption">Iskorištavanje promo koda</h3>
 <p><strong>Android</strong>: gumb „Imate Google Play promo kod?" u paywallu otvara Google Play proces iskorištavanja s vašim unaprijed popunjenim kodom.</p>
 <p><strong>iOS</strong>: Politika App Storea 3.1.1 zahtijeva iskorištavanje putem Appleovog službenog procesa „Iskoristi kod". Gumb Google Play sakriven je na iOS-u. Umjesto toga potražite „Iskoristi kod App Storea" u Postavkama.</p>
 <hr />
-<h2 id="kartica-help-i-tutorijali">Kartica Help i tutorijali</h2>
+<h2 id="help-tab-and-tutorials">Kartica Help i tutorijali</h2>
 <p>Kartica <strong>Help</strong> uključuje tutorijale u aplikaciji, vodiče najboljih praksi i referentne informacije.</p>
 <p><img alt="Kartica Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Pokrivene teme:
@@ -430,38 +430,38 @@
 - Savjeti za triangulaciju i 3D postavljanja
 - Vođenje kabela i kvaliteta signala</p>
 <hr />
-<h2 id="rjesavanje-problema">Rješavanje problema</h2>
-<h3 id="rezultat-izracuna-je-pogresan-ili-nema-smisla">Rezultat izračuna je pogrešan ili nema smisla</h3>
+<h2 id="troubleshooting">Rješavanje problema</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">Rezultat izračuna je pogrešan ili nema smisla</h3>
 <ol>
 <li>Provjerite kalibraciju. Automatski popunjen <code>tCal</code> pretpostavlja objavljenu brzinu materijala — stvarni materijali variraju. Najtočnija kalibracija je in-situ: dodirnite poznatu lokaciju i pustite aplikaciju da izvuče stvarnu brzinu.</li>
 <li>Provjerite postavku <strong>Prvi senzor</strong> — koji senzor je prvi čuo događaj važno je za matematiku.</li>
 <li>Provjerite svoja mjerenja udaljenosti. Pogreške od nekoliko mm se šire.</li>
 </ol>
-<h3 id="toast-kaze-rezultat-izvan-raspona">Toast kaže „Rezultat izvan raspona"</h3>
+<h3 id="toast-says-result-outside-range">Toast kaže „Rezultat izvan raspona"</h3>
 <p>Matematika kaže da izvor nije između vaših senzora. Mogući uzroci:
 - Izvor je zapravo izvan linije/ravnine senzora
 - Jedan od vaših ulaza je pogrešan
 - Brzina kalibracije previše je daleko od stvarnosti</p>
-<h3 id="savjet-za-izracunatu-brzinu-prikazuje-boju-upozorenja">Savjet za izračunatu brzinu prikazuje boju upozorenja</h3>
+<h3 id="calc-speed-hint-shows-a-warning-color">Savjet za izračunatu brzinu prikazuje boju upozorenja</h3>
 <p>Implicirana brzina zvuka iz vaših ulaza daleko je od bilo kojeg uobičajenog materijala (manje od 50 m/s ili više od 20 000 m/s). Provjerite svoje ulaze — vjerojatno tipfeler u tCal ili udaljenosti.</p>
-<h3 id="izbornik-materials-prikazuje-razlicite-brzine-od-ocekivanih">Izbornik Materials prikazuje različite brzine od očekivanih</h3>
+<h3 id="material-picker-shows-different-speeds-than-expected">Izbornik Materials prikazuje različite brzine od očekivanih</h3>
 <p>Provjerite Referentnu temperaturu u Postavkama. Ako nije 20 °C, prikazane brzine odražavaju temperaturnu kompenzaciju. Aplikacija prikazuje „ref X @ 20°C" ispod kompenziranih brzina kako biste mogli provjeriti.</p>
-<h3 id="unos-povijesti-reproducira-se-s-drugim-rezultatom">Unos povijesti reproducira se s drugim rezultatom</h3>
+<h3 id="history-entry-replays-with-different-result">Unos povijesti reproducira se s drugim rezultatom</h3>
 <p>Stari unosi povijesti stvoreni prije verzije aplikacije 1.75 možda nisu pohranili temperaturu. Ako ste izvršili mjerenje na ne-20 °C temperaturi, reprodukcija će koristiti trenutnu postavku. Ručno postavite temperaturu u Postavkama prije reprodukcije, ILI ponovno mjerite.</p>
-<h3 id="oznake-oznacavanja-fotografije-nisu-tamo-gdje-ocekujem">Oznake označavanja fotografije nisu tamo gdje očekujem</h3>
+<h3 id="photo-annotation-markers-not-where-i-expect">Oznake označavanja fotografije nisu tamo gdje očekujem</h3>
 <p>Oznake se automatski postavljaju na temelju ulazne geometrije. Povucite ih za prilagodbu. Prilagodba oznaka ažurira položaj izvora u sloju fotografije — ali NE mijenja temeljni rezultat izračuna.</p>
-<h3 id="sigurnosna-kopijavracanje-ne-uspijeva">Sigurnosna kopija/Vraćanje ne uspijeva</h3>
+<h3 id="backuprestore-fails">Sigurnosna kopija/Vraćanje ne uspijeva</h3>
 <p>Provjerite koristite li datoteku sigurnosne kopije generiranu istom ili novijom verzijom aplikacije. Stariji backup datoteke možda nemaju trenutna polja podataka.</p>
-<h3 id="vracanje-kupnje-kaze-nije-pronaena-kupnja">Vraćanje kupnje kaže „nije pronađena kupnja"</h3>
+<h3 id="restore-purchase-says-no-purchase-found">Vraćanje kupnje kaže „nije pronađena kupnja"</h3>
 <ol>
 <li>Provjerite jeste li prijavljeni na isti račun trgovine koji ste koristili za kupnju</li>
 <li>Provjerite da kupnja nije vraćena ili istekla</li>
 <li>Pokušajte deinstalirati i ponovno instalirati aplikaciju (kupnja je vezana uz vaš račun trgovine, a ne uz instalaciju aplikacije)</li>
 <li>Kontaktirajte support@evdiag.net ako problem traje</li>
 </ol>
-<h3 id="numericki-unos-neocekivano-se-postavlja-na-0">Numerički unos neočekivano se postavlja na 0</h3>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">Numerički unos neočekivano se postavlja na 0</h3>
 <p>Po dizajnu: kada izađete iz numeričkog polja (dodirnete drugdje), ako je prazno, negativno ili sadrži ne-numerički tekst, postavlja se na 0. Sprječava tiho slomljene izračune iz slučajno obrisanih unosa. Unos temperature je izuzet (umjesto toga ograničava se na -40/+200).</p>
-<h3 id="trebam-vise-pomoci">Trebam više pomoći</h3>
+<h3 id="need-more-help">Trebam više pomoći</h3>
 <p>Kontaktirajte <code>support@evdiag.net</code> s:
 - Modelom uređaja i verzijom OS-a
 - Verzijom aplikacije (Postavke → dno stranice)

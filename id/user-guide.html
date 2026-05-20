@@ -57,14 +57,14 @@
     Dokumentasi diterjemahkan untuk kenyamanan Anda — untuk terminologi teknis yang paling tepat, versi asli bahasa Inggris adalah otoritatif.
   </div>
 
-  <h1 id="nvh-source-locator-panduan-pengguna">NVH Source Locator — Panduan Pengguna</h1>
+  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Panduan Pengguna</h1>
 <p>NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.</p>
 <p>Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat <code>quick-reference.md</code>.</p>
 <blockquote>
 <p><strong>Catatan tentang tangkapan layar</strong>: Dokumen ini menggunakan tangkapan layar placeholder dari aplikasi. Ganti setiap <code>../screenshots/*.png</code> dengan tangkapan layar perangkat yang sebenarnya saat Anda mengambilnya.</p>
 </blockquote>
 <hr />
-<h2 id="daftar-isi">Daftar Isi</h2>
+<h2 id="table-of-contents">Daftar Isi</h2>
 <ol>
 <li><a href="#how-it-works">Cara kerjanya</a></li>
 <li><a href="#before-you-start">Sebelum Anda mulai</a></li>
@@ -83,7 +83,7 @@
 <li><a href="#troubleshooting">Pemecahan masalah</a></li>
 </ol>
 <hr />
-<h2 id="cara-kerjanya">Cara kerjanya</h2>
+<h2 id="how-it-works">Cara kerjanya</h2>
 <p>Ketika sumber kebisingan memancarkan suara atau getaran, gelombang merambat melalui material dengan kecepatan yang diketahui. Jika Anda menempatkan dua atau lebih akselerometer pada material dan mengukur kapan gelombang tiba di masing-masing, perbedaan waktu memberi tahu Anda di mana sumbernya berada.</p>
 <p>NVH Source Locator mengambil:</p>
 <ul>
@@ -98,7 +98,7 @@
 <li><strong>4 sensor</strong> → posisi dalam ruang 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="sebelum-anda-mulai">Sebelum Anda mulai</h2>
+<h2 id="before-you-start">Sebelum Anda mulai</h2>
 <p>Anda akan membutuhkan:</p>
 <ul>
 <li><strong>Osiloskop atau sistem pengukuran</strong> yang dapat menampilkan perbedaan waktu antara saluran akselerometer dalam mikrodetik (µs)</li>
@@ -108,7 +108,7 @@
 </ul>
 <p><img alt="Layar utama dengan tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="tab-utama">Tab utama</h2>
+<h2 id="the-main-tabs">Tab utama</h2>
 <p>Aplikasi memiliki tab di bagian atas:</p>
 <p><img alt="Bilah tab" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +172,50 @@
 </blockquote>
 <p>Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).</p>
 <hr />
-<h2 id="mode-2-sensor">Mode 2-Sensor</h2>
+<h2 id="2-sensor-mode">Mode 2-Sensor</h2>
 <p>Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.</p>
 <p><img alt="Tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="langkah-1-terapkan-material">Langkah 1: Terapkan material</h3>
+<h3 id="step-1-apply-a-material">Langkah 1: Terapkan material</h3>
 <p>Ketuk tab Materials. Pilih material yang membuat struktur Anda (misalnya "Aluminium", "Baja, Mild (1020)"). Aplikasi menggunakan kecepatan suara material yang diketahui untuk mengisi bidang waktu kalibrasi secara otomatis.</p>
 <p>Jika material struktur Anda tidak ada dalam daftar, Anda dapat sementara memilih "Udara" dan menimpa waktu kalibrasi secara manual di langkah 2.</p>
-<h3 id="langkah-2-masukkan-data-kalibrasi">Langkah 2: Masukkan data kalibrasi</h3>
+<h3 id="step-2-enter-calibration-data">Langkah 2: Masukkan data kalibrasi</h3>
 <p>Pada tab 2-Sensor, Anda akan melihat dua bagian pasangan: <strong>Pasangan A–B</strong> dan <strong>Pasangan A–C</strong> (hanya A–B yang diperlukan jika Anda hanya memiliki 2 sensor).</p>
 <p>Untuk setiap pasangan, Anda mengisi:</p>
 <ul>
 <li><strong>Jarak sensor</strong> (<code>d</code>): jarak fisik antara sensor, dalam cm atau inci (diatur di Pengaturan)</li>
 <li><strong>Penundaan waktu kalibrasi</strong> (<code>tCal</code>): waktu untuk gelombang menempuh jarak antara sensor pada kecepatan suara material — terisi otomatis saat Anda memilih material, tetapi Anda dapat menimpa</li>
 </ul>
-<h3 id="langkah-3-masukkan-waktu-peristiwa">Langkah 3: Masukkan waktu peristiwa</h3>
+<h3 id="step-3-enter-the-event-time">Langkah 3: Masukkan waktu peristiwa</h3>
 <ul>
 <li><strong>Penundaan waktu peristiwa</strong> (<code>tEvent</code>): perbedaan waktu antara sensor yang mendeteksi peristiwa kebisingan, dalam mikrodetik</li>
 <li><strong>Sensor pertama</strong>: sensor mana yang mendengar peristiwa terlebih dahulu (A atau B)</li>
 </ul>
-<h3 id="langkah-4-baca-hasilnya">Langkah 4: Baca hasilnya</h3>
+<h3 id="step-4-read-the-result">Langkah 4: Baca hasilnya</h3>
 <p>Aplikasi menampilkan posisi sumber sebagai jarak dari sensor A:
 - Hasil = 0: sumber berada di sensor A
 - Hasil = jarak: sumber berada di sensor B
 - Hasil di antara: sumber berada di antara keduanya
 - Hasil di luar: sumber berada di luar salah satu sensor (toast akan memperingatkan)</p>
 <p>Kartu hasil menampilkan kedua jarak (dari A, dari B) dan menunjukkan sensor mana yang lebih dekat.</p>
-<h3 id="langkah-5-opsional-anotasi-foto">Langkah 5 (opsional): Anotasi foto</h3>
+<h3 id="step-5-optional-annotate-a-photo">Langkah 5 (opsional): Anotasi foto</h3>
 <p>Ketuk <strong>📷 Anotasi foto</strong> untuk mengambil foto pengaturan Anda. Aplikasi menumpangkan penanda untuk sensor A, B dan sumber. Berguna untuk laporan.</p>
 <hr />
-<h2 id="mode-3-sensor">Mode 3-Sensor</h2>
+<h2 id="3-sensor-mode">Mode 3-Sensor</h2>
 <p>Menemukan sumber pada bidang 2D menggunakan tiga sensor yang diatur dalam segitiga.</p>
 <p><img alt="Tab 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="pengaturan">Pengaturan</h3>
+<h3 id="setup">Pengaturan</h3>
 <p>Tempatkan tiga sensor pada struktur Anda membentuk segitiga. Sama sisi, siku-siku, atau sembarang — aplikasi menangani semua geometri.</p>
-<h3 id="masukkan-data">Masukkan data</h3>
+<h3 id="enter-the-data">Masukkan data</h3>
 <p>Di bagian <strong>Panjang sisi segitiga</strong>, masukkan jarak fisik untuk ketiga sisi (A–B, A–C, B–C).</p>
 <p>Untuk setiap pasangan (A–B dan A–C), masukkan:
 - <strong>tCal</strong>: waktu kalibrasi (terisi otomatis dari material)
 - <strong>tEvent</strong>: perbedaan waktu terukur untuk peristiwa kebisingan
 - <strong>Sensor pertama</strong>: yang mendengarnya terlebih dahulu</p>
-<h3 id="baca-hasilnya">Baca hasilnya</h3>
+<h3 id="read-the-result">Baca hasilnya</h3>
 <p>Aplikasi menampilkan posisi sumber sebagai koordinat X, Y relatif terhadap sensor A (sensor A di asal, sensor B di sumbu X). Visualisasi menunjukkan ketiga sensor dan lokasi sumber.</p>
 <p><img alt="Hasil segitiga" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="mode-pro">Mode Pro+</h2>
+<h2 id="pro-modes">Mode Pro+</h2>
 <p>Beberapa tab lanjutan menawarkan solver yang ditentukan berlebih dan dimensi yang lebih tinggi:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Pengaturan segitiga yang sama dengan 3-Sensor, tetapi kalibrasi dan ukur ketiga pasangan (A–B, A–C, B–C). Solver menggunakan ketiga TDOA dalam fit kuadrat terkecil — lebih kuat terhadap kebisingan pengukuran dan material anisotropik. Residu per pasangan dilaporkan sehingga Anda dapat menemukan pengukuran yang tidak konsisten.</p>
@@ -224,19 +224,19 @@
 - <strong>A–B</strong> = pasangan horizontal (sisi kiri/kanan)
 - <strong>C–D</strong> = pasangan vertikal (sisi atas/bawah)</p>
 <p>Jalankan pasangan A–B terlebih dahulu (horizontal), lalu pasangan C–D (vertikal). Peta 2D menampilkan persimpangan. Setiap pasangan dikalibrasi secara terpisah — berguna saat material bervariasi di seluruh struktur.</p>
-<h3 id="4-sen-2d-lanjutan">4-Sen+ (2D Lanjutan)</h3>
+<h3 id="4-sen-advanced-2d">4-Sen+ (2D Lanjutan)</h3>
 <p>Empat sensor di posisi mana pun (tidak dipaksa persegi panjang). Pasangkan A dengan masing-masing B, C, D dan kalibrasi secara terpisah. Solver kuadrat terkecil yang ditentukan berlebih merata-ratakan kebisingan pengukuran per pasangan dan melaporkan residu per pasangan.</p>
 <h3 id="3d">3D</h3>
 <p>Pengukuran 3D penuh dengan 4 sensor yang ditempatkan dalam ruang 3D. Masukkan koordinat (X, Y, Z) setiap sensor, ditambah waktu kalibrasi dan peristiwa untuk setiap pasangan (A–B, A–C, A–D).</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Seperti 3D tetapi mendukung hingga <strong>6 sensor</strong> (A hingga F) dengan LSQ yang ditentukan berlebih. Presisi maksimum untuk geometri 3D yang kompleks.</p>
 <hr />
-<h2 id="tab-materials">Tab Materials</h2>
+<h2 id="the-materials-tab">Tab Materials</h2>
 <p>Pustaka material rekayasa umum dengan kecepatan suara yang diketahui pada 20 °C.</p>
 <p><img alt="Tab Materials" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="daftar-material">Daftar material</h3>
+<h3 id="material-list">Daftar material</h3>
 <p>Daftar mencakup udara, fluida, karet, polimer, kayu, kaca, dan logam. Kecepatan berkisar dari ~340 m/s (udara) hingga ~13.000 m/s (beberapa logam pada suhu kamar).</p>
-<h3 id="material-bawaan-dengan-kompensasi-suhu">Material bawaan dengan kompensasi suhu</h3>
+<h3 id="built-in-materials-with-temperature-compensation">Material bawaan dengan kompensasi suhu</h3>
 <p>14 logam yang umum digunakan menyertakan data koefisien suhu. Ketika Suhu referensi di Pengaturan berbeda dari 20 °C, aplikasi secara otomatis menyesuaikan kecepatan material ini:</p>
 <ul>
 <li>Aluminium</li>
@@ -256,20 +256,20 @@
 </ul>
 <p>Material dengan kompensasi menampilkan dua nilai di pemilih: <strong>kecepatan terkompensasi</strong> (besar, menonjol) dan <strong>kecepatan referensi pada 20 °C</strong> (kecil, abu-abu di bawah).</p>
 <p>Material tanpa kompensasi menampilkan <strong>"ref only"</strong> dalam huruf miring — kecepatan tercantum mereka digunakan apa adanya terlepas dari suhu.</p>
-<h3 id="material-kustom">Material kustom</h3>
+<h3 id="custom-materials">Material kustom</h3>
 <p>Jika Anda mengukur kalibrasi di tab 2-Sensor, Anda dapat menyimpan hasilnya sebagai material kustom. Setelah pengukuran 2-sensor yang berhasil, cari opsi untuk menyimpan kecepatan turunan di bawah nama pilihan Anda.</p>
 <p>Material kustom menyimpan kecepatan yang diukur in-situ; mereka tidak pernah menerapkan kompensasi suhu (kecepatan sudah diukur pada suhu pengujian).</p>
-<h3 id="favorit">Favorit</h3>
+<h3 id="favorites">Favorit</h3>
 <p>Ketuk bintang di samping material apa pun untuk menandainya sebagai favorit. Favorit muncul di bagian atas daftar untuk akses cepat.</p>
-<h3 id="pencarian">Pencarian</h3>
+<h3 id="search">Pencarian</h3>
 <p>Gunakan bilah pencarian di bagian atas untuk memfilter material berdasarkan nama. Pencarian cocok dengan nama kanonik Inggris dan nama tampilan yang diterjemahkan.</p>
 <hr />
-<h2 id="kompensasi-suhu">Kompensasi suhu</h2>
+<h2 id="temperature-compensation">Kompensasi suhu</h2>
 <p>Kecepatan suara dalam material berubah dengan suhu. Dalam pengujian NVH otomotif, ini penting: ruang mesin pada 80 °C, kabin yang direndam dingin pada -10 °C, atau area manifold buang pada 200 °C semuanya berperilaku berbeda dari kondisi laboratorium suhu kamar.</p>
-<h3 id="mengatur-suhu">Mengatur suhu</h3>
+<h3 id="setting-the-temperature">Mengatur suhu</h3>
 <p>Buka Pengaturan (ikon ⚙) → Suhu referensi. Masukkan suhu lingkungan pengujian Anda dalam °C (rentang -40 hingga +200).</p>
 <p><img alt="Panel Pengaturan" src="../screenshots/06-settings.png" /></p>
-<h3 id="apa-yang-terjadi-ketika-suhu-20-c">Apa yang terjadi ketika suhu ≠ 20 °C</h3>
+<h3 id="what-happens-when-temperature-20-c">Apa yang terjadi ketika suhu ≠ 20 °C</h3>
 <ul>
 <li>Bidang waktu kalibrasi terisi otomatis dengan kecepatan yang disesuaikan dengan suhu</li>
 <li>Pemilih Materials secara mencolok menampilkan kecepatan yang disesuaikan</li>
@@ -278,16 +278,16 @@
 <li>Entri riwayat tersimpan mencatat suhu aktif</li>
 <li>Laporan menyertakan baris footer: <em>"Suhu referensi: 60 °C, kompensasi diterapkan"</em></li>
 </ul>
-<h3 id="reset-saat-aplikasi-diluncurkan">Reset saat aplikasi diluncurkan</h3>
+<h3 id="reset-on-app-launch">Reset saat aplikasi diluncurkan</h3>
 <p>Suhu referensi <strong>selalu direset ke 20 °C</strong> saat Anda meluncurkan aplikasi. Ini mencegah pengaturan basi dari sesi pengukuran masa lalu memengaruhi pekerjaan hari ini secara diam-diam. Catatan miring kecil di Pengaturan mengingatkan Anda tentang perilaku ini.</p>
 <p>Jika Anda ingin memutar ulang pengukuran historis pada suhu aslinya, cukup ketuk entri — suhu dipulihkan secara otomatis.</p>
-<h3 id="material-tanpa-kompensasi">Material tanpa kompensasi</h3>
+<h3 id="materials-without-compensation">Material tanpa kompensasi</h3>
 <p>Sebagian besar material non-logam tidak memiliki koefisien suhu yang dipublikasikan dengan andal. Aplikasi menampilkan lencana <strong>"ref only"</strong> untuk ini — kecepatan tercantum mereka digunakan terlepas dari pengaturan suhu. Jika Anda memerlukan pengukuran akurat pada suhu non-kamar untuk material ini, lakukan kalibrasi in-situ dan simpan hasilnya sebagai material kustom.</p>
 <hr />
-<h2 id="anotasi-foto">Anotasi foto</h2>
+<h2 id="photo-annotation">Anotasi foto</h2>
 <p>Setelah perhitungan yang berhasil, ketuk tombol <strong>📷 Anotasi foto</strong> untuk menumpangkan penanda sensor dan sumber pada foto pengaturan Anda.</p>
 <p><img alt="Anotasi foto" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="alur">Alur</h3>
+<h3 id="flow">Alur</h3>
 <ol>
 <li>Ketuk <strong>Anotasi foto</strong> — kamera sistem terbuka</li>
 <li>Ambil foto penempatan sensor Anda</li>
@@ -298,10 +298,10 @@
 </ol>
 <p>Foto beranotasi secara otomatis disertakan dalam laporan PDF.</p>
 <hr />
-<h2 id="laporan">Laporan</h2>
+<h2 id="reports">Laporan</h2>
 <p>Ketuk tombol <strong>Cetak hasil</strong> pada layar hasil apa pun untuk menghasilkan laporan yang diformat.</p>
 <p><img alt="Laporan PDF" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="konten-laporan">Konten laporan</h3>
+<h3 id="report-contents">Konten laporan</h3>
 <ul>
 <li>Header (dapat disesuaikan di Pengaturan → Header laporan)</li>
 <li>Judul pengukuran dan stempel waktu</li>
@@ -313,23 +313,23 @@
 <li>Baris footer suhu (jika kompensasi aktif)</li>
 <li>Nomor halaman dan baris kredit</li>
 </ul>
-<h3 id="format-output">Format output</h3>
+<h3 id="output-format">Format output</h3>
 <ul>
 <li><strong>Android</strong>: pembuatan PDF asli, simpan ke ponsel atau bagikan</li>
 <li><strong>iOS</strong>: dialog cetak sistem → simpan sebagai PDF, AirPrint, atau bagikan</li>
 </ul>
-<h3 id="menyesuaikan-header">Menyesuaikan header</h3>
+<h3 id="customizing-the-header">Menyesuaikan header</h3>
 <p>Pengaturan → Header laporan. Masukkan nama perusahaan Anda, nama lab, info proyek, atau apa pun yang Anda inginkan di bagian atas setiap laporan.</p>
 <hr />
-<h2 id="cadangan-dan-pemulihan">Cadangan dan pemulihan</h2>
+<h2 id="backup-and-restore">Cadangan dan pemulihan</h2>
 <p>Simpan semua material kustom, favorit, pengaturan, dan riwayat Anda ke satu file. Transfer antar perangkat.</p>
-<h3 id="cadangan">Cadangan</h3>
+<h3 id="backup">Cadangan</h3>
 <p>Pengaturan → <strong>Cadangan</strong> → ketuk "Simpan file cadangan". Aplikasi menghasilkan file JSON dan membuka sheet berbagi ponsel Anda. Simpan ke cloud drive Anda (Google Drive, iCloud, OneDrive), email ke diri sendiri, atau transfer dengan cara apa pun yang Anda suka.</p>
-<h3 id="pemulihan">Pemulihan</h3>
+<h3 id="restore">Pemulihan</h3>
 <p>Pengaturan → <strong>Pemulihan</strong> → pilih file cadangan dari penyimpanan ponsel Anda. Aplikasi mengimpor material kustom, favorit, riwayat, dan pengaturan.</p>
 <p>⚠️ <strong>Pemulihan menggantikan data Anda saat ini.</strong> Jika Anda memiliki pengukuran penting di perangkat saat ini, cadangkan terlebih dahulu sebelum memulihkan dari cadangan yang berbeda.</p>
 <hr />
-<h2 id="pengaturan_1">Pengaturan</h2>
+<h2 id="settings">Pengaturan</h2>
 <p>Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, bukan tab.</p>
 <p><img alt="Pengaturan" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +379,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="fitur-pro">Fitur Pro</h2>
+<h2 id="pro-features">Fitur Pro</h2>
 <p>NVH Source Locator menggunakan <strong>model freemium dengan kunci fitur</strong>:</p>
 <ul>
 <li><strong>Gratis</strong>: Tab 2-Sensor sepenuhnya berfungsi tanpa batas</li>
 <li><strong>Pro</strong>: Semua tab lain memiliki bidang input tertentu yang dikunci. Paywall muncul ketika pengguna gratis mengetuk bidang yang terkunci</li>
 </ul>
-<h3 id="apa-yang-dikunci">Apa yang dikunci</h3>
+<h3 id="whats-locked">Apa yang dikunci</h3>
 <p>Bidang yang memerlukan Pro tersebar di:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - Mode 3D dan 3D+
@@ -395,7 +395,7 @@
 - Anotasi foto</p>
 <p>Pengguna gratis dapat MEMBUKA tab apa pun dan MELIHAT antarmuka. Mereka hanya tidak dapat memasukkan nilai ke dalam bidang input yang dikunci Pro.</p>
 <p><img alt="Bidang yang dikunci Pro" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="paywall">Paywall</h3>
+<h3 id="the-paywall">Paywall</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Ketika pengguna gratis mengetuk bidang yang terkunci, paywall meluncur menampilkan:
 - Ikon aplikasi dengan lencana PRO
@@ -403,9 +403,9 @@
 - Tombol buka kunci dengan harga ($19,99 default; dapat bervariasi menurut wilayah)
 - Penukaran kode promo (hanya Android — iOS menggunakan alur Kode Penawaran terpisah Apple)
 - Tautan promo opsional ke saluran komunitas</p>
-<h3 id="membeli-pro">Membeli Pro</h3>
+<h3 id="purchasing-pro">Membeli Pro</h3>
 <p>Ketuk bidang yang terkunci, atau ketuk <strong>Tingkatkan ke Pro</strong> di Pengaturan. Menggunakan sistem pembayaran resmi platform Anda (Google Play di Android, Apple App Store di iOS).</p>
-<h3 id="memulihkan-pro-di-perangkat-baru">Memulihkan Pro di perangkat baru</h3>
+<h3 id="restoring-pro-on-a-new-device">Memulihkan Pro di perangkat baru</h3>
 <p>Jika Anda membeli di satu perangkat dan menginginkan Pro di perangkat lain (akun yang sama):</p>
 <ol>
 <li>Masuk ke akun Google <strong>yang sama</strong> (Android) atau Apple ID (iOS) yang Anda gunakan untuk membeli</li>
@@ -413,13 +413,13 @@
 <li>Buka Pengaturan → <strong>Pulihkan pembelian</strong></li>
 <li>Aplikasi memverifikasi dengan catatan pembelian platform dan membuka kunci Pro</li>
 </ol>
-<h3 id="pemulihan-otomatis-saat-diluncurkan">Pemulihan otomatis saat diluncurkan</h3>
+<h3 id="auto-restore-on-launch">Pemulihan otomatis saat diluncurkan</h3>
 <p>Jika Anda menebus kode promo di Google Play Store atau App Store saat NVH Source Locator berjalan di latar belakang, kembali ke aplikasi secara otomatis mendeteksi pembelian baru dan membuka kunci Pro — tidak diperlukan Pemulihan manual.</p>
-<h3 id="penukaran-kode-promo">Penukaran kode promo</h3>
+<h3 id="promo-code-redemption">Penukaran kode promo</h3>
 <p><strong>Android</strong>: tombol "Punya kode promo Google Play?" di paywall membuka alur penebusan Google Play dengan kode Anda yang sudah terisi sebelumnya.</p>
 <p><strong>iOS</strong>: Kebijakan App Store 3.1.1 memerlukan penebusan melalui alur "Tebus Kode" resmi Apple. Tombol Google Play disembunyikan di iOS. Cari "Tebus kode App Store" di Pengaturan sebagai gantinya.</p>
 <hr />
-<h2 id="tab-help-dan-tutorial">Tab Help dan tutorial</h2>
+<h2 id="help-tab-and-tutorials">Tab Help dan tutorial</h2>
 <p>Tab <strong>Help</strong> mencakup tutorial dalam aplikasi, panduan praktik terbaik, dan informasi referensi.</p>
 <p><img alt="Tab Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Topik yang dibahas:
@@ -430,38 +430,38 @@
 - Tip untuk triangulasi dan penempatan 3D
 - Perutean kabel dan kualitas sinyal</p>
 <hr />
-<h2 id="pemecahan-masalah">Pemecahan masalah</h2>
-<h3 id="hasil-perhitungan-salah-atau-tidak-masuk-akal">Hasil perhitungan salah atau tidak masuk akal</h3>
+<h2 id="troubleshooting">Pemecahan masalah</h2>
+<h3 id="calculation-result-is-wrong-or-makes-no-sense">Hasil perhitungan salah atau tidak masuk akal</h3>
 <ol>
 <li>Periksa kalibrasi Anda. <code>tCal</code> yang terisi otomatis mengasumsikan kecepatan material yang dipublikasikan — material asli bervariasi. Kalibrasi paling akurat adalah in-situ: ketuk lokasi yang diketahui dan biarkan aplikasi menurunkan kecepatan sebenarnya.</li>
 <li>Periksa pengaturan <strong>Sensor pertama</strong> — sensor mana yang mendengar peristiwa terlebih dahulu penting untuk matematika.</li>
 <li>Verifikasi pengukuran jarak Anda. Kesalahan beberapa mm menyebar.</li>
 </ol>
-<h3 id="toast-mengatakan-hasil-di-luar-rentang">Toast mengatakan "Hasil di luar rentang"</h3>
+<h3 id="toast-says-result-outside-range">Toast mengatakan "Hasil di luar rentang"</h3>
 <p>Matematika mengatakan sumbernya tidak berada di antara sensor Anda. Kemungkinan penyebab:
 - Sumber sebenarnya di luar garis/bidang sensor
 - Salah satu input Anda salah
 - Kecepatan kalibrasi terlalu jauh dari kenyataan</p>
-<h3 id="petunjuk-kecepatan-perhitungan-menampilkan-warna-peringatan">Petunjuk kecepatan perhitungan menampilkan warna peringatan</h3>
+<h3 id="calc-speed-hint-shows-a-warning-color">Petunjuk kecepatan perhitungan menampilkan warna peringatan</h3>
 <p>Kecepatan suara yang tersirat dari input Anda jauh dari material umum mana pun (kurang dari 50 m/s atau lebih dari 20.000 m/s). Periksa input Anda — kemungkinan kesalahan ketik di tCal atau jarak.</p>
-<h3 id="pemilih-materials-menampilkan-kecepatan-yang-berbeda-dari-yang-diharapkan">Pemilih Materials menampilkan kecepatan yang berbeda dari yang diharapkan</h3>
+<h3 id="material-picker-shows-different-speeds-than-expected">Pemilih Materials menampilkan kecepatan yang berbeda dari yang diharapkan</h3>
 <p>Periksa Suhu referensi di Pengaturan. Jika tidak 20 °C, kecepatan yang ditampilkan mencerminkan kompensasi suhu. Aplikasi menampilkan "ref X @ 20°C" di bawah kecepatan terkompensasi sehingga Anda dapat memverifikasi.</p>
-<h3 id="entri-riwayat-diputar-ulang-dengan-hasil-berbeda">Entri riwayat diputar ulang dengan hasil berbeda</h3>
+<h3 id="history-entry-replays-with-different-result">Entri riwayat diputar ulang dengan hasil berbeda</h3>
 <p>Entri riwayat lama yang dibuat sebelum versi aplikasi 1.75 mungkin tidak menyimpan suhu. Jika Anda mengambil pengukuran pada suhu non-20 °C, pemutaran ulang akan menggunakan pengaturan saat ini. Atur suhu secara manual di Pengaturan sebelum memutar ulang, ATAU ukur ulang.</p>
-<h3 id="penanda-anotasi-foto-tidak-di-tempat-yang-saya-harapkan">Penanda anotasi foto tidak di tempat yang saya harapkan</h3>
+<h3 id="photo-annotation-markers-not-where-i-expect">Penanda anotasi foto tidak di tempat yang saya harapkan</h3>
 <p>Penanda ditempatkan secara otomatis berdasarkan geometri input. Seret untuk menyesuaikan. Menyesuaikan penanda memperbarui posisi sumber di overlay foto — tetapi TIDAK mengubah hasil perhitungan yang mendasarinya.</p>
-<h3 id="cadanganpemulihan-gagal">Cadangan/Pemulihan gagal</h3>
+<h3 id="backuprestore-fails">Cadangan/Pemulihan gagal</h3>
 <p>Pastikan Anda menggunakan file cadangan yang dihasilkan oleh versi aplikasi yang sama atau lebih baru. File cadangan yang lebih lama mungkin tidak memiliki bidang data saat ini.</p>
-<h3 id="pulihkan-pembelian-mengatakan-tidak-ada-pembelian-ditemukan">Pulihkan pembelian mengatakan "tidak ada pembelian ditemukan"</h3>
+<h3 id="restore-purchase-says-no-purchase-found">Pulihkan pembelian mengatakan "tidak ada pembelian ditemukan"</h3>
 <ol>
 <li>Verifikasi Anda masuk ke akun toko yang sama dengan yang Anda gunakan untuk membeli</li>
 <li>Verifikasi pembelian tidak dikembalikan atau kedaluwarsa</li>
 <li>Coba copot pemasangan dan pasang ulang aplikasi (pembelian terikat ke akun toko Anda, bukan pemasangan aplikasi)</li>
 <li>Hubungi support@evdiag.net jika berlanjut</li>
 </ol>
-<h3 id="input-numerik-secara-tak-terduga-melompat-ke-0">Input numerik secara tak terduga melompat ke 0</h3>
+<h3 id="numeric-input-snaps-to-0-unexpectedly">Input numerik secara tak terduga melompat ke 0</h3>
 <p>Berdasarkan desain: ketika Anda keluar fokus dari bidang numerik (ketuk di tempat lain), jika kosong, negatif, atau berisi teks non-numerik, ia melompat ke 0. Mencegah perhitungan yang rusak secara diam-diam dari input yang dihapus secara tidak sengaja. Input suhu dikecualikan (sebaliknya dikunci ke -40/+200).</p>
-<h3 id="perlu-bantuan-lebih-lanjut">Perlu bantuan lebih lanjut</h3>
+<h3 id="need-more-help">Perlu bantuan lebih lanjut</h3>
 <p>Hubungi <code>support@evdiag.net</code> dengan:
 - Model perangkat dan versi OS Anda
 - Versi aplikasi (Pengaturan → bagian bawah halaman)
