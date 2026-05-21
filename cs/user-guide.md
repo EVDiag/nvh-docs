@@ -4,8 +4,6 @@ NVH Source Locator je měřicí nástroj pro lokalizaci zdrojů hluku a vibrací
 
 Tato příručka pokrývá všechny funkce. Pro stručné připomenutí viz `quick-reference.md`.
 
-> **Poznámka ke snímkům obrazovky**: Tento dokument používá zástupné snímky obrazovky z aplikace. Nahraďte každý `../screenshots/*.png` skutečnými snímky obrazovky zařízení, jakmile je pořídíte.
-
 ---
 
 ## Obsah

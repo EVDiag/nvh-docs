@@ -4,8 +4,6 @@ NVH Source Locator è uno strumento di misurazione per localizzare sorgenti di r
 
 Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere `quick-reference.md`.
 
-> **Nota sugli screenshot**: Questo documento utilizza screenshot segnaposto dall'app. Sostituisci ciascun `../screenshots/*.png` con screenshot reali del dispositivo man mano che li acquisisci.
-
 ---
 
 ## Indice

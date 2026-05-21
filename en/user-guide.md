@@ -4,8 +4,6 @@ NVH Source Locator is a measurement tool for locating noise and vibration source
 
 This guide covers all features. For a quick refresher, see `quick-reference.md`.
 
-> **Note on screenshots**: This document uses placeholder screenshots from the app. Replace each `../screenshots/*.png` with real device screenshots as you capture them.
-
 ---
 
 ## Table of Contents

@@ -4,8 +4,6 @@ Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga 
 
 Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang `quick-reference.md`.
 
-> **Tala tungkol sa mga screenshot**: Ginagamit ng dokumentong ito ang mga placeholder na screenshot mula sa app. Palitan ang bawat `../screenshots/*.png` ng tunay na mga screenshot ng device habang kinukuha mo ang mga ito.
-
 ---
 
 ## Talaan ng Nilalaman

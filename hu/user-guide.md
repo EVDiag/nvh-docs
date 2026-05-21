@@ -4,8 +4,6 @@ NVH Source Locator egy mérőeszköz zaj- és rezgésforrások lokalizálására
 
 Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd `quick-reference.md`.
 
-> **Megjegyzés a képernyőképekről**: Ez a dokumentum helyőrző képernyőképeket használ az alkalmazásból. Cserélje le mindegyik `../screenshots/*.png`-t valódi eszközképekre, ahogyan elkészíti őket.
-
 ---
 
 ## Tartalomjegyzék

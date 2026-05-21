@@ -4,8 +4,6 @@ NVH Source Locator to narzędzie pomiarowe do lokalizowania źródeł hałasu i 
 
 Ten przewodnik obejmuje wszystkie funkcje. Aby uzyskać szybkie przypomnienie, zobacz `quick-reference.md`.
 
-> **Uwaga dotycząca zrzutów ekranu**: Ten dokument używa zastępczych zrzutów ekranu z aplikacji. Zastąp każdy plik `../screenshots/*.png` rzeczywistymi zrzutami ekranu urządzenia, gdy je wykonasz.
-
 ---
 
 ## Spis treści

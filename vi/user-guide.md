@@ -4,8 +4,6 @@ NVH Source Locator là một công cụ đo lường để định vị các ngu
 
 Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem `quick-reference.md`.
 
-> **Lưu ý về ảnh chụp màn hình**: Tài liệu này sử dụng ảnh chụp màn hình placeholder từ ứng dụng. Thay thế mỗi `../screenshots/*.png` bằng ảnh chụp màn hình thiết bị thực khi bạn chụp.
-
 ---
 
 ## Mục lục

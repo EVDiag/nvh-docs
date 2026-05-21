@@ -4,8 +4,6 @@ NVH Source Locator es una herramienta de medición para localizar fuentes de rui
 
 Esta guía cubre todas las funciones. Para un repaso rápido, consulte `quick-reference.md`.
 
-> **Nota sobre las capturas de pantalla**: Este documento utiliza capturas de pantalla de marcador de posición de la aplicación. Reemplace cada `../screenshots/*.png` con capturas de pantalla reales del dispositivo a medida que las obtenga.
-
 ---
 
 ## Tabla de Contenidos

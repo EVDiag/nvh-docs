@@ -13,8 +13,6 @@ NVH Source Locator ist ein Messwerkzeug zur Lokalisierung von Geräusch- und Vib
 
 Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in `quick-reference.md`.
 
-> **Hinweis zu Screenshots**: Dieses Dokument verwendet Platzhalter-Screenshots aus der App. Ersetzen Sie jedes `../screenshots/*.png` durch echte Geräte-Screenshots, sobald Sie sie aufnehmen.
-
 ---
 
 ## Inhaltsverzeichnis
@@ -493,8 +491,6 @@ Kontaktieren Sie `support@evdiag.net` mit:
 NVH Source Locator es una herramienta de medición para localizar fuentes de ruido y vibración mediante TDOA (Tiempo Diferencial de Llegada) a partir de señales de acelerómetros capturadas en un osciloscopio o sistema de medición.
 
 Esta guía cubre todas las funciones. Para un repaso rápido, consulte `quick-reference.md`.
-
-> **Nota sobre las capturas de pantalla**: Este documento utiliza capturas de pantalla de marcador de posición de la aplicación. Reemplace cada `../screenshots/*.png` con capturas de pantalla reales del dispositivo a medida que las obtenga.
 
 ---
 
@@ -975,8 +971,6 @@ NVH Source Locator est un outil de mesure pour localiser les sources de bruit et
 
 Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez `quick-reference.md`.
 
-> **Note sur les captures d'écran** : Ce document utilise des captures d'écran de marqueur de position de l'application. Remplacez chaque `../screenshots/*.png` par de vraies captures d'écran d'appareils au fur et à mesure que vous les capturez.
-
 ---
 
 ## Table des matières
@@ -1455,8 +1449,6 @@ Contactez `support@evdiag.net` avec :
 NVH Source Locator è uno strumento di misurazione per localizzare sorgenti di rumore e vibrazione utilizzando TDOA (Time Difference of Arrival) dai segnali degli accelerometri catturati su un oscilloscopio o sistema di misurazione.
 
 Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere `quick-reference.md`.
-
-> **Nota sugli screenshot**: Questo documento utilizza screenshot segnaposto dall'app. Sostituisci ciascun `../screenshots/*.png` con screenshot reali del dispositivo man mano che li acquisisci.
 
 ---
 

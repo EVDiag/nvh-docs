@@ -12,8 +12,6 @@ NVH Source Locator هي أداة قياس لتحديد مواقع مصادر ا�
 
 يغطي هذا الدليل جميع الميزات. للحصول على مرجع سريع، انظر `quick-reference.md`.
 
-> **ملاحظة بشأن لقطات الشاشة**: يستخدم هذا المستند لقطات شاشة نائبة من التطبيق. استبدل كل `../screenshots/*.png` بلقطات شاشة فعلية للجهاز عند التقاطها.
-
 ---
 
 ## جدول المحتويات
@@ -492,8 +490,6 @@ NVH Source Locator يستخدم **نموذج freemium بقفل الميزات**:
 NVH Source Locatorは、オシロスコープまたは測定システムでキャプチャされた加速度計信号からTDOA（Time Difference of Arrival）を使用して、騒音と振動源を特定する測定ツールです。
 
 このガイドはすべての機能をカバーします。簡単な復習には、`quick-reference.md` を参照してください。
-
-> **スクリーンショットに関する注意**: このドキュメントでは、アプリのプレースホルダースクリーンショットを使用しています。キャプチャしたら、各 `../screenshots/*.png` を実際のデバイススクリーンショットに置き換えてください。
 
 ---
 
@@ -974,8 +970,6 @@ NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된
 
 이 가이드는 모든 기능을 다룹니다. 빠른 복습은 `quick-reference.md`를 참조하세요.
 
-> **스크린샷에 대한 참고 사항**: 이 문서는 앱의 플레이스홀더 스크린샷을 사용합니다. 캡처한 후 각 `../screenshots/*.png`를 실제 장치 스크린샷으로 교체하세요.
-
 ---
 
 ## 목차
@@ -1455,8 +1449,6 @@ NVH Source Locator เป็นเครื่องมือวัดสำห�
 
 คู่มือนี้ครอบคลุมคุณสมบัติทั้งหมด สำหรับการทบทวนอย่างรวดเร็ว ดูที่ `quick-reference.md`
 
-> **หมายเหตุเกี่ยวกับภาพหน้าจอ**: เอกสารนี้ใช้ภาพหน้าจอที่เป็นตัวยึดที่จากแอปพลิเคชัน เปลี่ยน `../screenshots/*.png` แต่ละไฟล์เป็นภาพหน้าจอจริงของอุปกรณ์เมื่อคุณจับภาพ
-
 ---
 
 ## สารบัญ
@@ -1935,8 +1927,6 @@ NVH Source Locator ใช้ **โมเดล freemium ที่ล็อคต
 NVH Source Locator là một công cụ đo lường để định vị các nguồn tiếng ồn và rung động sử dụng TDOA (Time Difference of Arrival) từ các tín hiệu gia tốc kế được ghi lại trên máy hiện sóng hoặc hệ thống đo lường.
 
 Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem `quick-reference.md`.
-
-> **Lưu ý về ảnh chụp màn hình**: Tài liệu này sử dụng ảnh chụp màn hình placeholder từ ứng dụng. Thay thế mỗi `../screenshots/*.png` bằng ảnh chụp màn hình thiết bị thực khi bạn chụp.
 
 ---
 

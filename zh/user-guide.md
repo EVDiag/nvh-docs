@@ -4,8 +4,6 @@ NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arri
 
 本指南涵盖所有功能。如需快速复习，请参阅 `quick-reference.md`。
 
-> **截图说明**：本文档使用应用程序的占位符截图。请在您捕获实际设备截图时，将每个 `../screenshots/*.png` 替换为真实截图。
-
 ---
 
 ## 目录

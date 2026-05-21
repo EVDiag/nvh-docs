@@ -4,8 +4,6 @@ NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan 
 
 Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat `quick-reference.md`.
 
-> **Catatan tentang tangkapan layar**: Dokumen ini menggunakan tangkapan layar placeholder dari aplikasi. Ganti setiap `../screenshots/*.png` dengan tangkapan layar perangkat yang sebenarnya saat Anda mengambilnya.
-
 ---
 
 ## Daftar Isi

@@ -57,14 +57,11 @@
     Dokumentation zu Ihrer Bequemlichkeit übersetzt — für die präziseste technische Terminologie ist die englische Originalversion maßgeblich.
   </div>
 
-  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Benutzerhandbuch</h1>
+  <h1 id="nvh-source-locator-benutzerhandbuch">NVH Source Locator — Benutzerhandbuch</h1>
 <p>NVH Source Locator ist ein Messwerkzeug zur Lokalisierung von Geräusch- und Vibrationsquellen mithilfe von TDOA (Time Difference of Arrival) aus Beschleunigungssensorsignalen, die auf einem Oszilloskop oder Messsystem erfasst werden.</p>
 <p>Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in <code>quick-reference.md</code>.</p>
-<blockquote>
-<p><strong>Hinweis zu Screenshots</strong>: Dieses Dokument verwendet Platzhalter-Screenshots aus der App. Ersetzen Sie jedes <code>../screenshots/*.png</code> durch echte Geräte-Screenshots, sobald Sie sie aufnehmen.</p>
-</blockquote>
 <hr />
-<h2 id="table-of-contents">Inhaltsverzeichnis</h2>
+<h2 id="inhaltsverzeichnis">Inhaltsverzeichnis</h2>
 <ol>
 <li><a href="#how-it-works">Funktionsweise</a></li>
 <li><a href="#before-you-start">Bevor Sie beginnen</a></li>
@@ -83,7 +80,7 @@
 <li><a href="#troubleshooting">Fehlerbehebung</a></li>
 </ol>
 <hr />
-<h2 id="how-it-works">Funktionsweise</h2>
+<h2 id="funktionsweise">Funktionsweise</h2>
 <p>Wenn eine Geräuschquelle einen Schall oder eine Vibration erzeugt, breitet sich die Welle mit einer bekannten Geschwindigkeit durch das Material aus. Wenn Sie zwei oder mehr Beschleunigungssensoren auf dem Material platzieren und messen, wann die Welle an jedem ankommt, sagt Ihnen die Zeitdifferenz, wo sich die Quelle befindet.</p>
 <p>NVH Source Locator nimmt:</p>
 <ul>
@@ -98,7 +95,7 @@
 <li><strong>4 Sensoren</strong> → Position im 3D-Raum (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="before-you-start">Bevor Sie beginnen</h2>
+<h2 id="bevor-sie-beginnen">Bevor Sie beginnen</h2>
 <p>Sie benötigen:</p>
 <ul>
 <li><strong>Ein Oszilloskop oder Messsystem</strong>, das die Zeitdifferenz zwischen Beschleunigungssensor-Kanälen in Mikrosekunden (µs) anzeigen kann</li>
@@ -108,7 +105,7 @@
 </ul>
 <p><img alt="Startbildschirm mit 2-Sensor-Registerkarte" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="the-main-tabs">Die Haupt-Registerkarten</h2>
+<h2 id="die-haupt-registerkarten">Die Haupt-Registerkarten</h2>
 <p>Die App hat Registerkarten oben:</p>
 <p><img alt="Registerkarten-Leiste" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +169,50 @@
 </blockquote>
 <p>Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke aufgerufen (keine Registerkarte).</p>
 <hr />
-<h2 id="2-sensor-mode">2-Sensor-Modus</h2>
+<h2 id="2-sensor-modus">2-Sensor-Modus</h2>
 <p>Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.</p>
 <p><img alt="2-Sensor-Registerkarte" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="step-1-apply-a-material">Schritt 1: Material anwenden</h3>
+<h3 id="schritt-1-material-anwenden">Schritt 1: Material anwenden</h3>
 <p>Tippen Sie auf die Materials-Registerkarte. Wählen Sie das Material, aus dem Ihre Struktur besteht (z. B. „Aluminium", „Stahl, Mild (1020)"). Die App verwendet die bekannte Schallgeschwindigkeit des Materials, um das Kalibrierungszeitfeld automatisch zu füllen.</p>
 <p>Wenn das Material Ihrer Struktur nicht in der Liste enthalten ist, können Sie vorübergehend „Luft" auswählen und die Kalibrierungszeit in Schritt 2 manuell überschreiben.</p>
-<h3 id="step-2-enter-calibration-data">Schritt 2: Kalibrierungsdaten eingeben</h3>
+<h3 id="schritt-2-kalibrierungsdaten-eingeben">Schritt 2: Kalibrierungsdaten eingeben</h3>
 <p>Auf der 2-Sensor-Registerkarte sehen Sie zwei Paar-Abschnitte: <strong>Paar A–B</strong> und <strong>Paar A–C</strong> (nur A–B ist erforderlich, wenn Sie nur 2 Sensoren haben).</p>
 <p>Für jedes Paar geben Sie ein:</p>
 <ul>
 <li><strong>Sensorabstand</strong> (<code>d</code>): physischer Abstand zwischen Sensoren, in cm oder Zoll (in den Einstellungen festgelegt)</li>
 <li><strong>Kalibrierungszeitverzögerung</strong> (<code>tCal</code>): Zeit für eine Welle, sich zwischen den Sensoren mit der Schallgeschwindigkeit des Materials zu bewegen — wird automatisch ausgefüllt, wenn Sie ein Material auswählen, kann aber überschrieben werden</li>
 </ul>
-<h3 id="step-3-enter-the-event-time">Schritt 3: Ereigniszeit eingeben</h3>
+<h3 id="schritt-3-ereigniszeit-eingeben">Schritt 3: Ereigniszeit eingeben</h3>
 <ul>
 <li><strong>Ereigniszeitverzögerung</strong> (<code>tEvent</code>): Zeitdifferenz zwischen Sensoren, die das Geräuschereignis erfassen, in Mikrosekunden</li>
 <li><strong>Erster Sensor</strong>: welcher Sensor das Ereignis zuerst gehört hat (A oder B)</li>
 </ul>
-<h3 id="step-4-read-the-result">Schritt 4: Ergebnis ablesen</h3>
+<h3 id="schritt-4-ergebnis-ablesen">Schritt 4: Ergebnis ablesen</h3>
 <p>Die App zeigt die Quellposition als Abstand vom Sensor A:
 - Ergebnis = 0: Quelle befindet sich bei Sensor A
 - Ergebnis = Abstand: Quelle befindet sich bei Sensor B
 - Ergebnis dazwischen: Quelle befindet sich zwischen ihnen
 - Ergebnis außerhalb: Quelle befindet sich jenseits eines der Sensoren (Toast warnt)</p>
 <p>Die Ergebniskarte zeigt beide Entfernungen (von A, von B) und zeigt an, welcher Sensor näher ist.</p>
-<h3 id="step-5-optional-annotate-a-photo">Schritt 5 (optional): Foto annotieren</h3>
+<h3 id="schritt-5-optional-foto-annotieren">Schritt 5 (optional): Foto annotieren</h3>
 <p>Tippen Sie auf <strong>📷 Foto annotieren</strong>, um ein Foto Ihres Aufbaus aufzunehmen. Die App überlagert Markierungen für Sensoren A, B und die Quelle. Nützlich für Berichte.</p>
 <hr />
-<h2 id="3-sensor-mode">3-Sensor-Modus</h2>
+<h2 id="3-sensor-modus">3-Sensor-Modus</h2>
 <p>Lokalisiert eine Quelle auf einer 2D-Ebene mit drei in einem Dreieck angeordneten Sensoren.</p>
 <p><img alt="3-Sensor-Registerkarte" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="setup">Aufbau</h3>
+<h3 id="aufbau">Aufbau</h3>
 <p>Platzieren Sie drei Sensoren auf Ihrer Struktur, die ein Dreieck bilden. Gleichseitig, rechtwinklig oder ungleichseitig — die App bewältigt alle Geometrien.</p>
-<h3 id="enter-the-data">Daten eingeben</h3>
+<h3 id="daten-eingeben">Daten eingeben</h3>
 <p>Geben Sie im Abschnitt <strong>Dreiecksseitenlängen</strong> den physischen Abstand für alle drei Seiten ein (A–B, A–C, B–C).</p>
 <p>Für jedes Paar (A–B und A–C) geben Sie ein:
 - <strong>tCal</strong>: Kalibrierungszeit (automatisch aus Material ausgefüllt)
 - <strong>tEvent</strong>: gemessene Zeitdifferenz für das Geräuschereignis
 - <strong>Erster Sensor</strong>: welcher es zuerst gehört hat</p>
-<h3 id="read-the-result">Ergebnis ablesen</h3>
+<h3 id="ergebnis-ablesen">Ergebnis ablesen</h3>
 <p>Die App zeigt die Quellposition als X-, Y-Koordinaten relativ zum Sensor A (Sensor A im Ursprung, Sensor B auf der X-Achse). Die Visualisierung zeigt alle drei Sensoren und die Quellposition.</p>
 <p><img alt="Dreiecksergebnis" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modes">Pro+-Modi</h2>
+<h2 id="pro-modi">Pro+-Modi</h2>
 <p>Mehrere fortgeschrittene Registerkarten bieten überbestimmte Solver und höhere Dimensionalität:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Gleicher Dreiecksaufbau wie 3-Sensor, aber kalibrieren UND messen Sie alle drei Paare (A–B, A–C, B–C). Der Solver verwendet alle 3 TDOAs in einer Kleinste-Quadrate-Anpassung — robuster gegenüber Messrauschen und anisotropen Materialien. Paarweise Residuen werden gemeldet, damit Sie inkonsistente Messungen erkennen können.</p>
@@ -224,19 +221,19 @@
 - <strong>A–B</strong> = horizontales Paar (linke/rechte Seiten)
 - <strong>C–D</strong> = vertikales Paar (obere/untere Seiten)</p>
 <p>Führen Sie zuerst das A–B-Paar (horizontal) und dann das C–D-Paar (vertikal) aus. Die 2D-Karte zeigt den Schnittpunkt. Jedes Paar wird separat kalibriert — nützlich, wenn das Material über die Struktur variiert.</p>
-<h3 id="4-sen-advanced-2d">4-Sen+ (Erweitertes 2D)</h3>
+<h3 id="4-sen-erweitertes-2d">4-Sen+ (Erweitertes 2D)</h3>
 <p>Vier Sensoren in beliebigen Positionen (nicht zwangsläufig rechteckig). Paaren Sie A mit jedem von B, C, D und kalibrieren Sie separat. Der überbestimmte Kleinste-Quadrate-Solver mittelt das paarweise Messrauschen aus und meldet paarweise Residuen.</p>
 <h3 id="3d">3D</h3>
 <p>Vollständige 3D-Messung mit 4 Sensoren im 3D-Raum platziert. Geben Sie für jeden Sensor die (X, Y, Z)-Koordinaten sowie Kalibrierungs- und Ereigniszeiten für jedes Paar (A–B, A–C, A–D) ein.</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Wie 3D, aber unterstützt bis zu <strong>6 Sensoren</strong> (A bis F) mit überbestimmtem LSQ. Maximale Präzision für komplexe 3D-Geometrien.</p>
 <hr />
-<h2 id="the-materials-tab">Die Materials-Registerkarte</h2>
+<h2 id="die-materials-registerkarte">Die Materials-Registerkarte</h2>
 <p>Bibliothek gängiger technischer Materialien mit bekannter Schallgeschwindigkeit bei 20 °C.</p>
 <p><img alt="Materials-Registerkarte" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="material-list">Materialliste</h3>
+<h3 id="materialliste">Materialliste</h3>
 <p>Die Liste umfasst Luft, Flüssigkeiten, Gummi, Polymere, Holz, Glas und Metalle. Die Geschwindigkeiten reichen von ~340 m/s (Luft) bis ~13.000 m/s (einige Metalle bei Raumtemperatur).</p>
-<h3 id="built-in-materials-with-temperature-compensation">Eingebaute Materialien mit Temperaturkompensation</h3>
+<h3 id="eingebaute-materialien-mit-temperaturkompensation">Eingebaute Materialien mit Temperaturkompensation</h3>
 <p>14 häufig verwendete Metalle enthalten Temperaturkoeffizientendaten. Wenn die Referenztemperatur in den Einstellungen von 20 °C abweicht, passt die App die Geschwindigkeiten dieser Materialien automatisch an:</p>
 <ul>
 <li>Aluminium</li>
@@ -256,20 +253,20 @@
 </ul>
 <p>Materialien mit Kompensation zeigen zwei Werte im Picker: die <strong>kompensierte Geschwindigkeit</strong> (groß, prominent) und die <strong>Referenzgeschwindigkeit bei 20 °C</strong> (klein, grau darunter).</p>
 <p>Materialien ohne Kompensation zeigen <strong>„ref only"</strong> in Kursivschrift an — ihre gelistete Geschwindigkeit wird unabhängig von der Temperatur unverändert verwendet.</p>
-<h3 id="custom-materials">Benutzerdefinierte Materialien</h3>
+<h3 id="benutzerdefinierte-materialien">Benutzerdefinierte Materialien</h3>
 <p>Wenn Sie eine Kalibrierung auf der 2-Sensor-Registerkarte messen, können Sie das Ergebnis als benutzerdefiniertes Material speichern. Nach einer erfolgreichen 2-Sensor-Messung suchen Sie nach der Option, die abgeleitete Geschwindigkeit unter einem Namen Ihrer Wahl zu speichern.</p>
 <p>Benutzerdefinierte Materialien speichern die in-situ gemessene Geschwindigkeit; sie wenden niemals eine Temperaturkompensation an (die Geschwindigkeit wurde bereits bei der Testtemperatur gemessen).</p>
-<h3 id="favorites">Favoriten</h3>
+<h3 id="favoriten">Favoriten</h3>
 <p>Tippen Sie auf den Stern neben einem Material, um es als Favorit zu markieren. Favoriten erscheinen oben in der Liste für schnellen Zugriff.</p>
-<h3 id="search">Suche</h3>
+<h3 id="suche">Suche</h3>
 <p>Verwenden Sie die Suchleiste oben, um Materialien nach Namen zu filtern. Die Suche stimmt sowohl mit englischen kanonischen Namen als auch mit übersetzten Anzeigenamen überein.</p>
 <hr />
-<h2 id="temperature-compensation">Temperaturkompensation</h2>
+<h2 id="temperaturkompensation">Temperaturkompensation</h2>
 <p>Die Schallgeschwindigkeit in Materialien ändert sich mit der Temperatur. Im automobilen NVH-Test ist dies wichtig: ein Motorraum bei 80 °C, eine kalt eingelagerte Kabine bei -10 °C oder ein Auspuffkrümmerbereich bei 200 °C verhalten sich alle anders als bei Raumtemperatur-Laborbedingungen.</p>
-<h3 id="setting-the-temperature">Temperatur einstellen</h3>
+<h3 id="temperatur-einstellen">Temperatur einstellen</h3>
 <p>Öffnen Sie Einstellungen (⚙-Symbol) → Referenztemperatur. Geben Sie die Temperatur Ihrer Testumgebung in °C ein (Bereich -40 bis +200).</p>
 <p><img alt="Einstellungsfenster" src="../screenshots/06-settings.png" /></p>
-<h3 id="what-happens-when-temperature-20-c">Was passiert, wenn Temperatur ≠ 20 °C</h3>
+<h3 id="was-passiert-wenn-temperatur-20-c">Was passiert, wenn Temperatur ≠ 20 °C</h3>
 <ul>
 <li>Kalibrierungszeitfelder werden automatisch mit der temperaturangepassten Geschwindigkeit ausgefüllt</li>
 <li>Der Materials-Picker zeigt die angepasste Geschwindigkeit prominent an</li>
@@ -278,16 +275,16 @@
 <li>Gespeicherte Verlaufseinträge zeichnen die aktive Temperatur auf</li>
 <li>Berichte enthalten eine Fußzeile: <em>„Referenztemperatur: 60 °C, Kompensation angewendet"</em></li>
 </ul>
-<h3 id="reset-on-app-launch">Zurücksetzen beim App-Start</h3>
+<h3 id="zurucksetzen-beim-app-start">Zurücksetzen beim App-Start</h3>
 <p>Die Referenztemperatur <strong>wird immer auf 20 °C zurückgesetzt</strong>, wenn Sie die App starten. Dies verhindert, dass veraltete Einstellungen aus einer vergangenen Messsitzung die heutige Arbeit stillschweigend beeinflussen. Ein kleiner kursiver Hinweis in den Einstellungen erinnert Sie an dieses Verhalten.</p>
 <p>Wenn Sie eine historische Messung bei ihrer ursprünglichen Temperatur abspielen möchten, tippen Sie einfach auf den Eintrag — die Temperatur wird automatisch wiederhergestellt.</p>
-<h3 id="materials-without-compensation">Materialien ohne Kompensation</h3>
+<h3 id="materialien-ohne-kompensation">Materialien ohne Kompensation</h3>
 <p>Die meisten nicht-metallischen Materialien haben keine zuverlässigen veröffentlichten Temperaturkoeffizienten. Die App zeigt für diese ein <strong>„ref only"</strong>-Abzeichen an — ihre gelistete Geschwindigkeit wird unabhängig von der Temperatureinstellung verwendet. Wenn Sie genaue Messungen bei nicht-Raumtemperaturen für diese Materialien benötigen, führen Sie eine In-situ-Kalibrierung durch und speichern Sie das Ergebnis als benutzerdefiniertes Material.</p>
 <hr />
-<h2 id="photo-annotation">Fotoannotation</h2>
+<h2 id="fotoannotation">Fotoannotation</h2>
 <p>Nach einer erfolgreichen Berechnung tippen Sie auf die Schaltfläche <strong>📷 Foto annotieren</strong>, um Sensor- und Quellenmarkierungen über ein Foto Ihres Aufbaus zu legen.</p>
 <p><img alt="Fotoannotation" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flow">Ablauf</h3>
+<h3 id="ablauf">Ablauf</h3>
 <ol>
 <li>Tippen Sie auf <strong>Foto annotieren</strong> — die Systemkamera öffnet sich</li>
 <li>Machen Sie ein Foto Ihrer Sensorplatzierung</li>
@@ -298,10 +295,10 @@
 </ol>
 <p>Das annotierte Foto wird automatisch in PDF-Berichte aufgenommen.</p>
 <hr />
-<h2 id="reports">Berichte</h2>
+<h2 id="berichte">Berichte</h2>
 <p>Tippen Sie auf die Schaltfläche <strong>Ergebnis drucken</strong> auf einem beliebigen Ergebnisbildschirm, um einen formatierten Bericht zu erstellen.</p>
 <p><img alt="PDF-Bericht" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="report-contents">Berichtsinhalt</h3>
+<h3 id="berichtsinhalt">Berichtsinhalt</h3>
 <ul>
 <li>Kopfzeile (anpassbar in Einstellungen → Berichtskopfzeile)</li>
 <li>Messtitel und Zeitstempel</li>
@@ -313,23 +310,23 @@
 <li>Temperatur-Fußzeile (wenn Kompensation aktiv war)</li>
 <li>Seitenzahl und Credit-Zeile</li>
 </ul>
-<h3 id="output-format">Ausgabeformat</h3>
+<h3 id="ausgabeformat">Ausgabeformat</h3>
 <ul>
 <li><strong>Android</strong>: native PDF-Generierung, auf Ihrem Telefon speichern oder teilen</li>
 <li><strong>iOS</strong>: System-Druckdialog → als PDF speichern, AirPrint oder teilen</li>
 </ul>
-<h3 id="customizing-the-header">Anpassen der Kopfzeile</h3>
+<h3 id="anpassen-der-kopfzeile">Anpassen der Kopfzeile</h3>
 <p>Einstellungen → Berichtskopfzeile. Geben Sie Ihren Firmennamen, Labornamen, Projektinfo oder was auch immer Sie oben in jedem Bericht haben möchten ein.</p>
 <hr />
-<h2 id="backup-and-restore">Backup und Wiederherstellung</h2>
+<h2 id="backup-und-wiederherstellung">Backup und Wiederherstellung</h2>
 <p>Speichern Sie alle Ihre benutzerdefinierten Materialien, Favoriten, Einstellungen und den Verlauf in einer einzigen Datei. Übertragung zwischen Geräten.</p>
 <h3 id="backup">Backup</h3>
 <p>Einstellungen → <strong>Backup</strong> → tippen Sie auf „Backup-Datei speichern". Die App erzeugt eine JSON-Datei und öffnet das Teilen-Menü Ihres Telefons. Speichern Sie sie in Ihrem Cloud-Laufwerk (Google Drive, iCloud, OneDrive), senden Sie sie sich per E-Mail oder übertragen Sie sie auf beliebige Weise.</p>
-<h3 id="restore">Wiederherstellen</h3>
+<h3 id="wiederherstellen">Wiederherstellen</h3>
 <p>Einstellungen → <strong>Wiederherstellen</strong> → wählen Sie die Backup-Datei aus dem Speicher Ihres Telefons. Die App importiert benutzerdefinierte Materialien, Favoriten, den Verlauf und die Einstellungen.</p>
 <p>⚠️ <strong>Wiederherstellung ersetzt Ihre aktuellen Daten.</strong> Wenn Sie wichtige Messungen auf dem aktuellen Gerät haben, sichern Sie diese zuerst, bevor Sie aus einem anderen Backup wiederherstellen.</p>
 <hr />
-<h2 id="settings">Einstellungen</h2>
+<h2 id="einstellungen">Einstellungen</h2>
 <p>Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellungen sind ein Modal, keine Registerkarte.</p>
 <p><img alt="Einstellungen" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +376,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-features">Pro-Funktionen</h2>
+<h2 id="pro-funktionen">Pro-Funktionen</h2>
 <p>NVH Source Locator verwendet ein <strong>Feature-gesperrtes Freemium-Modell</strong>:</p>
 <ul>
 <li><strong>Kostenlos</strong>: Die 2-Sensor-Registerkarte ist voll funktionsfähig ohne Einschränkungen</li>
 <li><strong>Pro</strong>: Alle anderen Registerkarten haben bestimmte Eingabefelder gesperrt. Die Paywall erscheint, wenn ein kostenloser Benutzer ein gesperrtes Feld antippt</li>
 </ul>
-<h3 id="whats-locked">Was gesperrt ist</h3>
+<h3 id="was-gesperrt-ist">Was gesperrt ist</h3>
 <p>Pro-erforderliche Felder sind verteilt auf:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - 3D- und 3D+-Modi
@@ -395,7 +392,7 @@
 - Fotoannotation</p>
 <p>Ein kostenloser Benutzer kann jede Registerkarte ÖFFNEN und die Oberfläche SEHEN. Er kann nur keine Werte in die Pro-gesperrten Eingabefelder eingeben.</p>
 <p><img alt="Pro-gesperrtes Feld" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="the-paywall">Die Paywall</h3>
+<h3 id="die-paywall">Die Paywall</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Wenn ein kostenloser Benutzer ein gesperrtes Feld antippt, gleitet die Paywall ein und zeigt:
 - App-Symbol mit PRO-Abzeichen
@@ -403,9 +400,9 @@
 - Freischalt-Schaltfläche mit Preis ($19,99 Standard; kann je nach Region variieren)
 - Promo-Code-Einlösung (nur Android — iOS verwendet Apples separaten Offer-Code-Flow)
 - Optionaler Promo-Link zu Community-Kanälen</p>
-<h3 id="purchasing-pro">Pro kaufen</h3>
+<h3 id="pro-kaufen">Pro kaufen</h3>
 <p>Tippen Sie auf ein beliebiges gesperrtes Feld oder tippen Sie auf <strong>Auf Pro upgraden</strong> in den Einstellungen. Verwendet das offizielle Zahlungssystem Ihrer Plattform (Google Play auf Android, Apple App Store auf iOS).</p>
-<h3 id="restoring-pro-on-a-new-device">Pro auf einem neuen Gerät wiederherstellen</h3>
+<h3 id="pro-auf-einem-neuen-gerat-wiederherstellen">Pro auf einem neuen Gerät wiederherstellen</h3>
 <p>Wenn Sie auf einem Gerät gekauft haben und Pro auf einem anderen möchten (gleiches Konto):</p>
 <ol>
 <li>Melden Sie sich mit dem <strong>gleichen</strong> Google-Konto (Android) oder Apple-ID (iOS) an, mit dem Sie gekauft haben</li>
@@ -413,13 +410,13 @@
 <li>Gehen Sie zu Einstellungen → <strong>Kauf wiederherstellen</strong></li>
 <li>Die App überprüft die Kaufdatensätze der Plattform und schaltet Pro frei</li>
 </ol>
-<h3 id="auto-restore-on-launch">Auto-Wiederherstellung beim Start</h3>
+<h3 id="auto-wiederherstellung-beim-start">Auto-Wiederherstellung beim Start</h3>
 <p>Wenn Sie einen Promo-Code im Google Play Store oder App Store einlösen, während NVH Source Locator im Hintergrund läuft, erkennt die Rückkehr zur App automatisch den neuen Kauf und schaltet Pro frei — keine manuelle Wiederherstellung erforderlich.</p>
-<h3 id="promo-code-redemption">Promo-Code-Einlösung</h3>
+<h3 id="promo-code-einlosung">Promo-Code-Einlösung</h3>
 <p><strong>Android</strong>: Eine Schaltfläche „Haben Sie einen Google Play-Promo-Code?" in der Paywall öffnet den Google Play-Einlösungs-Flow mit Ihrem vorausgefüllten Code.</p>
 <p><strong>iOS</strong>: Die App Store-Richtlinie 3.1.1 erfordert die Einlösung über Apples offiziellen „Code einlösen"-Flow. Die Google Play-Schaltfläche ist auf iOS ausgeblendet. Suchen Sie stattdessen nach „App Store-Code einlösen" in den Einstellungen.</p>
 <hr />
-<h2 id="help-tab-and-tutorials">Help-Registerkarte und Tutorials</h2>
+<h2 id="help-registerkarte-und-tutorials">Help-Registerkarte und Tutorials</h2>
 <p>Die <strong>Help</strong>-Registerkarte enthält In-App-Tutorials, Best-Practice-Anleitungen und Referenzinformationen.</p>
 <p><img alt="Help-Registerkarte" src="../screenshots/10-help-tab.png" /></p>
 <p>Behandelte Themen:
@@ -430,38 +427,38 @@
 - Tipps für Triangulation und 3D-Platzierungen
 - Kabelführung und Signalqualität</p>
 <hr />
-<h2 id="troubleshooting">Fehlerbehebung</h2>
-<h3 id="calculation-result-is-wrong-or-makes-no-sense">Berechnungsergebnis ist falsch oder ergibt keinen Sinn</h3>
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<h3 id="berechnungsergebnis-ist-falsch-oder-ergibt-keinen-sinn">Berechnungsergebnis ist falsch oder ergibt keinen Sinn</h3>
 <ol>
 <li>Überprüfen Sie Ihre Kalibrierung. Das automatisch ausgefüllte <code>tCal</code> setzt die veröffentlichte Materialgeschwindigkeit voraus — reale Materialien variieren. Die genaueste Kalibrierung ist in-situ: tippen Sie auf eine bekannte Position und lassen Sie die App die tatsächliche Geschwindigkeit ableiten.</li>
 <li>Überprüfen Sie die Einstellung <strong>Erster Sensor</strong> — welcher Sensor das Ereignis zuerst gehört hat, ist für die Berechnung wichtig.</li>
 <li>Überprüfen Sie Ihre Abstandsmessungen. Fehler von wenigen mm pflanzen sich fort.</li>
 </ol>
-<h3 id="toast-says-result-outside-range">Toast sagt „Ergebnis außerhalb des Bereichs"</h3>
+<h3 id="toast-sagt-ergebnis-auerhalb-des-bereichs">Toast sagt „Ergebnis außerhalb des Bereichs"</h3>
 <p>Die Mathematik besagt, dass sich die Quelle nicht zwischen Ihren Sensoren befindet. Mögliche Ursachen:
 - Die Quelle ist tatsächlich außerhalb der Sensorlinie/-ebene
 - Eine Ihrer Eingaben ist falsch
 - Die Kalibrierungsgeschwindigkeit weicht zu weit von der Realität ab</p>
-<h3 id="calc-speed-hint-shows-a-warning-color">Berechnungsgeschwindigkeits-Hinweis zeigt eine Warnfarbe</h3>
+<h3 id="berechnungsgeschwindigkeits-hinweis-zeigt-eine-warnfarbe">Berechnungsgeschwindigkeits-Hinweis zeigt eine Warnfarbe</h3>
 <p>Die implizite Schallgeschwindigkeit aus Ihren Eingaben ist weit von jedem üblichen Material entfernt (weniger als 50 m/s oder mehr als 20.000 m/s). Überprüfen Sie Ihre Eingaben — wahrscheinlich ein Tippfehler in tCal oder Abstand.</p>
-<h3 id="material-picker-shows-different-speeds-than-expected">Materials-Picker zeigt andere Geschwindigkeiten als erwartet</h3>
+<h3 id="materials-picker-zeigt-andere-geschwindigkeiten-als-erwartet">Materials-Picker zeigt andere Geschwindigkeiten als erwartet</h3>
 <p>Überprüfen Sie die Referenztemperatur in den Einstellungen. Wenn ungleich 20 °C, spiegeln die angezeigten Geschwindigkeiten die Temperaturkompensation wider. Die App zeigt „ref X @ 20°C" unter kompensierten Geschwindigkeiten an, damit Sie überprüfen können.</p>
-<h3 id="history-entry-replays-with-different-result">Verlaufseintrag spielt mit anderem Ergebnis ab</h3>
+<h3 id="verlaufseintrag-spielt-mit-anderem-ergebnis-ab">Verlaufseintrag spielt mit anderem Ergebnis ab</h3>
 <p>Alte Verlaufseinträge, die vor App-Version 1.75 erstellt wurden, haben die Temperatur möglicherweise nicht gespeichert. Wenn Sie die Messung bei einer Nicht-20 °C-Temperatur durchgeführt haben, verwendet die Wiedergabe die aktuelle Einstellung. Stellen Sie die Temperatur in den Einstellungen manuell ein, bevor Sie sie wiedergeben, ODER messen Sie erneut.</p>
-<h3 id="photo-annotation-markers-not-where-i-expect">Fotoannotationsmarkierungen nicht dort, wo ich sie erwarte</h3>
+<h3 id="fotoannotationsmarkierungen-nicht-dort-wo-ich-sie-erwarte">Fotoannotationsmarkierungen nicht dort, wo ich sie erwarte</h3>
 <p>Markierungen werden basierend auf der Eingabegeometrie automatisch platziert. Ziehen Sie sie zum Anpassen. Das Anpassen von Markierungen aktualisiert die Quellposition in der Fotoüberlagerung — ändert jedoch NICHT das zugrunde liegende Berechnungsergebnis.</p>
-<h3 id="backuprestore-fails">Backup/Wiederherstellung schlägt fehl</h3>
+<h3 id="backupwiederherstellung-schlagt-fehl">Backup/Wiederherstellung schlägt fehl</h3>
 <p>Stellen Sie sicher, dass Sie eine Backup-Datei verwenden, die von der gleichen oder einer neueren Version der App generiert wurde. Ältere Backup-Dateien können aktuelle Datenfelder vermissen.</p>
-<h3 id="restore-purchase-says-no-purchase-found">Kauf wiederherstellen sagt „Kein Kauf gefunden"</h3>
+<h3 id="kauf-wiederherstellen-sagt-kein-kauf-gefunden">Kauf wiederherstellen sagt „Kein Kauf gefunden"</h3>
 <ol>
 <li>Überprüfen Sie, dass Sie mit dem gleichen Store-Konto angemeldet sind, mit dem Sie den Kauf getätigt haben</li>
 <li>Überprüfen Sie, dass der Kauf nicht erstattet wurde oder abgelaufen ist</li>
 <li>Versuchen Sie, die App zu deinstallieren und neu zu installieren (der Kauf ist an Ihr Store-Konto gebunden, nicht an die App-Installation)</li>
 <li>Kontaktieren Sie support@evdiag.net, falls es weiterhin besteht</li>
 </ol>
-<h3 id="numeric-input-snaps-to-0-unexpectedly">Numerische Eingabe springt unerwartet auf 0</h3>
+<h3 id="numerische-eingabe-springt-unerwartet-auf-0">Numerische Eingabe springt unerwartet auf 0</h3>
 <p>Beabsichtigt: Wenn Sie ein numerisches Feld verlassen (woanders tippen) und es leer, negativ oder nicht-numerischer Text ist, springt es auf 0. Verhindert stillschweigend defekte Berechnungen durch versehentlich gelöschte Eingaben. Die Temperatureingabe ist ausgenommen (sie klemmt stattdessen auf -40/+200).</p>
-<h3 id="need-more-help">Brauche mehr Hilfe</h3>
+<h3 id="brauche-mehr-hilfe">Brauche mehr Hilfe</h3>
 <p>Kontaktieren Sie <code>support@evdiag.net</code> mit:
 - Ihrem Gerätemodell und Ihrer Betriebssystemversion
 - Der App-Version (Einstellungen → unten auf der Seite)

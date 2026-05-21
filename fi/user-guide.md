@@ -4,8 +4,6 @@ NVH Source Locator on mittaustyökalu melu- ja tärinälähteiden paikantamiseen
 
 Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso `quick-reference.md`.
 
-> **Huomautus kuvakaappauksista**: Tämä dokumentti käyttää sovelluksen täytekuvakaappauksia. Korvaa jokainen `../screenshots/*.png` todellisilla laitteen kuvakaappauksilla, kun otat ne.
-
 ---
 
 ## Sisällysluettelo

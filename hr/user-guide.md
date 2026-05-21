@@ -4,8 +4,6 @@ NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću T
 
 Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte `quick-reference.md`.
 
-> **Napomena o snimkama zaslona**: Ovaj dokument koristi rezervirane snimke zaslona iz aplikacije. Zamijenite svaki `../screenshots/*.png` stvarnim snimkama zaslona uređaja kako ih budete snimali.
-
 ---
 
 ## Sadržaj

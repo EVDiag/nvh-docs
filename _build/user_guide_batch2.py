@@ -11,8 +11,6 @@ NVH Source Locator é uma ferramenta de medição para localizar fontes de ruíd
 
 Este guia cobre todos os recursos. Para uma revisão rápida, consulte `quick-reference.md`.
 
-> **Nota sobre as capturas de tela**: Este documento usa capturas de tela de espaço reservado do aplicativo. Substitua cada `../screenshots/*.png` por capturas de tela reais do dispositivo conforme você as captura.
-
 ---
 
 ## Sumário
@@ -491,8 +489,6 @@ Contate `support@evdiag.net` com:
 NVH Source Locator to narzędzie pomiarowe do lokalizowania źródeł hałasu i drgań przy użyciu TDOA (Time Difference of Arrival) z sygnałów akcelerometrów rejestrowanych na oscyloskopie lub systemie pomiarowym.
 
 Ten przewodnik obejmuje wszystkie funkcje. Aby uzyskać szybkie przypomnienie, zobacz `quick-reference.md`.
-
-> **Uwaga dotycząca zrzutów ekranu**: Ten dokument używa zastępczych zrzutów ekranu z aplikacji. Zastąp każdy plik `../screenshots/*.png` rzeczywistymi zrzutami ekranu urządzenia, gdy je wykonasz.
 
 ---
 
@@ -973,8 +969,6 @@ NVH Source Locator — это измерительный инструмент д
 
 Это руководство охватывает все функции. Для краткого напоминания см. `quick-reference.md`.
 
-> **Примечание о скриншотах**: Этот документ использует скриншоты-заполнители из приложения. Замените каждый `../screenshots/*.png` реальными скриншотами устройства по мере их получения.
-
 ---
 
 ## Содержание
@@ -1453,8 +1447,6 @@ NVH Source Locator использует **freemium-модель с блокир�
 NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arrival，到达时间差）从示波器或测量系统捕获的加速度计信号定位噪声和振动源。
 
 本指南涵盖所有功能。如需快速复习，请参阅 `quick-reference.md`。
-
-> **截图说明**：本文档使用应用程序的占位符截图。请在您捕获实际设备截图时，将每个 `../screenshots/*.png` 替换为真实截图。
 
 ---
 

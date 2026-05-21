@@ -4,8 +4,6 @@ NVH Source Locator ist ein Messwerkzeug zur Lokalisierung von Geräusch- und Vib
 
 Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in `quick-reference.md`.
 
-> **Hinweis zu Screenshots**: Dieses Dokument verwendet Platzhalter-Screenshots aus der App. Ersetzen Sie jedes `../screenshots/*.png` durch echte Geräte-Screenshots, sobald Sie sie aufnehmen.
-
 ---
 
 ## Inhaltsverzeichnis

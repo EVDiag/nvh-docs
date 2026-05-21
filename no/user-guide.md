@@ -4,8 +4,6 @@ NVH Source Locator er et måleverktøy for å lokalisere støy- og vibrasjonskil
 
 Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se `quick-reference.md`.
 
-> **Merknad om skjermbilder**: Dette dokumentet bruker plassholder-skjermbilder fra appen. Erstatt hvert `../screenshots/*.png` med ekte enhets-skjermbilder etter hvert som du tar dem.
-
 ---
 
 ## Innholdsfortegnelse

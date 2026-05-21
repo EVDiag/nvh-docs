@@ -4,8 +4,6 @@ NVH Source Locator é uma ferramenta de medição para localizar fontes de ruíd
 
 Este guia cobre todos os recursos. Para uma revisão rápida, consulte `quick-reference.md`.
 
-> **Nota sobre as capturas de tela**: Este documento usa capturas de tela de espaço reservado do aplicativo. Substitua cada `../screenshots/*.png` por capturas de tela reais do dispositivo conforme você as captura.
-
 ---
 
 ## Sumário

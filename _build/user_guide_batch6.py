@@ -13,8 +13,6 @@ NVH Source Locator — гэта інструмент вымярэння для �
 
 Гэтае кіраўніцтва ахоплівае ўсе функцыі. Для хуткага напаміну гл. `quick-reference.md`.
 
-> **Заўвага пра здымкі экрана**: Гэты дакумент выкарыстоўвае запасныя здымкі экрана з праграмы. Замяніце кожны `../screenshots/*.png` рэальнымі здымкамі экрана прылады, калі вы іх захопіце.
-
 ---
 
 ## Змест
@@ -493,8 +491,6 @@ NVH Source Locator выкарыстоўвае **freemium-мадэль з бла�
 NVH Source Locator یک ابزار اندازه‌گیری برای مکان‌یابی منابع نویز و ارتعاش با استفاده از TDOA (Time Difference of Arrival) از سیگنال‌های شتاب‌سنج که در یک اسیلوسکوپ یا سیستم اندازه‌گیری ضبط شده‌اند.
 
 این راهنما تمام ویژگی‌ها را پوشش می‌دهد. برای یادآوری سریع، به `quick-reference.md` مراجعه کنید.
-
-> **توجه درباره تصاویر صفحه**: این سند از تصاویر صفحه نگه‌دارنده برنامه استفاده می‌کند. هر `../screenshots/*.png` را با تصاویر صفحه واقعی دستگاه جایگزین کنید همان طور که آن‌ها را می‌گیرید.
 
 ---
 
@@ -975,8 +971,6 @@ NVH Source Locator एक मापन उपकरण है जो ऑसि�
 
 यह गाइड सभी सुविधाओं को कवर करता है। त्वरित स्मरण के लिए, `quick-reference.md` देखें।
 
-> **स्क्रीनशॉट पर नोट**: यह दस्तावेज़ ऐप से प्लेसहोल्डर स्क्रीनशॉट का उपयोग करता है। जैसे ही आप कैप्चर करते हैं, प्रत्येक `../screenshots/*.png` को वास्तविक डिवाइस स्क्रीनशॉट से बदलें।
-
 ---
 
 ## विषयसूची
@@ -1455,8 +1449,6 @@ Pro-आवश्यक फ़ील्ड बिखरे हुए हैं:
 NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal accelerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
 Panduan ini mencakup semua fitur. Untuk pengingat cepat, lihat `quick-reference.md`.
-
-> **Catatan tentang tangkapan layar**: Dokumen ini menggunakan tangkapan layar placeholder dari aplikasi. Ganti setiap `../screenshots/*.png` dengan tangkapan layar perangkat nyata saat Anda mengambilnya.
 
 ---
 
@@ -1937,8 +1929,6 @@ NVH Source Locator ialah alat pengukuran untuk mencari punca bunyi dan getaran m
 
 Panduan ini meliputi semua ciri. Untuk peringatan pantas, lihat `quick-reference.md`.
 
-> **Nota mengenai tangkapan skrin**: Dokumen ini menggunakan tangkapan skrin pemegang tempat daripada aplikasi. Gantikan setiap `../screenshots/*.png` dengan tangkapan skrin peranti sebenar apabila anda mengambilnya.
-
 ---
 
 ## Kandungan
@@ -2417,8 +2407,6 @@ Hubungi `support@evdiag.net` dengan:
 Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmulan ng ingay at vibration gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa isang oscilloscope o sistema ng pagsukat.
 
 Saklaw ng gabay na ito ang lahat ng mga tampok. Para sa mabilis na pagre-refresh, tingnan ang `quick-reference.md`.
-
-> **Tala sa mga screenshot**: Gumagamit ang dokumentong ito ng placeholder na screenshots mula sa app. Palitan ang bawat `../screenshots/*.png` ng tunay na screenshots ng aparato habang kinukuha mo ang mga ito.
 
 ---
 
@@ -2899,8 +2887,6 @@ NVH Source Locator एक मापन उपकरण है जो ऑसि�
 
 यह गाइड सभी सुविधाओं को कवर करती है। त्वरित रिफ्रेशर के लिए, `quick-reference.md` देखें।
 
-> **स्क्रीनशॉट के बारे में नोट**: यह दस्तावेज़ ऐप से प्लेसहोल्डर स्क्रीनशॉट का उपयोग करता है। जैसे ही आप कैप्चर करें, प्रत्येक `../screenshots/*.png` को वास्तविक डिवाइस स्क्रीनशॉट से बदलें।
-
 ---
 
 ## विषय-सूची
@@ -3379,8 +3365,6 @@ Pro-आवश्यक फ़ील्ड फैले हुए हैं:
 NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
 Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat `quick-reference.md`.
-
-> **Catatan tentang tangkapan layar**: Dokumen ini menggunakan tangkapan layar placeholder dari aplikasi. Ganti setiap `../screenshots/*.png` dengan tangkapan layar perangkat yang sebenarnya saat Anda mengambilnya.
 
 ---
 
@@ -3861,8 +3845,6 @@ NVH Source Locator ialah alat pengukuran untuk mencari sumber bunyi dan getaran 
 
 Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat `quick-reference.md`.
 
-> **Nota tentang tangkapan skrin**: Dokumen ini menggunakan tangkapan skrin pemegang tempat daripada aplikasi. Gantikan setiap `../screenshots/*.png` dengan tangkapan skrin peranti sebenar semasa anda menangkapnya.
-
 ---
 
 ## Kandungan
@@ -4341,8 +4323,6 @@ Hubungi `support@evdiag.net` dengan:
 Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmumulan ng ingay at vibrasyon gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa oscilloscope o sistemang pansukat.
 
 Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang `quick-reference.md`.
-
-> **Tala tungkol sa mga screenshot**: Ginagamit ng dokumentong ito ang mga placeholder na screenshot mula sa app. Palitan ang bawat `../screenshots/*.png` ng tunay na mga screenshot ng device habang kinukuha mo ang mga ito.
 
 ---
 

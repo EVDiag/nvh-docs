@@ -11,8 +11,6 @@ NVH Source Locator är ett mätverktyg för att lokalisera buller- och vibration
 
 Den här handboken täcker alla funktioner. För en snabb påminnelse, se `quick-reference.md`.
 
-> **Anmärkning om skärmdumpar**: Detta dokument använder platshållarskärmdumpar från appen. Ersätt varje `../screenshots/*.png` med riktiga enhetsskärmdumpar när du tar dem.
-
 ---
 
 ## Innehållsförteckning
@@ -491,8 +489,6 @@ Kontakta `support@evdiag.net` med:
 NVH Source Locator er et måleverktøy for å lokalisere støy- og vibrasjonskilder ved hjelp av TDOA (Time Difference of Arrival) fra akselerometersignaler fanget på et oscilloskop eller målesystem.
 
 Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se `quick-reference.md`.
-
-> **Merknad om skjermbilder**: Dette dokumentet bruker plassholder-skjermbilder fra appen. Erstatt hvert `../screenshots/*.png` med ekte enhets-skjermbilder etter hvert som du tar dem.
 
 ---
 
@@ -973,8 +969,6 @@ NVH Source Locator on mittaustyökalu melu- ja tärinälähteiden paikantamiseen
 
 Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso `quick-reference.md`.
 
-> **Huomautus kuvakaappauksista**: Tämä dokumentti käyttää sovelluksen täytekuvakaappauksia. Korvaa jokainen `../screenshots/*.png` todellisilla laitteen kuvakaappauksilla, kun otat ne.
-
 ---
 
 ## Sisällysluettelo
@@ -1454,8 +1448,6 @@ NVH Source Locator este un instrument de măsurare pentru localizarea surselor d
 
 Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi `quick-reference.md`.
 
-> **Notă despre capturile de ecran**: Acest document folosește capturi de ecran substitutive din aplicație. Înlocuiește fiecare `../screenshots/*.png` cu capturi de ecran reale ale dispozitivului pe măsură ce le capturezi.
-
 ---
 
 ## Cuprins
@@ -1934,8 +1926,6 @@ Contactează `support@evdiag.net` cu:
 NVH Source Locator, osiloskop veya ölçüm sisteminde yakalanan ivmeölçer sinyallerinden TDOA (Time Difference of Arrival) kullanarak gürültü ve titreşim kaynaklarını lokalize etmek için bir ölçüm aracıdır.
 
 Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için `quick-reference.md` dosyasına bakın.
-
-> **Ekran görüntüleri hakkında not**: Bu belge, uygulamadan yer tutucu ekran görüntüleri kullanır. Her `../screenshots/*.png` dosyasını, yakaladıkça gerçek cihaz ekran görüntüleriyle değiştirin.
 
 ---
 

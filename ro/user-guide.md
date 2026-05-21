@@ -4,8 +4,6 @@ NVH Source Locator este un instrument de măsurare pentru localizarea surselor d
 
 Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi `quick-reference.md`.
 
-> **Notă despre capturile de ecran**: Acest document folosește capturi de ecran substitutive din aplicație. Înlocuiește fiecare `../screenshots/*.png` cu capturi de ecran reale ale dispozitivului pe măsură ce le capturezi.
-
 ---
 
 ## Cuprins

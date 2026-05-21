@@ -57,14 +57,11 @@
     Belgeler sizin kolaylığınız için çevrildi — en doğru teknik terminoloji için İngilizce orijinal versiyon esastır.
   </div>
 
-  <h1 id="nvh-source-locator-user-guide">NVH Source Locator — Kullanım Kılavuzu</h1>
+  <h1 id="nvh-source-locator-kullanm-klavuzu">NVH Source Locator — Kullanım Kılavuzu</h1>
 <p>NVH Source Locator, osiloskop veya ölçüm sisteminde yakalanan ivmeölçer sinyallerinden TDOA (Time Difference of Arrival) kullanarak gürültü ve titreşim kaynaklarını lokalize etmek için bir ölçüm aracıdır.</p>
 <p>Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için <code>quick-reference.md</code> dosyasına bakın.</p>
-<blockquote>
-<p><strong>Ekran görüntüleri hakkında not</strong>: Bu belge, uygulamadan yer tutucu ekran görüntüleri kullanır. Her <code>../screenshots/*.png</code> dosyasını, yakaladıkça gerçek cihaz ekran görüntüleriyle değiştirin.</p>
-</blockquote>
 <hr />
-<h2 id="table-of-contents">İçindekiler</h2>
+<h2 id="icindekiler">İçindekiler</h2>
 <ol>
 <li><a href="#how-it-works">Nasıl çalışır</a></li>
 <li><a href="#before-you-start">Başlamadan önce</a></li>
@@ -83,7 +80,7 @@
 <li><a href="#troubleshooting">Sorun giderme</a></li>
 </ol>
 <hr />
-<h2 id="how-it-works">Nasıl çalışır</h2>
+<h2 id="nasl-calsr">Nasıl çalışır</h2>
 <p>Bir gürültü kaynağı ses veya titreşim yaydığında, dalga bilinen bir hızda bir malzemeden geçer. Malzeme üzerine iki veya daha fazla ivmeölçer yerleştirir ve dalganın her birine ne zaman ulaştığını ölçerseniz, zaman farkı size kaynağın nerede olduğunu söyler.</p>
 <p>NVH Source Locator alır:</p>
 <ul>
@@ -98,7 +95,7 @@
 <li><strong>4 sensör</strong> → 3D uzayda konum (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="before-you-start">Başlamadan önce</h2>
+<h2 id="baslamadan-once">Başlamadan önce</h2>
 <p>Şunlara ihtiyacınız olacak:</p>
 <ul>
 <li><strong>İvmeölçer kanalları arasındaki zaman farkını mikrosaniye (µs) cinsinden gösterebilen bir osiloskop veya ölçüm sistemi</strong></li>
@@ -108,7 +105,7 @@
 </ul>
 <p><img alt="2-Sensor sekmesi olan ana ekran" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="the-main-tabs">Ana sekmeler</h2>
+<h2 id="ana-sekmeler">Ana sekmeler</h2>
 <p>Uygulamanın üst kısmında sekmeler var:</p>
 <p><img alt="Sekme çubuğu" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -172,50 +169,50 @@
 </blockquote>
 <p>Ayarlara sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişilir (sekme değil).</p>
 <hr />
-<h2 id="2-sensor-mode">2-Sensor modu</h2>
+<h2 id="2-sensor-modu">2-Sensor modu</h2>
 <p>En basit ölçüm: iki ivmeölçer arasında bir çizgi boyunca kaynak lokalizasyonu.</p>
 <p><img alt="2-Sensor sekmesi" src="../screenshots/01-home-2sensor.png" /></p>
-<h3 id="step-1-apply-a-material">Adım 1: Bir malzeme uygulayın</h3>
+<h3 id="adm-1-bir-malzeme-uygulayn">Adım 1: Bir malzeme uygulayın</h3>
 <p>Materials sekmesine dokunun. Yapınızın yapıldığı malzemeyi seçin (örneğin, "Alüminyum", "Çelik, Mild (1020)"). Uygulama, kalibrasyon süresi alanını otomatik olarak doldurmak için malzemenin bilinen ses hızını kullanır.</p>
 <p>Yapınızın malzemesi listede değilse, geçici olarak "Hava" seçebilir ve adım 2'de kalibrasyon süresini manuel olarak geçersiz kılabilirsiniz.</p>
-<h3 id="step-2-enter-calibration-data">Adım 2: Kalibrasyon verilerini girin</h3>
+<h3 id="adm-2-kalibrasyon-verilerini-girin">Adım 2: Kalibrasyon verilerini girin</h3>
 <p>2-Sensor sekmesinde iki çift bölümü göreceksiniz: <strong>Çift A–B</strong> ve <strong>Çift A–C</strong> (yalnızca 2 sensörünüz varsa yalnızca A–B gereklidir).</p>
 <p>Her çift için doldurursunuz:</p>
 <ul>
 <li><strong>Sensör aralığı</strong> (<code>d</code>): sensörler arasındaki fiziksel mesafe, cm veya inç olarak (Ayarlar'da ayarlanır)</li>
 <li><strong>Kalibrasyon zaman gecikmesi</strong> (<code>tCal</code>): bir dalganın sensörler arasında malzemenin ses hızında ilerlemek için gereken süre — bir malzeme seçtiğinizde otomatik olarak doldurulur, ancak geçersiz kılabilirsiniz</li>
 </ul>
-<h3 id="step-3-enter-the-event-time">Adım 3: Olay zamanını girin</h3>
+<h3 id="adm-3-olay-zamann-girin">Adım 3: Olay zamanını girin</h3>
 <ul>
 <li><strong>Olay zaman gecikmesi</strong> (<code>tEvent</code>): gürültü olayını algılayan sensörler arasındaki zaman farkı, mikrosaniye olarak</li>
 <li><strong>İlk sensör</strong>: olayı ilk hangi sensör duydu (A veya B)</li>
 </ul>
-<h3 id="step-4-read-the-result">Adım 4: Sonucu okuyun</h3>
+<h3 id="adm-4-sonucu-okuyun">Adım 4: Sonucu okuyun</h3>
 <p>Uygulama kaynak konumunu A sensöründen mesafe olarak gösterir:
 - Sonuç = 0: kaynak A sensöründe
 - Sonuç = mesafe: kaynak B sensöründe
 - Sonuç arada: kaynak ikisi arasında
 - Sonuç dışarıda: kaynak sensörlerden birinin ötesinde (toast uyaracaktır)</p>
 <p>Sonuç kartı her iki mesafeyi de (A'dan, B'den) gösterir ve hangi sensörün daha yakın olduğunu belirtir.</p>
-<h3 id="step-5-optional-annotate-a-photo">Adım 5 (isteğe bağlı): Bir fotoğrafı açıklayın</h3>
+<h3 id="adm-5-istege-bagl-bir-fotograf-acklayn">Adım 5 (isteğe bağlı): Bir fotoğrafı açıklayın</h3>
 <p>Kurulumunuzun bir fotoğrafını çekmek için <strong>📷 Fotoğrafı açıkla</strong> seçeneğine dokunun. Uygulama A, B sensörleri ve kaynak için işaretler bindirir. Raporlar için yararlı.</p>
 <hr />
-<h2 id="3-sensor-mode">3-Sensor modu</h2>
+<h2 id="3-sensor-modu">3-Sensor modu</h2>
 <p>Bir üçgen şeklinde düzenlenmiş üç sensör kullanarak 2D düzlemde bir kaynak lokalize eder.</p>
 <p><img alt="3-Sensor sekmesi" src="../screenshots/03-3sensor-tab.png" /></p>
-<h3 id="setup">Kurulum</h3>
+<h3 id="kurulum">Kurulum</h3>
 <p>Bir üçgen oluşturarak yapınıza üç sensör yerleştirin. Eşkenar, dik açılı veya farklı kenarlı — uygulama tüm geometrileri işler.</p>
-<h3 id="enter-the-data">Verileri girin</h3>
+<h3 id="verileri-girin">Verileri girin</h3>
 <p><strong>Üçgen kenar uzunlukları</strong> bölümünde, üç kenarın tümü için fiziksel mesafeyi girin (A–B, A–C, B–C).</p>
 <p>Her çift (A–B ve A–C) için girin:
 - <strong>tCal</strong>: kalibrasyon süresi (malzemeden otomatik doldurulur)
 - <strong>tEvent</strong>: gürültü olayı için ölçülen zaman farkı
 - <strong>İlk sensör</strong>: hangisi önce duydu</p>
-<h3 id="read-the-result">Sonucu okuyun</h3>
+<h3 id="sonucu-okuyun">Sonucu okuyun</h3>
 <p>Uygulama kaynak konumunu A sensörüne göre X, Y koordinatları olarak gösterir (A sensörü orijinde, B sensörü X ekseninde). Görselleştirme üç sensörü ve kaynak konumunu gösterir.</p>
 <p><img alt="Üçgen sonucu" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modes">Pro+ modları</h2>
+<h2 id="pro-modlar">Pro+ modları</h2>
 <p>Birkaç gelişmiş sekme aşırı belirlenmiş çözücüler ve daha yüksek boyutluluk sunar:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>3-Sensor ile aynı üçgen kurulumu, ancak üç çiftin tümünü (A–B, A–C, B–C) kalibre EDİN ve ölçün. Çözücü, üç TDOA'nın tümünü bir en küçük kareler uyumunda kullanır — ölçüm gürültüsüne ve anizotropik malzemelere karşı daha sağlam. Tutarsız ölçümleri tespit edebilmeniz için çift başına artıklar raporlanır.</p>
@@ -224,19 +221,19 @@
 - <strong>A–B</strong> = yatay çift (sol/sağ taraflar)
 - <strong>C–D</strong> = dikey çift (üst/alt taraflar)</p>
 <p>Önce A–B çiftini (yatay), sonra C–D çiftini (dikey) çalıştırın. 2D harita kesişimi gösterir. Her çift ayrı ayrı kalibre edilir — yapı boyunca malzeme değiştiğinde kullanışlıdır.</p>
-<h3 id="4-sen-advanced-2d">4-Sen+ (Gelişmiş 2D)</h3>
+<h3 id="4-sen-gelismis-2d">4-Sen+ (Gelişmiş 2D)</h3>
 <p>Herhangi bir konumda dört sensör (dikdörtgen olarak zorlanmamış). A'yı B, C, D'nin her biriyle eşleştirin ve ayrı ayrı kalibre edin. Aşırı belirlenmiş en küçük kareler çözücü, çift başına ölçüm gürültüsünün ortalamasını alır ve çift başına artıkları raporlar.</p>
 <h3 id="3d">3D</h3>
 <p>3D uzayda yerleştirilmiş 4 sensörle tam 3D ölçüm. Her sensörün (X, Y, Z) koordinatlarını ve her çift için (A–B, A–C, A–D) kalibrasyon ve olay sürelerini girin.</p>
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>3D gibidir ancak aşırı belirlenmiş LSQ ile <strong>6 sensöre kadar</strong> (A'dan F'ye) destekler. Karmaşık 3D geometriler için maksimum hassasiyet.</p>
 <hr />
-<h2 id="the-materials-tab">Materials sekmesi</h2>
+<h2 id="materials-sekmesi">Materials sekmesi</h2>
 <p>20 °C'de bilinen ses hızına sahip yaygın mühendislik malzemeleri kütüphanesi.</p>
 <p><img alt="Materials sekmesi" src="../screenshots/05-materials-tab.png" /></p>
-<h3 id="material-list">Malzeme listesi</h3>
+<h3 id="malzeme-listesi">Malzeme listesi</h3>
 <p>Liste hava, sıvılar, lastikler, polimerler, ahşaplar, camlar ve metaller içerir. Hızlar ~340 m/s'den (hava) ~13.000 m/s'ye (oda sıcaklığında bazı metaller) kadar değişir.</p>
-<h3 id="built-in-materials-with-temperature-compensation">Sıcaklık kompanzasyonlu yerleşik malzemeler</h3>
+<h3 id="scaklk-kompanzasyonlu-yerlesik-malzemeler">Sıcaklık kompanzasyonlu yerleşik malzemeler</h3>
 <p>Yaygın olarak kullanılan 14 metal sıcaklık katsayısı verileri içerir. Ayarlardaki Referans sıcaklığı 20 °C'den farklı olduğunda, uygulama bu malzemelerin hızlarını otomatik olarak ayarlar:</p>
 <ul>
 <li>Alüminyum</li>
@@ -256,20 +253,20 @@
 </ul>
 <p>Kompanzasyonlu malzemeler seçicide iki değer gösterir: <strong>kompanze edilmiş hız</strong> (büyük, belirgin) ve <strong>20 °C'deki referans hız</strong> (küçük, altında gri).</p>
 <p>Kompanzasyonsuz malzemeler italik <strong>"ref only"</strong> gösterir — listelenen hızları sıcaklığa bakılmaksızın olduğu gibi kullanılır.</p>
-<h3 id="custom-materials">Özel malzemeler</h3>
+<h3 id="ozel-malzemeler">Özel malzemeler</h3>
 <p>2-Sensor sekmesinde bir kalibrasyon ölçerseniz, sonucu özel bir malzeme olarak kaydedebilirsiniz. Başarılı bir 2-sensör ölçümünden sonra, türetilmiş hızı seçtiğiniz bir adla kaydetme seçeneğini arayın.</p>
 <p>Özel malzemeler in-situ ölçülen hızı saklar; asla sıcaklık kompanzasyonu uygulamazlar (hız zaten test sıcaklığında ölçüldü).</p>
-<h3 id="favorites">Favoriler</h3>
+<h3 id="favoriler">Favoriler</h3>
 <p>Bir favori olarak işaretlemek için herhangi bir malzemenin yanındaki yıldıza dokunun. Favoriler hızlı erişim için listenin üstünde görünür.</p>
-<h3 id="search">Arama</h3>
+<h3 id="arama">Arama</h3>
 <p>Malzemeleri ada göre filtrelemek için üstteki arama çubuğunu kullanın. Arama hem İngilizce kanonik adlarla hem de çevrilmiş görünen adlarla eşleşir.</p>
 <hr />
-<h2 id="temperature-compensation">Sıcaklık kompanzasyonu</h2>
+<h2 id="scaklk-kompanzasyonu">Sıcaklık kompanzasyonu</h2>
 <p>Malzemelerdeki ses hızı sıcaklıkla değişir. Otomotiv NVH testinde bu önemlidir: 80 °C'deki bir motor bölmesi, -10 °C'de soğukta beklemiş bir kabin veya 200 °C'deki bir egzoz manifold alanı, oda sıcaklığındaki laboratuvar koşullarından farklı davranır.</p>
-<h3 id="setting-the-temperature">Sıcaklığı ayarlama</h3>
+<h3 id="scaklg-ayarlama">Sıcaklığı ayarlama</h3>
 <p>Ayarlar (⚙ simge) → Referans sıcaklığı açın. Test ortamınızın sıcaklığını °C cinsinden girin (aralık -40 ila +200).</p>
 <p><img alt="Ayarlar paneli" src="../screenshots/06-settings.png" /></p>
-<h3 id="what-happens-when-temperature-20-c">Sıcaklık ≠ 20 °C olduğunda ne olur</h3>
+<h3 id="scaklk-20-c-oldugunda-ne-olur">Sıcaklık ≠ 20 °C olduğunda ne olur</h3>
 <ul>
 <li>Kalibrasyon süresi alanları sıcaklığa göre ayarlanmış hızla otomatik olarak doldurulur</li>
 <li>Materials seçicisi ayarlanmış hızı belirgin şekilde gösterir</li>
@@ -278,16 +275,16 @@
 <li>Kaydedilen geçmiş girişleri etkin sıcaklığı kaydeder</li>
 <li>Raporlar bir altbilgi satırı içerir: <em>"Referans sıcaklığı: 60 °C, kompanzasyon uygulandı"</em></li>
 </ul>
-<h3 id="reset-on-app-launch">Uygulama başlatılırken sıfırlama</h3>
+<h3 id="uygulama-baslatlrken-sfrlama">Uygulama başlatılırken sıfırlama</h3>
 <p>Uygulamayı başlattığınızda Referans sıcaklığı <strong>her zaman 20 °C'ye sıfırlanır</strong>. Bu, geçmiş bir ölçüm oturumundan kalan eski ayarların bugünkü çalışmayı sessizce etkilemesini önler. Ayarlardaki küçük bir italik not bu davranışı size hatırlatır.</p>
 <p>Geçmişteki bir ölçümü orijinal sıcaklığında yeniden oynatmak istiyorsanız, sadece girdiye dokunun — sıcaklık otomatik olarak geri yüklenir.</p>
-<h3 id="materials-without-compensation">Kompanzasyonsuz malzemeler</h3>
+<h3 id="kompanzasyonsuz-malzemeler">Kompanzasyonsuz malzemeler</h3>
 <p>Çoğu metalik olmayan malzemenin güvenilir yayınlanmış sıcaklık katsayıları yoktur. Uygulama bunlar için <strong>"ref only"</strong> rozeti gösterir — listelenen hızları sıcaklık ayarına bakılmaksızın kullanılır. Bu malzemeler için oda dışı sıcaklıklarda doğru ölçümlere ihtiyacınız varsa, bir in-situ kalibrasyonu gerçekleştirin ve sonucu özel bir malzeme olarak kaydedin.</p>
 <hr />
-<h2 id="photo-annotation">Fotoğraf açıklaması</h2>
+<h2 id="fotograf-acklamas">Fotoğraf açıklaması</h2>
 <p>Başarılı bir hesaplamadan sonra, kurulumunuzun bir fotoğrafına sensör ve kaynak işaretlerini bindirmek için <strong>📷 Fotoğrafı açıkla</strong> düğmesine dokunun.</p>
 <p><img alt="Fotoğraf açıklaması" src="../screenshots/08-photo-annotation.png" /></p>
-<h3 id="flow">Akış</h3>
+<h3 id="aks">Akış</h3>
 <ol>
 <li><strong>Fotoğrafı açıkla</strong>'ya dokunun — sistem kamerası açılır</li>
 <li>Sensör yerleşiminin bir fotoğrafını çekin</li>
@@ -298,10 +295,10 @@
 </ol>
 <p>Açıklanan fotoğraf otomatik olarak PDF raporlarına dahil edilir.</p>
 <hr />
-<h2 id="reports">Raporlar</h2>
+<h2 id="raporlar">Raporlar</h2>
 <p>Biçimlendirilmiş bir rapor oluşturmak için herhangi bir sonuç ekranındaki <strong>Sonucu yazdır</strong> düğmesine dokunun.</p>
 <p><img alt="PDF raporu" src="../screenshots/09-pdf-report.png" /></p>
-<h3 id="report-contents">Rapor içeriği</h3>
+<h3 id="rapor-icerigi">Rapor içeriği</h3>
 <ul>
 <li>Başlık (Ayarlar → Rapor başlığında özelleştirilebilir)</li>
 <li>Ölçüm başlığı ve zaman damgası</li>
@@ -313,23 +310,23 @@
 <li>Sıcaklık altbilgi satırı (kompanzasyon aktifse)</li>
 <li>Sayfa numarası ve teşekkür satırı</li>
 </ul>
-<h3 id="output-format">Çıktı biçimi</h3>
+<h3 id="ckt-bicimi">Çıktı biçimi</h3>
 <ul>
 <li><strong>Android</strong>: yerel PDF oluşturma, telefonunuza kaydedin veya paylaşın</li>
 <li><strong>iOS</strong>: sistem yazdırma iletişim kutusu → PDF olarak kaydet, AirPrint veya paylaş</li>
 </ul>
-<h3 id="customizing-the-header">Başlığı özelleştirme</h3>
+<h3 id="baslg-ozellestirme">Başlığı özelleştirme</h3>
 <p>Ayarlar → Rapor başlığı. Şirket adınızı, laboratuvar adınızı, proje bilgilerinizi veya her raporun üstünde istediğiniz herhangi bir şeyi girin.</p>
 <hr />
-<h2 id="backup-and-restore">Yedekleme ve geri yükleme</h2>
+<h2 id="yedekleme-ve-geri-yukleme">Yedekleme ve geri yükleme</h2>
 <p>Tüm özel malzemelerinizi, favorilerinizi, ayarlarınızı ve geçmişinizi tek bir dosyaya kaydedin. Cihazlar arasında aktarım.</p>
-<h3 id="backup">Yedekleme</h3>
+<h3 id="yedekleme">Yedekleme</h3>
 <p>Ayarlar → <strong>Yedekleme</strong> → "Yedek dosyasını kaydet"e dokunun. Uygulama bir JSON dosyası oluşturur ve telefonunuzun paylaş sayfasını açar. Bulut sürücünüze (Google Drive, iCloud, OneDrive) kaydedin, kendinize e-postayla gönderin veya istediğiniz şekilde aktarın.</p>
-<h3 id="restore">Geri yükleme</h3>
+<h3 id="geri-yukleme">Geri yükleme</h3>
 <p>Ayarlar → <strong>Geri yükleme</strong> → telefonunuzun depolamasından yedek dosyasını seçin. Uygulama özel malzemeleri, favorileri, geçmişi ve ayarları içe aktarır.</p>
 <p>⚠️ <strong>Geri yükleme mevcut verilerinizi değiştirir.</strong> Mevcut cihazda önemli ölçümleriniz varsa, farklı bir yedekten geri yüklemeden önce bunları yedekleyin.</p>
 <hr />
-<h2 id="settings">Ayarlar</h2>
+<h2 id="ayarlar">Ayarlar</h2>
 <p>Sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişin. Ayarlar bir kalıcıdır, sekme değildir.</p>
 <p><img alt="Ayarlar" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -379,13 +376,13 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-features">Pro özellikler</h2>
+<h2 id="pro-ozellikler">Pro özellikler</h2>
 <p>NVH Source Locator bir <strong>özellik kilitli freemium modeli</strong> kullanır:</p>
 <ul>
 <li><strong>Ücretsiz</strong>: 2-Sensor sekmesi sınırsız olarak tam işlevseldir</li>
 <li><strong>Pro</strong>: Diğer tüm sekmelerin belirli giriş alanları kilitli. Bir ücretsiz kullanıcı kilitli bir alana dokunduğunda paywall görünür</li>
 </ul>
-<h3 id="whats-locked">Neler kilitli</h3>
+<h3 id="neler-kilitli">Neler kilitli</h3>
 <p>Pro gerekli alanlar şunlara dağılmıştır:
 - 3-Sensor, 3-Sen+, 4-Sensor, 4-Sen+
 - 3D ve 3D+ modları
@@ -395,7 +392,7 @@
 - Fotoğraf açıklaması</p>
 <p>Bir ücretsiz kullanıcı herhangi bir sekmeyi AÇABİLİR ve arayüzü GÖREBİLİR. Sadece Pro kilitli giriş alanlarına değerler giremez.</p>
 <p><img alt="Pro kilitli alan" src="../screenshots/11-pro-locked-field.png" /></p>
-<h3 id="the-paywall">Paywall</h3>
+<h3 id="paywall">Paywall</h3>
 <p><img alt="Paywall" src="../screenshots/07-paywall.png" /></p>
 <p>Bir ücretsiz kullanıcı kilitli bir alana dokunduğunda, paywall şunları gösterir:
 - PRO rozeti olan uygulama simgesi
@@ -403,9 +400,9 @@
 - Fiyatlı kilit açma düğmesi ($19,99 varsayılan; bölgeye göre değişebilir)
 - Promosyon kodu kullanma (yalnızca Android — iOS Apple'ın ayrı Offer Code akışını kullanır)
 - Topluluk kanallarına isteğe bağlı promosyon bağlantısı</p>
-<h3 id="purchasing-pro">Pro satın alma</h3>
+<h3 id="pro-satn-alma">Pro satın alma</h3>
 <p>Herhangi bir kilitli alana dokunun veya Ayarlar'da <strong>Pro'ya Yükselt</strong>'e dokunun. Platformunuzun resmi ödeme sistemini kullanır (Android'de Google Play, iOS'ta Apple App Store).</p>
-<h3 id="restoring-pro-on-a-new-device">Yeni bir cihazda Pro'yu geri yükleme</h3>
+<h3 id="yeni-bir-cihazda-proyu-geri-yukleme">Yeni bir cihazda Pro'yu geri yükleme</h3>
 <p>Bir cihazda satın aldıysanız ve diğerinde Pro istiyorsanız (aynı hesap):</p>
 <ol>
 <li>Satın almak için kullandığınız <strong>aynı</strong> Google hesabına (Android) veya Apple ID'sine (iOS) giriş yapın</li>
@@ -413,13 +410,13 @@
 <li>Ayarlar → <strong>Satın almayı geri yükle</strong>'ye gidin</li>
 <li>Uygulama platformun satın alma kayıtlarıyla doğrular ve Pro'yu açar</li>
 </ol>
-<h3 id="auto-restore-on-launch">Başlatmada otomatik geri yükleme</h3>
+<h3 id="baslatmada-otomatik-geri-yukleme">Başlatmada otomatik geri yükleme</h3>
 <p>NVH Source Locator arka planda çalışırken Google Play Store veya App Store'da bir promosyon kodunu kullanırsanız, uygulamaya geri dönmek yeni satın almayı otomatik olarak algılar ve Pro'yu açar — manuel Geri yükleme gerekmez.</p>
-<h3 id="promo-code-redemption">Promosyon kodu kullanma</h3>
+<h3 id="promosyon-kodu-kullanma">Promosyon kodu kullanma</h3>
 <p><strong>Android</strong>: paywall'daki "Google Play promosyon kodunuz var mı?" düğmesi, kodunuz önceden doldurulmuş olarak Google Play kullanma akışını açar.</p>
 <p><strong>iOS</strong>: App Store politikası 3.1.1, Apple'ın resmi "Kodu kullan" akışı üzerinden kullanmayı gerektirir. Google Play düğmesi iOS'ta gizlidir. Bunun yerine Ayarlar'da "App Store kodunu kullan"ı arayın.</p>
 <hr />
-<h2 id="help-tab-and-tutorials">Help sekmesi ve öğreticiler</h2>
+<h2 id="help-sekmesi-ve-ogreticiler">Help sekmesi ve öğreticiler</h2>
 <p><strong>Help</strong> sekmesi, uygulama içi öğreticiler, en iyi uygulama kılavuzları ve referans bilgileri içerir.</p>
 <p><img alt="Help sekmesi" src="../screenshots/10-help-tab.png" /></p>
 <p>Kapsanan konular:
@@ -430,38 +427,38 @@
 - Triangülasyon ve 3D yerleştirmeler için ipuçları
 - Kablo yönlendirme ve sinyal kalitesi</p>
 <hr />
-<h2 id="troubleshooting">Sorun giderme</h2>
-<h3 id="calculation-result-is-wrong-or-makes-no-sense">Hesaplama sonucu yanlış veya anlamsız</h3>
+<h2 id="sorun-giderme">Sorun giderme</h2>
+<h3 id="hesaplama-sonucu-yanls-veya-anlamsz">Hesaplama sonucu yanlış veya anlamsız</h3>
 <ol>
 <li>Kalibrasyonunuzu kontrol edin. Otomatik doldurulan <code>tCal</code>, yayınlanan malzeme hızını varsayar — gerçek malzemeler değişir. En doğru kalibrasyon in-situ'dur: bilinen bir yere dokunun ve uygulamanın gerçek hızı türetmesine izin verin.</li>
 <li><strong>İlk sensör</strong> ayarını kontrol edin — olayı ilk hangi sensörün duyduğu matematik için önemlidir.</li>
 <li>Mesafe ölçümlerinizi doğrulayın. Birkaç mm'lik hatalar yayılır.</li>
 </ol>
-<h3 id="toast-says-result-outside-range">Toast "Sonuç aralık dışında" diyor</h3>
+<h3 id="toast-sonuc-aralk-dsnda-diyor">Toast "Sonuç aralık dışında" diyor</h3>
 <p>Matematik kaynağın sensörleriniz arasında olmadığını söylüyor. Olası nedenler:
 - Kaynak gerçekten sensör hattının/düzleminin dışında
 - Girdilerinizden biri yanlış
 - Kalibrasyon hızı gerçeklikten çok uzakta</p>
-<h3 id="calc-speed-hint-shows-a-warning-color">Hesaplama hızı ipucu bir uyarı rengi gösteriyor</h3>
+<h3 id="hesaplama-hz-ipucu-bir-uyar-rengi-gosteriyor">Hesaplama hızı ipucu bir uyarı rengi gösteriyor</h3>
 <p>Girdilerinizden ima edilen ses hızı, herhangi bir yaygın malzemeden uzak (50 m/s'den az veya 20.000 m/s'den fazla). Girdilerinizi kontrol edin — muhtemelen tCal veya mesafede bir yazım hatası.</p>
-<h3 id="material-picker-shows-different-speeds-than-expected">Materials seçicisi beklenenden farklı hızlar gösteriyor</h3>
+<h3 id="materials-secicisi-beklenenden-farkl-hzlar-gosteriyor">Materials seçicisi beklenenden farklı hızlar gösteriyor</h3>
 <p>Ayarlardaki Referans sıcaklığını kontrol edin. 20 °C değilse, gösterilen hızlar sıcaklık kompanzasyonunu yansıtır. Uygulama, kompanze edilmiş hızların altında "ref X @ 20°C" gösterir, böylece doğrulayabilirsiniz.</p>
-<h3 id="history-entry-replays-with-different-result">Geçmiş girişi farklı sonuçla yeniden oynatılıyor</h3>
+<h3 id="gecmis-girisi-farkl-sonucla-yeniden-oynatlyor">Geçmiş girişi farklı sonuçla yeniden oynatılıyor</h3>
 <p>Uygulama sürüm 1.75'ten önce oluşturulan eski geçmiş girişleri sıcaklığı saklamamış olabilir. Ölçümü 20 °C olmayan bir sıcaklıkta yaptıysanız, yeniden oynatma mevcut ayarı kullanacaktır. Yeniden oynatmadan önce Ayarlarda sıcaklığı manuel olarak ayarlayın VEYA yeniden ölçün.</p>
-<h3 id="photo-annotation-markers-not-where-i-expect">Fotoğraf açıklama işaretleri beklediğim yerde değil</h3>
+<h3 id="fotograf-acklama-isaretleri-bekledigim-yerde-degil">Fotoğraf açıklama işaretleri beklediğim yerde değil</h3>
 <p>İşaretler giriş geometrisine göre otomatik olarak yerleştirilir. Ayarlamak için onları sürükleyin. İşaretleri ayarlamak fotoğraf bindirmesindeki kaynak konumunu günceller — ancak altta yatan hesaplama sonucunu DEĞİŞTİRMEZ.</p>
-<h3 id="backuprestore-fails">Yedekleme/Geri yükleme başarısız</h3>
+<h3 id="yedeklemegeri-yukleme-basarsz">Yedekleme/Geri yükleme başarısız</h3>
 <p>Uygulamanın aynı veya daha yeni bir sürümü tarafından oluşturulan bir yedek dosyası kullandığınızdan emin olun. Eski yedek dosyalarında mevcut veri alanları eksik olabilir.</p>
-<h3 id="restore-purchase-says-no-purchase-found">Satın almayı geri yükle "satın alma bulunamadı" diyor</h3>
+<h3 id="satn-almay-geri-yukle-satn-alma-bulunamad-diyor">Satın almayı geri yükle "satın alma bulunamadı" diyor</h3>
 <ol>
 <li>Satın almak için kullandığınız mağaza hesabıyla aynı hesaba giriş yaptığınızı doğrulayın</li>
 <li>Satın almanın iade edilmediğini veya süresinin dolmadığını doğrulayın</li>
 <li>Uygulamayı kaldırıp yeniden yüklemeyi deneyin (satın alma, uygulama kurulumuna değil mağaza hesabınıza bağlıdır)</li>
 <li>Sorun devam ederse support@evdiag.net ile iletişime geçin</li>
 </ol>
-<h3 id="numeric-input-snaps-to-0-unexpectedly">Sayısal giriş beklenmedik şekilde 0'a geçiyor</h3>
+<h3 id="saysal-giris-beklenmedik-sekilde-0a-geciyor">Sayısal giriş beklenmedik şekilde 0'a geçiyor</h3>
 <p>Tasarım gereği: bir sayı alanından bulanıklık yaptığınızda (başka bir yere dokunduğunuzda), eğer boş, negatif veya sayısal olmayan metin içeriyorsa, 0'a geçer. Yanlışlıkla temizlenen girdilerden sessizce bozuk hesaplamaları önler. Sıcaklık girişi muaftır (bunun yerine -40/+200'e kıstırılır).</p>
-<h3 id="need-more-help">Daha fazla yardıma ihtiyacım var</h3>
+<h3 id="daha-fazla-yardma-ihtiyacm-var">Daha fazla yardıma ihtiyacım var</h3>
 <p><code>support@evdiag.net</code> ile şunlarla iletişime geçin:
 - Cihaz modeliniz ve OS sürümü
 - Uygulama sürümü (Ayarlar → sayfanın alt kısmı)

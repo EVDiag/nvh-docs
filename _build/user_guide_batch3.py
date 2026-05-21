@@ -11,8 +11,6 @@ NVH Source Locator je měřicí nástroj pro lokalizaci zdrojů hluku a vibrací
 
 Tato příručka pokrývá všechny funkce. Pro stručné připomenutí viz `quick-reference.md`.
 
-> **Poznámka ke snímkům obrazovky**: Tento dokument používá zástupné snímky obrazovky z aplikace. Nahraďte každý `../screenshots/*.png` skutečnými snímky obrazovky zařízení, jakmile je pořídíte.
-
 ---
 
 ## Obsah
@@ -491,8 +489,6 @@ Kontaktujte `support@evdiag.net` s:
 NVH Source Locator je merací nástroj na lokalizáciu zdrojov hluku a vibrácií pomocou TDOA (Time Difference of Arrival) zo signálov akcelerometrov zachytených na osciloskope alebo meracom systéme.
 
 Táto príručka pokrýva všetky funkcie. Pre stručné pripomenutie pozri `quick-reference.md`.
-
-> **Poznámka k snímkam obrazovky**: Tento dokument používa zástupné snímky obrazovky z aplikácie. Nahraďte každý `../screenshots/*.png` skutočnými snímkami obrazovky zariadenia, keď ich vytvoríte.
 
 ---
 
@@ -973,8 +969,6 @@ NVH Source Locator egy mérőeszköz zaj- és rezgésforrások lokalizálására
 
 Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd `quick-reference.md`.
 
-> **Megjegyzés a képernyőképekről**: Ez a dokumentum helyőrző képernyőképeket használ az alkalmazásból. Cserélje le mindegyik `../screenshots/*.png`-t valódi eszközképekre, ahogyan elkészíti őket.
-
 ---
 
 ## Tartalomjegyzék
@@ -1454,8 +1448,6 @@ NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću T
 
 Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte `quick-reference.md`.
 
-> **Napomena o snimkama zaslona**: Ovaj dokument koristi rezervirane snimke zaslona iz aplikacije. Zamijenite svaki `../screenshots/*.png` stvarnim snimkama zaslona uređaja kako ih budete snimali.
-
 ---
 
 ## Sadržaj
@@ -1934,8 +1926,6 @@ Kontaktirajte `support@evdiag.net` s:
 NVH Source Locator е измервателен инструмент за локализиране на източници на шум и вибрации с помощта на TDOA (Time Difference of Arrival) от сигнали на акселерометри, заснети на осцилоскоп или измервателна система.
 
 Това ръководство обхваща всички функции. За кратко припомняне вижте `quick-reference.md`.
-
-> **Бележка относно екранните снимки**: Този документ използва екранни снимки-заместители от приложението. Заменете всеки `../screenshots/*.png` с реални екранни снимки на устройство, когато ги заснемете.
 
 ---
 

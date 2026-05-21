@@ -4,8 +4,6 @@ NVH Source Locator, osiloskop veya ölçüm sisteminde yakalanan ivmeölçer sin
 
 Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için `quick-reference.md` dosyasına bakın.
 
-> **Ekran görüntüleri hakkında not**: Bu belge, uygulamadan yer tutucu ekran görüntüleri kullanır. Her `../screenshots/*.png` dosyasını, yakaladıkça gerçek cihaz ekran görüntüleriyle değiştirin.
-
 ---
 
 ## İçindekiler

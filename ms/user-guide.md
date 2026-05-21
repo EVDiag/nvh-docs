@@ -4,8 +4,6 @@ NVH Source Locator ialah alat pengukuran untuk mencari sumber bunyi dan getaran 
 
 Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat `quick-reference.md`.
 
-> **Nota tentang tangkapan skrin**: Dokumen ini menggunakan tangkapan skrin pemegang tempat daripada aplikasi. Gantikan setiap `../screenshots/*.png` dengan tangkapan skrin peranti sebenar semasa anda menangkapnya.
-
 ---
 
 ## Kandungan

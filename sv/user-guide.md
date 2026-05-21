@@ -4,8 +4,6 @@ NVH Source Locator är ett mätverktyg för att lokalisera buller- och vibration
 
 Den här handboken täcker alla funktioner. För en snabb påminnelse, se `quick-reference.md`.
 
-> **Anmärkning om skärmdumpar**: Detta dokument använder platshållarskärmdumpar från appen. Ersätt varje `../screenshots/*.png` med riktiga enhetsskärmdumpar när du tar dem.
-
 ---
 
 ## Innehållsförteckning
