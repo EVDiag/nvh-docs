@@ -1,6 +1,6 @@
 # NVH Source Locator — Pikaviite
 
-Yhden sivun yhteenveto. Täydet tiedot löytyvät `user-guide.md` -tiedostosta.
+Yhden sivun yhteenveto. Täydet tiedot löytyvät **Käyttöopas** -tiedostosta.
 
 ---
 

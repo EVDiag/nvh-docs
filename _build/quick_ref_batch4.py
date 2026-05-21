@@ -8,7 +8,7 @@ QUICK_REF_TRANSLATIONS = {
 
 'be': """# NVH Source Locator — Кароткі даведнік
 
-Аднастаронкавае напамінанне. Поўныя падрабязнасці — у `user-guide.md`.
+Аднастаронкавае напамінанне. Поўныя падрабязнасці — у **Кіраўніцтва карыстальніка**.
 
 ---
 
@@ -111,7 +111,7 @@ Pro адкрывае: 3-Sensor да 3D+, карыстальніцкія матэ
 
 'fa': """# NVH Source Locator — مرجع سریع
 
-یک یادآوری یک‌صفحه‌ای. برای جزئیات کامل، به `user-guide.md` مراجعه کنید.
+یک یادآوری یک‌صفحه‌ای. برای جزئیات کامل، به **راهنمای کاربر** مراجعه کنید.
 
 ---
 
@@ -214,7 +214,7 @@ Pro باز می‌کند: 3-Sensor تا 3D+، مواد سفارشی، پشتیب
 
 'hi': """# NVH Source Locator — त्वरित संदर्भ
 
-एक-पृष्ठ का स्मरण। पूर्ण विवरण के लिए, `user-guide.md` देखें।
+एक-पृष्ठ का स्मरण। पूर्ण विवरण के लिए, **उपयोगकर्ता पुस्तिका** देखें।
 
 ---
 
@@ -317,7 +317,7 @@ Pro अनलॉक करता है: 3-Sensor से 3D+ तक, कस्�
 
 'id': """# NVH Source Locator — Referensi Cepat
 
-Pengingat satu halaman. Untuk detail lengkap, lihat `user-guide.md`.
+Pengingat satu halaman. Untuk detail lengkap, lihat **Panduan Pengguna**.
 
 ---
 
@@ -420,7 +420,7 @@ Hubungi `support@evdiag.net` — sertakan model perangkat, versi aplikasi (Penga
 
 'ms': """# NVH Source Locator — Rujukan Pantas
 
-Peringatan satu halaman. Untuk butiran penuh, lihat `user-guide.md`.
+Peringatan satu halaman. Untuk butiran penuh, lihat **Panduan Pengguna**.
 
 ---
 
@@ -523,7 +523,7 @@ Hubungi `support@evdiag.net` — sertakan model peranti, versi aplikasi (Tetapan
 
 'tl': """# NVH Source Locator — Mabilis na Sanggunian
 
-Isang-pahinang paalala. Para sa kumpletong detalye, tingnan ang `user-guide.md`.
+Isang-pahinang paalala. Para sa kumpletong detalye, tingnan ang **Gabay sa Gumagamit**.
 
 ---
 

@@ -9,7 +9,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator je měřicí nástroj pro lokalizaci zdrojů hluku a vibrací pomocí TDOA (Time Difference of Arrival) ze signálů akcelerometrů zachycených na osciloskopu nebo měřicím systému.
 
-Tato příručka pokrývá všechny funkce. Pro stručné připomenutí viz `quick-reference.md`.
+Tato příručka pokrývá všechny funkce. Pro stručné připomenutí viz **Stručná příručka**.
 
 ---
 
@@ -488,7 +488,7 @@ Kontaktujte `support@evdiag.net` s:
 
 NVH Source Locator je merací nástroj na lokalizáciu zdrojov hluku a vibrácií pomocou TDOA (Time Difference of Arrival) zo signálov akcelerometrov zachytených na osciloskope alebo meracom systéme.
 
-Táto príručka pokrýva všetky funkcie. Pre stručné pripomenutie pozri `quick-reference.md`.
+Táto príručka pokrýva všetky funkcie. Pre stručné pripomenutie pozri **Stručná príručka**.
 
 ---
 
@@ -967,7 +967,7 @@ Kontaktujte `support@evdiag.net` s:
 
 NVH Source Locator egy mérőeszköz zaj- és rezgésforrások lokalizálására TDOA (Time Difference of Arrival) használatával, az oszcilloszkópon vagy mérőrendszeren rögzített gyorsulásmérő jelekből.
 
-Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd `quick-reference.md`.
+Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd **Gyors útmutató**.
 
 ---
 
@@ -1446,7 +1446,7 @@ Vegye fel a kapcsolatot a `support@evdiag.net` címmel:
 
 NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću TDOA (Time Difference of Arrival) iz signala akcelerometra zabilježenih na osciloskopu ili mjernom sustavu.
 
-Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte `quick-reference.md`.
+Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte **Kratki priručnik**.
 
 ---
 
@@ -1925,7 +1925,7 @@ Kontaktirajte `support@evdiag.net` s:
 
 NVH Source Locator е измервателен инструмент за локализиране на източници на шум и вибрации с помощта на TDOA (Time Difference of Arrival) от сигнали на акселерометри, заснети на осцилоскоп или измервателна система.
 
-Това ръководство обхваща всички функции. За кратко припомняне вижте `quick-reference.md`.
+Това ръководство обхваща всички функции. За кратко припомняне вижте **Кратко справочно ръководство**.
 
 ---
 

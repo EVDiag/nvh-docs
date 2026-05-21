@@ -1,6 +1,6 @@
 # NVH Source Locator — Referință rapidă
 
-Un rezumat pe o pagină. Pentru detalii complete, consultați `user-guide.md`.
+Un rezumat pe o pagină. Pentru detalii complete, consultați **Ghidul utilizatorului**.
 
 ---
 

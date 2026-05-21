@@ -2,7 +2,7 @@
 
 NVH Source Locator là một công cụ đo lường để định vị các nguồn tiếng ồn và rung động sử dụng TDOA (Time Difference of Arrival) từ các tín hiệu gia tốc kế được ghi lại trên máy hiện sóng hoặc hệ thống đo lường.
 
-Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem `quick-reference.md`.
+Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem **Tham khảo nhanh**.
 
 ---
 

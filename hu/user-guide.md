@@ -2,7 +2,7 @@
 
 NVH Source Locator egy mérőeszköz zaj- és rezgésforrások lokalizálására TDOA (Time Difference of Arrival) használatával, az oszcilloszkópon vagy mérőrendszeren rögzített gyorsulásmérő jelekből.
 
-Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd `quick-reference.md`.
+Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd **Gyors útmutató**.
 
 ---
 

@@ -1,6 +1,6 @@
 # NVH Source Locator — Quick Reference
 
-A one-page refresher. For full details, see `user-guide.md`.
+A one-page refresher. For full details, see **User Guide**.
 
 ---
 

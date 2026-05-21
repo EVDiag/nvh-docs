@@ -2,7 +2,7 @@
 
 NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된 가속도계 신호의 TDOA(Time Difference of Arrival)를 사용하여 소음 및 진동 소스를 찾는 측정 도구입니다.
 
-이 가이드는 모든 기능을 다룹니다. 빠른 복습은 `quick-reference.md`를 참조하세요.
+이 가이드는 모든 기능을 다룹니다. 빠른 복습은 **빠른 참조**를 참조하세요.
 
 ---
 

@@ -10,7 +10,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator هي أداة قياس لتحديد مواقع مصادر الضوضاء والاهتزازات باستخدام TDOA (Time Difference of Arrival) من إشارات مقاييس التسارع الملتقطة على الراسم الذبذبي أو نظام القياس.
 
-يغطي هذا الدليل جميع الميزات. للحصول على مرجع سريع، انظر `quick-reference.md`.
+يغطي هذا الدليل جميع الميزات. للحصول على مرجع سريع، انظر **مرجع سريع**.
 
 ---
 
@@ -489,7 +489,7 @@ NVH Source Locator يستخدم **نموذج freemium بقفل الميزات**:
 
 NVH Source Locatorは、オシロスコープまたは測定システムでキャプチャされた加速度計信号からTDOA（Time Difference of Arrival）を使用して、騒音と振動源を特定する測定ツールです。
 
-このガイドはすべての機能をカバーします。簡単な復習には、`quick-reference.md` を参照してください。
+このガイドはすべての機能をカバーします。簡単な復習には、**クイックリファレンス** を参照してください。
 
 ---
 
@@ -968,7 +968,7 @@ NVH Source Locatorがバックグラウンドで実行されている間にGoogl
 
 NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된 가속도계 신호의 TDOA(Time Difference of Arrival)를 사용하여 소음 및 진동 소스를 찾는 측정 도구입니다.
 
-이 가이드는 모든 기능을 다룹니다. 빠른 복습은 `quick-reference.md`를 참조하세요.
+이 가이드는 모든 기능을 다룹니다. 빠른 복습은 **빠른 참조**를 참조하세요.
 
 ---
 
@@ -1447,7 +1447,7 @@ NVH Source Locator가 백그라운드에서 실행되는 동안 Google Play 스�
 
 NVH Source Locator เป็นเครื่องมือวัดสำหรับการระบุตำแหน่งของแหล่งกำเนิดเสียงและการสั่นสะเทือนโดยใช้ TDOA (Time Difference of Arrival) จากสัญญาณของมาตรวัดความเร่งที่บันทึกบนออสซิลโลสโคปหรือระบบการวัด
 
-คู่มือนี้ครอบคลุมคุณสมบัติทั้งหมด สำหรับการทบทวนอย่างรวดเร็ว ดูที่ `quick-reference.md`
+คู่มือนี้ครอบคลุมคุณสมบัติทั้งหมด สำหรับการทบทวนอย่างรวดเร็ว ดูที่ **คู่มืออ้างอิงด่วน**
 
 ---
 
@@ -1926,7 +1926,7 @@ NVH Source Locator ใช้ **โมเดล freemium ที่ล็อคต
 
 NVH Source Locator là một công cụ đo lường để định vị các nguồn tiếng ồn và rung động sử dụng TDOA (Time Difference of Arrival) từ các tín hiệu gia tốc kế được ghi lại trên máy hiện sóng hoặc hệ thống đo lường.
 
-Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem `quick-reference.md`.
+Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm lược nhanh, xem **Tham khảo nhanh**.
 
 ---
 

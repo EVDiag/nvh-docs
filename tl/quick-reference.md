@@ -1,6 +1,6 @@
 # NVH Source Locator — Mabilis na Sanggunian
 
-Isang-pahinang paalala. Para sa kumpletong detalye, tingnan ang `user-guide.md`.
+Isang-pahinang paalala. Para sa kumpletong detalye, tingnan ang **Gabay sa Gumagamit**.
 
 ---
 

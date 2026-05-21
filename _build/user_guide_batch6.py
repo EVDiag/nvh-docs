@@ -11,7 +11,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator — гэта інструмент вымярэння для вызначэння крыніц шуму і вібрацыі з выкарыстаннем TDOA (Time Difference of Arrival) з сігналаў акселерометра, зафіксаваных на асцылографе або сістэме вымярэння.
 
-Гэтае кіраўніцтва ахоплівае ўсе функцыі. Для хуткага напаміну гл. `quick-reference.md`.
+Гэтае кіраўніцтва ахоплівае ўсе функцыі. Для хуткага напаміну гл. **Кароткі даведнік**.
 
 ---
 
@@ -490,7 +490,7 @@ NVH Source Locator выкарыстоўвае **freemium-мадэль з бла�
 
 NVH Source Locator یک ابزار اندازه‌گیری برای مکان‌یابی منابع نویز و ارتعاش با استفاده از TDOA (Time Difference of Arrival) از سیگنال‌های شتاب‌سنج که در یک اسیلوسکوپ یا سیستم اندازه‌گیری ضبط شده‌اند.
 
-این راهنما تمام ویژگی‌ها را پوشش می‌دهد. برای یادآوری سریع، به `quick-reference.md` مراجعه کنید.
+این راهنما تمام ویژگی‌ها را پوشش می‌دهد. برای یادآوری سریع، به **مرجع سریع** مراجعه کنید.
 
 ---
 
@@ -969,7 +969,7 @@ NVH Source Locator از یک **مدل freemium قفل شده بر اساس وی�
 
 NVH Source Locator एक मापन उपकरण है जो ऑसिलोस्कोप या मापन प्रणाली पर पकड़े गए एक्सेलेरोमीटर सिग्नल से TDOA (Time Difference of Arrival) का उपयोग करके शोर और कंपन स्रोतों का स्थान निर्धारित करता है।
 
-यह गाइड सभी सुविधाओं को कवर करता है। त्वरित स्मरण के लिए, `quick-reference.md` देखें।
+यह गाइड सभी सुविधाओं को कवर करता है। त्वरित स्मरण के लिए, **त्वरित संदर्भ** देखें।
 
 ---
 
@@ -1448,7 +1448,7 @@ Pro-आवश्यक फ़ील्ड बिखरे हुए हैं:
 
 NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal accelerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini mencakup semua fitur. Untuk pengingat cepat, lihat `quick-reference.md`.
+Panduan ini mencakup semua fitur. Untuk pengingat cepat, lihat **Referensi Cepat**.
 
 ---
 
@@ -1927,7 +1927,7 @@ Hubungi `support@evdiag.net` dengan:
 
 NVH Source Locator ialah alat pengukuran untuk mencari punca bunyi dan getaran menggunakan TDOA (Time Difference of Arrival) daripada isyarat accelerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini meliputi semua ciri. Untuk peringatan pantas, lihat `quick-reference.md`.
+Panduan ini meliputi semua ciri. Untuk peringatan pantas, lihat **Rujukan Pantas**.
 
 ---
 
@@ -2406,7 +2406,7 @@ Hubungi `support@evdiag.net` dengan:
 
 Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmulan ng ingay at vibration gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa isang oscilloscope o sistema ng pagsukat.
 
-Saklaw ng gabay na ito ang lahat ng mga tampok. Para sa mabilis na pagre-refresh, tingnan ang `quick-reference.md`.
+Saklaw ng gabay na ito ang lahat ng mga tampok. Para sa mabilis na pagre-refresh, tingnan ang **Mabilis na Sanggunian**.
 
 ---
 
@@ -2885,7 +2885,7 @@ Makipag-ugnayan sa `support@evdiag.net` na may:
 
 NVH Source Locator एक मापन उपकरण है जो ऑसिलोस्कोप या मापन सिस्टम पर कैप्चर किए गए एक्सेलेरोमीटर सिग्नल से TDOA (Time Difference of Arrival) का उपयोग करके शोर और कंपन स्रोतों का पता लगाता है।
 
-यह गाइड सभी सुविधाओं को कवर करती है। त्वरित रिफ्रेशर के लिए, `quick-reference.md` देखें।
+यह गाइड सभी सुविधाओं को कवर करती है। त्वरित रिफ्रेशर के लिए, **त्वरित संदर्भ** देखें।
 
 ---
 
@@ -3364,7 +3364,7 @@ Pro-आवश्यक फ़ील्ड फैले हुए हैं:
 
 NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat `quick-reference.md`.
+Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat **Referensi Cepat**.
 
 ---
 
@@ -3843,7 +3843,7 @@ Hubungi `support@evdiag.net` dengan:
 
 NVH Source Locator ialah alat pengukuran untuk mencari sumber bunyi dan getaran menggunakan TDOA (Time Difference of Arrival) daripada isyarat akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat `quick-reference.md`.
+Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat **Rujukan Pantas**.
 
 ---
 
@@ -4322,7 +4322,7 @@ Hubungi `support@evdiag.net` dengan:
 
 Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmumulan ng ingay at vibrasyon gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa oscilloscope o sistemang pansukat.
 
-Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang `quick-reference.md`.
+Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang **Mabilis na Sanggunian**.
 
 ---
 

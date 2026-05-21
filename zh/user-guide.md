@@ -2,7 +2,7 @@
 
 NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arrival，到达时间差）从示波器或测量系统捕获的加速度计信号定位噪声和振动源。
 
-本指南涵盖所有功能。如需快速复习，请参阅 `quick-reference.md`。
+本指南涵盖所有功能。如需快速复习，请参阅 **快速参考**。
 
 ---
 

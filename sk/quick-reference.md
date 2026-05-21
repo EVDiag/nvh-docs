@@ -1,6 +1,6 @@
 # NVH Source Locator — Stručná príručka
 
-Jednostranový prehľad. Úplné podrobnosti nájdete v `user-guide.md`.
+Jednostranový prehľad. Úplné podrobnosti nájdete v **Používateľská príručka**.
 
 ---
 

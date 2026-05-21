@@ -11,7 +11,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator ist ein Messwerkzeug zur Lokalisierung von Geräusch- und Vibrationsquellen mithilfe von TDOA (Time Difference of Arrival) aus Beschleunigungssensorsignalen, die auf einem Oszilloskop oder Messsystem erfasst werden.
 
-Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in `quick-reference.md`.
+Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in **Kurzanleitung**.
 
 ---
 
@@ -490,7 +490,7 @@ Kontaktieren Sie `support@evdiag.net` mit:
 
 NVH Source Locator es una herramienta de medición para localizar fuentes de ruido y vibración mediante TDOA (Tiempo Diferencial de Llegada) a partir de señales de acelerómetros capturadas en un osciloscopio o sistema de medición.
 
-Esta guía cubre todas las funciones. Para un repaso rápido, consulte `quick-reference.md`.
+Esta guía cubre todas las funciones. Para un repaso rápido, consulte **Referencia Rápida**.
 
 ---
 
@@ -969,7 +969,7 @@ Contacte `support@evdiag.net` con:
 
 NVH Source Locator est un outil de mesure pour localiser les sources de bruit et de vibration en utilisant le TDOA (Time Difference of Arrival) à partir des signaux d'accéléromètres capturés sur un oscilloscope ou un système de mesure.
 
-Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez `quick-reference.md`.
+Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez **Référence Rapide**.
 
 ---
 
@@ -1448,7 +1448,7 @@ Contactez `support@evdiag.net` avec :
 
 NVH Source Locator è uno strumento di misurazione per localizzare sorgenti di rumore e vibrazione utilizzando TDOA (Time Difference of Arrival) dai segnali degli accelerometri catturati su un oscilloscopio o sistema di misurazione.
 
-Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere `quick-reference.md`.
+Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere **Riferimento Rapido**.
 
 ---
 

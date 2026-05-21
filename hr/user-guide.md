@@ -2,7 +2,7 @@
 
 NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću TDOA (Time Difference of Arrival) iz signala akcelerometra zabilježenih na osciloskopu ili mjernom sustavu.
 
-Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte `quick-reference.md`.
+Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte **Kratki priručnik**.
 
 ---
 

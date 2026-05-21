@@ -1,6 +1,6 @@
 # NVH Source Locator — Tham khảo nhanh
 
-Bản tóm tắt một trang. Để biết chi tiết đầy đủ, xem `user-guide.md`.
+Bản tóm tắt một trang. Để biết chi tiết đầy đủ, xem **Hướng dẫn sử dụng**.
 
 ---
 

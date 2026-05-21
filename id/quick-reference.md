@@ -1,6 +1,6 @@
 # NVH Source Locator — Referensi Cepat
 
-Pengingat satu halaman. Untuk detail lengkap, lihat `user-guide.md`.
+Pengingat satu halaman. Untuk detail lengkap, lihat **Panduan Pengguna**.
 
 ---
 

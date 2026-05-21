@@ -1,6 +1,6 @@
 # NVH Source Locator — Referência Rápida
 
-Um resumo de uma página. Para detalhes completos, veja `user-guide.md`.
+Um resumo de uma página. Para detalhes completos, veja **Guia do Usuário**.
 
 ---
 

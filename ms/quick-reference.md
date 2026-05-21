@@ -1,6 +1,6 @@
 # NVH Source Locator — Rujukan Pantas
 
-Peringatan satu halaman. Untuk butiran penuh, lihat `user-guide.md`.
+Peringatan satu halaman. Untuk butiran penuh, lihat **Panduan Pengguna**.
 
 ---
 

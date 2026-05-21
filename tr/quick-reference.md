@@ -1,6 +1,6 @@
 # NVH Source Locator — Hızlı Başvuru
 
-Tek sayfalık özet. Tam ayrıntılar için bkz `user-guide.md`.
+Tek sayfalık özet. Tam ayrıntılar için bkz **Kullanım Kılavuzu**.
 
 ---
 

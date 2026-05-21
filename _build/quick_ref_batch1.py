@@ -11,7 +11,7 @@ QUICK_REF_TRANSLATIONS = {
 
 'de': """# NVH Source Locator — Kurzanleitung
 
-Eine einseitige Zusammenfassung. Vollständige Details siehe `user-guide.md`.
+Eine einseitige Zusammenfassung. Vollständige Details siehe **Benutzerhandbuch**.
 
 ---
 
@@ -114,7 +114,7 @@ Kontakt `support@evdiag.net` — geben Sie Gerätemodell, App-Version (Einstellu
 
 'es': """# NVH Source Locator — Referencia Rápida
 
-Un resumen de una página. Para más detalles, consulte `user-guide.md`.
+Un resumen de una página. Para más detalles, consulte **Guía del Usuario**.
 
 ---
 
@@ -217,7 +217,7 @@ Contacto `support@evdiag.net` — incluya modelo del dispositivo, versión de la
 
 'fr': """# NVH Source Locator — Référence Rapide
 
-Un rappel sur une page. Pour les détails complets, voir `user-guide.md`.
+Un rappel sur une page. Pour les détails complets, voir **Guide de l'utilisateur**.
 
 ---
 
@@ -320,7 +320,7 @@ Contact `support@evdiag.net` — incluez le modèle de l'appareil, la version de
 
 'it': """# NVH Source Locator — Riferimento Rapido
 
-Un riepilogo di una pagina. Per i dettagli completi, vedere `user-guide.md`.
+Un riepilogo di una pagina. Per i dettagli completi, vedere **Guida Utente**.
 
 ---
 
@@ -423,7 +423,7 @@ Contatto `support@evdiag.net` — includi modello del dispositivo, versione dell
 
 'pt': """# NVH Source Locator — Referência Rápida
 
-Um resumo de uma página. Para detalhes completos, veja `user-guide.md`.
+Um resumo de uma página. Para detalhes completos, veja **Guia do Usuário**.
 
 ---
 
@@ -526,7 +526,7 @@ Contato `support@evdiag.net` — inclua modelo do dispositivo, versão do aplica
 
 'pl': """# NVH Source Locator — Skrócona instrukcja
 
-Jednostronicowe podsumowanie. Pełne szczegóły znajdziesz w `user-guide.md`.
+Jednostronicowe podsumowanie. Pełne szczegóły znajdziesz w **Podręcznik użytkownika**.
 
 ---
 
@@ -629,7 +629,7 @@ Kontakt `support@evdiag.net` — podaj model urządzenia, wersję aplikacji (Ust
 
 'ru': """# NVH Source Locator — Краткий справочник
 
-Одностраничное напоминание. Полные подробности см. в `user-guide.md`.
+Одностраничное напоминание. Полные подробности см. в **Руководство пользователя**.
 
 ---
 
@@ -732,7 +732,7 @@ Pro разблокирует: от 3-Sensor до 3D+, пользовательс
 
 'zh': """# NVH Source Locator — 快速参考
 
-单页提要。完整详情请参阅 `user-guide.md`。
+单页提要。完整详情请参阅 **用户指南**。
 
 ---
 

@@ -2,7 +2,7 @@
 
 Ang NVH Source Locator ay isang kasangkapan sa pagsukat para sa paghanap ng mga pinagmumulan ng ingay at vibrasyon gamit ang TDOA (Time Difference of Arrival) mula sa mga signal ng accelerometer na nakuha sa oscilloscope o sistemang pansukat.
 
-Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang `quick-reference.md`.
+Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, tingnan ang **Mabilis na Sanggunian**.
 
 ---
 

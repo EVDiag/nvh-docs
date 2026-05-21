@@ -2,7 +2,7 @@
 
 NVH Source Locator, osiloskop veya ölçüm sisteminde yakalanan ivmeölçer sinyallerinden TDOA (Time Difference of Arrival) kullanarak gürültü ve titreşim kaynaklarını lokalize etmek için bir ölçüm aracıdır.
 
-Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için `quick-reference.md` dosyasına bakın.
+Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için **Hızlı Başvuru** dosyasına bakın.
 
 ---
 

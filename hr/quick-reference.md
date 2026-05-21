@@ -1,6 +1,6 @@
 # NVH Source Locator — Kratki priručnik
 
-Jednostranični pregled. Za pune detalje pogledajte `user-guide.md`.
+Jednostranični pregled. Za pune detalje pogledajte **Korisnički priručnik**.
 
 ---
 

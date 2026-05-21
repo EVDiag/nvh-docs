@@ -9,7 +9,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator är ett mätverktyg för att lokalisera buller- och vibrationskällor med hjälp av TDOA (Time Difference of Arrival) från accelerometersignaler som registreras på ett oscilloskop eller mätsystem.
 
-Den här handboken täcker alla funktioner. För en snabb påminnelse, se `quick-reference.md`.
+Den här handboken täcker alla funktioner. För en snabb påminnelse, se **Snabbreferens**.
 
 ---
 
@@ -488,7 +488,7 @@ Kontakta `support@evdiag.net` med:
 
 NVH Source Locator er et måleverktøy for å lokalisere støy- og vibrasjonskilder ved hjelp av TDOA (Time Difference of Arrival) fra akselerometersignaler fanget på et oscilloskop eller målesystem.
 
-Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se `quick-reference.md`.
+Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se **Hurtigreferanse**.
 
 ---
 
@@ -967,7 +967,7 @@ Kontakt `support@evdiag.net` med:
 
 NVH Source Locator on mittaustyökalu melu- ja tärinälähteiden paikantamiseen TDOA:n (Time Difference of Arrival) avulla oskilloskoopilla tai mittausjärjestelmällä taltioiduista kiihtyvyysanturin signaaleista.
 
-Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso `quick-reference.md`.
+Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso **Pikaviite**.
 
 ---
 
@@ -1446,7 +1446,7 @@ Ota yhteyttä `support@evdiag.net`:iin:
 
 NVH Source Locator este un instrument de măsurare pentru localizarea surselor de zgomot și vibrații folosind TDOA (Time Difference of Arrival) din semnalele accelerometrelor capturate pe un osciloscop sau sistem de măsurare.
 
-Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi `quick-reference.md`.
+Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi **Referință rapidă**.
 
 ---
 
@@ -1925,7 +1925,7 @@ Contactează `support@evdiag.net` cu:
 
 NVH Source Locator, osiloskop veya ölçüm sisteminde yakalanan ivmeölçer sinyallerinden TDOA (Time Difference of Arrival) kullanarak gürültü ve titreşim kaynaklarını lokalize etmek için bir ölçüm aracıdır.
 
-Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için `quick-reference.md` dosyasına bakın.
+Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için **Hızlı Başvuru** dosyasına bakın.
 
 ---
 

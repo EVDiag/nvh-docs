@@ -1,6 +1,6 @@
 # NVH Source Locator — Snabbreferens
 
-En sammanfattning på en sida. För fullständiga detaljer, se `user-guide.md`.
+En sammanfattning på en sida. För fullständiga detaljer, se **Användarhandbok**.
 
 ---
 

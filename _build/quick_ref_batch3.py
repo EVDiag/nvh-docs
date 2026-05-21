@@ -7,7 +7,7 @@ QUICK_REF_TRANSLATIONS = {
 
 'ro': """# NVH Source Locator — Referință rapidă
 
-Un rezumat pe o pagină. Pentru detalii complete, consultați `user-guide.md`.
+Un rezumat pe o pagină. Pentru detalii complete, consultați **Ghidul utilizatorului**.
 
 ---
 
@@ -110,7 +110,7 @@ Contact `support@evdiag.net` — includeți modelul dispozitivului, versiunea ap
 
 'tr': """# NVH Source Locator — Hızlı Başvuru
 
-Tek sayfalık özet. Tam ayrıntılar için bkz `user-guide.md`.
+Tek sayfalık özet. Tam ayrıntılar için bkz **Kullanım Kılavuzu**.
 
 ---
 
@@ -213,7 +213,7 @@ Bir promosyon kodunu harici olarak kullandıktan sonra uygulamaya geri döndüğ
 
 'ar': """# NVH Source Locator — مرجع سريع
 
-ملخص من صفحة واحدة. للحصول على التفاصيل الكاملة، انظر `user-guide.md`.
+ملخص من صفحة واحدة. للحصول على التفاصيل الكاملة، انظر **دليل المستخدم**.
 
 ---
 
@@ -316,7 +316,7 @@ Pro يفتح: من 3-Sensor إلى 3D+، مواد مخصصة، نسخ احتيا
 
 'ja': """# NVH Source Locator — クイックリファレンス
 
-1ページの概要。完全な詳細は `user-guide.md` を参照してください。
+1ページの概要。完全な詳細は **ユーザーガイド** を参照してください。
 
 ---
 
@@ -419,7 +419,7 @@ Pro でロック解除: 3-Sensor から 3D+ まで、カスタム材料、バッ
 
 'ko': """# NVH Source Locator — 빠른 참조
 
-한 페이지 요약. 전체 내용은 `user-guide.md`를 참조하세요.
+한 페이지 요약. 전체 내용은 **사용자 가이드**를 참조하세요.
 
 ---
 
@@ -522,7 +522,7 @@ Pro 잠금 해제: 3-Sensor부터 3D+까지, 사용자 정의 재료, 백업/복
 
 'th': """# NVH Source Locator — คู่มืออ้างอิงด่วน
 
-สรุปหนึ่งหน้า สำหรับรายละเอียดทั้งหมด ดู `user-guide.md`
+สรุปหนึ่งหน้า สำหรับรายละเอียดทั้งหมด ดู **คู่มือผู้ใช้**
 
 ---
 
@@ -625,7 +625,7 @@ Pro ปลดล็อก: ตั้งแต่ 3-Sensor ถึง 3D+, วั�
 
 'vi': """# NVH Source Locator — Tham khảo nhanh
 
-Bản tóm tắt một trang. Để biết chi tiết đầy đủ, xem `user-guide.md`.
+Bản tóm tắt một trang. Để biết chi tiết đầy đủ, xem **Hướng dẫn sử dụng**.
 
 ---
 

@@ -7,7 +7,7 @@ QUICK_REF_TRANSLATIONS = {
 
 'cs': """# NVH Source Locator — Stručná příručka
 
-Jednostránkový přehled. Úplné podrobnosti naleznete v `user-guide.md`.
+Jednostránkový přehled. Úplné podrobnosti naleznete v **Uživatelská příručka**.
 
 ---
 
@@ -110,7 +110,7 @@ Kontakt `support@evdiag.net` — uveďte model zařízení, verzi aplikace (Nast
 
 'sk': """# NVH Source Locator — Stručná príručka
 
-Jednostranový prehľad. Úplné podrobnosti nájdete v `user-guide.md`.
+Jednostranový prehľad. Úplné podrobnosti nájdete v **Používateľská príručka**.
 
 ---
 
@@ -213,7 +213,7 @@ Kontakt `support@evdiag.net` — uveďte model zariadenia, verziu aplikácie (Na
 
 'hu': """# NVH Source Locator — Gyors útmutató
 
-Egyoldalas összefoglaló. A teljes részletekért lásd `user-guide.md`.
+Egyoldalas összefoglaló. A teljes részletekért lásd **Felhasználói kézikönyv**.
 
 ---
 
@@ -316,7 +316,7 @@ Kapcsolat `support@evdiag.net` — adja meg az eszköz modelljét, az alkalmazá
 
 'hr': """# NVH Source Locator — Kratki priručnik
 
-Jednostranični pregled. Za pune detalje pogledajte `user-guide.md`.
+Jednostranični pregled. Za pune detalje pogledajte **Korisnički priručnik**.
 
 ---
 
@@ -419,7 +419,7 @@ Kontakt `support@evdiag.net` — navedite model uređaja, verziju aplikacije (Po
 
 'bg': """# NVH Source Locator — Кратко справочно ръководство
 
-Едностранично резюме. За пълни подробности вижте `user-guide.md`.
+Едностранично резюме. За пълни подробности вижте **Ръководство за потребителя**.
 
 ---
 
@@ -522,7 +522,7 @@ Pro отключва: 3-Sensor до 3D+, потребителски матери
 
 'sv': """# NVH Source Locator — Snabbreferens
 
-En sammanfattning på en sida. För fullständiga detaljer, se `user-guide.md`.
+En sammanfattning på en sida. För fullständiga detaljer, se **Användarhandbok**.
 
 ---
 
@@ -625,7 +625,7 @@ Kontakt `support@evdiag.net` — inkludera enhetsmodell, appversion (Inställnin
 
 'no': """# NVH Source Locator — Hurtigreferanse
 
-En sammendrag på én side. For fullstendige detaljer, se `user-guide.md`.
+En sammendrag på én side. For fullstendige detaljer, se **Brukerhåndbok**.
 
 ---
 
@@ -728,7 +728,7 @@ Kontakt `support@evdiag.net` — inkluder enhetsmodell, appversjon (Innstillinge
 
 'fi': """# NVH Source Locator — Pikaviite
 
-Yhden sivun yhteenveto. Täydet tiedot löytyvät `user-guide.md` -tiedostosta.
+Yhden sivun yhteenveto. Täydet tiedot löytyvät **Käyttöopas** -tiedostosta.
 
 ---
 

@@ -2,7 +2,7 @@
 
 NVH Source Locator er et måleverktøy for å lokalisere støy- og vibrasjonskilder ved hjelp av TDOA (Time Difference of Arrival) fra akselerometersignaler fanget på et oscilloskop eller målesystem.
 
-Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se `quick-reference.md`.
+Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se **Hurtigreferanse**.
 
 ---
 

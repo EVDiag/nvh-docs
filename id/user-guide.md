@@ -2,7 +2,7 @@
 
 NVH Source Locator adalah alat pengukuran untuk menemukan sumber kebisingan dan getaran menggunakan TDOA (Time Difference of Arrival) dari sinyal akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat `quick-reference.md`.
+Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat **Referensi Cepat**.
 
 ---
 

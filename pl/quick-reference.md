@@ -1,6 +1,6 @@
 # NVH Source Locator — Skrócona instrukcja
 
-Jednostronicowe podsumowanie. Pełne szczegóły znajdziesz w `user-guide.md`.
+Jednostronicowe podsumowanie. Pełne szczegóły znajdziesz w **Podręcznik użytkownika**.
 
 ---
 

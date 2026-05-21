@@ -2,7 +2,7 @@
 
 NVH Source Locator est un outil de mesure pour localiser les sources de bruit et de vibration en utilisant le TDOA (Time Difference of Arrival) à partir des signaux d'accéléromètres capturés sur un oscilloscope ou un système de mesure.
 
-Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez `quick-reference.md`.
+Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez **Référence Rapide**.
 
 ---
 

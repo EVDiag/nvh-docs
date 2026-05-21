@@ -2,7 +2,7 @@
 
 NVH Source Locator ialah alat pengukuran untuk mencari sumber bunyi dan getaran menggunakan TDOA (Time Difference of Arrival) daripada isyarat akselerometer yang ditangkap pada osiloskop atau sistem pengukuran.
 
-Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat `quick-reference.md`.
+Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat **Rujukan Pantas**.
 
 ---
 

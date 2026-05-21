@@ -1,6 +1,6 @@
 # NVH Source Locator — Gyors útmutató
 
-Egyoldalas összefoglaló. A teljes részletekért lásd `user-guide.md`.
+Egyoldalas összefoglaló. A teljes részletekért lásd **Felhasználói kézikönyv**.
 
 ---
 

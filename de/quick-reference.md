@@ -1,6 +1,6 @@
 # NVH Source Locator — Kurzanleitung
 
-Eine einseitige Zusammenfassung. Vollständige Details siehe `user-guide.md`.
+Eine einseitige Zusammenfassung. Vollständige Details siehe **Benutzerhandbuch**.
 
 ---
 

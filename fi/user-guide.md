@@ -2,7 +2,7 @@
 
 NVH Source Locator on mittaustyökalu melu- ja tärinälähteiden paikantamiseen TDOA:n (Time Difference of Arrival) avulla oskilloskoopilla tai mittausjärjestelmällä taltioiduista kiihtyvyysanturin signaaleista.
 
-Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso `quick-reference.md`.
+Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso **Pikaviite**.
 
 ---
 

@@ -1,6 +1,6 @@
 # NVH Source Locator — 快速参考
 
-单页提要。完整详情请参阅 `user-guide.md`。
+单页提要。完整详情请参阅 **用户指南**。
 
 ---
 

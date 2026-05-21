@@ -9,7 +9,7 @@ USER_GUIDE_TRANSLATIONS = {
 
 NVH Source Locator é uma ferramenta de medição para localizar fontes de ruído e vibração usando TDOA (Time Difference of Arrival) a partir de sinais de acelerômetros capturados em um osciloscópio ou sistema de medição.
 
-Este guia cobre todos os recursos. Para uma revisão rápida, consulte `quick-reference.md`.
+Este guia cobre todos os recursos. Para uma revisão rápida, consulte **Referência Rápida**.
 
 ---
 
@@ -488,7 +488,7 @@ Contate `support@evdiag.net` com:
 
 NVH Source Locator to narzędzie pomiarowe do lokalizowania źródeł hałasu i drgań przy użyciu TDOA (Time Difference of Arrival) z sygnałów akcelerometrów rejestrowanych na oscyloskopie lub systemie pomiarowym.
 
-Ten przewodnik obejmuje wszystkie funkcje. Aby uzyskać szybkie przypomnienie, zobacz `quick-reference.md`.
+Ten przewodnik obejmuje wszystkie funkcje. Aby uzyskać szybkie przypomnienie, zobacz **Skrócona instrukcja**.
 
 ---
 
@@ -967,7 +967,7 @@ Skontaktuj się z `support@evdiag.net` z:
 
 NVH Source Locator — это измерительный инструмент для локализации источников шума и вибрации с использованием TDOA (Time Difference of Arrival) из сигналов акселерометров, захваченных на осциллографе или измерительной системе.
 
-Это руководство охватывает все функции. Для краткого напоминания см. `quick-reference.md`.
+Это руководство охватывает все функции. Для краткого напоминания см. **Краткий справочник**.
 
 ---
 
@@ -1446,7 +1446,7 @@ NVH Source Locator использует **freemium-модель с блокир�
 
 NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arrival，到达时间差）从示波器或测量系统捕获的加速度计信号定位噪声和振动源。
 
-本指南涵盖所有功能。如需快速复习，请参阅 `quick-reference.md`。
+本指南涵盖所有功能。如需快速复习，请参阅 **快速参考**。
 
 ---
 
