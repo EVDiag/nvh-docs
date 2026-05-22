@@ -26,7 +26,7 @@ Den här handboken täcker alla funktioner. För en snabb påminnelse, se **Snab
 
 ---
 
-## Hur det fungerar
+## Hur det fungerar {#how-it-works}
 
 När en bullerkälla avger ljud eller vibration färdas vågen genom ett material med en känd hastighet. Om du placerar två eller fler accelerometrar på materialet och mäter när vågen anländer till var och en, säger tidsskillnaden var källan finns.
 
@@ -45,7 +45,7 @@ Ju fler sensorer du använder, desto mer exakt kan du fastställa källan:
 
 ---
 
-## Innan du börjar
+## Innan du börjar {#before-you-start}
 
 Du behöver:
 
@@ -58,7 +58,7 @@ Du behöver:
 
 ---
 
-## De viktigaste flikarna
+## De viktigaste flikarna {#the-main-tabs}
 
 Appen har flikar längst upp:
 
@@ -82,7 +82,7 @@ Inställningar nås via ⚙ kugghjulsikonen i det övre högra hörnet (inte en 
 
 ---
 
-## 2-Sensor-läge
+## 2-Sensor-läge {#2-sensor-mode}
 
 Den enklaste mätningen: källokalisering längs en linje mellan två accelerometrar.
 
@@ -124,7 +124,7 @@ Tryck på **📷 Annotera foto** för att ta ett foto av din inställning. Appen
 
 ---
 
-## 3-Sensor-läge
+## 3-Sensor-läge {#3-sensor-mode}
 
 Lokaliserar en källa på ett 2D-plan med tre sensorer arrangerade i en triangel.
 
@@ -151,7 +151,7 @@ Appen visar källpositionen som X-, Y-koordinater i förhållande till sensor A 
 
 ---
 
-## Pro+-lägen
+## Pro+-lägen {#pro-modes}
 
 Flera avancerade flikar erbjuder överbestämda lösare och högre dimensionalitet:
 
@@ -181,7 +181,7 @@ Som 3D men stödjer upp till **6 sensorer** (A till F) med överbestämd LSQ. Ma
 
 ---
 
-## Fliken Materials
+## Fliken Materials {#the-materials-tab}
 
 Bibliotek med vanliga ingenjörsmaterial med känd ljudhastighet vid 20 °C.
 
@@ -230,7 +230,7 @@ Använd sökfältet längst upp för att filtrera material efter namn. Sökning 
 
 ---
 
-## Temperaturkompensation
+## Temperaturkompensation {#temperature-compensation}
 
 Ljudhastigheten i material förändras med temperaturen. I bil-NVH-testning betyder detta: ett motorrum vid 80 °C, en kallindränkt kabin vid -10 °C eller ett område för avgasgrenrör vid 200 °C beter sig alla annorlunda än laboratorieförhållanden vid rumstemperatur.
 
@@ -261,7 +261,7 @@ De flesta icke-metalliska material har inte tillförlitliga publicerade temperat
 
 ---
 
-## Fotoannotering
+## Fotoannotering {#photo-annotation}
 
 Efter en lyckad beräkning, tryck på knappen **📷 Annotera foto** för att lägga till sensor- och källmarkörer på ett foto av din inställning.
 
@@ -280,7 +280,7 @@ Det annoterade fotot inkluderas automatiskt i PDF-rapporter.
 
 ---
 
-## Rapporter
+## Rapporter {#reports}
 
 Tryck på knappen **Skriv ut resultat** på vilken resultatskärm som helst för att generera en formaterad rapport.
 
@@ -309,7 +309,7 @@ Inställningar → Rapportrubrik. Ange ditt företagsnamn, labnamn, projektinfo 
 
 ---
 
-## Säkerhetskopiering och återställning
+## Säkerhetskopiering och återställning {#backup-and-restore}
 
 Spara alla dina anpassade material, favoriter, inställningar och historik i en enda fil. Överför mellan enheter.
 
@@ -325,7 +325,7 @@ Inställningar → **Återställ** → välj säkerhetskopian från telefonens l
 
 ---
 
-## Inställningar
+## Inställningar {#settings}
 
 Åtkomst via ⚙ kugghjulsikonen i det övre högra hörnet. Inställningar är ett modalfönster, inte en flik.
 
@@ -345,7 +345,7 @@ Inställningar → **Återställ** → välj säkerhetskopian från telefonens l
 
 ---
 
-## Pro-funktioner
+## Pro-funktioner {#pro-features}
 
 NVH Source Locator använder en **funktionslåst freemium-modell**:
 
@@ -402,7 +402,7 @@ Om du löser in en kampanjkod i Google Play Store eller App Store medan NVH Sour
 
 ---
 
-## Fliken Help och handledningar
+## Fliken Help och handledningar {#help-tab-and-tutorials}
 
 Fliken **Help** inkluderar handledningar i appen, guider för bästa praxis och referensinformation.
 
@@ -418,7 +418,7 @@ Fliken **Help** inkluderar handledningar i appen, guider för bästa praxis och 
 
 ---
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
 ### Beräkningsresultatet är fel eller meningslöst
 

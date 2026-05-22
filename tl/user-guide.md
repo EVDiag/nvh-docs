@@ -26,7 +26,7 @@ Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, ti
 
 ---
 
-## Paano ito gumagana
+## Paano ito gumagana {#how-it-works}
 
 Kapag ang isang pinagmulan ng ingay ay naglalabas ng tunog o vibrasyon, ang alon ay naglalakbay sa pamamagitan ng materyal sa kilalang bilis. Kung maglagay ka ng dalawa o higit pang accelerometer sa materyal at sukatin kung kailan dumating ang alon sa bawat isa, sinasabi sa iyo ng pagkakaiba ng oras kung nasaan ang pinagmulan.
 
@@ -45,7 +45,7 @@ Mas maraming sensor na ginagamit mo, mas tumpak na maitatakda mo ang pinagmulan:
 
 ---
 
-## Bago ka magsimula
+## Bago ka magsimula {#before-you-start}
 
 Kakailanganin mo ng:
 
@@ -58,7 +58,7 @@ Kakailanganin mo ng:
 
 ---
 
-## Ang pangunahing mga tab
+## Ang pangunahing mga tab {#the-main-tabs}
 
 Mayroong mga tab ang app sa tuktok:
 
@@ -82,7 +82,7 @@ Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (h
 
 ---
 
-## Mode na 2-Sensor
+## Mode na 2-Sensor {#2-sensor-mode}
 
 Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.
 
@@ -124,7 +124,7 @@ I-tap ang **📷 I-annotate ang larawan** upang kumuha ng larawan ng iyong setup
 
 ---
 
-## Mode na 3-Sensor
+## Mode na 3-Sensor {#3-sensor-mode}
 
 Hinahanap ang isang pinagmulan sa 2D plane gamit ang tatlong sensor na nakaayos sa isang tatsulok.
 
@@ -151,7 +151,7 @@ Ipinapakita ng app ang posisyon ng pinagmulan bilang mga X, Y coordinate na nauu
 
 ---
 
-## Mga Pro+ mode
+## Mga Pro+ mode {#pro-modes}
 
 Ang ilang advanced na tab ay nag-aalok ng over-determined solvers at mas mataas na dimensionality:
 
@@ -181,7 +181,7 @@ Katulad ng 3D ngunit sumusuporta sa hanggang **6 sensor** (A hanggang F) na may 
 
 ---
 
-## Ang tab na Materials
+## Ang tab na Materials {#the-materials-tab}
 
 Library ng mga karaniwang engineering material na may kilalang bilis ng tunog sa 20 °C.
 
@@ -230,7 +230,7 @@ Gamitin ang search bar sa tuktok upang i-filter ang mga materyal ayon sa pangala
 
 ---
 
-## Pagsasaayos ng temperatura
+## Pagsasaayos ng temperatura {#temperature-compensation}
 
 Ang bilis ng tunog sa mga materyal ay nagbabago sa temperatura. Sa automotive NVH testing, mahalaga ito: ang engine bay sa 80 °C, ang cold-soaked cabin sa -10 °C, o ang exhaust manifold area sa 200 °C ay lahat kumikilos nang iba mula sa room-temperature laboratory conditions.
 
@@ -261,7 +261,7 @@ Karamihan sa mga di-metal na materyal ay walang maaasahang inilathalang temperat
 
 ---
 
-## Anotasyon ng larawan
+## Anotasyon ng larawan {#photo-annotation}
 
 Pagkatapos ng matagumpay na pagkalkula, i-tap ang button na **📷 I-annotate ang larawan** upang ilagay ang mga sensor at source marker sa isang larawan ng iyong setup.
 
@@ -280,7 +280,7 @@ Ang naka-annotate na larawan ay awtomatikong kasama sa mga PDF na ulat.
 
 ---
 
-## Mga ulat
+## Mga ulat {#reports}
 
 I-tap ang button na **I-print ang resulta** sa anumang result screen upang makabuo ng isang formatted na ulat.
 
@@ -309,7 +309,7 @@ Mga Setting → Header ng ulat. Ipasok ang pangalan ng iyong kumpanya, pangalan 
 
 ---
 
-## Backup at pagpapanumbalik
+## Backup at pagpapanumbalik {#backup-and-restore}
 
 I-save ang lahat ng iyong custom na materyal, mga paborito, mga setting, at history sa isang file. Ilipat sa pagitan ng mga device.
 
@@ -325,7 +325,7 @@ Mga Setting → **Pagpapanumbalik** → piliin ang backup file mula sa storage n
 
 ---
 
-## Mga Setting
+## Mga Setting {#settings}
 
 Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay isang modal, hindi isang tab.
 
@@ -345,7 +345,7 @@ Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay i
 
 ---
 
-## Mga tampok ng Pro
+## Mga tampok ng Pro {#pro-features}
 
 Ginagamit ng NVH Source Locator ang isang **feature-locked freemium model**:
 
@@ -402,7 +402,7 @@ Kung mag-redeem ka ng promo code sa Google Play Store o App Store habang tumatak
 
 ---
 
-## Tab na Help at mga tutorial
+## Tab na Help at mga tutorial {#help-tab-and-tutorials}
 
 Kasama sa **Help** tab ang mga in-app na tutorial, mga gabay sa best practice, at sangguniang impormasyon.
 
@@ -418,7 +418,7 @@ Mga paksang sakop:
 
 ---
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 ### Mali ang resulta ng pagkalkula o walang katuturan
 

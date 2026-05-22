@@ -26,7 +26,7 @@ This guide covers all features. For a quick refresher, see **Quick Reference**.
 
 ---
 
-## How it works
+## How it works {#how-it-works}
 
 When a noise source emits a sound or vibration, the wave travels through a material at a known speed. If you place two or more accelerometers on the material and measure when the wave arrives at each one, the time difference tells you where the source is.
 
@@ -45,7 +45,7 @@ The more sensors you use, the more accurately you can pin down the source:
 
 ---
 
-## Before you start
+## Before you start {#before-you-start}
 
 You'll need:
 
@@ -58,7 +58,7 @@ You'll need:
 
 ---
 
-## The main tabs
+## The main tabs {#the-main-tabs}
 
 The app has tabs along the top:
 
@@ -82,7 +82,7 @@ Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).
 
 ---
 
-## 2-Sensor mode
+## 2-Sensor mode {#2-sensor-mode}
 
 The simplest measurement: source location along a line between two accelerometers.
 
@@ -124,7 +124,7 @@ Tap **📷 Annotate photo** to take a photo of your setup. The app overlays mark
 
 ---
 
-## 3-Sensor mode
+## 3-Sensor mode {#3-sensor-mode}
 
 Locates a source on a 2D plane using three sensors arranged in a triangle.
 
@@ -151,7 +151,7 @@ The app shows the source position as X, Y coordinates relative to sensor A (sens
 
 ---
 
-## Pro+ modes
+## Pro+ modes {#pro-modes}
 
 Several advanced tabs offer over-determined solvers and higher dimensionality:
 
@@ -181,7 +181,7 @@ Like 3D but supports up to **6 sensors** (A through F) with over-determined LSQ.
 
 ---
 
-## The Materials tab
+## The Materials tab {#the-materials-tab}
 
 Library of common engineering materials with known speed of sound at 20 °C.
 
@@ -230,7 +230,7 @@ Use the search bar at the top to filter materials by name. Search matches both E
 
 ---
 
-## Temperature compensation
+## Temperature compensation {#temperature-compensation}
 
 The speed of sound in materials changes with temperature. In automotive NVH testing this matters: an engine bay at 80 °C, a cold-soaked cabin at -10 °C, or an exhaust manifold area at 200 °C all behave differently from room-temperature laboratory conditions.
 
@@ -261,7 +261,7 @@ Most non-metal materials don't have reliable published temperature coefficients.
 
 ---
 
-## Photo annotation
+## Photo annotation {#photo-annotation}
 
 After a successful calculation, tap the **📷 Annotate photo** button to overlay sensor and source markers on a photo of your setup.
 
@@ -280,7 +280,7 @@ The annotated photo is included automatically in PDF reports.
 
 ---
 
-## Reports
+## Reports {#reports}
 
 Tap the **Print result** button on any result screen to generate a formatted report.
 
@@ -309,7 +309,7 @@ Settings → Report header. Enter your company name, lab name, project info, or 
 
 ---
 
-## Backup and restore
+## Backup and restore {#backup-and-restore}
 
 Save all your custom materials, favorites, settings, and history to a single file. Transfer between devices.
 
@@ -325,7 +325,7 @@ Settings → **Restore** → pick the backup file from your phone's storage. The
 
 ---
 
-## Settings
+## Settings {#settings}
 
 Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a tab.
 
@@ -345,7 +345,7 @@ Access via the ⚙ gear icon in the top-right corner. Settings is a modal, not a
 
 ---
 
-## Pro features
+## Pro features {#pro-features}
 
 NVH Source Locator uses a **feature-locked freemium model**:
 
@@ -402,7 +402,7 @@ If you redeem a promo code in the Google Play Store or App Store while NVH Sourc
 
 ---
 
-## Help tab and tutorials
+## Help tab and tutorials {#help-tab-and-tutorials}
 
 The **Help** tab includes in-app tutorials, best-practice guides, and reference information.
 
@@ -418,7 +418,7 @@ Topics covered:
 
 ---
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 ### Calculation result is wrong or makes no sense
 

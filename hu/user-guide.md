@@ -26,7 +26,7 @@ Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd **Gy
 
 ---
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
 Amikor egy zajforrás hangot vagy rezgést bocsát ki, a hullám ismert sebességgel terjed az anyagban. Ha két vagy több gyorsulásmérőt helyez az anyagra, és megméri, mikor érkezik a hullám mindegyikhez, az időkülönbség megmondja, hol van a forrás.
 
@@ -45,7 +45,7 @@ Minél több érzékelőt használ, annál pontosabban tudja meghatározni a for
 
 ---
 
-## Mielőtt elkezdené
+## Mielőtt elkezdené {#before-you-start}
 
 Szükséges lesz:
 
@@ -58,7 +58,7 @@ Szükséges lesz:
 
 ---
 
-## A főbb lapok
+## A főbb lapok {#the-main-tabs}
 
 Az alkalmazás lapjai a tetején vannak:
 
@@ -82,7 +82,7 @@ A beállítások a ⚙ fogaskerék ikonon keresztül érhetők el a jobb felső 
 
 ---
 
-## 2-Sensor mód
+## 2-Sensor mód {#2-sensor-mode}
 
 A legegyszerűbb mérés: forráslokalizálás egy vonal mentén két gyorsulásmérő között.
 
@@ -124,7 +124,7 @@ Koppintson a **📷 Fotó annotálása** gombra, hogy fényképet készítsen az
 
 ---
 
-## 3-Sensor mód
+## 3-Sensor mód {#3-sensor-mode}
 
 Egy forrást lokalizál egy 2D síkon három, háromszögbe elrendezett érzékelővel.
 
@@ -151,7 +151,7 @@ Az alkalmazás a forrás pozícióját X, Y koordinátákként mutatja az A érz
 
 ---
 
-## Pro+ módok
+## Pro+ módok {#pro-modes}
 
 Több haladó lap kínál túldeterminált megoldókat és magasabb dimenzionalitást:
 
@@ -181,7 +181,7 @@ Mint a 3D, de akár **6 érzékelőig** támogat (A-tól F-ig) túldeterminált 
 
 ---
 
-## A Materials lap
+## A Materials lap {#the-materials-tab}
 
 Gyakori mérnöki anyagok könyvtára 20 °C-on ismert hangsebességgel.
 
@@ -230,7 +230,7 @@ Használja a tetején lévő keresősávot az anyagok név szerinti szűréséhe
 
 ---
 
-## Hőmérséklet-kompenzáció
+## Hőmérséklet-kompenzáció {#temperature-compensation}
 
 Az anyagokban a hangsebesség változik a hőmérséklettel. Az autóipari NVH tesztelésben ez számít: egy 80 °C-os motorháztető, egy -10 °C-os hidegen áztatott kabin vagy egy 200 °C-os kipufogóelosztó terület mind másképp viselkedik, mint a szobahőmérsékleti laboratóriumi körülmények.
 
@@ -261,7 +261,7 @@ A legtöbb nem-fém anyag nem rendelkezik megbízható publikált hőmérséklet
 
 ---
 
-## Fotóannotáció
+## Fotóannotáció {#photo-annotation}
 
 Sikeres számítás után koppintson a **📷 Fotó annotálása** gombra, hogy érzékelő- és forrásjelölőket helyezzen az elrendezésének fényképére.
 
@@ -280,7 +280,7 @@ Az annotált fénykép automatikusan beépül a PDF jelentésekbe.
 
 ---
 
-## Jelentések
+## Jelentések {#reports}
 
 Koppintson a **Eredmény nyomtatása** gombra bármelyik eredményképernyőn formázott jelentés generálásához.
 
@@ -309,7 +309,7 @@ Beállítások → Jelentés fejléce. Adja meg cégének nevét, laborja nevét
 
 ---
 
-## Biztonsági mentés és visszaállítás
+## Biztonsági mentés és visszaállítás {#backup-and-restore}
 
 Mentse el az összes egyéni anyagát, kedvenceit, beállításait és előzményeit egyetlen fájlba. Eszközök közötti átvitel.
 
@@ -325,7 +325,7 @@ Beállítások → **Visszaállítás** → válassza ki a mentési fájlt a tel
 
 ---
 
-## Beállítások
+## Beállítások {#settings}
 
 Hozzáférés a ⚙ fogaskerék ikonon keresztül a jobb felső sarokban. A Beállítások egy modális, nem egy lap.
 
@@ -345,7 +345,7 @@ Hozzáférés a ⚙ fogaskerék ikonon keresztül a jobb felső sarokban. A Beá
 
 ---
 
-## Pro funkciók
+## Pro funkciók {#pro-features}
 
 NVH Source Locator egy **funkció-zárolt freemium modellt** használ:
 
@@ -402,7 +402,7 @@ Ha promóciós kódot vált be a Google Play Store-ban vagy App Store-ban, amíg
 
 ---
 
-## Help lap és oktatóanyagok
+## Help lap és oktatóanyagok {#help-tab-and-tutorials}
 
 A **Help** lap tartalmaz alkalmazáson belüli oktatóanyagokat, legjobb gyakorlati útmutatókat és referenciainformációkat.
 
@@ -418,7 +418,7 @@ Lefedett témák:
 
 ---
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
 ### A számítás eredménye rossz vagy nincs értelme
 

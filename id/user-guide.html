@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Pemecahan masalah</a></li>
 </ol>
 <hr />
-<h2 id="cara-kerjanya">Cara kerjanya</h2>
+<h2 id="how-it-works">Cara kerjanya</h2>
 <p>Ketika sumber kebisingan memancarkan suara atau getaran, gelombang merambat melalui material dengan kecepatan yang diketahui. Jika Anda menempatkan dua atau lebih akselerometer pada material dan mengukur kapan gelombang tiba di masing-masing, perbedaan waktu memberi tahu Anda di mana sumbernya berada.</p>
 <p>NVH Source Locator mengambil:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 sensor</strong> → posisi dalam ruang 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="sebelum-anda-mulai">Sebelum Anda mulai</h2>
+<h2 id="before-you-start">Sebelum Anda mulai</h2>
 <p>Anda akan membutuhkan:</p>
 <ul>
 <li><strong>Osiloskop atau sistem pengukuran</strong> yang dapat menampilkan perbedaan waktu antara saluran akselerometer dalam mikrodetik (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Layar utama dengan tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="tab-utama">Tab utama</h2>
+<h2 id="the-main-tabs">Tab utama</h2>
 <p>Aplikasi memiliki tab di bagian atas:</p>
 <p><img alt="Bilah tab" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).</p>
 <hr />
-<h2 id="mode-2-sensor">Mode 2-Sensor</h2>
+<h2 id="2-sensor-mode">Mode 2-Sensor</h2>
 <p>Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.</p>
 <p><img alt="Tab 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="langkah-1-terapkan-material">Langkah 1: Terapkan material</h3>
@@ -197,7 +197,7 @@
 <h3 id="langkah-5-opsional-anotasi-foto">Langkah 5 (opsional): Anotasi foto</h3>
 <p>Ketuk <strong>📷 Anotasi foto</strong> untuk mengambil foto pengaturan Anda. Aplikasi menumpangkan penanda untuk sensor A, B dan sumber. Berguna untuk laporan.</p>
 <hr />
-<h2 id="mode-3-sensor">Mode 3-Sensor</h2>
+<h2 id="3-sensor-mode">Mode 3-Sensor</h2>
 <p>Menemukan sumber pada bidang 2D menggunakan tiga sensor yang diatur dalam segitiga.</p>
 <p><img alt="Tab 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="pengaturan">Pengaturan</h3>
@@ -212,7 +212,7 @@
 <p>Aplikasi menampilkan posisi sumber sebagai koordinat X, Y relatif terhadap sensor A (sensor A di asal, sensor B di sumbu X). Visualisasi menunjukkan ketiga sensor dan lokasi sumber.</p>
 <p><img alt="Hasil segitiga" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="mode-pro">Mode Pro+</h2>
+<h2 id="pro-modes">Mode Pro+</h2>
 <p>Beberapa tab lanjutan menawarkan solver yang ditentukan berlebih dan dimensi yang lebih tinggi:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Pengaturan segitiga yang sama dengan 3-Sensor, tetapi kalibrasi dan ukur ketiga pasangan (A–B, A–C, B–C). Solver menggunakan ketiga TDOA dalam fit kuadrat terkecil — lebih kuat terhadap kebisingan pengukuran dan material anisotropik. Residu per pasangan dilaporkan sehingga Anda dapat menemukan pengukuran yang tidak konsisten.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Seperti 3D tetapi mendukung hingga <strong>6 sensor</strong> (A hingga F) dengan LSQ yang ditentukan berlebih. Presisi maksimum untuk geometri 3D yang kompleks.</p>
 <hr />
-<h2 id="tab-materials">Tab Materials</h2>
+<h2 id="the-materials-tab">Tab Materials</h2>
 <p>Pustaka material rekayasa umum dengan kecepatan suara yang diketahui pada 20 °C.</p>
 <p><img alt="Tab Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="daftar-material">Daftar material</h3>
@@ -261,7 +261,7 @@
 <h3 id="pencarian">Pencarian</h3>
 <p>Gunakan bilah pencarian di bagian atas untuk memfilter material berdasarkan nama. Pencarian cocok dengan nama kanonik Inggris dan nama tampilan yang diterjemahkan.</p>
 <hr />
-<h2 id="kompensasi-suhu">Kompensasi suhu</h2>
+<h2 id="temperature-compensation">Kompensasi suhu</h2>
 <p>Kecepatan suara dalam material berubah dengan suhu. Dalam pengujian NVH otomotif, ini penting: ruang mesin pada 80 °C, kabin yang direndam dingin pada -10 °C, atau area manifold buang pada 200 °C semuanya berperilaku berbeda dari kondisi laboratorium suhu kamar.</p>
 <h3 id="mengatur-suhu">Mengatur suhu</h3>
 <p>Buka Pengaturan (ikon ⚙) → Suhu referensi. Masukkan suhu lingkungan pengujian Anda dalam °C (rentang -40 hingga +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="material-tanpa-kompensasi">Material tanpa kompensasi</h3>
 <p>Sebagian besar material non-logam tidak memiliki koefisien suhu yang dipublikasikan dengan andal. Aplikasi menampilkan lencana <strong>"ref only"</strong> untuk ini — kecepatan tercantum mereka digunakan terlepas dari pengaturan suhu. Jika Anda memerlukan pengukuran akurat pada suhu non-kamar untuk material ini, lakukan kalibrasi in-situ dan simpan hasilnya sebagai material kustom.</p>
 <hr />
-<h2 id="anotasi-foto">Anotasi foto</h2>
+<h2 id="photo-annotation">Anotasi foto</h2>
 <p>Setelah perhitungan yang berhasil, ketuk tombol <strong>📷 Anotasi foto</strong> untuk menumpangkan penanda sensor dan sumber pada foto pengaturan Anda.</p>
 <p><img alt="Anotasi foto" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="alur">Alur</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Foto beranotasi secara otomatis disertakan dalam laporan PDF.</p>
 <hr />
-<h2 id="laporan">Laporan</h2>
+<h2 id="reports">Laporan</h2>
 <p>Ketuk tombol <strong>Cetak hasil</strong> pada layar hasil apa pun untuk menghasilkan laporan yang diformat.</p>
 <p><img alt="Laporan PDF" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="konten-laporan">Konten laporan</h3>
@@ -318,7 +318,7 @@
 <h3 id="menyesuaikan-header">Menyesuaikan header</h3>
 <p>Pengaturan → Header laporan. Masukkan nama perusahaan Anda, nama lab, info proyek, atau apa pun yang Anda inginkan di bagian atas setiap laporan.</p>
 <hr />
-<h2 id="cadangan-dan-pemulihan">Cadangan dan pemulihan</h2>
+<h2 id="backup-and-restore">Cadangan dan pemulihan</h2>
 <p>Simpan semua material kustom, favorit, pengaturan, dan riwayat Anda ke satu file. Transfer antar perangkat.</p>
 <h3 id="cadangan">Cadangan</h3>
 <p>Pengaturan → <strong>Cadangan</strong> → ketuk "Simpan file cadangan". Aplikasi menghasilkan file JSON dan membuka sheet berbagi ponsel Anda. Simpan ke cloud drive Anda (Google Drive, iCloud, OneDrive), email ke diri sendiri, atau transfer dengan cara apa pun yang Anda suka.</p>
@@ -326,7 +326,7 @@
 <p>Pengaturan → <strong>Pemulihan</strong> → pilih file cadangan dari penyimpanan ponsel Anda. Aplikasi mengimpor material kustom, favorit, riwayat, dan pengaturan.</p>
 <p>⚠️ <strong>Pemulihan menggantikan data Anda saat ini.</strong> Jika Anda memiliki pengukuran penting di perangkat saat ini, cadangkan terlebih dahulu sebelum memulihkan dari cadangan yang berbeda.</p>
 <hr />
-<h2 id="pengaturan_1">Pengaturan</h2>
+<h2 id="settings">Pengaturan</h2>
 <p>Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, bukan tab.</p>
 <p><img alt="Pengaturan" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="fitur-pro">Fitur Pro</h2>
+<h2 id="pro-features">Fitur Pro</h2>
 <p>NVH Source Locator menggunakan <strong>model freemium dengan kunci fitur</strong>:</p>
 <ul>
 <li><strong>Gratis</strong>: Tab 2-Sensor sepenuhnya berfungsi tanpa batas</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: tombol "Punya kode promo Google Play?" di paywall membuka alur penebusan Google Play dengan kode Anda yang sudah terisi sebelumnya.</p>
 <p><strong>iOS</strong>: Kebijakan App Store 3.1.1 memerlukan penebusan melalui alur "Tebus Kode" resmi Apple. Tombol Google Play disembunyikan di iOS. Cari "Tebus kode App Store" di Pengaturan sebagai gantinya.</p>
 <hr />
-<h2 id="tab-help-dan-tutorial">Tab Help dan tutorial</h2>
+<h2 id="help-tab-and-tutorials">Tab Help dan tutorial</h2>
 <p>Tab <strong>Help</strong> mencakup tutorial dalam aplikasi, panduan praktik terbaik, dan informasi referensi.</p>
 <p><img alt="Tab Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Topik yang dibahas:
@@ -427,7 +427,7 @@
 - Tip untuk triangulasi dan penempatan 3D
 - Perutean kabel dan kualitas sinyal</p>
 <hr />
-<h2 id="pemecahan-masalah">Pemecahan masalah</h2>
+<h2 id="troubleshooting">Pemecahan masalah</h2>
 <h3 id="hasil-perhitungan-salah-atau-tidak-masuk-akal">Hasil perhitungan salah atau tidak masuk akal</h3>
 <ol>
 <li>Periksa kalibrasi Anda. <code>tCal</code> yang terisi otomatis mengasumsikan kecepatan material yang dipublikasikan — material asli bervariasi. Kalibrasi paling akurat adalah in-situ: ketuk lokasi yang diketahui dan biarkan aplikasi menurunkan kecepatan sebenarnya.</li>

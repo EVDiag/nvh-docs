@@ -35,7 +35,7 @@ NVH Source Locator — гэта інструмент вымярэння для �
 
 ---
 
-## Як гэта працуе
+## Як гэта працуе {#how-it-works}
 
 Калі крыніца шуму выпраменьвае гук або вібрацыю, хваля распаўсюджваецца праз матэрыял з вядомай хуткасцю. Калі вы змесціце два або больш акселерометраў на матэрыял і вымераеце, калі хваля дасягне кожнага з іх, рознасць часу скажа вам, дзе знаходзіцца крыніца.
 
@@ -54,7 +54,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Перш чым пачаць
+## Перш чым пачаць {#before-you-start}
 
 Вам спатрэбіцца:
 
@@ -67,7 +67,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Асноўныя ўкладкі
+## Асноўныя ўкладкі {#the-main-tabs}
 
 У праграме ёсць укладкі ўверсе:
 
@@ -91,7 +91,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Рэжым 2-Sensor
+## Рэжым 2-Sensor {#2-sensor-mode}
 
 Самае простае вымярэнне: вызначэнне крыніцы ўздоўж лініі паміж двума акселерометрамі.
 
@@ -133,7 +133,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Рэжым 3-Sensor
+## Рэжым 3-Sensor {#3-sensor-mode}
 
 Вызначае крыніцу на 2D-плоскасці з выкарыстаннем трох датчыкаў, размешчаных у трохкутніку.
 
@@ -160,7 +160,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Рэжымы Pro+
+## Рэжымы Pro+ {#pro-modes}
 
 Некалькі прасунутых укладак прапануюць пераазначаныя рашальнікі і большую размернасць:
 
@@ -190,7 +190,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Укладка Materials
+## Укладка Materials {#the-materials-tab}
 
 Бібліятэка распаўсюджаных інжынерных матэрыялаў з вядомай хуткасцю гуку пры 20 °C.
 
@@ -239,7 +239,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Тэмпературная кампенсацыя
+## Тэмпературная кампенсацыя {#temperature-compensation}
 
 Хуткасць гуку ў матэрыялах змяняецца з тэмпературай. У выпрабаваннях NVH аўтамабіля гэта мае значэнне: маторны адсек пры 80 °C, ахалоджаны салон пры -10 °C або зона выпускнога калектара пры 200 °C паводзяць сябе інакш, чым лабараторныя ўмовы пры пакаёвай тэмпературы.
 
@@ -270,7 +270,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Анатацыя фота
+## Анатацыя фота {#photo-annotation}
 
 Пасля паспяховага разліку націсніце кнопку **📷 Анатаваць фота**, каб накласці пазначкі датчыкаў і крыніцы на фота вашай устаноўкі.
 
@@ -289,7 +289,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Справаздачы
+## Справаздачы {#reports}
 
 Націсніце кнопку **Друкаваць вынік** на любым экране выніку, каб згенераваць адфарматаваную справаздачу.
 
@@ -318,7 +318,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Рэзервовае капіраванне і аднаўленне
+## Рэзервовае капіраванне і аднаўленне {#backup-and-restore}
 
 Захавайце ўсе вашы карыстальніцкія матэрыялы, абраныя, налады і гісторыю ў адзін файл. Перанос паміж прыладамі.
 
@@ -334,7 +334,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Налады
+## Налады {#settings}
 
 Доступ праз значок шасцярні ⚙ у правым верхнім куце. Налады — гэта мадальнае акно, а не ўкладка.
 
@@ -354,7 +354,7 @@ NVH Source Locator прымае:
 
 ---
 
-## Функцыі Pro
+## Функцыі Pro {#pro-features}
 
 NVH Source Locator выкарыстоўвае **freemium-мадэль з блакіроўкай функцый**:
 
@@ -411,7 +411,7 @@ NVH Source Locator выкарыстоўвае **freemium-мадэль з бла�
 
 ---
 
-## Укладка Help і навучанне
+## Укладка Help і навучанне {#help-tab-and-tutorials}
 
 Укладка **Help** уключае ўнутрыпраграмныя ўрокі, інструкцыі па найлепшых практыках і даведачную інфармацыю.
 
@@ -427,7 +427,7 @@ NVH Source Locator выкарыстоўвае **freemium-мадэль з бла�
 
 ---
 
-## Выпраўленне непаладак
+## Выпраўленне непаладак {#troubleshooting}
 
 ### Вынік разліку няправільны або не мае сэнсу
 
@@ -514,7 +514,7 @@ NVH Source Locator یک ابزار اندازه‌گیری برای مکان‌�
 
 ---
 
-## نحوه کار
+## نحوه کار {#how-it-works}
 
 وقتی منبع نویز یک صدا یا ارتعاش منتشر می‌کند، موج با سرعت مشخص از طریق ماده حرکت می‌کند. اگر دو یا چند شتاب‌سنج روی ماده قرار دهید و زمان رسیدن موج به هر کدام را اندازه‌گیری کنید، اختلاف زمانی به شما می‌گوید منبع کجاست.
 
@@ -533,7 +533,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## قبل از شروع
+## قبل از شروع {#before-you-start}
 
 شما نیاز دارید:
 
@@ -546,7 +546,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## برگه‌های اصلی
+## برگه‌های اصلی {#the-main-tabs}
 
 برنامه دارای برگه‌هایی در بالا است:
 
@@ -570,7 +570,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## حالت 2-Sensor
+## حالت 2-Sensor {#2-sensor-mode}
 
 ساده‌ترین اندازه‌گیری: مکان‌یابی منبع در امتداد خطی بین دو شتاب‌سنج.
 
@@ -612,7 +612,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## حالت 3-Sensor
+## حالت 3-Sensor {#3-sensor-mode}
 
 یک منبع را روی یک صفحه 2D با استفاده از سه سنسور که در مثلث چیده شده‌اند، مکان‌یابی می‌کند.
 
@@ -639,7 +639,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## حالت‌های Pro+
+## حالت‌های Pro+ {#pro-modes}
 
 چندین برگه پیشرفته حل‌کننده‌های بیش از حد تعیین شده و ابعاد بالاتر ارائه می‌دهند:
 
@@ -669,7 +669,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## برگه Materials
+## برگه Materials {#the-materials-tab}
 
 کتابخانه‌ای از مواد مهندسی رایج با سرعت صوت شناخته شده در 20 °C.
 
@@ -718,7 +718,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## جبران دما
+## جبران دما {#temperature-compensation}
 
 سرعت صوت در مواد با دما تغییر می‌کند. در آزمایش NVH خودرو، این مهم است: یک محفظه موتور در 80 °C، یک کابین سرد در -10 °C، یا یک منطقه منیفولد اگزوز در 200 °C همگی متفاوت از شرایط آزمایشگاهی در دمای اتاق رفتار می‌کنند.
 
@@ -749,7 +749,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## حاشیه‌نویسی عکس
+## حاشیه‌نویسی عکس {#photo-annotation}
 
 پس از محاسبه موفق، دکمه **📷 حاشیه‌نویسی عکس** را لمس کنید تا نشانگرهای سنسور و منبع را روی عکسی از تنظیمات خود قرار دهید.
 
@@ -768,7 +768,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## گزارش‌ها
+## گزارش‌ها {#reports}
 
 دکمه **چاپ نتیجه** را در هر صفحه نتیجه‌ای لمس کنید تا یک گزارش قالب‌بندی شده ایجاد کنید.
 
@@ -797,7 +797,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## پشتیبان‌گیری و بازیابی
+## پشتیبان‌گیری و بازیابی {#backup-and-restore}
 
 همه مواد سفارشی، موارد دلخواه، تنظیمات و تاریخچه خود را در یک فایل ذخیره کنید. انتقال بین دستگاه‌ها.
 
@@ -813,7 +813,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## تنظیمات
+## تنظیمات {#settings}
 
 از طریق نماد چرخ‌دنده ⚙ در گوشه بالا سمت راست دسترسی پیدا کنید. تنظیمات یک مودال است، نه یک برگه.
 
@@ -833,7 +833,7 @@ NVH Source Locator دریافت می‌کند:
 
 ---
 
-## ویژگی‌های Pro
+## ویژگی‌های Pro {#pro-features}
 
 NVH Source Locator از یک **مدل freemium قفل شده بر اساس ویژگی** استفاده می‌کند:
 
@@ -890,7 +890,7 @@ NVH Source Locator از یک **مدل freemium قفل شده بر اساس وی�
 
 ---
 
-## برگه Help و آموزش‌ها
+## برگه Help و آموزش‌ها {#help-tab-and-tutorials}
 
 برگه **Help** شامل آموزش‌های درون‌برنامه، راهنماهای بهترین شیوه‌ها و اطلاعات مرجع است.
 
@@ -906,7 +906,7 @@ NVH Source Locator از یک **مدل freemium قفل شده بر اساس وی�
 
 ---
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
 ### نتیجه محاسبه اشتباه است یا منطقی نیست
 
@@ -993,7 +993,7 @@ NVH Source Locator एक मापन उपकरण है जो ऑसि�
 
 ---
 
-## यह कैसे काम करता है
+## यह कैसे काम करता है {#how-it-works}
 
 जब एक शोर स्रोत ध्वनि या कंपन उत्सर्जित करता है, तो तरंग एक ज्ञात गति से सामग्री के माध्यम से यात्रा करती है। यदि आप सामग्री पर दो या अधिक एक्सेलेरोमीटर रखते हैं और मापते हैं कि तरंग प्रत्येक पर कब पहुंचती है, समय का अंतर आपको बताता है कि स्रोत कहां है।
 
@@ -1012,7 +1012,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## आरंभ करने से पहले
+## आरंभ करने से पहले {#before-you-start}
 
 आपको आवश्यकता होगी:
 
@@ -1025,7 +1025,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## मुख्य टैब
+## मुख्य टैब {#the-main-tabs}
 
 ऐप के शीर्ष पर टैब हैं:
 
@@ -1049,7 +1049,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## 2-Sensor मोड
+## 2-Sensor मोड {#2-sensor-mode}
 
 सबसे सरल मापन: दो एक्सेलेरोमीटर के बीच एक रेखा के साथ स्रोत स्थान।
 
@@ -1091,7 +1091,7 @@ Materials टैब पर टैप करें। उस सामग्र�
 
 ---
 
-## 3-Sensor मोड
+## 3-Sensor मोड {#3-sensor-mode}
 
 त्रिकोण में व्यवस्थित तीन सेंसरों का उपयोग करके 2D विमान पर एक स्रोत का पता लगाता है।
 
@@ -1118,7 +1118,7 @@ Materials टैब पर टैप करें। उस सामग्र�
 
 ---
 
-## Pro+ मोड
+## Pro+ मोड {#pro-modes}
 
 कई उन्नत टैब अति-निर्धारित सॉल्वर और उच्च आयामीता प्रदान करते हैं:
 
@@ -1148,7 +1148,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## Materials टैब
+## Materials टैब {#the-materials-tab}
 
 20 °C पर ज्ञात ध्वनि की गति के साथ सामान्य इंजीनियरिंग सामग्रियों की एक लाइब्रेरी।
 
@@ -1197,7 +1197,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## तापमान क्षतिपूर्ति
+## तापमान क्षतिपूर्ति {#temperature-compensation}
 
 सामग्रियों में ध्वनि की गति तापमान के साथ बदलती है। ऑटोमोटिव NVH परीक्षण में, यह मायने रखता है: 80 °C पर एक इंजन बे, -10 °C पर एक कोल्ड-सोक्ड केबिन, या 200 °C पर एक एग्जॉस्ट मैनिफोल्ड क्षेत्र सभी कमरे के तापमान की प्रयोगशाला स्थितियों से अलग व्यवहार करते हैं।
 
@@ -1228,7 +1228,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## फोटो एनोटेशन
+## फोटो एनोटेशन {#photo-annotation}
 
 सफल गणना के बाद, अपने सेटअप की एक तस्वीर पर सेंसर और स्रोत मार्करों को ओवरले करने के लिए **📷 फोटो एनोटेट करें** बटन टैप करें।
 
@@ -1247,7 +1247,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## रिपोर्ट
+## रिपोर्ट {#reports}
 
 स्वरूपित रिपोर्ट तैयार करने के लिए किसी भी परिणाम स्क्रीन पर **परिणाम प्रिंट करें** बटन टैप करें।
 
@@ -1276,7 +1276,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## बैकअप और पुनर्स्थापन
+## बैकअप और पुनर्स्थापन {#backup-and-restore}
 
 अपनी सभी कस्टम सामग्री, पसंदीदा, सेटिंग्स और इतिहास को एक फ़ाइल में सहेजें। डिवाइसों के बीच स्थानांतरित करें।
 
@@ -1292,7 +1292,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## सेटिंग्स
+## सेटिंग्स {#settings}
 
 ऊपर दाएं कोने में ⚙ गियर आइकन के माध्यम से एक्सेस करें। सेटिंग्स एक मॉडल है, टैब नहीं।
 
@@ -1312,7 +1312,7 @@ A–B जोड़ी (क्षैतिज) पहले चलाएं, फ�
 
 ---
 
-## Pro सुविधाएं
+## Pro सुविधाएं {#pro-features}
 
 NVH Source Locator एक **फ़ीचर-लॉक्ड freemium मॉडल** का उपयोग करता है:
 
@@ -1369,7 +1369,7 @@ Pro-आवश्यक फ़ील्ड बिखरे हुए हैं:
 
 ---
 
-## Help टैब और ट्यूटोरियल
+## Help टैब और ट्यूटोरियल {#help-tab-and-tutorials}
 
 **Help** टैब में इन-ऐप ट्यूटोरियल, सर्वोत्तम प्रथाओं के गाइड और संदर्भ जानकारी शामिल हैं।
 
@@ -1385,7 +1385,7 @@ Pro-आवश्यक फ़ील्ड बिखरे हुए हैं:
 
 ---
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
 ### गणना परिणाम गलत है या अर्थपूर्ण नहीं है
 
@@ -1472,7 +1472,7 @@ Panduan ini mencakup semua fitur. Untuk pengingat cepat, lihat **Referensi Cepat
 
 ---
 
-## Cara kerja
+## Cara kerja {#how-it-works}
 
 Ketika sumber kebisingan memancarkan suara atau getaran, gelombang berjalan melalui material dengan kecepatan yang diketahui. Jika Anda menempatkan dua atau lebih accelerometer pada material dan mengukur kapan gelombang sampai pada masing-masing, perbedaan waktu memberitahu Anda di mana sumbernya.
 
@@ -1491,7 +1491,7 @@ Semakin banyak sensor yang Anda gunakan, semakin akurat Anda dapat menentukan su
 
 ---
 
-## Sebelum memulai
+## Sebelum memulai {#before-you-start}
 
 Anda akan memerlukan:
 
@@ -1504,7 +1504,7 @@ Anda akan memerlukan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi memiliki tab di bagian atas:
 
@@ -1528,7 +1528,7 @@ Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mode 2-Sensor
+## Mode 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua accelerometer.
 
@@ -1570,7 +1570,7 @@ Ketuk **📷 Anotasi foto** untuk mengambil foto pengaturan Anda. Aplikasi menum
 
 ---
 
-## Mode 3-Sensor
+## Mode 3-Sensor {#3-sensor-mode}
 
 Menemukan sumber pada bidang 2D menggunakan tiga sensor yang disusun dalam segitiga.
 
@@ -1597,7 +1597,7 @@ Aplikasi menampilkan posisi sumber sebagai koordinat X, Y relatif terhadap senso
 
 ---
 
-## Mode Pro+
+## Mode Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan penyelesai yang ditentukan berlebih dan dimensi yang lebih tinggi:
 
@@ -1627,7 +1627,7 @@ Seperti 3D tetapi mendukung hingga **6 sensor** (A hingga F) dengan LSQ yang dit
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Pustaka bahan teknik umum dengan kecepatan suara yang diketahui pada 20 °C.
 
@@ -1676,7 +1676,7 @@ Gunakan bilah pencarian di bagian atas untuk memfilter bahan berdasarkan nama. P
 
 ---
 
-## Kompensasi suhu
+## Kompensasi suhu {#temperature-compensation}
 
 Kecepatan suara dalam bahan berubah dengan suhu. Dalam pengujian NVH otomotif, ini penting: ruang mesin pada 80 °C, kabin yang direndam dingin pada -10 °C, atau area manifold knalpot pada 200 °C semuanya berperilaku berbeda dari kondisi laboratorium suhu kamar.
 
@@ -1707,7 +1707,7 @@ Sebagian besar bahan non-logam tidak memiliki koefisien suhu yang dipublikasikan
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Setelah perhitungan berhasil, ketuk tombol **📷 Anotasi foto** untuk menumpangkan penanda sensor dan sumber pada foto pengaturan Anda.
 
@@ -1726,7 +1726,7 @@ Foto yang dianotasi secara otomatis disertakan dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketuk tombol **Cetak hasil** pada layar hasil apa pun untuk menghasilkan laporan yang diformat.
 
@@ -1755,7 +1755,7 @@ Pengaturan → Header laporan. Masukkan nama perusahaan Anda, nama lab, info pro
 
 ---
 
-## Pencadangan dan pemulihan
+## Pencadangan dan pemulihan {#backup-and-restore}
 
 Simpan semua bahan kustom, favorit, pengaturan, dan riwayat Anda ke satu file. Transfer antar perangkat.
 
@@ -1771,7 +1771,7 @@ Pengaturan → **Pemulihan** → pilih file cadangan dari penyimpanan ponsel And
 
 ---
 
-## Pengaturan
+## Pengaturan {#settings}
 
 Akses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, bukan tab.
 
@@ -1791,7 +1791,7 @@ Akses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, b
 
 ---
 
-## Fitur Pro
+## Fitur Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium yang dikunci fitur**:
 
@@ -1848,7 +1848,7 @@ Jika Anda menukarkan kode promo di Google Play Store atau App Store sementara NV
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** mencakup tutorial dalam aplikasi, panduan praktik terbaik, dan informasi referensi.
 
@@ -1864,7 +1864,7 @@ Topik yang dicakup:
 
 ---
 
-## Pemecahan masalah
+## Pemecahan masalah {#troubleshooting}
 
 ### Hasil perhitungan salah atau tidak masuk akal
 
@@ -1951,7 +1951,7 @@ Panduan ini meliputi semua ciri. Untuk peringatan pantas, lihat **Rujukan Pantas
 
 ---
 
-## Bagaimana ia berfungsi
+## Bagaimana ia berfungsi {#how-it-works}
 
 Apabila sumber bunyi mengeluarkan bunyi atau getaran, gelombang merentasi bahan dengan kelajuan yang diketahui. Jika anda meletakkan dua atau lebih accelerometer pada bahan dan mengukur bila gelombang tiba pada setiap satu, perbezaan masa memberitahu anda di mana puncanya.
 
@@ -1970,7 +1970,7 @@ Semakin banyak sensor yang anda gunakan, semakin tepat anda boleh menentukan pun
 
 ---
 
-## Sebelum anda mula
+## Sebelum anda mula {#before-you-start}
 
 Anda memerlukan:
 
@@ -1983,7 +1983,7 @@ Anda memerlukan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi mempunyai tab di bahagian atas:
 
@@ -2007,7 +2007,7 @@ Tetapan diakses melalui ikon gear ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mod 2-Sensor
+## Mod 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling mudah: lokasi sumber sepanjang garisan antara dua accelerometer.
 
@@ -2049,7 +2049,7 @@ Ketik **📷 Anotasi foto** untuk mengambil foto persediaan anda. Aplikasi melet
 
 ---
 
-## Mod 3-Sensor
+## Mod 3-Sensor {#3-sensor-mode}
 
 Mencari sumber pada satah 2D menggunakan tiga sensor yang disusun dalam segi tiga.
 
@@ -2076,7 +2076,7 @@ Aplikasi memaparkan kedudukan sumber sebagai koordinat X, Y berbanding sensor A 
 
 ---
 
-## Mod Pro+
+## Mod Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan penyelesai terlalu-ditentukan dan dimensi yang lebih tinggi:
 
@@ -2106,7 +2106,7 @@ Seperti 3D tetapi menyokong sehingga **6 sensor** (A hingga F) dengan LSQ terlal
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Perpustakaan bahan kejuruteraan biasa dengan kelajuan bunyi yang diketahui pada 20 °C.
 
@@ -2155,7 +2155,7 @@ Gunakan bar carian di bahagian atas untuk menapis bahan mengikut nama. Carian se
 
 ---
 
-## Pampasan suhu
+## Pampasan suhu {#temperature-compensation}
 
 Kelajuan bunyi dalam bahan berubah dengan suhu. Dalam ujian NVH automotif, ini penting: ruang enjin pada 80 °C, kabin sejuk-direndam pada -10 °C, atau kawasan manifold ekzos pada 200 °C semua berkelakuan berbeza daripada keadaan makmal suhu bilik.
 
@@ -2186,7 +2186,7 @@ Kebanyakan bahan bukan logam tidak mempunyai pekali suhu yang diterbitkan yang b
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Selepas pengiraan berjaya, ketik butang **📷 Anotasi foto** untuk meletakkan penanda sensor dan sumber pada foto persediaan anda.
 
@@ -2205,7 +2205,7 @@ Foto yang dianotasi secara automatik dimasukkan dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketik butang **Cetak keputusan** pada mana-mana skrin keputusan untuk menjana laporan diformat.
 
@@ -2234,7 +2234,7 @@ Tetapan → Pengepala laporan. Masukkan nama syarikat anda, nama makmal, makluma
 
 ---
 
-## Sandaran dan pemulihan
+## Sandaran dan pemulihan {#backup-and-restore}
 
 Simpan semua bahan tersuai, kegemaran, tetapan, dan sejarah anda dalam satu fail. Pindahkan antara peranti.
 
@@ -2250,7 +2250,7 @@ Tetapan → **Pemulihan** → pilih fail sandaran daripada storan telefon anda. 
 
 ---
 
-## Tetapan
+## Tetapan {#settings}
 
 Akses melalui ikon gear ⚙ di sudut kanan atas. Tetapan adalah modal, bukan tab.
 
@@ -2270,7 +2270,7 @@ Akses melalui ikon gear ⚙ di sudut kanan atas. Tetapan adalah modal, bukan tab
 
 ---
 
-## Ciri Pro
+## Ciri Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium dikunci-ciri**:
 
@@ -2327,7 +2327,7 @@ Jika anda menebus kod promosi di Google Play Store atau App Store sementara NVH 
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** termasuk tutorial dalam aplikasi, panduan amalan terbaik, dan maklumat rujukan.
 
@@ -2343,7 +2343,7 @@ Topik yang diliputi:
 
 ---
 
-## Penyelesaian masalah
+## Penyelesaian masalah {#troubleshooting}
 
 ### Keputusan pengiraan salah atau tidak masuk akal
 
@@ -2430,7 +2430,7 @@ Saklaw ng gabay na ito ang lahat ng mga tampok. Para sa mabilis na pagre-refresh
 
 ---
 
-## Paano ito gumagana
+## Paano ito gumagana {#how-it-works}
 
 Kapag ang isang pinagmulan ng ingay ay naglalabas ng tunog o vibration, ang alon ay naglalakbay sa pamamagitan ng isang materyal sa isang kilalang bilis. Kung maglagay ka ng dalawa o higit pang mga accelerometer sa materyal at sukatin kung kailan dumating ang alon sa bawat isa, sinasabi sa iyo ng pagkakaiba sa oras kung nasaan ang pinagmulan.
 
@@ -2449,7 +2449,7 @@ Habang mas maraming sensor ang ginagamit mo, mas tumpak mong matutukoy ang pinag
 
 ---
 
-## Bago magsimula
+## Bago magsimula {#before-you-start}
 
 Kakailanganin mo:
 
@@ -2462,7 +2462,7 @@ Kakailanganin mo:
 
 ---
 
-## Mga pangunahing tab
+## Mga pangunahing tab {#the-main-tabs}
 
 May mga tab ang app sa itaas:
 
@@ -2486,7 +2486,7 @@ Ang Settings ay maa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas na su
 
 ---
 
-## Mode na 2-Sensor
+## Mode na 2-Sensor {#2-sensor-mode}
 
 Ang pinakasimpleng pagsukat: paghahanap ng pinagmulan sa kahabaan ng linya sa pagitan ng dalawang accelerometer.
 
@@ -2528,7 +2528,7 @@ I-tap ang **📷 Anotasyon ng larawan** upang kumuha ng larawan ng iyong setup. 
 
 ---
 
-## Mode na 3-Sensor
+## Mode na 3-Sensor {#3-sensor-mode}
 
 Naghahanap ng pinagmulan sa isang 2D plane gamit ang tatlong sensor na nakaayos sa isang tatsulok.
 
@@ -2555,7 +2555,7 @@ Ipinapakita ng app ang posisyon ng pinagmulan bilang X, Y na coordinate kaugnay 
 
 ---
 
-## Mga Pro+ mode
+## Mga Pro+ mode {#pro-modes}
 
 Ang ilang mga advanced na tab ay nag-aalok ng mga over-determined solver at mas mataas na dimensionality:
 
@@ -2585,7 +2585,7 @@ Tulad ng 3D ngunit sumusuporta hanggang **6 na sensor** (A hanggang F) na may ov
 
 ---
 
-## Tab na Materials
+## Tab na Materials {#the-materials-tab}
 
 Library ng mga karaniwang engineering material na may kilalang bilis ng tunog sa 20 °C.
 
@@ -2634,7 +2634,7 @@ Gamitin ang search bar sa itaas upang i-filter ang mga materyal ayon sa pangalan
 
 ---
 
-## Pagbabayad sa temperatura
+## Pagbabayad sa temperatura {#temperature-compensation}
 
 Nagbabago ang bilis ng tunog sa mga materyal sa temperatura. Sa automotive NVH testing, mahalaga ito: isang engine bay sa 80 °C, cold-soaked cabin sa -10 °C, o lugar ng exhaust manifold sa 200 °C ay umaakto nang naiiba sa mga kondisyon ng laboratoryo sa temperatura ng silid.
 
@@ -2665,7 +2665,7 @@ Karamihan sa mga non-metallic na materyal ay walang maaasahang nai-publish na te
 
 ---
 
-## Anotasyon ng larawan
+## Anotasyon ng larawan {#photo-annotation}
 
 Pagkatapos ng matagumpay na pagkalkula, i-tap ang button na **📷 Anotasyon ng larawan** upang ilagay ang mga marker ng sensor at pinagmulan sa isang larawan ng iyong setup.
 
@@ -2684,7 +2684,7 @@ Ang naka-annotate na larawan ay awtomatikong isinasama sa mga PDF report.
 
 ---
 
-## Mga ulat
+## Mga ulat {#reports}
 
 I-tap ang button na **Print result** sa anumang screen ng resulta upang makabuo ng isang naka-format na ulat.
 
@@ -2713,7 +2713,7 @@ Settings → Report header. Ipasok ang pangalan ng iyong kumpanya, pangalan ng l
 
 ---
 
-## Backup at restore
+## Backup at restore {#backup-and-restore}
 
 I-save ang lahat ng iyong custom na materyal, paborito, setting, at history sa iisang file. Ilipat sa pagitan ng mga device.
 
@@ -2729,7 +2729,7 @@ Settings → **Restore** → piliin ang backup file mula sa storage ng iyong tel
 
 ---
 
-## Mga Setting
+## Mga Setting {#settings}
 
 I-access sa pamamagitan ng ⚙ gear icon sa kanang itaas na sulok. Ang Settings ay isang modal, hindi tab.
 
@@ -2749,7 +2749,7 @@ I-access sa pamamagitan ng ⚙ gear icon sa kanang itaas na sulok. Ang Settings 
 
 ---
 
-## Mga tampok ng Pro
+## Mga tampok ng Pro {#pro-features}
 
 Ang NVH Source Locator ay gumagamit ng isang **feature-locked freemium model**:
 
@@ -2806,7 +2806,7 @@ Kapag tinubos mo ang isang promo code sa Google Play Store o App Store habang tu
 
 ---
 
-## Tab na Help at mga tutorial
+## Tab na Help at mga tutorial {#help-tab-and-tutorials}
 
 Kasama sa tab na **Help** ang mga in-app na tutorial, mga gabay sa best practices, at impormasyon ng reference.
 
@@ -2822,7 +2822,7 @@ Mga paksang sakop:
 
 ---
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 ### Mali o walang kabuluhan ang resulta ng pagkalkula
 
@@ -2909,7 +2909,7 @@ NVH Source Locator एक मापन उपकरण है जो ऑसि�
 
 ---
 
-## यह कैसे काम करता है
+## यह कैसे काम करता है {#how-it-works}
 
 जब कोई शोर स्रोत ध्वनि या कंपन उत्सर्जित करता है, तो तरंग एक ज्ञात गति से सामग्री के माध्यम से यात्रा करती है। यदि आप सामग्री पर दो या अधिक एक्सेलेरोमीटर लगाते हैं और प्रत्येक पर तरंग कब पहुंचती है इसका माप लेते हैं, तो समय का अंतर आपको बताता है कि स्रोत कहां है।
 
@@ -2928,7 +2928,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## शुरू करने से पहले
+## शुरू करने से पहले {#before-you-start}
 
 आपको चाहिए:
 
@@ -2941,7 +2941,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## मुख्य टैब
+## मुख्य टैब {#the-main-tabs}
 
 ऐप में शीर्ष पर टैब हैं:
 
@@ -2965,7 +2965,7 @@ NVH Source Locator लेता है:
 
 ---
 
-## 2-Sensor मोड
+## 2-Sensor मोड {#2-sensor-mode}
 
 सबसे सरल मापन: दो एक्सेलेरोमीटर के बीच एक रेखा के साथ स्रोत स्थानीयकरण।
 
@@ -3007,7 +3007,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## 3-Sensor मोड
+## 3-Sensor मोड {#3-sensor-mode}
 
 एक त्रिकोण में व्यवस्थित तीन सेंसर का उपयोग करके 2D तल पर स्रोत का पता लगाता है।
 
@@ -3034,7 +3034,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## Pro+ मोड
+## Pro+ मोड {#pro-modes}
 
 कई उन्नत टैब अति-निर्धारित सॉल्वर और उच्च आयामिकता प्रदान करते हैं:
 
@@ -3064,7 +3064,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## Materials टैब
+## Materials टैब {#the-materials-tab}
 
 20 °C पर ज्ञात ध्वनि गति वाली सामान्य इंजीनियरिंग सामग्री की लाइब्रेरी।
 
@@ -3113,7 +3113,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## तापमान क्षतिपूर्ति
+## तापमान क्षतिपूर्ति {#temperature-compensation}
 
 सामग्री में ध्वनि की गति तापमान के साथ बदलती है। ऑटोमोटिव NVH परीक्षण में, यह मायने रखता है: 80 °C पर इंजन बे, -10 °C पर ठंडे-भीगे केबिन, या 200 °C पर निकास मैनिफोल्ड क्षेत्र सभी कमरे के तापमान प्रयोगशाला स्थितियों से अलग व्यवहार करते हैं।
 
@@ -3144,7 +3144,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## फोटो एनोटेशन
+## फोटो एनोटेशन {#photo-annotation}
 
 एक सफल गणना के बाद, अपने सेटअप की एक तस्वीर पर सेंसर और स्रोत मार्कर ओवरले करने के लिए **📷 तस्वीर एनोटेट करें** बटन पर टैप करें।
 
@@ -3163,7 +3163,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## रिपोर्ट
+## रिपोर्ट {#reports}
 
 एक स्वरूपित रिपोर्ट उत्पन्न करने के लिए किसी भी परिणाम स्क्रीन पर **परिणाम प्रिंट करें** बटन पर टैप करें।
 
@@ -3192,7 +3192,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## बैकअप और पुनर्स्थापना
+## बैकअप और पुनर्स्थापना {#backup-and-restore}
 
 अपनी सभी कस्टम सामग्री, पसंदीदा, सेटिंग्स और इतिहास को एक ही फ़ाइल में सहेजें। डिवाइस के बीच स्थानांतरण।
 
@@ -3208,7 +3208,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## सेटिंग्स
+## सेटिंग्स {#settings}
 
 ऊपरी दाएं कोने में ⚙ गियर आइकन के माध्यम से एक्सेस। सेटिंग्स एक मोडल है, टैब नहीं।
 
@@ -3228,7 +3228,7 @@ Materials टैब पर टैप करें। वह सामग्र�
 
 ---
 
-## Pro सुविधाएं
+## Pro सुविधाएं {#pro-features}
 
 NVH Source Locator एक **सुविधा-लॉक्ड फ्रीमियम मॉडल** का उपयोग करता है:
 
@@ -3285,7 +3285,7 @@ Pro-आवश्यक फ़ील्ड फैले हुए हैं:
 
 ---
 
-## Help टैब और ट्यूटोरियल
+## Help टैब और ट्यूटोरियल {#help-tab-and-tutorials}
 
 **Help** टैब में इन-ऐप ट्यूटोरियल, सर्वोत्तम-अभ्यास गाइड और संदर्भ जानकारी शामिल है।
 
@@ -3301,7 +3301,7 @@ Pro-आवश्यक फ़ील्ड फैले हुए हैं:
 
 ---
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
 ### गणना परिणाम गलत है या समझ में नहीं आता
 
@@ -3388,7 +3388,7 @@ Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat **Referensi Cepat*
 
 ---
 
-## Cara kerjanya
+## Cara kerjanya {#how-it-works}
 
 Ketika sumber kebisingan memancarkan suara atau getaran, gelombang merambat melalui material dengan kecepatan yang diketahui. Jika Anda menempatkan dua atau lebih akselerometer pada material dan mengukur kapan gelombang tiba di masing-masing, perbedaan waktu memberi tahu Anda di mana sumbernya berada.
 
@@ -3407,7 +3407,7 @@ Semakin banyak sensor yang Anda gunakan, semakin akurat Anda dapat menentukan su
 
 ---
 
-## Sebelum Anda mulai
+## Sebelum Anda mulai {#before-you-start}
 
 Anda akan membutuhkan:
 
@@ -3420,7 +3420,7 @@ Anda akan membutuhkan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi memiliki tab di bagian atas:
 
@@ -3444,7 +3444,7 @@ Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mode 2-Sensor
+## Mode 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.
 
@@ -3486,7 +3486,7 @@ Ketuk **📷 Anotasi foto** untuk mengambil foto pengaturan Anda. Aplikasi menum
 
 ---
 
-## Mode 3-Sensor
+## Mode 3-Sensor {#3-sensor-mode}
 
 Menemukan sumber pada bidang 2D menggunakan tiga sensor yang diatur dalam segitiga.
 
@@ -3513,7 +3513,7 @@ Aplikasi menampilkan posisi sumber sebagai koordinat X, Y relatif terhadap senso
 
 ---
 
-## Mode Pro+
+## Mode Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan solver yang ditentukan berlebih dan dimensi yang lebih tinggi:
 
@@ -3543,7 +3543,7 @@ Seperti 3D tetapi mendukung hingga **6 sensor** (A hingga F) dengan LSQ yang dit
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Pustaka material rekayasa umum dengan kecepatan suara yang diketahui pada 20 °C.
 
@@ -3592,7 +3592,7 @@ Gunakan bilah pencarian di bagian atas untuk memfilter material berdasarkan nama
 
 ---
 
-## Kompensasi suhu
+## Kompensasi suhu {#temperature-compensation}
 
 Kecepatan suara dalam material berubah dengan suhu. Dalam pengujian NVH otomotif, ini penting: ruang mesin pada 80 °C, kabin yang direndam dingin pada -10 °C, atau area manifold buang pada 200 °C semuanya berperilaku berbeda dari kondisi laboratorium suhu kamar.
 
@@ -3623,7 +3623,7 @@ Sebagian besar material non-logam tidak memiliki koefisien suhu yang dipublikasi
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Setelah perhitungan yang berhasil, ketuk tombol **📷 Anotasi foto** untuk menumpangkan penanda sensor dan sumber pada foto pengaturan Anda.
 
@@ -3642,7 +3642,7 @@ Foto beranotasi secara otomatis disertakan dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketuk tombol **Cetak hasil** pada layar hasil apa pun untuk menghasilkan laporan yang diformat.
 
@@ -3671,7 +3671,7 @@ Pengaturan → Header laporan. Masukkan nama perusahaan Anda, nama lab, info pro
 
 ---
 
-## Cadangan dan pemulihan
+## Cadangan dan pemulihan {#backup-and-restore}
 
 Simpan semua material kustom, favorit, pengaturan, dan riwayat Anda ke satu file. Transfer antar perangkat.
 
@@ -3687,7 +3687,7 @@ Pengaturan → **Pemulihan** → pilih file cadangan dari penyimpanan ponsel And
 
 ---
 
-## Pengaturan
+## Pengaturan {#settings}
 
 Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, bukan tab.
 
@@ -3707,7 +3707,7 @@ Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal,
 
 ---
 
-## Fitur Pro
+## Fitur Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium dengan kunci fitur**:
 
@@ -3764,7 +3764,7 @@ Jika Anda menebus kode promo di Google Play Store atau App Store saat NVH Source
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** mencakup tutorial dalam aplikasi, panduan praktik terbaik, dan informasi referensi.
 
@@ -3780,7 +3780,7 @@ Topik yang dibahas:
 
 ---
 
-## Pemecahan masalah
+## Pemecahan masalah {#troubleshooting}
 
 ### Hasil perhitungan salah atau tidak masuk akal
 
@@ -3867,7 +3867,7 @@ Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat **Rujukan Pan
 
 ---
 
-## Bagaimana ia berfungsi
+## Bagaimana ia berfungsi {#how-it-works}
 
 Apabila sumber bunyi memancarkan bunyi atau getaran, gelombang bergerak melalui bahan pada kelajuan yang diketahui. Jika anda meletakkan dua atau lebih akselerometer pada bahan dan mengukur bila gelombang tiba pada setiap satu, perbezaan masa memberitahu anda di mana sumber itu.
 
@@ -3886,7 +3886,7 @@ Semakin banyak sensor anda gunakan, semakin tepat anda boleh menentukan sumber:
 
 ---
 
-## Sebelum anda mula
+## Sebelum anda mula {#before-you-start}
 
 Anda akan memerlukan:
 
@@ -3899,7 +3899,7 @@ Anda akan memerlukan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi mempunyai tab di bahagian atas:
 
@@ -3923,7 +3923,7 @@ Tetapan diakses melalui ikon gear ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mod 2-Sensor
+## Mod 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling mudah: penyetempatan sumber sepanjang garis antara dua akselerometer.
 
@@ -3965,7 +3965,7 @@ Ketik **📷 Anotasi foto** untuk mengambil foto persediaan anda. Aplikasi menin
 
 ---
 
-## Mod 3-Sensor
+## Mod 3-Sensor {#3-sensor-mode}
 
 Mencari sumber pada satah 2D menggunakan tiga sensor yang disusun dalam segi tiga.
 
@@ -3992,7 +3992,7 @@ Aplikasi memaparkan kedudukan sumber sebagai koordinat X, Y relatif kepada senso
 
 ---
 
-## Mod Pro+
+## Mod Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan penyelesai yang ditentukan berlebihan dan dimensi yang lebih tinggi:
 
@@ -4022,7 +4022,7 @@ Seperti 3D tetapi menyokong sehingga **6 sensor** (A hingga F) dengan LSQ yang d
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Perpustakaan bahan kejuruteraan biasa dengan kelajuan bunyi yang diketahui pada 20 °C.
 
@@ -4071,7 +4071,7 @@ Gunakan bar carian di bahagian atas untuk menapis bahan mengikut nama. Carian se
 
 ---
 
-## Pampasan suhu
+## Pampasan suhu {#temperature-compensation}
 
 Kelajuan bunyi dalam bahan berubah dengan suhu. Dalam ujian NVH automotif, ini penting: bay enjin pada 80 °C, kabin direndam sejuk pada -10 °C, atau kawasan manifold ekzos pada 200 °C semuanya berkelakuan berbeza daripada keadaan makmal suhu bilik.
 
@@ -4102,7 +4102,7 @@ Kebanyakan bahan bukan logam tidak mempunyai pekali suhu yang diterbitkan secara
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Selepas pengiraan yang berjaya, ketik butang **📷 Anotasi foto** untuk menindih penanda sensor dan sumber pada foto persediaan anda.
 
@@ -4121,7 +4121,7 @@ Foto yang dianotasi disertakan secara automatik dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketik butang **Cetak hasil** pada mana-mana skrin hasil untuk menjana laporan berformat.
 
@@ -4150,7 +4150,7 @@ Tetapan → Pengepala laporan. Masukkan nama syarikat anda, nama makmal, info pr
 
 ---
 
-## Sandaran dan pemulihan
+## Sandaran dan pemulihan {#backup-and-restore}
 
 Simpan semua bahan tersuai, kegemaran, tetapan, dan sejarah anda ke satu fail. Pindahkan antara peranti.
 
@@ -4166,7 +4166,7 @@ Tetapan → **Pemulihan** → pilih fail sandaran daripada storan telefon anda. 
 
 ---
 
-## Tetapan
+## Tetapan {#settings}
 
 Diakses melalui ikon gear ⚙ di sudut kanan atas. Tetapan ialah modal, bukan tab.
 
@@ -4186,7 +4186,7 @@ Diakses melalui ikon gear ⚙ di sudut kanan atas. Tetapan ialah modal, bukan ta
 
 ---
 
-## Ciri Pro
+## Ciri Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium dengan kunci ciri**:
 
@@ -4243,7 +4243,7 @@ Jika anda menebus kod promo di Google Play Store atau App Store semasa NVH Sourc
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** termasuk tutorial dalam aplikasi, panduan amalan terbaik, dan maklumat rujukan.
 
@@ -4259,7 +4259,7 @@ Topik yang dibincangkan:
 
 ---
 
-## Penyelesaian masalah
+## Penyelesaian masalah {#troubleshooting}
 
 ### Hasil pengiraan salah atau tidak masuk akal
 
@@ -4346,7 +4346,7 @@ Sinasaklaw ng gabay na ito ang lahat ng tampok. Para sa mabilis na refresher, ti
 
 ---
 
-## Paano ito gumagana
+## Paano ito gumagana {#how-it-works}
 
 Kapag ang isang pinagmulan ng ingay ay naglalabas ng tunog o vibrasyon, ang alon ay naglalakbay sa pamamagitan ng materyal sa kilalang bilis. Kung maglagay ka ng dalawa o higit pang accelerometer sa materyal at sukatin kung kailan dumating ang alon sa bawat isa, sinasabi sa iyo ng pagkakaiba ng oras kung nasaan ang pinagmulan.
 
@@ -4365,7 +4365,7 @@ Mas maraming sensor na ginagamit mo, mas tumpak na maitatakda mo ang pinagmulan:
 
 ---
 
-## Bago ka magsimula
+## Bago ka magsimula {#before-you-start}
 
 Kakailanganin mo ng:
 
@@ -4378,7 +4378,7 @@ Kakailanganin mo ng:
 
 ---
 
-## Ang pangunahing mga tab
+## Ang pangunahing mga tab {#the-main-tabs}
 
 Mayroong mga tab ang app sa tuktok:
 
@@ -4402,7 +4402,7 @@ Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (h
 
 ---
 
-## Mode na 2-Sensor
+## Mode na 2-Sensor {#2-sensor-mode}
 
 Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.
 
@@ -4444,7 +4444,7 @@ I-tap ang **📷 I-annotate ang larawan** upang kumuha ng larawan ng iyong setup
 
 ---
 
-## Mode na 3-Sensor
+## Mode na 3-Sensor {#3-sensor-mode}
 
 Hinahanap ang isang pinagmulan sa 2D plane gamit ang tatlong sensor na nakaayos sa isang tatsulok.
 
@@ -4471,7 +4471,7 @@ Ipinapakita ng app ang posisyon ng pinagmulan bilang mga X, Y coordinate na nauu
 
 ---
 
-## Mga Pro+ mode
+## Mga Pro+ mode {#pro-modes}
 
 Ang ilang advanced na tab ay nag-aalok ng over-determined solvers at mas mataas na dimensionality:
 
@@ -4501,7 +4501,7 @@ Katulad ng 3D ngunit sumusuporta sa hanggang **6 sensor** (A hanggang F) na may 
 
 ---
 
-## Ang tab na Materials
+## Ang tab na Materials {#the-materials-tab}
 
 Library ng mga karaniwang engineering material na may kilalang bilis ng tunog sa 20 °C.
 
@@ -4550,7 +4550,7 @@ Gamitin ang search bar sa tuktok upang i-filter ang mga materyal ayon sa pangala
 
 ---
 
-## Pagsasaayos ng temperatura
+## Pagsasaayos ng temperatura {#temperature-compensation}
 
 Ang bilis ng tunog sa mga materyal ay nagbabago sa temperatura. Sa automotive NVH testing, mahalaga ito: ang engine bay sa 80 °C, ang cold-soaked cabin sa -10 °C, o ang exhaust manifold area sa 200 °C ay lahat kumikilos nang iba mula sa room-temperature laboratory conditions.
 
@@ -4581,7 +4581,7 @@ Karamihan sa mga di-metal na materyal ay walang maaasahang inilathalang temperat
 
 ---
 
-## Anotasyon ng larawan
+## Anotasyon ng larawan {#photo-annotation}
 
 Pagkatapos ng matagumpay na pagkalkula, i-tap ang button na **📷 I-annotate ang larawan** upang ilagay ang mga sensor at source marker sa isang larawan ng iyong setup.
 
@@ -4600,7 +4600,7 @@ Ang naka-annotate na larawan ay awtomatikong kasama sa mga PDF na ulat.
 
 ---
 
-## Mga ulat
+## Mga ulat {#reports}
 
 I-tap ang button na **I-print ang resulta** sa anumang result screen upang makabuo ng isang formatted na ulat.
 
@@ -4629,7 +4629,7 @@ Mga Setting → Header ng ulat. Ipasok ang pangalan ng iyong kumpanya, pangalan 
 
 ---
 
-## Backup at pagpapanumbalik
+## Backup at pagpapanumbalik {#backup-and-restore}
 
 I-save ang lahat ng iyong custom na materyal, mga paborito, mga setting, at history sa isang file. Ilipat sa pagitan ng mga device.
 
@@ -4645,7 +4645,7 @@ Mga Setting → **Pagpapanumbalik** → piliin ang backup file mula sa storage n
 
 ---
 
-## Mga Setting
+## Mga Setting {#settings}
 
 Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay isang modal, hindi isang tab.
 
@@ -4665,7 +4665,7 @@ Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay i
 
 ---
 
-## Mga tampok ng Pro
+## Mga tampok ng Pro {#pro-features}
 
 Ginagamit ng NVH Source Locator ang isang **feature-locked freemium model**:
 
@@ -4722,7 +4722,7 @@ Kung mag-redeem ka ng promo code sa Google Play Store o App Store habang tumatak
 
 ---
 
-## Tab na Help at mga tutorial
+## Tab na Help at mga tutorial {#help-tab-and-tutorials}
 
 Kasama sa **Help** tab ang mga in-app na tutorial, mga gabay sa best practice, at sangguniang impormasyon.
 
@@ -4738,7 +4738,7 @@ Mga paksang sakop:
 
 ---
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 ### Mali ang resulta ng pagkalkula o walang katuturan
 

@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Depanare</a></li>
 </ol>
 <hr />
-<h2 id="cum-functioneaza">Cum funcționează</h2>
+<h2 id="how-it-works">Cum funcționează</h2>
 <p>Când o sursă de zgomot emite sunet sau vibrație, unda se deplasează prin material la o viteză cunoscută. Dacă plasezi două sau mai multe accelerometre pe material și măsori când unda ajunge la fiecare, diferența de timp îți spune unde este sursa.</p>
 <p>NVH Source Locator preia:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 senzori</strong> → poziție în spațiul 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="inainte-de-a-incepe">Înainte de a începe</h2>
+<h2 id="before-you-start">Înainte de a începe</h2>
 <p>Vei avea nevoie de:</p>
 <ul>
 <li><strong>Un osciloscop sau sistem de măsurare</strong> care poate afișa diferența de timp dintre canalele accelerometrului în microsecunde (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Ecran principal cu fila 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="filele-principale">Filele principale</h2>
+<h2 id="the-main-tabs">Filele principale</h2>
 <p>Aplicația are file în partea de sus:</p>
 <p><img alt="Bara de file" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dreapta sus (nu este o filă).</p>
 <hr />
-<h2 id="modul-2-sensor">Modul 2-Sensor</h2>
+<h2 id="2-sensor-mode">Modul 2-Sensor</h2>
 <p>Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.</p>
 <p><img alt="Fila 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="pasul-1-aplica-un-material">Pasul 1: Aplică un material</h3>
@@ -197,7 +197,7 @@
 <h3 id="pasul-5-optional-adnoteaza-o-fotografie">Pasul 5 (opțional): Adnotează o fotografie</h3>
 <p>Atinge <strong>📷 Adnotează fotografie</strong> pentru a face o fotografie a configurației tale. Aplicația suprapune markeri pentru senzorii A, B și sursă. Util pentru rapoarte.</p>
 <hr />
-<h2 id="modul-3-sensor">Modul 3-Sensor</h2>
+<h2 id="3-sensor-mode">Modul 3-Sensor</h2>
 <p>Localizează o sursă pe un plan 2D folosind trei senzori aranjați într-un triunghi.</p>
 <p><img alt="Fila 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="configurare">Configurare</h3>
@@ -212,7 +212,7 @@
 <p>Aplicația afișează poziția sursei ca coordonate X, Y relative la senzorul A (senzorul A în origine, senzorul B pe axa X). Vizualizarea arată toți cei trei senzori și locația sursei.</p>
 <p><img alt="Rezultat triunghi" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="moduri-pro">Moduri Pro+</h2>
+<h2 id="pro-modes">Moduri Pro+</h2>
 <p>Mai multe file avansate oferă rezolvatori supradeterminați și dimensionalitate mai mare:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Aceeași configurare triunghiulară ca 3-Sensor, dar calibrează ȘI măsoară toate cele trei perechi (A–B, A–C, B–C). Rezolvatorul folosește toate cele 3 TDOA-uri într-o ajustare a celor mai mici pătrate — mai robust la zgomotul de măsurare și materialele anizotrope. Reziduurile pe pereche sunt raportate astfel încât să poți detecta măsurători inconsistente.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Ca 3D, dar suportă până la <strong>6 senzori</strong> (A până la F) cu LSQ supradeterminat. Precizie maximă pentru geometrii 3D complexe.</p>
 <hr />
-<h2 id="fila-materials">Fila Materials</h2>
+<h2 id="the-materials-tab">Fila Materials</h2>
 <p>Bibliotecă de materiale inginerești comune cu viteza sunetului cunoscută la 20 °C.</p>
 <p><img alt="Fila Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="lista-materialelor">Lista materialelor</h3>
@@ -261,7 +261,7 @@
 <h3 id="cautare">Căutare</h3>
 <p>Folosește bara de căutare din partea de sus pentru a filtra materialele după nume. Căutarea potrivește atât numele canonice englezești, cât și numele de afișare traduse.</p>
 <hr />
-<h2 id="compensarea-temperaturii">Compensarea temperaturii</h2>
+<h2 id="temperature-compensation">Compensarea temperaturii</h2>
 <p>Viteza sunetului în materiale se schimbă cu temperatura. În testarea NVH auto, asta contează: un compartiment motor la 80 °C, o cabină rece la -10 °C sau o zonă a galeriei de eșapament la 200 °C se comportă diferit de condițiile de laborator la temperatura camerei.</p>
 <h3 id="setarea-temperaturii">Setarea temperaturii</h3>
 <p>Deschide Setări (pictogramă ⚙) → Temperatură de referință. Introdu temperatura mediului tău de testare în °C (interval -40 la +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materiale-fara-compensare">Materiale fără compensare</h3>
 <p>Majoritatea materialelor non-metalice nu au coeficienți de temperatură publicați fiabili. Aplicația afișează o insignă <strong>„ref only"</strong> pentru acestea — viteza lor listată este folosită indiferent de setarea temperaturii. Dacă ai nevoie de măsurători precise la temperaturi non-camerale pentru aceste materiale, efectuează o calibrare in-situ și salvează rezultatul ca material personalizat.</p>
 <hr />
-<h2 id="adnotarea-fotografiei">Adnotarea fotografiei</h2>
+<h2 id="photo-annotation">Adnotarea fotografiei</h2>
 <p>După un calcul reușit, atinge butonul <strong>📷 Adnotează fotografie</strong> pentru a suprapune markeri de senzor și sursă pe o fotografie a configurației tale.</p>
 <p><img alt="Adnotarea fotografiei" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="flux">Flux</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Fotografia adnotată este inclusă automat în rapoartele PDF.</p>
 <hr />
-<h2 id="rapoarte">Rapoarte</h2>
+<h2 id="reports">Rapoarte</h2>
 <p>Atinge butonul <strong>Tipărește rezultat</strong> pe orice ecran de rezultat pentru a genera un raport formatat.</p>
 <p><img alt="Raport PDF" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="continutul-raportului">Conținutul raportului</h3>
@@ -318,7 +318,7 @@
 <h3 id="personalizarea-antetului">Personalizarea antetului</h3>
 <p>Setări → Antet raport. Introdu numele companiei tale, numele laboratorului, informații despre proiect sau orice vrei în partea de sus a fiecărui raport.</p>
 <hr />
-<h2 id="backup-si-restaurare">Backup și restaurare</h2>
+<h2 id="backup-and-restore">Backup și restaurare</h2>
 <p>Salvează toate materialele tale personalizate, favoritele, setările și istoricul într-un singur fișier. Transfer între dispozitive.</p>
 <h3 id="backup">Backup</h3>
 <p>Setări → <strong>Backup</strong> → atinge „Salvează fișier backup". Aplicația generează un fișier JSON și deschide fișa de partajare a telefonului tău. Salvează-l pe unitatea ta cloud (Google Drive, iCloud, OneDrive), trimite-l prin e-mail ție însuți sau transferă-l în orice mod dorești.</p>
@@ -326,7 +326,7 @@
 <p>Setări → <strong>Restaurare</strong> → alege fișierul de backup din stocarea telefonului tău. Aplicația importă materiale personalizate, favorite, istoric și setări.</p>
 <p>⚠️ <strong>Restaurarea înlocuiește datele tale actuale.</strong> Dacă ai măsurători importante pe dispozitivul actual, fă mai întâi backup pentru ele înainte de a restaura dintr-un backup diferit.</p>
 <hr />
-<h2 id="setari">Setări</h2>
+<h2 id="settings">Setări</h2>
 <p>Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări este un modal, nu o filă.</p>
 <p><img alt="Setări" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="functii-pro">Funcții Pro</h2>
+<h2 id="pro-features">Funcții Pro</h2>
 <p>NVH Source Locator folosește un <strong>model freemium cu blocare per funcție</strong>:</p>
 <ul>
 <li><strong>Gratuit</strong>: Fila 2-Sensor este complet funcțională fără limite</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: un buton „Ai un cod promoțional Google Play?" în paywall deschide fluxul de răscumpărare Google Play cu codul tău precompletat.</p>
 <p><strong>iOS</strong>: Politica App Store 3.1.1 cere răscumpărare prin fluxul oficial „Răscumpără cod" al Apple. Butonul Google Play este ascuns pe iOS. Caută „Răscumpără cod App Store" în Setări în schimb.</p>
 <hr />
-<h2 id="fila-help-si-tutoriale">Fila Help și tutoriale</h2>
+<h2 id="help-tab-and-tutorials">Fila Help și tutoriale</h2>
 <p>Fila <strong>Help</strong> include tutoriale în aplicație, ghiduri de cele mai bune practici și informații de referință.</p>
 <p><img alt="Fila Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Subiecte acoperite:
@@ -427,7 +427,7 @@
 - Sfaturi pentru triangulare și plasări 3D
 - Direcționarea cablurilor și calitatea semnalului</p>
 <hr />
-<h2 id="depanare">Depanare</h2>
+<h2 id="troubleshooting">Depanare</h2>
 <h3 id="rezultatul-calculului-este-gresit-sau-nu-are-sens">Rezultatul calculului este greșit sau nu are sens</h3>
 <ol>
 <li>Verifică-ți calibrarea. <code>tCal</code> autocompletat presupune viteza publicată a materialului — materialele reale variază. Cea mai precisă calibrare este in-situ: atinge o locație cunoscută și lasă aplicația să deducă viteza reală.</li>

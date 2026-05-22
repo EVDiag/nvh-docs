@@ -454,7 +454,7 @@ def render_doc_page(locale, doc_type, title_key, pdf_filename, other_doc_key, ot
     direction = 'rtl' if is_rtl else 'ltr'
 
     md_content = get_locale_doc_content(locale, doc_type)
-    md = markdown.Markdown(extensions=['tables', 'fenced_code', 'toc'])
+    md = markdown.Markdown(extensions=['tables', 'fenced_code', 'toc', 'attr_list'])
     html_body = md.convert(md_content)
 
     # Language switcher — each locale link points at the same doc in its folder

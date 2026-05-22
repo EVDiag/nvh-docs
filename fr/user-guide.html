@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Dépannage</a></li>
 </ol>
 <hr />
-<h2 id="comment-ca-fonctionne">Comment ça fonctionne</h2>
+<h2 id="how-it-works">Comment ça fonctionne</h2>
 <p>Lorsqu'une source de bruit émet un son ou une vibration, l'onde se propage à travers le matériau à une vitesse connue. Si vous placez deux ou plusieurs accéléromètres sur le matériau et mesurez le moment où l'onde arrive à chacun, la différence de temps vous indique où se trouve la source.</p>
 <p>NVH Source Locator prend :</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 capteurs</strong> → position dans l'espace 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="avant-de-commencer">Avant de commencer</h2>
+<h2 id="before-you-start">Avant de commencer</h2>
 <p>Vous aurez besoin de :</p>
 <ul>
 <li><strong>Un oscilloscope ou système de mesure</strong> qui peut vous montrer la différence de temps entre les canaux d'accéléromètre en microsecondes (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Écran d'accueil avec onglet 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="les-onglets-principaux">Les onglets principaux</h2>
+<h2 id="the-main-tabs">Les onglets principaux</h2>
 <p>L'application a des onglets en haut :</p>
 <p><img alt="Barre d'onglets" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Les paramètres sont accessibles via l'icône d'engrenage ⚙ dans le coin supérieur droit (pas un onglet).</p>
 <hr />
-<h2 id="mode-2-sensor">Mode 2-Sensor</h2>
+<h2 id="2-sensor-mode">Mode 2-Sensor</h2>
 <p>La mesure la plus simple : localisation de source le long d'une ligne entre deux accéléromètres.</p>
 <p><img alt="Onglet 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="etape-1-appliquer-un-materiau">Étape 1 : Appliquer un matériau</h3>
@@ -197,7 +197,7 @@
 <h3 id="etape-5-optionnelle-annoter-une-photo">Étape 5 (optionnelle) : Annoter une photo</h3>
 <p>Touchez <strong>📷 Annoter une photo</strong> pour prendre une photo de votre configuration. L'application superpose des marqueurs pour les capteurs A, B et la source. Utile pour les rapports.</p>
 <hr />
-<h2 id="mode-3-sensor">Mode 3-Sensor</h2>
+<h2 id="3-sensor-mode">Mode 3-Sensor</h2>
 <p>Localise une source sur un plan 2D à l'aide de trois capteurs disposés en triangle.</p>
 <p><img alt="Onglet 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="configuration">Configuration</h3>
@@ -212,7 +212,7 @@
 <p>L'application affiche la position de la source comme coordonnées X, Y relatives au capteur A (capteur A à l'origine, capteur B sur l'axe X). La visualisation montre les trois capteurs et l'emplacement de la source.</p>
 <p><img alt="Résultat triangle" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="modes-pro">Modes Pro+</h2>
+<h2 id="pro-modes">Modes Pro+</h2>
 <p>Plusieurs onglets avancés offrent des solveurs surdéterminés et une dimensionnalité supérieure :</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Même configuration triangulaire que 3-Sensor, mais calibrez ET mesurez les trois paires (A–B, A–C, B–C). Le solveur utilise les 3 TDOAs dans un ajustement par moindres carrés — plus robuste au bruit de mesure et aux matériaux anisotropes. Les résidus par paire sont rapportés pour que vous puissiez repérer les mesures incohérentes.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Comme 3D mais prend en charge jusqu'à <strong>6 capteurs</strong> (A à F) avec LSQ surdéterminé. Précision maximale pour les géométries 3D complexes.</p>
 <hr />
-<h2 id="longlet-materials">L'onglet Materials</h2>
+<h2 id="the-materials-tab">L'onglet Materials</h2>
 <p>Bibliothèque de matériaux d'ingénierie courants avec vitesse du son connue à 20 °C.</p>
 <p><img alt="Onglet Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="liste-des-materiaux">Liste des matériaux</h3>
@@ -261,7 +261,7 @@
 <h3 id="recherche">Recherche</h3>
 <p>Utilisez la barre de recherche en haut pour filtrer les matériaux par nom. La recherche correspond à la fois aux noms canoniques anglais et aux noms d'affichage traduits.</p>
 <hr />
-<h2 id="compensation-de-temperature">Compensation de température</h2>
+<h2 id="temperature-compensation">Compensation de température</h2>
 <p>La vitesse du son dans les matériaux change avec la température. Dans les tests NVH automobiles, cela compte : un compartiment moteur à 80 °C, une cabine refroidie à -10 °C ou une zone du collecteur d'échappement à 200 °C se comportent tous différemment des conditions de laboratoire à température ambiante.</p>
 <h3 id="reglage-de-la-temperature">Réglage de la température</h3>
 <p>Ouvrez Paramètres (icône ⚙) → Température de référence. Saisissez la température de votre environnement de test en °C (plage -40 à +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materiaux-sans-compensation">Matériaux sans compensation</h3>
 <p>La plupart des matériaux non métalliques n'ont pas de coefficients de température publiés fiables. L'application affiche un badge <strong>« ref only »</strong> pour ceux-ci — leur vitesse listée est utilisée indépendamment du réglage de la température. Si vous avez besoin de mesures précises à des températures non ambiantes pour ces matériaux, effectuez une calibration in-situ et enregistrez le résultat en tant que matériau personnalisé.</p>
 <hr />
-<h2 id="annotation-de-photo">Annotation de photo</h2>
+<h2 id="photo-annotation">Annotation de photo</h2>
 <p>Après un calcul réussi, touchez le bouton <strong>📷 Annoter une photo</strong> pour superposer des marqueurs de capteur et de source sur une photo de votre configuration.</p>
 <p><img alt="Annotation de photo" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="flux">Flux</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>La photo annotée est incluse automatiquement dans les rapports PDF.</p>
 <hr />
-<h2 id="rapports">Rapports</h2>
+<h2 id="reports">Rapports</h2>
 <p>Touchez le bouton <strong>Imprimer le résultat</strong> sur n'importe quel écran de résultats pour générer un rapport formaté.</p>
 <p><img alt="Rapport PDF" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="contenu-du-rapport">Contenu du rapport</h3>
@@ -318,7 +318,7 @@
 <h3 id="personnalisation-de-len-tete">Personnalisation de l'en-tête</h3>
 <p>Paramètres → En-tête de rapport. Saisissez votre nom d'entreprise, nom de laboratoire, informations sur le projet ou ce que vous voulez en haut de chaque rapport.</p>
 <hr />
-<h2 id="sauvegarde-et-restauration">Sauvegarde et restauration</h2>
+<h2 id="backup-and-restore">Sauvegarde et restauration</h2>
 <p>Enregistrez tous vos matériaux personnalisés, favoris, paramètres et historique dans un seul fichier. Transférer entre appareils.</p>
 <h3 id="sauvegarde">Sauvegarde</h3>
 <p>Paramètres → <strong>Sauvegarde</strong> → touchez « Enregistrer le fichier de sauvegarde ». L'application génère un fichier JSON et ouvre la feuille de partage de votre téléphone. Enregistrez-le dans votre lecteur cloud (Google Drive, iCloud, OneDrive), envoyez-le par e-mail à vous-même ou transférez-le de la manière que vous souhaitez.</p>
@@ -326,7 +326,7 @@
 <p>Paramètres → <strong>Restauration</strong> → choisissez le fichier de sauvegarde dans le stockage de votre téléphone. L'application importe les matériaux personnalisés, les favoris, l'historique et les paramètres.</p>
 <p>⚠️ <strong>La restauration remplace vos données actuelles.</strong> Si vous avez des mesures importantes sur l'appareil actuel, sauvegardez-les d'abord avant de restaurer depuis une autre sauvegarde.</p>
 <hr />
-<h2 id="parametres">Paramètres</h2>
+<h2 id="settings">Paramètres</h2>
 <p>Accès via l'icône d'engrenage ⚙ dans le coin supérieur droit. Les paramètres sont une fenêtre modale, pas un onglet.</p>
 <p><img alt="Paramètres" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="fonctionnalites-pro">Fonctionnalités Pro</h2>
+<h2 id="pro-features">Fonctionnalités Pro</h2>
 <p>NVH Source Locator utilise un <strong>modèle freemium avec verrouillage par fonctionnalité</strong> :</p>
 <ul>
 <li><strong>Gratuit</strong> : L'onglet 2-Sensor est entièrement fonctionnel sans limites</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong> : un bouton « Avez-vous un code promotionnel Google Play ? » dans la paywall ouvre le flux d'échange de Google Play avec votre code pré-rempli.</p>
 <p><strong>iOS</strong> : La politique de l'App Store 3.1.1 exige l'échange via le flux officiel « Échanger un code » d'Apple. Le bouton Google Play est masqué sur iOS. Cherchez « Échanger un code App Store » dans les Paramètres à la place.</p>
 <hr />
-<h2 id="onglet-help-et-tutoriels">Onglet Help et tutoriels</h2>
+<h2 id="help-tab-and-tutorials">Onglet Help et tutoriels</h2>
 <p>L'onglet <strong>Help</strong> inclut des tutoriels intégrés, des guides de meilleures pratiques et des informations de référence.</p>
 <p><img alt="Onglet Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Sujets couverts :
@@ -427,7 +427,7 @@
 - Conseils pour la triangulation et les placements 3D
 - Cheminement des câbles et qualité du signal</p>
 <hr />
-<h2 id="depannage">Dépannage</h2>
+<h2 id="troubleshooting">Dépannage</h2>
 <h3 id="le-resultat-du-calcul-est-faux-ou-na-aucun-sens">Le résultat du calcul est faux ou n'a aucun sens</h3>
 <ol>
 <li>Vérifiez votre calibration. Le <code>tCal</code> rempli automatiquement suppose la vitesse publiée du matériau — les matériaux réels varient. La calibration la plus précise est in-situ : touchez un emplacement connu et laissez l'application dériver la vitesse réelle.</li>

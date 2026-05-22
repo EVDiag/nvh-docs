@@ -26,7 +26,7 @@ Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso **Pikaviite**.
 
 ---
 
-## Kuinka se toimii
+## Kuinka se toimii {#how-it-works}
 
 Kun melulähde lähettää ääntä tai tärinää, aalto kulkee materiaalin läpi tunnetulla nopeudella. Jos asetat kaksi tai useampia kiihtyvyysanturia materiaalille ja mittaat, milloin aalto saapuu kuhunkin, aikaero kertoo missä lähde sijaitsee.
 
@@ -45,7 +45,7 @@ Mitä enemmän antureita käytät, sitä tarkemmin voit paikallistaa lähteen:
 
 ---
 
-## Ennen aloittamista
+## Ennen aloittamista {#before-you-start}
 
 Tarvitset:
 
@@ -58,7 +58,7 @@ Tarvitset:
 
 ---
 
-## Päävälilehdet
+## Päävälilehdet {#the-main-tabs}
 
 Sovelluksessa on välilehdet yläosassa:
 
@@ -82,7 +82,7 @@ Asetuksiin pääsee ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa (ei
 
 ---
 
-## 2-Sensor-tila
+## 2-Sensor-tila {#2-sensor-mode}
 
 Yksinkertaisin mittaus: lähteen paikannus viivaa pitkin kahden kiihtyvyysanturin välillä.
 
@@ -124,7 +124,7 @@ Napauta **📷 Merkitse valokuva** ottaaksesi valokuvan asennuksesta. Sovellus a
 
 ---
 
-## 3-Sensor-tila
+## 3-Sensor-tila {#3-sensor-mode}
 
 Paikallistaa lähteen 2D-tasolla kolmen kolmioon asetetun anturin avulla.
 
@@ -151,7 +151,7 @@ Sovellus näyttää lähteen sijainnin X-, Y-koordinaatteina suhteessa anturiin 
 
 ---
 
-## Pro+-tilat
+## Pro+-tilat {#pro-modes}
 
 Useat edistyneet välilehdet tarjoavat ylidefinoituja ratkaisijoita ja korkeampaa ulottuvuutta:
 
@@ -181,7 +181,7 @@ Kuten 3D, mutta tukee enintään **6 anturia** (A:sta F:ään) ylidefinoituun LS
 
 ---
 
-## Materials-välilehti
+## Materials-välilehti {#the-materials-tab}
 
 Tavallisten teknisten materiaalien kirjasto tunnetulla äänennopeudella 20 °C:ssa.
 
@@ -230,7 +230,7 @@ Käytä yläosan hakukenttää suodattaaksesi materiaalit nimen mukaan. Haku vas
 
 ---
 
-## Lämpötilakompensointi
+## Lämpötilakompensointi {#temperature-compensation}
 
 Äänennopeus materiaaleissa muuttuu lämpötilan myötä. Automotiivisessa NVH-testauksessa tämä on tärkeää: 80 °C:n moottoritila, -10 °C:n kylmäimeytetty hytti tai 200 °C:n pakosarjaalue käyttäytyvät eri tavalla kuin huoneenlämpötilan laboratorio-olosuhteet.
 
@@ -261,7 +261,7 @@ Useimmilla ei-metallisilla materiaaleilla ei ole luotettavia julkaistuja lämpö
 
 ---
 
-## Valokuvan merkintä
+## Valokuvan merkintä {#photo-annotation}
 
 Onnistuneen laskennan jälkeen, napauta **📷 Merkitse valokuva** -painiketta asettaaksesi anturi- ja lähdemerkit asennuksesi valokuvan päälle.
 
@@ -280,7 +280,7 @@ Merkitty valokuva sisällytetään automaattisesti PDF-raportteihin.
 
 ---
 
-## Raportit
+## Raportit {#reports}
 
 Napauta **Tulosta tulos** -painiketta millä tahansa tulosnäytöllä luodaksesi muotoillun raportin.
 
@@ -309,7 +309,7 @@ Asetukset → Raportin otsikko. Syötä yrityksesi nimi, laboratorion nimi, proj
 
 ---
 
-## Varmuuskopiointi ja palautus
+## Varmuuskopiointi ja palautus {#backup-and-restore}
 
 Tallenna kaikki mukautetut materiaalit, suosikit, asetukset ja historia yhteen tiedostoon. Siirto laitteiden välillä.
 
@@ -325,7 +325,7 @@ Asetukset → **Palautus** → valitse varmuuskopiotiedosto puhelimesi tallennus
 
 ---
 
-## Asetukset
+## Asetukset {#settings}
 
 Pääsy ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa. Asetukset on modaalinen, ei välilehti.
 
@@ -345,7 +345,7 @@ Pääsy ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa. Asetukset on m
 
 ---
 
-## Pro-ominaisuudet
+## Pro-ominaisuudet {#pro-features}
 
 NVH Source Locator käyttää **ominaisuuslukittua freemium-mallia**:
 
@@ -402,7 +402,7 @@ Jos lunastat promokoodin Google Play Storessa tai App Storessa NVH Source Locato
 
 ---
 
-## Help-välilehti ja opetusohjelmat
+## Help-välilehti ja opetusohjelmat {#help-tab-and-tutorials}
 
 **Help**-välilehti sisältää sovelluksen sisäisiä opetusohjelmia, parhaiden käytäntöjen oppaita ja viitetietoja.
 
@@ -418,7 +418,7 @@ Käsitellyt aiheet:
 
 ---
 
-## Vianmääritys
+## Vianmääritys {#troubleshooting}
 
 ### Laskennan tulos on väärä tai ei ole järkeenkäypä
 

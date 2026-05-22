@@ -26,7 +26,7 @@ Táto príručka pokrýva všetky funkcie. Pre stručné pripomenutie pozri **St
 
 ---
 
-## Ako to funguje
+## Ako to funguje {#how-it-works}
 
 Keď zdroj hluku vydáva zvuk alebo vibrácie, vlna sa šíri materiálom známou rýchlosťou. Ak na materiál umiestnite dva alebo viac akcelerometrov a zmeriate, kedy vlna dorazí ku každému z nich, časový rozdiel vám povie, kde sa zdroj nachádza.
 
@@ -45,7 +45,7 @@ Potom vypočíta, kde sa zdroj nachádza v štruktúre.
 
 ---
 
-## Pred začiatkom
+## Pred začiatkom {#before-you-start}
 
 Budete potrebovať:
 
@@ -58,7 +58,7 @@ Budete potrebovať:
 
 ---
 
-## Hlavné karty
+## Hlavné karty {#the-main-tabs}
 
 Aplikácia má karty hore:
 
@@ -82,7 +82,7 @@ Nastavenia sú prístupné cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu 
 
 ---
 
-## Režim 2-Sensor
+## Režim 2-Sensor {#2-sensor-mode}
 
 Najjednoduchšie meranie: lokalizácia zdroja pozdĺž čiary medzi dvoma akcelerometrami.
 
@@ -124,7 +124,7 @@ Klepnutím na **📷 Anotovať fotografiu** vytvoríte fotografiu vašej zostavy
 
 ---
 
-## Režim 3-Sensor
+## Režim 3-Sensor {#3-sensor-mode}
 
 Lokalizuje zdroj na 2D rovine pomocou troch senzorov usporiadaných do trojuholníka.
 
@@ -151,7 +151,7 @@ Aplikácia zobrazí polohu zdroja ako súradnice X, Y vzhľadom na senzor A (sen
 
 ---
 
-## Režimy Pro+
+## Režimy Pro+ {#pro-modes}
 
 Niekoľko pokročilých kariet ponúka preurčené riešenia a vyššiu dimenzionalitu:
 
@@ -181,7 +181,7 @@ Ako 3D, ale podporuje až **6 senzorov** (A až F) s preurčeným LSQ. Maximáln
 
 ---
 
-## Karta Materials
+## Karta Materials {#the-materials-tab}
 
 Knižnica bežných technických materiálov so známou rýchlosťou zvuku pri 20 °C.
 
@@ -230,7 +230,7 @@ Použite vyhľadávaciu lištu hore na filtrovanie materiálov podľa názvu. Vy
 
 ---
 
-## Teplotná kompenzácia
+## Teplotná kompenzácia {#temperature-compensation}
 
 Rýchlosť zvuku v materiáloch sa mení s teplotou. V automobilových NVH testoch je to dôležité: motorový priestor pri 80 °C, schladnutá kabína pri -10 °C alebo oblasť výfukového potrubia pri 200 °C sa správajú odlišne od izbových laboratórnych podmienok.
 
@@ -261,7 +261,7 @@ Väčšina nekovových materiálov nemá spoľahlivé publikované teplotné koe
 
 ---
 
-## Anotácia fotografie
+## Anotácia fotografie {#photo-annotation}
 
 Po úspešnom výpočte klepnite na tlačidlo **📷 Anotovať fotografiu**, aby ste prekryli značky senzorov a zdroja na fotografii vašej zostavy.
 
@@ -280,7 +280,7 @@ Anotovaná fotografia je automaticky zahrnutá do PDF reportov.
 
 ---
 
-## Reporty
+## Reporty {#reports}
 
 Klepnite na tlačidlo **Tlač výsledku** na ľubovoľnej obrazovke výsledku pre generovanie formátovaného reportu.
 
@@ -309,7 +309,7 @@ Nastavenia → Záhlavie reportu. Zadajte názov vašej spoločnosti, názov lab
 
 ---
 
-## Záloha a obnova
+## Záloha a obnova {#backup-and-restore}
 
 Uložte všetky svoje vlastné materiály, obľúbené, nastavenia a históriu do jedného súboru. Prenos medzi zariadeniami.
 
@@ -325,7 +325,7 @@ Nastavenia → **Obnova** → vyberte záložný súbor z úložiska vášho tel
 
 ---
 
-## Nastavenia
+## Nastavenia {#settings}
 
 Prístup cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu. Nastavenia sú modálne, nie karta.
 
@@ -345,7 +345,7 @@ Prístup cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu. Nastavenia sú mo
 
 ---
 
-## Funkcie Pro
+## Funkcie Pro {#pro-features}
 
 NVH Source Locator používa **freemium model so zámkom funkcií**:
 
@@ -402,7 +402,7 @@ Ak uplatníte promo kód v Google Play Store alebo App Store, zatiaľ čo NVH So
 
 ---
 
-## Karta Help a návody
+## Karta Help a návody {#help-tab-and-tutorials}
 
 Karta **Help** obsahuje návody v aplikácii, príručky najlepších postupov a referenčné informácie.
 
@@ -418,7 +418,7 @@ Pokryté témy:
 
 ---
 
-## Riešenie problémov
+## Riešenie problémov {#troubleshooting}
 
 ### Výsledok výpočtu je zlý alebo nedáva zmysel
 

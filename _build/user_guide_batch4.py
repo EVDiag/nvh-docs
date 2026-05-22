@@ -33,7 +33,7 @@ Den här handboken täcker alla funktioner. För en snabb påminnelse, se **Snab
 
 ---
 
-## Hur det fungerar
+## Hur det fungerar {#how-it-works}
 
 När en bullerkälla avger ljud eller vibration färdas vågen genom ett material med en känd hastighet. Om du placerar två eller fler accelerometrar på materialet och mäter när vågen anländer till var och en, säger tidsskillnaden var källan finns.
 
@@ -52,7 +52,7 @@ Ju fler sensorer du använder, desto mer exakt kan du fastställa källan:
 
 ---
 
-## Innan du börjar
+## Innan du börjar {#before-you-start}
 
 Du behöver:
 
@@ -65,7 +65,7 @@ Du behöver:
 
 ---
 
-## De viktigaste flikarna
+## De viktigaste flikarna {#the-main-tabs}
 
 Appen har flikar längst upp:
 
@@ -89,7 +89,7 @@ Inställningar nås via ⚙ kugghjulsikonen i det övre högra hörnet (inte en 
 
 ---
 
-## 2-Sensor-läge
+## 2-Sensor-läge {#2-sensor-mode}
 
 Den enklaste mätningen: källokalisering längs en linje mellan två accelerometrar.
 
@@ -131,7 +131,7 @@ Tryck på **📷 Annotera foto** för att ta ett foto av din inställning. Appen
 
 ---
 
-## 3-Sensor-läge
+## 3-Sensor-läge {#3-sensor-mode}
 
 Lokaliserar en källa på ett 2D-plan med tre sensorer arrangerade i en triangel.
 
@@ -158,7 +158,7 @@ Appen visar källpositionen som X-, Y-koordinater i förhållande till sensor A 
 
 ---
 
-## Pro+-lägen
+## Pro+-lägen {#pro-modes}
 
 Flera avancerade flikar erbjuder överbestämda lösare och högre dimensionalitet:
 
@@ -188,7 +188,7 @@ Som 3D men stödjer upp till **6 sensorer** (A till F) med överbestämd LSQ. Ma
 
 ---
 
-## Fliken Materials
+## Fliken Materials {#the-materials-tab}
 
 Bibliotek med vanliga ingenjörsmaterial med känd ljudhastighet vid 20 °C.
 
@@ -237,7 +237,7 @@ Använd sökfältet längst upp för att filtrera material efter namn. Sökning 
 
 ---
 
-## Temperaturkompensation
+## Temperaturkompensation {#temperature-compensation}
 
 Ljudhastigheten i material förändras med temperaturen. I bil-NVH-testning betyder detta: ett motorrum vid 80 °C, en kallindränkt kabin vid -10 °C eller ett område för avgasgrenrör vid 200 °C beter sig alla annorlunda än laboratorieförhållanden vid rumstemperatur.
 
@@ -268,7 +268,7 @@ De flesta icke-metalliska material har inte tillförlitliga publicerade temperat
 
 ---
 
-## Fotoannotering
+## Fotoannotering {#photo-annotation}
 
 Efter en lyckad beräkning, tryck på knappen **📷 Annotera foto** för att lägga till sensor- och källmarkörer på ett foto av din inställning.
 
@@ -287,7 +287,7 @@ Det annoterade fotot inkluderas automatiskt i PDF-rapporter.
 
 ---
 
-## Rapporter
+## Rapporter {#reports}
 
 Tryck på knappen **Skriv ut resultat** på vilken resultatskärm som helst för att generera en formaterad rapport.
 
@@ -316,7 +316,7 @@ Inställningar → Rapportrubrik. Ange ditt företagsnamn, labnamn, projektinfo 
 
 ---
 
-## Säkerhetskopiering och återställning
+## Säkerhetskopiering och återställning {#backup-and-restore}
 
 Spara alla dina anpassade material, favoriter, inställningar och historik i en enda fil. Överför mellan enheter.
 
@@ -332,7 +332,7 @@ Inställningar → **Återställ** → välj säkerhetskopian från telefonens l
 
 ---
 
-## Inställningar
+## Inställningar {#settings}
 
 Åtkomst via ⚙ kugghjulsikonen i det övre högra hörnet. Inställningar är ett modalfönster, inte en flik.
 
@@ -352,7 +352,7 @@ Inställningar → **Återställ** → välj säkerhetskopian från telefonens l
 
 ---
 
-## Pro-funktioner
+## Pro-funktioner {#pro-features}
 
 NVH Source Locator använder en **funktionslåst freemium-modell**:
 
@@ -409,7 +409,7 @@ Om du löser in en kampanjkod i Google Play Store eller App Store medan NVH Sour
 
 ---
 
-## Fliken Help och handledningar
+## Fliken Help och handledningar {#help-tab-and-tutorials}
 
 Fliken **Help** inkluderar handledningar i appen, guider för bästa praxis och referensinformation.
 
@@ -425,7 +425,7 @@ Fliken **Help** inkluderar handledningar i appen, guider för bästa praxis och 
 
 ---
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
 ### Beräkningsresultatet är fel eller meningslöst
 
@@ -512,7 +512,7 @@ Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se **Hurtigre
 
 ---
 
-## Hvordan det fungerer
+## Hvordan det fungerer {#how-it-works}
 
 Når en støykilde sender ut lyd eller vibrasjon, beveger bølgen seg gjennom et materiale med kjent hastighet. Hvis du plasserer to eller flere akselerometre på materialet og måler når bølgen kommer til hver av dem, forteller tidsforskjellen deg hvor kilden er.
 
@@ -531,7 +531,7 @@ Jo flere sensorer du bruker, desto mer nøyaktig kan du finne kilden:
 
 ---
 
-## Før du starter
+## Før du starter {#before-you-start}
 
 Du trenger:
 
@@ -544,7 +544,7 @@ Du trenger:
 
 ---
 
-## Hovedfanene
+## Hovedfanene {#the-main-tabs}
 
 Appen har faner øverst:
 
@@ -568,7 +568,7 @@ Innstillinger nås via ⚙ tannhjul-ikonet i øvre høyre hjørne (ikke en fane)
 
 ---
 
-## 2-Sensor-modus
+## 2-Sensor-modus {#2-sensor-mode}
 
 Den enkleste målingen: kildelokalisering langs en linje mellom to akselerometre.
 
@@ -610,7 +610,7 @@ Trykk på **📷 Annoter bilde** for å ta et bilde av oppsettet ditt. Appen leg
 
 ---
 
-## 3-Sensor-modus
+## 3-Sensor-modus {#3-sensor-mode}
 
 Lokaliserer en kilde på et 2D-plan ved å bruke tre sensorer arrangert i en trekant.
 
@@ -637,7 +637,7 @@ Appen viser kildeposisjonen som X-, Y-koordinater relativt til sensor A (sensor 
 
 ---
 
-## Pro+-moduser
+## Pro+-moduser {#pro-modes}
 
 Flere avanserte faner tilbyr overbestemte løsere og høyere dimensjonalitet:
 
@@ -667,7 +667,7 @@ Som 3D men støtter opptil **6 sensorer** (A til F) med overbestemt LSQ. Maksima
 
 ---
 
-## Materials-fanen
+## Materials-fanen {#the-materials-tab}
 
 Bibliotek med vanlige ingeniørmaterialer med kjent lydhastighet ved 20 °C.
 
@@ -716,7 +716,7 @@ Bruk søkefeltet øverst for å filtrere materialer etter navn. Søk samsvarer b
 
 ---
 
-## Temperaturkompensasjon
+## Temperaturkompensasjon {#temperature-compensation}
 
 Lydhastigheten i materialer endrer seg med temperaturen. I bil-NVH-testing er dette viktig: et motorrom ved 80 °C, en kaldsenket kabin ved -10 °C eller et område for eksosmanifold ved 200 °C oppfører seg alle annerledes enn laboratorieforhold ved romtemperatur.
 
@@ -747,7 +747,7 @@ De fleste ikke-metalliske materialer har ikke pålitelige publiserte temperaturk
 
 ---
 
-## Fotomerknad
+## Fotomerknad {#photo-annotation}
 
 Etter en vellykket beregning, trykk på knappen **📷 Annoter bilde** for å legge sensor- og kildemarkører på et bilde av oppsettet ditt.
 
@@ -766,7 +766,7 @@ Det annoterte bildet inkluderes automatisk i PDF-rapporter.
 
 ---
 
-## Rapporter
+## Rapporter {#reports}
 
 Trykk på knappen **Skriv ut resultat** på en hvilken som helst resultatskjerm for å generere en formatert rapport.
 
@@ -795,7 +795,7 @@ Innstillinger → Rapporttopptekst. Skriv inn firmanavnet, labnavnet, prosjektin
 
 ---
 
-## Sikkerhetskopiering og gjenoppretting
+## Sikkerhetskopiering og gjenoppretting {#backup-and-restore}
 
 Lagre alle de tilpassede materialene, favorittene, innstillingene og historikken til en enkelt fil. Overfør mellom enheter.
 
@@ -811,7 +811,7 @@ Innstillinger → **Gjenopprett** → velg sikkerhetskopifilen fra telefonens la
 
 ---
 
-## Innstillinger
+## Innstillinger {#settings}
 
 Tilgang via ⚙ tannhjul-ikonet i øvre høyre hjørne. Innstillinger er en modal, ikke en fane.
 
@@ -831,7 +831,7 @@ Tilgang via ⚙ tannhjul-ikonet i øvre høyre hjørne. Innstillinger er en moda
 
 ---
 
-## Pro-funksjoner
+## Pro-funksjoner {#pro-features}
 
 NVH Source Locator bruker en **funksjonslåst freemium-modell**:
 
@@ -888,7 +888,7 @@ Hvis du løser inn en kampanjekode i Google Play Store eller App Store mens NVH 
 
 ---
 
-## Help-fanen og veiledninger
+## Help-fanen og veiledninger {#help-tab-and-tutorials}
 
 **Help**-fanen inkluderer veiledninger i appen, beste praksis-guider og referanseinformasjon.
 
@@ -904,7 +904,7 @@ Emner dekket:
 
 ---
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 ### Beregningsresultatet er feil eller gir ingen mening
 
@@ -991,7 +991,7 @@ Tämä opas kattaa kaikki ominaisuudet. Pikaviittaukseen, katso **Pikaviite**.
 
 ---
 
-## Kuinka se toimii
+## Kuinka se toimii {#how-it-works}
 
 Kun melulähde lähettää ääntä tai tärinää, aalto kulkee materiaalin läpi tunnetulla nopeudella. Jos asetat kaksi tai useampia kiihtyvyysanturia materiaalille ja mittaat, milloin aalto saapuu kuhunkin, aikaero kertoo missä lähde sijaitsee.
 
@@ -1010,7 +1010,7 @@ Mitä enemmän antureita käytät, sitä tarkemmin voit paikallistaa lähteen:
 
 ---
 
-## Ennen aloittamista
+## Ennen aloittamista {#before-you-start}
 
 Tarvitset:
 
@@ -1023,7 +1023,7 @@ Tarvitset:
 
 ---
 
-## Päävälilehdet
+## Päävälilehdet {#the-main-tabs}
 
 Sovelluksessa on välilehdet yläosassa:
 
@@ -1047,7 +1047,7 @@ Asetuksiin pääsee ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa (ei
 
 ---
 
-## 2-Sensor-tila
+## 2-Sensor-tila {#2-sensor-mode}
 
 Yksinkertaisin mittaus: lähteen paikannus viivaa pitkin kahden kiihtyvyysanturin välillä.
 
@@ -1089,7 +1089,7 @@ Napauta **📷 Merkitse valokuva** ottaaksesi valokuvan asennuksesta. Sovellus a
 
 ---
 
-## 3-Sensor-tila
+## 3-Sensor-tila {#3-sensor-mode}
 
 Paikallistaa lähteen 2D-tasolla kolmen kolmioon asetetun anturin avulla.
 
@@ -1116,7 +1116,7 @@ Sovellus näyttää lähteen sijainnin X-, Y-koordinaatteina suhteessa anturiin 
 
 ---
 
-## Pro+-tilat
+## Pro+-tilat {#pro-modes}
 
 Useat edistyneet välilehdet tarjoavat ylidefinoituja ratkaisijoita ja korkeampaa ulottuvuutta:
 
@@ -1146,7 +1146,7 @@ Kuten 3D, mutta tukee enintään **6 anturia** (A:sta F:ään) ylidefinoituun LS
 
 ---
 
-## Materials-välilehti
+## Materials-välilehti {#the-materials-tab}
 
 Tavallisten teknisten materiaalien kirjasto tunnetulla äänennopeudella 20 °C:ssa.
 
@@ -1195,7 +1195,7 @@ Käytä yläosan hakukenttää suodattaaksesi materiaalit nimen mukaan. Haku vas
 
 ---
 
-## Lämpötilakompensointi
+## Lämpötilakompensointi {#temperature-compensation}
 
 Äänennopeus materiaaleissa muuttuu lämpötilan myötä. Automotiivisessa NVH-testauksessa tämä on tärkeää: 80 °C:n moottoritila, -10 °C:n kylmäimeytetty hytti tai 200 °C:n pakosarjaalue käyttäytyvät eri tavalla kuin huoneenlämpötilan laboratorio-olosuhteet.
 
@@ -1226,7 +1226,7 @@ Useimmilla ei-metallisilla materiaaleilla ei ole luotettavia julkaistuja lämpö
 
 ---
 
-## Valokuvan merkintä
+## Valokuvan merkintä {#photo-annotation}
 
 Onnistuneen laskennan jälkeen, napauta **📷 Merkitse valokuva** -painiketta asettaaksesi anturi- ja lähdemerkit asennuksesi valokuvan päälle.
 
@@ -1245,7 +1245,7 @@ Merkitty valokuva sisällytetään automaattisesti PDF-raportteihin.
 
 ---
 
-## Raportit
+## Raportit {#reports}
 
 Napauta **Tulosta tulos** -painiketta millä tahansa tulosnäytöllä luodaksesi muotoillun raportin.
 
@@ -1274,7 +1274,7 @@ Asetukset → Raportin otsikko. Syötä yrityksesi nimi, laboratorion nimi, proj
 
 ---
 
-## Varmuuskopiointi ja palautus
+## Varmuuskopiointi ja palautus {#backup-and-restore}
 
 Tallenna kaikki mukautetut materiaalit, suosikit, asetukset ja historia yhteen tiedostoon. Siirto laitteiden välillä.
 
@@ -1290,7 +1290,7 @@ Asetukset → **Palautus** → valitse varmuuskopiotiedosto puhelimesi tallennus
 
 ---
 
-## Asetukset
+## Asetukset {#settings}
 
 Pääsy ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa. Asetukset on modaalinen, ei välilehti.
 
@@ -1310,7 +1310,7 @@ Pääsy ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa. Asetukset on m
 
 ---
 
-## Pro-ominaisuudet
+## Pro-ominaisuudet {#pro-features}
 
 NVH Source Locator käyttää **ominaisuuslukittua freemium-mallia**:
 
@@ -1367,7 +1367,7 @@ Jos lunastat promokoodin Google Play Storessa tai App Storessa NVH Source Locato
 
 ---
 
-## Help-välilehti ja opetusohjelmat
+## Help-välilehti ja opetusohjelmat {#help-tab-and-tutorials}
 
 **Help**-välilehti sisältää sovelluksen sisäisiä opetusohjelmia, parhaiden käytäntöjen oppaita ja viitetietoja.
 
@@ -1383,7 +1383,7 @@ Käsitellyt aiheet:
 
 ---
 
-## Vianmääritys
+## Vianmääritys {#troubleshooting}
 
 ### Laskennan tulos on väärä tai ei ole järkeenkäypä
 
@@ -1470,7 +1470,7 @@ Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi **Referi
 
 ---
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
 Când o sursă de zgomot emite sunet sau vibrație, unda se deplasează prin material la o viteză cunoscută. Dacă plasezi două sau mai multe accelerometre pe material și măsori când unda ajunge la fiecare, diferența de timp îți spune unde este sursa.
 
@@ -1489,7 +1489,7 @@ Cu cât folosești mai mulți senzori, cu atât poți localiza mai precis sursa:
 
 ---
 
-## Înainte de a începe
+## Înainte de a începe {#before-you-start}
 
 Vei avea nevoie de:
 
@@ -1502,7 +1502,7 @@ Vei avea nevoie de:
 
 ---
 
-## Filele principale
+## Filele principale {#the-main-tabs}
 
 Aplicația are file în partea de sus:
 
@@ -1526,7 +1526,7 @@ Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dre
 
 ---
 
-## Modul 2-Sensor
+## Modul 2-Sensor {#2-sensor-mode}
 
 Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.
 
@@ -1568,7 +1568,7 @@ Atinge **📷 Adnotează fotografie** pentru a face o fotografie a configurație
 
 ---
 
-## Modul 3-Sensor
+## Modul 3-Sensor {#3-sensor-mode}
 
 Localizează o sursă pe un plan 2D folosind trei senzori aranjați într-un triunghi.
 
@@ -1595,7 +1595,7 @@ Aplicația afișează poziția sursei ca coordonate X, Y relative la senzorul A 
 
 ---
 
-## Moduri Pro+
+## Moduri Pro+ {#pro-modes}
 
 Mai multe file avansate oferă rezolvatori supradeterminați și dimensionalitate mai mare:
 
@@ -1625,7 +1625,7 @@ Ca 3D, dar suportă până la **6 senzori** (A până la F) cu LSQ supradetermin
 
 ---
 
-## Fila Materials
+## Fila Materials {#the-materials-tab}
 
 Bibliotecă de materiale inginerești comune cu viteza sunetului cunoscută la 20 °C.
 
@@ -1674,7 +1674,7 @@ Folosește bara de căutare din partea de sus pentru a filtra materialele după 
 
 ---
 
-## Compensarea temperaturii
+## Compensarea temperaturii {#temperature-compensation}
 
 Viteza sunetului în materiale se schimbă cu temperatura. În testarea NVH auto, asta contează: un compartiment motor la 80 °C, o cabină rece la -10 °C sau o zonă a galeriei de eșapament la 200 °C se comportă diferit de condițiile de laborator la temperatura camerei.
 
@@ -1705,7 +1705,7 @@ Majoritatea materialelor non-metalice nu au coeficienți de temperatură publica
 
 ---
 
-## Adnotarea fotografiei
+## Adnotarea fotografiei {#photo-annotation}
 
 După un calcul reușit, atinge butonul **📷 Adnotează fotografie** pentru a suprapune markeri de senzor și sursă pe o fotografie a configurației tale.
 
@@ -1724,7 +1724,7 @@ Fotografia adnotată este inclusă automat în rapoartele PDF.
 
 ---
 
-## Rapoarte
+## Rapoarte {#reports}
 
 Atinge butonul **Tipărește rezultat** pe orice ecran de rezultat pentru a genera un raport formatat.
 
@@ -1753,7 +1753,7 @@ Setări → Antet raport. Introdu numele companiei tale, numele laboratorului, i
 
 ---
 
-## Backup și restaurare
+## Backup și restaurare {#backup-and-restore}
 
 Salvează toate materialele tale personalizate, favoritele, setările și istoricul într-un singur fișier. Transfer între dispozitive.
 
@@ -1769,7 +1769,7 @@ Setări → **Restaurare** → alege fișierul de backup din stocarea telefonulu
 
 ---
 
-## Setări
+## Setări {#settings}
 
 Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări este un modal, nu o filă.
 
@@ -1789,7 +1789,7 @@ Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări 
 
 ---
 
-## Funcții Pro
+## Funcții Pro {#pro-features}
 
 NVH Source Locator folosește un **model freemium cu blocare per funcție**:
 
@@ -1846,7 +1846,7 @@ Dacă răscumperi un cod promoțional în Google Play Store sau App Store în ti
 
 ---
 
-## Fila Help și tutoriale
+## Fila Help și tutoriale {#help-tab-and-tutorials}
 
 Fila **Help** include tutoriale în aplicație, ghiduri de cele mai bune practici și informații de referință.
 
@@ -1862,7 +1862,7 @@ Subiecte acoperite:
 
 ---
 
-## Depanare
+## Depanare {#troubleshooting}
 
 ### Rezultatul calculului este greșit sau nu are sens
 
@@ -1949,7 +1949,7 @@ Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için **Hızlı Ba
 
 ---
 
-## Nasıl çalışır
+## Nasıl çalışır {#how-it-works}
 
 Bir gürültü kaynağı ses veya titreşim yaydığında, dalga bilinen bir hızda bir malzemeden geçer. Malzeme üzerine iki veya daha fazla ivmeölçer yerleştirir ve dalganın her birine ne zaman ulaştığını ölçerseniz, zaman farkı size kaynağın nerede olduğunu söyler.
 
@@ -1968,7 +1968,7 @@ Ne kadar çok sensör kullanırsanız, kaynağı o kadar doğru lokalize edebili
 
 ---
 
-## Başlamadan önce
+## Başlamadan önce {#before-you-start}
 
 Şunlara ihtiyacınız olacak:
 
@@ -1981,7 +1981,7 @@ Ne kadar çok sensör kullanırsanız, kaynağı o kadar doğru lokalize edebili
 
 ---
 
-## Ana sekmeler
+## Ana sekmeler {#the-main-tabs}
 
 Uygulamanın üst kısmında sekmeler var:
 
@@ -2005,7 +2005,7 @@ Ayarlara sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişilir (sek
 
 ---
 
-## 2-Sensor modu
+## 2-Sensor modu {#2-sensor-mode}
 
 En basit ölçüm: iki ivmeölçer arasında bir çizgi boyunca kaynak lokalizasyonu.
 
@@ -2047,7 +2047,7 @@ Kurulumunuzun bir fotoğrafını çekmek için **📷 Fotoğrafı açıkla** se�
 
 ---
 
-## 3-Sensor modu
+## 3-Sensor modu {#3-sensor-mode}
 
 Bir üçgen şeklinde düzenlenmiş üç sensör kullanarak 2D düzlemde bir kaynak lokalize eder.
 
@@ -2074,7 +2074,7 @@ Uygulama kaynak konumunu A sensörüne göre X, Y koordinatları olarak gösteri
 
 ---
 
-## Pro+ modları
+## Pro+ modları {#pro-modes}
 
 Birkaç gelişmiş sekme aşırı belirlenmiş çözücüler ve daha yüksek boyutluluk sunar:
 
@@ -2104,7 +2104,7 @@ Herhangi bir konumda dört sensör (dikdörtgen olarak zorlanmamış). A'yı B, 
 
 ---
 
-## Materials sekmesi
+## Materials sekmesi {#the-materials-tab}
 
 20 °C'de bilinen ses hızına sahip yaygın mühendislik malzemeleri kütüphanesi.
 
@@ -2153,7 +2153,7 @@ Malzemeleri ada göre filtrelemek için üstteki arama çubuğunu kullanın. Ara
 
 ---
 
-## Sıcaklık kompanzasyonu
+## Sıcaklık kompanzasyonu {#temperature-compensation}
 
 Malzemelerdeki ses hızı sıcaklıkla değişir. Otomotiv NVH testinde bu önemlidir: 80 °C'deki bir motor bölmesi, -10 °C'de soğukta beklemiş bir kabin veya 200 °C'deki bir egzoz manifold alanı, oda sıcaklığındaki laboratuvar koşullarından farklı davranır.
 
@@ -2184,7 +2184,7 @@ Geçmişteki bir ölçümü orijinal sıcaklığında yeniden oynatmak istiyorsa
 
 ---
 
-## Fotoğraf açıklaması
+## Fotoğraf açıklaması {#photo-annotation}
 
 Başarılı bir hesaplamadan sonra, kurulumunuzun bir fotoğrafına sensör ve kaynak işaretlerini bindirmek için **📷 Fotoğrafı açıkla** düğmesine dokunun.
 
@@ -2203,7 +2203,7 @@ Açıklanan fotoğraf otomatik olarak PDF raporlarına dahil edilir.
 
 ---
 
-## Raporlar
+## Raporlar {#reports}
 
 Biçimlendirilmiş bir rapor oluşturmak için herhangi bir sonuç ekranındaki **Sonucu yazdır** düğmesine dokunun.
 
@@ -2232,7 +2232,7 @@ Ayarlar → Rapor başlığı. Şirket adınızı, laboratuvar adınızı, proje
 
 ---
 
-## Yedekleme ve geri yükleme
+## Yedekleme ve geri yükleme {#backup-and-restore}
 
 Tüm özel malzemelerinizi, favorilerinizi, ayarlarınızı ve geçmişinizi tek bir dosyaya kaydedin. Cihazlar arasında aktarım.
 
@@ -2248,7 +2248,7 @@ Ayarlar → **Geri yükleme** → telefonunuzun depolamasından yedek dosyasın�
 
 ---
 
-## Ayarlar
+## Ayarlar {#settings}
 
 Sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişin. Ayarlar bir kalıcıdır, sekme değildir.
 
@@ -2268,7 +2268,7 @@ Sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişin. Ayarlar bir ka
 
 ---
 
-## Pro özellikler
+## Pro özellikler {#pro-features}
 
 NVH Source Locator bir **özellik kilitli freemium modeli** kullanır:
 
@@ -2325,7 +2325,7 @@ NVH Source Locator arka planda çalışırken Google Play Store veya App Store'd
 
 ---
 
-## Help sekmesi ve öğreticiler
+## Help sekmesi ve öğreticiler {#help-tab-and-tutorials}
 
 **Help** sekmesi, uygulama içi öğreticiler, en iyi uygulama kılavuzları ve referans bilgileri içerir.
 
@@ -2341,7 +2341,7 @@ Kapsanan konular:
 
 ---
 
-## Sorun giderme
+## Sorun giderme {#troubleshooting}
 
 ### Hesaplama sonucu yanlış veya anlamsız
 

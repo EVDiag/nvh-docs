@@ -26,7 +26,7 @@ Esta guía cubre todas las funciones. Para un repaso rápido, consulte **Referen
 
 ---
 
-## Cómo funciona
+## Cómo funciona {#how-it-works}
 
 Cuando una fuente de ruido emite un sonido o vibración, la onda viaja a través de un material a una velocidad conocida. Si coloca dos o más acelerómetros en el material y mide cuándo llega la onda a cada uno, la diferencia de tiempo le indica dónde está la fuente.
 
@@ -45,7 +45,7 @@ Cuantos más sensores utilice, con mayor precisión podrá localizar la fuente:
 
 ---
 
-## Antes de empezar
+## Antes de empezar {#before-you-start}
 
 Necesitará:
 
@@ -58,7 +58,7 @@ Necesitará:
 
 ---
 
-## Las pestañas principales
+## Las pestañas principales {#the-main-tabs}
 
 La aplicación tiene pestañas en la parte superior:
 
@@ -82,7 +82,7 @@ Los ajustes se acceden mediante el icono de engranaje ⚙ en la esquina superior
 
 ---
 
-## Modo 2-Sensor
+## Modo 2-Sensor {#2-sensor-mode}
 
 La medición más simple: localización de fuente a lo largo de una línea entre dos acelerómetros.
 
@@ -124,7 +124,7 @@ Toque **📷 Anotar foto** para tomar una foto de su configuración. La aplicaci
 
 ---
 
-## Modo 3-Sensor
+## Modo 3-Sensor {#3-sensor-mode}
 
 Localiza una fuente en un plano 2D usando tres sensores dispuestos en un triángulo.
 
@@ -151,7 +151,7 @@ La aplicación muestra la posición de la fuente como coordenadas X, Y relativas
 
 ---
 
-## Modos Pro+
+## Modos Pro+ {#pro-modes}
 
 Varias pestañas avanzadas ofrecen solucionadores sobredeterminados y mayor dimensionalidad:
 
@@ -181,7 +181,7 @@ Como 3D pero admite hasta **6 sensores** (A a F) con LSQ sobredeterminado. Máxi
 
 ---
 
-## La pestaña Materials
+## La pestaña Materials {#the-materials-tab}
 
 Biblioteca de materiales de ingeniería comunes con velocidad del sonido conocida a 20 °C.
 
@@ -230,7 +230,7 @@ Use la barra de búsqueda en la parte superior para filtrar materiales por nombr
 
 ---
 
-## Compensación de temperatura
+## Compensación de temperatura {#temperature-compensation}
 
 La velocidad del sonido en los materiales cambia con la temperatura. En las pruebas NVH automotrices, esto es importante: un compartimento del motor a 80 °C, una cabina enfriada a -10 °C o un área del colector de escape a 200 °C se comportan de manera diferente a las condiciones de laboratorio a temperatura ambiente.
 
@@ -261,7 +261,7 @@ La mayoría de los materiales no metálicos no tienen coeficientes de temperatur
 
 ---
 
-## Anotación de fotos
+## Anotación de fotos {#photo-annotation}
 
 Después de un cálculo exitoso, toque el botón **📷 Anotar foto** para superponer marcadores de sensor y fuente en una foto de su configuración.
 
@@ -280,7 +280,7 @@ La foto anotada se incluye automáticamente en los informes PDF.
 
 ---
 
-## Informes
+## Informes {#reports}
 
 Toque el botón **Imprimir resultado** en cualquier pantalla de resultados para generar un informe formateado.
 
@@ -309,7 +309,7 @@ Ajustes → Encabezado del informe. Introduzca el nombre de su empresa, nombre d
 
 ---
 
-## Backup y restauración
+## Backup y restauración {#backup-and-restore}
 
 Guarde todos sus materiales personalizados, favoritos, configuraciones e historial en un solo archivo. Transferir entre dispositivos.
 
@@ -325,7 +325,7 @@ Ajustes → **Restaurar** → seleccione el archivo de backup del almacenamiento
 
 ---
 
-## Ajustes
+## Ajustes {#settings}
 
 Acceso a través del icono de engranaje ⚙ en la esquina superior derecha. Ajustes es un modal, no una pestaña.
 
@@ -345,7 +345,7 @@ Acceso a través del icono de engranaje ⚙ en la esquina superior derecha. Ajus
 
 ---
 
-## Funciones Pro
+## Funciones Pro {#pro-features}
 
 NVH Source Locator utiliza un **modelo freemium con bloqueo por funciones**:
 
@@ -402,7 +402,7 @@ Si canjea un código promocional en Google Play Store o App Store mientras NVH S
 
 ---
 
-## Pestaña Help y tutoriales
+## Pestaña Help y tutoriales {#help-tab-and-tutorials}
 
 La pestaña **Help** incluye tutoriales dentro de la aplicación, guías de mejores prácticas e información de referencia.
 
@@ -418,7 +418,7 @@ Temas cubiertos:
 
 ---
 
-## Resolución de problemas
+## Resolución de problemas {#troubleshooting}
 
 ### El resultado del cálculo es incorrecto o no tiene sentido
 

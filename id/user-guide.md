@@ -26,7 +26,7 @@ Panduan ini mencakup semua fitur. Untuk penyegar cepat, lihat **Referensi Cepat*
 
 ---
 
-## Cara kerjanya
+## Cara kerjanya {#how-it-works}
 
 Ketika sumber kebisingan memancarkan suara atau getaran, gelombang merambat melalui material dengan kecepatan yang diketahui. Jika Anda menempatkan dua atau lebih akselerometer pada material dan mengukur kapan gelombang tiba di masing-masing, perbedaan waktu memberi tahu Anda di mana sumbernya berada.
 
@@ -45,7 +45,7 @@ Semakin banyak sensor yang Anda gunakan, semakin akurat Anda dapat menentukan su
 
 ---
 
-## Sebelum Anda mulai
+## Sebelum Anda mulai {#before-you-start}
 
 Anda akan membutuhkan:
 
@@ -58,7 +58,7 @@ Anda akan membutuhkan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi memiliki tab di bagian atas:
 
@@ -82,7 +82,7 @@ Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mode 2-Sensor
+## Mode 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.
 
@@ -124,7 +124,7 @@ Ketuk **📷 Anotasi foto** untuk mengambil foto pengaturan Anda. Aplikasi menum
 
 ---
 
-## Mode 3-Sensor
+## Mode 3-Sensor {#3-sensor-mode}
 
 Menemukan sumber pada bidang 2D menggunakan tiga sensor yang diatur dalam segitiga.
 
@@ -151,7 +151,7 @@ Aplikasi menampilkan posisi sumber sebagai koordinat X, Y relatif terhadap senso
 
 ---
 
-## Mode Pro+
+## Mode Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan solver yang ditentukan berlebih dan dimensi yang lebih tinggi:
 
@@ -181,7 +181,7 @@ Seperti 3D tetapi mendukung hingga **6 sensor** (A hingga F) dengan LSQ yang dit
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Pustaka material rekayasa umum dengan kecepatan suara yang diketahui pada 20 °C.
 
@@ -230,7 +230,7 @@ Gunakan bilah pencarian di bagian atas untuk memfilter material berdasarkan nama
 
 ---
 
-## Kompensasi suhu
+## Kompensasi suhu {#temperature-compensation}
 
 Kecepatan suara dalam material berubah dengan suhu. Dalam pengujian NVH otomotif, ini penting: ruang mesin pada 80 °C, kabin yang direndam dingin pada -10 °C, atau area manifold buang pada 200 °C semuanya berperilaku berbeda dari kondisi laboratorium suhu kamar.
 
@@ -261,7 +261,7 @@ Sebagian besar material non-logam tidak memiliki koefisien suhu yang dipublikasi
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Setelah perhitungan yang berhasil, ketuk tombol **📷 Anotasi foto** untuk menumpangkan penanda sensor dan sumber pada foto pengaturan Anda.
 
@@ -280,7 +280,7 @@ Foto beranotasi secara otomatis disertakan dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketuk tombol **Cetak hasil** pada layar hasil apa pun untuk menghasilkan laporan yang diformat.
 
@@ -309,7 +309,7 @@ Pengaturan → Header laporan. Masukkan nama perusahaan Anda, nama lab, info pro
 
 ---
 
-## Cadangan dan pemulihan
+## Cadangan dan pemulihan {#backup-and-restore}
 
 Simpan semua material kustom, favorit, pengaturan, dan riwayat Anda ke satu file. Transfer antar perangkat.
 
@@ -325,7 +325,7 @@ Pengaturan → **Pemulihan** → pilih file cadangan dari penyimpanan ponsel And
 
 ---
 
-## Pengaturan
+## Pengaturan {#settings}
 
 Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal, bukan tab.
 
@@ -345,7 +345,7 @@ Diakses melalui ikon roda gigi ⚙ di sudut kanan atas. Pengaturan adalah modal,
 
 ---
 
-## Fitur Pro
+## Fitur Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium dengan kunci fitur**:
 
@@ -402,7 +402,7 @@ Jika Anda menebus kode promo di Google Play Store atau App Store saat NVH Source
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** mencakup tutorial dalam aplikasi, panduan praktik terbaik, dan informasi referensi.
 
@@ -418,7 +418,7 @@ Topik yang dibahas:
 
 ---
 
-## Pemecahan masalah
+## Pemecahan masalah {#troubleshooting}
 
 ### Hasil perhitungan salah atau tidak masuk akal
 

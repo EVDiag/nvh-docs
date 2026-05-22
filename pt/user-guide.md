@@ -26,7 +26,7 @@ Este guia cobre todos os recursos. Para uma revisão rápida, consulte **Referê
 
 ---
 
-## Como funciona
+## Como funciona {#how-it-works}
 
 Quando uma fonte de ruído emite um som ou vibração, a onda viaja através de um material em uma velocidade conhecida. Se você colocar dois ou mais acelerômetros no material e medir quando a onda chega a cada um, a diferença de tempo indica onde está a fonte.
 
@@ -45,7 +45,7 @@ Quanto mais sensores você usar, mais precisamente poderá localizar a fonte:
 
 ---
 
-## Antes de começar
+## Antes de começar {#before-you-start}
 
 Você precisará de:
 
@@ -58,7 +58,7 @@ Você precisará de:
 
 ---
 
-## As abas principais
+## As abas principais {#the-main-tabs}
 
 O aplicativo tem abas no topo:
 
@@ -82,7 +82,7 @@ As Configurações são acessadas através do ícone de engrenagem ⚙ no canto 
 
 ---
 
-## Modo 2-Sensor
+## Modo 2-Sensor {#2-sensor-mode}
 
 A medição mais simples: localização de fonte ao longo de uma linha entre dois acelerômetros.
 
@@ -124,7 +124,7 @@ Toque em **📷 Anotar foto** para tirar uma foto da sua configuração. O aplic
 
 ---
 
-## Modo 3-Sensor
+## Modo 3-Sensor {#3-sensor-mode}
 
 Localiza uma fonte em um plano 2D usando três sensores dispostos em um triângulo.
 
@@ -151,7 +151,7 @@ O aplicativo mostra a posição da fonte como coordenadas X, Y relativas ao sens
 
 ---
 
-## Modos Pro+
+## Modos Pro+ {#pro-modes}
 
 Várias abas avançadas oferecem solucionadores sobredeterminados e maior dimensionalidade:
 
@@ -181,7 +181,7 @@ Como 3D, mas suporta até **6 sensores** (A a F) com LSQ sobredeterminado. Máxi
 
 ---
 
-## A aba Materials
+## A aba Materials {#the-materials-tab}
 
 Biblioteca de materiais comuns de engenharia com velocidade do som conhecida a 20 °C.
 
@@ -230,7 +230,7 @@ Use a barra de pesquisa no topo para filtrar materiais por nome. A pesquisa corr
 
 ---
 
-## Compensação de temperatura
+## Compensação de temperatura {#temperature-compensation}
 
 A velocidade do som em materiais muda com a temperatura. Em testes NVH automotivos, isso importa: um compartimento do motor a 80 °C, uma cabine resfriada a -10 °C ou uma área do coletor de escape a 200 °C se comportam de maneira diferente das condições de laboratório à temperatura ambiente.
 
@@ -261,7 +261,7 @@ A maioria dos materiais não metálicos não tem coeficientes de temperatura pub
 
 ---
 
-## Anotação de fotos
+## Anotação de fotos {#photo-annotation}
 
 Após um cálculo bem-sucedido, toque no botão **📷 Anotar foto** para sobrepor marcadores de sensor e fonte em uma foto da sua configuração.
 
@@ -280,7 +280,7 @@ A foto anotada é incluída automaticamente nos relatórios PDF.
 
 ---
 
-## Relatórios
+## Relatórios {#reports}
 
 Toque no botão **Imprimir resultado** em qualquer tela de resultados para gerar um relatório formatado.
 
@@ -309,7 +309,7 @@ Configurações → Cabeçalho do relatório. Insira o nome da sua empresa, nome
 
 ---
 
-## Backup e restauração
+## Backup e restauração {#backup-and-restore}
 
 Salve todos os seus materiais personalizados, favoritos, configurações e histórico em um único arquivo. Transferir entre dispositivos.
 
@@ -325,7 +325,7 @@ Configurações → **Restaurar** → escolha o arquivo de backup do armazenamen
 
 ---
 
-## Configurações
+## Configurações {#settings}
 
 Acesso através do ícone de engrenagem ⚙ no canto superior direito. Configurações é um modal, não uma aba.
 
@@ -345,7 +345,7 @@ Acesso através do ícone de engrenagem ⚙ no canto superior direito. Configura
 
 ---
 
-## Recursos Pro
+## Recursos Pro {#pro-features}
 
 NVH Source Locator usa um **modelo freemium com bloqueio por recurso**:
 
@@ -402,7 +402,7 @@ Se você resgatar um código promocional na Google Play Store ou App Store enqua
 
 ---
 
-## Aba Help e tutoriais
+## Aba Help e tutoriais {#help-tab-and-tutorials}
 
 A aba **Help** inclui tutoriais no aplicativo, guias de melhores práticas e informações de referência.
 
@@ -418,7 +418,7 @@ Tópicos cobertos:
 
 ---
 
-## Solução de problemas
+## Solução de problemas {#troubleshooting}
 
 ### O resultado do cálculo está errado ou não faz sentido
 

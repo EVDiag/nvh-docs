@@ -26,7 +26,7 @@ Acest ghid acoperă toate funcțiile. Pentru o reamintire rapidă, vezi **Referi
 
 ---
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
 Când o sursă de zgomot emite sunet sau vibrație, unda se deplasează prin material la o viteză cunoscută. Dacă plasezi două sau mai multe accelerometre pe material și măsori când unda ajunge la fiecare, diferența de timp îți spune unde este sursa.
 
@@ -45,7 +45,7 @@ Cu cât folosești mai mulți senzori, cu atât poți localiza mai precis sursa:
 
 ---
 
-## Înainte de a începe
+## Înainte de a începe {#before-you-start}
 
 Vei avea nevoie de:
 
@@ -58,7 +58,7 @@ Vei avea nevoie de:
 
 ---
 
-## Filele principale
+## Filele principale {#the-main-tabs}
 
 Aplicația are file în partea de sus:
 
@@ -82,7 +82,7 @@ Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dre
 
 ---
 
-## Modul 2-Sensor
+## Modul 2-Sensor {#2-sensor-mode}
 
 Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.
 
@@ -124,7 +124,7 @@ Atinge **📷 Adnotează fotografie** pentru a face o fotografie a configurație
 
 ---
 
-## Modul 3-Sensor
+## Modul 3-Sensor {#3-sensor-mode}
 
 Localizează o sursă pe un plan 2D folosind trei senzori aranjați într-un triunghi.
 
@@ -151,7 +151,7 @@ Aplicația afișează poziția sursei ca coordonate X, Y relative la senzorul A 
 
 ---
 
-## Moduri Pro+
+## Moduri Pro+ {#pro-modes}
 
 Mai multe file avansate oferă rezolvatori supradeterminați și dimensionalitate mai mare:
 
@@ -181,7 +181,7 @@ Ca 3D, dar suportă până la **6 senzori** (A până la F) cu LSQ supradetermin
 
 ---
 
-## Fila Materials
+## Fila Materials {#the-materials-tab}
 
 Bibliotecă de materiale inginerești comune cu viteza sunetului cunoscută la 20 °C.
 
@@ -230,7 +230,7 @@ Folosește bara de căutare din partea de sus pentru a filtra materialele după 
 
 ---
 
-## Compensarea temperaturii
+## Compensarea temperaturii {#temperature-compensation}
 
 Viteza sunetului în materiale se schimbă cu temperatura. În testarea NVH auto, asta contează: un compartiment motor la 80 °C, o cabină rece la -10 °C sau o zonă a galeriei de eșapament la 200 °C se comportă diferit de condițiile de laborator la temperatura camerei.
 
@@ -261,7 +261,7 @@ Majoritatea materialelor non-metalice nu au coeficienți de temperatură publica
 
 ---
 
-## Adnotarea fotografiei
+## Adnotarea fotografiei {#photo-annotation}
 
 După un calcul reușit, atinge butonul **📷 Adnotează fotografie** pentru a suprapune markeri de senzor și sursă pe o fotografie a configurației tale.
 
@@ -280,7 +280,7 @@ Fotografia adnotată este inclusă automat în rapoartele PDF.
 
 ---
 
-## Rapoarte
+## Rapoarte {#reports}
 
 Atinge butonul **Tipărește rezultat** pe orice ecran de rezultat pentru a genera un raport formatat.
 
@@ -309,7 +309,7 @@ Setări → Antet raport. Introdu numele companiei tale, numele laboratorului, i
 
 ---
 
-## Backup și restaurare
+## Backup și restaurare {#backup-and-restore}
 
 Salvează toate materialele tale personalizate, favoritele, setările și istoricul într-un singur fișier. Transfer între dispozitive.
 
@@ -325,7 +325,7 @@ Setări → **Restaurare** → alege fișierul de backup din stocarea telefonulu
 
 ---
 
-## Setări
+## Setări {#settings}
 
 Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări este un modal, nu o filă.
 
@@ -345,7 +345,7 @@ Acces prin pictograma roată dințată ⚙ din colțul din dreapta sus. Setări 
 
 ---
 
-## Funcții Pro
+## Funcții Pro {#pro-features}
 
 NVH Source Locator folosește un **model freemium cu blocare per funcție**:
 
@@ -402,7 +402,7 @@ Dacă răscumperi un cod promoțional în Google Play Store sau App Store în ti
 
 ---
 
-## Fila Help și tutoriale
+## Fila Help și tutoriale {#help-tab-and-tutorials}
 
 Fila **Help** include tutoriale în aplicație, ghiduri de cele mai bune practici și informații de referință.
 
@@ -418,7 +418,7 @@ Subiecte acoperite:
 
 ---
 
-## Depanare
+## Depanare {#troubleshooting}
 
 ### Rezultatul calculului este greșit sau nu are sens
 

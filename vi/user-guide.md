@@ -26,7 +26,7 @@ Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm 
 
 ---
 
-## Cách hoạt động
+## Cách hoạt động {#how-it-works}
 
 Khi một nguồn tiếng ồn phát ra âm thanh hoặc rung động, sóng truyền qua vật liệu với tốc độ đã biết. Nếu bạn đặt hai hoặc nhiều gia tốc kế trên vật liệu và đo thời điểm sóng đến mỗi cảm biến, sự khác biệt thời gian sẽ cho bạn biết nguồn ở đâu.
 
@@ -45,7 +45,7 @@ Bạn càng sử dụng nhiều cảm biến, bạn càng có thể xác định
 
 ---
 
-## Trước khi bắt đầu
+## Trước khi bắt đầu {#before-you-start}
 
 Bạn sẽ cần:
 
@@ -58,7 +58,7 @@ Bạn sẽ cần:
 
 ---
 
-## Các tab chính
+## Các tab chính {#the-main-tabs}
 
 Ứng dụng có các tab ở trên cùng:
 
@@ -82,7 +82,7 @@ Cài đặt được truy cập thông qua biểu tượng bánh răng ⚙ ở g
 
 ---
 
-## Chế độ 2-Sensor
+## Chế độ 2-Sensor {#2-sensor-mode}
 
 Đo lường đơn giản nhất: định vị nguồn dọc theo đường thẳng giữa hai gia tốc kế.
 
@@ -124,7 +124,7 @@ Chạm vào **📷 Chú thích ảnh** để chụp ảnh thiết lập của b�
 
 ---
 
-## Chế độ 3-Sensor
+## Chế độ 3-Sensor {#3-sensor-mode}
 
 Định vị một nguồn trên mặt phẳng 2D sử dụng ba cảm biến được sắp xếp thành tam giác.
 
@@ -151,7 +151,7 @@ Cho mỗi cặp (A–B và A–C), nhập:
 
 ---
 
-## Chế độ Pro+
+## Chế độ Pro+ {#pro-modes}
 
 Một số tab nâng cao cung cấp bộ giải xác định thừa và chiều cao hơn:
 
@@ -181,7 +181,7 @@ Giống như 3D nhưng hỗ trợ tối đa **6 cảm biến** (A đến F) vớ
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Thư viện vật liệu kỹ thuật phổ biến với tốc độ âm thanh đã biết ở 20 °C.
 
@@ -230,7 +230,7 @@ Sử dụng thanh tìm kiếm ở trên cùng để lọc vật liệu theo tên
 
 ---
 
-## Bù nhiệt độ
+## Bù nhiệt độ {#temperature-compensation}
 
 Tốc độ âm thanh trong vật liệu thay đổi theo nhiệt độ. Trong thử nghiệm NVH ô tô, điều này quan trọng: khoang động cơ ở 80 °C, cabin lạnh ở -10 °C, hoặc khu vực ống xả ở 200 °C tất cả đều hoạt động khác với điều kiện phòng thí nghiệm ở nhiệt độ phòng.
 
@@ -261,7 +261,7 @@ Hầu hết các vật liệu phi kim không có hệ số nhiệt độ đáng 
 
 ---
 
-## Chú thích ảnh
+## Chú thích ảnh {#photo-annotation}
 
 Sau khi tính toán thành công, chạm vào nút **📷 Chú thích ảnh** để phủ các điểm đánh dấu cảm biến và nguồn trên một ảnh thiết lập của bạn.
 
@@ -280,7 +280,7 @@ Sau khi tính toán thành công, chạm vào nút **📷 Chú thích ảnh** đ
 
 ---
 
-## Báo cáo
+## Báo cáo {#reports}
 
 Chạm vào nút **In kết quả** trên bất kỳ màn hình kết quả nào để tạo báo cáo được định dạng.
 
@@ -309,7 +309,7 @@ Cài đặt → Tiêu đề báo cáo. Nhập tên công ty của bạn, tên ph
 
 ---
 
-## Sao lưu và khôi phục
+## Sao lưu và khôi phục {#backup-and-restore}
 
 Lưu tất cả các vật liệu tùy chỉnh, yêu thích, cài đặt và lịch sử của bạn vào một tệp duy nhất. Chuyển giữa các thiết bị.
 
@@ -325,7 +325,7 @@ Cài đặt → **Khôi phục** → chọn tệp sao lưu từ bộ nhớ đi�
 
 ---
 
-## Cài đặt
+## Cài đặt {#settings}
 
 Truy cập qua biểu tượng bánh răng ⚙ ở góc trên bên phải. Cài đặt là một modal, không phải tab.
 
@@ -345,7 +345,7 @@ Truy cập qua biểu tượng bánh răng ⚙ ở góc trên bên phải. Cài 
 
 ---
 
-## Tính năng Pro
+## Tính năng Pro {#pro-features}
 
 NVH Source Locator sử dụng **mô hình freemium khóa theo tính năng**:
 
@@ -402,7 +402,7 @@ Nếu bạn đổi mã khuyến mãi trong Google Play Store hoặc App Store tr
 
 ---
 
-## Tab Help và hướng dẫn
+## Tab Help và hướng dẫn {#help-tab-and-tutorials}
 
 Tab **Help** bao gồm hướng dẫn trong ứng dụng, hướng dẫn thực hành tốt nhất và thông tin tham khảo.
 
@@ -418,7 +418,7 @@ Các chủ đề được bao quát:
 
 ---
 
-## Khắc phục sự cố
+## Khắc phục sự cố {#troubleshooting}
 
 ### Kết quả tính toán sai hoặc không có ý nghĩa
 

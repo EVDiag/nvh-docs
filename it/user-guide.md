@@ -26,7 +26,7 @@ Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere **Rifer
 
 ---
 
-## Come funziona
+## Come funziona {#how-it-works}
 
 Quando una sorgente di rumore emette un suono o una vibrazione, l'onda viaggia attraverso un materiale a velocità nota. Se posizioni due o più accelerometri sul materiale e misuri quando l'onda arriva a ciascuno, la differenza di tempo ti dice dove si trova la sorgente.
 
@@ -45,7 +45,7 @@ Più sensori usi, più accuratamente puoi localizzare la sorgente:
 
 ---
 
-## Prima di iniziare
+## Prima di iniziare {#before-you-start}
 
 Avrai bisogno di:
 
@@ -58,7 +58,7 @@ Avrai bisogno di:
 
 ---
 
-## Le schede principali
+## Le schede principali {#the-main-tabs}
 
 L'app ha schede in alto:
 
@@ -82,7 +82,7 @@ Le Impostazioni sono accessibili tramite l'icona ⚙ dell'ingranaggio in alto a 
 
 ---
 
-## Modalità 2-Sensor
+## Modalità 2-Sensor {#2-sensor-mode}
 
 La misurazione più semplice: localizzazione sorgente lungo una linea tra due accelerometri.
 
@@ -124,7 +124,7 @@ Tocca **📷 Annota foto** per scattare una foto della tua configurazione. L'app
 
 ---
 
-## Modalità 3-Sensor
+## Modalità 3-Sensor {#3-sensor-mode}
 
 Localizza una sorgente su un piano 2D utilizzando tre sensori disposti in un triangolo.
 
@@ -151,7 +151,7 @@ L'app mostra la posizione della sorgente come coordinate X, Y relative al sensor
 
 ---
 
-## Modalità Pro+
+## Modalità Pro+ {#pro-modes}
 
 Diverse schede avanzate offrono risolutori sovradeterminati e dimensionalità superiore:
 
@@ -181,7 +181,7 @@ Come 3D ma supporta fino a **6 sensori** (da A a F) con LSQ sovradeterminato. Ma
 
 ---
 
-## La scheda Materials
+## La scheda Materials {#the-materials-tab}
 
 Libreria di materiali ingegneristici comuni con velocità del suono nota a 20 °C.
 
@@ -230,7 +230,7 @@ Usa la barra di ricerca in alto per filtrare i materiali per nome. La ricerca co
 
 ---
 
-## Compensazione della temperatura
+## Compensazione della temperatura {#temperature-compensation}
 
 La velocità del suono nei materiali cambia con la temperatura. Nei test NVH automobilistici questo è importante: un vano motore a 80 °C, un abitacolo raffreddato a -10 °C o un'area del collettore di scarico a 200 °C si comportano tutti diversamente dalle condizioni di laboratorio a temperatura ambiente.
 
@@ -261,7 +261,7 @@ La maggior parte dei materiali non metallici non ha coefficienti di temperatura 
 
 ---
 
-## Annotazione foto
+## Annotazione foto {#photo-annotation}
 
 Dopo un calcolo riuscito, tocca il pulsante **📷 Annota foto** per sovrapporre marker di sensore e sorgente su una foto della tua configurazione.
 
@@ -280,7 +280,7 @@ La foto annotata è inclusa automaticamente nei report PDF.
 
 ---
 
-## Report
+## Report {#reports}
 
 Tocca il pulsante **Stampa risultato** su qualsiasi schermata dei risultati per generare un report formattato.
 
@@ -309,7 +309,7 @@ Impostazioni → Intestazione report. Inserisci il nome della tua azienda, nome 
 
 ---
 
-## Backup e ripristino
+## Backup e ripristino {#backup-and-restore}
 
 Salva tutti i tuoi materiali personalizzati, preferiti, impostazioni e cronologia in un singolo file. Trasferisci tra dispositivi.
 
@@ -325,7 +325,7 @@ Impostazioni → **Ripristino** → seleziona il file di backup dall'archiviazio
 
 ---
 
-## Impostazioni
+## Impostazioni {#settings}
 
 Accesso tramite l'icona ⚙ dell'ingranaggio in alto a destra. Impostazioni è una finestra modale, non una scheda.
 
@@ -345,7 +345,7 @@ Accesso tramite l'icona ⚙ dell'ingranaggio in alto a destra. Impostazioni è u
 
 ---
 
-## Funzionalità Pro
+## Funzionalità Pro {#pro-features}
 
 NVH Source Locator usa un **modello freemium con blocco per funzionalità**:
 
@@ -402,7 +402,7 @@ Se riscatti un codice promozionale nel Google Play Store o App Store mentre NVH 
 
 ---
 
-## Scheda Help e tutorial
+## Scheda Help e tutorial {#help-tab-and-tutorials}
 
 La scheda **Help** include tutorial in-app, guide alle migliori pratiche e informazioni di riferimento.
 
@@ -418,7 +418,7 @@ Argomenti trattati:
 
 ---
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
 ### Il risultato del calcolo è sbagliato o non ha senso
 

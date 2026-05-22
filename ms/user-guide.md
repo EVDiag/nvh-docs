@@ -26,7 +26,7 @@ Panduan ini merangkumi semua ciri. Untuk peringatan ringkas, lihat **Rujukan Pan
 
 ---
 
-## Bagaimana ia berfungsi
+## Bagaimana ia berfungsi {#how-it-works}
 
 Apabila sumber bunyi memancarkan bunyi atau getaran, gelombang bergerak melalui bahan pada kelajuan yang diketahui. Jika anda meletakkan dua atau lebih akselerometer pada bahan dan mengukur bila gelombang tiba pada setiap satu, perbezaan masa memberitahu anda di mana sumber itu.
 
@@ -45,7 +45,7 @@ Semakin banyak sensor anda gunakan, semakin tepat anda boleh menentukan sumber:
 
 ---
 
-## Sebelum anda mula
+## Sebelum anda mula {#before-you-start}
 
 Anda akan memerlukan:
 
@@ -58,7 +58,7 @@ Anda akan memerlukan:
 
 ---
 
-## Tab utama
+## Tab utama {#the-main-tabs}
 
 Aplikasi mempunyai tab di bahagian atas:
 
@@ -82,7 +82,7 @@ Tetapan diakses melalui ikon gear ⚙ di sudut kanan atas (bukan tab).
 
 ---
 
-## Mod 2-Sensor
+## Mod 2-Sensor {#2-sensor-mode}
 
 Pengukuran paling mudah: penyetempatan sumber sepanjang garis antara dua akselerometer.
 
@@ -124,7 +124,7 @@ Ketik **📷 Anotasi foto** untuk mengambil foto persediaan anda. Aplikasi menin
 
 ---
 
-## Mod 3-Sensor
+## Mod 3-Sensor {#3-sensor-mode}
 
 Mencari sumber pada satah 2D menggunakan tiga sensor yang disusun dalam segi tiga.
 
@@ -151,7 +151,7 @@ Aplikasi memaparkan kedudukan sumber sebagai koordinat X, Y relatif kepada senso
 
 ---
 
-## Mod Pro+
+## Mod Pro+ {#pro-modes}
 
 Beberapa tab lanjutan menawarkan penyelesai yang ditentukan berlebihan dan dimensi yang lebih tinggi:
 
@@ -181,7 +181,7 @@ Seperti 3D tetapi menyokong sehingga **6 sensor** (A hingga F) dengan LSQ yang d
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Perpustakaan bahan kejuruteraan biasa dengan kelajuan bunyi yang diketahui pada 20 °C.
 
@@ -230,7 +230,7 @@ Gunakan bar carian di bahagian atas untuk menapis bahan mengikut nama. Carian se
 
 ---
 
-## Pampasan suhu
+## Pampasan suhu {#temperature-compensation}
 
 Kelajuan bunyi dalam bahan berubah dengan suhu. Dalam ujian NVH automotif, ini penting: bay enjin pada 80 °C, kabin direndam sejuk pada -10 °C, atau kawasan manifold ekzos pada 200 °C semuanya berkelakuan berbeza daripada keadaan makmal suhu bilik.
 
@@ -261,7 +261,7 @@ Kebanyakan bahan bukan logam tidak mempunyai pekali suhu yang diterbitkan secara
 
 ---
 
-## Anotasi foto
+## Anotasi foto {#photo-annotation}
 
 Selepas pengiraan yang berjaya, ketik butang **📷 Anotasi foto** untuk menindih penanda sensor dan sumber pada foto persediaan anda.
 
@@ -280,7 +280,7 @@ Foto yang dianotasi disertakan secara automatik dalam laporan PDF.
 
 ---
 
-## Laporan
+## Laporan {#reports}
 
 Ketik butang **Cetak hasil** pada mana-mana skrin hasil untuk menjana laporan berformat.
 
@@ -309,7 +309,7 @@ Tetapan → Pengepala laporan. Masukkan nama syarikat anda, nama makmal, info pr
 
 ---
 
-## Sandaran dan pemulihan
+## Sandaran dan pemulihan {#backup-and-restore}
 
 Simpan semua bahan tersuai, kegemaran, tetapan, dan sejarah anda ke satu fail. Pindahkan antara peranti.
 
@@ -325,7 +325,7 @@ Tetapan → **Pemulihan** → pilih fail sandaran daripada storan telefon anda. 
 
 ---
 
-## Tetapan
+## Tetapan {#settings}
 
 Diakses melalui ikon gear ⚙ di sudut kanan atas. Tetapan ialah modal, bukan tab.
 
@@ -345,7 +345,7 @@ Diakses melalui ikon gear ⚙ di sudut kanan atas. Tetapan ialah modal, bukan ta
 
 ---
 
-## Ciri Pro
+## Ciri Pro {#pro-features}
 
 NVH Source Locator menggunakan **model freemium dengan kunci ciri**:
 
@@ -402,7 +402,7 @@ Jika anda menebus kod promo di Google Play Store atau App Store semasa NVH Sourc
 
 ---
 
-## Tab Help dan tutorial
+## Tab Help dan tutorial {#help-tab-and-tutorials}
 
 Tab **Help** termasuk tutorial dalam aplikasi, panduan amalan terbaik, dan maklumat rujukan.
 
@@ -418,7 +418,7 @@ Topik yang dibincangkan:
 
 ---
 
-## Penyelesaian masalah
+## Penyelesaian masalah {#troubleshooting}
 
 ### Hasil pengiraan salah atau tidak masuk akal
 

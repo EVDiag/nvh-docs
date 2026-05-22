@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Rozwiązywanie problemów</a></li>
 </ol>
 <hr />
-<h2 id="jak-to-dziaa">Jak to działa</h2>
+<h2 id="how-it-works">Jak to działa</h2>
 <p>Gdy źródło hałasu emituje dźwięk lub drgania, fala przemieszcza się przez materiał z określoną prędkością. Jeśli umieścisz dwa lub więcej akcelerometrów na materiale i zmierzysz, kiedy fala dociera do każdego z nich, różnica czasu wskaże, gdzie znajduje się źródło.</p>
 <p>NVH Source Locator pobiera:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 czujniki</strong> → położenie w przestrzeni 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="przed-rozpoczeciem">Przed rozpoczęciem</h2>
+<h2 id="before-you-start">Przed rozpoczęciem</h2>
 <p>Będziesz potrzebować:</p>
 <ul>
 <li><strong>Oscyloskopu lub systemu pomiarowego</strong>, który może pokazać różnicę czasu między kanałami akcelerometru w mikrosekundach (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Ekran główny z kartą 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="gowne-karty">Główne karty</h2>
+<h2 id="the-main-tabs">Główne karty</h2>
 <p>Aplikacja ma karty u góry:</p>
 <p><img alt="Pasek kart" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Ustawienia są dostępne przez ikonę koła zębatego ⚙ w prawym górnym rogu (nie jest to karta).</p>
 <hr />
-<h2 id="tryb-2-sensor">Tryb 2-Sensor</h2>
+<h2 id="2-sensor-mode">Tryb 2-Sensor</h2>
 <p>Najprostszy pomiar: lokalizacja źródła wzdłuż linii między dwoma akcelerometrami.</p>
 <p><img alt="Karta 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="krok-1-zastosuj-materia">Krok 1: Zastosuj materiał</h3>
@@ -197,7 +197,7 @@
 <h3 id="krok-5-opcjonalny-adnotacja-zdjecia">Krok 5 (opcjonalny): Adnotacja zdjęcia</h3>
 <p>Dotknij <strong>📷 Adnotuj zdjęcie</strong>, aby zrobić zdjęcie swojej konfiguracji. Aplikacja nakłada znaczniki dla czujników A, B i źródła. Przydatne dla raportów.</p>
 <hr />
-<h2 id="tryb-3-sensor">Tryb 3-Sensor</h2>
+<h2 id="3-sensor-mode">Tryb 3-Sensor</h2>
 <p>Lokalizuje źródło na płaszczyźnie 2D przy użyciu trzech czujników ułożonych w trójkąt.</p>
 <p><img alt="Karta 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="konfiguracja">Konfiguracja</h3>
@@ -212,7 +212,7 @@
 <p>Aplikacja pokazuje położenie źródła jako współrzędne X, Y względem czujnika A (czujnik A w początku, czujnik B na osi X). Wizualizacja pokazuje wszystkie trzy czujniki i położenie źródła.</p>
 <p><img alt="Wynik trójkąta" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="tryby-pro">Tryby Pro+</h2>
+<h2 id="pro-modes">Tryby Pro+</h2>
 <p>Kilka zaawansowanych kart oferuje nadokreślone solvery i wyższą wymiarowość:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Ta sama konfiguracja trójkąta co 3-Sensor, ale skalibruj ORAZ zmierz wszystkie trzy pary (A–B, A–C, B–C). Solver używa wszystkich 3 TDOA w dopasowaniu najmniejszych kwadratów — bardziej odporny na szum pomiarowy i materiały anizotropowe. Reszty dla każdej pary są raportowane, dzięki czemu możesz zauważyć niespójne pomiary.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Jak 3D, ale obsługuje do <strong>6 czujników</strong> (A do F) z nadokreślonym LSQ. Maksymalna precyzja dla złożonych geometrii 3D.</p>
 <hr />
-<h2 id="karta-materials">Karta Materials</h2>
+<h2 id="the-materials-tab">Karta Materials</h2>
 <p>Biblioteka popularnych materiałów inżynieryjnych ze znaną prędkością dźwięku w 20 °C.</p>
 <p><img alt="Karta Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="lista-materiaow">Lista materiałów</h3>
@@ -261,7 +261,7 @@
 <h3 id="wyszukiwanie">Wyszukiwanie</h3>
 <p>Użyj paska wyszukiwania u góry, aby filtrować materiały według nazwy. Wyszukiwanie pasuje zarówno do angielskich nazw kanonicznych, jak i przetłumaczonych nazw wyświetlanych.</p>
 <hr />
-<h2 id="kompensacja-temperatury">Kompensacja temperatury</h2>
+<h2 id="temperature-compensation">Kompensacja temperatury</h2>
 <p>Prędkość dźwięku w materiałach zmienia się wraz z temperaturą. W testach NVH motoryzacyjnych to ma znaczenie: komora silnika w 80 °C, zimna kabina w -10 °C lub obszar kolektora wydechowego w 200 °C zachowują się inaczej niż w laboratoryjnych warunkach pokojowych.</p>
 <h3 id="ustawianie-temperatury">Ustawianie temperatury</h3>
 <p>Otwórz Ustawienia (ikona ⚙) → Temperatura odniesienia. Wprowadź temperaturę środowiska testowego w °C (zakres -40 do +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materiay-bez-kompensacji">Materiały bez kompensacji</h3>
 <p>Większość materiałów niemetalicznych nie ma wiarygodnych opublikowanych współczynników temperatury. Aplikacja pokazuje plakietkę <strong>„ref only"</strong> dla nich — ich listowana prędkość jest używana niezależnie od ustawienia temperatury. Jeśli potrzebujesz dokładnych pomiarów w temperaturach innych niż pokojowe dla tych materiałów, przeprowadź kalibrację in-situ i zapisz wynik jako materiał niestandardowy.</p>
 <hr />
-<h2 id="adnotacja-zdjec">Adnotacja zdjęć</h2>
+<h2 id="photo-annotation">Adnotacja zdjęć</h2>
 <p>Po udanym obliczeniu dotknij przycisku <strong>📷 Adnotuj zdjęcie</strong>, aby nałożyć znaczniki czujników i źródła na zdjęcie swojej konfiguracji.</p>
 <p><img alt="Adnotacja zdjęcia" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="przebieg">Przebieg</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Adnotowane zdjęcie jest automatycznie dołączane do raportów PDF.</p>
 <hr />
-<h2 id="raporty">Raporty</h2>
+<h2 id="reports">Raporty</h2>
 <p>Dotknij przycisku <strong>Drukuj wynik</strong> na dowolnym ekranie wyników, aby wygenerować sformatowany raport.</p>
 <p><img alt="Raport PDF" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="zawartosc-raportu">Zawartość raportu</h3>
@@ -318,7 +318,7 @@
 <h3 id="dostosowywanie-nagowka">Dostosowywanie nagłówka</h3>
 <p>Ustawienia → Nagłówek raportu. Wprowadź nazwę firmy, nazwę laboratorium, informacje o projekcie lub cokolwiek, co chcesz mieć na górze każdego raportu.</p>
 <hr />
-<h2 id="kopia-zapasowa-i-przywracanie">Kopia zapasowa i przywracanie</h2>
+<h2 id="backup-and-restore">Kopia zapasowa i przywracanie</h2>
 <p>Zapisz wszystkie swoje materiały niestandardowe, ulubione, ustawienia i historię do jednego pliku. Przenoszenie między urządzeniami.</p>
 <h3 id="kopia-zapasowa">Kopia zapasowa</h3>
 <p>Ustawienia → <strong>Kopia zapasowa</strong> → dotknij „Zapisz plik kopii zapasowej". Aplikacja generuje plik JSON i otwiera arkusz udostępniania telefonu. Zapisz go na dysku w chmurze (Google Drive, iCloud, OneDrive), wyślij sobie e-mailem lub przenieś w dowolny sposób.</p>
@@ -326,7 +326,7 @@
 <p>Ustawienia → <strong>Przywróć</strong> → wybierz plik kopii zapasowej z pamięci telefonu. Aplikacja importuje materiały niestandardowe, ulubione, historię i ustawienia.</p>
 <p>⚠️ <strong>Przywracanie zastępuje twoje obecne dane.</strong> Jeśli masz ważne pomiary na obecnym urządzeniu, najpierw zrób ich kopię zapasową przed przywracaniem z innej kopii zapasowej.</p>
 <hr />
-<h2 id="ustawienia">Ustawienia</h2>
+<h2 id="settings">Ustawienia</h2>
 <p>Dostęp przez ikonę koła zębatego ⚙ w prawym górnym rogu. Ustawienia są modalne, nie są kartą.</p>
 <p><img alt="Ustawienia" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="funkcje-pro">Funkcje Pro</h2>
+<h2 id="pro-features">Funkcje Pro</h2>
 <p>NVH Source Locator używa <strong>modelu freemium z blokadą funkcji</strong>:</p>
 <ul>
 <li><strong>Darmowe</strong>: Karta 2-Sensor jest w pełni funkcjonalna bez ograniczeń</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: przycisk „Czy masz kod promocyjny Google Play?" w paywall otwiera proces realizacji Google Play z twoim wstępnie wypełnionym kodem.</p>
 <p><strong>iOS</strong>: Polityka App Store 3.1.1 wymaga realizacji przez oficjalny proces „Zrealizuj kod" Apple. Przycisk Google Play jest ukryty na iOS. Zamiast tego poszukaj „Zrealizuj kod App Store" w Ustawieniach.</p>
 <hr />
-<h2 id="karta-help-i-samouczki">Karta Help i samouczki</h2>
+<h2 id="help-tab-and-tutorials">Karta Help i samouczki</h2>
 <p>Karta <strong>Help</strong> zawiera samouczki w aplikacji, przewodniki najlepszych praktyk i informacje referencyjne.</p>
 <p><img alt="Karta Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Omawiane tematy:
@@ -427,7 +427,7 @@
 - Wskazówki dotyczące triangulacji i umiejscowienia 3D
 - Prowadzenie kabli i jakość sygnału</p>
 <hr />
-<h2 id="rozwiazywanie-problemow">Rozwiązywanie problemów</h2>
+<h2 id="troubleshooting">Rozwiązywanie problemów</h2>
 <h3 id="wynik-obliczen-jest-nieprawidowy-lub-nie-ma-sensu">Wynik obliczeń jest nieprawidłowy lub nie ma sensu</h3>
 <ol>
 <li>Sprawdź kalibrację. Automatycznie wypełnione <code>tCal</code> zakłada opublikowaną prędkość materiału — rzeczywiste materiały się różnią. Najbardziej dokładna kalibracja to in-situ: dotknij znanego miejsca i pozwól aplikacji wyprowadzić rzeczywistą prędkość.</li>

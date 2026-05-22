@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Hibaelhárítás</a></li>
 </ol>
 <hr />
-<h2 id="hogyan-mukodik">Hogyan működik</h2>
+<h2 id="how-it-works">Hogyan működik</h2>
 <p>Amikor egy zajforrás hangot vagy rezgést bocsát ki, a hullám ismert sebességgel terjed az anyagban. Ha két vagy több gyorsulásmérőt helyez az anyagra, és megméri, mikor érkezik a hullám mindegyikhez, az időkülönbség megmondja, hol van a forrás.</p>
 <p>NVH Source Locator átveszi:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 érzékelő</strong> → pozíció 3D térben (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="mielott-elkezdene">Mielőtt elkezdené</h2>
+<h2 id="before-you-start">Mielőtt elkezdené</h2>
 <p>Szükséges lesz:</p>
 <ul>
 <li><strong>Egy oszcilloszkóp vagy mérőrendszer</strong>, amely meg tudja mutatni az időkülönbséget gyorsulásmérő csatornák között mikroszekundumban (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Kezdőképernyő 2-Sensor lappal" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="a-fobb-lapok">A főbb lapok</h2>
+<h2 id="the-main-tabs">A főbb lapok</h2>
 <p>Az alkalmazás lapjai a tetején vannak:</p>
 <p><img alt="Lapsáv" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>A beállítások a ⚙ fogaskerék ikonon keresztül érhetők el a jobb felső sarokban (nem egy lap).</p>
 <hr />
-<h2 id="2-sensor-mod">2-Sensor mód</h2>
+<h2 id="2-sensor-mode">2-Sensor mód</h2>
 <p>A legegyszerűbb mérés: forráslokalizálás egy vonal mentén két gyorsulásmérő között.</p>
 <p><img alt="2-Sensor lap" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="1-lepes-anyag-alkalmazasa">1. lépés: Anyag alkalmazása</h3>
@@ -197,7 +197,7 @@
 <h3 id="5-lepes-opcionalis-foto-annotalasa">5. lépés (opcionális): Fotó annotálása</h3>
 <p>Koppintson a <strong>📷 Fotó annotálása</strong> gombra, hogy fényképet készítsen az elrendezéséről. Az alkalmazás A, B érzékelő és a forrás jelölőket helyez rá. Hasznos jelentésekhez.</p>
 <hr />
-<h2 id="3-sensor-mod">3-Sensor mód</h2>
+<h2 id="3-sensor-mode">3-Sensor mód</h2>
 <p>Egy forrást lokalizál egy 2D síkon három, háromszögbe elrendezett érzékelővel.</p>
 <p><img alt="3-Sensor lap" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="beallitas">Beállítás</h3>
@@ -212,7 +212,7 @@
 <p>Az alkalmazás a forrás pozícióját X, Y koordinátákként mutatja az A érzékelőhöz viszonyítva (A érzékelő az origóban, B érzékelő az X tengelyen). A vizualizáció mutatja mindhárom érzékelőt és a forrás helyét.</p>
 <p><img alt="Háromszög eredmény" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modok">Pro+ módok</h2>
+<h2 id="pro-modes">Pro+ módok</h2>
 <p>Több haladó lap kínál túldeterminált megoldókat és magasabb dimenzionalitást:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Ugyanaz a háromszög-beállítás, mint a 3-Sensor, de kalibrálja ÉS mérje meg mind a három párat (A–B, A–C, B–C). A megoldó mindhárom TDOA-t használja egy legkisebb négyzetes illeszkedésben — robusztusabb mérési zajra és anizotrop anyagokra. Páronkénti maradékok jelennek meg, így észreveheti a következetlen méréseket.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Mint a 3D, de akár <strong>6 érzékelőig</strong> támogat (A-tól F-ig) túldeterminált LSQ-val. Maximális pontosság komplex 3D geometriákhoz.</p>
 <hr />
-<h2 id="a-materials-lap">A Materials lap</h2>
+<h2 id="the-materials-tab">A Materials lap</h2>
 <p>Gyakori mérnöki anyagok könyvtára 20 °C-on ismert hangsebességgel.</p>
 <p><img alt="Materials lap" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="anyaglista">Anyaglista</h3>
@@ -261,7 +261,7 @@
 <h3 id="kereses">Keresés</h3>
 <p>Használja a tetején lévő keresősávot az anyagok név szerinti szűréséhez. A keresés megfelel mind az angol kanonikus neveknek, mind a fordított megjelenítési neveknek.</p>
 <hr />
-<h2 id="homerseklet-kompenzacio">Hőmérséklet-kompenzáció</h2>
+<h2 id="temperature-compensation">Hőmérséklet-kompenzáció</h2>
 <p>Az anyagokban a hangsebesség változik a hőmérséklettel. Az autóipari NVH tesztelésben ez számít: egy 80 °C-os motorháztető, egy -10 °C-os hidegen áztatott kabin vagy egy 200 °C-os kipufogóelosztó terület mind másképp viselkedik, mint a szobahőmérsékleti laboratóriumi körülmények.</p>
 <h3 id="homerseklet-beallitasa">Hőmérséklet beállítása</h3>
 <p>Nyissa meg a Beállítások (⚙ ikon) → Referencia hőmérséklet menüpontot. Adja meg a teszt környezete hőmérsékletét °C-ban (tartomány -40-től +200-ig).</p>
@@ -281,7 +281,7 @@
 <h3 id="anyagok-kompenzacio-nelkul">Anyagok kompenzáció nélkül</h3>
 <p>A legtöbb nem-fém anyag nem rendelkezik megbízható publikált hőmérsékleti együtthatókkal. Az alkalmazás ezekhez <strong>„ref only"</strong> jelvényt mutat — a felsorolt sebességet a hőmérsékleti beállítástól függetlenül használja. Ha pontos méréseket kell elvégeznie nem szobahőmérsékleten ezekhez az anyagokhoz, végezzen in-situ kalibrációt és mentse az eredményt egyéni anyagként.</p>
 <hr />
-<h2 id="fotoannotacio">Fotóannotáció</h2>
+<h2 id="photo-annotation">Fotóannotáció</h2>
 <p>Sikeres számítás után koppintson a <strong>📷 Fotó annotálása</strong> gombra, hogy érzékelő- és forrásjelölőket helyezzen az elrendezésének fényképére.</p>
 <p><img alt="Fotóannotáció" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="folyamat">Folyamat</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Az annotált fénykép automatikusan beépül a PDF jelentésekbe.</p>
 <hr />
-<h2 id="jelentesek">Jelentések</h2>
+<h2 id="reports">Jelentések</h2>
 <p>Koppintson a <strong>Eredmény nyomtatása</strong> gombra bármelyik eredményképernyőn formázott jelentés generálásához.</p>
 <p><img alt="PDF jelentés" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="jelentes-tartalma">Jelentés tartalma</h3>
@@ -318,7 +318,7 @@
 <h3 id="fejlec-testreszabasa">Fejléc testreszabása</h3>
 <p>Beállítások → Jelentés fejléce. Adja meg cégének nevét, laborja nevét, projekt-információkat vagy bármi mást, amit minden jelentés tetejére szeretne.</p>
 <hr />
-<h2 id="biztonsagi-mentes-es-visszaallitas">Biztonsági mentés és visszaállítás</h2>
+<h2 id="backup-and-restore">Biztonsági mentés és visszaállítás</h2>
 <p>Mentse el az összes egyéni anyagát, kedvenceit, beállításait és előzményeit egyetlen fájlba. Eszközök közötti átvitel.</p>
 <h3 id="biztonsagi-mentes">Biztonsági mentés</h3>
 <p>Beállítások → <strong>Biztonsági mentés</strong> → koppintson a „Mentési fájl mentése" gombra. Az alkalmazás generál egy JSON fájlt és megnyitja a telefonja megosztási panelét. Mentse a felhőmeghajtójára (Google Drive, iCloud, OneDrive), küldje el magának e-mailben vagy adja át bármilyen módon.</p>
@@ -326,7 +326,7 @@
 <p>Beállítások → <strong>Visszaállítás</strong> → válassza ki a mentési fájlt a telefonja tárolójából. Az alkalmazás importálja az egyéni anyagokat, kedvenceket, előzményeket és beállításokat.</p>
 <p>⚠️ <strong>A visszaállítás felülírja a jelenlegi adatait.</strong> Ha fontos mérései vannak a jelenlegi eszközön, először mentse el azokat, mielőtt visszaállítaná egy másik biztonsági mentésből.</p>
 <hr />
-<h2 id="beallitasok">Beállítások</h2>
+<h2 id="settings">Beállítások</h2>
 <p>Hozzáférés a ⚙ fogaskerék ikonon keresztül a jobb felső sarokban. A Beállítások egy modális, nem egy lap.</p>
 <p><img alt="Beállítások" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-funkciok">Pro funkciók</h2>
+<h2 id="pro-features">Pro funkciók</h2>
 <p>NVH Source Locator egy <strong>funkció-zárolt freemium modellt</strong> használ:</p>
 <ul>
 <li><strong>Ingyenes</strong>: A 2-Sensor lap teljesen funkcionális korlátozások nélkül</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: a paywallban lévő „Van Google Play promóciós kódja?" gomb megnyitja a Google Play beváltási folyamatot az előre kitöltött kódjával.</p>
 <p><strong>iOS</strong>: Az App Store irányelv 3.1.1 megköveteli az Apple hivatalos „Kód beváltása" folyamatán keresztüli beváltást. A Google Play gomb el van rejtve iOS-en. Ehelyett keresse az „App Store kód beváltása" lehetőséget a Beállításokban.</p>
 <hr />
-<h2 id="help-lap-es-oktatoanyagok">Help lap és oktatóanyagok</h2>
+<h2 id="help-tab-and-tutorials">Help lap és oktatóanyagok</h2>
 <p>A <strong>Help</strong> lap tartalmaz alkalmazáson belüli oktatóanyagokat, legjobb gyakorlati útmutatókat és referenciainformációkat.</p>
 <p><img alt="Help lap" src="../screenshots/10-help-tab.png" /></p>
 <p>Lefedett témák:
@@ -427,7 +427,7 @@
 - Tippek trianguláláshoz és 3D elhelyezésekhez
 - Kábelvezetés és jelminőség</p>
 <hr />
-<h2 id="hibaelharitas">Hibaelhárítás</h2>
+<h2 id="troubleshooting">Hibaelhárítás</h2>
 <h3 id="a-szamitas-eredmenye-rossz-vagy-nincs-ertelme">A számítás eredménye rossz vagy nincs értelme</h3>
 <ol>
 <li>Ellenőrizze a kalibrációt. Az automatikusan kitöltött <code>tCal</code> a publikált anyag sebességét feltételezi — a valós anyagok különbözőek. A legpontosabb kalibrálás az in-situ: érintsen meg egy ismert helyet, és hagyja, hogy az alkalmazás levezesse a tényleges sebességet.</li>

@@ -35,7 +35,7 @@ Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in 
 
 ---
 
-## Funktionsweise
+## Funktionsweise {#how-it-works}
 
 Wenn eine Geräuschquelle einen Schall oder eine Vibration erzeugt, breitet sich die Welle mit einer bekannten Geschwindigkeit durch das Material aus. Wenn Sie zwei oder mehr Beschleunigungssensoren auf dem Material platzieren und messen, wann die Welle an jedem ankommt, sagt Ihnen die Zeitdifferenz, wo sich die Quelle befindet.
 
@@ -54,7 +54,7 @@ Je mehr Sensoren Sie verwenden, desto genauer können Sie die Quelle lokalisiere
 
 ---
 
-## Bevor Sie beginnen
+## Bevor Sie beginnen {#before-you-start}
 
 Sie benötigen:
 
@@ -67,7 +67,7 @@ Sie benötigen:
 
 ---
 
-## Die Haupt-Registerkarten
+## Die Haupt-Registerkarten {#the-main-tabs}
 
 Die App hat Registerkarten oben:
 
@@ -91,7 +91,7 @@ Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke 
 
 ---
 
-## 2-Sensor-Modus
+## 2-Sensor-Modus {#2-sensor-mode}
 
 Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.
 
@@ -133,7 +133,7 @@ Tippen Sie auf **📷 Foto annotieren**, um ein Foto Ihres Aufbaus aufzunehmen. 
 
 ---
 
-## 3-Sensor-Modus
+## 3-Sensor-Modus {#3-sensor-mode}
 
 Lokalisiert eine Quelle auf einer 2D-Ebene mit drei in einem Dreieck angeordneten Sensoren.
 
@@ -160,7 +160,7 @@ Die App zeigt die Quellposition als X-, Y-Koordinaten relativ zum Sensor A (Sens
 
 ---
 
-## Pro+-Modi
+## Pro+-Modi {#pro-modes}
 
 Mehrere fortgeschrittene Registerkarten bieten überbestimmte Solver und höhere Dimensionalität:
 
@@ -190,7 +190,7 @@ Wie 3D, aber unterstützt bis zu **6 Sensoren** (A bis F) mit überbestimmtem LS
 
 ---
 
-## Die Materials-Registerkarte
+## Die Materials-Registerkarte {#the-materials-tab}
 
 Bibliothek gängiger technischer Materialien mit bekannter Schallgeschwindigkeit bei 20 °C.
 
@@ -239,7 +239,7 @@ Verwenden Sie die Suchleiste oben, um Materialien nach Namen zu filtern. Die Suc
 
 ---
 
-## Temperaturkompensation
+## Temperaturkompensation {#temperature-compensation}
 
 Die Schallgeschwindigkeit in Materialien ändert sich mit der Temperatur. Im automobilen NVH-Test ist dies wichtig: ein Motorraum bei 80 °C, eine kalt eingelagerte Kabine bei -10 °C oder ein Auspuffkrümmerbereich bei 200 °C verhalten sich alle anders als bei Raumtemperatur-Laborbedingungen.
 
@@ -270,7 +270,7 @@ Die meisten nicht-metallischen Materialien haben keine zuverlässigen veröffent
 
 ---
 
-## Fotoannotation
+## Fotoannotation {#photo-annotation}
 
 Nach einer erfolgreichen Berechnung tippen Sie auf die Schaltfläche **📷 Foto annotieren**, um Sensor- und Quellenmarkierungen über ein Foto Ihres Aufbaus zu legen.
 
@@ -289,7 +289,7 @@ Das annotierte Foto wird automatisch in PDF-Berichte aufgenommen.
 
 ---
 
-## Berichte
+## Berichte {#reports}
 
 Tippen Sie auf die Schaltfläche **Ergebnis drucken** auf einem beliebigen Ergebnisbildschirm, um einen formatierten Bericht zu erstellen.
 
@@ -318,7 +318,7 @@ Einstellungen → Berichtskopfzeile. Geben Sie Ihren Firmennamen, Labornamen, Pr
 
 ---
 
-## Backup und Wiederherstellung
+## Backup und Wiederherstellung {#backup-and-restore}
 
 Speichern Sie alle Ihre benutzerdefinierten Materialien, Favoriten, Einstellungen und den Verlauf in einer einzigen Datei. Übertragung zwischen Geräten.
 
@@ -334,7 +334,7 @@ Einstellungen → **Wiederherstellen** → wählen Sie die Backup-Datei aus dem 
 
 ---
 
-## Einstellungen
+## Einstellungen {#settings}
 
 Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellungen sind ein Modal, keine Registerkarte.
 
@@ -354,7 +354,7 @@ Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellunge
 
 ---
 
-## Pro-Funktionen
+## Pro-Funktionen {#pro-features}
 
 NVH Source Locator verwendet ein **Feature-gesperrtes Freemium-Modell**:
 
@@ -411,7 +411,7 @@ Wenn Sie einen Promo-Code im Google Play Store oder App Store einlösen, währen
 
 ---
 
-## Help-Registerkarte und Tutorials
+## Help-Registerkarte und Tutorials {#help-tab-and-tutorials}
 
 Die **Help**-Registerkarte enthält In-App-Tutorials, Best-Practice-Anleitungen und Referenzinformationen.
 
@@ -427,7 +427,7 @@ Behandelte Themen:
 
 ---
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 ### Berechnungsergebnis ist falsch oder ergibt keinen Sinn
 
@@ -514,7 +514,7 @@ Esta guía cubre todas las funciones. Para un repaso rápido, consulte **Referen
 
 ---
 
-## Cómo funciona
+## Cómo funciona {#how-it-works}
 
 Cuando una fuente de ruido emite un sonido o vibración, la onda viaja a través de un material a una velocidad conocida. Si coloca dos o más acelerómetros en el material y mide cuándo llega la onda a cada uno, la diferencia de tiempo le indica dónde está la fuente.
 
@@ -533,7 +533,7 @@ Cuantos más sensores utilice, con mayor precisión podrá localizar la fuente:
 
 ---
 
-## Antes de empezar
+## Antes de empezar {#before-you-start}
 
 Necesitará:
 
@@ -546,7 +546,7 @@ Necesitará:
 
 ---
 
-## Las pestañas principales
+## Las pestañas principales {#the-main-tabs}
 
 La aplicación tiene pestañas en la parte superior:
 
@@ -570,7 +570,7 @@ Los ajustes se acceden mediante el icono de engranaje ⚙ en la esquina superior
 
 ---
 
-## Modo 2-Sensor
+## Modo 2-Sensor {#2-sensor-mode}
 
 La medición más simple: localización de fuente a lo largo de una línea entre dos acelerómetros.
 
@@ -612,7 +612,7 @@ Toque **📷 Anotar foto** para tomar una foto de su configuración. La aplicaci
 
 ---
 
-## Modo 3-Sensor
+## Modo 3-Sensor {#3-sensor-mode}
 
 Localiza una fuente en un plano 2D usando tres sensores dispuestos en un triángulo.
 
@@ -639,7 +639,7 @@ La aplicación muestra la posición de la fuente como coordenadas X, Y relativas
 
 ---
 
-## Modos Pro+
+## Modos Pro+ {#pro-modes}
 
 Varias pestañas avanzadas ofrecen solucionadores sobredeterminados y mayor dimensionalidad:
 
@@ -669,7 +669,7 @@ Como 3D pero admite hasta **6 sensores** (A a F) con LSQ sobredeterminado. Máxi
 
 ---
 
-## La pestaña Materials
+## La pestaña Materials {#the-materials-tab}
 
 Biblioteca de materiales de ingeniería comunes con velocidad del sonido conocida a 20 °C.
 
@@ -718,7 +718,7 @@ Use la barra de búsqueda en la parte superior para filtrar materiales por nombr
 
 ---
 
-## Compensación de temperatura
+## Compensación de temperatura {#temperature-compensation}
 
 La velocidad del sonido en los materiales cambia con la temperatura. En las pruebas NVH automotrices, esto es importante: un compartimento del motor a 80 °C, una cabina enfriada a -10 °C o un área del colector de escape a 200 °C se comportan de manera diferente a las condiciones de laboratorio a temperatura ambiente.
 
@@ -749,7 +749,7 @@ La mayoría de los materiales no metálicos no tienen coeficientes de temperatur
 
 ---
 
-## Anotación de fotos
+## Anotación de fotos {#photo-annotation}
 
 Después de un cálculo exitoso, toque el botón **📷 Anotar foto** para superponer marcadores de sensor y fuente en una foto de su configuración.
 
@@ -768,7 +768,7 @@ La foto anotada se incluye automáticamente en los informes PDF.
 
 ---
 
-## Informes
+## Informes {#reports}
 
 Toque el botón **Imprimir resultado** en cualquier pantalla de resultados para generar un informe formateado.
 
@@ -797,7 +797,7 @@ Ajustes → Encabezado del informe. Introduzca el nombre de su empresa, nombre d
 
 ---
 
-## Backup y restauración
+## Backup y restauración {#backup-and-restore}
 
 Guarde todos sus materiales personalizados, favoritos, configuraciones e historial en un solo archivo. Transferir entre dispositivos.
 
@@ -813,7 +813,7 @@ Ajustes → **Restaurar** → seleccione el archivo de backup del almacenamiento
 
 ---
 
-## Ajustes
+## Ajustes {#settings}
 
 Acceso a través del icono de engranaje ⚙ en la esquina superior derecha. Ajustes es un modal, no una pestaña.
 
@@ -833,7 +833,7 @@ Acceso a través del icono de engranaje ⚙ en la esquina superior derecha. Ajus
 
 ---
 
-## Funciones Pro
+## Funciones Pro {#pro-features}
 
 NVH Source Locator utiliza un **modelo freemium con bloqueo por funciones**:
 
@@ -890,7 +890,7 @@ Si canjea un código promocional en Google Play Store o App Store mientras NVH S
 
 ---
 
-## Pestaña Help y tutoriales
+## Pestaña Help y tutoriales {#help-tab-and-tutorials}
 
 La pestaña **Help** incluye tutoriales dentro de la aplicación, guías de mejores prácticas e información de referencia.
 
@@ -906,7 +906,7 @@ Temas cubiertos:
 
 ---
 
-## Resolución de problemas
+## Resolución de problemas {#troubleshooting}
 
 ### El resultado del cálculo es incorrecto o no tiene sentido
 
@@ -993,7 +993,7 @@ Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez **
 
 ---
 
-## Comment ça fonctionne
+## Comment ça fonctionne {#how-it-works}
 
 Lorsqu'une source de bruit émet un son ou une vibration, l'onde se propage à travers le matériau à une vitesse connue. Si vous placez deux ou plusieurs accéléromètres sur le matériau et mesurez le moment où l'onde arrive à chacun, la différence de temps vous indique où se trouve la source.
 
@@ -1012,7 +1012,7 @@ Plus vous utilisez de capteurs, plus précisément vous pouvez localiser la sour
 
 ---
 
-## Avant de commencer
+## Avant de commencer {#before-you-start}
 
 Vous aurez besoin de :
 
@@ -1025,7 +1025,7 @@ Vous aurez besoin de :
 
 ---
 
-## Les onglets principaux
+## Les onglets principaux {#the-main-tabs}
 
 L'application a des onglets en haut :
 
@@ -1049,7 +1049,7 @@ Les paramètres sont accessibles via l'icône d'engrenage ⚙ dans le coin supé
 
 ---
 
-## Mode 2-Sensor
+## Mode 2-Sensor {#2-sensor-mode}
 
 La mesure la plus simple : localisation de source le long d'une ligne entre deux accéléromètres.
 
@@ -1091,7 +1091,7 @@ Touchez **📷 Annoter une photo** pour prendre une photo de votre configuration
 
 ---
 
-## Mode 3-Sensor
+## Mode 3-Sensor {#3-sensor-mode}
 
 Localise une source sur un plan 2D à l'aide de trois capteurs disposés en triangle.
 
@@ -1118,7 +1118,7 @@ L'application affiche la position de la source comme coordonnées X, Y relatives
 
 ---
 
-## Modes Pro+
+## Modes Pro+ {#pro-modes}
 
 Plusieurs onglets avancés offrent des solveurs surdéterminés et une dimensionnalité supérieure :
 
@@ -1148,7 +1148,7 @@ Comme 3D mais prend en charge jusqu'à **6 capteurs** (A à F) avec LSQ surdéte
 
 ---
 
-## L'onglet Materials
+## L'onglet Materials {#the-materials-tab}
 
 Bibliothèque de matériaux d'ingénierie courants avec vitesse du son connue à 20 °C.
 
@@ -1197,7 +1197,7 @@ Utilisez la barre de recherche en haut pour filtrer les matériaux par nom. La r
 
 ---
 
-## Compensation de température
+## Compensation de température {#temperature-compensation}
 
 La vitesse du son dans les matériaux change avec la température. Dans les tests NVH automobiles, cela compte : un compartiment moteur à 80 °C, une cabine refroidie à -10 °C ou une zone du collecteur d'échappement à 200 °C se comportent tous différemment des conditions de laboratoire à température ambiante.
 
@@ -1228,7 +1228,7 @@ La plupart des matériaux non métalliques n'ont pas de coefficients de tempéra
 
 ---
 
-## Annotation de photo
+## Annotation de photo {#photo-annotation}
 
 Après un calcul réussi, touchez le bouton **📷 Annoter une photo** pour superposer des marqueurs de capteur et de source sur une photo de votre configuration.
 
@@ -1247,7 +1247,7 @@ La photo annotée est incluse automatiquement dans les rapports PDF.
 
 ---
 
-## Rapports
+## Rapports {#reports}
 
 Touchez le bouton **Imprimer le résultat** sur n'importe quel écran de résultats pour générer un rapport formaté.
 
@@ -1276,7 +1276,7 @@ Paramètres → En-tête de rapport. Saisissez votre nom d'entreprise, nom de la
 
 ---
 
-## Sauvegarde et restauration
+## Sauvegarde et restauration {#backup-and-restore}
 
 Enregistrez tous vos matériaux personnalisés, favoris, paramètres et historique dans un seul fichier. Transférer entre appareils.
 
@@ -1292,7 +1292,7 @@ Paramètres → **Restauration** → choisissez le fichier de sauvegarde dans le
 
 ---
 
-## Paramètres
+## Paramètres {#settings}
 
 Accès via l'icône d'engrenage ⚙ dans le coin supérieur droit. Les paramètres sont une fenêtre modale, pas un onglet.
 
@@ -1312,7 +1312,7 @@ Accès via l'icône d'engrenage ⚙ dans le coin supérieur droit. Les paramètr
 
 ---
 
-## Fonctionnalités Pro
+## Fonctionnalités Pro {#pro-features}
 
 NVH Source Locator utilise un **modèle freemium avec verrouillage par fonctionnalité** :
 
@@ -1369,7 +1369,7 @@ Si vous échangez un code promotionnel dans le Google Play Store ou l'App Store 
 
 ---
 
-## Onglet Help et tutoriels
+## Onglet Help et tutoriels {#help-tab-and-tutorials}
 
 L'onglet **Help** inclut des tutoriels intégrés, des guides de meilleures pratiques et des informations de référence.
 
@@ -1385,7 +1385,7 @@ Sujets couverts :
 
 ---
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 ### Le résultat du calcul est faux ou n'a aucun sens
 
@@ -1472,7 +1472,7 @@ Questa guida copre tutte le funzionalità. Per un ripasso rapido, vedere **Rifer
 
 ---
 
-## Come funziona
+## Come funziona {#how-it-works}
 
 Quando una sorgente di rumore emette un suono o una vibrazione, l'onda viaggia attraverso un materiale a velocità nota. Se posizioni due o più accelerometri sul materiale e misuri quando l'onda arriva a ciascuno, la differenza di tempo ti dice dove si trova la sorgente.
 
@@ -1491,7 +1491,7 @@ Più sensori usi, più accuratamente puoi localizzare la sorgente:
 
 ---
 
-## Prima di iniziare
+## Prima di iniziare {#before-you-start}
 
 Avrai bisogno di:
 
@@ -1504,7 +1504,7 @@ Avrai bisogno di:
 
 ---
 
-## Le schede principali
+## Le schede principali {#the-main-tabs}
 
 L'app ha schede in alto:
 
@@ -1528,7 +1528,7 @@ Le Impostazioni sono accessibili tramite l'icona ⚙ dell'ingranaggio in alto a 
 
 ---
 
-## Modalità 2-Sensor
+## Modalità 2-Sensor {#2-sensor-mode}
 
 La misurazione più semplice: localizzazione sorgente lungo una linea tra due accelerometri.
 
@@ -1570,7 +1570,7 @@ Tocca **📷 Annota foto** per scattare una foto della tua configurazione. L'app
 
 ---
 
-## Modalità 3-Sensor
+## Modalità 3-Sensor {#3-sensor-mode}
 
 Localizza una sorgente su un piano 2D utilizzando tre sensori disposti in un triangolo.
 
@@ -1597,7 +1597,7 @@ L'app mostra la posizione della sorgente come coordinate X, Y relative al sensor
 
 ---
 
-## Modalità Pro+
+## Modalità Pro+ {#pro-modes}
 
 Diverse schede avanzate offrono risolutori sovradeterminati e dimensionalità superiore:
 
@@ -1627,7 +1627,7 @@ Come 3D ma supporta fino a **6 sensori** (da A a F) con LSQ sovradeterminato. Ma
 
 ---
 
-## La scheda Materials
+## La scheda Materials {#the-materials-tab}
 
 Libreria di materiali ingegneristici comuni con velocità del suono nota a 20 °C.
 
@@ -1676,7 +1676,7 @@ Usa la barra di ricerca in alto per filtrare i materiali per nome. La ricerca co
 
 ---
 
-## Compensazione della temperatura
+## Compensazione della temperatura {#temperature-compensation}
 
 La velocità del suono nei materiali cambia con la temperatura. Nei test NVH automobilistici questo è importante: un vano motore a 80 °C, un abitacolo raffreddato a -10 °C o un'area del collettore di scarico a 200 °C si comportano tutti diversamente dalle condizioni di laboratorio a temperatura ambiente.
 
@@ -1707,7 +1707,7 @@ La maggior parte dei materiali non metallici non ha coefficienti di temperatura 
 
 ---
 
-## Annotazione foto
+## Annotazione foto {#photo-annotation}
 
 Dopo un calcolo riuscito, tocca il pulsante **📷 Annota foto** per sovrapporre marker di sensore e sorgente su una foto della tua configurazione.
 
@@ -1726,7 +1726,7 @@ La foto annotata è inclusa automaticamente nei report PDF.
 
 ---
 
-## Report
+## Report {#reports}
 
 Tocca il pulsante **Stampa risultato** su qualsiasi schermata dei risultati per generare un report formattato.
 
@@ -1755,7 +1755,7 @@ Impostazioni → Intestazione report. Inserisci il nome della tua azienda, nome 
 
 ---
 
-## Backup e ripristino
+## Backup e ripristino {#backup-and-restore}
 
 Salva tutti i tuoi materiali personalizzati, preferiti, impostazioni e cronologia in un singolo file. Trasferisci tra dispositivi.
 
@@ -1771,7 +1771,7 @@ Impostazioni → **Ripristino** → seleziona il file di backup dall'archiviazio
 
 ---
 
-## Impostazioni
+## Impostazioni {#settings}
 
 Accesso tramite l'icona ⚙ dell'ingranaggio in alto a destra. Impostazioni è una finestra modale, non una scheda.
 
@@ -1791,7 +1791,7 @@ Accesso tramite l'icona ⚙ dell'ingranaggio in alto a destra. Impostazioni è u
 
 ---
 
-## Funzionalità Pro
+## Funzionalità Pro {#pro-features}
 
 NVH Source Locator usa un **modello freemium con blocco per funzionalità**:
 
@@ -1848,7 +1848,7 @@ Se riscatti un codice promozionale nel Google Play Store o App Store mentre NVH 
 
 ---
 
-## Scheda Help e tutorial
+## Scheda Help e tutorial {#help-tab-and-tutorials}
 
 La scheda **Help** include tutorial in-app, guide alle migliori pratiche e informazioni di riferimento.
 
@@ -1864,7 +1864,7 @@ Argomenti trattati:
 
 ---
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
 ### Il risultato del calcolo è sbagliato o non ha senso
 

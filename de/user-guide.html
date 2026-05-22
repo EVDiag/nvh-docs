@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Fehlerbehebung</a></li>
 </ol>
 <hr />
-<h2 id="funktionsweise">Funktionsweise</h2>
+<h2 id="how-it-works">Funktionsweise</h2>
 <p>Wenn eine Geräuschquelle einen Schall oder eine Vibration erzeugt, breitet sich die Welle mit einer bekannten Geschwindigkeit durch das Material aus. Wenn Sie zwei oder mehr Beschleunigungssensoren auf dem Material platzieren und messen, wann die Welle an jedem ankommt, sagt Ihnen die Zeitdifferenz, wo sich die Quelle befindet.</p>
 <p>NVH Source Locator nimmt:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 Sensoren</strong> → Position im 3D-Raum (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="bevor-sie-beginnen">Bevor Sie beginnen</h2>
+<h2 id="before-you-start">Bevor Sie beginnen</h2>
 <p>Sie benötigen:</p>
 <ul>
 <li><strong>Ein Oszilloskop oder Messsystem</strong>, das die Zeitdifferenz zwischen Beschleunigungssensor-Kanälen in Mikrosekunden (µs) anzeigen kann</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Startbildschirm mit 2-Sensor-Registerkarte" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="die-haupt-registerkarten">Die Haupt-Registerkarten</h2>
+<h2 id="the-main-tabs">Die Haupt-Registerkarten</h2>
 <p>Die App hat Registerkarten oben:</p>
 <p><img alt="Registerkarten-Leiste" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke aufgerufen (keine Registerkarte).</p>
 <hr />
-<h2 id="2-sensor-modus">2-Sensor-Modus</h2>
+<h2 id="2-sensor-mode">2-Sensor-Modus</h2>
 <p>Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.</p>
 <p><img alt="2-Sensor-Registerkarte" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="schritt-1-material-anwenden">Schritt 1: Material anwenden</h3>
@@ -197,7 +197,7 @@
 <h3 id="schritt-5-optional-foto-annotieren">Schritt 5 (optional): Foto annotieren</h3>
 <p>Tippen Sie auf <strong>📷 Foto annotieren</strong>, um ein Foto Ihres Aufbaus aufzunehmen. Die App überlagert Markierungen für Sensoren A, B und die Quelle. Nützlich für Berichte.</p>
 <hr />
-<h2 id="3-sensor-modus">3-Sensor-Modus</h2>
+<h2 id="3-sensor-mode">3-Sensor-Modus</h2>
 <p>Lokalisiert eine Quelle auf einer 2D-Ebene mit drei in einem Dreieck angeordneten Sensoren.</p>
 <p><img alt="3-Sensor-Registerkarte" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="aufbau">Aufbau</h3>
@@ -212,7 +212,7 @@
 <p>Die App zeigt die Quellposition als X-, Y-Koordinaten relativ zum Sensor A (Sensor A im Ursprung, Sensor B auf der X-Achse). Die Visualisierung zeigt alle drei Sensoren und die Quellposition.</p>
 <p><img alt="Dreiecksergebnis" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-modi">Pro+-Modi</h2>
+<h2 id="pro-modes">Pro+-Modi</h2>
 <p>Mehrere fortgeschrittene Registerkarten bieten überbestimmte Solver und höhere Dimensionalität:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Gleicher Dreiecksaufbau wie 3-Sensor, aber kalibrieren UND messen Sie alle drei Paare (A–B, A–C, B–C). Der Solver verwendet alle 3 TDOAs in einer Kleinste-Quadrate-Anpassung — robuster gegenüber Messrauschen und anisotropen Materialien. Paarweise Residuen werden gemeldet, damit Sie inkonsistente Messungen erkennen können.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Wie 3D, aber unterstützt bis zu <strong>6 Sensoren</strong> (A bis F) mit überbestimmtem LSQ. Maximale Präzision für komplexe 3D-Geometrien.</p>
 <hr />
-<h2 id="die-materials-registerkarte">Die Materials-Registerkarte</h2>
+<h2 id="the-materials-tab">Die Materials-Registerkarte</h2>
 <p>Bibliothek gängiger technischer Materialien mit bekannter Schallgeschwindigkeit bei 20 °C.</p>
 <p><img alt="Materials-Registerkarte" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="materialliste">Materialliste</h3>
@@ -261,7 +261,7 @@
 <h3 id="suche">Suche</h3>
 <p>Verwenden Sie die Suchleiste oben, um Materialien nach Namen zu filtern. Die Suche stimmt sowohl mit englischen kanonischen Namen als auch mit übersetzten Anzeigenamen überein.</p>
 <hr />
-<h2 id="temperaturkompensation">Temperaturkompensation</h2>
+<h2 id="temperature-compensation">Temperaturkompensation</h2>
 <p>Die Schallgeschwindigkeit in Materialien ändert sich mit der Temperatur. Im automobilen NVH-Test ist dies wichtig: ein Motorraum bei 80 °C, eine kalt eingelagerte Kabine bei -10 °C oder ein Auspuffkrümmerbereich bei 200 °C verhalten sich alle anders als bei Raumtemperatur-Laborbedingungen.</p>
 <h3 id="temperatur-einstellen">Temperatur einstellen</h3>
 <p>Öffnen Sie Einstellungen (⚙-Symbol) → Referenztemperatur. Geben Sie die Temperatur Ihrer Testumgebung in °C ein (Bereich -40 bis +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materialien-ohne-kompensation">Materialien ohne Kompensation</h3>
 <p>Die meisten nicht-metallischen Materialien haben keine zuverlässigen veröffentlichten Temperaturkoeffizienten. Die App zeigt für diese ein <strong>„ref only"</strong>-Abzeichen an — ihre gelistete Geschwindigkeit wird unabhängig von der Temperatureinstellung verwendet. Wenn Sie genaue Messungen bei nicht-Raumtemperaturen für diese Materialien benötigen, führen Sie eine In-situ-Kalibrierung durch und speichern Sie das Ergebnis als benutzerdefiniertes Material.</p>
 <hr />
-<h2 id="fotoannotation">Fotoannotation</h2>
+<h2 id="photo-annotation">Fotoannotation</h2>
 <p>Nach einer erfolgreichen Berechnung tippen Sie auf die Schaltfläche <strong>📷 Foto annotieren</strong>, um Sensor- und Quellenmarkierungen über ein Foto Ihres Aufbaus zu legen.</p>
 <p><img alt="Fotoannotation" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="ablauf">Ablauf</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Das annotierte Foto wird automatisch in PDF-Berichte aufgenommen.</p>
 <hr />
-<h2 id="berichte">Berichte</h2>
+<h2 id="reports">Berichte</h2>
 <p>Tippen Sie auf die Schaltfläche <strong>Ergebnis drucken</strong> auf einem beliebigen Ergebnisbildschirm, um einen formatierten Bericht zu erstellen.</p>
 <p><img alt="PDF-Bericht" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="berichtsinhalt">Berichtsinhalt</h3>
@@ -318,7 +318,7 @@
 <h3 id="anpassen-der-kopfzeile">Anpassen der Kopfzeile</h3>
 <p>Einstellungen → Berichtskopfzeile. Geben Sie Ihren Firmennamen, Labornamen, Projektinfo oder was auch immer Sie oben in jedem Bericht haben möchten ein.</p>
 <hr />
-<h2 id="backup-und-wiederherstellung">Backup und Wiederherstellung</h2>
+<h2 id="backup-and-restore">Backup und Wiederherstellung</h2>
 <p>Speichern Sie alle Ihre benutzerdefinierten Materialien, Favoriten, Einstellungen und den Verlauf in einer einzigen Datei. Übertragung zwischen Geräten.</p>
 <h3 id="backup">Backup</h3>
 <p>Einstellungen → <strong>Backup</strong> → tippen Sie auf „Backup-Datei speichern". Die App erzeugt eine JSON-Datei und öffnet das Teilen-Menü Ihres Telefons. Speichern Sie sie in Ihrem Cloud-Laufwerk (Google Drive, iCloud, OneDrive), senden Sie sie sich per E-Mail oder übertragen Sie sie auf beliebige Weise.</p>
@@ -326,7 +326,7 @@
 <p>Einstellungen → <strong>Wiederherstellen</strong> → wählen Sie die Backup-Datei aus dem Speicher Ihres Telefons. Die App importiert benutzerdefinierte Materialien, Favoriten, den Verlauf und die Einstellungen.</p>
 <p>⚠️ <strong>Wiederherstellung ersetzt Ihre aktuellen Daten.</strong> Wenn Sie wichtige Messungen auf dem aktuellen Gerät haben, sichern Sie diese zuerst, bevor Sie aus einem anderen Backup wiederherstellen.</p>
 <hr />
-<h2 id="einstellungen">Einstellungen</h2>
+<h2 id="settings">Einstellungen</h2>
 <p>Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellungen sind ein Modal, keine Registerkarte.</p>
 <p><img alt="Einstellungen" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-funktionen">Pro-Funktionen</h2>
+<h2 id="pro-features">Pro-Funktionen</h2>
 <p>NVH Source Locator verwendet ein <strong>Feature-gesperrtes Freemium-Modell</strong>:</p>
 <ul>
 <li><strong>Kostenlos</strong>: Die 2-Sensor-Registerkarte ist voll funktionsfähig ohne Einschränkungen</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: Eine Schaltfläche „Haben Sie einen Google Play-Promo-Code?" in der Paywall öffnet den Google Play-Einlösungs-Flow mit Ihrem vorausgefüllten Code.</p>
 <p><strong>iOS</strong>: Die App Store-Richtlinie 3.1.1 erfordert die Einlösung über Apples offiziellen „Code einlösen"-Flow. Die Google Play-Schaltfläche ist auf iOS ausgeblendet. Suchen Sie stattdessen nach „App Store-Code einlösen" in den Einstellungen.</p>
 <hr />
-<h2 id="help-registerkarte-und-tutorials">Help-Registerkarte und Tutorials</h2>
+<h2 id="help-tab-and-tutorials">Help-Registerkarte und Tutorials</h2>
 <p>Die <strong>Help</strong>-Registerkarte enthält In-App-Tutorials, Best-Practice-Anleitungen und Referenzinformationen.</p>
 <p><img alt="Help-Registerkarte" src="../screenshots/10-help-tab.png" /></p>
 <p>Behandelte Themen:
@@ -427,7 +427,7 @@
 - Tipps für Triangulation und 3D-Platzierungen
 - Kabelführung und Signalqualität</p>
 <hr />
-<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<h2 id="troubleshooting">Fehlerbehebung</h2>
 <h3 id="berechnungsergebnis-ist-falsch-oder-ergibt-keinen-sinn">Berechnungsergebnis ist falsch oder ergibt keinen Sinn</h3>
 <ol>
 <li>Überprüfen Sie Ihre Kalibrierung. Das automatisch ausgefüllte <code>tCal</code> setzt die veröffentlichte Materialgeschwindigkeit voraus — reale Materialien variieren. Die genaueste Kalibrierung ist in-situ: tippen Sie auf eine bekannte Position und lassen Sie die App die tatsächliche Geschwindigkeit ableiten.</li>

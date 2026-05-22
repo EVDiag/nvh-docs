@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Řešení problémů</a></li>
 </ol>
 <hr />
-<h2 id="jak-to-funguje">Jak to funguje</h2>
+<h2 id="how-it-works">Jak to funguje</h2>
 <p>Když zdroj hluku vydává zvuk nebo vibrace, vlna se šíří materiálem známou rychlostí. Pokud na materiál umístíte dva nebo více akcelerometrů a změříte, kdy vlna dorazí ke každému z nich, časový rozdíl vám řekne, kde se zdroj nachází.</p>
 <p>NVH Source Locator přijímá:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 senzory</strong> → poloha v 3D prostoru (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="pred-zacatkem">Před začátkem</h2>
+<h2 id="before-you-start">Před začátkem</h2>
 <p>Budete potřebovat:</p>
 <ul>
 <li><strong>Osciloskop nebo měřicí systém</strong>, který může zobrazit časový rozdíl mezi kanály akcelerometru v mikrosekundách (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Domovská obrazovka se záložkou 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="hlavni-zalozky">Hlavní záložky</h2>
+<h2 id="the-main-tabs">Hlavní záložky</h2>
 <p>Aplikace má záložky nahoře:</p>
 <p><img alt="Lišta záložek" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Nastavení je přístupné přes ikonu ozubeného kola ⚙ v pravém horním rohu (není to záložka).</p>
 <hr />
-<h2 id="rezim-2-sensor">Režim 2-Sensor</h2>
+<h2 id="2-sensor-mode">Režim 2-Sensor</h2>
 <p>Nejjednodušší měření: lokalizace zdroje podél čáry mezi dvěma akcelerometry.</p>
 <p><img alt="Záložka 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="krok-1-aplikovat-material">Krok 1: Aplikovat materiál</h3>
@@ -197,7 +197,7 @@
 <h3 id="krok-5-volitelny-anotovat-fotografii">Krok 5 (volitelný): Anotovat fotografii</h3>
 <p>Klepnutím na <strong>📷 Anotovat fotografii</strong> pořídíte fotografii své sestavy. Aplikace překryje značky pro senzory A, B a zdroj. Užitečné pro reporty.</p>
 <hr />
-<h2 id="rezim-3-sensor">Režim 3-Sensor</h2>
+<h2 id="3-sensor-mode">Režim 3-Sensor</h2>
 <p>Lokalizuje zdroj na 2D rovině pomocí tří senzorů uspořádaných do trojúhelníku.</p>
 <p><img alt="Záložka 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="nastaveni">Nastavení</h3>
@@ -212,7 +212,7 @@
 <p>Aplikace zobrazí polohu zdroje jako souřadnice X, Y vzhledem k senzoru A (senzor A v počátku, senzor B na ose X). Vizualizace ukazuje všechny tři senzory a polohu zdroje.</p>
 <p><img alt="Výsledek trojúhelníku" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="rezimy-pro">Režimy Pro+</h2>
+<h2 id="pro-modes">Režimy Pro+</h2>
 <p>Několik pokročilých záložek nabízí přeurčená řešení a vyšší dimenzionalitu:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Stejné nastavení trojúhelníku jako 3-Sensor, ale kalibrujte A měřte všechny tři páry (A–B, A–C, B–C). Řešení používá všechny 3 TDOA v aproximaci metodou nejmenších čtverců — odolnější proti měřicímu šumu a anizotropním materiálům. Rezidua pro každý pár jsou hlášena, takže můžete odhalit nekonzistentní měření.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Jako 3D, ale podporuje až <strong>6 senzorů</strong> (A až F) s přeurčeným LSQ. Maximální přesnost pro složité 3D geometrie.</p>
 <hr />
-<h2 id="zalozka-materials">Záložka Materials</h2>
+<h2 id="the-materials-tab">Záložka Materials</h2>
 <p>Knihovna běžných technických materiálů se známou rychlostí zvuku při 20 °C.</p>
 <p><img alt="Záložka Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="seznam-materialu">Seznam materiálů</h3>
@@ -261,7 +261,7 @@
 <h3 id="vyhledavani">Vyhledávání</h3>
 <p>Použijte vyhledávací lištu nahoře pro filtrování materiálů podle názvu. Vyhledávání odpovídá jak anglickým kanonickým názvům, tak přeloženým zobrazovaným názvům.</p>
 <hr />
-<h2 id="teplotni-kompenzace">Teplotní kompenzace</h2>
+<h2 id="temperature-compensation">Teplotní kompenzace</h2>
 <p>Rychlost zvuku v materiálech se mění s teplotou. V automobilových NVH testech je to důležité: motorový prostor při 80 °C, zachlazená kabina při -10 °C nebo oblast výfukového potrubí při 200 °C se chovají odlišně od pokojových laboratorních podmínek.</p>
 <h3 id="nastaveni-teploty">Nastavení teploty</h3>
 <p>Otevřete Nastavení (ikona ⚙) → Referenční teplota. Zadejte teplotu vašeho testovacího prostředí ve °C (rozsah -40 až +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materialy-bez-kompenzace">Materiály bez kompenzace</h3>
 <p>Většina nekovových materiálů nemá spolehlivé publikované teplotní koeficienty. Aplikace pro ně zobrazuje odznak <strong>„ref only"</strong> — jejich uvedená rychlost se používá bez ohledu na nastavení teploty. Pokud potřebujete přesná měření při ne-pokojových teplotách pro tyto materiály, proveďte in-situ kalibraci a uložte výsledek jako vlastní materiál.</p>
 <hr />
-<h2 id="anotace-fotografie">Anotace fotografie</h2>
+<h2 id="photo-annotation">Anotace fotografie</h2>
 <p>Po úspěšném výpočtu klepněte na tlačítko <strong>📷 Anotovat fotografii</strong>, abyste překryli značky senzorů a zdroje na fotografii vaší sestavy.</p>
 <p><img alt="Anotace fotografie" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="postup">Postup</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Anotovaná fotografie je automaticky zahrnuta do PDF reportů.</p>
 <hr />
-<h2 id="reporty">Reporty</h2>
+<h2 id="reports">Reporty</h2>
 <p>Klepněte na tlačítko <strong>Tisk výsledku</strong> na libovolné obrazovce výsledku pro generování formátovaného reportu.</p>
 <p><img alt="PDF report" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="obsah-reportu">Obsah reportu</h3>
@@ -318,7 +318,7 @@
 <h3 id="prizpusobeni-zahlavi">Přizpůsobení záhlaví</h3>
 <p>Nastavení → Záhlaví reportu. Zadejte název vaší společnosti, název laboratoře, info o projektu nebo cokoliv chcete v horní části každého reportu.</p>
 <hr />
-<h2 id="zaloha-a-obnova">Záloha a obnova</h2>
+<h2 id="backup-and-restore">Záloha a obnova</h2>
 <p>Uložte všechny své vlastní materiály, oblíbené, nastavení a historii do jednoho souboru. Přenos mezi zařízeními.</p>
 <h3 id="zaloha">Záloha</h3>
 <p>Nastavení → <strong>Záloha</strong> → klepněte na „Uložit záložní soubor". Aplikace vygeneruje JSON soubor a otevře sdílecí list vašeho telefonu. Uložte jej do svého cloudového úložiště (Google Drive, iCloud, OneDrive), pošlete si jej e-mailem nebo přeneste jakkoliv chcete.</p>
@@ -326,7 +326,7 @@
 <p>Nastavení → <strong>Obnova</strong> → vyberte záložní soubor z úložiště vašeho telefonu. Aplikace importuje vlastní materiály, oblíbené, historii a nastavení.</p>
 <p>⚠️ <strong>Obnova nahradí vaše aktuální data.</strong> Pokud máte na aktuálním zařízení důležitá měření, nejprve je zálohujte před obnovením z jiné zálohy.</p>
 <hr />
-<h2 id="nastaveni_1">Nastavení</h2>
+<h2 id="settings">Nastavení</h2>
 <p>Přístup přes ikonu ozubeného kola ⚙ v pravém horním rohu. Nastavení je modální, ne záložka.</p>
 <p><img alt="Nastavení" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="funkce-pro">Funkce Pro</h2>
+<h2 id="pro-features">Funkce Pro</h2>
 <p>NVH Source Locator používá <strong>freemium model se zámkem funkcí</strong>:</p>
 <ul>
 <li><strong>Zdarma</strong>: Záložka 2-Sensor je plně funkční bez omezení</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: tlačítko „Máte promo kód Google Play?" v paywall otevře tok uplatnění Google Play s vaším předvyplněným kódem.</p>
 <p><strong>iOS</strong>: Politika App Store 3.1.1 vyžaduje uplatnění prostřednictvím oficiálního toku „Uplatnit kód" od Apple. Tlačítko Google Play je v iOS skryté. Místo toho hledejte „Uplatnit kód App Store" v Nastavení.</p>
 <hr />
-<h2 id="zalozka-help-a-navody">Záložka Help a návody</h2>
+<h2 id="help-tab-and-tutorials">Záložka Help a návody</h2>
 <p>Záložka <strong>Help</strong> obsahuje návody v aplikaci, příručky nejlepších postupů a referenční informace.</p>
 <p><img alt="Záložka Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Pokryté témata:
@@ -427,7 +427,7 @@
 - Tipy pro triangulaci a 3D umístění
 - Vedení kabelů a kvalita signálu</p>
 <hr />
-<h2 id="reseni-problemu">Řešení problémů</h2>
+<h2 id="troubleshooting">Řešení problémů</h2>
 <h3 id="vysledek-vypoctu-je-spatny-nebo-nedava-smysl">Výsledek výpočtu je špatný nebo nedává smysl</h3>
 <ol>
 <li>Zkontrolujte kalibraci. Automaticky vyplněné <code>tCal</code> předpokládá publikovanou rychlost materiálu — skutečné materiály se liší. Nejpřesnější kalibrace je in-situ: klepněte na známé místo a nechte aplikaci odvodit skutečnou rychlost.</li>

@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Risoluzione dei problemi</a></li>
 </ol>
 <hr />
-<h2 id="come-funziona">Come funziona</h2>
+<h2 id="how-it-works">Come funziona</h2>
 <p>Quando una sorgente di rumore emette un suono o una vibrazione, l'onda viaggia attraverso un materiale a velocità nota. Se posizioni due o più accelerometri sul materiale e misuri quando l'onda arriva a ciascuno, la differenza di tempo ti dice dove si trova la sorgente.</p>
 <p>NVH Source Locator prende:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 sensori</strong> → posizione nello spazio 3D (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="prima-di-iniziare">Prima di iniziare</h2>
+<h2 id="before-you-start">Prima di iniziare</h2>
 <p>Avrai bisogno di:</p>
 <ul>
 <li><strong>Un oscilloscopio o sistema di misurazione</strong> che possa mostrarti la differenza di tempo tra i canali dell'accelerometro in microsecondi (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Schermata principale con scheda 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="le-schede-principali">Le schede principali</h2>
+<h2 id="the-main-tabs">Le schede principali</h2>
 <p>L'app ha schede in alto:</p>
 <p><img alt="Barra delle schede" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Le Impostazioni sono accessibili tramite l'icona ⚙ dell'ingranaggio in alto a destra (non una scheda).</p>
 <hr />
-<h2 id="modalita-2-sensor">Modalità 2-Sensor</h2>
+<h2 id="2-sensor-mode">Modalità 2-Sensor</h2>
 <p>La misurazione più semplice: localizzazione sorgente lungo una linea tra due accelerometri.</p>
 <p><img alt="Scheda 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="passaggio-1-applicare-un-materiale">Passaggio 1: Applicare un materiale</h3>
@@ -197,7 +197,7 @@
 <h3 id="passaggio-5-opzionale-annotare-una-foto">Passaggio 5 (opzionale): Annotare una foto</h3>
 <p>Tocca <strong>📷 Annota foto</strong> per scattare una foto della tua configurazione. L'app sovrappone marker per i sensori A, B e la sorgente. Utile per i report.</p>
 <hr />
-<h2 id="modalita-3-sensor">Modalità 3-Sensor</h2>
+<h2 id="3-sensor-mode">Modalità 3-Sensor</h2>
 <p>Localizza una sorgente su un piano 2D utilizzando tre sensori disposti in un triangolo.</p>
 <p><img alt="Scheda 3-Sensor" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="configurazione">Configurazione</h3>
@@ -212,7 +212,7 @@
 <p>L'app mostra la posizione della sorgente come coordinate X, Y relative al sensore A (sensore A all'origine, sensore B sull'asse X). La visualizzazione mostra tutti e tre i sensori e la posizione della sorgente.</p>
 <p><img alt="Risultato triangolo" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="modalita-pro">Modalità Pro+</h2>
+<h2 id="pro-modes">Modalità Pro+</h2>
 <p>Diverse schede avanzate offrono risolutori sovradeterminati e dimensionalità superiore:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Stessa configurazione triangolare di 3-Sensor, ma calibra E misura tutte e tre le coppie (A–B, A–C, B–C). Il risolutore utilizza tutti e 3 i TDOA in un adattamento ai minimi quadrati — più robusto al rumore di misurazione e ai materiali anisotropi. I residui per coppia sono riportati così puoi individuare misurazioni incoerenti.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Come 3D ma supporta fino a <strong>6 sensori</strong> (da A a F) con LSQ sovradeterminato. Massima precisione per geometrie 3D complesse.</p>
 <hr />
-<h2 id="la-scheda-materials">La scheda Materials</h2>
+<h2 id="the-materials-tab">La scheda Materials</h2>
 <p>Libreria di materiali ingegneristici comuni con velocità del suono nota a 20 °C.</p>
 <p><img alt="Scheda Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="elenco-dei-materiali">Elenco dei materiali</h3>
@@ -261,7 +261,7 @@
 <h3 id="ricerca">Ricerca</h3>
 <p>Usa la barra di ricerca in alto per filtrare i materiali per nome. La ricerca corrisponde sia ai nomi canonici inglesi che ai nomi di visualizzazione tradotti.</p>
 <hr />
-<h2 id="compensazione-della-temperatura">Compensazione della temperatura</h2>
+<h2 id="temperature-compensation">Compensazione della temperatura</h2>
 <p>La velocità del suono nei materiali cambia con la temperatura. Nei test NVH automobilistici questo è importante: un vano motore a 80 °C, un abitacolo raffreddato a -10 °C o un'area del collettore di scarico a 200 °C si comportano tutti diversamente dalle condizioni di laboratorio a temperatura ambiente.</p>
 <h3 id="impostare-la-temperatura">Impostare la temperatura</h3>
 <p>Apri Impostazioni (icona ⚙) → Temperatura di riferimento. Inserisci la temperatura del tuo ambiente di test in °C (intervallo da -40 a +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materiali-senza-compensazione">Materiali senza compensazione</h3>
 <p>La maggior parte dei materiali non metallici non ha coefficienti di temperatura pubblicati affidabili. L'app mostra un badge <strong>"ref only"</strong> per questi — la loro velocità elencata viene usata indipendentemente dall'impostazione della temperatura. Se hai bisogno di misurazioni accurate a temperature non ambientali per questi materiali, esegui una calibrazione in-situ e salva il risultato come materiale personalizzato.</p>
 <hr />
-<h2 id="annotazione-foto">Annotazione foto</h2>
+<h2 id="photo-annotation">Annotazione foto</h2>
 <p>Dopo un calcolo riuscito, tocca il pulsante <strong>📷 Annota foto</strong> per sovrapporre marker di sensore e sorgente su una foto della tua configurazione.</p>
 <p><img alt="Annotazione foto" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="flusso">Flusso</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>La foto annotata è inclusa automaticamente nei report PDF.</p>
 <hr />
-<h2 id="report">Report</h2>
+<h2 id="reports">Report</h2>
 <p>Tocca il pulsante <strong>Stampa risultato</strong> su qualsiasi schermata dei risultati per generare un report formattato.</p>
 <p><img alt="Report PDF" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="contenuto-del-report">Contenuto del report</h3>
@@ -318,7 +318,7 @@
 <h3 id="personalizzare-lintestazione">Personalizzare l'intestazione</h3>
 <p>Impostazioni → Intestazione report. Inserisci il nome della tua azienda, nome del laboratorio, info del progetto o qualsiasi cosa tu voglia in cima a ogni report.</p>
 <hr />
-<h2 id="backup-e-ripristino">Backup e ripristino</h2>
+<h2 id="backup-and-restore">Backup e ripristino</h2>
 <p>Salva tutti i tuoi materiali personalizzati, preferiti, impostazioni e cronologia in un singolo file. Trasferisci tra dispositivi.</p>
 <h3 id="backup">Backup</h3>
 <p>Impostazioni → <strong>Backup</strong> → tocca "Salva file di backup". L'app genera un file JSON e apre il foglio di condivisione del tuo telefono. Salvalo nel tuo cloud drive (Google Drive, iCloud, OneDrive), inviatelo via email a te stesso o trasferiscilo come preferisci.</p>
@@ -326,7 +326,7 @@
 <p>Impostazioni → <strong>Ripristino</strong> → seleziona il file di backup dall'archiviazione del tuo telefono. L'app importa materiali personalizzati, preferiti, cronologia e impostazioni.</p>
 <p>⚠️ <strong>Il ripristino sostituisce i tuoi dati attuali.</strong> Se hai misurazioni importanti sul dispositivo corrente, eseguine prima il backup prima di ripristinare da un backup diverso.</p>
 <hr />
-<h2 id="impostazioni">Impostazioni</h2>
+<h2 id="settings">Impostazioni</h2>
 <p>Accesso tramite l'icona ⚙ dell'ingranaggio in alto a destra. Impostazioni è una finestra modale, non una scheda.</p>
 <p><img alt="Impostazioni" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="funzionalita-pro">Funzionalità Pro</h2>
+<h2 id="pro-features">Funzionalità Pro</h2>
 <p>NVH Source Locator usa un <strong>modello freemium con blocco per funzionalità</strong>:</p>
 <ul>
 <li><strong>Gratuito</strong>: La scheda 2-Sensor è completamente funzionante senza limiti</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: un pulsante "Hai un codice promozionale Google Play?" nella paywall apre il flusso di riscatto Google Play con il tuo codice pre-compilato.</p>
 <p><strong>iOS</strong>: La politica dell'App Store 3.1.1 richiede il riscatto attraverso il flusso ufficiale "Riscatta codice" di Apple. Il pulsante Google Play è nascosto su iOS. Cerca "Riscatta codice App Store" in Impostazioni invece.</p>
 <hr />
-<h2 id="scheda-help-e-tutorial">Scheda Help e tutorial</h2>
+<h2 id="help-tab-and-tutorials">Scheda Help e tutorial</h2>
 <p>La scheda <strong>Help</strong> include tutorial in-app, guide alle migliori pratiche e informazioni di riferimento.</p>
 <p><img alt="Scheda Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Argomenti trattati:
@@ -427,7 +427,7 @@
 - Suggerimenti per triangolazione e posizionamenti 3D
 - Instradamento dei cavi e qualità del segnale</p>
 <hr />
-<h2 id="risoluzione-dei-problemi">Risoluzione dei problemi</h2>
+<h2 id="troubleshooting">Risoluzione dei problemi</h2>
 <h3 id="il-risultato-del-calcolo-e-sbagliato-o-non-ha-senso">Il risultato del calcolo è sbagliato o non ha senso</h3>
 <ol>
 <li>Controlla la tua calibrazione. Il <code>tCal</code> autocompilato presuppone la velocità pubblicata del materiale — i materiali reali variano. La calibrazione più accurata è in-situ: tocca una posizione nota e lascia che l'app derivi la velocità reale.</li>

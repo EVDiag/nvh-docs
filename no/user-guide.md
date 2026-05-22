@@ -26,7 +26,7 @@ Denne håndboken dekker alle funksjoner. For en rask oppfriskning, se **Hurtigre
 
 ---
 
-## Hvordan det fungerer
+## Hvordan det fungerer {#how-it-works}
 
 Når en støykilde sender ut lyd eller vibrasjon, beveger bølgen seg gjennom et materiale med kjent hastighet. Hvis du plasserer to eller flere akselerometre på materialet og måler når bølgen kommer til hver av dem, forteller tidsforskjellen deg hvor kilden er.
 
@@ -45,7 +45,7 @@ Jo flere sensorer du bruker, desto mer nøyaktig kan du finne kilden:
 
 ---
 
-## Før du starter
+## Før du starter {#before-you-start}
 
 Du trenger:
 
@@ -58,7 +58,7 @@ Du trenger:
 
 ---
 
-## Hovedfanene
+## Hovedfanene {#the-main-tabs}
 
 Appen har faner øverst:
 
@@ -82,7 +82,7 @@ Innstillinger nås via ⚙ tannhjul-ikonet i øvre høyre hjørne (ikke en fane)
 
 ---
 
-## 2-Sensor-modus
+## 2-Sensor-modus {#2-sensor-mode}
 
 Den enkleste målingen: kildelokalisering langs en linje mellom to akselerometre.
 
@@ -124,7 +124,7 @@ Trykk på **📷 Annoter bilde** for å ta et bilde av oppsettet ditt. Appen leg
 
 ---
 
-## 3-Sensor-modus
+## 3-Sensor-modus {#3-sensor-mode}
 
 Lokaliserer en kilde på et 2D-plan ved å bruke tre sensorer arrangert i en trekant.
 
@@ -151,7 +151,7 @@ Appen viser kildeposisjonen som X-, Y-koordinater relativt til sensor A (sensor 
 
 ---
 
-## Pro+-moduser
+## Pro+-moduser {#pro-modes}
 
 Flere avanserte faner tilbyr overbestemte løsere og høyere dimensjonalitet:
 
@@ -181,7 +181,7 @@ Som 3D men støtter opptil **6 sensorer** (A til F) med overbestemt LSQ. Maksima
 
 ---
 
-## Materials-fanen
+## Materials-fanen {#the-materials-tab}
 
 Bibliotek med vanlige ingeniørmaterialer med kjent lydhastighet ved 20 °C.
 
@@ -230,7 +230,7 @@ Bruk søkefeltet øverst for å filtrere materialer etter navn. Søk samsvarer b
 
 ---
 
-## Temperaturkompensasjon
+## Temperaturkompensasjon {#temperature-compensation}
 
 Lydhastigheten i materialer endrer seg med temperaturen. I bil-NVH-testing er dette viktig: et motorrom ved 80 °C, en kaldsenket kabin ved -10 °C eller et område for eksosmanifold ved 200 °C oppfører seg alle annerledes enn laboratorieforhold ved romtemperatur.
 
@@ -261,7 +261,7 @@ De fleste ikke-metalliske materialer har ikke pålitelige publiserte temperaturk
 
 ---
 
-## Fotomerknad
+## Fotomerknad {#photo-annotation}
 
 Etter en vellykket beregning, trykk på knappen **📷 Annoter bilde** for å legge sensor- og kildemarkører på et bilde av oppsettet ditt.
 
@@ -280,7 +280,7 @@ Det annoterte bildet inkluderes automatisk i PDF-rapporter.
 
 ---
 
-## Rapporter
+## Rapporter {#reports}
 
 Trykk på knappen **Skriv ut resultat** på en hvilken som helst resultatskjerm for å generere en formatert rapport.
 
@@ -309,7 +309,7 @@ Innstillinger → Rapporttopptekst. Skriv inn firmanavnet, labnavnet, prosjektin
 
 ---
 
-## Sikkerhetskopiering og gjenoppretting
+## Sikkerhetskopiering og gjenoppretting {#backup-and-restore}
 
 Lagre alle de tilpassede materialene, favorittene, innstillingene og historikken til en enkelt fil. Overfør mellom enheter.
 
@@ -325,7 +325,7 @@ Innstillinger → **Gjenopprett** → velg sikkerhetskopifilen fra telefonens la
 
 ---
 
-## Innstillinger
+## Innstillinger {#settings}
 
 Tilgang via ⚙ tannhjul-ikonet i øvre høyre hjørne. Innstillinger er en modal, ikke en fane.
 
@@ -345,7 +345,7 @@ Tilgang via ⚙ tannhjul-ikonet i øvre høyre hjørne. Innstillinger er en moda
 
 ---
 
-## Pro-funksjoner
+## Pro-funksjoner {#pro-features}
 
 NVH Source Locator bruker en **funksjonslåst freemium-modell**:
 
@@ -402,7 +402,7 @@ Hvis du løser inn en kampanjekode i Google Play Store eller App Store mens NVH 
 
 ---
 
-## Help-fanen og veiledninger
+## Help-fanen og veiledninger {#help-tab-and-tutorials}
 
 **Help**-fanen inkluderer veiledninger i appen, beste praksis-guider og referanseinformasjon.
 
@@ -418,7 +418,7 @@ Emner dekket:
 
 ---
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 ### Beregningsresultatet er feil eller gir ingen mening
 

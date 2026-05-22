@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Pag-troubleshoot</a></li>
 </ol>
 <hr />
-<h2 id="paano-ito-gumagana">Paano ito gumagana</h2>
+<h2 id="how-it-works">Paano ito gumagana</h2>
 <p>Kapag ang isang pinagmulan ng ingay ay naglalabas ng tunog o vibrasyon, ang alon ay naglalakbay sa pamamagitan ng materyal sa kilalang bilis. Kung maglagay ka ng dalawa o higit pang accelerometer sa materyal at sukatin kung kailan dumating ang alon sa bawat isa, sinasabi sa iyo ng pagkakaiba ng oras kung nasaan ang pinagmulan.</p>
 <p>Kinukuha ng NVH Source Locator ang:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 sensor</strong> → posisyon sa 3D space (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="bago-ka-magsimula">Bago ka magsimula</h2>
+<h2 id="before-you-start">Bago ka magsimula</h2>
 <p>Kakailanganin mo ng:</p>
 <ul>
 <li><strong>Isang oscilloscope o sistemang pansukat</strong> na maaaring magpakita sa iyo ng pagkakaiba ng oras sa pagitan ng mga channel ng accelerometer sa microseconds (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Home screen na may 2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="ang-pangunahing-mga-tab">Ang pangunahing mga tab</h2>
+<h2 id="the-main-tabs">Ang pangunahing mga tab</h2>
 <p>Mayroong mga tab ang app sa tuktok:</p>
 <p><img alt="Tab bar" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (hindi isang tab).</p>
 <hr />
-<h2 id="mode-na-2-sensor">Mode na 2-Sensor</h2>
+<h2 id="2-sensor-mode">Mode na 2-Sensor</h2>
 <p>Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.</p>
 <p><img alt="2-Sensor tab" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="hakbang-1-maglapat-ng-materyal">Hakbang 1: Maglapat ng materyal</h3>
@@ -197,7 +197,7 @@
 <h3 id="hakbang-5-opsyonal-mag-annotate-ng-larawan">Hakbang 5 (opsyonal): Mag-annotate ng larawan</h3>
 <p>I-tap ang <strong>📷 I-annotate ang larawan</strong> upang kumuha ng larawan ng iyong setup. Inilalagay ng app ang mga marker para sa sensor A, B at sa pinagmulan. Kapaki-pakinabang para sa mga ulat.</p>
 <hr />
-<h2 id="mode-na-3-sensor">Mode na 3-Sensor</h2>
+<h2 id="3-sensor-mode">Mode na 3-Sensor</h2>
 <p>Hinahanap ang isang pinagmulan sa 2D plane gamit ang tatlong sensor na nakaayos sa isang tatsulok.</p>
 <p><img alt="3-Sensor tab" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="pag-setup">Pag-setup</h3>
@@ -212,7 +212,7 @@
 <p>Ipinapakita ng app ang posisyon ng pinagmulan bilang mga X, Y coordinate na nauugnay sa sensor A (sensor A sa origin, sensor B sa X axis). Ipinapakita ng visualization ang lahat ng tatlong sensor at ang lokasyon ng pinagmulan.</p>
 <p><img alt="Resulta ng tatsulok" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="mga-pro-mode">Mga Pro+ mode</h2>
+<h2 id="pro-modes">Mga Pro+ mode</h2>
 <p>Ang ilang advanced na tab ay nag-aalok ng over-determined solvers at mas mataas na dimensionality:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Parehong tatsulok setup sa 3-Sensor, ngunit i-calibrate AT sukatin ang lahat ng tatlong pares (A–B, A–C, B–C). Ginagamit ng solver ang lahat ng 3 TDOA sa isang least-squares fit — mas matatag laban sa ingay ng pagsukat at anisotropic na mga materyal. Iniuulat ang mga residual bawat pares upang makita mo ang mga di-pare-parehong pagsukat.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Katulad ng 3D ngunit sumusuporta sa hanggang <strong>6 sensor</strong> (A hanggang F) na may over-determined LSQ. Maximum na katumpakan para sa mga kumplikadong 3D geometry.</p>
 <hr />
-<h2 id="ang-tab-na-materials">Ang tab na Materials</h2>
+<h2 id="the-materials-tab">Ang tab na Materials</h2>
 <p>Library ng mga karaniwang engineering material na may kilalang bilis ng tunog sa 20 °C.</p>
 <p><img alt="Tab na Materials" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="listahan-ng-mga-materyal">Listahan ng mga materyal</h3>
@@ -261,7 +261,7 @@
 <h3 id="paghahanap">Paghahanap</h3>
 <p>Gamitin ang search bar sa tuktok upang i-filter ang mga materyal ayon sa pangalan. Ang paghahanap ay tumutugma sa parehong English canonical name at sa mga isinaling display name.</p>
 <hr />
-<h2 id="pagsasaayos-ng-temperatura">Pagsasaayos ng temperatura</h2>
+<h2 id="temperature-compensation">Pagsasaayos ng temperatura</h2>
 <p>Ang bilis ng tunog sa mga materyal ay nagbabago sa temperatura. Sa automotive NVH testing, mahalaga ito: ang engine bay sa 80 °C, ang cold-soaked cabin sa -10 °C, o ang exhaust manifold area sa 200 °C ay lahat kumikilos nang iba mula sa room-temperature laboratory conditions.</p>
 <h3 id="pagtatakda-ng-temperatura">Pagtatakda ng temperatura</h3>
 <p>Buksan ang Mga Setting (icon na ⚙) → Reference temperature. Ipasok ang temperatura ng iyong test environment sa °C (saklaw -40 hanggang +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="mga-materyal-na-walang-compensation">Mga materyal na walang compensation</h3>
 <p>Karamihan sa mga di-metal na materyal ay walang maaasahang inilathalang temperature coefficient. Nagpapakita ang app ng badge na <strong>"ref only"</strong> para sa mga ito — ang kanilang nakalistang bilis ay ginagamit nang hindi alintana ang setting ng temperatura. Kung kailangan mo ng tumpak na pagsukat sa hindi-room temperature para sa mga materyal na ito, magsagawa ng in-situ calibration at i-save ang resulta bilang isang custom na materyal.</p>
 <hr />
-<h2 id="anotasyon-ng-larawan">Anotasyon ng larawan</h2>
+<h2 id="photo-annotation">Anotasyon ng larawan</h2>
 <p>Pagkatapos ng matagumpay na pagkalkula, i-tap ang button na <strong>📷 I-annotate ang larawan</strong> upang ilagay ang mga sensor at source marker sa isang larawan ng iyong setup.</p>
 <p><img alt="Anotasyon ng larawan" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="daloy">Daloy</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Ang naka-annotate na larawan ay awtomatikong kasama sa mga PDF na ulat.</p>
 <hr />
-<h2 id="mga-ulat">Mga ulat</h2>
+<h2 id="reports">Mga ulat</h2>
 <p>I-tap ang button na <strong>I-print ang resulta</strong> sa anumang result screen upang makabuo ng isang formatted na ulat.</p>
 <p><img alt="PDF report" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="mga-nilalaman-ng-ulat">Mga nilalaman ng ulat</h3>
@@ -318,7 +318,7 @@
 <h3 id="pag-customize-ng-header">Pag-customize ng header</h3>
 <p>Mga Setting → Header ng ulat. Ipasok ang pangalan ng iyong kumpanya, pangalan ng lab, impormasyon ng proyekto, o anumang nais mo sa tuktok ng bawat ulat.</p>
 <hr />
-<h2 id="backup-at-pagpapanumbalik">Backup at pagpapanumbalik</h2>
+<h2 id="backup-and-restore">Backup at pagpapanumbalik</h2>
 <p>I-save ang lahat ng iyong custom na materyal, mga paborito, mga setting, at history sa isang file. Ilipat sa pagitan ng mga device.</p>
 <h3 id="backup">Backup</h3>
 <p>Mga Setting → <strong>Backup</strong> → i-tap ang "I-save ang backup file". Bumubuo ang app ng JSON file at binubuksan ang share sheet ng iyong telepono. I-save ito sa iyong cloud drive (Google Drive, iCloud, OneDrive), i-email sa iyong sarili, o ilipat sa anumang paraan na gusto mo.</p>
@@ -326,7 +326,7 @@
 <p>Mga Setting → <strong>Pagpapanumbalik</strong> → piliin ang backup file mula sa storage ng iyong telepono. Ini-import ng app ang mga custom na materyal, mga paborito, history, at mga setting.</p>
 <p>⚠️ <strong>Pinapalitan ng pagpapanumbalik ang iyong kasalukuyang data.</strong> Kung may mahalaga kang pagsukat sa kasalukuyang device, i-backup muna ang mga ito bago i-restore mula sa ibang backup.</p>
 <hr />
-<h2 id="mga-setting">Mga Setting</h2>
+<h2 id="settings">Mga Setting</h2>
 <p>Naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas. Ang Mga Setting ay isang modal, hindi isang tab.</p>
 <p><img alt="Mga Setting" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="mga-tampok-ng-pro">Mga tampok ng Pro</h2>
+<h2 id="pro-features">Mga tampok ng Pro</h2>
 <p>Ginagamit ng NVH Source Locator ang isang <strong>feature-locked freemium model</strong>:</p>
 <ul>
 <li><strong>Libre</strong>: Ang 2-Sensor tab ay ganap na gumagana nang walang limitasyon</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: ang button na "Mayroon ka bang Google Play promo code?" sa paywall ay nagbubukas ng Google Play redemption flow na may iyong code na pre-filled.</p>
 <p><strong>iOS</strong>: Hinihingi ng patakaran ng App Store 3.1.1 ang redemption sa pamamagitan ng opisyal na "Redeem Code" flow ng Apple. Nakatago ang button na Google Play sa iOS. Hanapin ang "I-redeem ang App Store code" sa Mga Setting sa halip.</p>
 <hr />
-<h2 id="tab-na-help-at-mga-tutorial">Tab na Help at mga tutorial</h2>
+<h2 id="help-tab-and-tutorials">Tab na Help at mga tutorial</h2>
 <p>Kasama sa <strong>Help</strong> tab ang mga in-app na tutorial, mga gabay sa best practice, at sangguniang impormasyon.</p>
 <p><img alt="Tab na Help" src="../screenshots/10-help-tab.png" /></p>
 <p>Mga paksang sakop:
@@ -427,7 +427,7 @@
 - Mga tip para sa triangulation at 3D placements
 - Cable routing at kalidad ng signal</p>
 <hr />
-<h2 id="pag-troubleshoot">Pag-troubleshoot</h2>
+<h2 id="troubleshooting">Pag-troubleshoot</h2>
 <h3 id="mali-ang-resulta-ng-pagkalkula-o-walang-katuturan">Mali ang resulta ng pagkalkula o walang katuturan</h3>
 <ol>
 <li>Suriin ang iyong pag-calibrate. Ipinapalagay ng auto-filled na <code>tCal</code> ang inilathalang bilis ng materyal — nag-iiba-iba ang totoong mga materyal. Ang pinaka-tumpak na pag-calibrate ay in-situ: i-tap ang isang kilalang lokasyon at hayaan ang app na makuha ang aktwal na bilis.</li>

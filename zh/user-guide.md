@@ -26,7 +26,7 @@ NVH Source Locator 是一款测量工具，使用 TDOA（Time Difference of Arri
 
 ---
 
-## 工作原理
+## 工作原理 {#how-it-works}
 
 当噪声源发出声音或振动时，波以已知速度在材料中传播。如果您在材料上放置两个或更多加速度计并测量波到达每个加速度计的时间，时间差就会告诉您源在哪里。
 
@@ -45,7 +45,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 开始之前
+## 开始之前 {#before-you-start}
 
 您需要：
 
@@ -58,7 +58,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 主要选项卡
+## 主要选项卡 {#the-main-tabs}
 
 应用程序顶部有选项卡：
 
@@ -82,7 +82,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 2-Sensor 模式
+## 2-Sensor 模式 {#2-sensor-mode}
 
 最简单的测量：沿两个加速度计之间一条线的源定位。
 
@@ -124,7 +124,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 3-Sensor 模式
+## 3-Sensor 模式 {#3-sensor-mode}
 
 使用排列成三角形的三个传感器在 2D 平面上定位源。
 
@@ -151,7 +151,7 @@ NVH Source Locator 采集：
 
 ---
 
-## Pro+ 模式
+## Pro+ 模式 {#pro-modes}
 
 几个高级选项卡提供超定求解器和更高维度：
 
@@ -181,7 +181,7 @@ NVH Source Locator 采集：
 
 ---
 
-## Materials 选项卡
+## Materials 选项卡 {#the-materials-tab}
 
 20 °C 下已知声速的常见工程材料库。
 
@@ -230,7 +230,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 温度补偿
+## 温度补偿 {#temperature-compensation}
 
 材料中的声速随温度变化。在汽车 NVH 测试中这很重要：80 °C 的发动机舱、-10 °C 的冷浸舱或 200 °C 的排气歧管区域都与室温实验室条件不同。
 
@@ -261,7 +261,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 照片注释
+## 照片注释 {#photo-annotation}
 
 成功计算后，点击 **📷 注释照片** 按钮以在您设置的照片上叠加传感器和源标记。
 
@@ -280,7 +280,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 报告
+## 报告 {#reports}
 
 点击任何结果屏幕上的 **打印结果** 按钮以生成格式化报告。
 
@@ -309,7 +309,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 备份和恢复
+## 备份和恢复 {#backup-and-restore}
 
 将您所有的自定义材料、收藏夹、设置和历史保存到单个文件中。在设备之间传输。
 
@@ -325,7 +325,7 @@ NVH Source Locator 采集：
 
 ---
 
-## 设置
+## 设置 {#settings}
 
 通过右上角的 ⚙ 齿轮图标访问。设置是一个模态，不是选项卡。
 
@@ -345,7 +345,7 @@ NVH Source Locator 采集：
 
 ---
 
-## Pro 功能
+## Pro 功能 {#pro-features}
 
 NVH Source Locator 使用**按功能锁定的免费增值模式**：
 
@@ -402,7 +402,7 @@ NVH Source Locator 使用**按功能锁定的免费增值模式**：
 
 ---
 
-## Help 选项卡和教程
+## Help 选项卡和教程 {#help-tab-and-tutorials}
 
 **Help** 选项卡包括应用内教程、最佳实践指南和参考信息。
 
@@ -418,7 +418,7 @@ NVH Source Locator 使用**按功能锁定的免费增值模式**：
 
 ---
 
-## 疑难解答
+## 疑难解答 {#troubleshooting}
 
 ### 计算结果不正确或没有意义
 

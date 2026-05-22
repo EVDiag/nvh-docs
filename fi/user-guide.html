@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Vianmääritys</a></li>
 </ol>
 <hr />
-<h2 id="kuinka-se-toimii">Kuinka se toimii</h2>
+<h2 id="how-it-works">Kuinka se toimii</h2>
 <p>Kun melulähde lähettää ääntä tai tärinää, aalto kulkee materiaalin läpi tunnetulla nopeudella. Jos asetat kaksi tai useampia kiihtyvyysanturia materiaalille ja mittaat, milloin aalto saapuu kuhunkin, aikaero kertoo missä lähde sijaitsee.</p>
 <p>NVH Source Locator ottaa:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 anturia</strong> → asema 3D-tilassa (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="ennen-aloittamista">Ennen aloittamista</h2>
+<h2 id="before-you-start">Ennen aloittamista</h2>
 <p>Tarvitset:</p>
 <ul>
 <li><strong>Oskilloskoopin tai mittausjärjestelmän</strong>, joka pystyy näyttämään aikaeron kiihtyvyysantureiden kanavien välillä mikrosekuntina (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Aloitusnäyttö 2-Sensor-välilehdellä" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="paavalilehdet">Päävälilehdet</h2>
+<h2 id="the-main-tabs">Päävälilehdet</h2>
 <p>Sovelluksessa on välilehdet yläosassa:</p>
 <p><img alt="Välilehtipalkki" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Asetuksiin pääsee ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa (ei välilehti).</p>
 <hr />
-<h2 id="2-sensor-tila">2-Sensor-tila</h2>
+<h2 id="2-sensor-mode">2-Sensor-tila</h2>
 <p>Yksinkertaisin mittaus: lähteen paikannus viivaa pitkin kahden kiihtyvyysanturin välillä.</p>
 <p><img alt="2-Sensor-välilehti" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="vaihe-1-kayta-materiaalia">Vaihe 1: Käytä materiaalia</h3>
@@ -197,7 +197,7 @@
 <h3 id="vaihe-5-valinnainen-merkitse-valokuva">Vaihe 5 (valinnainen): Merkitse valokuva</h3>
 <p>Napauta <strong>📷 Merkitse valokuva</strong> ottaaksesi valokuvan asennuksesta. Sovellus asettaa merkit antureille A, B ja lähteelle. Hyödyllinen raportteihin.</p>
 <hr />
-<h2 id="3-sensor-tila">3-Sensor-tila</h2>
+<h2 id="3-sensor-mode">3-Sensor-tila</h2>
 <p>Paikallistaa lähteen 2D-tasolla kolmen kolmioon asetetun anturin avulla.</p>
 <p><img alt="3-Sensor-välilehti" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="asennus">Asennus</h3>
@@ -212,7 +212,7 @@
 <p>Sovellus näyttää lähteen sijainnin X-, Y-koordinaatteina suhteessa anturiin A (anturi A origossa, anturi B X-akselilla). Visualisointi näyttää kaikki kolme anturia ja lähteen sijainnin.</p>
 <p><img alt="Kolmion tulos" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-tilat">Pro+-tilat</h2>
+<h2 id="pro-modes">Pro+-tilat</h2>
 <p>Useat edistyneet välilehdet tarjoavat ylidefinoituja ratkaisijoita ja korkeampaa ulottuvuutta:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Sama kolmioasennus kuin 3-Sensor, mutta kalibroi JA mittaa kaikki kolme paria (A–B, A–C, B–C). Ratkaisija käyttää kaikkia 3 TDOA:ta pienimmän neliösumman sovituksessa — vahvempi mittausäänekohinaa ja anisotrooppisia materiaaleja vastaan. Parikohtaiset jäännökset raportoidaan, joten voit havaita epäjohdonmukaiset mittaukset.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Kuten 3D, mutta tukee enintään <strong>6 anturia</strong> (A:sta F:ään) ylidefinoituun LSQ:hen. Maksimaalinen tarkkuus monimutkaisille 3D-geometrioille.</p>
 <hr />
-<h2 id="materials-valilehti">Materials-välilehti</h2>
+<h2 id="the-materials-tab">Materials-välilehti</h2>
 <p>Tavallisten teknisten materiaalien kirjasto tunnetulla äänennopeudella 20 °C:ssa.</p>
 <p><img alt="Materials-välilehti" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="materiaaliluettelo">Materiaaliluettelo</h3>
@@ -261,7 +261,7 @@
 <h3 id="haku">Haku</h3>
 <p>Käytä yläosan hakukenttää suodattaaksesi materiaalit nimen mukaan. Haku vastaa sekä englannin kielen kanonisia nimiä että käännettyjä näyttönimiä.</p>
 <hr />
-<h2 id="lampotilakompensointi">Lämpötilakompensointi</h2>
+<h2 id="temperature-compensation">Lämpötilakompensointi</h2>
 <p>Äänennopeus materiaaleissa muuttuu lämpötilan myötä. Automotiivisessa NVH-testauksessa tämä on tärkeää: 80 °C:n moottoritila, -10 °C:n kylmäimeytetty hytti tai 200 °C:n pakosarjaalue käyttäytyvät eri tavalla kuin huoneenlämpötilan laboratorio-olosuhteet.</p>
 <h3 id="lampotilan-asettaminen">Lämpötilan asettaminen</h3>
 <p>Avaa Asetukset (⚙-kuvake) → Viitelämpötila. Syötä testiympäristösi lämpötila °C:ssa (alue -40 - +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="materiaalit-ilman-kompensointia">Materiaalit ilman kompensointia</h3>
 <p>Useimmilla ei-metallisilla materiaaleilla ei ole luotettavia julkaistuja lämpötilakertoimia. Sovellus näyttää niille <strong>"ref only"</strong>-merkin — niiden listattu nopeus käytetään riippumatta lämpötila-asetuksesta. Jos tarvitset tarkkoja mittauksia ei-huoneenlämpötiloissa näille materiaaleille, suorita in-situ-kalibrointi ja tallenna tulos mukautettuna materiaalina.</p>
 <hr />
-<h2 id="valokuvan-merkinta">Valokuvan merkintä</h2>
+<h2 id="photo-annotation">Valokuvan merkintä</h2>
 <p>Onnistuneen laskennan jälkeen, napauta <strong>📷 Merkitse valokuva</strong> -painiketta asettaaksesi anturi- ja lähdemerkit asennuksesi valokuvan päälle.</p>
 <p><img alt="Valokuvan merkintä" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="kulku">Kulku</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Merkitty valokuva sisällytetään automaattisesti PDF-raportteihin.</p>
 <hr />
-<h2 id="raportit">Raportit</h2>
+<h2 id="reports">Raportit</h2>
 <p>Napauta <strong>Tulosta tulos</strong> -painiketta millä tahansa tulosnäytöllä luodaksesi muotoillun raportin.</p>
 <p><img alt="PDF-raportti" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="raportin-sisalto">Raportin sisältö</h3>
@@ -318,7 +318,7 @@
 <h3 id="otsikon-mukauttaminen">Otsikon mukauttaminen</h3>
 <p>Asetukset → Raportin otsikko. Syötä yrityksesi nimi, laboratorion nimi, projektin tiedot tai mitä haluat jokaisen raportin yläosaan.</p>
 <hr />
-<h2 id="varmuuskopiointi-ja-palautus">Varmuuskopiointi ja palautus</h2>
+<h2 id="backup-and-restore">Varmuuskopiointi ja palautus</h2>
 <p>Tallenna kaikki mukautetut materiaalit, suosikit, asetukset ja historia yhteen tiedostoon. Siirto laitteiden välillä.</p>
 <h3 id="varmuuskopiointi">Varmuuskopiointi</h3>
 <p>Asetukset → <strong>Varmuuskopiointi</strong> → napauta "Tallenna varmuuskopiotiedosto". Sovellus luo JSON-tiedoston ja avaa puhelimesi jakovalikon. Tallenna se pilvitallennuksessasi (Google Drive, iCloud, OneDrive), lähetä se sähköpostitse itsellesi tai siirrä haluamallasi tavalla.</p>
@@ -326,7 +326,7 @@
 <p>Asetukset → <strong>Palautus</strong> → valitse varmuuskopiotiedosto puhelimesi tallennustilasta. Sovellus tuo mukautetut materiaalit, suosikit, historian ja asetukset.</p>
 <p>⚠️ <strong>Palautus korvaa nykyiset tietosi.</strong> Jos sinulla on tärkeitä mittauksia nykyisellä laitteella, varmuuskopioi ne ensin ennen palauttamista eri varmuuskopiosta.</p>
 <hr />
-<h2 id="asetukset">Asetukset</h2>
+<h2 id="settings">Asetukset</h2>
 <p>Pääsy ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa. Asetukset on modaalinen, ei välilehti.</p>
 <p><img alt="Asetukset" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-ominaisuudet">Pro-ominaisuudet</h2>
+<h2 id="pro-features">Pro-ominaisuudet</h2>
 <p>NVH Source Locator käyttää <strong>ominaisuuslukittua freemium-mallia</strong>:</p>
 <ul>
 <li><strong>Ilmainen</strong>: 2-Sensor-välilehti on täysin toimiva ilman rajoituksia</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: paywallin "Onko sinulla Google Play -promokoodi?" -painike avaa Google Play -lunastuskulun esitäytetyllä koodillasi.</p>
 <p><strong>iOS</strong>: App Storen käytäntö 3.1.1 vaatii lunastuksen Applen virallisen "Lunasta koodi" -kulun kautta. Google Play -painike on piilotettu iOS:ssä. Etsi sen sijaan "Lunasta App Store -koodi" Asetuksista.</p>
 <hr />
-<h2 id="help-valilehti-ja-opetusohjelmat">Help-välilehti ja opetusohjelmat</h2>
+<h2 id="help-tab-and-tutorials">Help-välilehti ja opetusohjelmat</h2>
 <p><strong>Help</strong>-välilehti sisältää sovelluksen sisäisiä opetusohjelmia, parhaiden käytäntöjen oppaita ja viitetietoja.</p>
 <p><img alt="Help-välilehti" src="../screenshots/10-help-tab.png" /></p>
 <p>Käsitellyt aiheet:
@@ -427,7 +427,7 @@
 - Vinkit triangulaatioon ja 3D-sijoitteluihin
 - Kaapelireititys ja signaalin laatu</p>
 <hr />
-<h2 id="vianmaaritys">Vianmääritys</h2>
+<h2 id="troubleshooting">Vianmääritys</h2>
 <h3 id="laskennan-tulos-on-vaara-tai-ei-ole-jarkeenkaypa">Laskennan tulos on väärä tai ei ole järkeenkäypä</h3>
 <ol>
 <li>Tarkista kalibrointi. Automaattisesti täytetty <code>tCal</code> olettaa julkaistun materiaalin nopeuden — todelliset materiaalit vaihtelevat. Tarkin kalibrointi on in-situ: napauta tunnettua paikkaa ja anna sovelluksen johtaa todellinen nopeus.</li>

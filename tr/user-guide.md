@@ -26,7 +26,7 @@ Bu kılavuz tüm özellikleri kapsar. Hızlı bir hatırlatma için **Hızlı Ba
 
 ---
 
-## Nasıl çalışır
+## Nasıl çalışır {#how-it-works}
 
 Bir gürültü kaynağı ses veya titreşim yaydığında, dalga bilinen bir hızda bir malzemeden geçer. Malzeme üzerine iki veya daha fazla ivmeölçer yerleştirir ve dalganın her birine ne zaman ulaştığını ölçerseniz, zaman farkı size kaynağın nerede olduğunu söyler.
 
@@ -45,7 +45,7 @@ Ne kadar çok sensör kullanırsanız, kaynağı o kadar doğru lokalize edebili
 
 ---
 
-## Başlamadan önce
+## Başlamadan önce {#before-you-start}
 
 Şunlara ihtiyacınız olacak:
 
@@ -58,7 +58,7 @@ Ne kadar çok sensör kullanırsanız, kaynağı o kadar doğru lokalize edebili
 
 ---
 
-## Ana sekmeler
+## Ana sekmeler {#the-main-tabs}
 
 Uygulamanın üst kısmında sekmeler var:
 
@@ -82,7 +82,7 @@ Ayarlara sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişilir (sek
 
 ---
 
-## 2-Sensor modu
+## 2-Sensor modu {#2-sensor-mode}
 
 En basit ölçüm: iki ivmeölçer arasında bir çizgi boyunca kaynak lokalizasyonu.
 
@@ -124,7 +124,7 @@ Kurulumunuzun bir fotoğrafını çekmek için **📷 Fotoğrafı açıkla** se�
 
 ---
 
-## 3-Sensor modu
+## 3-Sensor modu {#3-sensor-mode}
 
 Bir üçgen şeklinde düzenlenmiş üç sensör kullanarak 2D düzlemde bir kaynak lokalize eder.
 
@@ -151,7 +151,7 @@ Uygulama kaynak konumunu A sensörüne göre X, Y koordinatları olarak gösteri
 
 ---
 
-## Pro+ modları
+## Pro+ modları {#pro-modes}
 
 Birkaç gelişmiş sekme aşırı belirlenmiş çözücüler ve daha yüksek boyutluluk sunar:
 
@@ -181,7 +181,7 @@ Herhangi bir konumda dört sensör (dikdörtgen olarak zorlanmamış). A'yı B, 
 
 ---
 
-## Materials sekmesi
+## Materials sekmesi {#the-materials-tab}
 
 20 °C'de bilinen ses hızına sahip yaygın mühendislik malzemeleri kütüphanesi.
 
@@ -230,7 +230,7 @@ Malzemeleri ada göre filtrelemek için üstteki arama çubuğunu kullanın. Ara
 
 ---
 
-## Sıcaklık kompanzasyonu
+## Sıcaklık kompanzasyonu {#temperature-compensation}
 
 Malzemelerdeki ses hızı sıcaklıkla değişir. Otomotiv NVH testinde bu önemlidir: 80 °C'deki bir motor bölmesi, -10 °C'de soğukta beklemiş bir kabin veya 200 °C'deki bir egzoz manifold alanı, oda sıcaklığındaki laboratuvar koşullarından farklı davranır.
 
@@ -261,7 +261,7 @@ Geçmişteki bir ölçümü orijinal sıcaklığında yeniden oynatmak istiyorsa
 
 ---
 
-## Fotoğraf açıklaması
+## Fotoğraf açıklaması {#photo-annotation}
 
 Başarılı bir hesaplamadan sonra, kurulumunuzun bir fotoğrafına sensör ve kaynak işaretlerini bindirmek için **📷 Fotoğrafı açıkla** düğmesine dokunun.
 
@@ -280,7 +280,7 @@ Açıklanan fotoğraf otomatik olarak PDF raporlarına dahil edilir.
 
 ---
 
-## Raporlar
+## Raporlar {#reports}
 
 Biçimlendirilmiş bir rapor oluşturmak için herhangi bir sonuç ekranındaki **Sonucu yazdır** düğmesine dokunun.
 
@@ -309,7 +309,7 @@ Ayarlar → Rapor başlığı. Şirket adınızı, laboratuvar adınızı, proje
 
 ---
 
-## Yedekleme ve geri yükleme
+## Yedekleme ve geri yükleme {#backup-and-restore}
 
 Tüm özel malzemelerinizi, favorilerinizi, ayarlarınızı ve geçmişinizi tek bir dosyaya kaydedin. Cihazlar arasında aktarım.
 
@@ -325,7 +325,7 @@ Ayarlar → **Geri yükleme** → telefonunuzun depolamasından yedek dosyasın�
 
 ---
 
-## Ayarlar
+## Ayarlar {#settings}
 
 Sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişin. Ayarlar bir kalıcıdır, sekme değildir.
 
@@ -345,7 +345,7 @@ Sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişin. Ayarlar bir ka
 
 ---
 
-## Pro özellikler
+## Pro özellikler {#pro-features}
 
 NVH Source Locator bir **özellik kilitli freemium modeli** kullanır:
 
@@ -402,7 +402,7 @@ NVH Source Locator arka planda çalışırken Google Play Store veya App Store'd
 
 ---
 
-## Help sekmesi ve öğreticiler
+## Help sekmesi ve öğreticiler {#help-tab-and-tutorials}
 
 **Help** sekmesi, uygulama içi öğreticiler, en iyi uygulama kılavuzları ve referans bilgileri içerir.
 
@@ -418,7 +418,7 @@ Kapsanan konular:
 
 ---
 
-## Sorun giderme
+## Sorun giderme {#troubleshooting}
 
 ### Hesaplama sonucu yanlış veya anlamsız
 

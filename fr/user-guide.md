@@ -26,7 +26,7 @@ Ce guide couvre toutes les fonctionnalités. Pour un rappel rapide, consultez **
 
 ---
 
-## Comment ça fonctionne
+## Comment ça fonctionne {#how-it-works}
 
 Lorsqu'une source de bruit émet un son ou une vibration, l'onde se propage à travers le matériau à une vitesse connue. Si vous placez deux ou plusieurs accéléromètres sur le matériau et mesurez le moment où l'onde arrive à chacun, la différence de temps vous indique où se trouve la source.
 
@@ -45,7 +45,7 @@ Plus vous utilisez de capteurs, plus précisément vous pouvez localiser la sour
 
 ---
 
-## Avant de commencer
+## Avant de commencer {#before-you-start}
 
 Vous aurez besoin de :
 
@@ -58,7 +58,7 @@ Vous aurez besoin de :
 
 ---
 
-## Les onglets principaux
+## Les onglets principaux {#the-main-tabs}
 
 L'application a des onglets en haut :
 
@@ -82,7 +82,7 @@ Les paramètres sont accessibles via l'icône d'engrenage ⚙ dans le coin supé
 
 ---
 
-## Mode 2-Sensor
+## Mode 2-Sensor {#2-sensor-mode}
 
 La mesure la plus simple : localisation de source le long d'une ligne entre deux accéléromètres.
 
@@ -124,7 +124,7 @@ Touchez **📷 Annoter une photo** pour prendre une photo de votre configuration
 
 ---
 
-## Mode 3-Sensor
+## Mode 3-Sensor {#3-sensor-mode}
 
 Localise une source sur un plan 2D à l'aide de trois capteurs disposés en triangle.
 
@@ -151,7 +151,7 @@ L'application affiche la position de la source comme coordonnées X, Y relatives
 
 ---
 
-## Modes Pro+
+## Modes Pro+ {#pro-modes}
 
 Plusieurs onglets avancés offrent des solveurs surdéterminés et une dimensionnalité supérieure :
 
@@ -181,7 +181,7 @@ Comme 3D mais prend en charge jusqu'à **6 capteurs** (A à F) avec LSQ surdéte
 
 ---
 
-## L'onglet Materials
+## L'onglet Materials {#the-materials-tab}
 
 Bibliothèque de matériaux d'ingénierie courants avec vitesse du son connue à 20 °C.
 
@@ -230,7 +230,7 @@ Utilisez la barre de recherche en haut pour filtrer les matériaux par nom. La r
 
 ---
 
-## Compensation de température
+## Compensation de température {#temperature-compensation}
 
 La vitesse du son dans les matériaux change avec la température. Dans les tests NVH automobiles, cela compte : un compartiment moteur à 80 °C, une cabine refroidie à -10 °C ou une zone du collecteur d'échappement à 200 °C se comportent tous différemment des conditions de laboratoire à température ambiante.
 
@@ -261,7 +261,7 @@ La plupart des matériaux non métalliques n'ont pas de coefficients de tempéra
 
 ---
 
-## Annotation de photo
+## Annotation de photo {#photo-annotation}
 
 Après un calcul réussi, touchez le bouton **📷 Annoter une photo** pour superposer des marqueurs de capteur et de source sur une photo de votre configuration.
 
@@ -280,7 +280,7 @@ La photo annotée est incluse automatiquement dans les rapports PDF.
 
 ---
 
-## Rapports
+## Rapports {#reports}
 
 Touchez le bouton **Imprimer le résultat** sur n'importe quel écran de résultats pour générer un rapport formaté.
 
@@ -309,7 +309,7 @@ Paramètres → En-tête de rapport. Saisissez votre nom d'entreprise, nom de la
 
 ---
 
-## Sauvegarde et restauration
+## Sauvegarde et restauration {#backup-and-restore}
 
 Enregistrez tous vos matériaux personnalisés, favoris, paramètres et historique dans un seul fichier. Transférer entre appareils.
 
@@ -325,7 +325,7 @@ Paramètres → **Restauration** → choisissez le fichier de sauvegarde dans le
 
 ---
 
-## Paramètres
+## Paramètres {#settings}
 
 Accès via l'icône d'engrenage ⚙ dans le coin supérieur droit. Les paramètres sont une fenêtre modale, pas un onglet.
 
@@ -345,7 +345,7 @@ Accès via l'icône d'engrenage ⚙ dans le coin supérieur droit. Les paramètr
 
 ---
 
-## Fonctionnalités Pro
+## Fonctionnalités Pro {#pro-features}
 
 NVH Source Locator utilise un **modèle freemium avec verrouillage par fonctionnalité** :
 
@@ -402,7 +402,7 @@ Si vous échangez un code promotionnel dans le Google Play Store ou l'App Store 
 
 ---
 
-## Onglet Help et tutoriels
+## Onglet Help et tutoriels {#help-tab-and-tutorials}
 
 L'onglet **Help** inclut des tutoriels intégrés, des guides de meilleures pratiques et des informations de référence.
 
@@ -418,7 +418,7 @@ Sujets couverts :
 
 ---
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 ### Le résultat du calcul est faux ou n'a aucun sens
 

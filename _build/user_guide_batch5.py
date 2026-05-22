@@ -34,7 +34,7 @@ NVH Source Locator هي أداة قياس لتحديد مواقع مصادر ا�
 
 ---
 
-## كيف يعمل
+## كيف يعمل {#how-it-works}
 
 عندما يصدر مصدر الضوضاء صوتًا أو اهتزازًا، تنتقل الموجة عبر المادة بسرعة معروفة. إذا وضعت اثنين أو أكثر من مقاييس التسارع على المادة وقاست متى تصل الموجة إلى كل منها، فإن فرق الوقت يخبرك بمكان وجود المصدر.
 
@@ -53,7 +53,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## قبل البدء
+## قبل البدء {#before-you-start}
 
 ستحتاج إلى:
 
@@ -66,7 +66,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## علامات التبويب الرئيسية
+## علامات التبويب الرئيسية {#the-main-tabs}
 
 التطبيق به علامات تبويب في الأعلى:
 
@@ -90,7 +90,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## وضع 2-Sensor
+## وضع 2-Sensor {#2-sensor-mode}
 
 أبسط قياس: تحديد موقع المصدر على طول خط بين مقياسي تسارع.
 
@@ -132,7 +132,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## وضع 3-Sensor
+## وضع 3-Sensor {#3-sensor-mode}
 
 يحدد موقع مصدر على مستوى ثنائي الأبعاد باستخدام ثلاثة مستشعرات مرتبة في مثلث.
 
@@ -159,7 +159,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## أوضاع Pro+
+## أوضاع Pro+ {#pro-modes}
 
 تقدم عدة علامات تبويب متقدمة حلالات محددة بشكل زائد وأبعادًا أعلى:
 
@@ -189,7 +189,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## علامة تبويب Materials
+## علامة تبويب Materials {#the-materials-tab}
 
 مكتبة من المواد الهندسية الشائعة بسرعة صوت معروفة عند 20 °م.
 
@@ -238,7 +238,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## تعويض درجة الحرارة
+## تعويض درجة الحرارة {#temperature-compensation}
 
 تتغير سرعة الصوت في المواد مع درجة الحرارة. في اختبار NVH للسيارات، هذا مهم: حجرة محرك عند 80 °م، أو مقصورة باردة عند -10 °م، أو منطقة مشعب عادم عند 200 °م كلها تتصرف بشكل مختلف عن ظروف المختبر في درجة حرارة الغرفة.
 
@@ -269,7 +269,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## شرح الصور
+## شرح الصور {#photo-annotation}
 
 بعد حساب ناجح، اضغط على زر **📷 شرح الصورة** لوضع علامات المستشعر والمصدر على صورة لإعدادك.
 
@@ -288,7 +288,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## التقارير
+## التقارير {#reports}
 
 اضغط على زر **طباعة النتيجة** على أي شاشة نتائج لإنشاء تقرير منسق.
 
@@ -317,7 +317,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## النسخ الاحتياطي والاستعادة
+## النسخ الاحتياطي والاستعادة {#backup-and-restore}
 
 احفظ جميع موادك المخصصة، المفضلات، الإعدادات، والسجل في ملف واحد. النقل بين الأجهزة.
 
@@ -333,7 +333,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## الإعدادات
+## الإعدادات {#settings}
 
 الوصول عبر أيقونة الترس ⚙ في الزاوية العلوية اليمنى. الإعدادات هي نافذة مشروطة، وليست علامة تبويب.
 
@@ -353,7 +353,7 @@ NVH Source Locator يأخذ:
 
 ---
 
-## ميزات Pro
+## ميزات Pro {#pro-features}
 
 NVH Source Locator يستخدم **نموذج freemium بقفل الميزات**:
 
@@ -410,7 +410,7 @@ NVH Source Locator يستخدم **نموذج freemium بقفل الميزات**:
 
 ---
 
-## علامة تبويب Help والدروس التعليمية
+## علامة تبويب Help والدروس التعليمية {#help-tab-and-tutorials}
 
 تتضمن علامة تبويب **Help** دروسًا تعليمية داخل التطبيق، وأدلة أفضل الممارسات، ومعلومات مرجعية.
 
@@ -426,7 +426,7 @@ NVH Source Locator يستخدم **نموذج freemium بقفل الميزات**:
 
 ---
 
-## استكشاف الأخطاء وإصلاحها
+## استكشاف الأخطاء وإصلاحها {#troubleshooting}
 
 ### نتيجة الحساب خاطئة أو لا معنى لها
 
@@ -513,7 +513,7 @@ NVH Source Locatorは、オシロスコープまたは測定システムでキ�
 
 ---
 
-## 仕組み
+## 仕組み {#how-it-works}
 
 騒音源が音や振動を発すると、波は既知の速度で材料を伝わります。材料に2つ以上の加速度計を配置し、波がそれぞれに到達する時刻を測定すると、時間差から源の場所がわかります。
 
@@ -532,7 +532,7 @@ NVH Source Locatorは以下を取得します:
 
 ---
 
-## 始める前に
+## 始める前に {#before-you-start}
 
 必要なもの:
 
@@ -545,7 +545,7 @@ NVH Source Locatorは以下を取得します:
 
 ---
 
-## メインタブ
+## メインタブ {#the-main-tabs}
 
 アプリの上部にタブがあります:
 
@@ -569,7 +569,7 @@ NVH Source Locatorは以下を取得します:
 
 ---
 
-## 2-Sensorモード
+## 2-Sensorモード {#2-sensor-mode}
 
 最も簡単な測定: 2つの加速度計間の線に沿ったソース定位。
 
@@ -611,7 +611,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## 3-Sensorモード
+## 3-Sensorモード {#3-sensor-mode}
 
 三角形に配置された3つのセンサーを使用して、2D平面上のソースを特定します。
 
@@ -638,7 +638,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## Pro+モード
+## Pro+モード {#pro-modes}
 
 いくつかの高度なタブは、過剰決定されたソルバーと高次元性を提供します:
 
@@ -668,7 +668,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## Materialsタブ
+## Materialsタブ {#the-materials-tab}
 
 20 °Cで既知の音速を持つ一般的なエンジニアリング材料のライブラリ。
 
@@ -717,7 +717,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## 温度補正
+## 温度補正 {#temperature-compensation}
 
 材料の音速は、温度によって変化します。自動車のNVHテストでは、これが重要です: 80 °Cのエンジンルーム、-10 °Cの冷えたキャビン、または200 °Cの排気マニホールド領域はすべて、室温の実験室条件とは異なる動作をします。
 
@@ -748,7 +748,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## 写真の注釈
+## 写真の注釈 {#photo-annotation}
 
 計算が成功したら、**📷 写真に注釈** ボタンをタップして、セットアップの写真にセンサーとソースのマーカーを重ねます。
 
@@ -767,7 +767,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## レポート
+## レポート {#reports}
 
 任意の結果画面の **結果を印刷** ボタンをタップして、フォーマットされたレポートを生成します。
 
@@ -796,7 +796,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## バックアップと復元
+## バックアップと復元 {#backup-and-restore}
 
 すべてのカスタム材料、お気に入り、設定、履歴を1つのファイルに保存します。デバイス間で転送します。
 
@@ -812,7 +812,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## 設定
+## 設定 {#settings}
 
 右上隅の⚙ギアアイコンからアクセスします。設定はモーダルであり、タブではありません。
 
@@ -832,7 +832,7 @@ Materialsタブをタップします。構造が作られている材料を選�
 
 ---
 
-## Pro機能
+## Pro機能 {#pro-features}
 
 NVH Source Locatorは、**機能ロック型freemiumモデル** を使用します:
 
@@ -889,7 +889,7 @@ NVH Source Locatorがバックグラウンドで実行されている間にGoogl
 
 ---
 
-## Helpタブとチュートリアル
+## Helpタブとチュートリアル {#help-tab-and-tutorials}
 
 **Help** タブには、アプリ内チュートリアル、ベストプラクティスガイド、参照情報が含まれます。
 
@@ -905,7 +905,7 @@ NVH Source Locatorがバックグラウンドで実行されている間にGoogl
 
 ---
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
 ### 計算結果が間違っているか意味がありません
 
@@ -992,7 +992,7 @@ NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된
 
 ---
 
-## 작동 방식
+## 작동 방식 {#how-it-works}
 
 소음 소스가 소리나 진동을 방출하면 파동은 알려진 속도로 재료를 통과합니다. 재료에 가속도계 두 개 이상을 배치하고 파동이 각각에 도달하는 시점을 측정하면 시간 차이가 소스의 위치를 알려줍니다.
 
@@ -1011,7 +1011,7 @@ NVH Source Locator는 다음을 수집합니다:
 
 ---
 
-## 시작하기 전에
+## 시작하기 전에 {#before-you-start}
 
 필요한 것:
 
@@ -1024,7 +1024,7 @@ NVH Source Locator는 다음을 수집합니다:
 
 ---
 
-## 주요 탭
+## 주요 탭 {#the-main-tabs}
 
 앱 상단에 탭이 있습니다:
 
@@ -1048,7 +1048,7 @@ NVH Source Locator는 다음을 수집합니다:
 
 ---
 
-## 2-Sensor 모드
+## 2-Sensor 모드 {#2-sensor-mode}
 
 가장 간단한 측정: 두 개의 가속도계 사이의 선을 따라 소스 위치 측정.
 
@@ -1090,7 +1090,7 @@ Materials 탭을 탭합니다. 구조가 만들어진 재료를 선택하세요(
 
 ---
 
-## 3-Sensor 모드
+## 3-Sensor 모드 {#3-sensor-mode}
 
 삼각형에 배치된 세 개의 센서를 사용하여 2D 평면에서 소스를 찾습니다.
 
@@ -1117,7 +1117,7 @@ Materials 탭을 탭합니다. 구조가 만들어진 재료를 선택하세요(
 
 ---
 
-## Pro+ 모드
+## Pro+ 모드 {#pro-modes}
 
 여러 고급 탭은 과결정 솔버와 더 높은 차원을 제공합니다:
 
@@ -1147,7 +1147,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## Materials 탭
+## Materials 탭 {#the-materials-tab}
 
 20 °C에서 알려진 음속을 가진 일반 엔지니어링 재료 라이브러리.
 
@@ -1196,7 +1196,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## 온도 보정
+## 온도 보정 {#temperature-compensation}
 
 재료의 음속은 온도에 따라 변합니다. 자동차 NVH 테스트에서 이것은 중요합니다: 80 °C의 엔진실, -10 °C의 차가운 캐빈, 또는 200 °C의 배기 매니폴드 영역은 모두 실온의 실험실 조건과 다르게 동작합니다.
 
@@ -1227,7 +1227,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## 사진 주석
+## 사진 주석 {#photo-annotation}
 
 성공적인 계산 후 **📷 사진 주석** 버튼을 탭하여 설정 사진에 센서와 소스 마커를 오버레이합니다.
 
@@ -1246,7 +1246,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## 보고서
+## 보고서 {#reports}
 
 형식이 지정된 보고서를 생성하려면 결과 화면의 **결과 인쇄** 버튼을 탭합니다.
 
@@ -1275,7 +1275,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## 백업 및 복원
+## 백업 및 복원 {#backup-and-restore}
 
 모든 사용자 정의 재료, 즐겨찾기, 설정, 기록을 단일 파일에 저장합니다. 장치 간 전송.
 
@@ -1291,7 +1291,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## 설정
+## 설정 {#settings}
 
 오른쪽 상단의 ⚙ 톱니바퀴 아이콘을 통해 액세스합니다. 설정은 모달이며 탭이 아닙니다.
 
@@ -1311,7 +1311,7 @@ A–B 쌍 (수평)을 먼저 실행한 다음 C–D 쌍 (수직)을 실행합니
 
 ---
 
-## Pro 기능
+## Pro 기능 {#pro-features}
 
 NVH Source Locator는 **기능 잠금 freemium 모델**을 사용합니다:
 
@@ -1368,7 +1368,7 @@ NVH Source Locator가 백그라운드에서 실행되는 동안 Google Play 스�
 
 ---
 
-## Help 탭 및 튜토리얼
+## Help 탭 및 튜토리얼 {#help-tab-and-tutorials}
 
 **Help** 탭에는 앱 내 튜토리얼, 모범 사례 가이드, 참조 정보가 포함되어 있습니다.
 
@@ -1384,7 +1384,7 @@ NVH Source Locator가 백그라운드에서 실행되는 동안 Google Play 스�
 
 ---
 
-## 문제 해결
+## 문제 해결 {#troubleshooting}
 
 ### 계산 결과가 잘못되었거나 의미가 없습니다
 
@@ -1471,7 +1471,7 @@ NVH Source Locator เป็นเครื่องมือวัดสำห�
 
 ---
 
-## วิธีการทำงาน
+## วิธีการทำงาน {#how-it-works}
 
 เมื่อแหล่งกำเนิดเสียงปล่อยเสียงหรือการสั่นสะเทือน คลื่นจะเดินทางผ่านวัสดุด้วยความเร็วที่ทราบ หากคุณวางมาตรวัดความเร่งสองตัวหรือมากกว่าบนวัสดุและวัดเมื่อคลื่นมาถึงแต่ละตัว ความแตกต่างของเวลาจะบอกคุณว่าแหล่งกำเนิดอยู่ที่ไหน
 
@@ -1490,7 +1490,7 @@ NVH Source Locator นำ:
 
 ---
 
-## ก่อนเริ่มต้น
+## ก่อนเริ่มต้น {#before-you-start}
 
 คุณต้องการ:
 
@@ -1503,7 +1503,7 @@ NVH Source Locator นำ:
 
 ---
 
-## แท็บหลัก
+## แท็บหลัก {#the-main-tabs}
 
 แอปมีแท็บอยู่ด้านบน:
 
@@ -1527,7 +1527,7 @@ NVH Source Locator นำ:
 
 ---
 
-## โหมด 2-Sensor
+## โหมด 2-Sensor {#2-sensor-mode}
 
 การวัดที่ง่ายที่สุด: การระบุตำแหน่งแหล่งกำเนิดตามเส้นระหว่างมาตรวัดความเร่งสองตัว
 
@@ -1569,7 +1569,7 @@ NVH Source Locator นำ:
 
 ---
 
-## โหมด 3-Sensor
+## โหมด 3-Sensor {#3-sensor-mode}
 
 ระบุตำแหน่งแหล่งกำเนิดบนระนาบ 2D โดยใช้เซ็นเซอร์สามตัวที่จัดเรียงในรูปสามเหลี่ยม
 
@@ -1596,7 +1596,7 @@ NVH Source Locator นำ:
 
 ---
 
-## โหมด Pro+
+## โหมด Pro+ {#pro-modes}
 
 แท็บขั้นสูงหลายแท็บมีตัวแก้สมการที่กำหนดเกินและมิติที่สูงกว่า:
 
@@ -1626,7 +1626,7 @@ NVH Source Locator นำ:
 
 ---
 
-## แท็บ Materials
+## แท็บ Materials {#the-materials-tab}
 
 ไลบรารีของวัสดุทางวิศวกรรมทั่วไปที่มีความเร็วเสียงที่ทราบที่ 20 °C
 
@@ -1675,7 +1675,7 @@ NVH Source Locator นำ:
 
 ---
 
-## การชดเชยอุณหภูมิ
+## การชดเชยอุณหภูมิ {#temperature-compensation}
 
 ความเร็วเสียงในวัสดุเปลี่ยนแปลงตามอุณหภูมิ ในการทดสอบ NVH สำหรับยานยนต์ เรื่องนี้สำคัญ: ห้องเครื่องที่ 80 °C, ห้องโดยสารที่เย็นที่ -10 °C, หรือพื้นที่ท่อร่วมไอเสียที่ 200 °C ล้วนทำงานแตกต่างจากสภาพห้องปฏิบัติการที่อุณหภูมิห้อง
 
@@ -1706,7 +1706,7 @@ NVH Source Locator นำ:
 
 ---
 
-## การใส่คำอธิบายภาพถ่าย
+## การใส่คำอธิบายภาพถ่าย {#photo-annotation}
 
 หลังจากการคำนวณสำเร็จ แตะปุ่ม **📷 ใส่คำอธิบายภาพถ่าย** เพื่อวางเครื่องหมายเซ็นเซอร์และแหล่งกำเนิดบนภาพถ่ายของการตั้งค่าของคุณ
 
@@ -1725,7 +1725,7 @@ NVH Source Locator นำ:
 
 ---
 
-## รายงาน
+## รายงาน {#reports}
 
 แตะปุ่ม **พิมพ์ผลลัพธ์** บนหน้าจอผลลัพธ์ใดๆ เพื่อสร้างรายงานที่จัดรูปแบบ
 
@@ -1754,7 +1754,7 @@ NVH Source Locator นำ:
 
 ---
 
-## การสำรองและการกู้คืน
+## การสำรองและการกู้คืน {#backup-and-restore}
 
 บันทึกวัสดุที่กำหนดเองทั้งหมด, รายการโปรด, การตั้งค่า, และประวัติของคุณลงในไฟล์เดียว โอนระหว่างอุปกรณ์
 
@@ -1770,7 +1770,7 @@ NVH Source Locator นำ:
 
 ---
 
-## การตั้งค่า
+## การตั้งค่า {#settings}
 
 เข้าถึงผ่านไอคอนรูปเฟือง ⚙ ที่มุมขวาบน การตั้งค่าเป็นแบบโมดอล ไม่ใช่แท็บ
 
@@ -1790,7 +1790,7 @@ NVH Source Locator นำ:
 
 ---
 
-## คุณสมบัติ Pro
+## คุณสมบัติ Pro {#pro-features}
 
 NVH Source Locator ใช้ **โมเดล freemium ที่ล็อคตามคุณสมบัติ**:
 
@@ -1847,7 +1847,7 @@ NVH Source Locator ใช้ **โมเดล freemium ที่ล็อคต
 
 ---
 
-## แท็บ Help และบทช่วยสอน
+## แท็บ Help และบทช่วยสอน {#help-tab-and-tutorials}
 
 แท็บ **Help** รวมบทช่วยสอนในแอป, คู่มือแนวทางปฏิบัติที่ดีที่สุด, และข้อมูลอ้างอิง
 
@@ -1863,7 +1863,7 @@ NVH Source Locator ใช้ **โมเดล freemium ที่ล็อคต
 
 ---
 
-## การแก้ไขปัญหา
+## การแก้ไขปัญหา {#troubleshooting}
 
 ### ผลลัพธ์การคำนวณผิดพลาดหรือไม่สมเหตุสมผล
 
@@ -1950,7 +1950,7 @@ Hướng dẫn này bao quát tất cả các tính năng. Để có một tóm 
 
 ---
 
-## Cách hoạt động
+## Cách hoạt động {#how-it-works}
 
 Khi một nguồn tiếng ồn phát ra âm thanh hoặc rung động, sóng truyền qua vật liệu với tốc độ đã biết. Nếu bạn đặt hai hoặc nhiều gia tốc kế trên vật liệu và đo thời điểm sóng đến mỗi cảm biến, sự khác biệt thời gian sẽ cho bạn biết nguồn ở đâu.
 
@@ -1969,7 +1969,7 @@ Bạn càng sử dụng nhiều cảm biến, bạn càng có thể xác định
 
 ---
 
-## Trước khi bắt đầu
+## Trước khi bắt đầu {#before-you-start}
 
 Bạn sẽ cần:
 
@@ -1982,7 +1982,7 @@ Bạn sẽ cần:
 
 ---
 
-## Các tab chính
+## Các tab chính {#the-main-tabs}
 
 Ứng dụng có các tab ở trên cùng:
 
@@ -2006,7 +2006,7 @@ Cài đặt được truy cập thông qua biểu tượng bánh răng ⚙ ở g
 
 ---
 
-## Chế độ 2-Sensor
+## Chế độ 2-Sensor {#2-sensor-mode}
 
 Đo lường đơn giản nhất: định vị nguồn dọc theo đường thẳng giữa hai gia tốc kế.
 
@@ -2048,7 +2048,7 @@ Chạm vào **📷 Chú thích ảnh** để chụp ảnh thiết lập của b�
 
 ---
 
-## Chế độ 3-Sensor
+## Chế độ 3-Sensor {#3-sensor-mode}
 
 Định vị một nguồn trên mặt phẳng 2D sử dụng ba cảm biến được sắp xếp thành tam giác.
 
@@ -2075,7 +2075,7 @@ Cho mỗi cặp (A–B và A–C), nhập:
 
 ---
 
-## Chế độ Pro+
+## Chế độ Pro+ {#pro-modes}
 
 Một số tab nâng cao cung cấp bộ giải xác định thừa và chiều cao hơn:
 
@@ -2105,7 +2105,7 @@ Giống như 3D nhưng hỗ trợ tối đa **6 cảm biến** (A đến F) vớ
 
 ---
 
-## Tab Materials
+## Tab Materials {#the-materials-tab}
 
 Thư viện vật liệu kỹ thuật phổ biến với tốc độ âm thanh đã biết ở 20 °C.
 
@@ -2154,7 +2154,7 @@ Sử dụng thanh tìm kiếm ở trên cùng để lọc vật liệu theo tên
 
 ---
 
-## Bù nhiệt độ
+## Bù nhiệt độ {#temperature-compensation}
 
 Tốc độ âm thanh trong vật liệu thay đổi theo nhiệt độ. Trong thử nghiệm NVH ô tô, điều này quan trọng: khoang động cơ ở 80 °C, cabin lạnh ở -10 °C, hoặc khu vực ống xả ở 200 °C tất cả đều hoạt động khác với điều kiện phòng thí nghiệm ở nhiệt độ phòng.
 
@@ -2185,7 +2185,7 @@ Hầu hết các vật liệu phi kim không có hệ số nhiệt độ đáng 
 
 ---
 
-## Chú thích ảnh
+## Chú thích ảnh {#photo-annotation}
 
 Sau khi tính toán thành công, chạm vào nút **📷 Chú thích ảnh** để phủ các điểm đánh dấu cảm biến và nguồn trên một ảnh thiết lập của bạn.
 
@@ -2204,7 +2204,7 @@ Sau khi tính toán thành công, chạm vào nút **📷 Chú thích ảnh** đ
 
 ---
 
-## Báo cáo
+## Báo cáo {#reports}
 
 Chạm vào nút **In kết quả** trên bất kỳ màn hình kết quả nào để tạo báo cáo được định dạng.
 
@@ -2233,7 +2233,7 @@ Cài đặt → Tiêu đề báo cáo. Nhập tên công ty của bạn, tên ph
 
 ---
 
-## Sao lưu và khôi phục
+## Sao lưu và khôi phục {#backup-and-restore}
 
 Lưu tất cả các vật liệu tùy chỉnh, yêu thích, cài đặt và lịch sử của bạn vào một tệp duy nhất. Chuyển giữa các thiết bị.
 
@@ -2249,7 +2249,7 @@ Cài đặt → **Khôi phục** → chọn tệp sao lưu từ bộ nhớ đi�
 
 ---
 
-## Cài đặt
+## Cài đặt {#settings}
 
 Truy cập qua biểu tượng bánh răng ⚙ ở góc trên bên phải. Cài đặt là một modal, không phải tab.
 
@@ -2269,7 +2269,7 @@ Truy cập qua biểu tượng bánh răng ⚙ ở góc trên bên phải. Cài 
 
 ---
 
-## Tính năng Pro
+## Tính năng Pro {#pro-features}
 
 NVH Source Locator sử dụng **mô hình freemium khóa theo tính năng**:
 
@@ -2326,7 +2326,7 @@ Nếu bạn đổi mã khuyến mãi trong Google Play Store hoặc App Store tr
 
 ---
 
-## Tab Help và hướng dẫn
+## Tab Help và hướng dẫn {#help-tab-and-tutorials}
 
 Tab **Help** bao gồm hướng dẫn trong ứng dụng, hướng dẫn thực hành tốt nhất và thông tin tham khảo.
 
@@ -2342,7 +2342,7 @@ Các chủ đề được bao quát:
 
 ---
 
-## Khắc phục sự cố
+## Khắc phục sự cố {#troubleshooting}
 
 ### Kết quả tính toán sai hoặc không có ý nghĩa
 

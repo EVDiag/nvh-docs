@@ -26,7 +26,7 @@ Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in 
 
 ---
 
-## Funktionsweise
+## Funktionsweise {#how-it-works}
 
 Wenn eine Geräuschquelle einen Schall oder eine Vibration erzeugt, breitet sich die Welle mit einer bekannten Geschwindigkeit durch das Material aus. Wenn Sie zwei oder mehr Beschleunigungssensoren auf dem Material platzieren und messen, wann die Welle an jedem ankommt, sagt Ihnen die Zeitdifferenz, wo sich die Quelle befindet.
 
@@ -45,7 +45,7 @@ Je mehr Sensoren Sie verwenden, desto genauer können Sie die Quelle lokalisiere
 
 ---
 
-## Bevor Sie beginnen
+## Bevor Sie beginnen {#before-you-start}
 
 Sie benötigen:
 
@@ -58,7 +58,7 @@ Sie benötigen:
 
 ---
 
-## Die Haupt-Registerkarten
+## Die Haupt-Registerkarten {#the-main-tabs}
 
 Die App hat Registerkarten oben:
 
@@ -82,7 +82,7 @@ Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke 
 
 ---
 
-## 2-Sensor-Modus
+## 2-Sensor-Modus {#2-sensor-mode}
 
 Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.
 
@@ -124,7 +124,7 @@ Tippen Sie auf **📷 Foto annotieren**, um ein Foto Ihres Aufbaus aufzunehmen. 
 
 ---
 
-## 3-Sensor-Modus
+## 3-Sensor-Modus {#3-sensor-mode}
 
 Lokalisiert eine Quelle auf einer 2D-Ebene mit drei in einem Dreieck angeordneten Sensoren.
 
@@ -151,7 +151,7 @@ Die App zeigt die Quellposition als X-, Y-Koordinaten relativ zum Sensor A (Sens
 
 ---
 
-## Pro+-Modi
+## Pro+-Modi {#pro-modes}
 
 Mehrere fortgeschrittene Registerkarten bieten überbestimmte Solver und höhere Dimensionalität:
 
@@ -181,7 +181,7 @@ Wie 3D, aber unterstützt bis zu **6 Sensoren** (A bis F) mit überbestimmtem LS
 
 ---
 
-## Die Materials-Registerkarte
+## Die Materials-Registerkarte {#the-materials-tab}
 
 Bibliothek gängiger technischer Materialien mit bekannter Schallgeschwindigkeit bei 20 °C.
 
@@ -230,7 +230,7 @@ Verwenden Sie die Suchleiste oben, um Materialien nach Namen zu filtern. Die Suc
 
 ---
 
-## Temperaturkompensation
+## Temperaturkompensation {#temperature-compensation}
 
 Die Schallgeschwindigkeit in Materialien ändert sich mit der Temperatur. Im automobilen NVH-Test ist dies wichtig: ein Motorraum bei 80 °C, eine kalt eingelagerte Kabine bei -10 °C oder ein Auspuffkrümmerbereich bei 200 °C verhalten sich alle anders als bei Raumtemperatur-Laborbedingungen.
 
@@ -261,7 +261,7 @@ Die meisten nicht-metallischen Materialien haben keine zuverlässigen veröffent
 
 ---
 
-## Fotoannotation
+## Fotoannotation {#photo-annotation}
 
 Nach einer erfolgreichen Berechnung tippen Sie auf die Schaltfläche **📷 Foto annotieren**, um Sensor- und Quellenmarkierungen über ein Foto Ihres Aufbaus zu legen.
 
@@ -280,7 +280,7 @@ Das annotierte Foto wird automatisch in PDF-Berichte aufgenommen.
 
 ---
 
-## Berichte
+## Berichte {#reports}
 
 Tippen Sie auf die Schaltfläche **Ergebnis drucken** auf einem beliebigen Ergebnisbildschirm, um einen formatierten Bericht zu erstellen.
 
@@ -309,7 +309,7 @@ Einstellungen → Berichtskopfzeile. Geben Sie Ihren Firmennamen, Labornamen, Pr
 
 ---
 
-## Backup und Wiederherstellung
+## Backup und Wiederherstellung {#backup-and-restore}
 
 Speichern Sie alle Ihre benutzerdefinierten Materialien, Favoriten, Einstellungen und den Verlauf in einer einzigen Datei. Übertragung zwischen Geräten.
 
@@ -325,7 +325,7 @@ Einstellungen → **Wiederherstellen** → wählen Sie die Backup-Datei aus dem 
 
 ---
 
-## Einstellungen
+## Einstellungen {#settings}
 
 Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellungen sind ein Modal, keine Registerkarte.
 
@@ -345,7 +345,7 @@ Zugriff über das ⚙-Zahnradsymbol in der oberen rechten Ecke. Die Einstellunge
 
 ---
 
-## Pro-Funktionen
+## Pro-Funktionen {#pro-features}
 
 NVH Source Locator verwendet ein **Feature-gesperrtes Freemium-Modell**:
 
@@ -402,7 +402,7 @@ Wenn Sie einen Promo-Code im Google Play Store oder App Store einlösen, währen
 
 ---
 
-## Help-Registerkarte und Tutorials
+## Help-Registerkarte und Tutorials {#help-tab-and-tutorials}
 
 Die **Help**-Registerkarte enthält In-App-Tutorials, Best-Practice-Anleitungen und Referenzinformationen.
 
@@ -418,7 +418,7 @@ Behandelte Themen:
 
 ---
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 ### Berechnungsergebnis ist falsch oder ergibt keinen Sinn
 

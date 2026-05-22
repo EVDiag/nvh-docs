@@ -33,7 +33,7 @@ Tato příručka pokrývá všechny funkce. Pro stručné připomenutí viz **St
 
 ---
 
-## Jak to funguje
+## Jak to funguje {#how-it-works}
 
 Když zdroj hluku vydává zvuk nebo vibrace, vlna se šíří materiálem známou rychlostí. Pokud na materiál umístíte dva nebo více akcelerometrů a změříte, kdy vlna dorazí ke každému z nich, časový rozdíl vám řekne, kde se zdroj nachází.
 
@@ -52,7 +52,7 @@ Pak vypočítá, kde se zdroj nachází ve struktuře.
 
 ---
 
-## Před začátkem
+## Před začátkem {#before-you-start}
 
 Budete potřebovat:
 
@@ -65,7 +65,7 @@ Budete potřebovat:
 
 ---
 
-## Hlavní záložky
+## Hlavní záložky {#the-main-tabs}
 
 Aplikace má záložky nahoře:
 
@@ -89,7 +89,7 @@ Nastavení je přístupné přes ikonu ozubeného kola ⚙ v pravém horním roh
 
 ---
 
-## Režim 2-Sensor
+## Režim 2-Sensor {#2-sensor-mode}
 
 Nejjednodušší měření: lokalizace zdroje podél čáry mezi dvěma akcelerometry.
 
@@ -131,7 +131,7 @@ Klepnutím na **📷 Anotovat fotografii** pořídíte fotografii své sestavy. 
 
 ---
 
-## Režim 3-Sensor
+## Režim 3-Sensor {#3-sensor-mode}
 
 Lokalizuje zdroj na 2D rovině pomocí tří senzorů uspořádaných do trojúhelníku.
 
@@ -158,7 +158,7 @@ Aplikace zobrazí polohu zdroje jako souřadnice X, Y vzhledem k senzoru A (senz
 
 ---
 
-## Režimy Pro+
+## Režimy Pro+ {#pro-modes}
 
 Několik pokročilých záložek nabízí přeurčená řešení a vyšší dimenzionalitu:
 
@@ -188,7 +188,7 @@ Jako 3D, ale podporuje až **6 senzorů** (A až F) s přeurčeným LSQ. Maximá
 
 ---
 
-## Záložka Materials
+## Záložka Materials {#the-materials-tab}
 
 Knihovna běžných technických materiálů se známou rychlostí zvuku při 20 °C.
 
@@ -237,7 +237,7 @@ Použijte vyhledávací lištu nahoře pro filtrování materiálů podle názvu
 
 ---
 
-## Teplotní kompenzace
+## Teplotní kompenzace {#temperature-compensation}
 
 Rychlost zvuku v materiálech se mění s teplotou. V automobilových NVH testech je to důležité: motorový prostor při 80 °C, zachlazená kabina při -10 °C nebo oblast výfukového potrubí při 200 °C se chovají odlišně od pokojových laboratorních podmínek.
 
@@ -268,7 +268,7 @@ Většina nekovových materiálů nemá spolehlivé publikované teplotní koefi
 
 ---
 
-## Anotace fotografie
+## Anotace fotografie {#photo-annotation}
 
 Po úspěšném výpočtu klepněte na tlačítko **📷 Anotovat fotografii**, abyste překryli značky senzorů a zdroje na fotografii vaší sestavy.
 
@@ -287,7 +287,7 @@ Anotovaná fotografie je automaticky zahrnuta do PDF reportů.
 
 ---
 
-## Reporty
+## Reporty {#reports}
 
 Klepněte na tlačítko **Tisk výsledku** na libovolné obrazovce výsledku pro generování formátovaného reportu.
 
@@ -316,7 +316,7 @@ Nastavení → Záhlaví reportu. Zadejte název vaší společnosti, název lab
 
 ---
 
-## Záloha a obnova
+## Záloha a obnova {#backup-and-restore}
 
 Uložte všechny své vlastní materiály, oblíbené, nastavení a historii do jednoho souboru. Přenos mezi zařízeními.
 
@@ -332,7 +332,7 @@ Nastavení → **Obnova** → vyberte záložní soubor z úložiště vašeho t
 
 ---
 
-## Nastavení
+## Nastavení {#settings}
 
 Přístup přes ikonu ozubeného kola ⚙ v pravém horním rohu. Nastavení je modální, ne záložka.
 
@@ -352,7 +352,7 @@ Přístup přes ikonu ozubeného kola ⚙ v pravém horním rohu. Nastavení je 
 
 ---
 
-## Funkce Pro
+## Funkce Pro {#pro-features}
 
 NVH Source Locator používá **freemium model se zámkem funkcí**:
 
@@ -409,7 +409,7 @@ Pokud uplatníte promo kód v Google Play Store nebo App Store, zatímco NVH Sou
 
 ---
 
-## Záložka Help a návody
+## Záložka Help a návody {#help-tab-and-tutorials}
 
 Záložka **Help** obsahuje návody v aplikaci, příručky nejlepších postupů a referenční informace.
 
@@ -425,7 +425,7 @@ Pokryté témata:
 
 ---
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
 ### Výsledek výpočtu je špatný nebo nedává smysl
 
@@ -512,7 +512,7 @@ Táto príručka pokrýva všetky funkcie. Pre stručné pripomenutie pozri **St
 
 ---
 
-## Ako to funguje
+## Ako to funguje {#how-it-works}
 
 Keď zdroj hluku vydáva zvuk alebo vibrácie, vlna sa šíri materiálom známou rýchlosťou. Ak na materiál umiestnite dva alebo viac akcelerometrov a zmeriate, kedy vlna dorazí ku každému z nich, časový rozdiel vám povie, kde sa zdroj nachádza.
 
@@ -531,7 +531,7 @@ Potom vypočíta, kde sa zdroj nachádza v štruktúre.
 
 ---
 
-## Pred začiatkom
+## Pred začiatkom {#before-you-start}
 
 Budete potrebovať:
 
@@ -544,7 +544,7 @@ Budete potrebovať:
 
 ---
 
-## Hlavné karty
+## Hlavné karty {#the-main-tabs}
 
 Aplikácia má karty hore:
 
@@ -568,7 +568,7 @@ Nastavenia sú prístupné cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu 
 
 ---
 
-## Režim 2-Sensor
+## Režim 2-Sensor {#2-sensor-mode}
 
 Najjednoduchšie meranie: lokalizácia zdroja pozdĺž čiary medzi dvoma akcelerometrami.
 
@@ -610,7 +610,7 @@ Klepnutím na **📷 Anotovať fotografiu** vytvoríte fotografiu vašej zostavy
 
 ---
 
-## Režim 3-Sensor
+## Režim 3-Sensor {#3-sensor-mode}
 
 Lokalizuje zdroj na 2D rovine pomocou troch senzorov usporiadaných do trojuholníka.
 
@@ -637,7 +637,7 @@ Aplikácia zobrazí polohu zdroja ako súradnice X, Y vzhľadom na senzor A (sen
 
 ---
 
-## Režimy Pro+
+## Režimy Pro+ {#pro-modes}
 
 Niekoľko pokročilých kariet ponúka preurčené riešenia a vyššiu dimenzionalitu:
 
@@ -667,7 +667,7 @@ Ako 3D, ale podporuje až **6 senzorov** (A až F) s preurčeným LSQ. Maximáln
 
 ---
 
-## Karta Materials
+## Karta Materials {#the-materials-tab}
 
 Knižnica bežných technických materiálov so známou rýchlosťou zvuku pri 20 °C.
 
@@ -716,7 +716,7 @@ Použite vyhľadávaciu lištu hore na filtrovanie materiálov podľa názvu. Vy
 
 ---
 
-## Teplotná kompenzácia
+## Teplotná kompenzácia {#temperature-compensation}
 
 Rýchlosť zvuku v materiáloch sa mení s teplotou. V automobilových NVH testoch je to dôležité: motorový priestor pri 80 °C, schladnutá kabína pri -10 °C alebo oblasť výfukového potrubia pri 200 °C sa správajú odlišne od izbových laboratórnych podmienok.
 
@@ -747,7 +747,7 @@ Väčšina nekovových materiálov nemá spoľahlivé publikované teplotné koe
 
 ---
 
-## Anotácia fotografie
+## Anotácia fotografie {#photo-annotation}
 
 Po úspešnom výpočte klepnite na tlačidlo **📷 Anotovať fotografiu**, aby ste prekryli značky senzorov a zdroja na fotografii vašej zostavy.
 
@@ -766,7 +766,7 @@ Anotovaná fotografia je automaticky zahrnutá do PDF reportov.
 
 ---
 
-## Reporty
+## Reporty {#reports}
 
 Klepnite na tlačidlo **Tlač výsledku** na ľubovoľnej obrazovke výsledku pre generovanie formátovaného reportu.
 
@@ -795,7 +795,7 @@ Nastavenia → Záhlavie reportu. Zadajte názov vašej spoločnosti, názov lab
 
 ---
 
-## Záloha a obnova
+## Záloha a obnova {#backup-and-restore}
 
 Uložte všetky svoje vlastné materiály, obľúbené, nastavenia a históriu do jedného súboru. Prenos medzi zariadeniami.
 
@@ -811,7 +811,7 @@ Nastavenia → **Obnova** → vyberte záložný súbor z úložiska vášho tel
 
 ---
 
-## Nastavenia
+## Nastavenia {#settings}
 
 Prístup cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu. Nastavenia sú modálne, nie karta.
 
@@ -831,7 +831,7 @@ Prístup cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu. Nastavenia sú mo
 
 ---
 
-## Funkcie Pro
+## Funkcie Pro {#pro-features}
 
 NVH Source Locator používa **freemium model so zámkom funkcií**:
 
@@ -888,7 +888,7 @@ Ak uplatníte promo kód v Google Play Store alebo App Store, zatiaľ čo NVH So
 
 ---
 
-## Karta Help a návody
+## Karta Help a návody {#help-tab-and-tutorials}
 
 Karta **Help** obsahuje návody v aplikácii, príručky najlepších postupov a referenčné informácie.
 
@@ -904,7 +904,7 @@ Pokryté témy:
 
 ---
 
-## Riešenie problémov
+## Riešenie problémov {#troubleshooting}
 
 ### Výsledok výpočtu je zlý alebo nedáva zmysel
 
@@ -991,7 +991,7 @@ Ez az útmutató lefedi az összes funkciót. Gyors emlékeztetőhöz lásd **Gy
 
 ---
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
 Amikor egy zajforrás hangot vagy rezgést bocsát ki, a hullám ismert sebességgel terjed az anyagban. Ha két vagy több gyorsulásmérőt helyez az anyagra, és megméri, mikor érkezik a hullám mindegyikhez, az időkülönbség megmondja, hol van a forrás.
 
@@ -1010,7 +1010,7 @@ Minél több érzékelőt használ, annál pontosabban tudja meghatározni a for
 
 ---
 
-## Mielőtt elkezdené
+## Mielőtt elkezdené {#before-you-start}
 
 Szükséges lesz:
 
@@ -1023,7 +1023,7 @@ Szükséges lesz:
 
 ---
 
-## A főbb lapok
+## A főbb lapok {#the-main-tabs}
 
 Az alkalmazás lapjai a tetején vannak:
 
@@ -1047,7 +1047,7 @@ A beállítások a ⚙ fogaskerék ikonon keresztül érhetők el a jobb felső 
 
 ---
 
-## 2-Sensor mód
+## 2-Sensor mód {#2-sensor-mode}
 
 A legegyszerűbb mérés: forráslokalizálás egy vonal mentén két gyorsulásmérő között.
 
@@ -1089,7 +1089,7 @@ Koppintson a **📷 Fotó annotálása** gombra, hogy fényképet készítsen az
 
 ---
 
-## 3-Sensor mód
+## 3-Sensor mód {#3-sensor-mode}
 
 Egy forrást lokalizál egy 2D síkon három, háromszögbe elrendezett érzékelővel.
 
@@ -1116,7 +1116,7 @@ Az alkalmazás a forrás pozícióját X, Y koordinátákként mutatja az A érz
 
 ---
 
-## Pro+ módok
+## Pro+ módok {#pro-modes}
 
 Több haladó lap kínál túldeterminált megoldókat és magasabb dimenzionalitást:
 
@@ -1146,7 +1146,7 @@ Mint a 3D, de akár **6 érzékelőig** támogat (A-tól F-ig) túldeterminált 
 
 ---
 
-## A Materials lap
+## A Materials lap {#the-materials-tab}
 
 Gyakori mérnöki anyagok könyvtára 20 °C-on ismert hangsebességgel.
 
@@ -1195,7 +1195,7 @@ Használja a tetején lévő keresősávot az anyagok név szerinti szűréséhe
 
 ---
 
-## Hőmérséklet-kompenzáció
+## Hőmérséklet-kompenzáció {#temperature-compensation}
 
 Az anyagokban a hangsebesség változik a hőmérséklettel. Az autóipari NVH tesztelésben ez számít: egy 80 °C-os motorháztető, egy -10 °C-os hidegen áztatott kabin vagy egy 200 °C-os kipufogóelosztó terület mind másképp viselkedik, mint a szobahőmérsékleti laboratóriumi körülmények.
 
@@ -1226,7 +1226,7 @@ A legtöbb nem-fém anyag nem rendelkezik megbízható publikált hőmérséklet
 
 ---
 
-## Fotóannotáció
+## Fotóannotáció {#photo-annotation}
 
 Sikeres számítás után koppintson a **📷 Fotó annotálása** gombra, hogy érzékelő- és forrásjelölőket helyezzen az elrendezésének fényképére.
 
@@ -1245,7 +1245,7 @@ Az annotált fénykép automatikusan beépül a PDF jelentésekbe.
 
 ---
 
-## Jelentések
+## Jelentések {#reports}
 
 Koppintson a **Eredmény nyomtatása** gombra bármelyik eredményképernyőn formázott jelentés generálásához.
 
@@ -1274,7 +1274,7 @@ Beállítások → Jelentés fejléce. Adja meg cégének nevét, laborja nevét
 
 ---
 
-## Biztonsági mentés és visszaállítás
+## Biztonsági mentés és visszaállítás {#backup-and-restore}
 
 Mentse el az összes egyéni anyagát, kedvenceit, beállításait és előzményeit egyetlen fájlba. Eszközök közötti átvitel.
 
@@ -1290,7 +1290,7 @@ Beállítások → **Visszaállítás** → válassza ki a mentési fájlt a tel
 
 ---
 
-## Beállítások
+## Beállítások {#settings}
 
 Hozzáférés a ⚙ fogaskerék ikonon keresztül a jobb felső sarokban. A Beállítások egy modális, nem egy lap.
 
@@ -1310,7 +1310,7 @@ Hozzáférés a ⚙ fogaskerék ikonon keresztül a jobb felső sarokban. A Beá
 
 ---
 
-## Pro funkciók
+## Pro funkciók {#pro-features}
 
 NVH Source Locator egy **funkció-zárolt freemium modellt** használ:
 
@@ -1367,7 +1367,7 @@ Ha promóciós kódot vált be a Google Play Store-ban vagy App Store-ban, amíg
 
 ---
 
-## Help lap és oktatóanyagok
+## Help lap és oktatóanyagok {#help-tab-and-tutorials}
 
 A **Help** lap tartalmaz alkalmazáson belüli oktatóanyagokat, legjobb gyakorlati útmutatókat és referenciainformációkat.
 
@@ -1383,7 +1383,7 @@ Lefedett témák:
 
 ---
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
 ### A számítás eredménye rossz vagy nincs értelme
 
@@ -1470,7 +1470,7 @@ Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte **Kratki 
 
 ---
 
-## Kako radi
+## Kako radi {#how-it-works}
 
 Kad izvor buke emitira zvuk ili vibraciju, val putuje kroz materijal poznatom brzinom. Ako postavite dva ili više akcelerometara na materijal i izmjerite kada val stigne do svakog od njih, vremenska razlika vam govori gdje je izvor.
 
@@ -1489,7 +1489,7 @@ Zatim izračunava gdje se izvor nalazi u strukturi.
 
 ---
 
-## Prije nego što počnete
+## Prije nego što počnete {#before-you-start}
 
 Trebat će vam:
 
@@ -1502,7 +1502,7 @@ Trebat će vam:
 
 ---
 
-## Glavne kartice
+## Glavne kartice {#the-main-tabs}
 
 Aplikacija ima kartice na vrhu:
 
@@ -1526,7 +1526,7 @@ Postavke su dostupne putem ikone zupčanika ⚙ u gornjem desnom kutu (nije kart
 
 ---
 
-## Način 2-Sensor
+## Način 2-Sensor {#2-sensor-mode}
 
 Najjednostavnije mjerenje: lociranje izvora duž linije između dva akcelerometra.
 
@@ -1568,7 +1568,7 @@ Dodirnite **📷 Označi fotografiju** kako biste fotografirali svoju postavku. 
 
 ---
 
-## Način 3-Sensor
+## Način 3-Sensor {#3-sensor-mode}
 
 Locira izvor na 2D ravnini koristeći tri senzora raspoređena u trokut.
 
@@ -1595,7 +1595,7 @@ Aplikacija prikazuje položaj izvora kao koordinate X, Y u odnosu na senzor A (s
 
 ---
 
-## Pro+ načini
+## Pro+ načini {#pro-modes}
 
 Nekoliko naprednih kartica nudi preodređene rješavače i veću dimenzionalnost:
 
@@ -1625,7 +1625,7 @@ Kao 3D, ali podržava do **6 senzora** (A do F) s preodređenim LSQ. Maksimalna 
 
 ---
 
-## Kartica Materials
+## Kartica Materials {#the-materials-tab}
 
 Knjižnica uobičajenih inženjerskih materijala s poznatom brzinom zvuka na 20 °C.
 
@@ -1674,7 +1674,7 @@ Koristite traku za pretraživanje na vrhu za filtriranje materijala prema imenu.
 
 ---
 
-## Temperaturna kompenzacija
+## Temperaturna kompenzacija {#temperature-compensation}
 
 Brzina zvuka u materijalima mijenja se s temperaturom. U automobilskom NVH testiranju to je važno: prostor motora na 80 °C, hlađena kabina na -10 °C ili područje ispušne grane na 200 °C svi se ponašaju drugačije od laboratorijskih uvjeta na sobnoj temperaturi.
 
@@ -1705,7 +1705,7 @@ Većina nemetalnih materijala nema pouzdane objavljene temperaturne koeficijente
 
 ---
 
-## Označavanje fotografije
+## Označavanje fotografije {#photo-annotation}
 
 Nakon uspješnog izračuna, dodirnite gumb **📷 Označi fotografiju** kako biste postavili oznake senzora i izvora na fotografiju svoje postavke.
 
@@ -1724,7 +1724,7 @@ Označena fotografija automatski se uključuje u PDF izvješća.
 
 ---
 
-## Izvješća
+## Izvješća {#reports}
 
 Dodirnite gumb **Ispiši rezultat** na bilo kojem zaslonu rezultata za generiranje formatiranog izvješća.
 
@@ -1753,7 +1753,7 @@ Postavke → Zaglavlje izvješća. Unesite ime svoje tvrtke, ime laboratorija, p
 
 ---
 
-## Sigurnosna kopija i vraćanje
+## Sigurnosna kopija i vraćanje {#backup-and-restore}
 
 Spremite sve svoje prilagođene materijale, favorite, postavke i povijest u jednu datoteku. Prijenos između uređaja.
 
@@ -1769,7 +1769,7 @@ Postavke → **Vraćanje** → odaberite datoteku sigurnosne kopije iz pohrane v
 
 ---
 
-## Postavke
+## Postavke {#settings}
 
 Pristup putem ikone zupčanika ⚙ u gornjem desnom kutu. Postavke su modalni prozor, nisu kartica.
 
@@ -1789,7 +1789,7 @@ Pristup putem ikone zupčanika ⚙ u gornjem desnom kutu. Postavke su modalni pr
 
 ---
 
-## Pro značajke
+## Pro značajke {#pro-features}
 
 NVH Source Locator koristi **freemium model s zaključanim značajkama**:
 
@@ -1846,7 +1846,7 @@ Ako iskoristite promo kod u Google Play Storeu ili App Storeu dok NVH Source Loc
 
 ---
 
-## Kartica Help i tutorijali
+## Kartica Help i tutorijali {#help-tab-and-tutorials}
 
 Kartica **Help** uključuje tutorijale u aplikaciji, vodiče najboljih praksi i referentne informacije.
 
@@ -1862,7 +1862,7 @@ Pokrivene teme:
 
 ---
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
 ### Rezultat izračuna je pogrešan ili nema smisla
 
@@ -1949,7 +1949,7 @@ NVH Source Locator е измервателен инструмент за лок�
 
 ---
 
-## Как работи
+## Как работи {#how-it-works}
 
 Когато източник на шум излъчва звук или вибрация, вълната се разпространява през материала с известна скорост. Ако поставите два или повече акселерометъра на материала и измерите кога вълната достига до всеки от тях, времевата разлика ви казва къде е източникът.
 
@@ -1968,7 +1968,7 @@ NVH Source Locator приема:
 
 ---
 
-## Преди да започнете
+## Преди да започнете {#before-you-start}
 
 Ще ви трябва:
 
@@ -1981,7 +1981,7 @@ NVH Source Locator приема:
 
 ---
 
-## Основни раздели
+## Основни раздели {#the-main-tabs}
 
 Приложението има раздели в горната част:
 
@@ -2005,7 +2005,7 @@ NVH Source Locator приема:
 
 ---
 
-## Режим 2-Sensor
+## Режим 2-Sensor {#2-sensor-mode}
 
 Най-простото измерване: локализиране на източник по линия между два акселерометъра.
 
@@ -2047,7 +2047,7 @@ NVH Source Locator приема:
 
 ---
 
-## Режим 3-Sensor
+## Режим 3-Sensor {#3-sensor-mode}
 
 Локализира източник на 2D равнина с помощта на три сензора, подредени в триъгълник.
 
@@ -2074,7 +2074,7 @@ NVH Source Locator приема:
 
 ---
 
-## Режими Pro+
+## Режими Pro+ {#pro-modes}
 
 Няколко напреднали раздела предлагат предопределени решатели и по-висока размерност:
 
@@ -2104,7 +2104,7 @@ NVH Source Locator приема:
 
 ---
 
-## Раздел Materials
+## Раздел Materials {#the-materials-tab}
 
 Библиотека с общи инженерни материали с известна скорост на звука при 20 °C.
 
@@ -2153,7 +2153,7 @@ NVH Source Locator приема:
 
 ---
 
-## Температурна компенсация
+## Температурна компенсация {#temperature-compensation}
 
 Скоростта на звука в материалите се променя с температурата. В автомобилните NVH тестове това е важно: моторно отделение при 80 °C, охладен салон при -10 °C или зона на изпускателен колектор при 200 °C се държат различно от лабораторни условия при стайна температура.
 
@@ -2184,7 +2184,7 @@ NVH Source Locator приема:
 
 ---
 
-## Анотация на снимка
+## Анотация на снимка {#photo-annotation}
 
 След успешно изчисление докоснете бутона **📷 Анотирай снимка**, за да наслагате маркери на сензори и източник върху снимка на вашата настройка.
 
@@ -2203,7 +2203,7 @@ NVH Source Locator приема:
 
 ---
 
-## Отчети
+## Отчети {#reports}
 
 Докоснете бутона **Печат на резултата** на всеки екран с резултати, за да генерирате форматиран отчет.
 
@@ -2232,7 +2232,7 @@ NVH Source Locator приема:
 
 ---
 
-## Архивиране и възстановяване
+## Архивиране и възстановяване {#backup-and-restore}
 
 Запазете всички ваши персонализирани материали, любими, настройки и история в един файл. Прехвърляне между устройства.
 
@@ -2248,7 +2248,7 @@ NVH Source Locator приема:
 
 ---
 
-## Настройки
+## Настройки {#settings}
 
 Достъп през иконата зъбно колело ⚙ в горния десен ъгъл. Настройките са модални, не са раздел.
 
@@ -2268,7 +2268,7 @@ NVH Source Locator приема:
 
 ---
 
-## Pro функции
+## Pro функции {#pro-features}
 
 NVH Source Locator използва **freemium модел с заключени функции**:
 
@@ -2325,7 +2325,7 @@ NVH Source Locator използва **freemium модел с заключени 
 
 ---
 
-## Раздел Help и уроци
+## Раздел Help и уроци {#help-tab-and-tutorials}
 
 Разделът **Help** включва уроци в приложението, ръководства за най-добри практики и справочна информация.
 
@@ -2341,7 +2341,7 @@ NVH Source Locator използва **freemium модел с заключени 
 
 ---
 
-## Отстраняване на проблеми
+## Отстраняване на проблеми {#troubleshooting}
 
 ### Резултатът от изчислението е грешен или няма смисъл
 

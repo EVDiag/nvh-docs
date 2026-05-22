@@ -26,7 +26,7 @@ Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte **Kratki 
 
 ---
 
-## Kako radi
+## Kako radi {#how-it-works}
 
 Kad izvor buke emitira zvuk ili vibraciju, val putuje kroz materijal poznatom brzinom. Ako postavite dva ili više akcelerometara na materijal i izmjerite kada val stigne do svakog od njih, vremenska razlika vam govori gdje je izvor.
 
@@ -45,7 +45,7 @@ Zatim izračunava gdje se izvor nalazi u strukturi.
 
 ---
 
-## Prije nego što počnete
+## Prije nego što počnete {#before-you-start}
 
 Trebat će vam:
 
@@ -58,7 +58,7 @@ Trebat će vam:
 
 ---
 
-## Glavne kartice
+## Glavne kartice {#the-main-tabs}
 
 Aplikacija ima kartice na vrhu:
 
@@ -82,7 +82,7 @@ Postavke su dostupne putem ikone zupčanika ⚙ u gornjem desnom kutu (nije kart
 
 ---
 
-## Način 2-Sensor
+## Način 2-Sensor {#2-sensor-mode}
 
 Najjednostavnije mjerenje: lociranje izvora duž linije između dva akcelerometra.
 
@@ -124,7 +124,7 @@ Dodirnite **📷 Označi fotografiju** kako biste fotografirali svoju postavku. 
 
 ---
 
-## Način 3-Sensor
+## Način 3-Sensor {#3-sensor-mode}
 
 Locira izvor na 2D ravnini koristeći tri senzora raspoređena u trokut.
 
@@ -151,7 +151,7 @@ Aplikacija prikazuje položaj izvora kao koordinate X, Y u odnosu na senzor A (s
 
 ---
 
-## Pro+ načini
+## Pro+ načini {#pro-modes}
 
 Nekoliko naprednih kartica nudi preodređene rješavače i veću dimenzionalnost:
 
@@ -181,7 +181,7 @@ Kao 3D, ali podržava do **6 senzora** (A do F) s preodređenim LSQ. Maksimalna 
 
 ---
 
-## Kartica Materials
+## Kartica Materials {#the-materials-tab}
 
 Knjižnica uobičajenih inženjerskih materijala s poznatom brzinom zvuka na 20 °C.
 
@@ -230,7 +230,7 @@ Koristite traku za pretraživanje na vrhu za filtriranje materijala prema imenu.
 
 ---
 
-## Temperaturna kompenzacija
+## Temperaturna kompenzacija {#temperature-compensation}
 
 Brzina zvuka u materijalima mijenja se s temperaturom. U automobilskom NVH testiranju to je važno: prostor motora na 80 °C, hlađena kabina na -10 °C ili područje ispušne grane na 200 °C svi se ponašaju drugačije od laboratorijskih uvjeta na sobnoj temperaturi.
 
@@ -261,7 +261,7 @@ Većina nemetalnih materijala nema pouzdane objavljene temperaturne koeficijente
 
 ---
 
-## Označavanje fotografije
+## Označavanje fotografije {#photo-annotation}
 
 Nakon uspješnog izračuna, dodirnite gumb **📷 Označi fotografiju** kako biste postavili oznake senzora i izvora na fotografiju svoje postavke.
 
@@ -280,7 +280,7 @@ Označena fotografija automatski se uključuje u PDF izvješća.
 
 ---
 
-## Izvješća
+## Izvješća {#reports}
 
 Dodirnite gumb **Ispiši rezultat** na bilo kojem zaslonu rezultata za generiranje formatiranog izvješća.
 
@@ -309,7 +309,7 @@ Postavke → Zaglavlje izvješća. Unesite ime svoje tvrtke, ime laboratorija, p
 
 ---
 
-## Sigurnosna kopija i vraćanje
+## Sigurnosna kopija i vraćanje {#backup-and-restore}
 
 Spremite sve svoje prilagođene materijale, favorite, postavke i povijest u jednu datoteku. Prijenos između uređaja.
 
@@ -325,7 +325,7 @@ Postavke → **Vraćanje** → odaberite datoteku sigurnosne kopije iz pohrane v
 
 ---
 
-## Postavke
+## Postavke {#settings}
 
 Pristup putem ikone zupčanika ⚙ u gornjem desnom kutu. Postavke su modalni prozor, nisu kartica.
 
@@ -345,7 +345,7 @@ Pristup putem ikone zupčanika ⚙ u gornjem desnom kutu. Postavke su modalni pr
 
 ---
 
-## Pro značajke
+## Pro značajke {#pro-features}
 
 NVH Source Locator koristi **freemium model s zaključanim značajkama**:
 
@@ -402,7 +402,7 @@ Ako iskoristite promo kod u Google Play Storeu ili App Storeu dok NVH Source Loc
 
 ---
 
-## Kartica Help i tutorijali
+## Kartica Help i tutorijali {#help-tab-and-tutorials}
 
 Kartica **Help** uključuje tutorijale u aplikaciji, vodiče najboljih praksi i referentne informacije.
 
@@ -418,7 +418,7 @@ Pokrivene teme:
 
 ---
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
 ### Rezultat izračuna je pogrešan ili nema smisla
 

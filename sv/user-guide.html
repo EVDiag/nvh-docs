@@ -80,7 +80,7 @@
 <li><a href="#troubleshooting">Felsökning</a></li>
 </ol>
 <hr />
-<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<h2 id="how-it-works">Hur det fungerar</h2>
 <p>När en bullerkälla avger ljud eller vibration färdas vågen genom ett material med en känd hastighet. Om du placerar två eller fler accelerometrar på materialet och mäter när vågen anländer till var och en, säger tidsskillnaden var källan finns.</p>
 <p>NVH Source Locator tar:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>4 sensorer</strong> → position i 3D-rymd (X, Y, Z)</li>
 </ul>
 <hr />
-<h2 id="innan-du-borjar">Innan du börjar</h2>
+<h2 id="before-you-start">Innan du börjar</h2>
 <p>Du behöver:</p>
 <ul>
 <li><strong>Ett oscilloskop eller mätsystem</strong> som kan visa tidsskillnaden mellan accelerometerkanaler i mikrosekunder (µs)</li>
@@ -105,7 +105,7 @@
 </ul>
 <p><img alt="Hemskärm med fliken 2-Sensor" src="../screenshots/01-home-2sensor.png" /></p>
 <hr />
-<h2 id="de-viktigaste-flikarna">De viktigaste flikarna</h2>
+<h2 id="the-main-tabs">De viktigaste flikarna</h2>
 <p>Appen har flikar längst upp:</p>
 <p><img alt="Flikrad" src="../screenshots/02-tab-bar.png" /></p>
 <table>
@@ -169,7 +169,7 @@
 </blockquote>
 <p>Inställningar nås via ⚙ kugghjulsikonen i det övre högra hörnet (inte en flik).</p>
 <hr />
-<h2 id="2-sensor-lage">2-Sensor-läge</h2>
+<h2 id="2-sensor-mode">2-Sensor-läge</h2>
 <p>Den enklaste mätningen: källokalisering längs en linje mellan två accelerometrar.</p>
 <p><img alt="2-Sensor-fliken" src="../screenshots/01-home-2sensor.png" /></p>
 <h3 id="steg-1-tillampa-ett-material">Steg 1: Tillämpa ett material</h3>
@@ -197,7 +197,7 @@
 <h3 id="steg-5-valfritt-annotera-ett-foto">Steg 5 (valfritt): Annotera ett foto</h3>
 <p>Tryck på <strong>📷 Annotera foto</strong> för att ta ett foto av din inställning. Appen lägger till markörer för sensorer A, B och källan. Användbart för rapporter.</p>
 <hr />
-<h2 id="3-sensor-lage">3-Sensor-läge</h2>
+<h2 id="3-sensor-mode">3-Sensor-läge</h2>
 <p>Lokaliserar en källa på ett 2D-plan med tre sensorer arrangerade i en triangel.</p>
 <p><img alt="3-Sensor-fliken" src="../screenshots/03-3sensor-tab.png" /></p>
 <h3 id="installning">Inställning</h3>
@@ -212,7 +212,7 @@
 <p>Appen visar källpositionen som X-, Y-koordinater i förhållande till sensor A (sensor A vid origo, sensor B på X-axeln). Visualiseringen visar alla tre sensorerna och källans plats.</p>
 <p><img alt="Triangelresultat" src="../screenshots/04-triangle-result.png" /></p>
 <hr />
-<h2 id="pro-lagen">Pro+-lägen</h2>
+<h2 id="pro-modes">Pro+-lägen</h2>
 <p>Flera avancerade flikar erbjuder överbestämda lösare och högre dimensionalitet:</p>
 <h3 id="3-sen-pro">3-Sen+ (Pro)</h3>
 <p>Samma triangelinställning som 3-Sensor, men kalibrera OCH mät alla tre par (A–B, A–C, B–C). Lösaren använder alla 3 TDOA i en minstakvadratanpassning — mer robust mot mätbrus och anisotropa material. Restvärden per par rapporteras så att du kan upptäcka inkonsekventa mätningar.</p>
@@ -228,7 +228,7 @@
 <h3 id="3d-pro">3D+ (Pro)</h3>
 <p>Som 3D men stödjer upp till <strong>6 sensorer</strong> (A till F) med överbestämd LSQ. Maximal precision för komplexa 3D-geometrier.</p>
 <hr />
-<h2 id="fliken-materials">Fliken Materials</h2>
+<h2 id="the-materials-tab">Fliken Materials</h2>
 <p>Bibliotek med vanliga ingenjörsmaterial med känd ljudhastighet vid 20 °C.</p>
 <p><img alt="Materials-fliken" src="../screenshots/05-materials-tab.png" /></p>
 <h3 id="materiallista">Materiallista</h3>
@@ -261,7 +261,7 @@
 <h3 id="sokning">Sökning</h3>
 <p>Använd sökfältet längst upp för att filtrera material efter namn. Sökning matchar både engelska kanoniska namn och översatta visningsnamn.</p>
 <hr />
-<h2 id="temperaturkompensation">Temperaturkompensation</h2>
+<h2 id="temperature-compensation">Temperaturkompensation</h2>
 <p>Ljudhastigheten i material förändras med temperaturen. I bil-NVH-testning betyder detta: ett motorrum vid 80 °C, en kallindränkt kabin vid -10 °C eller ett område för avgasgrenrör vid 200 °C beter sig alla annorlunda än laboratorieförhållanden vid rumstemperatur.</p>
 <h3 id="stalla-in-temperaturen">Ställa in temperaturen</h3>
 <p>Öppna Inställningar (⚙ ikon) → Referenstemperatur. Ange din testmiljös temperatur i °C (intervall -40 till +200).</p>
@@ -281,7 +281,7 @@
 <h3 id="material-utan-kompensation">Material utan kompensation</h3>
 <p>De flesta icke-metalliska material har inte tillförlitliga publicerade temperaturkoefficienter. Appen visar en <strong>"ref only"</strong>-märkning för dessa — deras listade hastighet används oavsett temperaturinställning. Om du behöver noggranna mätningar vid icke-rumstemperaturer för dessa material, utför en in-situ kalibrering och spara resultatet som ett anpassat material.</p>
 <hr />
-<h2 id="fotoannotering">Fotoannotering</h2>
+<h2 id="photo-annotation">Fotoannotering</h2>
 <p>Efter en lyckad beräkning, tryck på knappen <strong>📷 Annotera foto</strong> för att lägga till sensor- och källmarkörer på ett foto av din inställning.</p>
 <p><img alt="Fotoannotering" src="../screenshots/08-photo-annotation.png" /></p>
 <h3 id="flode">Flöde</h3>
@@ -295,7 +295,7 @@
 </ol>
 <p>Det annoterade fotot inkluderas automatiskt i PDF-rapporter.</p>
 <hr />
-<h2 id="rapporter">Rapporter</h2>
+<h2 id="reports">Rapporter</h2>
 <p>Tryck på knappen <strong>Skriv ut resultat</strong> på vilken resultatskärm som helst för att generera en formaterad rapport.</p>
 <p><img alt="PDF-rapport" src="../screenshots/09-pdf-report.png" /></p>
 <h3 id="rapportinnehall">Rapportinnehåll</h3>
@@ -318,7 +318,7 @@
 <h3 id="anpassa-rubriken">Anpassa rubriken</h3>
 <p>Inställningar → Rapportrubrik. Ange ditt företagsnamn, labnamn, projektinfo eller vad du vill ha överst i varje rapport.</p>
 <hr />
-<h2 id="sakerhetskopiering-och-aterstallning">Säkerhetskopiering och återställning</h2>
+<h2 id="backup-and-restore">Säkerhetskopiering och återställning</h2>
 <p>Spara alla dina anpassade material, favoriter, inställningar och historik i en enda fil. Överför mellan enheter.</p>
 <h3 id="sakerhetskopiering">Säkerhetskopiering</h3>
 <p>Inställningar → <strong>Säkerhetskopiering</strong> → tryck på "Spara säkerhetskopia". Appen genererar en JSON-fil och öppnar telefonens delningsark. Spara den på din molnenhet (Google Drive, iCloud, OneDrive), e-posta den till dig själv eller överför på vilket sätt du vill.</p>
@@ -326,7 +326,7 @@
 <p>Inställningar → <strong>Återställ</strong> → välj säkerhetskopian från telefonens lagring. Appen importerar anpassade material, favoriter, historik och inställningar.</p>
 <p>⚠️ <strong>Återställning ersätter dina nuvarande data.</strong> Om du har viktiga mätningar på den nuvarande enheten, säkerhetskopiera dem först innan du återställer från en annan säkerhetskopia.</p>
 <hr />
-<h2 id="installningar">Inställningar</h2>
+<h2 id="settings">Inställningar</h2>
 <p>Åtkomst via ⚙ kugghjulsikonen i det övre högra hörnet. Inställningar är ett modalfönster, inte en flik.</p>
 <p><img alt="Inställningar" src="../screenshots/06-settings.png" /></p>
 <table>
@@ -376,7 +376,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="pro-funktioner">Pro-funktioner</h2>
+<h2 id="pro-features">Pro-funktioner</h2>
 <p>NVH Source Locator använder en <strong>funktionslåst freemium-modell</strong>:</p>
 <ul>
 <li><strong>Gratis</strong>: Fliken 2-Sensor är helt funktionell utan begränsningar</li>
@@ -416,7 +416,7 @@
 <p><strong>Android</strong>: en knapp "Har du en Google Play-kampanjkod?" i paywallen öppnar Google Play-inlösningsflödet med din kod förifylld.</p>
 <p><strong>iOS</strong>: App Store-policy 3.1.1 kräver inlösning via Apples officiella "Lös in kod"-flöde. Google Play-knappen är dold på iOS. Leta efter "Lös in App Store-kod" i Inställningar istället.</p>
 <hr />
-<h2 id="fliken-help-och-handledningar">Fliken Help och handledningar</h2>
+<h2 id="help-tab-and-tutorials">Fliken Help och handledningar</h2>
 <p>Fliken <strong>Help</strong> inkluderar handledningar i appen, guider för bästa praxis och referensinformation.</p>
 <p><img alt="Help-fliken" src="../screenshots/10-help-tab.png" /></p>
 <p>Ämnen som täcks:
@@ -427,7 +427,7 @@
 - Tips för triangulering och 3D-placeringar
 - Kabeldragning och signalkvalitet</p>
 <hr />
-<h2 id="felsokning">Felsökning</h2>
+<h2 id="troubleshooting">Felsökning</h2>
 <h3 id="berakningsresultatet-ar-fel-eller-meningslost">Beräkningsresultatet är fel eller meningslöst</h3>
 <ol>
 <li>Kontrollera din kalibrering. Auto-fylld <code>tCal</code> antar publicerad materialhastighet — verkliga material varierar. Den mest exakta kalibreringen är in-situ: tryck på en känd plats och låt appen härleda den faktiska hastigheten.</li>
