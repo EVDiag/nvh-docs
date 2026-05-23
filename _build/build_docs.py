@@ -35,7 +35,13 @@ DOCS_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 quick_ref_translations = {}
 
 def load_batch(filename, var_name, target_dict):
-    """Import a batch file and merge its translations dict into target."""
+    """Import a batch file and merge its translations dict into target.
+
+    Warns if a batch defines a locale already in target (overwrite across
+    batch files). Note: this can't detect duplicates WITHIN a single batch
+    file's dict literal — Python silently dedupes those at parse time.
+    For within-file duplicate detection, use _build/cleanup_dead_locale_blocks.py.
+    """
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
     if not os.path.exists(path):
         return
@@ -43,6 +49,9 @@ def load_batch(filename, var_name, target_dict):
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     batch = getattr(mod, var_name, {})
+    overlaps = set(batch.keys()) & set(target_dict.keys())
+    if overlaps:
+        print(f"  ⚠ {filename} overrides locales already loaded: {sorted(overlaps)}")
     target_dict.update(batch)
     print(f"  loaded {len(batch)} translations from {filename}")
 
