@@ -487,9 +487,7 @@ def render_doc_page(locale, doc_type, title_key, pdf_filename, other_doc_key, ot
     <a href="{other_doc_link}" class="alt-link">{other_title} →</a>
   </div>
 
-  <div class="disclaimer-note">
-    {ui["disclaimer"]}
-  </div>
+  {('' if locale == 'en' else f'<div class="disclaimer-note">{chr(10)}    ' + ui["disclaimer"] + f'{chr(10)}  </div>')}
 
   {html_body}
 
@@ -540,9 +538,7 @@ def render_locale_index(locale):
   <h1>NVH Source Locator</h1>
   <p>{ui["intro"]}</p>
 
-  <div class="disclaimer-note">
-    {ui["disclaimer"]}
-  </div>
+  {('' if locale == 'en' else f'<div class="disclaimer-note">{chr(10)}    ' + ui["disclaimer"] + f'{chr(10)}  </div>')}
 
   <div class="doc-grid">
     <a href="user-guide.html" class="doc-card">

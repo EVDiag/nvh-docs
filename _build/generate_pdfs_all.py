@@ -18,6 +18,11 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 DOCS_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Directory of the markdown file currently being parsed. Used to resolve
+# relative image paths inside parse_markdown_to_flowables. Set by generate_pdf
+# before each parse.
+_current_md_dir = DOCS_ROOT
+
 NAVY = colors.HexColor("#0F3460")
 ACCENT = colors.HexColor("#00B4D8")
 TEXT_MUTED = colors.HexColor("#556")
@@ -230,9 +235,59 @@ def parse_markdown_to_flowables(md_content, styles, title):
             flush_list()
 
         if re.match(r'^!\[.*?\]\(.*?\)\s*$', line):
-            placeholder = re.sub(r'!\[(.*?)\].*', r'[Screenshot: \1 — see HTML version]', line)
-            flowables.append(Paragraph(f'<i>{placeholder}</i>', styles['small']))
-            flowables.append(Spacer(1, 6))
+            m = re.match(r'^!\[(.*?)\]\((.*?)\)\s*$', line)
+            alt_text = m.group(1)
+            img_path = m.group(2)
+            # Resolve relative path. Markdown is in locale folder, image typically
+            # references ../screenshots/foo.png. _current_md_dir is set by generate_pdf().
+            if not os.path.isabs(img_path):
+                resolved = os.path.normpath(os.path.join(_current_md_dir, img_path))
+            else:
+                resolved = img_path
+
+            if os.path.exists(resolved):
+                try:
+                    from reportlab.platypus import Image as RLImage
+                    from reportlab.lib.utils import ImageReader
+                    # Target: max 14 cm wide, preserve aspect ratio. A4 content
+                    # area is 17 cm wide; leaves comfortable margin.
+                    max_w = 14 * cm
+                    max_h = 20 * cm
+                    ir = ImageReader(resolved)
+                    iw, ih = ir.getSize()
+                    if iw > 0 and ih > 0:
+                        scale = min(1.0, max_w / iw, max_h / ih)
+                        w = iw * scale
+                        h = ih * scale
+                        flowables.append(RLImage(resolved, width=w, height=h, hAlign='LEFT'))
+                        if alt_text:
+                            flowables.append(Spacer(1, 2))
+                            flowables.append(Paragraph(
+                                f'<i>{inline_format(alt_text)}</i>',
+                                styles['small']
+                            ))
+                        flowables.append(Spacer(1, 8))
+                    else:
+                        # Zero-dimension image — fall back to placeholder text
+                        flowables.append(Paragraph(
+                            f'<i>[Image: {inline_format(alt_text)}]</i>',
+                            styles['small']
+                        ))
+                        flowables.append(Spacer(1, 6))
+                except Exception as e:
+                    # Unsupported format (e.g. SVG without svglib) or read error
+                    flowables.append(Paragraph(
+                        f'<i>[Image: {inline_format(alt_text)} — could not embed: {type(e).__name__}]</i>',
+                        styles['small']
+                    ))
+                    flowables.append(Spacer(1, 6))
+            else:
+                # File missing on disk
+                flowables.append(Paragraph(
+                    f'<i>[Image: {inline_format(alt_text)} — file not found: {img_path}]</i>',
+                    styles['small']
+                ))
+                flowables.append(Spacer(1, 6))
             i += 1
             continue
 
@@ -255,6 +310,10 @@ def generate_pdf(md_path, pdf_path, title):
         return False
     with open(md_path, 'r', encoding='utf-8') as f:
         md_content = f.read()
+    # Track the directory of the markdown file so relative image paths
+    # (e.g. ../screenshots/foo.png) resolve correctly during parsing.
+    global _current_md_dir
+    _current_md_dir = os.path.dirname(os.path.abspath(md_path))
     doc = SimpleDocTemplate(
         pdf_path, pagesize=A4,
         rightMargin=2*cm, leftMargin=2*cm,
