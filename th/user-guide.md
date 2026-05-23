@@ -86,7 +86,7 @@ NVH Source Locator นำ:
 
 การวัดที่ง่ายที่สุด: การระบุตำแหน่งแหล่งกำเนิดตามเส้นระหว่างมาตรวัดความเร่งสองตัว
 
-![แท็บ 2-Sensor](../screenshots/01-home-2sensor.png)
+![แท็บ 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### ขั้นตอนที่ 1: ใช้วัสดุ
 

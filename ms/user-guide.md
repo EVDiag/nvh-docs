@@ -86,7 +86,7 @@ Tetapan diakses melalui ikon gear ⚙ di sudut kanan atas (bukan tab).
 
 Pengukuran paling mudah: penyetempatan sumber sepanjang garis antara dua akselerometer.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Langkah 1: Gunakan bahan
 

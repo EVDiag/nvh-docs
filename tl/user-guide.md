@@ -86,7 +86,7 @@ Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (h
 
 Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.
 
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+![2-Sensor tab](../screenshots/01b-home-2sensor.png)
 
 ### Hakbang 1: Maglapat ng materyal
 

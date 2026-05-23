@@ -86,7 +86,7 @@ Innstillinger nås via ⚙ tannhjul-ikonet i øvre høyre hjørne (ikke en fane)
 
 Den enkleste målingen: kildelokalisering langs en linje mellom to akselerometre.
 
-![2-Sensor-fane](../screenshots/01-home-2sensor.png)
+![2-Sensor-fane](../screenshots/01b-home-2sensor.png)
 
 ### Trinn 1: Bruk et materiale
 

@@ -86,7 +86,7 @@ NVH Source Locator يأخذ:
 
 أبسط قياس: تحديد موقع المصدر على طول خط بين مقياسي تسارع.
 
-![علامة تبويب 2-Sensor](../screenshots/01-home-2sensor.png)
+![علامة تبويب 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### الخطوة 1: تطبيق مادة
 

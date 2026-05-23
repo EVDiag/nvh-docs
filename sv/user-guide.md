@@ -86,7 +86,7 @@ Inställningar nås via ⚙ kugghjulsikonen i det övre högra hörnet (inte en 
 
 Den enklaste mätningen: källokalisering längs en linje mellan två accelerometrar.
 
-![2-Sensor-fliken](../screenshots/01-home-2sensor.png)
+![2-Sensor-fliken](../screenshots/01b-home-2sensor.png)
 
 ### Steg 1: Tillämpa ett material
 

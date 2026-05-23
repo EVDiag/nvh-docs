@@ -409,16 +409,18 @@ li { margin: 6px 0; }
   .disclaimer-note { background: none; border: none; padding: 0;
                      font-style: italic; color: #555; margin: 0 0 12pt 0; }
 
-  /* Headings: keep with following content, chapters start fresh page */
-  h1, h2, h3 { page-break-after: avoid; color: #000; }
-  h2 { page-break-before: always; margin-top: 0; }
-  h2:first-of-type { page-break-before: avoid; }
-  h3, h4 { page-break-after: avoid; }
+  /* Headings: keep with following content. NOTE: we do NOT force a page break
+     before every h2 — that creates near-empty pages when a chapter has just
+     an intro paragraph followed by a tall image. Instead, h2 may break and
+     prefers to. Browser optimizes page fill. */
+  h1, h2, h3, h4 { page-break-after: avoid; color: #000; }
+  h2 { page-break-before: auto; margin-top: 18pt; }
   p, li { orphans: 3; widows: 3; }
 
-  /* Images: don't split across pages, reasonable size for paper */
-  img { page-break-inside: avoid; max-width: 70%; height: auto;
-        display: block; margin: 8pt auto; }
+  /* Images: don't split across pages. Constrain height so portrait phone
+     screenshots don't dominate a page (allows text to share the page). */
+  img { page-break-inside: avoid; max-width: 60%; max-height: 14cm;
+        height: auto; display: block; margin: 8pt auto; }
 
   /* Tables: borders that print, don't split cells across pages */
   table { page-break-inside: avoid; border-collapse: collapse;

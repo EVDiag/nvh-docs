@@ -2969,7 +2969,7 @@ NVH Source Locator लेता है:
 
 सबसे सरल मापन: दो एक्सेलेरोमीटर के बीच एक रेखा के साथ स्रोत स्थानीयकरण।
 
-![2-Sensor टैब](../screenshots/01-home-2sensor.png)
+![2-Sensor टैब](../screenshots/01b-home-2sensor.png)
 
 ### चरण 1: एक सामग्री लागू करें
 
@@ -3448,7 +3448,7 @@ Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).
 
 Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Langkah 1: Terapkan material
 
@@ -3927,7 +3927,7 @@ Tetapan diakses melalui ikon gear ⚙ di sudut kanan atas (bukan tab).
 
 Pengukuran paling mudah: penyetempatan sumber sepanjang garis antara dua akselerometer.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Langkah 1: Gunakan bahan
 
@@ -4406,7 +4406,7 @@ Ang mga setting ay naa-access sa pamamagitan ng ⚙ gear icon sa kanang itaas (h
 
 Ang pinakasimpleng pagsukat: source localization sa isang linya sa pagitan ng dalawang accelerometer.
 
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+![2-Sensor tab](../screenshots/01b-home-2sensor.png)
 
 ### Hakbang 1: Maglapat ng materyal
 

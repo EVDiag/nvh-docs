@@ -86,7 +86,7 @@ NVH Source Locator приема:
 
 Най-простото измерване: локализиране на източник по линия между два акселерометъра.
 
-![Раздел 2-Sensor](../screenshots/01-home-2sensor.png)
+![Раздел 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Стъпка 1: Приложете материал
 

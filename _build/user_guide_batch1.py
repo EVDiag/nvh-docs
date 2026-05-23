@@ -95,7 +95,7 @@ Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke 
 
 Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.
 
-![2-Sensor-Registerkarte](../screenshots/01-home-2sensor.png)
+![2-Sensor-Registerkarte](../screenshots/01b-home-2sensor.png)
 
 ### Schritt 1: Material anwenden
 
@@ -574,7 +574,7 @@ Los ajustes se acceden mediante el icono de engranaje ⚙ en la esquina superior
 
 La medición más simple: localización de fuente a lo largo de una línea entre dos acelerómetros.
 
-![Pestaña 2-Sensor](../screenshots/01-home-2sensor.png)
+![Pestaña 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Paso 1: Aplicar un material
 
@@ -1053,7 +1053,7 @@ Les paramètres sont accessibles via l'icône d'engrenage ⚙ dans le coin supé
 
 La mesure la plus simple : localisation de source le long d'une ligne entre deux accéléromètres.
 
-![Onglet 2-Sensor](../screenshots/01-home-2sensor.png)
+![Onglet 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Étape 1 : Appliquer un matériau
 
@@ -1532,7 +1532,7 @@ Le Impostazioni sono accessibili tramite l'icona ⚙ dell'ingranaggio in alto a 
 
 La misurazione più semplice: localizzazione sorgente lungo una linea tra due accelerometri.
 
-![Scheda 2-Sensor](../screenshots/01-home-2sensor.png)
+![Scheda 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Passaggio 1: Applicare un materiale
 

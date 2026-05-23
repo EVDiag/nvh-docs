@@ -86,7 +86,7 @@ Nastavenia sú prístupné cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu 
 
 Najjednoduchšie meranie: lokalizácia zdroja pozdĺž čiary medzi dvoma akcelerometrami.
 
-![Karta 2-Sensor](../screenshots/01-home-2sensor.png)
+![Karta 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Krok 1: Aplikovať materiál
 

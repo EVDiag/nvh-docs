@@ -86,7 +86,7 @@ Les paramètres sont accessibles via l'icône d'engrenage ⚙ dans le coin supé
 
 La mesure la plus simple : localisation de source le long d'une ligne entre deux accéléromètres.
 
-![Onglet 2-Sensor](../screenshots/01-home-2sensor.png)
+![Onglet 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Étape 1 : Appliquer un matériau
 

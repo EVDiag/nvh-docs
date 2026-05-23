@@ -86,7 +86,7 @@ Postavke su dostupne putem ikone zupčanika ⚙ u gornjem desnom kutu (nije kart
 
 Najjednostavnije mjerenje: lociranje izvora duž linije između dva akcelerometra.
 
-![Kartica 2-Sensor](../screenshots/01-home-2sensor.png)
+![Kartica 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Korak 1: Primijenite materijal
 

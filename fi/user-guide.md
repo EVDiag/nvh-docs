@@ -86,7 +86,7 @@ Asetuksiin pääsee ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa (ei
 
 Yksinkertaisin mittaus: lähteen paikannus viivaa pitkin kahden kiihtyvyysanturin välillä.
 
-![2-Sensor-välilehti](../screenshots/01-home-2sensor.png)
+![2-Sensor-välilehti](../screenshots/01b-home-2sensor.png)
 
 ### Vaihe 1: Käytä materiaalia
 

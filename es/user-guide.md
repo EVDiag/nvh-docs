@@ -86,7 +86,7 @@ Los ajustes se acceden mediante el icono de engranaje ⚙ en la esquina superior
 
 La medición más simple: localización de fuente a lo largo de una línea entre dos acelerómetros.
 
-![Pestaña 2-Sensor](../screenshots/01-home-2sensor.png)
+![Pestaña 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Paso 1: Aplicar un material
 

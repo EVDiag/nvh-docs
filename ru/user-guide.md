@@ -86,7 +86,7 @@ NVH Source Locator принимает:
 
 Простейшее измерение: локализация источника вдоль линии между двумя акселерометрами.
 
-![Вкладка 2-Sensor](../screenshots/01-home-2sensor.png)
+![Вкладка 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Шаг 1: Применение материала
 

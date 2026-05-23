@@ -86,7 +86,7 @@ Pengaturan diakses melalui ikon roda gigi ⚙ di sudut kanan atas (bukan tab).
 
 Pengukuran paling sederhana: lokalisasi sumber sepanjang garis antara dua akselerometer.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Langkah 1: Terapkan material
 

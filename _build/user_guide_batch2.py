@@ -93,7 +93,7 @@ As Configurações são acessadas através do ícone de engrenagem ⚙ no canto 
 
 A medição mais simples: localização de fonte ao longo de uma linha entre dois acelerômetros.
 
-![Aba 2-Sensor](../screenshots/01-home-2sensor.png)
+![Aba 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Passo 1: Aplicar um material
 
@@ -572,7 +572,7 @@ Ustawienia są dostępne przez ikonę koła zębatego ⚙ w prawym górnym rogu 
 
 Najprostszy pomiar: lokalizacja źródła wzdłuż linii między dwoma akcelerometrami.
 
-![Karta 2-Sensor](../screenshots/01-home-2sensor.png)
+![Karta 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Krok 1: Zastosuj materiał
 
@@ -1051,7 +1051,7 @@ NVH Source Locator принимает:
 
 Простейшее измерение: локализация источника вдоль линии между двумя акселерометрами.
 
-![Вкладка 2-Sensor](../screenshots/01-home-2sensor.png)
+![Вкладка 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Шаг 1: Применение материала
 
@@ -1530,7 +1530,7 @@ NVH Source Locator 采集：
 
 最简单的测量：沿两个加速度计之间一条线的源定位。
 
-![2-Sensor 选项卡](../screenshots/01-home-2sensor.png)
+![2-Sensor 选项卡](../screenshots/01b-home-2sensor.png)
 
 ### 步骤 1：应用材料
 

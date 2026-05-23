@@ -86,7 +86,7 @@ NVH Source Locator 采集：
 
 最简单的测量：沿两个加速度计之间一条线的源定位。
 
-![2-Sensor 选项卡](../screenshots/01-home-2sensor.png)
+![2-Sensor 选项卡](../screenshots/01b-home-2sensor.png)
 
 ### 步骤 1：应用材料
 

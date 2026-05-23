@@ -86,7 +86,7 @@ As Configurações são acessadas através do ícone de engrenagem ⚙ no canto 
 
 A medição mais simples: localização de fonte ao longo de uma linha entre dois acelerômetros.
 
-![Aba 2-Sensor](../screenshots/01-home-2sensor.png)
+![Aba 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Passo 1: Aplicar um material
 

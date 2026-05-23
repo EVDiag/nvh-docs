@@ -93,7 +93,7 @@ Inställningar nås via ⚙ kugghjulsikonen i det övre högra hörnet (inte en 
 
 Den enklaste mätningen: källokalisering längs en linje mellan två accelerometrar.
 
-![2-Sensor-fliken](../screenshots/01-home-2sensor.png)
+![2-Sensor-fliken](../screenshots/01b-home-2sensor.png)
 
 ### Steg 1: Tillämpa ett material
 
@@ -572,7 +572,7 @@ Innstillinger nås via ⚙ tannhjul-ikonet i øvre høyre hjørne (ikke en fane)
 
 Den enkleste målingen: kildelokalisering langs en linje mellom to akselerometre.
 
-![2-Sensor-fane](../screenshots/01-home-2sensor.png)
+![2-Sensor-fane](../screenshots/01b-home-2sensor.png)
 
 ### Trinn 1: Bruk et materiale
 
@@ -1051,7 +1051,7 @@ Asetuksiin pääsee ⚙ rataspyörän kuvakkeen kautta oikeassa yläkulmassa (ei
 
 Yksinkertaisin mittaus: lähteen paikannus viivaa pitkin kahden kiihtyvyysanturin välillä.
 
-![2-Sensor-välilehti](../screenshots/01-home-2sensor.png)
+![2-Sensor-välilehti](../screenshots/01b-home-2sensor.png)
 
 ### Vaihe 1: Käytä materiaalia
 
@@ -1530,7 +1530,7 @@ Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dre
 
 Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.
 
-![Fila 2-Sensor](../screenshots/01-home-2sensor.png)
+![Fila 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Pasul 1: Aplică un material
 
@@ -2009,7 +2009,7 @@ Ayarlara sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişilir (sek
 
 En basit ölçüm: iki ivmeölçer arasında bir çizgi boyunca kaynak lokalizasyonu.
 
-![2-Sensor sekmesi](../screenshots/01-home-2sensor.png)
+![2-Sensor sekmesi](../screenshots/01b-home-2sensor.png)
 
 ### Adım 1: Bir malzeme uygulayın
 

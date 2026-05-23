@@ -86,7 +86,7 @@ Le Impostazioni sono accessibili tramite l'icona ⚙ dell'ingranaggio in alto a 
 
 La misurazione più semplice: localizzazione sorgente lungo una linea tra due accelerometri.
 
-![Scheda 2-Sensor](../screenshots/01-home-2sensor.png)
+![Scheda 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Passaggio 1: Applicare un materiale
 

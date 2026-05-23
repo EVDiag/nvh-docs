@@ -93,7 +93,7 @@ Nastavení je přístupné přes ikonu ozubeného kola ⚙ v pravém horním roh
 
 Nejjednodušší měření: lokalizace zdroje podél čáry mezi dvěma akcelerometry.
 
-![Záložka 2-Sensor](../screenshots/01-home-2sensor.png)
+![Záložka 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Krok 1: Aplikovat materiál
 
@@ -572,7 +572,7 @@ Nastavenia sú prístupné cez ikonu ozubeného kolesa ⚙ v pravom hornom rohu 
 
 Najjednoduchšie meranie: lokalizácia zdroja pozdĺž čiary medzi dvoma akcelerometrami.
 
-![Karta 2-Sensor](../screenshots/01-home-2sensor.png)
+![Karta 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Krok 1: Aplikovať materiál
 
@@ -1051,7 +1051,7 @@ A beállítások a ⚙ fogaskerék ikonon keresztül érhetők el a jobb felső 
 
 A legegyszerűbb mérés: forráslokalizálás egy vonal mentén két gyorsulásmérő között.
 
-![2-Sensor lap](../screenshots/01-home-2sensor.png)
+![2-Sensor lap](../screenshots/01b-home-2sensor.png)
 
 ### 1. lépés: Anyag alkalmazása
 
@@ -1530,7 +1530,7 @@ Postavke su dostupne putem ikone zupčanika ⚙ u gornjem desnom kutu (nije kart
 
 Najjednostavnije mjerenje: lociranje izvora duž linije između dva akcelerometra.
 
-![Kartica 2-Sensor](../screenshots/01-home-2sensor.png)
+![Kartica 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Korak 1: Primijenite materijal
 
@@ -2009,7 +2009,7 @@ NVH Source Locator приема:
 
 Най-простото измерване: локализиране на източник по линия между два акселерометъра.
 
-![Раздел 2-Sensor](../screenshots/01-home-2sensor.png)
+![Раздел 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Стъпка 1: Приложете материал
 

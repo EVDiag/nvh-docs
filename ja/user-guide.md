@@ -86,7 +86,7 @@ NVH Source Locatorは以下を取得します:
 
 最も簡単な測定: 2つの加速度計間の線に沿ったソース定位。
 
-![2-Sensorタブ](../screenshots/01-home-2sensor.png)
+![2-Sensorタブ](../screenshots/01b-home-2sensor.png)
 
 ### ステップ1: 材料を適用する
 

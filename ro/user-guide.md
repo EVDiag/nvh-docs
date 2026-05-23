@@ -86,7 +86,7 @@ Setările sunt accesate prin pictograma roată dințată ⚙ din colțul din dre
 
 Cea mai simplă măsurătoare: localizare a sursei de-a lungul unei linii între două accelerometre.
 
-![Fila 2-Sensor](../screenshots/01-home-2sensor.png)
+![Fila 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Pasul 1: Aplică un material
 

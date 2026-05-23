@@ -86,7 +86,7 @@ Ustawienia są dostępne przez ikonę koła zębatego ⚙ w prawym górnym rogu 
 
 Najprostszy pomiar: lokalizacja źródła wzdłuż linii między dwoma akcelerometrami.
 
-![Karta 2-Sensor](../screenshots/01-home-2sensor.png)
+![Karta 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Krok 1: Zastosuj materiał
 

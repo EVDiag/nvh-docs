@@ -94,7 +94,7 @@ NVH Source Locator يأخذ:
 
 أبسط قياس: تحديد موقع المصدر على طول خط بين مقياسي تسارع.
 
-![علامة تبويب 2-Sensor](../screenshots/01-home-2sensor.png)
+![علامة تبويب 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### الخطوة 1: تطبيق مادة
 
@@ -573,7 +573,7 @@ NVH Source Locatorは以下を取得します:
 
 最も簡単な測定: 2つの加速度計間の線に沿ったソース定位。
 
-![2-Sensorタブ](../screenshots/01-home-2sensor.png)
+![2-Sensorタブ](../screenshots/01b-home-2sensor.png)
 
 ### ステップ1: 材料を適用する
 
@@ -1052,7 +1052,7 @@ NVH Source Locator는 다음을 수집합니다:
 
 가장 간단한 측정: 두 개의 가속도계 사이의 선을 따라 소스 위치 측정.
 
-![2-Sensor 탭](../screenshots/01-home-2sensor.png)
+![2-Sensor 탭](../screenshots/01b-home-2sensor.png)
 
 ### 1단계: 재료 적용
 
@@ -1531,7 +1531,7 @@ NVH Source Locator นำ:
 
 การวัดที่ง่ายที่สุด: การระบุตำแหน่งแหล่งกำเนิดตามเส้นระหว่างมาตรวัดความเร่งสองตัว
 
-![แท็บ 2-Sensor](../screenshots/01-home-2sensor.png)
+![แท็บ 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### ขั้นตอนที่ 1: ใช้วัสดุ
 
@@ -2010,7 +2010,7 @@ Cài đặt được truy cập thông qua biểu tượng bánh răng ⚙ ở g
 
 Đo lường đơn giản nhất: định vị nguồn dọc theo đường thẳng giữa hai gia tốc kế.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Bước 1: Áp dụng một vật liệu
 

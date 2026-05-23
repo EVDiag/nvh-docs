@@ -86,7 +86,7 @@ Settings is accessed via the ⚙ gear icon in the top-right corner (not a tab).
 
 The simplest measurement: source location along a line between two accelerometers.
 
-![2-Sensor tab](../screenshots/01-home-2sensor.png)
+![2-Sensor tab](../screenshots/01b-home-2sensor.png)
 
 ### Step 1: Apply a material
 

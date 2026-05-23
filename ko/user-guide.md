@@ -86,7 +86,7 @@ NVH Source Locator는 다음을 수집합니다:
 
 가장 간단한 측정: 두 개의 가속도계 사이의 선을 따라 소스 위치 측정.
 
-![2-Sensor 탭](../screenshots/01-home-2sensor.png)
+![2-Sensor 탭](../screenshots/01b-home-2sensor.png)
 
 ### 1단계: 재료 적용
 

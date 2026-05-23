@@ -86,7 +86,7 @@ NVH Source Locator लेता है:
 
 सबसे सरल मापन: दो एक्सेलेरोमीटर के बीच एक रेखा के साथ स्रोत स्थानीयकरण।
 
-![2-Sensor टैब](../screenshots/01-home-2sensor.png)
+![2-Sensor टैब](../screenshots/01b-home-2sensor.png)
 
 ### चरण 1: एक सामग्री लागू करें
 

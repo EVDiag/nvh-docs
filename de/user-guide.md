@@ -86,7 +86,7 @@ Die Einstellungen werden über das ⚙-Zahnradsymbol in der oberen rechten Ecke 
 
 Die einfachste Messung: Quellortung entlang einer Linie zwischen zwei Beschleunigungssensoren.
 
-![2-Sensor-Registerkarte](../screenshots/01-home-2sensor.png)
+![2-Sensor-Registerkarte](../screenshots/01b-home-2sensor.png)
 
 ### Schritt 1: Material anwenden
 

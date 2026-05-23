@@ -86,7 +86,7 @@ Cài đặt được truy cập thông qua biểu tượng bánh răng ⚙ ở g
 
 Đo lường đơn giản nhất: định vị nguồn dọc theo đường thẳng giữa hai gia tốc kế.
 
-![Tab 2-Sensor](../screenshots/01-home-2sensor.png)
+![Tab 2-Sensor](../screenshots/01b-home-2sensor.png)
 
 ### Bước 1: Áp dụng một vật liệu
 

@@ -86,7 +86,7 @@ A beállítások a ⚙ fogaskerék ikonon keresztül érhetők el a jobb felső 
 
 A legegyszerűbb mérés: forráslokalizálás egy vonal mentén két gyorsulásmérő között.
 
-![2-Sensor lap](../screenshots/01-home-2sensor.png)
+![2-Sensor lap](../screenshots/01b-home-2sensor.png)
 
 ### 1. lépés: Anyag alkalmazása
 

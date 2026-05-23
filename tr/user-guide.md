@@ -86,7 +86,7 @@ Ayarlara sağ üst köşedeki ⚙ dişli simgesi aracılığıyla erişilir (sek
 
 En basit ölçüm: iki ivmeölçer arasında bir çizgi boyunca kaynak lokalizasyonu.
 
-![2-Sensor sekmesi](../screenshots/01-home-2sensor.png)
+![2-Sensor sekmesi](../screenshots/01b-home-2sensor.png)
 
 ### Adım 1: Bir malzeme uygulayın
 
