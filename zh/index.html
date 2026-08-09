@@ -54,6 +54,34 @@
     为便于您使用而翻译的文档 — 如需最准确的技术术语，请以英文原版为准。
   </div>
 
+  <section class="tdoa-video">
+    <h2>工作原理</h2>
+    <p class="tdoa-video-sub">三个加速度传感器，一次事件，三个到达时刻。27 秒。</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/zh.vtt" srclang="zh" label="简体中文" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <div class="doc-grid">
     <a href="user-guide.html" class="doc-card">
       <h2>📘 用户指南</h2>

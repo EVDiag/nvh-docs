@@ -394,3 +394,26 @@ li { margin: 6px 0; }
   th, td { padding: 8px 10px; }
   .doc-grid { grid-template-columns: 1fr; }
 }
+
+/* ---- TDOA explainer video ------------------------------------------- */
+.tdoa-video { margin: 32px 0 8px; }
+.tdoa-video h2 { color: var(--navy); margin: 0 0 4px; font-size: 20px; }
+.tdoa-video-sub { color: var(--text-faint); font-size: 14px; margin: 0 0 14px; }
+.tdoa-video video {
+  display: block;
+  width: 100%;
+  max-width: 380px;          /* 4:5 portrait — full width would tower */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #081d33;       /* matches the video, so no white flash on load */
+}
+html[dir="rtl"] .tdoa-video { text-align: right; }
+.tdoa-video video::cue {
+  background: rgba(8, 29, 51, .82);
+  color: #F2EAEA;
+  font-size: .95em;
+  line-height: 1.35;
+}
+@media (max-width: 480px) { .tdoa-video video { max-width: 100%; } }

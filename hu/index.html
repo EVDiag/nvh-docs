@@ -54,6 +54,34 @@
     A dokumentációt kényelmi célból fordítottuk — a legpontosabb műszaki terminológiához az eredeti angol verzió a mérvadó.
   </div>
 
+  <section class="tdoa-video">
+    <h2>Hogyan működik</h2>
+    <p class="tdoa-video-sub">Három gyorsulásmérő, egy esemény, három beérkezési idő. 27 másodperc.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/hu.vtt" srclang="hu" label="Magyar" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <div class="doc-grid">
     <a href="user-guide.html" class="doc-card">
       <h2>📘 Felhasználói kézikönyv</h2>

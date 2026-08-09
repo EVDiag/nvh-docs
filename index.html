@@ -65,12 +65,62 @@
       color: #889;
     }
     .footer a { color: #556; }
+
+/* ---- TDOA explainer video ------------------------------------------- */
+.tdoa-video { margin: 32px 0 8px; }
+.tdoa-video h2 { color: #0F3460; margin: 0 0 4px; font-size: 20px; }
+.tdoa-video-sub { color: #889; font-size: 14px; margin: 0 0 14px; }
+.tdoa-video video {
+  display: block;
+  width: 100%;
+  max-width: 380px;          /* 4:5 portrait — full width would tower */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  background: #081d33;       /* matches the video, so no white flash on load */
+}
+html[dir="rtl"] .tdoa-video { text-align: right; }
+.tdoa-video video::cue {
+  background: rgba(8, 29, 51, .82);
+  color: #F2EAEA;
+  font-size: .95em;
+  line-height: 1.35;
+}
+@media (max-width: 480px) { .tdoa-video video { max-width: 100%; } }
   </style>
 </head>
 <body>
 
   <h1>NVH Source Locator — Documentation</h1>
   <p class="intro">Choose your language to read the user guide and quick reference:</p>
+
+  <section class="tdoa-video">
+    <h2>How it works</h2>
+    <p class="tdoa-video-sub">Three accelerometers, one event, three arrival times. 27 seconds.</p>
+    <video controls preload="none" playsinline
+           poster="media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="media/vtt/en.vtt" srclang="en" label="English" default>
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
 
   <div class="lang-grid">
     <a href="en/index.html" class="lang-card"><span class="lang-name">English</span><span class="lang-code">EN</span></a>
