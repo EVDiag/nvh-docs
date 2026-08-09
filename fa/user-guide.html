@@ -58,6 +58,35 @@
   </div>
 
   <h1 id="nvh-source-locator">NVH Source Locator — راهنمای کاربر</h1>
+
+  <section class="tdoa-video">
+    <h2>چگونه کار می‌کند</h2>
+    <p class="tdoa-video-sub">سه شتاب‌سنج، یک رویداد، سه زمان رسیدن. ۲۷ ثانیه.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/fa.vtt" srclang="fa" label="فارسی" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
 <p>NVH Source Locator یک ابزار اندازه‌گیری برای مکان‌یابی منابع نویز و ارتعاش با استفاده از TDOA (Time Difference of Arrival) از سیگنال‌های شتاب‌سنج که در یک اسیلوسکوپ یا سیستم اندازه‌گیری ضبط شده‌اند.</p>
 <p>این راهنما تمام ویژگی‌ها را پوشش می‌دهد. برای یادآوری سریع، به <strong>مرجع سریع</strong> مراجعه کنید.</p>
 <hr />

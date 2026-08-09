@@ -58,6 +58,35 @@
   </div>
 
   <h1 id="nvh-source-locator-korisnicki-prirucnik">NVH Source Locator — Korisnički priručnik</h1>
+
+  <section class="tdoa-video">
+    <h2>Kako radi</h2>
+    <p class="tdoa-video-sub">Tri akcelerometra, jedan događaj, tri vremena dolaska. 27 sekundi.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/hr.vtt" srclang="hr" label="Hrvatski" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
 <p>NVH Source Locator je mjerni alat za lociranje izvora buke i vibracija pomoću TDOA (Time Difference of Arrival) iz signala akcelerometra zabilježenih na osciloskopu ili mjernom sustavu.</p>
 <p>Ovaj priručnik pokriva sve značajke. Za kratki podsjetnik pogledajte <strong>Kratki priručnik</strong>.</p>
 <hr />

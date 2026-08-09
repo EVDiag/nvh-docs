@@ -58,6 +58,35 @@
   </div>
 
   <h1 id="nvh-source-locator-riferimento-rapido">NVH Source Locator — Riferimento Rapido</h1>
+
+  <section class="tdoa-video">
+    <h2>Come funziona</h2>
+    <p class="tdoa-video-sub">Tre accelerometri, un evento, tre tempi di arrivo. 27 secondi.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/it.vtt" srclang="it" label="Italiano" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
 <p>Un riepilogo di una pagina. Per i dettagli completi, vedere <strong>Guida Utente</strong>.</p>
 <hr />
 <h2 id="flusso-principale-2-sensor-gratuito">Flusso principale (2-Sensor, gratuito)</h2>

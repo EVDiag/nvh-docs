@@ -58,6 +58,35 @@
   </div>
 
   <h1 id="nvh-source-locator-benutzerhandbuch">NVH Source Locator — Benutzerhandbuch</h1>
+
+  <section class="tdoa-video">
+    <h2>So funktioniert es</h2>
+    <p class="tdoa-video-sub">Drei Beschleunigungssensoren, ein Ereignis, drei Ankunftszeiten. 27 Sekunden.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/de.vtt" srclang="de" label="Deutsch" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
 <p>NVH Source Locator ist ein Messwerkzeug zur Lokalisierung von Geräusch- und Vibrationsquellen mithilfe von TDOA (Time Difference of Arrival) aus Beschleunigungssensorsignalen, die auf einem Oszilloskop oder Messsystem erfasst werden.</p>
 <p>Dieses Handbuch deckt alle Funktionen ab. Eine kurze Auffrischung finden Sie in <strong>Kurzanleitung</strong>.</p>
 <hr />

@@ -58,6 +58,35 @@
   </div>
 
   <h1 id="nvh-source-locator">NVH Source Locator — 사용자 가이드</h1>
+
+  <section class="tdoa-video">
+    <h2>작동 원리</h2>
+    <p class="tdoa-video-sub">가속도 센서 3개, 이벤트 1개, 도달 시각 3개. 27초.</p>
+    <video controls preload="none" playsinline
+           poster="../media/nvh-tdoa-poster.jpg"
+           width="1080" height="1350">
+      <source src="../media/nvh-tdoa.mp4" type="video/mp4">
+      <track kind="subtitles" src="../media/vtt/ko.vtt" srclang="ko" label="한국어" default>
+      <track kind="subtitles" src="../media/vtt/en.vtt" srclang="en" label="English">
+    </video>
+  </section>
+
+  <script>
+    /* `default` on a <track> is honoured inconsistently, so switch the page's
+       own caption track on explicitly. Wrapped because textTracks is absent on
+       very old engines and must not break the language switcher below. */
+    (function () {
+      try {
+        var v = document.querySelector('.tdoa-video video');
+        if (!v || !v.textTracks) return;
+        var want = (document.documentElement.lang || 'en').toLowerCase();
+        for (var i = 0; i < v.textTracks.length; i++) {
+          v.textTracks[i].mode = (v.textTracks[i].language === want) ? 'showing' : 'disabled';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
 <p>NVH Source Locator는 오실로스코프 또는 측정 시스템에서 캡처된 가속도계 신호의 TDOA(Time Difference of Arrival)를 사용하여 소음 및 진동 소스를 찾는 측정 도구입니다.</p>
 <p>이 가이드는 모든 기능을 다룹니다. 빠른 복습은 <strong>빠른 참조</strong>를 참조하세요.</p>
 <hr />
