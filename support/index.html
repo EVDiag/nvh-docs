@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — NVH Source Locator</title>
+  <meta name="description" content="Questions, bug reports and feature requests for NVH Source Locator, plus answers to the questions that come up most.">
+  <link rel="canonical" href="https://nvh.evdiag.net/support/">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <a href="../index.html" class="home-link">🌐 ← All languages</a>
+    <a href="../en/index.html" class="home-link">Documentation</a>
+  </div>
+
+  <h1>Questions, bugs and ideas</h1>
+  <p>We read everything. One person answers, usually within a working day.</p>
+
+  <h2 id="contact">Send a message</h2>
+  <p>A bug, a feature request, a material you would like added, or a result that disagrees with what you expected — all welcome. If you are reporting a result that looks wrong, the checklist below says what to include; without those details it is guesswork on both sides.</p>
+
+  <form class="contact" id="contactForm" novalidate>
+    <div class="field">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required maxlength="120">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required maxlength="200">
+      <span class="hint">So we can reply. Used for nothing else.</span>
+    </div>
+    <div class="field">
+      <label for="topic">What is it about</label>
+      <select id="topic" name="topic">
+        <option>A question</option>
+        <option>Something is wrong / a bug</option>
+        <option>Feature request</option>
+        <option>A result looks wrong</option>
+        <option>Material or speed-of-sound data</option>
+        <option>Purchase or restore</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required maxlength="5000" rows="7"></textarea>
+      <span class="hint">For a wrong result: the mode, the sensor spacings or coordinates, the calibration distance and time, the event Δt for each pair, which sensor you set as first, and where you expected the source to be.</span>
+    </div>
+    <div class="hp" aria-hidden="true">
+      <label for="hp_check">Leave this field empty</label>
+      <input type="text" id="hp_check" name="hp_check" tabindex="-1" autocomplete="off" data-1p-ignore data-lpignore="true" data-bwignore data-form-type="other" data-protonpass-ignore>
+    </div>
+    <button class="btn" type="submit" id="submitBtn">Send message</button>
+    <div class="formmsg" id="formMsg" role="status" aria-live="polite"></div>
+    <noscript><p class="formmsg show bad">The form needs JavaScript. You can also email <a href="mailto:support@evdiag.net">support@evdiag.net</a>.</p></noscript>
+  </form>
+
+  <h2 id="faq">Common questions</h2>
+
+  <h3>What is free and what is not?</h3>
+  <p>2-Sensor mode is free with no limitations. One purchase unlocks the multi-sensor modes — <strong>3-Sensor</strong>, <strong>3-Sen+</strong>, <strong>4-Sensor</strong>, <strong>4-Sen+</strong>, <strong>3D</strong> and <strong>3D+</strong>. It is a one-time purchase, not a subscription.</p>
+  <p>Everything else is in the free version too: the materials library with temperature compensation, your own custom materials, photo annotation, PDF reports, and measurement backup and restore.</p>
+
+  <h3>I paid, but a new phone shows the modes as locked</h3>
+  <p>Open the unlock screen and tap <strong>Restore purchase</strong> (or, in <strong>Settings › Upgrade</strong>, <strong>Restore previous purchase</strong>), signed in to the same App Store or Google Play account you bought with. The unlock is tied to that store account, not to the device. If it still does not restore, write to us with the store receipt and we will sort it out.</p>
+
+  <h3>The result points somewhere I did not expect</h3>
+  <p>First, check the <strong>first sensor</strong> dropdown for each pair. That setting carries the sign of the time difference, and getting it the wrong way round is the single most common cause of a position that looks wrong.</p>
+  <p>If that is right, there is a real limitation worth knowing about. In <strong>3-Sensor</strong> and in <strong>3D</strong> the measurement is exactly determined: two positions can fit your numbers <em>equally well</em>, and the app shows one of them without saying so. For a source inside the sensor array this does not happen — that is the case the app is built for. For a source outside the array, it can. If the answer looks mirrored, measure one more pair and use <strong>3-Sen+</strong> or <strong>3D+</strong>: those are over-determined, so the second solution disappears, and the RMS residual they report tells you how well your measurements agree with each other.</p>
+
+  <h3>What speed of sound should I use?</h3>
+  <p>The most reliable figure is the one you measure on the part in front of you: that is what the calibration step is for — a known distance and the time the wave takes to cross it. The materials library is there when you cannot calibrate, and it compensates for temperature, but a handbook figure for "steel" can be some way from the panel you are standing next to.</p>
+
+  <h3>What do I need besides the app?</h3>
+  <p>Accelerometers and something to capture their signals with enough time resolution to read the difference in arrival times — an oscilloscope or a measurement system. The app does the geometry; the arrival times come from your instrument.</p>
+
+  <h3>A material is missing, or a speed looks wrong</h3>
+  <p>You can add your own material in the app. If you think a shipped figure is wrong, send it with the source you are comparing against and we will check it.</p>
+
+  <h3>Where is the manual?</h3>
+  <p>At <a href="../index.html">nvh.evdiag.net</a>, in 30 languages — a full <a href="../en/user-guide.html">user guide</a> and a one-page <a href="../en/quick-reference.html">quick reference</a>.</p>
+
+  <h3>Can I use the PDF reports commercially?</h3>
+  <p>Yes, that is what they are for. Print them, put your name on them, hand them to customers. The measurement is your professional judgement, not ours.</p>
+
+  <div class="docs-footer">
+    <p>
+      Developed by EVDiag — <a href="https://evdiag.net">evdiag.net</a><br>
+      Questions? <a href="mailto:support@evdiag.net">support@evdiag.net</a>
+    </p>
+  </div>
+
+  <script src="../support.js" defer></script>
+
+</body>
+</html>

@@ -18,8 +18,17 @@ When subsequent batches arrive, drop the `quick_ref_batch2.py` and `user_guide_b
 nvh-docs/
 ├── index.html              ← root landing page (all 30 languages)
 ├── style.css               ← shared stylesheet
+├── support.js              ← behaviour of the support form
+├── _routes.json            ← tells Cloudflare only /api/* needs a function
+├── test-contact.mjs        ← offline test of the support function
 ├── README.md               ← this file
-├── HOSTING-SETUP.md        ← how to publish on custom domain
+├── CLOUDFLARE-MIGRATION.md ← how the site is hosted and how the form sends mail
+├── HOSTING-SETUP.md        ← superseded: the old GitHub Pages setup
+├── functions/
+│   └── api/contact.js      ← POST /api/contact → Resend (runs on Cloudflare)
+├── support/
+│   └── index.html          ← support form + FAQ (English only)
+├── media/                  ← the TDOA explainer video, poster and subtitles
 ├── screenshots/            ← SVG mockups + .png screenshots (add later)
 │   ├── 01-home-2sensor.svg
 │   ├── 01-home-2sensor.png   ← you replace with real device shot
@@ -61,14 +70,19 @@ The markdown files reference `../screenshots/<name>.png`. Today the folder conta
 
 Note: screenshots in English are fine. Each language version still uses these same English-UI screenshots — that's a standard practice for technical documentation.
 
-## How to publish
+## How it is published
 
-See `HOSTING-SETUP.md` for the step-by-step setup of a custom domain like `https://nvh.evdiag.net/`. Summary:
+The site runs on **Cloudflare Pages**, from this repository, at
+`https://nvh.evdiag.net/`. Push to `main` and it redeploys; push to any other
+branch and you get a preview address.
 
-1. Copy this entire folder into `evdiag-pages/nvh/`
-2. Push to GitHub
-3. Add CNAME DNS record at your domain registrar
-4. Done — accessible at your clean URL within 30 minutes
+It is on Cloudflare rather than GitHub Pages because `/support/` has a working
+contact form, and sending mail needs an API key that must stay on a server
+instead of in the browser. `functions/api/contact.js` is that server: one small
+function Cloudflare runs beside the static files.
+
+See `CLOUDFLARE-MIGRATION.md` for the project settings, the environment
+variables, and how to roll back to GitHub Pages if ever needed.
 
 ## How to update the docs
 
@@ -95,4 +109,12 @@ Each translated page includes a soft professional disclaimer noting that the Eng
 
 ## Support
 
-For documentation issues or corrections, contact `support@evdiag.net`.
+The support form is at `https://nvh.evdiag.net/support/`, and every page links
+to it. It is English only by deliberate choice — one page to keep correct
+rather than thirty to keep in step. Messages land at `support@evdiag.net`,
+which also still works as a plain address.
+
+The FAQ on that page makes factual claims about the app: what the one-time
+purchase unlocks, what the Restore buttons are called, and the two-root
+ambiguity in 3-Sensor and 3D. If any of those change in the app, change them
+there too.

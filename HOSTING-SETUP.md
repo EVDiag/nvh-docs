@@ -1,3 +1,11 @@
+> **Superseded.** This describes the original GitHub Pages setup, which was how
+> the site was published until the support form needed a server to send mail
+> from. The site now runs on Cloudflare Pages — see `CLOUDFLARE-MIGRATION.md`.
+> This file is kept for history; the paths in it (`evdiag-pages/nvh/`, pandoc)
+> were never how the site ended up being built.
+
+---
+
 # Hosting setup — custom domain, no "github" in URL, PDF download
 
 You want the docs hosted at a URL like `https://nvh.evdiag.net/user-guide.html` (or similar), with no "github" word visible, and a PDF download button. This is exactly the setup used by sites like https://bloomdays.family/privacy.html — GitHub Pages with a custom domain.

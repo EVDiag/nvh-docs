@@ -422,3 +422,109 @@ html[dir="rtl"] .tdoa-video { text-align: right; }
   /* the video is near full width on a phone, so .5em would be unreadable */
   .tdoa-video video::cue { font-size: .95em; }
 }
+
+/* ---- Support form (/support/) ---------------------------------------- */
+.contact { margin: 20px 0 8px; max-width: 560px; }
+
+.contact .field { margin-bottom: 18px; }
+
+.contact label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact select,
+.contact textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.contact textarea { resize: vertical; min-height: 140px; }
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, .15);
+}
+
+.contact .hint {
+  display: block;
+  font-size: 12.5px;
+  color: var(--text-faint);
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* Honeypot. Off-screen rather than display:none, so that a bot reading the
+   computed style still sees a normal field — and so that a sighted person
+   never does. aria-hidden and tabindex="-1" keep it away from screen readers
+   and the tab order. A filled value is never dropped, only flagged: browser
+   autofill fills hidden fields too, and silently binning a real message is
+   far worse than letting one through marked [Possible spam]. */
+.contact .hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact .btn {
+  background: var(--accent);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 22px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact .btn:hover:not(:disabled) { background: #0099BB; }
+.contact .btn:disabled { opacity: .6; cursor: default; }
+
+.contact .formmsg {
+  display: none;
+  margin-top: 14px;
+  padding: 11px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.contact .formmsg.show { display: block; }
+
+.contact .formmsg.good {
+  background: var(--info-bg);
+  color: var(--info-txt);
+  border-left: 4px solid var(--accent);
+}
+
+.contact .formmsg.bad {
+  background: var(--warn-bg);
+  color: var(--warn-txt);
+  border-left: 4px solid var(--warn-border);
+}
+
+html[dir="rtl"] .contact .formmsg.good,
+html[dir="rtl"] .contact .formmsg.bad {
+  border-left: none;
+  border-right: 4px solid var(--accent);
+}
+
+@media print { .contact { display: none !important; } }
