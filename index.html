@@ -93,9 +93,34 @@ html[dir="rtl"] .tdoa-video { text-align: right; }
   /* the video is near full width on a phone, so .5em would be unreadable */
   .tdoa-video video::cue { font-size: .95em; }
 }
+
+    /* Support button. This page is self-contained (no style.css), so the
+       rule lives here; it mirrors .top-nav .support-link in style.css. */
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 18px;
+    }
+    .top-bar a {
+      background: #00B4D8;
+      color: #FFFFFF;
+      border: 1px solid #00B4D8;
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      line-height: 1.5;
+    }
+    .top-bar a:hover { background: #0099BB; border-color: #0099BB; }
   </style>
 </head>
 <body>
+
+  <div class="top-bar">
+    <a href="/support/">✉ Support</a>
+  </div>
 
   <h1>NVH Source Locator — Documentation</h1>
   <p class="intro">Choose your language to read the user guide and quick reference:</p>
